@@ -4464,5 +4464,97 @@
     "clv": 0.0,
     "prob_cierre": 51.5,
     "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-12",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -108,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "CLE 3-4 MIN",
+    "veredicto": "seguimiento",
+    "prob_estimada": 53.0,
+    "prob_justa": 50.0,
+    "ev_pct": 2.07,
+    "precio_publicado": -107,
+    "discrepancia_pp": 3.0,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva"
+    ],
+    "contra": "El abridor de CLE no tiene muestra real de temporada y CLE batea .662 de OPS contra zurdos, justo la mano del rival.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "clv": -1.4,
+    "prob_cierre": 50.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "proceso"
+  },
+  {
+    "fecha": "2026-09-12",
+    "pick": "PIT ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 105,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "PIT 3-4 CHC",
+    "veredicto": "seguimiento",
+    "prob_estimada": 49.5,
+    "prob_justa": 47.02,
+    "ev_pct": 1.47,
+    "precio_publicado": 107,
+    "discrepancia_pp": 2.48,
+    "capas": [
+      "pitcheo",
+      "matchup",
+      "bullpen"
+    ],
+    "contra": "PIT solo produce 3.2 carreras por juego en la última semana y CHC llega caliente con 5.5 c/j en un parque que suele premiar al bateo.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "clv": -3.3,
+    "prob_cierre": 45.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "proceso"
+  },
+  {
+    "fecha": "2026-09-12",
+    "pick": "PHI ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 102,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "PHI 2-12 ATL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 49.0,
+    "prob_justa": 47.48,
+    "ev_pct": -1.02,
+    "precio_publicado": 109,
+    "discrepancia_pp": 1.52,
+    "capas": [
+      "ofensiva",
+      "bullpen"
+    ],
+    "contra": "No hay abridor confirmado de PHI en los datos: si sale un brazo menor, toda la lectura se cae y PHI tampoco batea bien (.663 de OPS semanal).",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "delta_pp": -6.0
+    },
+    "clv": -6.0,
+    "prob_cierre": 43.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "proceso"
   }
 ]
