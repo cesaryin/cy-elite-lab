@@ -1,72 +1,72 @@
 {
  "fecha": "2026-09-14",
- "tomado_utc": "2026-09-14T13:00:35+00:00",
- "n_juegos": 10,
+ "tomado_utc": "2026-09-14T22:00:25+00:00",
+ "n_juegos": 14,
  "juegos": {
   "CWS@CLE": {
-   "id": "2a828119814add28306d706ccb802ac3",
+   "id": "2f2faff81101f84158c3cfbd630bcb30",
    "away": "CWS",
    "home": "CLE",
-   "inicio_utc": "2026-09-14T22:41:00Z",
-   "n_casas": 9,
+   "inicio_utc": "2026-09-15T22:40:00Z",
+   "n_casas": 6,
    "fuente": "consenso_us",
    "ml": {
-    "CWS": 128,
-    "CLE": -150
+    "CWS": 108,
+    "CLE": -127
    },
    "total": {
-    "linea": 7.0,
-    "over": -101,
-    "under": -119,
+    "linea": 8.5,
+    "over": -111,
+    "under": -108,
     "n_casas": 6
    },
    "spread": {
     "CWS": {
      "linea": 1.5,
-     "cuota": -184,
-     "n_casas": 9
+     "cuota": -200,
+     "n_casas": 4
     },
     "CLE": {
      "linea": -1.5,
-     "cuota": 153,
-     "n_casas": 9
+     "cuota": 166,
+     "n_casas": 4
     }
    },
    "casas_ml": {
-    "CWS": 9,
-    "CLE": 9
+    "CWS": 6,
+    "CLE": 6
    },
    "mejor": {
     "ml": {
      "CWS": {
-      "cuota": 132,
-      "casa": "betonlineag"
+      "cuota": 113,
+      "casa": "lowvig"
      },
      "CLE": {
-      "cuota": -146,
-      "casa": "betonlineag"
+      "cuota": -125,
+      "casa": "lowvig"
      }
     },
     "total": {
-     "linea": 7.0,
+     "linea": 8.5,
      "over": {
-      "cuota": 103,
-      "casa": "lowvig"
+      "cuota": 100,
+      "casa": "bovada"
      },
      "under": {
-      "cuota": -118,
+      "cuota": -102,
       "casa": "lowvig"
      }
     },
     "spread": {
      "CWS": {
       "linea": 1.5,
-      "cuota": -175,
-      "casa": "betonlineag"
+      "cuota": -199,
+      "casa": "draftkings"
      },
      "CLE": {
       "linea": -1.5,
-      "cuota": 160,
+      "cuota": 170,
       "casa": "bovada"
      }
     }
@@ -74,57 +74,57 @@
    "flojo": false
   },
   "LAD@CIN": {
-   "id": "fd0c792d70a4325cb16c03c7af9a089a",
+   "id": "baa7f738229bf9855e24037a2a30a2cb",
    "away": "LAD",
    "home": "CIN",
-   "inicio_utc": "2026-09-14T22:41:00Z",
-   "n_casas": 9,
+   "inicio_utc": "2026-09-15T22:40:00Z",
+   "n_casas": 6,
    "fuente": "consenso_us",
    "ml": {
-    "CIN": 188,
-    "LAD": -224
+    "CIN": 185,
+    "LAD": -220
    },
    "total": {
-    "linea": 7.5,
-    "over": -105,
-    "under": -113,
-    "n_casas": 7
+    "linea": 8.5,
+    "over": -115,
+    "under": -105,
+    "n_casas": 4
    },
    "spread": {
     "CIN": {
      "linea": 1.5,
-     "cuota": 110,
-     "n_casas": 9
+     "cuota": 113,
+     "n_casas": 4
     },
     "LAD": {
      "linea": -1.5,
-     "cuota": -131,
-     "n_casas": 9
+     "cuota": -134,
+     "n_casas": 4
     }
    },
    "casas_ml": {
-    "CIN": 9,
-    "LAD": 9
+    "CIN": 6,
+    "LAD": 6
    },
    "mejor": {
     "ml": {
      "CIN": {
-      "cuota": 197,
-      "casa": "betonlineag"
+      "cuota": 189,
+      "casa": "lowvig"
      },
      "LAD": {
-      "cuota": -210,
-      "casa": "betrivers"
+      "cuota": -211,
+      "casa": "lowvig"
      }
     },
     "total": {
-     "linea": 7.5,
+     "linea": 8.5,
      "over": {
-      "cuota": -102,
-      "casa": "lowvig"
+      "cuota": -105,
+      "casa": "draftkings"
      },
      "under": {
-      "cuota": -110,
+      "cuota": 100,
       "casa": "fanduel"
      }
     },
@@ -132,12 +132,12 @@
      "CIN": {
       "linea": 1.5,
       "cuota": 115,
-      "casa": "lowvig"
+      "casa": "betmgm"
      },
      "LAD": {
       "linea": -1.5,
-      "cuota": -121,
-      "casa": "betrivers"
+      "cuota": -131,
+      "casa": "draftkings"
      }
     }
    },
@@ -151,24 +151,24 @@
    "n_casas": 9,
    "fuente": "consenso_us",
    "ml": {
-    "DET": 114,
-    "TOR": -132
+    "DET": 123,
+    "TOR": -142
    },
    "total": {
     "linea": 7.5,
-    "over": -110,
-    "under": -110,
+    "over": -108,
+    "under": -112,
     "n_casas": 9
    },
    "spread": {
     "DET": {
      "linea": 1.5,
-     "cuota": -190,
+     "cuota": -182,
      "n_casas": 9
     },
     "TOR": {
      "linea": -1.5,
-     "cuota": 160,
+     "cuota": 152,
      "n_casas": 9
     }
    },
@@ -179,82 +179,82 @@
    "mejor": {
     "ml": {
      "DET": {
-      "cuota": 116,
+      "cuota": 126,
       "casa": "betonlineag"
      },
      "TOR": {
-      "cuota": -126,
-      "casa": "betus"
+      "cuota": -139,
+      "casa": "betonlineag"
      }
     },
     "total": {
      "linea": 7.5,
      "over": {
-      "cuota": -107,
+      "cuota": -104,
       "casa": "lowvig"
      },
      "under": {
-      "cuota": -105,
-      "casa": "bovada"
+      "cuota": -110,
+      "casa": "fanduel"
      }
     },
     "spread": {
      "DET": {
       "linea": 1.5,
-      "cuota": -183,
-      "casa": "mybookieag"
+      "cuota": -175,
+      "casa": "bovada"
      },
      "TOR": {
       "linea": -1.5,
-      "cuota": 165,
-      "casa": "bovada"
+      "cuota": 156,
+      "casa": "lowvig"
      }
     }
    },
    "flojo": false
   },
   "BAL@NYM": {
-   "id": "6f154c72fa0631ec5a970f84c1492463",
+   "id": "a1a608b633419833caf64ad8739781f3",
    "away": "BAL",
    "home": "NYM",
-   "inicio_utc": "2026-09-14T23:11:00Z",
-   "n_casas": 9,
+   "inicio_utc": "2026-09-15T23:10:00Z",
+   "n_casas": 6,
    "fuente": "consenso_us",
    "ml": {
-    "BAL": 105,
-    "NYM": -120
+    "BAL": 109,
+    "NYM": -130
    },
    "total": {
     "linea": 8.0,
     "over": -105,
-    "under": -115,
-    "n_casas": 8
+    "under": -114,
+    "n_casas": 4
    },
    "spread": {
     "BAL": {
      "linea": 1.5,
-     "cuota": -205,
-     "n_casas": 6
+     "cuota": -197,
+     "n_casas": 4
     },
     "NYM": {
      "linea": -1.5,
-     "cuota": 176,
-     "n_casas": 6
+     "cuota": 163,
+     "n_casas": 4
     }
    },
    "casas_ml": {
-    "BAL": 9,
-    "NYM": 9
+    "BAL": 6,
+    "NYM": 6
    },
    "mejor": {
     "ml": {
      "BAL": {
-      "cuota": 109,
-      "casa": "lowvig"
+      "cuota": 110,
+      "casa": "fanduel"
      },
      "NYM": {
-      "cuota": -118,
-      "casa": "betrivers"
+      "cuota": -120,
+      "casa": "betonlineag"
      }
     },
     "total": {
@@ -265,228 +265,228 @@
      },
      "under": {
       "cuota": -113,
-      "casa": "lowvig"
+      "casa": "draftkings"
      }
     },
     "spread": {
      "BAL": {
       "linea": 1.5,
-      "cuota": -200,
-      "casa": "mybookieag"
+      "cuota": -190,
+      "casa": "betmgm"
      },
      "NYM": {
       "linea": -1.5,
-      "cuota": 179,
-      "casa": "lowvig"
+      "cuota": 170,
+      "casa": "bovada"
      }
     }
    },
    "flojo": false
   },
   "ATL@CHC": {
-   "id": "99d391c2ac7a5942710858c928ac73f8",
+   "id": "256d7de8ceb3804256d260a74263d82c",
    "away": "ATL",
    "home": "CHC",
-   "inicio_utc": "2026-09-14T23:41:00Z",
-   "n_casas": 9,
+   "inicio_utc": "2026-09-15T23:40:00Z",
+   "n_casas": 6,
    "fuente": "consenso_us",
    "ml": {
     "ATL": 116,
     "CHC": -136
    },
    "total": {
-    "linea": 9.5,
-    "over": -105,
-    "under": -114,
-    "n_casas": 9
+    "linea": 8.5,
+    "over": -110,
+    "under": -110,
+    "n_casas": 4
    },
    "spread": {
     "ATL": {
      "linea": 1.5,
-     "cuota": -175,
-     "n_casas": 8
+     "cuota": -194,
+     "n_casas": 3
     },
     "CHC": {
      "linea": -1.5,
-     "cuota": 150,
-     "n_casas": 8
+     "cuota": 160,
+     "n_casas": 3
     }
    },
    "casas_ml": {
-    "ATL": 9,
-    "CHC": 9
+    "ATL": 6,
+    "CHC": 6
    },
    "mejor": {
     "ml": {
      "ATL": {
-      "cuota": 118,
-      "casa": "betus"
+      "cuota": 120,
+      "casa": "betonlineag"
      },
      "CHC": {
-      "cuota": -128,
-      "casa": "lowvig"
-     }
-    },
-    "total": {
-     "linea": 9.5,
-     "over": {
-      "cuota": -102,
-      "casa": "lowvig"
-     },
-     "under": {
-      "cuota": -110,
-      "casa": "bovada"
-     }
-    },
-    "spread": {
-     "ATL": {
-      "linea": 1.5,
-      "cuota": -170,
-      "casa": "lowvig"
-     },
-     "CHC": {
-      "linea": -1.5,
-      "cuota": 155,
-      "casa": "fanduel"
-     }
-    }
-   },
-   "flojo": false
-  },
-  "NYY@MIN": {
-   "id": "68721959a546157007d97eeca5682379",
-   "away": "NYY",
-   "home": "MIN",
-   "inicio_utc": "2026-09-14T23:41:00Z",
-   "n_casas": 9,
-   "fuente": "consenso_us",
-   "ml": {
-    "MIN": 118,
-    "NYY": -136
-   },
-   "total": {
-    "linea": 8.5,
-    "over": -102,
-    "under": -118,
-    "n_casas": 6
-   },
-   "spread": {
-    "MIN": {
-     "linea": 1.5,
-     "cuota": -142,
-     "n_casas": 8
-    },
-    "NYY": {
-     "linea": -1.5,
-     "cuota": 123,
-     "n_casas": 8
-    }
-   },
-   "casas_ml": {
-    "MIN": 9,
-    "NYY": 9
-   },
-   "mejor": {
-    "ml": {
-     "MIN": {
-      "cuota": 125,
-      "casa": "betrivers"
-     },
-     "NYY": {
-      "cuota": -130,
+      "cuota": -132,
       "casa": "betonlineag"
      }
     },
     "total": {
      "linea": 8.5,
      "over": {
-      "cuota": 100,
+      "cuota": -110,
       "casa": "fanduel"
      },
      "under": {
-      "cuota": -110,
-      "casa": "bovada"
+      "cuota": -107,
+      "casa": "draftkings"
      }
     },
     "spread": {
-     "MIN": {
+     "ATL": {
       "linea": 1.5,
-      "cuota": -136,
-      "casa": "betrivers"
+      "cuota": -193,
+      "casa": "draftkings"
      },
-     "NYY": {
+     "CHC": {
       "linea": -1.5,
-      "cuota": 127,
-      "casa": "mybookieag"
+      "cuota": 165,
+      "casa": "bovada"
      }
     }
    },
    "flojo": false
   },
-  "SF@STL": {
-   "id": "0df8abb4425b8b10d8e3a0599974813f",
-   "away": "SF",
-   "home": "STL",
-   "inicio_utc": "2026-09-14T23:46:00Z",
-   "n_casas": 9,
+  "NYY@MIN": {
+   "id": "f367b112dcb4fea1a4ff67e49ee1f0cd",
+   "away": "NYY",
+   "home": "MIN",
+   "inicio_utc": "2026-09-15T23:40:00Z",
+   "n_casas": 6,
    "fuente": "consenso_us",
    "ml": {
-    "SF": 119,
-    "STL": -138
+    "MIN": 147,
+    "NYY": -170
    },
    "total": {
     "linea": 7.5,
-    "over": -119,
-    "under": 100,
-    "n_casas": 9
+    "over": -118,
+    "under": -102,
+    "n_casas": 4
    },
    "spread": {
-    "SF": {
+    "MIN": {
      "linea": 1.5,
-     "cuota": -180,
-     "n_casas": 9
+     "cuota": -120,
+     "n_casas": 3
     },
-    "STL": {
+    "NYY": {
      "linea": -1.5,
-     "cuota": 157,
-     "n_casas": 9
+     "cuota": 100,
+     "n_casas": 3
     }
    },
    "casas_ml": {
-    "SF": 9,
-    "STL": 9
+    "MIN": 6,
+    "NYY": 6
    },
    "mejor": {
     "ml": {
-     "SF": {
-      "cuota": 123,
-      "casa": "lowvig"
+     "MIN": {
+      "cuota": 154,
+      "casa": "betonlineag"
      },
-     "STL": {
-      "cuota": -136,
-      "casa": "lowvig"
+     "NYY": {
+      "cuota": -166,
+      "casa": "fanduel"
      }
     },
     "total": {
      "linea": 7.5,
      "over": {
       "cuota": -115,
-      "casa": "lowvig"
+      "casa": "bovada"
      },
      "under": {
-      "cuota": 105,
-      "casa": "bovada"
+      "cuota": 103,
+      "casa": "lowvig"
+     }
+    },
+    "spread": {
+     "MIN": {
+      "linea": 1.5,
+      "cuota": -115,
+      "casa": "draftkings"
+     },
+     "NYY": {
+      "linea": -1.5,
+      "cuota": 100,
+      "casa": "fanduel"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "SF@STL": {
+   "id": "15c9ca42142414287f11247c92905d9f",
+   "away": "SF",
+   "home": "STL",
+   "inicio_utc": "2026-09-15T23:45:00Z",
+   "n_casas": 6,
+   "fuente": "consenso_us",
+   "ml": {
+    "SF": 139,
+    "STL": -162
+   },
+   "total": {
+    "linea": 8.5,
+    "over": -106,
+    "under": -112,
+    "n_casas": 6
+   },
+   "spread": {
+    "SF": {
+     "linea": 1.5,
+     "cuota": -160,
+     "n_casas": 4
+    },
+    "STL": {
+     "linea": -1.5,
+     "cuota": 134,
+     "n_casas": 4
+    }
+   },
+   "casas_ml": {
+    "SF": 6,
+    "STL": 6
+   },
+   "mejor": {
+    "ml": {
+     "SF": {
+      "cuota": 145,
+      "casa": "betonlineag"
+     },
+     "STL": {
+      "cuota": -160,
+      "casa": "betonlineag"
+     }
+    },
+    "total": {
+     "linea": 8.5,
+     "over": {
+      "cuota": -105,
+      "casa": "fanduel"
+     },
+     "under": {
+      "cuota": -107,
+      "casa": "lowvig"
      }
     },
     "spread": {
      "SF": {
       "linea": 1.5,
-      "cuota": -177,
-      "casa": "mybookieag"
+      "cuota": -156,
+      "casa": "draftkings"
      },
      "STL": {
       "linea": -1.5,
-      "cuota": 165,
+      "cuota": 135,
       "casa": "bovada"
      }
     }
@@ -501,25 +501,25 @@
    "n_casas": 9,
    "fuente": "consenso_us",
    "ml": {
-    "COL": 156,
-    "SD": -184
+    "COL": 172,
+    "SD": -200
    },
    "total": {
     "linea": 11.0,
-    "over": -106,
-    "under": -114,
+    "over": -111,
+    "under": -109,
     "n_casas": 8
    },
    "spread": {
     "COL": {
      "linea": 1.5,
-     "cuota": 102,
-     "n_casas": 8
+     "cuota": 115,
+     "n_casas": 7
     },
     "SD": {
      "linea": -1.5,
-     "cuota": -120,
-     "n_casas": 8
+     "cuota": -135,
+     "n_casas": 7
     }
    },
    "casas_ml": {
@@ -529,175 +529,455 @@
    "mejor": {
     "ml": {
      "COL": {
-      "cuota": 160,
+      "cuota": 180,
       "casa": "lowvig"
      },
      "SD": {
-      "cuota": -177,
-      "casa": "lowvig"
+      "cuota": -190,
+      "casa": "betrivers"
      }
     },
     "total": {
      "linea": 11.0,
      "over": {
-      "cuota": -103,
+      "cuota": -105,
       "casa": "lowvig"
      },
      "under": {
-      "cuota": 100,
-      "casa": "bovada"
+      "cuota": -101,
+      "casa": "draftkings"
      }
     },
     "spread": {
      "COL": {
       "linea": 1.5,
-      "cuota": 106,
-      "casa": "mybookieag"
+      "cuota": 118,
+      "casa": "lowvig"
      },
      "SD": {
       "linea": -1.5,
-      "cuota": -117,
-      "casa": "lowvig"
+      "cuota": -129,
+      "casa": "mybookieag"
      }
     }
    },
    "flojo": false
   },
   "SEA@LAA": {
-   "id": "9c0b5b3f819915fa2cd982a14186b77d",
+   "id": "cce625b7dac12280fdb88a6f44058c93",
    "away": "SEA",
    "home": "LAA",
-   "inicio_utc": "2026-09-15T01:39:00Z",
-   "n_casas": 9,
+   "inicio_utc": "2026-09-16T01:38:00Z",
+   "n_casas": 6,
    "fuente": "consenso_us",
    "ml": {
-    "LAA": -103,
-    "SEA": -114
+    "LAA": 141,
+    "SEA": -169
    },
    "total": {
-    "linea": 7.5,
-    "over": -110,
-    "under": -110,
-    "n_casas": 7
+    "linea": 8.0,
+    "over": -114,
+    "under": -105,
+    "n_casas": 4
    },
    "spread": {
     "LAA": {
      "linea": 1.5,
-     "cuota": -177,
-     "n_casas": 9
+     "cuota": -116,
+     "n_casas": 4
     },
     "SEA": {
      "linea": -1.5,
-     "cuota": 152,
-     "n_casas": 9
+     "cuota": -103,
+     "n_casas": 4
     }
    },
    "casas_ml": {
-    "LAA": 9,
-    "SEA": 9
+    "LAA": 6,
+    "SEA": 6
    },
    "mejor": {
     "ml": {
      "LAA": {
-      "cuota": 100,
-      "casa": "fanduel"
-     },
-     "SEA": {
-      "cuota": -107,
-      "casa": "betonlineag"
-     }
-    },
-    "total": {
-     "linea": 7.5,
-     "over": {
-      "cuota": -102,
-      "casa": "lowvig"
-     },
-     "under": {
-      "cuota": -109,
-      "casa": "mybookieag"
-     }
-    },
-    "spread": {
-     "LAA": {
-      "linea": 1.5,
-      "cuota": -175,
+      "cuota": 145,
       "casa": "betmgm"
      },
      "SEA": {
-      "linea": -1.5,
-      "cuota": 156,
-      "casa": "lowvig"
-     }
-    }
-   },
-   "flojo": false
-  },
-  "MIA@AZ": {
-   "id": "d468d51c641b469172b3c59500fa2d49",
-   "away": "MIA",
-   "home": "AZ",
-   "inicio_utc": "2026-09-15T01:41:00Z",
-   "n_casas": 9,
-   "fuente": "consenso_us",
-   "ml": {
-    "AZ": -134,
-    "MIA": 115
-   },
-   "total": {
-    "linea": 8.0,
-    "over": -108,
-    "under": -112,
-    "n_casas": 8
-   },
-   "spread": {
-    "AZ": {
-     "linea": -1.5,
-     "cuota": 160,
-     "n_casas": 9
-    },
-    "MIA": {
-     "linea": 1.5,
-     "cuota": -185,
-     "n_casas": 9
-    }
-   },
-   "casas_ml": {
-    "AZ": 9,
-    "MIA": 9
-   },
-   "mejor": {
-    "ml": {
-     "AZ": {
-      "cuota": -128,
-      "casa": "betus"
-     },
-     "MIA": {
-      "cuota": 119,
+      "cuota": -153,
       "casa": "betonlineag"
      }
     },
     "total": {
      "linea": 8.0,
      "over": {
-      "cuota": -105,
+      "cuota": -109,
+      "casa": "draftkings"
+     },
+     "under": {
+      "cuota": -102,
+      "casa": "lowvig"
+     }
+    },
+    "spread": {
+     "LAA": {
+      "linea": 1.5,
+      "cuota": -114,
+      "casa": "fanduel"
+     },
+     "SEA": {
+      "linea": -1.5,
+      "cuota": -102,
+      "casa": "draftkings"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "MIA@AZ": {
+   "id": "e9344aee4810e4127e69c73c13c781d7",
+   "away": "MIA",
+   "home": "AZ",
+   "inicio_utc": "2026-09-16T01:40:00Z",
+   "n_casas": 6,
+   "fuente": "consenso_us",
+   "ml": {
+    "AZ": -150,
+    "MIA": 128
+   },
+   "total": {
+    "linea": 8.5,
+    "over": -110,
+    "under": -108,
+    "n_casas": 6
+   },
+   "spread": {
+    "AZ": {
+     "linea": -1.5,
+     "cuota": 139,
+     "n_casas": 4
+    },
+    "MIA": {
+     "linea": 1.5,
+     "cuota": -166,
+     "n_casas": 4
+    }
+   },
+   "casas_ml": {
+    "AZ": 6,
+    "MIA": 6
+   },
+   "mejor": {
+    "ml": {
+     "AZ": {
+      "cuota": -141,
+      "casa": "betonlineag"
+     },
+     "MIA": {
+      "cuota": 128,
+      "casa": "betonlineag"
+     }
+    },
+    "total": {
+     "linea": 8.5,
+     "over": {
+      "cuota": -107,
       "casa": "lowvig"
      },
      "under": {
-      "cuota": -109,
-      "casa": "lowvig"
+      "cuota": -104,
+      "casa": "fanduel"
      }
     },
     "spread": {
      "AZ": {
       "linea": -1.5,
-      "cuota": 162,
-      "casa": "lowvig"
+      "cuota": 140,
+      "casa": "fanduel"
      },
      "MIA": {
       "linea": 1.5,
-      "cuota": -184,
+      "cuota": -165,
+      "casa": "betmgm"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "ATH@TB": {
+   "id": "4ee5706290157d66372729e7e70830e8",
+   "away": "ATH",
+   "home": "TB",
+   "inicio_utc": "2026-09-15T22:40:00Z",
+   "n_casas": 6,
+   "fuente": "consenso_us",
+   "ml": {
+    "ATH": 188,
+    "TB": -225
+   },
+   "total": {
+    "linea": 8.0,
+    "over": -107,
+    "under": -111,
+    "n_casas": 4
+   },
+   "spread": {
+    "ATH": {
+     "linea": 1.5,
+     "cuota": -120,
+     "n_casas": 4
+    },
+    "TB": {
+     "linea": -1.5,
+     "cuota": 100,
+     "n_casas": 4
+    }
+   },
+   "casas_ml": {
+    "ATH": 6,
+    "TB": 6
+   },
+   "mejor": {
+    "ml": {
+     "ATH": {
+      "cuota": 197,
+      "casa": "lowvig"
+     },
+     "TB": {
+      "cuota": -220,
+      "casa": "lowvig"
+     }
+    },
+    "total": {
+     "linea": 8.0,
+     "over": {
+      "cuota": -105,
+      "casa": "betmgm"
+     },
+     "under": {
+      "cuota": -107,
+      "casa": "lowvig"
+     }
+    },
+    "spread": {
+     "ATH": {
+      "linea": 1.5,
+      "cuota": -118,
+      "casa": "draftkings"
+     },
+     "TB": {
+      "linea": -1.5,
+      "cuota": 100,
       "casa": "fanduel"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "MIL@PIT": {
+   "id": "e5ea1bb04bd365a0c15838cfb75266f9",
+   "away": "MIL",
+   "home": "PIT",
+   "inicio_utc": "2026-09-15T22:41:00Z",
+   "n_casas": 3,
+   "fuente": "consenso_us",
+   "ml": {
+    "MIL": -250,
+    "PIT": 205
+   },
+   "total": {
+    "linea": 7.5,
+    "over": -115,
+    "under": -105,
+    "n_casas": 3
+   },
+   "spread": {
+    "MIL": {
+     "linea": -1.5,
+     "cuota": -144,
+     "n_casas": 2
+    },
+    "PIT": {
+     "linea": 1.5,
+     "cuota": 120,
+     "n_casas": 2
+    }
+   },
+   "casas_ml": {
+    "MIL": 3,
+    "PIT": 3
+   },
+   "mejor": {
+    "ml": {
+     "MIL": {
+      "cuota": -250,
+      "casa": "fanduel"
+     },
+     "PIT": {
+      "cuota": 209,
+      "casa": "draftkings"
+     }
+    },
+    "total": {
+     "linea": 7.5,
+     "over": {
+      "cuota": -114,
+      "casa": "fanduel"
+     },
+     "under": {
+      "cuota": -105,
+      "casa": "draftkings"
+     }
+    },
+    "spread": {
+     "MIL": {
+      "linea": -1.5,
+      "cuota": -140,
+      "casa": "fanduel"
+     },
+     "PIT": {
+      "linea": 1.5,
+      "cuota": 123,
+      "casa": "draftkings"
+     }
+    }
+   },
+   "flojo": true
+  },
+  "PHI@WSH": {
+   "id": "015394004322ca670004015ae5bd94a3",
+   "away": "PHI",
+   "home": "WSH",
+   "inicio_utc": "2026-09-15T22:45:00Z",
+   "n_casas": 6,
+   "fuente": "consenso_us",
+   "ml": {
+    "PHI": -208,
+    "WSH": 175
+   },
+   "total": {
+    "linea": 8.0,
+    "over": -110,
+    "under": -110,
+    "n_casas": 4
+   },
+   "spread": {
+    "PHI": {
+     "linea": -1.5,
+     "cuota": -123,
+     "n_casas": 4
+    },
+    "WSH": {
+     "linea": 1.5,
+     "cuota": 102,
+     "n_casas": 4
+    }
+   },
+   "casas_ml": {
+    "PHI": 6,
+    "WSH": 6
+   },
+   "mejor": {
+    "ml": {
+     "PHI": {
+      "cuota": -195,
+      "casa": "lowvig"
+     },
+     "WSH": {
+      "cuota": 180,
+      "casa": "fanduel"
+     }
+    },
+    "total": {
+     "linea": 8.0,
+     "over": {
+      "cuota": -107,
+      "casa": "lowvig"
+     },
+     "under": {
+      "cuota": -107,
+      "casa": "lowvig"
+     }
+    },
+    "spread": {
+     "PHI": {
+      "linea": -1.5,
+      "cuota": -120,
+      "casa": "betmgm"
+     },
+     "WSH": {
+      "linea": 1.5,
+      "cuota": 105,
+      "casa": "bovada"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "KC@HOU": {
+   "id": "8cac5435079f2d8d51adb91e7950bb26",
+   "away": "KC",
+   "home": "HOU",
+   "inicio_utc": "2026-09-16T00:10:00Z",
+   "n_casas": 6,
+   "fuente": "consenso_us",
+   "ml": {
+    "HOU": -162,
+    "KC": 138
+   },
+   "total": {
+    "linea": 8.0,
+    "over": -106,
+    "under": -113,
+    "n_casas": 4
+   },
+   "spread": {
+    "HOU": {
+     "linea": -1.5,
+     "cuota": 134,
+     "n_casas": 4
+    },
+    "KC": {
+     "linea": 1.5,
+     "cuota": -161,
+     "n_casas": 4
+    }
+   },
+   "casas_ml": {
+    "HOU": 6,
+    "KC": 6
+   },
+   "mejor": {
+    "ml": {
+     "HOU": {
+      "cuota": -155,
+      "casa": "betonlineag"
+     },
+     "KC": {
+      "cuota": 140,
+      "casa": "betonlineag"
+     }
+    },
+    "total": {
+     "linea": 8.0,
+     "over": {
+      "cuota": -102,
+      "casa": "lowvig"
+     },
+     "under": {
+      "cuota": -110,
+      "casa": "betmgm"
+     }
+    },
+    "spread": {
+     "HOU": {
+      "linea": -1.5,
+      "cuota": 135,
+      "casa": "draftkings"
+     },
+     "KC": {
+      "linea": 1.5,
+      "cuota": -155,
+      "casa": "betmgm"
      }
     }
    },
