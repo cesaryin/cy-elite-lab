@@ -32,6 +32,11 @@ name: Reloj del dia (dispara el motor)
 # (data/plan_tandas_<fecha>.json) y lanza tanda.yml a las horas que ese plan
 # eligio. Con la misma llave: no hizo falta ni Cloudflare ni una llave nueva.
 #
+# LOS REFRESCOS DEL LAB TAMBIEN LOS PONE EL PLAN (14-sep-2026). Ya no van a las 4
+# horas fijas: uno ~45 min antes de cada bloque de partidos ("min_reloj_lab"). Si un
+# dia no hay plan, el reloj los lanza a las horas de siempre (minutos 140, 320, 500
+# y 680) para que la web no se quede parada.
+#
 # QUE HACE FALTA: el secreto MOTOR_DISPATCH_TOKEN, un token fine-grained con
 # permiso "Actions: write" sobre cy-elite-motor Y sobre cy-elite-lab (lo
 # segundo, para poder pasarse el testigo a si mismo). Nada mas.
@@ -134,14 +139,10 @@ jobs:
           TARGETS="
           0:picks.yml
           90:vigilante.yml
-          143:lab-refresh.yml
           215:cierre-captura.yml
-          323:lab-refresh.yml
           395:cierre-captura.yml
-          503:lab-refresh.yml
           580:cierre-captura.yml
           645:cierre-captura.yml
-          683:lab-refresh.yml
           730:cierre-captura.yml
           790:cierre-captura.yml
           "
@@ -228,13 +229,28 @@ jobs:
             # comentario, asi que curl se quedaba SIN URL y moria con "no URL
             # specified". El reloj despertaba a su hora exacta, disparaba... y no
             # llegaba nada. Lo que vaya antes del curl, va AQUI, no ahi dentro.
-            # UNA HORA POSIBLE DE TANDA: solo se lanza si el plan del dia la eligio.
+            # UNA HORA POSIBLE DEL PLAN: una tanda, un refresco del LAB, o nada.
             if [ "$WF" = "tanda" ]; then
-              if curl -sfL --retry 2 "$PLAN_URL?t=$(date +%s)" | grep -qE "\"min_reloj\":${MIN}[,}]"; then
+              PLAN=$(curl -sfL --retry 2 "$PLAN_URL?t=$(date +%s)" || true)
+              if [ -n "$PLAN" ] && echo "$PLAN" | grep -qE "\"min_reloj\":${MIN}[,}]"; then
                 curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  tanda.yml (minuto $MIN) -> %{http_code}\n" -X POST \
                   -H "Authorization: Bearer $TK" -H "$A" \
                   "$MOTOR/tanda.yml/dispatches" \
                   -d "{\"ref\":\"main\",\"inputs\":{\"hora\":\"$MIN\",\"fecha\":\"$JORNADA\"}}"
+              elif [ -n "$PLAN" ] && echo "$PLAN" | grep -q '"refrescos_lab"'; then
+                if echo "$PLAN" | grep -qE "\"min_reloj_lab\":${MIN}[,}]"; then
+                  curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  lab-refresh.yml (plan, minuto $MIN) -> %{http_code}\n" -X POST \
+                    -H "Authorization: Bearer $TK" -H "$A" \
+                    "$MOTOR/lab-refresh.yml/dispatches" -d '{"ref":"main"}'
+                fi
+              else
+                # SIN PLAN (o un plan sin refrescos): el LAB a sus horas de siempre.
+                case " 140 320 500 680 " in
+                  *" $MIN "*)
+                    curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  lab-refresh.yml (sin plan, minuto $MIN) -> %{http_code}\n" -X POST \
+                      -H "Authorization: Bearer $TK" -H "$A" \
+                      "$MOTOR/lab-refresh.yml/dispatches" -d '{"ref":"main"}' ;;
+                esac
               fi
               continue
             fi
