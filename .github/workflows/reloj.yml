@@ -27,6 +27,11 @@ name: Reloj del dia (dispara el motor)
 # horas, al acercarse a las 5 se dispara a si mismo con el testigo (`desde`) y
 # el siguiente tramo sigue donde lo dejo.
 #
+# LAS TANDAS DEL SISTEMA VIVO (14-sep-2026). Ademas de sus objetivos fijos, el
+# reloj mira cada 10 minutos el plan del dia que publica el motor
+# (data/plan_tandas_<fecha>.json) y lanza tanda.yml a las horas que ese plan
+# eligio. Con la misma llave: no hizo falta ni Cloudflare ni una llave nueva.
+#
 # QUE HACE FALTA: el secreto MOTOR_DISPATCH_TOKEN, un token fine-grained con
 # permiso "Actions: write" sobre cy-elite-motor Y sobre cy-elite-lab (lo
 # segundo, para poder pasarse el testigo a si mismo). Nada mas.
@@ -159,6 +164,22 @@ jobs:
           # antes del ancla. Con 3 quedan 50 min de margen.
           if [ "$(date -u +%H)" -lt 3 ]; then ANCLA=$((ANCLA - 86400)); fi
 
+          # LAS TANDAS DEL SISTEMA VIVO (14-sep-2026, decision de Cesar). El motor
+          # calcula a las 8:00 las horas de las tandas del dia y las publica en
+          # data/plan_tandas_<fecha>.json (src/vivo/plan.py). Aqui se pone un objetivo
+          # "tanda" cada 10 minutos del 60 al 780; al llegar cada uno se lee ese
+          # fichero y SOLO si el plan eligio ese minuto se lanza tanda.yml.
+          # Los minutos 90, 580 y 730 no llevan objetivo de tanda: ya los ocupan el
+          # vigilante y dos capturas, y con dos objetivos en el mismo minuto el reloj
+          # da el segundo por pasado. El plan nunca los elige (RELOJ_FIJOS).
+          JORNADA=$(date -u -d @$ANCLA +%F)
+          PLAN_URL="https://raw.githubusercontent.com/${{ github.repository }}/master/data/plan_tandas_${JORNADA}.json"
+          for M in $(seq 60 10 780); do
+            case " 90 580 730 " in *" $M "*) continue ;; esac
+            TARGETS="$TARGETS $M:tanda"
+          done
+          TARGETS=$(printf '%s\n' $TARGETS | sort -t: -k1,1n)
+
           INICIO=$(date +%s)
           echo "Arranca el reloj. Testigo recibido: ${DESDE:-0} min."
 
@@ -190,7 +211,7 @@ jobs:
               exit 0
             fi
 
-            echo "  esperando $((ESPERA / 60)) min hasta $(date -u -d @$OBJ +%H:%M) UTC para $WF"
+            [ "$WF" = "tanda" ] || echo "  esperando $((ESPERA / 60)) min hasta $(date -u -d @$OBJ +%H:%M) UTC para $WF"
             sleep "$ESPERA"
 
             # EL BUCLE QUE MAREABA AL RELOJ. picks.yml, al terminar, despierta al
@@ -207,6 +228,17 @@ jobs:
             # comentario, asi que curl se quedaba SIN URL y moria con "no URL
             # specified". El reloj despertaba a su hora exacta, disparaba... y no
             # llegaba nada. Lo que vaya antes del curl, va AQUI, no ahi dentro.
+            # UNA HORA POSIBLE DE TANDA: solo se lanza si el plan del dia la eligio.
+            if [ "$WF" = "tanda" ]; then
+              if curl -sfL --retry 2 "$PLAN_URL?t=$(date +%s)" | grep -qE "\"min_reloj\":${MIN}[,}]"; then
+                curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  tanda.yml (minuto $MIN) -> %{http_code}\n" -X POST \
+                  -H "Authorization: Bearer $TK" -H "$A" \
+                  "$MOTOR/tanda.yml/dispatches" \
+                  -d "{\"ref\":\"main\",\"inputs\":{\"hora\":\"$MIN\",\"fecha\":\"$JORNADA\"}}"
+              fi
+              continue
+            fi
+
             CUERPO='{"ref":"main"}'
             if [ "$WF" = "picks.yml" ]; then
               CUERPO='{"ref":"main","inputs":{"arranca_reloj":"false"}}'
