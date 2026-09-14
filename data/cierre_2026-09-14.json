@@ -1,8 +1,8 @@
 {
  "CWS@CLE": {
   "ml": {
-   "CWS": 134,
-   "CLE": -162
+   "CWS": 137,
+   "CLE": -166
   },
   "total": {
    "linea": 7.0,
@@ -12,39 +12,39 @@
   "spread": {
    "CWS": {
     "linea": 1.5,
-    "cuota": -175
+    "cuota": -171
    },
    "CLE": {
     "linea": -1.5,
-    "cuota": 144
+    "cuota": 141
    }
   },
   "inicio_utc": "2026-09-14T22:40Z",
-  "visto": "2026-09-14T20:26:52+00:00",
+  "visto": "2026-09-14T21:50:20+00:00",
   "cerrado": false
  },
  "LAD@CIN": {
   "ml": {
-   "LAD": -218,
-   "CIN": 178
+   "LAD": -219,
+   "CIN": 179
   },
   "total": {
    "linea": 7.5,
-   "over": -108,
-   "under": -112
+   "over": -104,
+   "under": -115
   },
   "spread": {
    "LAD": {
     "linea": -1.5,
-    "cuota": -126
+    "cuota": -130
    },
    "CIN": {
     "linea": 1.5,
-    "cuota": 105
+    "cuota": 108
    }
   },
   "inicio_utc": "2026-09-14T22:40Z",
-  "visto": "2026-09-14T20:26:52+00:00",
+  "visto": "2026-09-14T21:50:20+00:00",
   "cerrado": false
  },
  "DET@TOR": {
@@ -54,45 +54,45 @@
   },
   "total": {
    "linea": 7.5,
-   "over": -108,
+   "over": -107,
    "under": -112
   },
   "spread": {
    "DET": {
     "linea": 1.5,
-    "cuota": -181
+    "cuota": -182
    },
    "TOR": {
     "linea": -1.5,
-    "cuota": 149
+    "cuota": 150
    }
   },
   "inicio_utc": "2026-09-14T23:07Z",
-  "visto": "2026-09-14T20:26:52+00:00",
+  "visto": "2026-09-14T21:50:20+00:00",
   "cerrado": false
  },
  "BAL@NYM": {
   "ml": {
-   "BAL": 110,
-   "NYM": -132
+   "BAL": 118,
+   "NYM": -143
   },
   "total": {
-   "linea": 8.0,
-   "over": -113,
-   "under": -107
+   "linea": 8.5,
+   "over": -106,
+   "under": -114
   },
   "spread": {
    "BAL": {
     "linea": 1.5,
-    "cuota": -195
+    "cuota": -182
    },
    "NYM": {
     "linea": -1.5,
-    "cuota": 160
+    "cuota": 150
    }
   },
   "inicio_utc": "2026-09-14T23:10Z",
-  "visto": "2026-09-14T20:26:52+00:00",
+  "visto": "2026-09-14T21:50:20+00:00",
   "cerrado": false
  },
  "ATL@CHC": {
@@ -102,45 +102,45 @@
   },
   "total": {
    "linea": 9.5,
-   "over": -110,
-   "under": -110
+   "over": -108,
+   "under": -112
   },
   "spread": {
    "ATL": {
     "linea": 1.5,
-    "cuota": -175
+    "cuota": -181
    },
    "CHC": {
     "linea": -1.5,
-    "cuota": 144
+    "cuota": 149
    }
   },
   "inicio_utc": "2026-09-14T23:40Z",
-  "visto": "2026-09-14T20:26:52+00:00",
+  "visto": "2026-09-14T21:50:20+00:00",
   "cerrado": false
  },
  "NYY@MIN": {
   "ml": {
-   "NYY": -126,
-   "MIN": 105
+   "NYY": -132,
+   "MIN": 110
   },
   "total": {
-   "linea": 8.0,
-   "over": -116,
-   "under": -103
+   "linea": 8.5,
+   "over": -101,
+   "under": -119
   },
   "spread": {
    "NYY": {
     "linea": -1.5,
-    "cuota": 130
+    "cuota": 126
    },
    "MIN": {
     "linea": 1.5,
-    "cuota": -157
+    "cuota": -152
    }
   },
   "inicio_utc": "2026-09-14T23:40Z",
-  "visto": "2026-09-14T20:26:52+00:00",
+  "visto": "2026-09-14T21:50:20+00:00",
   "cerrado": false
  },
  "SF@STL": {
@@ -164,7 +164,7 @@
    }
   },
   "inicio_utc": "2026-09-14T23:45Z",
-  "visto": "2026-09-14T20:26:52+00:00",
+  "visto": "2026-09-14T21:50:20+00:00",
   "cerrado": false
  },
  "SD@COL": {
@@ -174,13 +174,13 @@
   },
   "total": {
    "linea": 11.0,
-   "over": -114,
-   "under": -105
+   "over": -120,
+   "under": -101
   },
   "spread": {
    "SD": {
     "linea": -1.5,
-    "cuota": -135
+    "cuota": -136
    },
    "COL": {
     "linea": 1.5,
@@ -188,7 +188,7 @@
    }
   },
   "inicio_utc": "2026-09-15T00:40Z",
-  "visto": "2026-09-14T20:26:52+00:00",
+  "visto": "2026-09-14T21:50:20+00:00",
   "cerrado": false
  },
  "SEA@LAA": {
@@ -212,13 +212,13 @@
    }
   },
   "inicio_utc": "2026-09-15T01:38Z",
-  "visto": "2026-09-14T20:26:52+00:00",
+  "visto": "2026-09-14T21:50:20+00:00",
   "cerrado": false
  },
  "MIA@AZ": {
   "ml": {
-   "MIA": 110,
-   "AZ": -132
+   "MIA": 112,
+   "AZ": -135
   },
   "total": {
    "linea": 8.5,
@@ -232,11 +232,11 @@
    },
    "AZ": {
     "linea": -1.5,
-    "cuota": 155
+    "cuota": 154
    }
   },
   "inicio_utc": "2026-09-15T01:40Z",
-  "visto": "2026-09-14T20:26:52+00:00",
+  "visto": "2026-09-14T21:50:20+00:00",
   "cerrado": false
  }
 }
