@@ -157,6 +157,7 @@ section{display:none}section.on{display:block}
 .pl-vip .pl-n{color:var(--blue)}.pl-elite .pl-n{color:var(--gold2)}
 .pl-p{font-size:33px;font-weight:900;letter-spacing:-.03em;margin-top:5px;line-height:1;font-variant-numeric:tabular-nums}
 .pl-p small{font-size:13px;font-weight:600;color:var(--mut);letter-spacing:0}
+.pl-p .pl-cts{font-size:.5em;font-weight:800;letter-spacing:0;vertical-align:.62em;margin-left:1px}
 .pl-anual{font-size:11.5px;color:var(--green);font-weight:600;margin-top:6px}
 .pl-g{font-size:13px;color:var(--soft);margin-top:9px;padding-bottom:11px;border-bottom:1px solid var(--line2);line-height:1.45}
 .pl-l{list-style:none;margin:11px 0 0;padding:0;display:grid;gap:8px}
@@ -244,6 +245,11 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
   color:var(--mut);text-decoration:none}
 .t-set:hover,.t-set:focus-visible{color:var(--gold2);background:var(--line2)}
 .t-set svg{width:21px;height:21px}
+.t-atras{position:absolute;left:12px;top:50%;transform:translateY(-50%);
+  display:grid;place-items:center;width:36px;height:36px;border-radius:50%;
+  color:var(--mut);text-decoration:none}
+.t-atras:hover,.t-atras:focus-visible{color:var(--gold2);background:var(--line2)}
+.t-atras svg{width:22px;height:22px}
 /* El pitcheo del dia comparte CSS con clasico.html: CSS_PITCHEO. */
 .card.valor .razon{border-color:#aab4c2}.card.bronce .razon{border-color:#cc8b52}
 .card.parlay{border:2px dashed var(--purple);background:#15121d;padding:14px 16px}
@@ -387,7 +393,7 @@ details.dd .pnl{border:1px solid var(--line);border-top:none;border-radius:0 0 1
 .hres.W{color:var(--green);background:rgba(63,185,80,.14)}.hres.L{color:var(--red);background:rgba(240,82,77,.13)}.hres.P{color:var(--faint);background:var(--line2)}
 .hb{flex:1}.hb .hp{font-size:14px;font-weight:700}.hb .hd{font-size:11.5px;color:var(--faint);font-weight:600}
 .hn{font-size:14px;font-weight:800}.hn.g{color:var(--green)}.hn.r{color:var(--red)}.hn.z{color:var(--faint)}
-.aut-texto{font-size:13px;color:var(--soft);line-height:1.6}
+.aut-texto{font-size:13px;color:var(--soft);line-height:1.6;white-space:pre-line}
 .frame-wrap{border:none;margin:0}
 .frame{width:100%;height:calc(100vh - 150px);border:1px solid var(--line);border-radius:14px;background:var(--bg)}
 .note{color:var(--faint);font-size:12px;text-align:center;padding:12px 8px 2px;line-height:1.55}
@@ -477,8 +483,8 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
   if (!els.length) return;
   var f;
   try {
-    f = new Intl.DateTimeFormat([], {hour:'numeric', minute:'2-digit',
-                                     timeZoneName:'short'});
+    // SIN LA ZONA (15-sep-2026, Cesar): «8:00 PM», no «8:00 PM CDT».
+    f = new Intl.DateTimeFormat([], {hour:'numeric', minute:'2-digit'});
   } catch (e) { return; }          // navegador viejo: se queda la de Houston
   for (var i = 0; i < els.length; i++) {
     var el = els[i], d = new Date(el.getAttribute('data-utc'));
@@ -490,4 +496,77 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
     } catch (e) {}
   }
 })();
-</script><!-- generado 09/15/2026 8:02 AM CT --></body></html>
+</script><script>
+(function () {
+  try {
+    var LS = "sb-wzhoeptnsaaewtralkla-auth-token", LIB = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js", SRI = "sha384-iLddHTLokph6Omwoyid4XKxHaWa6w41BnoEj0q5oOrzmYPpHIKt1wyjReA7s//pP", SB_URL = "https://wzhoeptnsaaewtralkla.supabase.co", SB_CLAVE = "sb_publishable_MnTtV32UEIqjwt_NIGdUrw_LFe9hInM";
+    var COOKIE = 'cy_sesion';
+    var dom = /(^|\.)cyelitelab\.com$/.test(location.hostname) ? '; domain=cyelitelab.com' : '';
+    function poner(token, seg) {
+      document.cookie = COOKIE + '=' + token + '; path=/; max-age=' + Math.max(0, Math.floor(seg)) +
+                        '; secure; samesite=lax' + dom;
+    }
+    function quitar() {
+      if (document.cookie.indexOf(COOKIE + '=') < 0) return;
+      document.cookie = COOKIE + '=; path=/; max-age=0; secure; samesite=lax' + dom;
+    }
+    function datos(token) {
+      try {
+        var p = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+        while (p.length % 4) p += '=';
+        return JSON.parse(atob(p));
+      } catch (e) { return null; }
+    }
+    function puedeVer(d) {
+      var pag = {'/': 'analisis', '/lab': 'modelo', '/trends': 'mercado'}[location.pathname];
+      var am = (d && d.app_metadata) || {};
+      if (!pag) return false;
+      if (am.rol === 'ceo') return true;
+      if (am.plan !== 'elite' && am.plan !== 'vip') return false;
+      if (am.plan_hasta && !(Date.parse(am.plan_hasta) > Date.now())) return false;
+      return am.plan === 'elite' || pag === 'analisis';
+    }
+    function revisar(token) {
+      if (!puedeVer(datos(token))) return;
+      var meta = document.querySelector('meta[name="cy-portero"]');
+      var libre = !!meta && meta.getAttribute('content') === 'libre';
+      if (!libre && !(meta === null && location.search)) return;
+      var marca = 'cy-portero:' + location.pathname, huella = token.slice(-16);
+      try {
+        if (sessionStorage.getItem(marca) === huella) return;
+        sessionStorage.setItem(marca, huella);
+      } catch (e) { return; }
+      if (libre) location.reload();
+      else location.replace(location.pathname + location.hash);
+    }
+    var crudo = null;
+    try { crudo = localStorage.getItem(LS); } catch (e) {}
+    if (!crudo) { quitar(); return; }
+    var s = JSON.parse(crudo), ahora = Date.now() / 1000;
+    if (s && s.access_token && s.expires_at && s.expires_at - ahora > 60) {
+      poner(s.access_token, s.expires_at - ahora);
+      revisar(s.access_token);
+      return;
+    }
+    if (document.getElementById('cu')) return;   // la cuenta ya renueva y pone la cookie
+    var sc = document.createElement('script');
+    sc.src = LIB; sc.integrity = SRI; sc.crossOrigin = 'anonymous'; sc.async = true;
+    sc.onload = function () {
+      try {
+        var sb = window.supabase.createClient(SB_URL, SB_CLAVE, {
+          auth: { persistSession: true, autoRefreshToken: false, detectSessionInUrl: false } });
+        sb.auth.getSession().then(function (r) {
+          var se = r && r.data && r.data.session;
+          if (se && se.access_token) {
+            poner(se.access_token, (se.expires_at || 0) - Date.now() / 1000);
+            revisar(se.access_token);
+          } else {
+            quitar();
+          }
+        });
+      } catch (e) {}
+    };
+    document.head.appendChild(sc);
+  } catch (e) {}
+})();
+</script><!-- generado 09/15/2026 9:56 AM --></body></html>

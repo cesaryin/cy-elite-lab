@@ -157,6 +157,7 @@ section{display:none}section.on{display:block}
 .pl-vip .pl-n{color:var(--blue)}.pl-elite .pl-n{color:var(--gold2)}
 .pl-p{font-size:33px;font-weight:900;letter-spacing:-.03em;margin-top:5px;line-height:1;font-variant-numeric:tabular-nums}
 .pl-p small{font-size:13px;font-weight:600;color:var(--mut);letter-spacing:0}
+.pl-p .pl-cts{font-size:.5em;font-weight:800;letter-spacing:0;vertical-align:.62em;margin-left:1px}
 .pl-anual{font-size:11.5px;color:var(--green);font-weight:600;margin-top:6px}
 .pl-g{font-size:13px;color:var(--soft);margin-top:9px;padding-bottom:11px;border-bottom:1px solid var(--line2);line-height:1.45}
 .pl-l{list-style:none;margin:11px 0 0;padding:0;display:grid;gap:8px}
@@ -244,6 +245,11 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
   color:var(--mut);text-decoration:none}
 .t-set:hover,.t-set:focus-visible{color:var(--gold2);background:var(--line2)}
 .t-set svg{width:21px;height:21px}
+.t-atras{position:absolute;left:12px;top:50%;transform:translateY(-50%);
+  display:grid;place-items:center;width:36px;height:36px;border-radius:50%;
+  color:var(--mut);text-decoration:none}
+.t-atras:hover,.t-atras:focus-visible{color:var(--gold2);background:var(--line2)}
+.t-atras svg{width:22px;height:22px}
 /* El pitcheo del dia comparte CSS con clasico.html: CSS_PITCHEO. */
 .card.valor .razon{border-color:#aab4c2}.card.bronce .razon{border-color:#cc8b52}
 .card.parlay{border:2px dashed var(--purple);background:#15121d;padding:14px 16px}
@@ -387,7 +393,7 @@ details.dd .pnl{border:1px solid var(--line);border-top:none;border-radius:0 0 1
 .hres.W{color:var(--green);background:rgba(63,185,80,.14)}.hres.L{color:var(--red);background:rgba(240,82,77,.13)}.hres.P{color:var(--faint);background:var(--line2)}
 .hb{flex:1}.hb .hp{font-size:14px;font-weight:700}.hb .hd{font-size:11.5px;color:var(--faint);font-weight:600}
 .hn{font-size:14px;font-weight:800}.hn.g{color:var(--green)}.hn.r{color:var(--red)}.hn.z{color:var(--faint)}
-.aut-texto{font-size:13px;color:var(--soft);line-height:1.6}
+.aut-texto{font-size:13px;color:var(--soft);line-height:1.6;white-space:pre-line}
 .frame-wrap{border:none;margin:0}
 .frame{width:100%;height:calc(100vh - 150px);border:1px solid var(--line);border-radius:14px;background:var(--bg)}
 .note{color:var(--faint);font-size:12px;text-align:center;padding:12px 8px 2px;line-height:1.55}
@@ -506,14 +512,14 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .cu-msg:empty{display:none}
 .cu-msg.err{color:var(--red);background:rgba(248,81,73,.08);border:1px solid rgba(248,81,73,.35);padding:10px 12px}
 .cu-msg.ok{color:var(--green);background:rgba(63,185,80,.08);border:1px solid rgba(63,185,80,.35);padding:10px 12px}
-</style></head><body><div class="app"><div class="topbar"><h1>CY Elite Lab</h1><a href="index.html" class="t-set" aria-label="Cerrar ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></a></div><main><section class="on"><div class="date">Tu cuenta</div><div class="cu" id="cu"><div class="cu-est" id="cu-cargando">Comprobando tu sesión…</div><noscript><div class="cu-aviso">Para entrar o crear una cuenta hace falta tener JavaScript activado.</div></noscript><div id="cu-fuera" hidden><div class="cu-tabs" id="cu-tabs" role="tablist"><button type="button" role="tab" id="cu-t-entrar" class="on" aria-selected="true">Entrar</button><button type="button" role="tab" id="cu-t-crear" aria-selected="false">Crear cuenta</button></div><form class="cu-f cu-card" id="cu-f-entrar" novalidate><label class="cu-l" for="cu-e1">Correo</label><input class="cu-i" id="cu-e1" type="email" autocomplete="email" required name="email" inputmode="email" autocapitalize="off" spellcheck="false"><label class="cu-l" for="cu-p1">Contraseña</label><input class="cu-i" id="cu-p1" type="password" autocomplete="current-password" required name="password"><button class="cu-b" type="submit">Entrar</button><button class="cu-link" type="button" id="cu-olvide">¿Olvidaste la contraseña?</button></form><form class="cu-f cu-card" id="cu-f-crear" novalidate hidden><label class="cu-l" for="cu-e2">Correo</label><input class="cu-i" id="cu-e2" type="email" autocomplete="email" required name="email" inputmode="email" autocapitalize="off" spellcheck="false"><label class="cu-l" for="cu-p2">Contraseña</label><input class="cu-i" id="cu-p2" type="password" autocomplete="new-password" required name="password" minlength="8"><span class="cu-pista">Mínimo 8 caracteres.</span><label class="cu-chk"><input type="checkbox" id="cu-acepto"> <span>Tengo 18 años o más y acepto los <a href="legal.html#terminos">Términos</a> y la <a href="legal.html#privacidad">Política de privacidad</a>.</span></label><label class="cu-chk"><input type="checkbox" id="cu-aviso"> <span>Avísame por correo, <b>una sola vez</b>, el día que abran los planes.</span></label><button class="cu-b" type="submit">Crear cuenta</button><p class="cu-nota">Te mandaremos un correo para confirmar que es tuyo.</p></form><form class="cu-f cu-card" id="cu-f-olvido" novalidate hidden><p class="cu-txt">Escribe el correo de tu cuenta y te mandamos un enlace para poner una contraseña nueva.</p><label class="cu-l" for="cu-e3">Correo</label><input class="cu-i" id="cu-e3" type="email" autocomplete="email" required name="email" inputmode="email" autocapitalize="off" spellcheck="false"><button class="cu-b" type="submit">Enviarme el enlace</button><button class="cu-link" type="button" id="cu-volver">Volver</button></form><div class="cu-que"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-8.2-8.2A2 2 0 0 1 1.8 11V4a2 2 0 0 1 2-2h7a2 2 0 0 1 1.4.6l8.4 8.4a2 2 0 0 1 0 2.4z"/><circle cx="7" cy="7" r="1.5"/></svg><span>Hoy la cuenta es gratis y todavía no desbloquea nada: los planes de pago abren cuando el récord pase su prueba pública. <a href="planes.html">Cómo funciona</a></span></div></div><div class="cu-card" id="cu-correo" hidden><div class="cu-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg></div><div class="cu-h">Revisa tu correo</div><p class="cu-txt" id="cu-correo-txt"></p><p class="cu-nota">¿No llega en unos minutos? Mira en spam o en promociones.</p><button class="cu-link" type="button" id="cu-correo-volver">Volver</button></div><form class="cu-f cu-card" id="cu-f-nueva" novalidate hidden><div class="cu-h">Pon una contraseña nueva</div><label class="cu-l" for="cu-p3">Contraseña nueva</label><input class="cu-i" id="cu-p3" type="password" autocomplete="new-password" required name="password" minlength="8"><span class="cu-pista">Mínimo 8 caracteres.</span><button class="cu-b" type="submit">Guardar la contraseña</button></form><div id="cu-dentro" hidden><div class="set-h">Tu cuenta</div><div class="set-g"><div class="set-f"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><span class="set-t">Correo<span class="set-n" id="cu-d-correo"></span></span></div><div class="set-f"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-8.2-8.2A2 2 0 0 1 1.8 11V4a2 2 0 0 1 2-2h7a2 2 0 0 1 1.4.6l8.4 8.4a2 2 0 0 1 0 2.4z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="set-t">Plan<span class="set-n">Gratis · los planes de pago aún no están abiertos</span></span></div><button class="set-f cu-row" type="button" id="cu-aviso-cambiar"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg></span><span class="set-t">Aviso cuando abran los planes<span class="set-n" id="cu-d-aviso"></span></span></button><div class="set-f"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span class="set-t">Miembro desde<span class="set-n" id="cu-d-desde"></span></span></div></div><div class="set-h">Seguridad</div><div class="set-g"><button class="set-f cu-row" type="button" id="cu-cambiar"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><span class="set-t">Cambiar la contraseña</span></button><form class="cu-f cu-in" id="cu-f-cambiar" novalidate hidden><label class="cu-l" for="cu-p4">Contraseña nueva</label><input class="cu-i" id="cu-p4" type="password" autocomplete="new-password" required name="password" minlength="8"><span class="cu-pista">Mínimo 8 caracteres.</span><button class="cu-b" type="submit">Guardar la contraseña</button></form><button class="set-f cu-row" type="button" id="cu-salir"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-4"/></svg></span><span class="set-t">Cerrar sesión</span></button><a class="set-f cu-peligro" id="cu-borrar" href="mailto:soporte@cyelitelab.com"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></span><span class="set-t">Borrar mi cuenta<span class="set-n">Escríbenos desde este correo y la borramos con todo lo asociado</span></span></a></div></div><div class="cu-msg" id="cu-msg" role="status" aria-live="polite"></div></div></section><footer class="legal"><div class="legal-c">© 2026 CY Elite Lab. Todos los derechos reservados. Prohibida la reproducción o redistribución de los análisis, textos y diseño de este sitio sin autorización escrita.</div></footer></main><nav><a href="index.html" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg><span>Análisis</span></a><a href="lab.html" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6.5L5.2 18a2 2 0 0 0 1.8 3h10a2 2 0 0 0 1.8-3L14 9.5V3"/><path d="M7.5 15h9"/></svg><span>Modelo</span></a><a href="trends.html" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span>Mercado</span></a><a href="historial.html" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>Récord</span></a></nav></div><script>
+</style></head><body><div class="app"><div class="topbar"><a href="ajustes.html" class="t-atras" aria-label="Volver a ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></a><h1>CY Elite Lab</h1><a href="index.html" class="t-set" aria-label="Cerrar ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></a></div><main><section class="on"><div class="date">Tu cuenta</div><div class="cu" id="cu"><div class="cu-est" id="cu-cargando">Comprobando tu sesión…</div><noscript><div class="cu-aviso">Para entrar o crear una cuenta hace falta tener JavaScript activado.</div></noscript><div id="cu-fuera" hidden><div class="cu-tabs" id="cu-tabs" role="tablist"><button type="button" role="tab" id="cu-t-entrar" class="on" aria-selected="true">Entrar</button><button type="button" role="tab" id="cu-t-crear" aria-selected="false">Crear cuenta</button></div><form class="cu-f cu-card" id="cu-f-entrar" novalidate><label class="cu-l" for="cu-e1">Correo</label><input class="cu-i" id="cu-e1" type="email" autocomplete="email" required name="email" inputmode="email" autocapitalize="off" spellcheck="false"><label class="cu-l" for="cu-p1">Contraseña</label><input class="cu-i" id="cu-p1" type="password" autocomplete="current-password" required name="password"><button class="cu-b" type="submit">Entrar</button><button class="cu-link" type="button" id="cu-olvide">¿Olvidaste la contraseña?</button></form><form class="cu-f cu-card" id="cu-f-crear" novalidate hidden><label class="cu-l" for="cu-e2">Correo</label><input class="cu-i" id="cu-e2" type="email" autocomplete="email" required name="email" inputmode="email" autocapitalize="off" spellcheck="false"><label class="cu-l" for="cu-p2">Contraseña</label><input class="cu-i" id="cu-p2" type="password" autocomplete="new-password" required name="password" minlength="8"><span class="cu-pista">Mínimo 8 caracteres.</span><label class="cu-chk"><input type="checkbox" id="cu-acepto"> <span>Tengo 18 años o más y acepto los <a href="legal.html#terminos">Términos</a> y la <a href="legal.html#privacidad">Política de privacidad</a>.</span></label><label class="cu-chk"><input type="checkbox" id="cu-aviso"> <span>Avísame por correo, <b>una sola vez</b>, el día que abran los planes.</span></label><button class="cu-b" type="submit">Crear cuenta</button><p class="cu-nota">Te mandaremos un correo para confirmar que es tuyo.</p></form><form class="cu-f cu-card" id="cu-f-olvido" novalidate hidden><p class="cu-txt">Escribe el correo de tu cuenta y te mandamos un enlace para poner una contraseña nueva.</p><label class="cu-l" for="cu-e3">Correo</label><input class="cu-i" id="cu-e3" type="email" autocomplete="email" required name="email" inputmode="email" autocapitalize="off" spellcheck="false"><button class="cu-b" type="submit">Enviarme el enlace</button><button class="cu-link" type="button" id="cu-volver">Volver</button></form><div class="cu-que"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-8.2-8.2A2 2 0 0 1 1.8 11V4a2 2 0 0 1 2-2h7a2 2 0 0 1 1.4.6l8.4 8.4a2 2 0 0 1 0 2.4z"/><circle cx="7" cy="7" r="1.5"/></svg><span>Hoy la cuenta es gratis y todavía no desbloquea nada: los planes de pago abren cuando el récord pase su prueba pública. <a href="planes.html">Cómo funciona</a></span></div></div><div class="cu-card" id="cu-correo" hidden><div class="cu-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg></div><div class="cu-h">Revisa tu correo</div><p class="cu-txt" id="cu-correo-txt"></p><p class="cu-nota">¿No llega en unos minutos? Mira en spam o en promociones.</p><button class="cu-link" type="button" id="cu-correo-volver">Volver</button></div><form class="cu-f cu-card" id="cu-f-nueva" novalidate hidden><div class="cu-h">Pon una contraseña nueva</div><label class="cu-l" for="cu-p3">Contraseña nueva</label><input class="cu-i" id="cu-p3" type="password" autocomplete="new-password" required name="password" minlength="8"><span class="cu-pista">Mínimo 8 caracteres.</span><button class="cu-b" type="submit">Guardar la contraseña</button></form><div id="cu-dentro" hidden><div class="set-h">Tu cuenta</div><div class="set-g"><div class="set-f"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><span class="set-t">Correo<span class="set-n" id="cu-d-correo"></span></span></div><div class="set-f"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-8.2-8.2A2 2 0 0 1 1.8 11V4a2 2 0 0 1 2-2h7a2 2 0 0 1 1.4.6l8.4 8.4a2 2 0 0 1 0 2.4z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="set-t">Plan<span class="set-n" id="cu-d-plan"></span></span></div><button class="set-f cu-row" type="button" id="cu-aviso-cambiar"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg></span><span class="set-t">Aviso cuando abran los planes<span class="set-n" id="cu-d-aviso"></span></span></button><div class="set-f"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span class="set-t">Miembro desde<span class="set-n" id="cu-d-desde"></span></span></div></div><div class="set-h">Seguridad</div><div class="set-g"><button class="set-f cu-row" type="button" id="cu-cambiar"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><span class="set-t">Cambiar la contraseña</span></button><form class="cu-f cu-in" id="cu-f-cambiar" novalidate hidden><label class="cu-l" for="cu-p4">Contraseña nueva</label><input class="cu-i" id="cu-p4" type="password" autocomplete="new-password" required name="password" minlength="8"><span class="cu-pista">Mínimo 8 caracteres.</span><button class="cu-b" type="submit">Guardar la contraseña</button></form><button class="set-f cu-row" type="button" id="cu-salir"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-4"/></svg></span><span class="set-t">Cerrar sesión</span></button><a class="set-f cu-peligro" id="cu-borrar" href="mailto:soporte@cyelitelab.com"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></span><span class="set-t">Borrar mi cuenta<span class="set-n">Escríbenos desde este correo y la borramos con todo lo asociado</span></span></a></div></div><div class="cu-msg" id="cu-msg" role="status" aria-live="polite"></div></div></section><footer class="legal"><div class="legal-c">© 2026 CY Elite Lab. Todos los derechos reservados. Prohibida la reproducción o redistribución de los análisis, textos y diseño de este sitio sin autorización escrita.</div></footer></main><nav><a href="index.html" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg><span>Análisis</span></a><a href="lab.html" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6.5L5.2 18a2 2 0 0 0 1.8 3h10a2 2 0 0 0 1.8-3L14 9.5V3"/><path d="M7.5 15h9"/></svg><span>Modelo</span></a><a href="trends.html" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span>Mercado</span></a><a href="historial.html" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>Récord</span></a></nav></div><script>
 (function(){
   var els = document.querySelectorAll('time[data-utc]');
   if (!els.length) return;
   var f;
   try {
-    f = new Intl.DateTimeFormat([], {hour:'numeric', minute:'2-digit',
-                                     timeZoneName:'short'});
+    // SIN LA ZONA (15-sep-2026, Cesar): «8:00 PM», no «8:00 PM CDT».
+    f = new Intl.DateTimeFormat([], {hour:'numeric', minute:'2-digit'});
   } catch (e) { return; }          // navegador viejo: se queda la de Houston
   for (var i = 0; i < els.length; i++) {
     var el = els[i], d = new Date(el.getAttribute('data-utc'));
@@ -524,6 +530,79 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
       el.title = 'Hora de tu dispositivo · ' + ct + ' en Houston';
     } catch (e) {}
   }
+})();
+</script><script>
+(function () {
+  try {
+    var LS = "sb-wzhoeptnsaaewtralkla-auth-token", LIB = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js", SRI = "sha384-iLddHTLokph6Omwoyid4XKxHaWa6w41BnoEj0q5oOrzmYPpHIKt1wyjReA7s//pP", SB_URL = "https://wzhoeptnsaaewtralkla.supabase.co", SB_CLAVE = "sb_publishable_MnTtV32UEIqjwt_NIGdUrw_LFe9hInM";
+    var COOKIE = 'cy_sesion';
+    var dom = /(^|\.)cyelitelab\.com$/.test(location.hostname) ? '; domain=cyelitelab.com' : '';
+    function poner(token, seg) {
+      document.cookie = COOKIE + '=' + token + '; path=/; max-age=' + Math.max(0, Math.floor(seg)) +
+                        '; secure; samesite=lax' + dom;
+    }
+    function quitar() {
+      if (document.cookie.indexOf(COOKIE + '=') < 0) return;
+      document.cookie = COOKIE + '=; path=/; max-age=0; secure; samesite=lax' + dom;
+    }
+    function datos(token) {
+      try {
+        var p = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+        while (p.length % 4) p += '=';
+        return JSON.parse(atob(p));
+      } catch (e) { return null; }
+    }
+    function puedeVer(d) {
+      var pag = {'/': 'analisis', '/lab': 'modelo', '/trends': 'mercado'}[location.pathname];
+      var am = (d && d.app_metadata) || {};
+      if (!pag) return false;
+      if (am.rol === 'ceo') return true;
+      if (am.plan !== 'elite' && am.plan !== 'vip') return false;
+      if (am.plan_hasta && !(Date.parse(am.plan_hasta) > Date.now())) return false;
+      return am.plan === 'elite' || pag === 'analisis';
+    }
+    function revisar(token) {
+      if (!puedeVer(datos(token))) return;
+      var meta = document.querySelector('meta[name="cy-portero"]');
+      var libre = !!meta && meta.getAttribute('content') === 'libre';
+      if (!libre && !(meta === null && location.search)) return;
+      var marca = 'cy-portero:' + location.pathname, huella = token.slice(-16);
+      try {
+        if (sessionStorage.getItem(marca) === huella) return;
+        sessionStorage.setItem(marca, huella);
+      } catch (e) { return; }
+      if (libre) location.reload();
+      else location.replace(location.pathname + location.hash);
+    }
+    var crudo = null;
+    try { crudo = localStorage.getItem(LS); } catch (e) {}
+    if (!crudo) { quitar(); return; }
+    var s = JSON.parse(crudo), ahora = Date.now() / 1000;
+    if (s && s.access_token && s.expires_at && s.expires_at - ahora > 60) {
+      poner(s.access_token, s.expires_at - ahora);
+      revisar(s.access_token);
+      return;
+    }
+    if (document.getElementById('cu')) return;   // la cuenta ya renueva y pone la cookie
+    var sc = document.createElement('script');
+    sc.src = LIB; sc.integrity = SRI; sc.crossOrigin = 'anonymous'; sc.async = true;
+    sc.onload = function () {
+      try {
+        var sb = window.supabase.createClient(SB_URL, SB_CLAVE, {
+          auth: { persistSession: true, autoRefreshToken: false, detectSessionInUrl: false } });
+        sb.auth.getSession().then(function (r) {
+          var se = r && r.data && r.data.session;
+          if (se && se.access_token) {
+            poner(se.access_token, (se.expires_at || 0) - Date.now() / 1000);
+            revisar(se.access_token);
+          } else {
+            quitar();
+          }
+        });
+      } catch (e) {}
+    };
+    document.head.appendChild(sc);
+  } catch (e) {}
 })();
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js" integrity="sha384-iLddHTLokph6Omwoyid4XKxHaWa6w41BnoEj0q5oOrzmYPpHIKt1wyjReA7s//pP" crossorigin="anonymous"></script>
@@ -600,6 +679,11 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
     var av = !!(u.user_metadata && u.user_metadata.aviso_planes);
     $('cu-d-aviso').textContent = av ? 'Sí · toca para quitarlo' : 'No · toca para activarlo';
     $('cu-aviso-cambiar').setAttribute('aria-pressed', av ? 'true' : 'false');
+    // EL ROL VIENE DE app_metadata, que solo se escribe desde el panel de Supabase.
+    // Aqui solo se ENSENA: lo que se abre o se cierra lo decidira el Worker.
+    var ceo = ((u.app_metadata || {}).rol === 'ceo');
+    $('cu-d-plan').textContent = ceo ? 'CEO · acceso total, sin pagar'
+                                     : 'Gratis · los planes de pago aún no están abiertos';
     $('cu-borrar').href = 'mailto:' + SOPORTE + '?subject=' + encodeURIComponent('Borrar mi cuenta') +
       '&body=' + encodeURIComponent('Quiero borrar mi cuenta de ' + MARCA + ' y todo lo asociado.\nCorreo de la cuenta: ' + (u.email || ''));
     $('cu-f-cambiar').hidden = true;
@@ -702,10 +786,26 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
     this.disabled = false;
   };
 
+  // LA COOKIE DEL PORTERO (14-sep-2026): la sesion viaja tambien en la cookie cy_sesion,
+  // que es lo unico que el portero puede leer. Al entrar, al renovarse y al salir.
+  function cookiePortero(s) {
+    try {
+      var dom = /(^|\.)cyelitelab\.com$/.test(location.hostname) ? '; domain=cyelitelab.com' : '';
+      if (s && s.access_token) {
+        var seg = Math.max(0, Math.floor((s.expires_at || 0) - Date.now() / 1000));
+        document.cookie = 'cy_sesion=' + s.access_token + '; path=/; max-age=' + seg +
+                          '; secure; samesite=lax' + dom;
+      } else {
+        document.cookie = 'cy_sesion=; path=/; max-age=0; secure; samesite=lax' + dom;
+      }
+    } catch (e) {}
+  }
+
   // --- el estado de la sesion manda sobre lo que se ve ---
   // Dentro de este aviso no se llama a la libreria: lo recomienda supabase-js,
   // porque esperar a otra llamada aqui dentro puede bloquear la sesion.
   sb.auth.onAuthStateChange(function (evento, sesion) {
+    cookiePortero(sesion);
     if (evento === 'PASSWORD_RECOVERY') enRecuperacion = true;
     setTimeout(function () {
       pintar(sesion);
@@ -725,4 +825,4 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
   setTimeout(function () { if (!$('cu-cargando').hidden) pintar(null); }, 6000);
 })();
 </script>
-<!-- generado 09/15/2026 8:02 AM CT --></body></html>
+<!-- generado 09/15/2026 9:56 AM --></body></html>
