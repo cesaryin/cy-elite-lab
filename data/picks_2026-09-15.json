@@ -1,0 +1,132 @@
+{
+  "picks": [],
+  "parlay": null,
+  "resumen": "",
+  "descartes": [],
+  "vivo": {
+    "plan": {
+      "fecha": "2026-09-15",
+      "creado": "2026-09-15T13:02:02Z",
+      "tandas_dia": 2,
+      "tope_tanda": 2,
+      "tope_dia": 3,
+      "margen_min": 30,
+      "tandas": [
+        {
+          "min_ct": 1020,
+          "min_reloj": 540,
+          "hora": "5:00 PM",
+          "utc": "2026-09-15T22:00:00Z",
+          "juegos": [
+            {
+              "clave": "LAD@CIN",
+              "inicio_utc": "2026-09-15T22:40:00Z"
+            },
+            {
+              "clave": "ATH@TB",
+              "inicio_utc": "2026-09-15T22:40:00Z"
+            },
+            {
+              "clave": "CWS@CLE",
+              "inicio_utc": "2026-09-15T22:40:00Z"
+            },
+            {
+              "clave": "MIL@PIT",
+              "inicio_utc": "2026-09-15T22:40:00Z"
+            },
+            {
+              "clave": "PHI@WSH",
+              "inicio_utc": "2026-09-15T22:45:00Z"
+            },
+            {
+              "clave": "DET@TOR",
+              "inicio_utc": "2026-09-15T23:07:00Z"
+            },
+            {
+              "clave": "BAL@NYM",
+              "inicio_utc": "2026-09-15T23:10:00Z"
+            },
+            {
+              "clave": "ATL@CHC",
+              "inicio_utc": "2026-09-15T23:40:00Z"
+            },
+            {
+              "clave": "NYY@MIN",
+              "inicio_utc": "2026-09-15T23:40:00Z"
+            },
+            {
+              "clave": "SF@STL",
+              "inicio_utc": "2026-09-15T23:45:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 9.9
+        },
+        {
+          "min_ct": 1110,
+          "min_reloj": 630,
+          "hora": "6:30 PM",
+          "utc": "2026-09-15T23:30:00Z",
+          "juegos": [
+            {
+              "clave": "BOS@TEX",
+              "inicio_utc": "2026-09-16T00:05:00Z"
+            },
+            {
+              "clave": "KC@HOU",
+              "inicio_utc": "2026-09-16T00:10:00Z"
+            },
+            {
+              "clave": "SD@COL",
+              "inicio_utc": "2026-09-16T00:40:00Z"
+            },
+            {
+              "clave": "SEA@LAA",
+              "inicio_utc": "2026-09-16T01:38:00Z"
+            },
+            {
+              "clave": "MIA@AZ",
+              "inicio_utc": "2026-09-16T01:40:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 4.9
+        }
+      ],
+      "refrescos_lab": [
+        {
+          "min_ct": 1010,
+          "min_reloj_lab": 530,
+          "hora": "4:50 PM",
+          "utc": "2026-09-15T21:50:00Z",
+          "bloque": "5:40 PM",
+          "juegos": 9
+        },
+        {
+          "min_ct": 1080,
+          "min_reloj_lab": 600,
+          "hora": "6:00 PM",
+          "utc": "2026-09-15T23:00:00Z",
+          "bloque": "6:45 PM",
+          "juegos": 4
+        },
+        {
+          "min_ct": 1190,
+          "min_reloj_lab": 710,
+          "hora": "7:50 PM",
+          "utc": "2026-09-16T00:50:00Z",
+          "bloque": "8:38 PM",
+          "juegos": 2
+        }
+      ],
+      "sin_tanda": []
+    },
+    "tandas": []
+  },
+  "autopsia": "Cierre del 14-sep: 3-2. 1 ganado con ventaja medida; 1 perdido con ventaja medida, que es el coste normal y no se corrige; 2 ganados sin ventaja medida, que no confirma nada; 1 perdido sin ventaja medida. En lo que se puede juzgar, el 33% de lo ganado fue suerte.",
+  "valor_dia": {
+    "apostables": 0,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 0.0,
+    "ev_min": null
+  }
+}
