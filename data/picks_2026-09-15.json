@@ -1,8 +1,236 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -136,
+      "prob_estimada": 61.0,
+      "razon": "El precio de consenso (-136) va muy por detras de lo que marcan los mercados mas limpios para este duelo. J. Misiorowski (1.95 ERA, 38.3% K) contra un abridor con 4.48 de FIP y 10.2% de BB, y con MIL bateando 9.6 carreras por juego y ops 1.002 en la ultima semana. PIT produce 3.2 c/j en sus ultimos 10.",
+      "equipos": [
+        "MIL",
+        "PIT"
+      ],
+      "destacado": "MIL",
+      "hora": "5:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "forma",
+        "bullpen"
+      ],
+      "contra": "PIT ha ganado 7 de 10 con juegos de pocas carreras y basta un tropiezo de Misiorowski para que un duelo cerrado en PNC se decida por una carrera.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-15T22:40:00Z",
+      "cuota_apertura_ref": -217,
+      "valor": {
+        "prob_estimada": 61.0,
+        "prob_justa": 55.45,
+        "prob_implicita": 57.63,
+        "cuota": -136,
+        "cuota_justa_mercado": -124,
+        "ev_pct": 5.85,
+        "ev_kalshi_pct": 2.88,
+        "precio_minimo": -142,
+        "precio_publicado": -142,
+        "precio_equilibrio": -156,
+        "discrepancia_pp": 5.55,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +5.85% · no tomar peor de -142",
+        "mejor_precio": {
+          "cuota": -130,
+          "casa": "lowvig"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "MEDIA",
+          "a_favor": true,
+          "delta_pp": -3.5
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-15T22:00:19Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "oro",
+      "pick": "PHI ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -136,
+      "prob_estimada": 61.0,
+      "razon": "Desajuste de precio: PHI a -136 con C. Sanchez (2.79 ERA, 21.6 K-BB%) enfrente de un abridor con 6.59 ERA y 15.5% de boletos en solo 129 bateadores. PHI llega con 5.5 carreras por juego en la semana y su bullpen (3.74, J. Duran 1.82) es claramente mejor que el 4.51 local.",
+      "equipos": [
+        "PHI",
+        "WSH"
+      ],
+      "destacado": "PHI",
+      "hora": "5:45 PM CT",
+      "capas": [
+        "pitcheo",
+        "bullpen",
+        "ofensiva"
+      ],
+      "contra": "WSH batea .776 de ops contra zurdos, justo la mano de Sanchez, y el parque (pf 104) con umpire de +2.6% en carreras abre la puerta a un juego alto y abierto.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "PHI",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-15T22:45:00Z",
+      "cuota_apertura_ref": -218,
+      "valor": {
+        "prob_estimada": 61.0,
+        "prob_justa": 55.45,
+        "prob_implicita": 57.63,
+        "cuota": -136,
+        "cuota_justa_mercado": -124,
+        "ev_pct": 5.85,
+        "ev_kalshi_pct": 2.88,
+        "precio_minimo": -142,
+        "precio_publicado": -142,
+        "precio_equilibrio": -156,
+        "discrepancia_pp": 5.55,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +5.85% · no tomar peor de -142",
+        "mejor_precio": {
+          "cuota": -130,
+          "casa": "betonlineag"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 10,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-15T22:00:19Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "oro",
+      "pick": "NYY F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": -113,
+      "prob_estimada": 56.0,
+      "razon": "El F5 aisla la mayor ventaja del juego: M. Fried (2.73 ERA) contra una ofensiva de MIN congelada, 2.7 carreras por juego, ops .600 y 51 ponches en 6 juegos. NYY llega con 5.6 c/j y ops .804 frente a un B. Ober de 4.28 y solo 10.2 de K-BB%.",
+      "equipos": [
+        "NYY",
+        "MIN"
+      ],
+      "destacado": "NYY",
+      "hora": "6:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "forma"
+      ],
+      "contra": "Es mercado a tres bandas: un empate en las cinco entradas pierde, y las tres ultimas salidas de Fried fueron cortas (3.1, 5.2 y 3.2 entradas).",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-15T23:40:00Z",
+      "valor": {
+        "prob_estimada": 56.0,
+        "prob_justa": null,
+        "prob_implicita": 53.05,
+        "cuota": -113,
+        "cuota_justa_mercado": null,
+        "ev_pct": 5.56,
+        "ev_kalshi_pct": 2.27,
+        "precio_minimo": -119,
+        "precio_publicado": -119,
+        "precio_equilibrio": -127,
+        "discrepancia_pp": null,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +5.56% con ventaja, fuera por el tope: la tanda ya publicaba 2 con más ventaja",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        },
+        "veredicto_original": "apostable"
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 10,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-15T22:00:19Z",
+        "publicado": false,
+        "fuera_por_tope": true,
+        "motivo_tope": "la tanda ya publicaba 2 con más ventaja",
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
-  "resumen": "",
-  "descartes": [],
+  "resumen": "Dia con dos precios de consenso que se ven rezagados: MIL con Misiorowski y una ofensiva que promedia 9.6 carreras en la semana, y PHI con C. Sanchez frente a un abridor de 6.59 ERA y 15.5% de boletos. Como tercera lectura, el F5 de NYY aprovecha a Fried contra un lineup de MIN en 2.7 carreras por juego. En CLE el mercado movio total y precio con fuerza y prefiero no pelear esa linea.",
+  "descartes": [
+    "LAD/CIN: el ML de LAD (-208) queda fuera de banda y el F5 a -150 exige mas separacion de la linea justa (57.7%) de la que sostengo con honestidad.",
+    "ATH/TB: el ML de TB queda fuera de banda y el F5 a -133 solo da 2-3 puntos sobre la justa; insuficiente.",
+    "CWS/CLE: la linea de CLE se acorto fuerte (-130 a -161) y el total subio de 8.5 a 9.0; el over con viento de 11 mph hacia afuera tiene logica, pero CWS con 3.1 c/j y 77 ponches en 7 juegos me deja sin margen claro.",
+    "ATL/CHC: CHC a -143 necesita mas del 60% y mi lectura honesta se queda en 59-60%.",
+    "BAL/NYM: bullpen de NYM en 4.75 con K. Senga cerrando en 7.02 y precio sin ventaja real.",
+    "DET/TOR: el consenso (+100 para DET) es peor que el resto de referencias del dia y el bullpen de DET uso 8.3 entradas en dos dias.",
+    "SF/STL: sin ventaja medible en ningun mercado; el ML de STL fuera de banda util."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-09-15",
@@ -119,14 +347,55 @@
       ],
       "sin_tanda": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-09-15T22:00:19Z",
+        "min_ct": 1020,
+        "claves": [
+          "LAD@CIN@2026-09-15T22:40:00Z",
+          "ATH@TB@2026-09-15T22:40:00Z",
+          "CWS@CLE@2026-09-15T22:40:00Z",
+          "MIL@PIT@2026-09-15T22:40:00Z",
+          "PHI@WSH@2026-09-15T22:45:00Z",
+          "DET@TOR@2026-09-15T23:07:00Z",
+          "BAL@NYM@2026-09-15T23:10:00Z",
+          "ATL@CHC@2026-09-15T23:40:00Z",
+          "NYY@MIN@2026-09-15T23:40:00Z",
+          "SF@STL@2026-09-15T23:45:00Z"
+        ],
+        "juegos": [
+          "LAD@CIN",
+          "ATH@TB",
+          "CWS@CLE",
+          "MIL@PIT",
+          "PHI@WSH",
+          "DET@TOR",
+          "BAL@NYM",
+          "ATL@CHC",
+          "NYY@MIN",
+          "SF@STL"
+        ],
+        "alineaciones": [
+          20,
+          20
+        ],
+        "senales": [
+          "MIL ML",
+          "PHI ML"
+        ],
+        "sin_ventaja": 0,
+        "fuera_por_tope": 1,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 1-1 (+0.23 U).\n• BAL/NYM o8.5 (SEÑAL ELITE), perdida: BAL 2-1 NYM, 3 carreras con la línea en 8.5.\n• DET ML (SEÑAL MODERADA), ganada: DET 6-5 TOR.\n1 ganada con ventaja medida; 1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 27% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 0,
-    "seguimiento": 0,
+    "apostables": 2,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
-    "riesgo_u": 0.0,
-    "ev_min": null
+    "riesgo_u": 2.0,
+    "ev_min": 2.0
   }
 }
