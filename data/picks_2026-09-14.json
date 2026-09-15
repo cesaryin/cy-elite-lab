@@ -202,15 +202,152 @@
         "alineaciones": true,
         "abridores": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "MIA ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 125,
+      "prob_estimada": 45.0,
+      "razon": "El precio paga a MIA como perro pleno cuando el matchup no lo respalda: C. Burnes vuelve con solo 3.0 IP en su ultima salida y carga limitada, y AZ batea .683 de OPS vs derechos ante S. Alcantara. Miami llega con 5.8 c/j y .796 de OPS en la semana y lineup completo tras la vuelta de X. Edwards.",
+      "equipos": [
+        "MIA",
+        "AZ"
+      ],
+      "destacado": "MIA",
+      "hora": "8:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "matchup"
+      ],
+      "contra": "El bullpen de MIA (4.71, cerrador en 6.10) es muy inferior al de AZ (3.31) y suele decidir estos juegos parejos en las entradas 7-9.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIA",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-15T01:40:00Z",
+      "cuota_apertura_ref": 110,
+      "valor": {
+        "prob_estimada": 45.0,
+        "prob_justa": 42.69,
+        "prob_implicita": 44.44,
+        "cuota": 125,
+        "cuota_justa_mercado": 134,
+        "ev_pct": 1.25,
+        "ev_kalshi_pct": -2.64,
+        "precio_minimo": 127,
+        "precio_publicado": 127,
+        "precio_equilibrio": 123,
+        "discrepancia_pp": 2.31,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.25% por debajo del minimo exigido (2.0%)",
+        "mejor_precio": {
+          "cuota": 128,
+          "casa": "betonlineag"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-15T00:10:23Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "LAA F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": 122,
+      "prob_estimada": 45.5,
+      "razon": "El F5 aisla la unica ventaja clara del juego: R. Detmers (3.32, 28.4% K, 19 IP y 2 ER en sus tres ultimas) frente a un novato con 87 bateadores enfrentados y FIP 5.17. SEA viene caliente pero cae a .645 de OPS vs zurdos, justo lo que enfrenta hoy.",
+      "equipos": [
+        "SEA",
+        "LAA"
+      ],
+      "destacado": "LAA",
+      "hora": "8:38 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "matchup"
+      ],
+      "contra": "LAA solo produce 4.5 c/j y .689 de OPS vs zurdos: puede blanquear cinco entradas y aun asi no ganar el F5, y el empate paga como derrota.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "LAA",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-15T01:38:00Z",
+      "valor": {
+        "prob_estimada": 45.5,
+        "prob_justa": null,
+        "prob_implicita": 45.05,
+        "cuota": 122,
+        "cuota_justa_mercado": null,
+        "ev_pct": 1.01,
+        "ev_kalshi_pct": -2.84,
+        "precio_minimo": 125,
+        "precio_publicado": 125,
+        "precio_equilibrio": 120,
+        "discrepancia_pp": null,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.01% por debajo del minimo exigido (2.0%)",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 6,
+        "no_encontrados": [],
+        "campo_equivocado": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-15T00:10:23Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
-  "resumen": "Dia de valor en totales mas que en ganadores. La lectura principal es el over en Citi Field: las dos ofensivas vienen anotando, el abridor local es un novato con 4.80 y los dos bullpens son flojos. Detras, DET a precio de perro con la mejor ofensiva reciente del dia frente a un bullpen de Toronto con dos brazos quemados, y el over en Wrigley con dos abridores de control pobre y viento saliendo. Los favoritos caros (LAD, NYY, STL) se quedan fuera: a esos precios el mercado ya cobra por lo evidente.",
+  "resumen": "Cartelera corta de tres juegos y poco donde el precio se equivoque. La lectura principal esta en Chase Field: el mercado cobra a Miami como perro claro pese a que C. Burnes vuelve con carga limitada y Arizona batea flojo contra derechos. Como segunda senal, el F5 de Anaheim, donde R. Detmers domina a un lineup de Seattle que se desploma frente a zurdos. Coors queda fuera por precio y el under de Anaheim se descarta: Seattle llega demasiado caliente para firmarlo.",
   "descartes": [
     "LAD-CIN: ML fuera de banda (-220/+185) y CIN con ops .607 y 3.2 c/j no sostiene el +1.5; el under choca con LAD a 6.0 c/j.",
     "NYY-MIN: NYY -170 fuera de banda y el spread -1.5 a +100 no deja ventaja sobre la justa (47.8%); ademas 50% de lluvia.",
     "SF-STL: ML de ambos lados fuera de banda y el under tropieza con dos bullpens de 4.56 y 4.02 de ERA.",
-    "CWS-CLE: S. Newcomb viene de 1.1 y 2.0 ip (juego de bullpen encubierto) con CWS a 2.5 c/j; ni el ML de perro ni el under aguantan con CLE bateando 5.8 c/j."
+    "CWS-CLE: S. Newcomb viene de 1.1 y 2.0 ip (juego de bullpen encubierto) con CWS a 2.5 c/j; ni el ML de perro ni el under aguantan con CLE bateando 5.8 c/j.",
+    "SD-COL: SD ML -219 y COL +184 quedan fuera de la banda de precio; COL +1.5 a +123 se paga peor que su linea justa (+132), sin ventaja.",
+    "SD-COL u11.0: Coors con pf 125, viento 5 mph hacia afuera, SD a 6.2 c/j y bullpen local en 5.21 revientan las comprobaciones del under.",
+    "SEA-LAA u8.0: la linea ya bajo a 7.5 (movimiento fuerte consumido) y SEA llega con 7.2 c/j y 10 HR en seis juegos; falla la comprobacion de ofensiva caliente.",
+    "SEA ML -168 y LAA ML +142: ambos fuera del rango de precio con ventaja demostrada.",
+    "MIA-AZ o8.5 a -110: la linea justa es 50/50 exacto, no hay discrepancia que justifique posicion."
   ],
   "vivo": {
     "plan": {
@@ -342,13 +479,36 @@
         "sin_ventaja": 1,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-09-15T00:10:23Z",
+        "min_ct": 1150,
+        "claves": [
+          "SD@COL@2026-09-15T00:40:00Z",
+          "SEA@LAA@2026-09-15T01:38:00Z",
+          "MIA@AZ@2026-09-15T01:40:00Z"
+        ],
+        "juegos": [
+          "SD@COL",
+          "SEA@LAA",
+          "MIA@AZ"
+        ],
+        "alineaciones": [
+          6,
+          6
+        ],
+        "senales": [],
+        "sin_ventaja": 2,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Cierre del 13-sep: 2-1. 2 ganados sin ventaja medida, que no confirma nada; 1 perdido sin ventaja medida. En lo que se puede juzgar, el 29% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 2,
-    "seguimiento": 1,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
     "riesgo_u": 2.0,
     "ev_min": 2.0
