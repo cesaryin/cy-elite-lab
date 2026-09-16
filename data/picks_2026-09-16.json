@@ -1,0 +1,149 @@
+{
+  "picks": [],
+  "parlay": null,
+  "resumen": "",
+  "descartes": [],
+  "vivo": {
+    "plan": {
+      "fecha": "2026-09-16",
+      "creado": "2026-09-16T13:01:30Z",
+      "tandas_dia": 2,
+      "tope_tanda": 2,
+      "tope_dia": 3,
+      "margen_min": 30,
+      "una_tanda": null,
+      "tandas": [
+        {
+          "min_ct": 700,
+          "min_reloj": 220,
+          "hora": "11:40 AM",
+          "utc": "2026-09-16T16:40:00Z",
+          "juegos": [
+            {
+              "clave": "CWS@CLE",
+              "inicio_utc": "2026-09-16T17:10:00Z"
+            },
+            {
+              "clave": "SF@STL",
+              "inicio_utc": "2026-09-16T17:15:00Z"
+            },
+            {
+              "clave": "NYY@MIN",
+              "inicio_utc": "2026-09-16T17:40:00Z"
+            },
+            {
+              "clave": "DET@TOR",
+              "inicio_utc": "2026-09-16T19:07:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 3.9
+        },
+        {
+          "min_ct": 1030,
+          "min_reloj": 550,
+          "hora": "5:10 PM",
+          "utc": "2026-09-16T22:10:00Z",
+          "juegos": [
+            {
+              "clave": "LAD@CIN",
+              "inicio_utc": "2026-09-16T22:40:00Z"
+            },
+            {
+              "clave": "ATH@TB",
+              "inicio_utc": "2026-09-16T22:40:00Z"
+            },
+            {
+              "clave": "MIL@PIT",
+              "inicio_utc": "2026-09-16T22:40:00Z"
+            },
+            {
+              "clave": "PHI@WSH",
+              "inicio_utc": "2026-09-16T22:45:00Z"
+            },
+            {
+              "clave": "BAL@NYM",
+              "inicio_utc": "2026-09-16T23:10:00Z"
+            },
+            {
+              "clave": "ATL@CHC",
+              "inicio_utc": "2026-09-16T23:40:00Z"
+            },
+            {
+              "clave": "BOS@TEX",
+              "inicio_utc": "2026-09-17T00:05:00Z"
+            },
+            {
+              "clave": "KC@HOU",
+              "inicio_utc": "2026-09-17T00:10:00Z"
+            },
+            {
+              "clave": "SD@COL",
+              "inicio_utc": "2026-09-17T00:40:00Z"
+            },
+            {
+              "clave": "SEA@LAA",
+              "inicio_utc": "2026-09-17T01:38:00Z"
+            },
+            {
+              "clave": "MIA@AZ",
+              "inicio_utc": "2026-09-17T01:40:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 9.2
+        }
+      ],
+      "refrescos_lab": [
+        {
+          "min_ct": 680,
+          "min_reloj_lab": 200,
+          "hora": "11:20 AM",
+          "utc": "2026-09-16T16:20:00Z",
+          "bloque": "12:10 PM",
+          "juegos": 3
+        },
+        {
+          "min_ct": 800,
+          "min_reloj_lab": 320,
+          "hora": "1:20 PM",
+          "utc": "2026-09-16T18:20:00Z",
+          "bloque": "2:07 PM",
+          "juegos": 1
+        },
+        {
+          "min_ct": 1010,
+          "min_reloj_lab": 530,
+          "hora": "4:50 PM",
+          "utc": "2026-09-16T21:50:00Z",
+          "bloque": "5:40 PM",
+          "juegos": 6
+        },
+        {
+          "min_ct": 1100,
+          "min_reloj_lab": 620,
+          "hora": "6:20 PM",
+          "utc": "2026-09-16T23:20:00Z",
+          "bloque": "7:05 PM",
+          "juegos": 3
+        },
+        {
+          "min_ct": 1190,
+          "min_reloj_lab": 710,
+          "hora": "7:50 PM",
+          "utc": "2026-09-17T00:50:00Z",
+          "bloque": "8:38 PM",
+          "juegos": 2
+        }
+      ],
+      "sin_tanda": []
+    },
+    "tandas": []
+  },
+  "autopsia": "Señales publicadas: 1-0 (+1.00 U).\n• TEX F5 ML (SEÑAL FUERTE), ganada: BOS 2-4 TEX.\n1 ganada con ventaja medida.\nEn lo que se puede juzgar, el 26% de lo ganado fue suerte.",
+  "valor_dia": {
+    "apostables": 0,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 0.0,
+    "ev_min": null
+  }
+}

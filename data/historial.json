@@ -4616,51 +4616,6 @@
   },
   {
     "fecha": "2026-09-14",
-    "pick": "BAL/NYM o8.5",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -105,
-    "unidades": 1.0,
-    "resultado": "L",
-    "neto_u": -1.0,
-    "marcador": "BAL 2-1 NYM",
-    "veredicto": "apostable",
-    "prob_estimada": 53.5,
-    "prob_justa": 49.02,
-    "ev_pct": 4.45,
-    "precio_publicado": -109,
-    "discrepancia_pp": 4.48,
-    "capas": [
-      "pitcheo",
-      "bullpen",
-      "ofensiva",
-      "forma"
-    ],
-    "contra": "Viento soplando hacia dentro a 6.5 mph en Citi Field (pf 98) y una alineacion de BAL con tres huecos claros (.334, .476, .636) que puede morir sola.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE",
-      "a_favor": true,
-      "mov_linea": 0.5
-    },
-    "abogado": null,
-    "citas_dudosas": 1,
-    "vivo": {
-      "tanda": 1,
-      "publicado": true,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true
-    },
-    "clv": -3.7,
-    "prob_cierre": 47.5,
-    "clv_metodo": "kalshi_historico",
-    "clv_limpio": -1.5,
-    "causa": "precio",
-    "cuadrante": "mala_suerte"
-  },
-  {
-    "fecha": "2026-09-14",
     "pick": "DET ML",
     "deporte": "MLB",
     "nivel": "bronce",
@@ -4742,5 +4697,49 @@
     "clv": 0.0,
     "prob_cierre": 51.5,
     "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-15",
+    "pick": "TEX F5 ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -100,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.0,
+    "marcador": "BOS 2-4 TEX",
+    "veredicto": "apostable",
+    "prob_estimada": 51.5,
+    "prob_justa": null,
+    "ev_pct": 3.0,
+    "precio_publicado": -101,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup",
+      "parque"
+    ],
+    "contra": "Es a tres bandas: un 0-0 o 1-1 tras cinco entradas (16-17% de probabilidad) pierde igual que una derrota.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    },
+    "clv": -0.5,
+    "prob_cierre": 49.5,
+    "clv_metodo": "kalshi_historico",
+    "cuadrante": "merecido"
   }
 ]

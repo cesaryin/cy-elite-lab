@@ -120,5 +120,125 @@
     "prob_cierre": 44.5,
     "clv_metodo": "kalshi_historico",
     "cuadrante": "suerte"
+  },
+  {
+    "fecha": "2026-09-15",
+    "pick": "NYY F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -113,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "NYY 8-1 MIN",
+    "veredicto": "seguimiento",
+    "prob_estimada": 56.0,
+    "prob_justa": null,
+    "ev_pct": 5.56,
+    "precio_publicado": -119,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma"
+    ],
+    "contra": "Es mercado a tres bandas: un empate en las cinco entradas pierde, y las tres ultimas salidas de Fried fueron cortas (3.1, 5.2 y 3.2 entradas).",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": true,
+      "alineaciones": true,
+      "abridores": true
+    }
+  },
+  {
+    "fecha": "2026-09-15",
+    "pick": "TEX ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -140,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "BOS 2-4 TEX",
+    "veredicto": "seguimiento",
+    "prob_estimada": 60.0,
+    "prob_justa": 56.2,
+    "ev_pct": 2.86,
+    "precio_publicado": -136,
+    "discrepancia_pp": 3.8,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": true
+    },
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva",
+      "parque"
+    ],
+    "contra": "El bullpen de BOS es mejor (3.18, A. Chapman 1.95) y a este precio hace falta más margen del que dan los datos.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    }
+  },
+  {
+    "fecha": "2026-09-15",
+    "pick": "MIA/AZ o8.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -115,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "MIA 4-2 AZ",
+    "veredicto": "seguimiento",
+    "prob_estimada": 54.0,
+    "prob_justa": 51.08,
+    "ev_pct": 0.96,
+    "precio_publicado": -110,
+    "discrepancia_pp": 2.92,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "parque",
+      "umpire"
+    ],
+    "contra": "Si Soroka repite su nivel de temporada (3.41 FIP) con el bullpen elite de AZ detrás (3.31), el juego se queda corto y la ventaja sobre la justa es mínima.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": false,
+      "abridores": true
+    }
   }
 ]
