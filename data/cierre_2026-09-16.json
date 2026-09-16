@@ -213,7 +213,7 @@
   },
   "inicio_utc": "2026-09-16T23:00Z",
   "visto": "2026-09-16T22:53:23+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "ATL@CHC": {
   "ml": {
@@ -222,21 +222,21 @@
   },
   "total": {
    "linea": 7.5,
-   "over": -105,
-   "under": -114
+   "over": -107,
+   "under": -112
   },
   "spread": {
    "ATL": {
     "linea": 1.5,
-    "cuota": -167
+    "cuota": -164
    },
    "CHC": {
     "linea": -1.5,
-    "cuota": 138
+    "cuota": 135
    }
   },
   "inicio_utc": "2026-09-16T23:40Z",
-  "visto": "2026-09-16T22:53:23+00:00",
+  "visto": "2026-09-16T23:20:25+00:00",
   "cerrado": false
  },
  "BOS@TEX": {
@@ -260,13 +260,13 @@
    }
   },
   "inicio_utc": "2026-09-17T00:05Z",
-  "visto": "2026-09-16T22:53:23+00:00",
+  "visto": "2026-09-16T23:20:25+00:00",
   "cerrado": false
  },
  "KC@HOU": {
   "ml": {
    "KC": 141,
-   "HOU": -171
+   "HOU": -170
   },
   "total": {
    "linea": 9.0,
@@ -276,15 +276,15 @@
   "spread": {
    "KC": {
     "linea": 1.5,
-    "cuota": -149
+    "cuota": -155
    },
    "HOU": {
     "linea": -1.5,
-    "cuota": 124
+    "cuota": 128
    }
   },
   "inicio_utc": "2026-09-17T00:10Z",
-  "visto": "2026-09-16T22:53:23+00:00",
+  "visto": "2026-09-16T23:20:25+00:00",
   "cerrado": false
  },
  "SD@COL": {
@@ -308,7 +308,7 @@
    }
   },
   "inicio_utc": "2026-09-17T00:40Z",
-  "visto": "2026-09-16T22:53:23+00:00",
+  "visto": "2026-09-16T23:20:25+00:00",
   "cerrado": false
  },
  "SEA@LAA": {
@@ -332,31 +332,31 @@
    }
   },
   "inicio_utc": "2026-09-17T01:38Z",
-  "visto": "2026-09-16T22:53:23+00:00",
+  "visto": "2026-09-16T23:20:25+00:00",
   "cerrado": false
  },
  "MIA@AZ": {
   "ml": {
-   "MIA": 113,
-   "AZ": -137
+   "MIA": 119,
+   "AZ": -144
   },
   "total": {
-   "linea": 8.5,
-   "over": -120,
-   "under": 100
+   "linea": 9.0,
+   "over": 102,
+   "under": -123
   },
   "spread": {
    "MIA": {
     "linea": 1.5,
-    "cuota": -187
+    "cuota": -175
    },
    "AZ": {
     "linea": -1.5,
-    "cuota": 153
+    "cuota": 144
    }
   },
   "inicio_utc": "2026-09-17T01:40Z",
-  "visto": "2026-09-16T22:53:23+00:00",
+  "visto": "2026-09-16T23:20:25+00:00",
   "cerrado": false
  }
 }
