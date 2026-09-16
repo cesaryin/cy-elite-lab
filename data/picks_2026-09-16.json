@@ -209,6 +209,210 @@
         "alineaciones": true,
         "abridores": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "MIL F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": 127,
+      "prob_estimada": 46.5,
+      "razon": "El mercado mas limpio del dia (vig 1.1) paga +127 por el lado con mejor abridor y mejor bate: L. Henderson llega con 25.6% de K-BB frente a un lineup de PIT congelado (2.7 c/j y ops .649 en la semana), mientras MIL viene de .985 ops y 9.8 c/j en cinco juegos y batea .765 contra derechos.",
+      "equipos": [
+        "MIL",
+        "PIT"
+      ],
+      "destacado": "MIL",
+      "hora": "5:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "forma"
+      ],
+      "contra": "El empate en cinco entradas paga como derrota (19% segun la linea justa) y J. Jones viene de 7 IP sin carreras, con PNC y un umpire que resta carreras favoreciendo un 0-0 temprano.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-16T22:40:00Z",
+      "valor": {
+        "prob_estimada": 46.5,
+        "prob_justa": null,
+        "prob_implicita": 44.05,
+        "cuota": 127,
+        "cuota_justa_mercado": null,
+        "ev_pct": 5.55,
+        "ev_kalshi_pct": 1.63,
+        "precio_minimo": 120,
+        "precio_publicado": 120,
+        "precio_equilibrio": 116,
+        "discrepancia_pp": null,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "cuota +127 fuera del rango -162/+125",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "MEDIA"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-16T22:10:19Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "LAD F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": -150,
+      "prob_estimada": 62.5,
+      "razon": "El ML completo se va de rango, pero el F5 aisla la brecha real entre abridores: B. Snell domina y A. Abbott llega de 2.0 IP con 7 limpias. CIN esta en caida libre al bate (.191 y 2.5 c/j en seis juegos, 62 ponches) contra un lineup visitante de 5.8 c/j y .821 ops.",
+      "equipos": [
+        "LAD",
+        "CIN"
+      ],
+      "destacado": "LAD",
+      "hora": "5:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "matchup"
+      ],
+      "contra": "Snell lleva pocos bateadores enfrentados este ano y con 10.4% de boletos puede complicarse solo; ademas el empate en el F5 cuenta como perdida en este mercado y CIN batea mejor contra zurdos (.744) que contra derechos.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "LAD",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-16T22:40:00Z",
+      "valor": {
+        "prob_estimada": 62.5,
+        "prob_justa": null,
+        "prob_implicita": 60.0,
+        "cuota": -150,
+        "cuota_justa_mercado": null,
+        "ev_pct": 4.17,
+        "ev_kalshi_pct": 1.37,
+        "precio_minimo": -148,
+        "precio_publicado": -148,
+        "precio_equilibrio": -166,
+        "discrepancia_pp": null,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +4.17% por debajo del minimo exigido (4.5%)",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "MEDIA"
+        },
+        "sombra": {
+          "extra_umbral_1_5": true,
+          "extra_umbral_plano": true
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-16T22:10:19Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "BOS/TEX u8.0",
+      "deporte": "MLB",
+      "tipo": "u8.0",
+      "cuota": -110,
+      "prob_estimada": 53.5,
+      "razon": "Las dos ofensivas estan frias a la vez (BOS 3.4 c/j y .682 ops, TEX 3.8 c/j y .653 en la semana) en un parque techado con factor 88, el mas supresor del dia. Los dos bullpenes estan frescos y son de los mejores del calendario (3.14 y 3.33) y el umpire resta un 0.3%.",
+      "equipos": [
+        "BOS",
+        "TEX"
+      ],
+      "destacado": null,
+      "hora": "7:05 PM CT",
+      "capas": [
+        "ofensiva",
+        "parque",
+        "bullpen"
+      ],
+      "contra": "M. Gore viene de dos salidas cortas (4.0 IP 4 ER y 3.0 IP 5 ER) y ambos lineups castigan mejor a zurdos (.748 y .763), asi que un abridor que no pase de la cuarta revienta el numero.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 8.0
+      },
+      "inicio_utc": "2026-09-17T00:05:00Z",
+      "cuota_apertura_ref": -109,
+      "valor": {
+        "prob_estimada": 53.5,
+        "prob_justa": 50.0,
+        "prob_implicita": 52.38,
+        "cuota": -110,
+        "cuota_justa_mercado": -100,
+        "ev_pct": 2.14,
+        "ev_kalshi_pct": -1.19,
+        "precio_minimo": -108,
+        "precio_publicado": -108,
+        "precio_equilibrio": -115,
+        "discrepancia_pp": 3.5,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +2.14% por debajo del minimo exigido (2.6%)",
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": true,
+          "extra_umbral_plano": true
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 11,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-16T22:10:19Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
@@ -217,7 +421,12 @@
     "CWS/CLE u7.0: la línea ya cayó de 8.0 a 7.0 y CLE llega a 5.3 carreras por juego; no cumple el requisito de dos ofensivas frías.",
     "NYY ML -160: la probabilidad honesta no se separa lo suficiente del 59.3% de la línea justa para un favorito tan cargado.",
     "SF/STL: abridores flojos por ambos lados y línea justa del total pegada al 50%; sin ventaja nombrable en ningún mercado.",
-    "DET team total o4.5: sin línea justa disponible para ese mercado, no hay referencia fiable de valor."
+    "DET team total o4.5: sin línea justa disponible para ese mercado, no hay referencia fiable de valor.",
+    "CHC ML: a -161 la ventaja sobre la linea justa es minima pese a que JR Ritchie llega sin ritmo de rotacion; el precio ya se acorto y no queda margen.",
+    "HOU, SD, TB y LAD en ML: cuotas fuera de la banda operativa.",
+    "MIA/AZ o8.5: los dos bullpenes estan destrozados (tres relevistas quemados por bando) pero el precio -120 ya cobra todo ese escenario.",
+    "BAL/NYM o9.0: viento hacia afuera y bullpenes gastados, aunque la linea ya subio de 8.5 a 9.0 y el movimiento fuerte hacia BAL indica que el mercado va por delante.",
+    "ATL/CHC u7.5: viento entrando fuerte en Wrigley, pero ninguna de las dos ofensivas esta fria (5.1 y 5.8 c/j), asi que el under no pasa el filtro."
   ],
   "vivo": {
     "plan": {
@@ -380,13 +589,52 @@
         "sin_ventaja": 0,
         "fuera_por_tope": 1,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-09-16T22:10:19Z",
+        "min_ct": 1030,
+        "claves": [
+          "LAD@CIN@2026-09-16T22:40:00Z",
+          "ATH@TB@2026-09-16T22:40:00Z",
+          "MIL@PIT@2026-09-16T22:40:00Z",
+          "PHI@WSH@2026-09-16T22:45:00Z",
+          "BAL@NYM@2026-09-16T23:10:00Z",
+          "ATL@CHC@2026-09-16T23:40:00Z",
+          "BOS@TEX@2026-09-17T00:05:00Z",
+          "KC@HOU@2026-09-17T00:10:00Z",
+          "SD@COL@2026-09-17T00:40:00Z",
+          "SEA@LAA@2026-09-17T01:38:00Z",
+          "MIA@AZ@2026-09-17T01:40:00Z"
+        ],
+        "juegos": [
+          "LAD@CIN",
+          "ATH@TB",
+          "MIL@PIT",
+          "PHI@WSH",
+          "BAL@NYM",
+          "ATL@CHC",
+          "BOS@TEX",
+          "KC@HOU",
+          "SD@COL",
+          "SEA@LAA",
+          "MIA@AZ"
+        ],
+        "alineaciones": [
+          20,
+          22
+        ],
+        "senales": [],
+        "sin_ventaja": 3,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 1-0 (+1.00 U).\n• TEX F5 ML (SEÑAL FUERTE), ganada: BOS 2-4 TEX.\n1 ganada con ventaja medida.\nEn lo que se puede juzgar, el 26% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 2,
-    "seguimiento": 1,
+    "seguimiento": 4,
     "sin_prob_estimada": 0,
     "riesgo_u": 2.0,
     "ev_min": 2.0
