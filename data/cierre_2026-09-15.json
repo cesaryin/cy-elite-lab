@@ -308,31 +308,31 @@
    }
   },
   "inicio_utc": "2026-09-16T01:38Z",
-  "visto": "2026-09-16T00:45:59+00:00",
+  "visto": "2026-09-16T00:50:18+00:00",
   "cerrado": false
  },
  "MIA@AZ": {
   "ml": {
-   "MIA": 124,
-   "AZ": -150
+   "MIA": 128,
+   "AZ": -155
   },
   "total": {
    "linea": 8.5,
-   "over": -121,
+   "over": -122,
    "under": 101
   },
   "spread": {
    "MIA": {
     "linea": 1.5,
-    "cuota": -168
+    "cuota": -165
    },
    "AZ": {
     "linea": -1.5,
-    "cuota": 139
+    "cuota": 136
    }
   },
   "inicio_utc": "2026-09-16T01:40Z",
-  "visto": "2026-09-16T00:45:59+00:00",
+  "visto": "2026-09-16T00:50:18+00:00",
   "cerrado": false
  },
  "BOS@TEX": {
