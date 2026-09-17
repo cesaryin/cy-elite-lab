@@ -333,7 +333,7 @@
   },
   "inicio_utc": "2026-09-17T01:38Z",
   "visto": "2026-09-17T01:10:13+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "MIA@AZ": {
   "ml": {
@@ -357,6 +357,6 @@
   },
   "inicio_utc": "2026-09-17T01:40Z",
   "visto": "2026-09-17T01:10:13+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
