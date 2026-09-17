@@ -564,6 +564,119 @@
      "inicio_utc": "2026-09-18T01:38Z"
     }
    }
+  },
+  {
+   "ts": "2026-09-17T15:50:43+00:00",
+   "juegos": {
+    "MIL@PIT": {
+     "ml": {
+      "MIL": -143,
+      "PIT": 118
+     },
+     "total": {
+      "linea": 8.5,
+      "over": -122,
+      "under": 101
+     },
+     "inicio_utc": "2026-09-17T16:35Z"
+    },
+    "LAD@CIN": {
+     "ml": {
+      "LAD": -169,
+      "CIN": 139
+     },
+     "total": {
+      "linea": 10.0,
+      "over": -105,
+      "under": -115
+     },
+     "inicio_utc": "2026-09-17T16:40Z"
+    },
+    "ATH@TB": {
+     "ml": {
+      "ATH": 224,
+      "TB": -279
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -115,
+      "under": -105
+     },
+     "inicio_utc": "2026-09-17T17:10Z"
+    },
+    "SD@COL": {
+     "ml": {
+      "SD": -202,
+      "COL": 166
+     },
+     "total": {
+      "linea": 10.5,
+      "over": -121,
+      "under": 101
+     },
+     "inicio_utc": "2026-09-17T19:10Z"
+    },
+    "PHI@NYM": {
+     "ml": {
+      "PHI": 109,
+      "NYM": -132
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -119,
+      "under": -101
+     },
+     "inicio_utc": "2026-09-17T23:15Z"
+    },
+    "KC@HOU": {
+     "ml": {
+      "KC": 128,
+      "HOU": -155
+     },
+     "total": {
+      "linea": 9.0,
+      "over": -102,
+      "under": -118
+     },
+     "inicio_utc": "2026-09-17T23:15Z"
+    },
+    "DET@CWS": {
+     "ml": {
+      "DET": -103,
+      "CWS": -117
+     },
+     "total": {
+      "linea": 8.5,
+      "over": -107,
+      "under": -112
+     },
+     "inicio_utc": "2026-09-17T23:40Z"
+    },
+    "BOS@TEX": {
+     "ml": {
+      "BOS": -126,
+      "TEX": 105
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -102,
+      "under": -118
+     },
+     "inicio_utc": "2026-09-18T00:05Z"
+    },
+    "MIN@LAA": {
+     "ml": {
+      "MIN": -112,
+      "LAA": -108
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -108,
+      "under": -112
+     },
+     "inicio_utc": "2026-09-18T01:38Z"
+    }
+   }
   }
  ]
 }
