@@ -218,16 +218,252 @@
         "alineaciones": true,
         "abridores": true
       }
+    },
+    {
+      "nivel": "plata",
+      "pick": "KC/HOU u9.0",
+      "deporte": "MLB",
+      "tipo": "u9.0",
+      "cuota": -119,
+      "prob_estimada": 56.5,
+      "razon": "Las dos ofensivas estan apagadas: KC 2.4 c/j y ops .601 en la semana, HOU 2.5 c/j, y en los ultimos 10 ambas promedian 3.3 carreras por juego. Parque neutro con techo (sin viento) y ningun bullpen quemado; con linea de 9.0 el under tiene margen de sobra.",
+      "equipos": [
+        "KC",
+        "HOU"
+      ],
+      "destacado": null,
+      "hora": "6:15 PM CT",
+      "capas": [
+        "ofensiva",
+        "forma",
+        "bullpen",
+        "parque"
+      ],
+      "contra": "M. Ullola solo tiene 1 IP en su ultima salida: si dura poco, HOU tira de bullpen desde temprano y el juego se alarga en carreras.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 9.0
+      },
+      "inicio_utc": "2026-09-17T23:15:00Z",
+      "cuota_apertura_ref": -118,
+      "valor": {
+        "prob_estimada": 56.5,
+        "prob_justa": 51.95,
+        "prob_implicita": 54.34,
+        "cuota": -119,
+        "cuota_justa_mercado": -108,
+        "ev_pct": 3.98,
+        "ev_kalshi_pct": 0.78,
+        "precio_minimo": -121,
+        "precio_publicado": -121,
+        "precio_equilibrio": -129,
+        "discrepancia_pp": 4.55,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +3.98% con ventaja, fuera por el tope: el día ya tenía 3 señales",
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        },
+        "veredicto_original": "apostable"
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 5,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-17T22:30:20Z",
+        "publicado": false,
+        "fuera_por_tope": true,
+        "motivo_tope": "el día ya tenía 3 señales",
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "oro",
+      "pick": "DET ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -104,
+      "prob_estimada": 53.5,
+      "razon": "DET llega con la ofensiva mas caliente del dia (7.0 c/j y ops .866 en la semana, 5.8 carreras por juego en sus ultimos 10) frente a un lineup de CWS en 3.7 c/j y .650 con 75 ponches. Ademas el bullpen visitante (3.53) aguanta el cierre y el precio esta en pick'em.",
+      "equipos": [
+        "DET",
+        "CWS"
+      ],
+      "destacado": "DET",
+      "hora": "6:40 PM CT",
+      "capas": [
+        "ofensiva",
+        "pitcheo",
+        "bullpen",
+        "forma"
+      ],
+      "contra": "CWS batea mejor contra zurdos (.743 ops) y F. Valdez tiene apenas 8.6% de K-BB, asi que el matchup de mano no favorece a DET.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-17T23:40:00Z",
+      "cuota_apertura_ref": -104,
+      "valor": {
+        "prob_estimada": 53.5,
+        "prob_justa": 49.22,
+        "prob_implicita": 50.98,
+        "cuota": -104,
+        "cuota_justa_mercado": 103,
+        "ev_pct": 4.94,
+        "ev_kalshi_pct": 1.51,
+        "precio_minimo": -109,
+        "precio_publicado": -109,
+        "precio_equilibrio": -115,
+        "discrepancia_pp": 4.28,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.94% · no tomar peor de -109",
+        "mejor_precio": {
+          "cuota": 101,
+          "casa": "betus"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "MEDIA",
+          "a_favor": true,
+          "delta_pp": 3.1
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 8,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-17T22:30:20Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "LAA ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -111,
+      "prob_estimada": 54.0,
+      "razon": "MIN llega hundido: 2.8 c/j y ops .601 en la semana, 2.7 anotadas y 6.1 recibidas por juego en sus ultimos 10, con el bullpen con 9.5 IP en dos dias y Y. Gomez quemado. W. Urena (2.88) viene de dos salidas largas y LAA saca a Neto-Trout arriba. Ventaja corta sobre la linea justa.",
+      "equipos": [
+        "MIN",
+        "LAA"
+      ],
+      "destacado": "LAA",
+      "hora": "8:38 PM CT",
+      "capas": [
+        "ofensiva",
+        "bullpen",
+        "pitcheo",
+        "forma"
+      ],
+      "contra": "MIN batea mejor contra derechos (.741 ops) y el bullpen de LAA (4.32) es el peor de los dos en ERA.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "LAA",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-18T01:38:00Z",
+      "cuota_apertura_ref": -111,
+      "valor": {
+        "prob_estimada": 54.0,
+        "prob_justa": 50.78,
+        "prob_implicita": 52.61,
+        "cuota": -111,
+        "cuota_justa_mercado": -103,
+        "ev_pct": 2.65,
+        "ev_kalshi_pct": -0.67,
+        "precio_minimo": -110,
+        "precio_publicado": -110,
+        "precio_equilibrio": -117,
+        "discrepancia_pp": 3.22,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +2.65% por debajo del minimo exigido (2.7%)",
+        "mejor_precio": {
+          "cuota": -104,
+          "casa": "betrivers"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": false,
+          "delta_pp": -4.6
+        },
+        "sombra": {
+          "extra_umbral_1_5": true,
+          "extra_umbral_plano": true
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 8,
+        "no_encontrados": [],
+        "campo_equivocado": [
+          {
+            "numero": "6.1",
+            "frase": "ga hundido: 2.8 c/j y ops .601 en la semana, 2.7 anotadas y 6.1 recibidas por juego",
+            "esta_en": [
+              "forma.away.carreras_contra"
+            ]
+          }
+        ],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-17T22:30:20Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
-  "resumen": "Dia de cuatro juegos con la mayoria de moneylines fuera de banda por precio, asi que el valor se concentra en las cinco primeras entradas, donde los abridores estan desnivelados. LAD contra B. Singer y SD contra T. Gordon son las dos lecturas mas claras, ambas en el mercado mas limpio del dia. En MIL/PIT el contraste ofensivo es enorme (9.2 c/j contra 2.7), pero el precio ya lo cobra casi entero y las ultimas salidas de K. Harrison obligan a bajar el peso. Ningun under supera el filtro: los bullpenes de ATH y COL y los parques lo impiden.",
+  "resumen": "Dia de cuatro juegos con la mayoria de moneylines fuera de banda por precio, asi que el valor se concentra en las cinco primeras entradas, donde los abridores estan desnivelados. LAD contra B. Singer y SD contra T. Gordon son las dos lecturas mas claras, ambas en el mercado mas limpio del dia. En MIL/PIT el contraste ofensivo es enorme (9.2 c/j contra 2.7), pero el precio ya lo cobra casi entero y las ultimas salidas de K. Harrison obligan a bajar el peso. Ningun under supera el filtro: los bullpenes de ATH y COL y los parques lo impiden.\n\nJornada de lineups frios, y ahi esta el mejor numero del dia: KC y HOU llegan las dos por debajo de 3.5 carreras por juego, en un parque neutro con techo y sin bullpens quemados, con el total en 9.0. Despues, DET es el unico equipo realmente caliente al bate y el mercado lo paga en pick'em contra un CWS que poncha demasiado. Cierra LAA, que recibe a un MIN hundido en ofensiva y con el bullpen agotado, aunque ahi la ventaja es corta y conviene decirlo.",
   "descartes": [
     "ATH/TB: ML de TB fuera de banda de precio; TB Spread -1.5 a -120 solo me sale 55% contra 52.17 de la justa, insuficiente para ese precio.",
     "ATH/TB u7.5: D. Rasmussen invita, pero el bullpen de ATH (5.07 ERA, H. Harris quemado) y TB a 4.5 c/j rompen dos de las cuatro comprobaciones del under.",
     "LAD/CIN o9.5 a -120: parque 104, umpire +1.4% y bullpen de CIN con tres quemados apuntan arriba, pero ambas ofensivas vienen frias (3.8 y 3.3 c/j) y no alcanzo el valor exigido.",
     "SD/COL u10.5: la linea bajo de 11.0 a 10.5 con fuerza, pero Coors con umpire de +5%, bullpen de COL en 5.29 y SD caliente hacen el under indefendible.",
-    "MIL/PIT u8.5: solo PIT esta fria; MIL a 9.2 c/j y viento de 5 mph hacia afuera invalidan el under."
+    "MIL/PIT u8.5: solo PIT esta fria; MIL a 9.2 c/j y viento de 5 mph hacia afuera invalidan el under.",
+    "BOS/TEX: S. Gray domina, pero la ofensiva de BOS esta en 3.2 c/j y el under 7.5 choca con TEX en 4.7 c/j; ML de BOS apenas 1-2 puntos sobre la linea justa.",
+    "PHI/NYM: el over 8.0 tiene viento a favor y bullpen flojo de NYM, pero ambas ofensivas estan en 3.8 c/j y N. McLean (3.24) frena el argumento; sin ventaja clara.",
+    "HOU ML: precio cargado a -147 con la ofensiva local en 2.5 c/j y un abridor sin recorrido; el valor del juego esta en el total.",
+    "Spreads -1.5 de la jornada: ninguna ofensiva respalda margen de dos carreras con estos precios."
   ],
   "vivo": {
     "plan": {
@@ -358,15 +594,44 @@
         "sin_ventaja": 1,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-09-17T22:30:20Z",
+        "min_ct": 1050,
+        "claves": [
+          "KC@HOU@2026-09-17T23:15:00Z",
+          "PHI@NYM@2026-09-17T23:15:00Z",
+          "DET@CWS@2026-09-17T23:40:00Z",
+          "BOS@TEX@2026-09-18T00:05:00Z",
+          "MIN@LAA@2026-09-18T01:38:00Z"
+        ],
+        "juegos": [
+          "KC@HOU",
+          "PHI@NYM",
+          "DET@CWS",
+          "BOS@TEX",
+          "MIN@LAA"
+        ],
+        "alineaciones": [
+          10,
+          10
+        ],
+        "senales": [
+          "DET ML"
+        ],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 1,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 0-2 (-2.00 U).\n• CLE F5 ML (SEÑAL ELITE), perdida: CWS 3-6 CLE.\n• NYY F5 ML (SEÑAL ELITE), perdida: NYY 4-5 MIN.\n2 perdidas con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 26% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 2,
-    "seguimiento": 1,
+    "apostables": 3,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
-    "riesgo_u": 2.0,
+    "riesgo_u": 3.0,
     "ev_min": 2.0
   }
 }
