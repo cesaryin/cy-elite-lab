@@ -78,5 +78,167 @@
       "alineaciones": false,
       "abridores": true
     }
+  },
+  {
+    "fecha": "2026-09-16",
+    "pick": "DET ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 112,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "DET 1-5 TOR",
+    "veredicto": "seguimiento",
+    "prob_estimada": 48.5,
+    "prob_justa": 45.33,
+    "ev_pct": 2.82,
+    "precio_publicado": 111,
+    "discrepancia_pp": 3.17,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma"
+    ],
+    "contra": "K. Montero tiene fip 4.15 y solo 16.5% de ponches, y el bullpen de TOR (3.44 con L. Varland en 1.32) es claramente superior al cierre visitante.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": true,
+      "alineaciones": true,
+      "abridores": true
+    }
+  },
+  {
+    "fecha": "2026-09-16",
+    "pick": "MIL F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 127,
+    "unidades": 0.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "MIL 5-4 PIT",
+    "veredicto": "seguimiento",
+    "prob_estimada": 46.5,
+    "prob_justa": null,
+    "ev_pct": 5.55,
+    "precio_publicado": 120,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma"
+    ],
+    "contra": "El empate en cinco entradas paga como derrota (19% segun la linea justa) y J. Jones viene de 7 IP sin carreras, con PNC y un umpire que resta carreras favoreciendo un 0-0 temprano.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    }
+  },
+  {
+    "fecha": "2026-09-16",
+    "pick": "LAD F5 ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -150,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "LAD 2-6 CIN",
+    "veredicto": "seguimiento",
+    "prob_estimada": 62.5,
+    "prob_justa": null,
+    "ev_pct": 4.17,
+    "precio_publicado": -148,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "Snell lleva pocos bateadores enfrentados este ano y con 10.4% de boletos puede complicarse solo; ademas el empate en el F5 cuenta como perdida en este mercado y CIN batea mejor contra zurdos (.744) que contra derechos.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    }
+  },
+  {
+    "fecha": "2026-09-16",
+    "pick": "BOS/TEX u8.0",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -110,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "BOS 3-7 TEX",
+    "veredicto": "seguimiento",
+    "prob_estimada": 53.5,
+    "prob_justa": 50.0,
+    "ev_pct": 2.14,
+    "precio_publicado": -108,
+    "discrepancia_pp": 3.5,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "parque",
+      "bullpen"
+    ],
+    "contra": "M. Gore viene de dos salidas cortas (4.0 IP 4 ER y 3.0 IP 5 ER) y ambos lineups castigan mejor a zurdos (.748 y .763), asi que un abridor que no pase de la cuarta revienta el numero.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    }
   }
 ]

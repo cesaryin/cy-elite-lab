@@ -4741,5 +4741,97 @@
     "clv": 0.0,
     "prob_cierre": 51.5,
     "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-16",
+    "pick": "NYY F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -100,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "NYY 4-5 MIN",
+    "veredicto": "apostable",
+    "prob_estimada": 53.0,
+    "prob_justa": null,
+    "ev_pct": 6.0,
+    "precio_publicado": -108,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma"
+    ],
+    "contra": "Rodón camina al 12.1% y una entrada de boletos en Target Field (pf 106) empata el F5, donde el empate hace perder la posición.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    },
+    "clv": 1.5,
+    "prob_cierre": 51.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "ajustado",
+    "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-09-16",
+    "pick": "CLE F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -104,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "CWS 3-6 CLE",
+    "veredicto": "apostable",
+    "prob_estimada": 54.0,
+    "prob_justa": null,
+    "ev_pct": 5.92,
+    "precio_publicado": -111,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "CLE batea .661 vs zurdos en temporada y el dinero acortó a CWS de +148 a +129, movimiento fuerte en contra.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    },
+    "clv": -0.5,
+    "prob_cierre": 50.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
   }
 ]

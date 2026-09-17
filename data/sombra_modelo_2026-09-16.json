@@ -7,13 +7,352 @@
    "n": 1,
    "lote": "msgbatch_01EmnTYuwv7kpSwtUBvKCo2Q",
    "enviado_utc": "2026-09-16T16:42:01Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-17T13:00:32Z",
+   "uso": {
+    "tokens_entrada": 33467,
+    "tokens_salida": 6373,
+    "coste": 0.3267
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "DET ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": 112,
+     "prob_estimada": 49.0,
+     "razon": "El mercado cobra a TOR como favorito con M. Scherzer (ERA 6.38, FIP 5.12) frente a K. Montero (3.55), y DET llega con la ofensiva mas caliente de la tanda: 8.0 c/j y ops .911 en la semana, .726 vs derechos. TOR anota 4.2 c/j y uso cinco relevistas ayer. Perro con ofensiva funcional y ventaja real de abridor.",
+     "equipos": [
+      "DET",
+      "TOR"
+     ],
+     "destacado": "DET",
+     "hora": "2:07 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma",
+      "matchup"
+     ],
+     "contra": "El bullpen de TOR (L. Varland 1.32) es mejor que el de DET con K. Finnegan quemado, y K. Montero viene de dos salidas cortas de 4.0 IP.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "DET",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": 109,
+     "valor": {
+      "prob_estimada": 49.0,
+      "prob_justa": 45.33,
+      "prob_implicita": 47.17,
+      "cuota": 112,
+      "cuota_justa_mercado": 121,
+      "ev_pct": 3.88,
+      "ev_kalshi_pct": 0.18,
+      "precio_minimo": 109,
+      "precio_publicado": 109,
+      "precio_equilibrio": 105,
+      "discrepancia_pp": 3.67,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +3.88% · no tomar peor de +109",
+      "mejor_precio": {
+       "cuota": 119,
+       "casa": "lowvig"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "NYY F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -100,
+     "prob_estimada": 53.0,
+     "razon": "C. Rodón (ERA 2.94) contra Z. Matthews (4.98, 2.1 IP y 5 ER en su ultima salida) a precio de moneda al aire en el mercado mas limpio del dia. MIN batea .586 de ops y 2.3 c/j en la semana con B. Ross (ops .000) en la alineacion; NYY anota 6.0 c/j con 15 HR. El F5 evita pagar -160 por el juego completo.",
+     "equipos": [
+      "NYY",
+      "MIN"
+     ],
+     "destacado": "NYY",
+     "hora": "12:40 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma"
+     ],
+     "contra": "El empate del F5 (17%) es derrota en Kalshi y C. Rodón camina al 12.1%: dos bases por bolas en una entrada bastan para que MIN empate a cinco.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "NYY",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 53.0,
+      "prob_justa": null,
+      "prob_implicita": 50.0,
+      "cuota": -100,
+      "cuota_justa_mercado": null,
+      "ev_pct": 6.0,
+      "ev_kalshi_pct": 2.5,
+      "precio_minimo": -108,
+      "precio_publicado": -108,
+      "precio_equilibrio": -112,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +6.00% · no tomar peor de -108",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "CLE F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -104,
+     "prob_estimada": 52.5,
+     "razon": "P. Messick (ERA 2.51, K 26%) contra A. Kay, que no pasa de 4.2 IP ni baja de 3 ER en sus tres ultimas salidas, y el mercado lo paga a -104. CLE anota 5.3 c/j en la semana; CWS 3.6 c/j y 79 K en 7 juegos. Ventaja honesta pero corta: es la lectura mas floja de la tanda.",
+     "equipos": [
+      "CWS",
+      "CLE"
+     ],
+     "destacado": "CLE",
+     "hora": "12:10 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva"
+     ],
+     "contra": "El dinero movio la linea FUERTE hacia CWS (148 a 129) y CLE batea solo .661 vs zurdos, justo la mano de A. Kay.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "CLE",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 52.5,
+      "prob_justa": null,
+      "prob_implicita": 50.98,
+      "cuota": -104,
+      "cuota_justa_mercado": null,
+      "ev_pct": 2.98,
+      "ev_kalshi_pct": -0.45,
+      "precio_minimo": -105,
+      "precio_publicado": -105,
+      "precio_equilibrio": -110,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +2.98% · no tomar peor de -105",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    }
+   ],
+   "resumen": "Tanda de mediodia con dos abridores claramente superiores a precio de moneda al aire (C. Rodón en el F5 de NYY, P. Messick en el F5 de CLE) y un perro con ofensiva encendida: DET llega anotando 8.0 c/j frente a M. Scherzer con ERA 6.38. En SF/STL no aparece ventaja en ningun mercado y los unders del dia se caen por bullpens cargados."
   },
   {
    "n": 2,
    "lote": "msgbatch_01JXUKH13C2H4EaEj2wQmDkp",
    "enviado_utc": "2026-09-16T22:13:08Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-17T13:00:33Z",
+   "uso": {
+    "tokens_entrada": 61636,
+    "tokens_salida": 7330,
+    "coste": 0.4914
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "CHC F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -113,
+     "prob_estimada": 56.0,
+     "razon": "La ventaja esta en las cinco primeras entradas: J. Ritchie no lanza desde el 2-ago, camina al 14.1% y trae FIP 4.95, frente a S. Imanaga con dos salidas seguidas de 6 IP. CHC batea .756 de ops vs derechos y 5.8 c/j en la semana; el F5 aisla eso del bullpen elite de ATL (3.03).",
+     "equipos": [
+      "ATL",
+      "CHC"
+     ],
+     "destacado": "CHC",
+     "hora": "6:40 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+     ],
+     "contra": "El empate en 5 entradas (16.7%) pierde, y con viento hacia dentro de -7.8 mph en un parque pf 94 un F5 0-0 o 1-1 es muy posible.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "CHC",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 56.0,
+      "prob_justa": null,
+      "prob_implicita": 53.05,
+      "cuota": -113,
+      "cuota_justa_mercado": null,
+      "ev_pct": 5.56,
+      "ev_kalshi_pct": 2.27,
+      "precio_minimo": -119,
+      "precio_publicado": -119,
+      "precio_equilibrio": -127,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +5.56% · no tomar peor de -119",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "BAL/NYM o9",
+     "deporte": "MLB",
+     "tipo": "o9",
+     "cuota": -115,
+     "prob_estimada": 55.0,
+     "razon": "Dos bullpens quemados a la vez: BAL con 9.6 IP en dos dias y 3 relevistas repetidos, NYM con 8.2 IP, K. Senga quemado y era 4.99. NYM viene a 6.2 c/j y ops .789, BAL a 4.8 c/j; ambos con 7/10 overs. C. Bassitt (4.88) y X. Curry (FIP 4.59) no frenan eso, y el viento sopla 6.5 mph hacia afuera.",
+     "equipos": [
+      "BAL",
+      "NYM"
+     ],
+     "destacado": null,
+     "hora": "6:10 PM CT",
+     "capas": [
+      "bullpen",
+      "ofensiva",
+      "forma",
+      "clima"
+     ],
+     "contra": "El total ya subio a 9.0 y necesita 10 carreras en un parque pf 98; si X. Curry repite su ERA 3.44 y no su FIP, el over se queda corto.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "over",
+      "linea": 9.0
+     },
+     "cuota_apertura_ref": -110,
+     "valor": {
+      "prob_estimada": 55.0,
+      "prob_justa": 50.85,
+      "prob_implicita": 53.49,
+      "cuota": -115,
+      "cuota_justa_mercado": -103,
+      "ev_pct": 2.83,
+      "ev_kalshi_pct": -0.43,
+      "precio_minimo": -114,
+      "precio_publicado": -114,
+      "precio_equilibrio": -122,
+      "discrepancia_pp": 4.15,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +2.83% por debajo del minimo exigido (2.9%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE",
+       "a_favor": true,
+       "mov_linea": 0.5
+      },
+      "sombra": {
+       "extra_umbral_1_5": true,
+       "extra_umbral_plano": true
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "PHI F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -117,
+     "prob_estimada": 56.5,
+     "razon": "Z. Wheeler (k 30%, tres salidas seguidas de 6-7 IP con 1 ER) contra J. Simpson con ERA 6.75 y sin historial de salidas en los datos: brecha real de abridor que el F5 aprovecha sin depender de nadie mas. PHI impulsa 5.2 c/j en la semana y batea .710 vs zurdos.",
+     "equipos": [
+      "PHI",
+      "WSH"
+     ],
+     "destacado": "PHI",
+     "hora": "5:45 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+     ],
+     "contra": "PHI trae ops .678 en la semana y J. Realmuto/J. Crawford por debajo de .670; si no convierte contra J. Simpson, el empate del F5 (14.7%) se lleva la posicion.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "PHI",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 56.5,
+      "prob_justa": null,
+      "prob_implicita": 53.92,
+      "cuota": -117,
+      "cuota_justa_mercado": null,
+      "ev_pct": 4.79,
+      "ev_kalshi_pct": 1.56,
+      "precio_minimo": -121,
+      "precio_publicado": -121,
+      "precio_equilibrio": -129,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +4.79% · no tomar peor de -121",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    }
+   ],
+   "resumen": "Tanda de F5 y de un over con bullpens rotos. En CHC la lectura es J. Ritchie sin lanzar desde agosto contra S. Imanaga, y en WSH es Z. Wheeler contra J. Simpson: en ambos el valor vive en las cinco primeras entradas y no en un ML cargado. En NYM las dos casas de relevistas llegan gastadas y las ofensivas vienen a 4.8 y 6.2 carreras por juego, con viento a favor, lo que empuja el over de 9. LAD F5 con B. Snell se queda justo detras; los unders de BOS/TEX y KC/HOU fallan una comprobacion cada uno y quedan fuera."
   }
  ]
 }

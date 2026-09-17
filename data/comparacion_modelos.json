@@ -1,0 +1,132 @@
+{
+ "modelos": {
+  "opus": "claude-opus-5 · medio",
+  "fable": "claude-fable-5-1 · medium (sombra)"
+ },
+ "dias": {
+  "2026-09-16": {
+   "fecha": "2026-09-16",
+   "opus": {
+    "analisis": 6,
+    "senales": 2,
+    "senales_w": 0,
+    "senales_l": 2,
+    "neto_u": -2.0,
+    "analisis_w": 0,
+    "analisis_l": 5,
+    "brier": 0.2969,
+    "n_brier": 5,
+    "picks": [
+     "NYY F5 ML",
+     "CLE F5 ML"
+    ]
+   },
+   "fable": {
+    "analisis": 6,
+    "senales": 3,
+    "senales_w": 1,
+    "senales_l": 2,
+    "neto_u": -1.12,
+    "analisis_w": 2,
+    "analisis_l": 4,
+    "brier": 0.247,
+    "n_brier": 6,
+    "picks": [
+     "DET ML",
+     "NYY F5 ML",
+     "CHC F5 ML"
+    ]
+   },
+   "coinciden": [
+    "CLE F5 ML",
+    "DET ML",
+    "NYY F5 ML"
+   ],
+   "tandas_fable": [
+    {
+     "n": 1,
+     "estado": "listo"
+    },
+    {
+     "n": 2,
+     "estado": "listo"
+    }
+   ],
+   "coste_fable": 0.8181,
+   "detalle_fable": [
+    {
+     "pick": "DET ML",
+     "cuota": 112,
+     "tanda": 1,
+     "nivel": "plata",
+     "publicado": true,
+     "resultado": "L",
+     "marcador": "DET 1-5 TOR",
+     "prob_estimada": 49.0,
+     "ev_pct": 3.88,
+     "neto_u": -1.0
+    },
+    {
+     "pick": "NYY F5 ML",
+     "cuota": -100,
+     "tanda": 1,
+     "nivel": "oro",
+     "publicado": true,
+     "resultado": "L",
+     "marcador": "NYY 4-5 MIN",
+     "prob_estimada": 53.0,
+     "ev_pct": 6.0,
+     "neto_u": -1.0
+    },
+    {
+     "pick": "CLE F5 ML",
+     "cuota": -104,
+     "tanda": 1,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "CWS 3-6 CLE",
+     "prob_estimada": 52.5,
+     "ev_pct": 2.98,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "CHC F5 ML",
+     "cuota": -113,
+     "tanda": 2,
+     "nivel": "oro",
+     "publicado": true,
+     "resultado": "W",
+     "marcador": "ATL 4-8 CHC",
+     "prob_estimada": 56.0,
+     "ev_pct": 5.56,
+     "neto_u": 0.88
+    },
+    {
+     "pick": "BAL/NYM o9",
+     "cuota": -115,
+     "tanda": 2,
+     "nivel": "plata",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "BAL 7-1 NYM",
+     "prob_estimada": 55.0,
+     "ev_pct": 2.83,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "PHI F5 ML",
+     "cuota": -117,
+     "tanda": 2,
+     "nivel": "oro",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "PHI 3-0 WSH",
+     "prob_estimada": 56.5,
+     "ev_pct": 4.79,
+     "neto_u": 0.0
+    }
+   ]
+  }
+ }
+}
