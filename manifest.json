@@ -1,10 +1,18 @@
 {
+  "id": "/",
   "name": "CY Elite Lab",
   "short_name": "CY Elite Lab",
+  "description": "Modelo estadistico de MLB con registro publico.",
+  "lang": "es",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#0d1117",
   "theme_color": "#0d1117",
-  "icons": [{"src": "icono.svg", "sizes": "any", "type": "image/svg+xml",
-             "purpose": "any maskable"}]
+  "icons": [
+    {"src": "/icono-v1-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "/icono-v1-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "/icono-v1-512-mask.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"},
+    {"src": "/icono.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ]
 }
