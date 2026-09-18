@@ -8,7 +8,7 @@ self.addEventListener('push', function (e) {
   var d = {};
   try { d = e.data ? e.data.json() : {}; } catch (err) { d = { cuerpo: e.data && e.data.text() }; }
   e.waitUntil(self.registration.showNotification(d.titulo || 'CY Elite Lab', {
-    body: d.cuerpo || '', icon: '/icono-v1-192.png', badge: '/icono-v1-192.png',
+    body: d.cuerpo || '', icon: '/icono-v2-192.png', badge: '/icono-v2-192.png',
     tag: d.tag || 'cy-elite', data: { url: d.url || '/' }
   }));
 });
