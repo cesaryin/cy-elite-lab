@@ -1,8 +1,220 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "PIT F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": -117,
+      "prob_estimada": 57.0,
+      "razon": "El F5 aisla la mayor brecha del dia: P. Skenes (FIP 3.47, 27.8% K) contra una ofensiva de KC hundida — .181 y 2.3 carreras por juego en la semana, con 57 ponches en 6 juegos. R. Dobnak sostiene su ERA con 16.3% de K y FIP 4.07, perfil que la tanda de PIT (.751 vs derechos) castiga temprano.",
+      "equipos": [
+        "KC",
+        "PIT"
+      ],
+      "destacado": "PIT",
+      "hora": "5:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "matchup"
+      ],
+      "contra": "El empate de las cinco entradas cuenta como derrota en este mercado y KC, con Witt Jr. y Pasquantino, puede sacar una carrera aislada y dejarlo 1-1.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "PIT",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-18T22:40:00Z",
+      "valor": {
+        "prob_estimada": 57.0,
+        "prob_justa": null,
+        "prob_implicita": 53.92,
+        "cuota": -117,
+        "cuota_justa_mercado": null,
+        "ev_pct": 5.72,
+        "ev_kalshi_pct": 2.49,
+        "precio_minimo": -123,
+        "precio_publicado": -123,
+        "precio_equilibrio": -132,
+        "discrepancia_pp": null,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +5.72% · no tomar peor de -123",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-18T22:10:19Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "WSH F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": 127,
+      "prob_estimada": 46.0,
+      "razon": "C. Cavalli llega con 28.2% de K y 3.12 de ERA frente a una ofensiva de STL en .613 de OPS la ultima semana. K. Leahy no ha pasado de 3.0 entradas en sus tres ultimas salidas, asi que WSH (.749 de OPS de temporada, 4.4 c/j) ve relevo pronto; el F5 ademas esquiva el bullpen flojo visitante (4.35).",
+      "equipos": [
+        "WSH",
+        "STL"
+      ],
+      "destacado": "WSH",
+      "hora": "7:15 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "bullpen"
+      ],
+      "contra": "Si Leahy actua de abridor corto con un relevista fresco detras, STL puede blanquear cinco entradas y el empate ya paga en contra.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "WSH",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-19T00:15:00Z",
+      "valor": {
+        "prob_estimada": 46.0,
+        "prob_justa": null,
+        "prob_implicita": 44.05,
+        "cuota": 127,
+        "cuota_justa_mercado": null,
+        "ev_pct": 4.42,
+        "ev_kalshi_pct": 0.5,
+        "precio_minimo": 122,
+        "precio_publicado": 122,
+        "precio_equilibrio": 118,
+        "discrepancia_pp": null,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "cuota +127 fuera del rango -162/+125",
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-18T22:10:19Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "TOR F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": 108,
+      "prob_estimada": 49.5,
+      "razon": "Ventaja clara de abridor: D. Cease con 35.3% de K y 2.38 de ERA contra K. Rocker (4.54, FIP 4.39), y TOR llega bateando .270 con 5.0 carreras por juego en la semana. El parque (pf 88, techo) reduce el ruido y el F5 deja fuera a los bullpenes.",
+      "equipos": [
+        "TOR",
+        "TEX"
+      ],
+      "destacado": "TOR",
+      "hora": "7:05 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "parque"
+      ],
+      "contra": "Cease camina gente (10.8% BB) y TEX batea .264 vs zurdos pero solo .695 vs derechos; un empate a cero en cinco entradas, muy probable en este parque, paga en contra.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "TOR",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-19T00:05:00Z",
+      "valor": {
+        "prob_estimada": 49.5,
+        "prob_justa": null,
+        "prob_implicita": 48.08,
+        "cuota": 108,
+        "cuota_justa_mercado": null,
+        "ev_pct": 2.96,
+        "ev_kalshi_pct": -0.67,
+        "precio_minimo": 107,
+        "precio_publicado": 107,
+        "precio_equilibrio": 103,
+        "discrepancia_pp": null,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.96% · no tomar peor de +107",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "MEDIA"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 9,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-18T22:10:19Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true,
+        "gratis": true
+      }
+    }
+  ],
   "parlay": null,
-  "resumen": "",
-  "descartes": [],
+  "resumen": "Dia con poco valor en los moneyline completos y casi todo el margen en las primeras cinco entradas, donde el mercado de Kalshi cobra apenas un punto de vig. La lectura principal esta en PIT con Skenes ante una ofensiva de KC en .181 en la semana; detras, WSH con Cavalli frente a un STL apagado y un abridor local que no pasa de tres entradas, y TOR con Cease en un parque que corta carreras. Se descartan los favoritos caros de CHC, TB y MIL: el precio ya recoge su ventaja.",
+  "descartes": [
+    "CHC ML -145: la ventaja sobre la linea justa (57.1%) no cubre el precio pese a la ofensiva de 6.2 c/j y el bateo de CIN en .637.",
+    "KC/PIT u8.5: dos ofensivas frias, pero la linea se movio de 8.0 a 8.5 en contra y los bullpenes (KC 4.65 con Erceg en 6.09; PIT con 9.6 IP en dos dias y Doval quemado) revientan el filtro.",
+    "TB ML -137: TB batea 6.0 c/j pero el precio ya paga todo eso frente al 55.6% justo.",
+    "CLE Spread -1.5: M. Barnett (7.08) invita, pero D. Espino solo tiene 2.0 entradas de muestra y la ofensiva de CLE es .689 de temporada; demasiada incertidumbre para un -1.5.",
+    "ATL ML -117 y NYM/PHI: juegos de abridor corto en NYM y precio sin margen en HOU.",
+    "SEA/COL y ATH/CLE ML: fuera de la banda de cuotas."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-09-18",
@@ -120,14 +332,57 @@
       ],
       "sin_tanda": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-09-18T22:10:19Z",
+        "min_ct": 1030,
+        "claves": [
+          "CHC@CIN@2026-09-18T22:40:00Z",
+          "KC@PIT@2026-09-18T22:40:00Z",
+          "MIL@BAL@2026-09-18T23:05:00Z",
+          "ATH@CLE@2026-09-18T23:10:00Z",
+          "BOS@TB@2026-09-18T23:10:00Z",
+          "PHI@NYM@2026-09-18T23:15:00Z",
+          "DET@CWS@2026-09-18T23:40:00Z",
+          "TOR@TEX@2026-09-19T00:05:00Z",
+          "SEA@COL@2026-09-19T00:10:00Z",
+          "ATL@HOU@2026-09-19T00:10:00Z",
+          "WSH@STL@2026-09-19T00:15:00Z"
+        ],
+        "juegos": [
+          "CHC@CIN",
+          "KC@PIT",
+          "MIL@BAL",
+          "ATH@CLE",
+          "BOS@TB",
+          "PHI@NYM",
+          "DET@CWS",
+          "TOR@TEX",
+          "SEA@COL",
+          "ATL@HOU",
+          "WSH@STL"
+        ],
+        "alineaciones": [
+          22,
+          22
+        ],
+        "senales": [
+          "PIT F5 ML",
+          "TOR F5 ML"
+        ],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 2-1 (+0.81 U).\n• DET ML (SEÑAL ELITE), perdida: DET 1-3 CWS.\n• LAD F5 ML (SEÑAL ELITE), ganada: LAD 8-2 CIN.\n• SD F5 ML (SEÑAL FUERTE), ganada: SD 9-2 COL.\n2 ganadas con ventaja medida; 1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 24% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 0,
-    "seguimiento": 0,
+    "apostables": 2,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
-    "riesgo_u": 0.0,
-    "ev_min": null
+    "riesgo_u": 2.0,
+    "ev_min": 2.0
   }
 }
