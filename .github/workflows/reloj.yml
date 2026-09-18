@@ -161,9 +161,16 @@ jobs:
           # aunque el cron entrara, la jornada no arrancaba. El unico cron que
           # llego en toda su historia lo hizo a las 17:02 --267 min tarde-- y por
           # eso funciono: para entonces ya habia pasado la 13:00.
-          # El corte correcto es despues del ultimo objetivo (02:10 UTC), no
-          # antes del ancla. Con 3 quedan 50 min de margen.
-          if [ "$(date -u +%H)" -lt 3 ]; then ANCLA=$((ANCLA - 86400)); fi
+          # El corte correcto es despues del ultimo objetivo, no antes del ancla.
+          #
+          # EL CORTE SE MUEVE CON EL ULTIMO OBJETIVO (18-sep-2026). Los avisos de
+          # resultados al celular miran hasta el minuto 1080 (07:00 UTC, las 2:00 CT),
+          # porque los partidos del oeste acaban tarde. Con el corte en 3, un relevo
+          # a las 04:00 UTC se habria creido en la jornada SIGUIENTE y, con su
+          # "desde" alto, se habria saltado el RUN de la mañana. En 8 queda una hora
+          # de margen tras el ultimo objetivo y sigue lejos de los arranques de las
+          # 12:35 UTC.
+          if [ "$(date -u +%H)" -lt 8 ]; then ANCLA=$((ANCLA - 86400)); fi
 
           # LAS TANDAS DEL SISTEMA VIVO (14-sep-2026, decision de Cesar). El motor
           # calcula a las 8:00 las horas de las tandas del dia y las publica en
@@ -175,8 +182,12 @@ jobs:
           # da el segundo por pasado. El plan nunca los elige (RELOJ_FIJOS).
           JORNADA=$(date -u -d @$ANCLA +%F)
           PLAN_URL="https://raw.githubusercontent.com/${{ github.repository }}/master/data/plan_tandas_${JORNADA}.json"
-          for M in $(seq 60 10 780); do
-            case " 90 580 730 " in *" $M "*) continue ;; esac
+          # Hasta el 1080 desde el 18-sep: mas alla del 780 no hay tandas, solo los
+          # avisos de resultados (data/avisos_res_<fecha>.json, ver mas abajo). El 790
+          # es de una captura: fuera, por lo mismo que el 90, el 580 y el 730.
+          RES_URL="https://raw.githubusercontent.com/${{ github.repository }}/master/data/avisos_res_${JORNADA}.json"
+          for M in $(seq 60 10 1080); do
+            case " 90 580 730 790 " in *" $M "*) continue ;; esac
             TARGETS="$TARGETS $M:tanda"
           done
           TARGETS=$(printf '%s\n' $TARGETS | sort -t: -k1,1n)
@@ -251,6 +262,16 @@ jobs:
                       -H "Authorization: Bearer $TK" -H "$A" \
                       "$MOTOR/lab-refresh.yml/dispatches" -d '{"ref":"main"}' ;;
                 esac
+              fi
+              # LOS RESULTADOS AL CELULAR (18-sep-2026, Plan Web §4). La tanda deja en
+              # data/avisos_res_<fecha>.json los minutos en que mirar SOLO los partidos
+              # con señal (2 h 50, 3 h 50 y 5 h tras su inicio). Sin fichero, nada.
+              RES=$(curl -sfL --retry 2 "$RES_URL?t=$(date +%s)" || true)
+              if [ -n "$RES" ] && echo "$RES" | grep -qE "\"min_reloj_res\":${MIN}[,}]"; then
+                curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  avisos-resultados.yml (minuto $MIN) -> %{http_code}\n" -X POST \
+                  -H "Authorization: Bearer $TK" -H "$A" \
+                  "$MOTOR/avisos-resultados.yml/dispatches" \
+                  -d "{\"ref\":\"main\",\"inputs\":{\"fecha\":\"$JORNADA\"}}"
               fi
               continue
             fi
