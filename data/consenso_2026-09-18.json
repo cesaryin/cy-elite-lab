@@ -1,0 +1,1057 @@
+{
+ "fecha": "2026-09-18",
+ "tomado_utc": "2026-09-18T13:00:44+00:00",
+ "n_juegos": 15,
+ "juegos": {
+  "CHC@CIN": {
+   "id": "a09736b1c232b3bc0b3e9938db6f2337",
+   "away": "CHC",
+   "home": "CIN",
+   "inicio_utc": "2026-09-18T22:41:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "CHC": -126,
+    "CIN": 111
+   },
+   "total": {
+    "linea": 8.5,
+    "over": -120,
+    "under": 100,
+    "n_casas": 8
+   },
+   "spread": {
+    "CHC": {
+     "linea": -1.5,
+     "cuota": 125,
+     "n_casas": 8
+    },
+    "CIN": {
+     "linea": 1.5,
+     "cuota": -147,
+     "n_casas": 8
+    }
+   },
+   "casas_ml": {
+    "CHC": 8,
+    "CIN": 8
+   },
+   "mejor": {
+    "ml": {
+     "CHC": {
+      "cuota": -125,
+      "casa": "lowvig"
+     },
+     "CIN": {
+      "cuota": 115,
+      "casa": "betus"
+     }
+    },
+    "total": {
+     "linea": 8.5,
+     "over": {
+      "cuota": -112,
+      "casa": "betrivers"
+     },
+     "under": {
+      "cuota": 103,
+      "casa": "lowvig"
+     }
+    },
+    "spread": {
+     "CHC": {
+      "linea": -1.5,
+      "cuota": 130,
+      "casa": "fanduel"
+     },
+     "CIN": {
+      "linea": 1.5,
+      "cuota": -143,
+      "casa": "lowvig"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "KC@PIT": {
+   "id": "ba420794fe974233579a5168b03e3743",
+   "away": "KC",
+   "home": "PIT",
+   "inicio_utc": "2026-09-18T22:41:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "KC": 160,
+    "PIT": -190
+   },
+   "total": {
+    "linea": 8.0,
+    "over": -118,
+    "under": -105,
+    "n_casas": 7
+   },
+   "spread": {
+    "KC": {
+     "linea": 1.5,
+     "cuota": -134,
+     "n_casas": 8
+    },
+    "PIT": {
+     "linea": -1.5,
+     "cuota": 112,
+     "n_casas": 8
+    }
+   },
+   "casas_ml": {
+    "KC": 8,
+    "PIT": 8
+   },
+   "mejor": {
+    "ml": {
+     "KC": {
+      "cuota": 164,
+      "casa": "betonlineag"
+     },
+     "PIT": {
+      "cuota": -182,
+      "casa": "betonlineag"
+     }
+    },
+    "total": {
+     "linea": 8.0,
+     "over": {
+      "cuota": -110,
+      "casa": "betmgm"
+     },
+     "under": {
+      "cuota": 103,
+      "casa": "lowvig"
+     }
+    },
+    "spread": {
+     "KC": {
+      "linea": 1.5,
+      "cuota": -130,
+      "casa": "lowvig"
+     },
+     "PIT": {
+      "linea": -1.5,
+      "cuota": 115,
+      "casa": "fanduel"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "MIL@BAL": {
+   "id": "042985f4157bf2837a03506fd2fedeb7",
+   "away": "MIL",
+   "home": "BAL",
+   "inicio_utc": "2026-09-18T23:06:00Z",
+   "n_casas": 6,
+   "fuente": "consenso_us",
+   "ml": {
+    "BAL": 118,
+    "MIL": -139
+   },
+   "total": {
+    "linea": 8.5,
+    "over": -110,
+    "under": -110,
+    "n_casas": 6
+   },
+   "spread": {
+    "BAL": {
+     "linea": 1.5,
+     "cuota": -144,
+     "n_casas": 6
+    },
+    "MIL": {
+     "linea": -1.5,
+     "cuota": 120,
+     "n_casas": 6
+    }
+   },
+   "casas_ml": {
+    "BAL": 6,
+    "MIL": 6
+   },
+   "mejor": {
+    "ml": {
+     "BAL": {
+      "cuota": 122,
+      "casa": "betus"
+     },
+     "MIL": {
+      "cuota": -135,
+      "casa": "betus"
+     }
+    },
+    "total": {
+     "linea": 8.5,
+     "over": {
+      "cuota": -108,
+      "casa": "fanduel"
+     },
+     "under": {
+      "cuota": -107,
+      "casa": "betrivers"
+     }
+    },
+    "spread": {
+     "BAL": {
+      "linea": 1.5,
+      "cuota": -140,
+      "casa": "betus"
+     },
+     "MIL": {
+      "linea": -1.5,
+      "cuota": 125,
+      "casa": "bovada"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "ATH@CLE": {
+   "id": "faeba6575c679e03be0a8b007d243848",
+   "away": "ATH",
+   "home": "CLE",
+   "inicio_utc": "2026-09-18T23:11:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "ATH": 165,
+    "CLE": -195
+   },
+   "total": {
+    "linea": 8.5,
+    "over": -110,
+    "under": -110,
+    "n_casas": 8
+   },
+   "spread": {
+    "ATH": {
+     "linea": 1.5,
+     "cuota": -130,
+     "n_casas": 8
+    },
+    "CLE": {
+     "linea": -1.5,
+     "cuota": 109,
+     "n_casas": 8
+    }
+   },
+   "casas_ml": {
+    "ATH": 8,
+    "CLE": 8
+   },
+   "mejor": {
+    "ml": {
+     "ATH": {
+      "cuota": 169,
+      "casa": "betonlineag"
+     },
+     "CLE": {
+      "cuota": -188,
+      "casa": "betonlineag"
+     }
+    },
+    "total": {
+     "linea": 8.5,
+     "over": {
+      "cuota": -106,
+      "casa": "fanduel"
+     },
+     "under": {
+      "cuota": -105,
+      "casa": "bovada"
+     }
+    },
+    "spread": {
+     "ATH": {
+      "linea": 1.5,
+      "cuota": -125,
+      "casa": "lowvig"
+     },
+     "CLE": {
+      "linea": -1.5,
+      "cuota": 112,
+      "casa": "fanduel"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "BOS@TB": {
+   "id": "82ab22dcd4b5a9fd457f4a06b2e93579",
+   "away": "BOS",
+   "home": "TB",
+   "inicio_utc": "2026-09-18T23:11:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "BOS": 106,
+    "TB": -123
+   },
+   "total": {
+    "linea": 7.0,
+    "over": -115,
+    "under": -105,
+    "n_casas": 7
+   },
+   "spread": {
+    "BOS": {
+     "linea": 1.5,
+     "cuota": -200,
+     "n_casas": 7
+    },
+    "TB": {
+     "linea": -1.5,
+     "cuota": 172,
+     "n_casas": 7
+    }
+   },
+   "casas_ml": {
+    "BOS": 8,
+    "TB": 8
+   },
+   "mejor": {
+    "ml": {
+     "BOS": {
+      "cuota": 109,
+      "casa": "betonlineag"
+     },
+     "TB": {
+      "cuota": -120,
+      "casa": "betonlineag"
+     }
+    },
+    "total": {
+     "linea": 7.0,
+     "over": {
+      "cuota": -110,
+      "casa": "bovada"
+     },
+     "under": {
+      "cuota": 105,
+      "casa": "betmgm"
+     }
+    },
+    "spread": {
+     "BOS": {
+      "linea": 1.5,
+      "cuota": -200,
+      "casa": "betonlineag"
+     },
+     "TB": {
+      "linea": -1.5,
+      "cuota": 175,
+      "casa": "lowvig"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "PHI@NYM": {
+   "id": "49deafc3a88bf69634e0f3510d62b0ee",
+   "away": "PHI",
+   "home": "NYM",
+   "inicio_utc": "2026-09-18T23:16:00Z",
+   "n_casas": 6,
+   "fuente": "consenso_us",
+   "ml": {
+    "NYM": -119,
+    "PHI": 100
+   },
+   "total": {
+    "linea": 8.5,
+    "over": -110,
+    "under": -110,
+    "n_casas": 6
+   },
+   "spread": {
+    "NYM": {
+     "linea": 1.5,
+     "cuota": -196,
+     "n_casas": 4
+    },
+    "PHI": {
+     "linea": -1.5,
+     "cuota": 162,
+     "n_casas": 4
+    }
+   },
+   "casas_ml": {
+    "NYM": 6,
+    "PHI": 6
+   },
+   "mejor": {
+    "ml": {
+     "NYM": {
+      "cuota": -117,
+      "casa": "betrivers"
+     },
+     "PHI": {
+      "cuota": 109,
+      "casa": "betus"
+     }
+    },
+    "total": {
+     "linea": 8.5,
+     "over": {
+      "cuota": -108,
+      "casa": "draftkings"
+     },
+     "under": {
+      "cuota": -110,
+      "casa": "fanduel"
+     }
+    },
+    "spread": {
+     "NYM": {
+      "linea": 1.5,
+      "cuota": -185,
+      "casa": "bovada"
+     },
+     "PHI": {
+      "linea": -1.5,
+      "cuota": 169,
+      "casa": "draftkings"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "DET@CWS": {
+   "id": "d59af92c5a51eebe1b3721cfbbd3dab8",
+   "away": "DET",
+   "home": "CWS",
+   "inicio_utc": "2026-09-18T23:41:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "CWS": -130,
+    "DET": 112
+   },
+   "total": {
+    "linea": 8.5,
+    "over": -110,
+    "under": -110,
+    "n_casas": 8
+   },
+   "spread": {
+    "CWS": {
+     "linea": -1.5,
+     "cuota": 157,
+     "n_casas": 8
+    },
+    "DET": {
+     "linea": 1.5,
+     "cuota": -182,
+     "n_casas": 8
+    }
+   },
+   "casas_ml": {
+    "CWS": 8,
+    "DET": 8
+   },
+   "mejor": {
+    "ml": {
+     "CWS": {
+      "cuota": -125,
+      "casa": "lowvig"
+     },
+     "DET": {
+      "cuota": 115,
+      "casa": "betrivers"
+     }
+    },
+    "total": {
+     "linea": 8.5,
+     "over": {
+      "cuota": -106,
+      "casa": "fanduel"
+     },
+     "under": {
+      "cuota": -103,
+      "casa": "betrivers"
+     }
+    },
+    "spread": {
+     "CWS": {
+      "linea": -1.5,
+      "cuota": 160,
+      "casa": "bovada"
+     },
+     "DET": {
+      "linea": 1.5,
+      "cuota": -180,
+      "casa": "lowvig"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "TOR@TEX": {
+   "id": "fd0d48d248eb15ca70844bf48633f158",
+   "away": "TOR",
+   "home": "TEX",
+   "inicio_utc": "2026-09-19T00:06:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "TEX": 118,
+    "TOR": -137
+   },
+   "total": {
+    "linea": 7.5,
+    "over": -118,
+    "under": -102,
+    "n_casas": 7
+   },
+   "spread": {
+    "TEX": {
+     "linea": 1.5,
+     "cuota": -147,
+     "n_casas": 8
+    },
+    "TOR": {
+     "linea": -1.5,
+     "cuota": 125,
+     "n_casas": 8
+    }
+   },
+   "casas_ml": {
+    "TEX": 8,
+    "TOR": 8
+   },
+   "mejor": {
+    "ml": {
+     "TEX": {
+      "cuota": 124,
+      "casa": "lowvig"
+     },
+     "TOR": {
+      "cuota": -136,
+      "casa": "fanduel"
+     }
+    },
+    "total": {
+     "linea": 7.5,
+     "over": {
+      "cuota": -115,
+      "casa": "lowvig"
+     },
+     "under": {
+      "cuota": 100,
+      "casa": "bovada"
+     }
+    },
+    "spread": {
+     "TEX": {
+      "linea": 1.5,
+      "cuota": -143,
+      "casa": "lowvig"
+     },
+     "TOR": {
+      "linea": -1.5,
+      "cuota": 128,
+      "casa": "fanduel"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "ATL@HOU": {
+   "id": "de26fcfdce286e11d0005c82ffdccce6",
+   "away": "ATL",
+   "home": "HOU",
+   "inicio_utc": "2026-09-19T00:11:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "ATL": -118,
+    "HOU": 102
+   },
+   "total": {
+    "linea": 8.5,
+    "over": 100,
+    "under": -120,
+    "n_casas": 6
+   },
+   "spread": {
+    "ATL": {
+     "linea": -1.5,
+     "cuota": 135,
+     "n_casas": 8
+    },
+    "HOU": {
+     "linea": 1.5,
+     "cuota": -160,
+     "n_casas": 8
+    }
+   },
+   "casas_ml": {
+    "ATL": 8,
+    "HOU": 8
+   },
+   "mejor": {
+    "ml": {
+     "ATL": {
+      "cuota": -116,
+      "casa": "fanduel"
+     },
+     "HOU": {
+      "cuota": 110,
+      "casa": "betrivers"
+     }
+    },
+    "total": {
+     "linea": 8.5,
+     "over": {
+      "cuota": 103,
+      "casa": "lowvig"
+     },
+     "under": {
+      "cuota": -117,
+      "casa": "betrivers"
+     }
+    },
+    "spread": {
+     "ATL": {
+      "linea": -1.5,
+      "cuota": 140,
+      "casa": "fanduel"
+     },
+     "HOU": {
+      "linea": 1.5,
+      "cuota": -154,
+      "casa": "lowvig"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "SEA@COL": {
+   "id": "6b489bbf5b1f7acd0e5eea9f0d257d40",
+   "away": "SEA",
+   "home": "COL",
+   "inicio_utc": "2026-09-19T00:11:00Z",
+   "n_casas": 5,
+   "fuente": "consenso_us",
+   "ml": {
+    "COL": 154,
+    "SEA": -186
+   },
+   "total": {
+    "linea": 10.5,
+    "over": -110,
+    "under": -110,
+    "n_casas": 5
+   },
+   "spread": {
+    "COL": {
+     "linea": 1.5,
+     "cuota": 100,
+     "n_casas": 5
+    },
+    "SEA": {
+     "linea": -1.5,
+     "cuota": -120,
+     "n_casas": 5
+    }
+   },
+   "casas_ml": {
+    "COL": 5,
+    "SEA": 5
+   },
+   "mejor": {
+    "ml": {
+     "COL": {
+      "cuota": 156,
+      "casa": "fanduel"
+     },
+     "SEA": {
+      "cuota": -177,
+      "casa": "betrivers"
+     }
+    },
+    "total": {
+     "linea": 10.5,
+     "over": {
+      "cuota": -110,
+      "casa": "fanduel"
+     },
+     "under": {
+      "cuota": -106,
+      "casa": "betrivers"
+     }
+    },
+    "spread": {
+     "COL": {
+      "linea": 1.5,
+      "cuota": 100,
+      "casa": "fanduel"
+     },
+     "SEA": {
+      "linea": -1.5,
+      "cuota": -114,
+      "casa": "betrivers"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "WSH@STL": {
+   "id": "f383973af69817d515b481a52d17ff6d",
+   "away": "WSH",
+   "home": "STL",
+   "inicio_utc": "2026-09-19T00:16:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "STL": -114,
+    "WSH": -102
+   },
+   "total": {
+    "linea": 7.5,
+    "over": -118,
+    "under": -102,
+    "n_casas": 8
+   },
+   "spread": {
+    "STL": {
+     "linea": 1.5,
+     "cuota": -195,
+     "n_casas": 4
+    },
+    "WSH": {
+     "linea": -1.5,
+     "cuota": 160,
+     "n_casas": 4
+    }
+   },
+   "casas_ml": {
+    "STL": 8,
+    "WSH": 8
+   },
+   "mejor": {
+    "ml": {
+     "STL": {
+      "cuota": -112,
+      "casa": "fanduel"
+     },
+     "WSH": {
+      "cuota": 103,
+      "casa": "betonlineag"
+     }
+    },
+    "total": {
+     "linea": 7.5,
+     "over": {
+      "cuota": -115,
+      "casa": "bovada"
+     },
+     "under": {
+      "cuota": 103,
+      "casa": "lowvig"
+     }
+    },
+    "spread": {
+     "STL": {
+      "linea": 1.5,
+      "cuota": -190,
+      "casa": "betmgm"
+     },
+     "WSH": {
+      "linea": -1.5,
+      "cuota": 163,
+      "casa": "betrivers"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "MIN@LAA": {
+   "id": "18d975d07e13a3b661fde1c6b246c75e",
+   "away": "MIN",
+   "home": "LAA",
+   "inicio_utc": "2026-09-19T01:39:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "LAA": 107,
+    "MIN": -124
+   },
+   "total": {
+    "linea": 8.0,
+    "over": -110,
+    "under": -110,
+    "n_casas": 7
+   },
+   "spread": {
+    "LAA": {
+     "linea": 1.5,
+     "cuota": -159,
+     "n_casas": 8
+    },
+    "MIN": {
+     "linea": -1.5,
+     "cuota": 135,
+     "n_casas": 8
+    }
+   },
+   "casas_ml": {
+    "LAA": 8,
+    "MIN": 8
+   },
+   "mejor": {
+    "ml": {
+     "LAA": {
+      "cuota": 110,
+      "casa": "betus"
+     },
+     "MIN": {
+      "cuota": -119,
+      "casa": "betonlineag"
+     }
+    },
+    "total": {
+     "linea": 8.0,
+     "over": {
+      "cuota": -107,
+      "casa": "lowvig"
+     },
+     "under": {
+      "cuota": -105,
+      "casa": "betmgm"
+     }
+    },
+    "spread": {
+     "LAA": {
+      "linea": 1.5,
+      "cuota": -155,
+      "casa": "betus"
+     },
+     "MIN": {
+      "linea": -1.5,
+      "cuota": 140,
+      "casa": "betmgm"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "NYY@AZ": {
+   "id": "bcdc1aac5215baec8c6c6fd8a7a22f9d",
+   "away": "NYY",
+   "home": "AZ",
+   "inicio_utc": "2026-09-19T01:41:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "AZ": 110,
+    "NYY": -125
+   },
+   "total": {
+    "linea": 8.0,
+    "over": -110,
+    "under": -110,
+    "n_casas": 7
+   },
+   "spread": {
+    "AZ": {
+     "linea": 1.5,
+     "cuota": -154,
+     "n_casas": 8
+    },
+    "NYY": {
+     "linea": -1.5,
+     "cuota": 131,
+     "n_casas": 8
+    }
+   },
+   "casas_ml": {
+    "AZ": 8,
+    "NYY": 8
+   },
+   "mejor": {
+    "ml": {
+     "AZ": {
+      "cuota": 114,
+      "casa": "betus"
+     },
+     "NYY": {
+      "cuota": -125,
+      "casa": "lowvig"
+     }
+    },
+    "total": {
+     "linea": 8.0,
+     "over": {
+      "cuota": 100,
+      "casa": "bovada"
+     },
+     "under": {
+      "cuota": -104,
+      "casa": "lowvig"
+     }
+    },
+    "spread": {
+     "AZ": {
+      "linea": 1.5,
+      "cuota": -149,
+      "casa": "lowvig"
+     },
+     "NYY": {
+      "linea": -1.5,
+      "cuota": 135,
+      "casa": "betmgm"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "MIA@SD": {
+   "id": "bc6cda1a14a8d0e13bd5ff88dc04726a",
+   "away": "MIA",
+   "home": "SD",
+   "inicio_utc": "2026-09-19T01:41:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "MIA": 168,
+    "SD": -200
+   },
+   "total": {
+    "linea": 7.5,
+    "over": -114,
+    "under": -105,
+    "n_casas": 8
+   },
+   "spread": {
+    "MIA": {
+     "linea": 1.5,
+     "cuota": -132,
+     "n_casas": 8
+    },
+    "SD": {
+     "linea": -1.5,
+     "cuota": 110,
+     "n_casas": 8
+    }
+   },
+   "casas_ml": {
+    "MIA": 8,
+    "SD": 8
+   },
+   "mejor": {
+    "ml": {
+     "MIA": {
+      "cuota": 175,
+      "casa": "lowvig"
+     },
+     "SD": {
+      "cuota": -195,
+      "casa": "lowvig"
+     }
+    },
+    "total": {
+     "linea": 7.5,
+     "over": {
+      "cuota": -112,
+      "casa": "lowvig"
+     },
+     "under": {
+      "cuota": -102,
+      "casa": "betmgm"
+     }
+    },
+    "spread": {
+     "MIA": {
+      "linea": 1.5,
+      "cuota": -128,
+      "casa": "lowvig"
+     },
+     "SD": {
+      "linea": -1.5,
+      "cuota": 115,
+      "casa": "bovada"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "SF@LAD": {
+   "id": "ceb78c18c34b6f6922ac73e4cb32b373",
+   "away": "SF",
+   "home": "LAD",
+   "inicio_utc": "2026-09-19T02:15:00Z",
+   "n_casas": 8,
+   "fuente": "consenso_us",
+   "ml": {
+    "LAD": -305,
+    "SF": 250
+   },
+   "total": {
+    "linea": 8.0,
+    "over": -110,
+    "under": -113,
+    "n_casas": 7
+   },
+   "spread": {
+    "LAD": {
+     "linea": -1.5,
+     "cuota": -138,
+     "n_casas": 7
+    },
+    "SF": {
+     "linea": 1.5,
+     "cuota": 116,
+     "n_casas": 7
+    }
+   },
+   "casas_ml": {
+    "LAD": 8,
+    "SF": 8
+   },
+   "mejor": {
+    "ml": {
+     "LAD": {
+      "cuota": -290,
+      "casa": "lowvig"
+     },
+     "SF": {
+      "cuota": 257,
+      "casa": "lowvig"
+     }
+    },
+    "total": {
+     "linea": 8.0,
+     "over": {
+      "cuota": -102,
+      "casa": "lowvig"
+     },
+     "under": {
+      "cuota": -105,
+      "casa": "bovada"
+     }
+    },
+    "spread": {
+     "LAD": {
+      "linea": -1.5,
+      "cuota": -135,
+      "casa": "betmgm"
+     },
+     "SF": {
+      "linea": 1.5,
+      "cuota": 122,
+      "casa": "lowvig"
+     }
+    }
+   },
+   "flojo": false
+  }
+ }
+}

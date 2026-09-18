@@ -7,13 +7,355 @@
    "n": 1,
    "lote": "msgbatch_01Hv42GZYUrvCHeRxhGr3fq4",
    "enviado_utc": "2026-09-17T16:02:02Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-18T13:00:36Z",
+   "uso": {
+    "tokens_entrada": 31798,
+    "tokens_salida": 5259,
+    "coste": 0.2905
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "LAD F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -104,
+     "prob_estimada": 53.5,
+     "razon": "El F5 aisla a los abridores y ahi la brecha es clara: B. Singer viene de 8 ER en 4.0 IP y 6 ER en 5.0 IP con 11 BB, FIP 5.19 frente al 4.31 de J. Wrobleski. LAD batea .764 de ops contra derechos y el parque (pf 104, 89F) castiga al que mas boletos regala. Mercado de Kalshi con vig de solo 1 punto.",
+     "equipos": [
+      "LAD",
+      "CIN"
+     ],
+     "destacado": "LAD",
+     "hora": "11:40 AM CT",
+     "capas": [
+      "pitcheo",
+      "matchup",
+      "ofensiva",
+      "parque"
+     ],
+     "contra": "LAD llega frio (avg .204 y 3.8 c/j en la semana) y J. Wrobleski trae 3.0 IP con 4 ER en su ultima salida hace 11 dias: si dura poco, el empate del F5 a tres bandas se cobra la posicion.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "LAD",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 53.5,
+      "prob_justa": null,
+      "prob_implicita": 50.98,
+      "cuota": -104,
+      "cuota_justa_mercado": null,
+      "ev_pct": 4.94,
+      "ev_kalshi_pct": 1.51,
+      "precio_minimo": -109,
+      "precio_publicado": -109,
+      "precio_equilibrio": -115,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +4.94% · no tomar peor de -109",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "SD F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -117,
+     "prob_estimada": 55.5,
+     "razon": "Ventaja de abridor real en las cinco primeras: M. King trae 7.0/6.0/6.0 IP con 3 ER en total en sus tres salidas, T. Gordon no pasa de 4.2 IP con 4 y 5 ER en las dos ultimas. La ofensiva de SD viene a 6.7 c/j y ops .897 en la semana, y el F5 esquiva Coors en las entradas tardias.",
+     "equipos": [
+      "SD",
+      "COL"
+     ],
+     "destacado": "SD",
+     "hora": "2:10 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma"
+     ],
+     "contra": "La alineacion de SD NO esta publicada y en Coors con umpire de +5% de carreras el FIP 4.27 y 9.3% de BB de M. King pueden convertir cualquier entrada en un cambio brusco del marcador.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "SD",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 55.5,
+      "prob_justa": null,
+      "prob_implicita": 53.92,
+      "cuota": -117,
+      "cuota_justa_mercado": null,
+      "ev_pct": 2.94,
+      "ev_kalshi_pct": -0.29,
+      "precio_minimo": -116,
+      "precio_publicado": -116,
+      "precio_equilibrio": -124,
+      "discrepancia_pp": null,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +2.94% por debajo del minimo exigido (3.0%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": true,
+       "extra_umbral_plano": true
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "TB Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": -120,
+     "prob_estimada": 55.0,
+     "razon": "El ML de TB esta fuera de banda; el margen es la lectura. D. Rasmussen (FIP 3.18, 1 ER en cada una de sus dos ultimas de 7.0 IP) contra J. Springs (FIP 5.62, 4-13) y un bullpen de ATH con era 5.07 y su cerrador quemado. TB anota 5.3 c/j en sus ultimos 10; ventaja honesta pero corta sobre la justa.",
+     "equipos": [
+      "ATH",
+      "TB"
+     ],
+     "destacado": "TB",
+     "hora": "12:10 PM CT",
+     "capas": [
+      "pitcheo",
+      "bullpen",
+      "forma"
+     ],
+     "contra": "TB batea solo .687 de ops contra zurdos y dos relevistas (C. Booser, K. Kelly) estan quemados: un juego de 3-2 gana el ML y pierde el spread.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "TB",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": -119,
+     "valor": {
+      "prob_estimada": 55.0,
+      "prob_justa": 52.17,
+      "prob_implicita": 54.55,
+      "cuota": -120,
+      "cuota_justa_mercado": -109,
+      "ev_pct": 0.83,
+      "ev_kalshi_pct": -2.35,
+      "precio_minimo": -114,
+      "precio_publicado": -114,
+      "precio_equilibrio": -122,
+      "discrepancia_pp": 2.83,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +0.83% por debajo del minimo exigido (3.1%)",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda de mediodia con favoritos muy cargados en el ML, asi que el valor se busca en los mercados de abridores. En CIN, J. Wrobleski frente a un B. Singer descontrolado da el F5 mas limpio del dia; en COL, M. King contra T. Gordon sostiene el F5 de SD aunque falta la alineacion visitante. El spread de TB con D. Rasmussen frente a un ATH diezmado queda como lectura honesta de poca ventaja. Los totales no ofrecen lado claro: el de PIT tiene dinero al under contra una ofensiva de MIL en llamas y el de TB no pasa el filtro de bullpen."
   },
   {
    "n": 2,
    "lote": "msgbatch_01U3fBE9TDAszNqhHsYdenY2",
    "enviado_utc": "2026-09-17T22:31:41Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-18T13:00:36Z",
+   "uso": {
+    "tokens_entrada": 38426,
+    "tokens_salida": 5756,
+    "coste": 0.336
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "PHI ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": 110,
+     "prob_estimada": 49.5,
+     "razon": "El precio paga a PHI como perro claro por N. McLean, pero el juego se decide en las entradas 6-9 y ahi la brecha es enorme: bullpen NYM 4.99 con 11.2 IP en dos dias y cerrador a 7.05, frente a un relevo PHI de 3.78 descansado. A. Nola viene de 2, 1 y 1 carreras en sus tres ultimas; PHI anota 3.8 c/j (ops .634, frio pero funcional, 4.4 c/j en los ultimos 10).",
+     "equipos": [
+      "PHI",
+      "NYM"
+     ],
+     "destacado": "PHI",
+     "hora": "6:15 PM CT",
+     "capas": [
+      "bullpen",
+      "pitcheo",
+      "ofensiva"
+     ],
+     "contra": "La ofensiva de PHI viene tibia (.634 ops en la semana, G. Stubbs .387 al bate) y McLean puede dominar 6-7 entradas y dejar poco margen al bullpen de NYM.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "PHI",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": 109,
+     "valor": {
+      "prob_estimada": 49.5,
+      "prob_justa": 45.98,
+      "prob_implicita": 47.62,
+      "cuota": 110,
+      "cuota_justa_mercado": 117,
+      "ev_pct": 3.95,
+      "ev_kalshi_pct": 0.28,
+      "precio_minimo": 107,
+      "precio_publicado": 107,
+      "precio_equilibrio": 103,
+      "discrepancia_pp": 3.52,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +3.95% · no tomar peor de +107",
+      "mejor_precio": {
+       "cuota": 113,
+       "casa": "betonlineag"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "DET ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -104,
+     "prob_estimada": 52.5,
+     "razon": "El lineup mas caliente de la tanda contra el abridor mas flojo: DET anota 7.0 c/j con ops .866 en la semana (5.8 c/j en los ultimos 10) y E. Fedde trae FIP 4.95 con solo 7.5% de K-BB. F. Valdez viene de 13 IP sin carreras en sus dos ultimas y CWS batea .650 ops con 75 K en 7 juegos, con un fondo de orden bajo .600.",
+     "equipos": [
+      "DET",
+      "CWS"
+     ],
+     "destacado": "DET",
+     "hora": "6:40 PM CT",
+     "capas": [
+      "ofensiva",
+      "pitcheo",
+      "matchup"
+     ],
+     "contra": "CWS batea mejor contra zurdos (.743 ops de temporada) y Valdez tiene un K-BB de solo 8.6%; el mercado ya se movio de +109 a -104, asi que parte de la ventaja esta cobrada.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "DET",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -104,
+     "valor": {
+      "prob_estimada": 52.5,
+      "prob_justa": 49.22,
+      "prob_implicita": 50.98,
+      "cuota": -104,
+      "cuota_justa_mercado": 103,
+      "ev_pct": 2.98,
+      "ev_kalshi_pct": -0.45,
+      "precio_minimo": -105,
+      "precio_publicado": -105,
+      "precio_equilibrio": -110,
+      "discrepancia_pp": 3.28,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +2.98% · no tomar peor de -105",
+      "mejor_precio": {
+       "cuota": 101,
+       "casa": "betus"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA",
+       "a_favor": true,
+       "delta_pp": 3.1
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "BOS F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": 117,
+     "prob_estimada": 48.0,
+     "razon": "Ventaja modesta y lo digo: el F5 aisla a S. Gray (2.76, FIP 3.65, 17-5) frente a T. Alexander, que viene de tres salidas de 1-2 entradas como relevista y no deberia llegar largo. BOS esta frio (3.2 c/j, .635) pero batea .747 ops contra zurdos, su mejor split, y el mercado de Kalshi lleva solo 1.15 de vig.",
+     "equipos": [
+      "BOS",
+      "TEX"
+     ],
+     "destacado": "BOS",
+     "hora": "7:05 PM CT",
+     "capas": [
+      "pitcheo",
+      "matchup"
+     ],
+     "contra": "Es a tres bandas y el empate pierde: en un parque de factor 88 con BOS anotando 3.2 c/j, un 0-0 o 1-1 a las cinco entradas es muy real, y TEX puede cubrir el F5 con su buen bullpen si Alexander sale pronto.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "BOS",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 48.0,
+      "prob_justa": null,
+      "prob_implicita": 46.08,
+      "cuota": 117,
+      "cuota_justa_mercado": null,
+      "ev_pct": 4.16,
+      "ev_kalshi_pct": 0.39,
+      "precio_minimo": 113,
+      "precio_publicado": 113,
+      "precio_equilibrio": 109,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +4.16% · no tomar peor de +113",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    }
+   ],
+   "resumen": "Tanda corta con dos lecturas de valor concreto y una tercera modesta. La principal es PHI en Citi Field: el mercado paga al perro por McLean pero el relevo de NYM (4.99, sobrecargado, cerrador a 7.05) contra el de PHI abre una brecha que el precio no refleja del todo. En Chicago, DET llega con el bateo mas caliente del dia (7.0 c/j) frente a Fedde y un lineup de CWS con medio orden bajo .600. El F5 de BOS con Gray frente a un Alexander que viene de relevar es una ventaja pequeña, honesta y a tres bandas. Los unders de HOU, TEX y LAA se descartan por bullpens flojos o quemados, y HOU y MIN no tienen bateo para sostener un ML."
   }
  ]
 }

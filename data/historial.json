@@ -4833,5 +4833,144 @@
     "clv": 0.0,
     "prob_cierre": 51.5,
     "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-17",
+    "pick": "LAD F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -104,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.96,
+    "marcador": "LAD 8-2 CIN",
+    "veredicto": "apostable",
+    "prob_estimada": 54.0,
+    "prob_justa": null,
+    "ev_pct": 5.92,
+    "precio_publicado": -111,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "Wrobleski tampoco dura: sus ultimas salidas fueron de 3.0 y 3.1 entradas, y en las cinco primeras un mal inning suyo en un parque de 104 basta para perder; ademas el empate del F5 de Kalshi (~14%) es derrota, no devolucion.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    },
+    "clv": 0.0,
+    "prob_cierre": 51.0,
+    "clv_metodo": "kalshi_historico",
+    "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-09-17",
+    "pick": "SD F5 ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -117,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.85,
+    "marcador": "SD 9-2 COL",
+    "veredicto": "apostable",
+    "prob_estimada": 56.0,
+    "prob_justa": null,
+    "ev_pct": 3.86,
+    "precio_publicado": -119,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "Es Coors con pf 125 y umpire de +5%: el FIP 4.27 de King avisa de que su ERA esta inflada de suerte, y la alineacion de SD no esta publicada, asi que falta informacion del dia.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": false,
+      "abridores": true
+    },
+    "clv": 1.6,
+    "prob_cierre": 55.5,
+    "clv_metodo": "kalshi_historico",
+    "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-09-17",
+    "pick": "DET ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -104,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "DET 1-3 CWS",
+    "veredicto": "apostable",
+    "prob_estimada": 53.5,
+    "prob_justa": 49.22,
+    "ev_pct": 4.94,
+    "precio_publicado": -109,
+    "discrepancia_pp": 4.28,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "pitcheo",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "CWS batea mejor contra zurdos (.743 ops) y F. Valdez tiene apenas 8.6% de K-BB, asi que el matchup de mano no favorece a DET.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA",
+      "a_favor": true,
+      "delta_pp": 3.1
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    },
+    "clv": -1.5,
+    "prob_cierre": 49.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": 0.3,
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
   }
 ]

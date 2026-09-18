@@ -240,5 +240,131 @@
       "alineaciones": true,
       "abridores": true
     }
+  },
+  {
+    "fecha": "2026-09-17",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -136,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "MIL 4-7 PIT",
+    "veredicto": "seguimiento",
+    "prob_estimada": 58.0,
+    "prob_justa": 55.68,
+    "ev_pct": 0.65,
+    "precio_publicado": -126,
+    "discrepancia_pp": 2.32,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "Harrison llega de 3.2 IP/4 ER y 3.2 IP/9 ER, W. Dotel tiene FIP 3.65 muy por debajo de su ERA, y T. Megill quedo quemado tras lanzar los dos dias previos.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    }
+  },
+  {
+    "fecha": "2026-09-17",
+    "pick": "KC/HOU u9.0",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -119,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "KC 2-6 HOU",
+    "veredicto": "seguimiento",
+    "prob_estimada": 56.5,
+    "prob_justa": 51.95,
+    "ev_pct": 3.98,
+    "precio_publicado": -121,
+    "discrepancia_pp": 4.55,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "forma",
+      "bullpen",
+      "parque"
+    ],
+    "contra": "M. Ullola solo tiene 1 IP en su ultima salida: si dura poco, HOU tira de bullpen desde temprano y el juego se alarga en carreras.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": true,
+      "alineaciones": true,
+      "abridores": true
+    }
+  },
+  {
+    "fecha": "2026-09-17",
+    "pick": "LAA ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -111,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "MIN 4-5 LAA",
+    "veredicto": "seguimiento",
+    "prob_estimada": 54.0,
+    "prob_justa": 50.78,
+    "ev_pct": 2.65,
+    "precio_publicado": -110,
+    "discrepancia_pp": 3.22,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "pitcheo",
+      "forma"
+    ],
+    "contra": "MIN batea mejor contra derechos (.741 ops) y el bullpen de LAA (4.32) es el peor de los dos en ERA.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": false,
+      "delta_pp": -4.6
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    }
   }
 ]
