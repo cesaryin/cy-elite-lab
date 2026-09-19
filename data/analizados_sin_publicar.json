@@ -366,5 +366,132 @@
       "alineaciones": true,
       "abridores": true
     }
+  },
+  {
+    "fecha": "2026-09-18",
+    "pick": "WSH F5 ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 127,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "WSH 9-1 STL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 46.0,
+    "prob_justa": null,
+    "ev_pct": 4.42,
+    "precio_publicado": 122,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "bullpen"
+    ],
+    "contra": "Si Leahy actua de abridor corto con un relevista fresco detras, STL puede blanquear cinco entradas y el empate ya paga en contra.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    }
+  },
+  {
+    "fecha": "2026-09-18",
+    "pick": "NYY ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -102,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "NYY 9-2 AZ",
+    "veredicto": "seguimiento",
+    "prob_estimada": 51.5,
+    "prob_justa": 48.77,
+    "ev_pct": 1.99,
+    "precio_publicado": -101,
+    "discrepancia_pp": 2.73,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "AZ batea .776 de OPS vs zurdos y .844 en la semana, y Chase Field (pf 106) con techo castiga cualquier error de Cole, que en su última salida duró 4.1 con 5 limpias.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "delta_pp": -5.3
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    }
+  },
+  {
+    "fecha": "2026-09-18",
+    "pick": "LAA ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -103,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "MIN 3-0 LAA",
+    "veredicto": "seguimiento",
+    "prob_estimada": 51.5,
+    "prob_justa": 49.1,
+    "ev_pct": 1.5,
+    "precio_publicado": -101,
+    "discrepancia_pp": 2.4,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "bullpen",
+      "ofensiva",
+      "forma"
+    ],
+    "contra": "G. Rodriguez tiene 6.10 de ERA y 4.71 de FIP, y con viento de 7 mph hacia el jardín central cualquier tanda de MIN, que batea .740 vs derechos, puede resolverlo temprano.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "delta_pp": 2.7
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true
+    }
   }
 ]

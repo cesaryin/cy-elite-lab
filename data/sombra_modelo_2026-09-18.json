@@ -7,13 +7,349 @@
    "n": 1,
    "lote": "msgbatch_01LGgAwi6D5o2cMyJ8rvvNQ6",
    "enviado_utc": "2026-09-18T22:13:02Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-19T13:00:36Z",
+   "uso": {
+    "tokens_entrada": 61996,
+    "tokens_salida": 7755,
+    "coste": 0.5039
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "TOR ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -136,
+     "prob_estimada": 58.5,
+     "razon": "La ventaja real esta en el cierre: el bullpen de TEX viene de 11.6 IP en dos dias con seis relevistas usados ayer y J. Junis quemado, mientras el de TOR llega fresco. La ofensiva de TOR respalda (5.0 c/j, ops .789 en la semana, .713 vs derechos) frente a K. Rocker, que no pasa de 4 IP en sus dos ultimas salidas.",
+     "equipos": [
+      "TOR",
+      "TEX"
+     ],
+     "destacado": "TOR",
+     "hora": "7:05 PM CT",
+     "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva"
+     ],
+     "contra": "D. Cease camina al 10.8% y en un parque que ahoga carreras (pf 88) un juego de 2-1 deja el ML en manos de una sola jugada.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "TOR",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -136,
+     "valor": {
+      "prob_estimada": 58.5,
+      "prob_justa": 55.57,
+      "prob_implicita": 57.63,
+      "cuota": -136,
+      "cuota_justa_mercado": -125,
+      "ev_pct": 1.51,
+      "ev_kalshi_pct": -1.46,
+      "precio_minimo": -128,
+      "precio_publicado": -128,
+      "precio_equilibrio": -140,
+      "discrepancia_pp": 2.93,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.51% por debajo del minimo exigido (3.9%)",
+      "mejor_precio": {
+       "cuota": -131,
+       "casa": "betus"
+      },
+      "alcanzable": false,
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "CHC F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": 117,
+     "prob_estimada": 47.5,
+     "razon": "El F5 paga a CHC como si C. Burns fuese a cubrir las cinco entradas, pero sus dos ultimas salidas fueron de 3.0 IP: el bullpen de CIN (4.50 de era, 9.3 IP en dos dias) entraria dentro del F5. CHC llega con 6.2 c/j y ops .866 en la semana; CIN con 3.1 c/j, ops .637 y 62 K en siete juegos.",
+     "equipos": [
+      "CHC",
+      "CIN"
+     ],
+     "destacado": "CHC",
+     "hora": "5:40 PM CT",
+     "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva"
+     ],
+     "contra": "Es mercado a tres bandas: un empate tras cinco pierde, y C. Holmes (FIP 3.80, 9% de bb) puede regalar lo que Burns niega en sus tres entradas.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "CHC",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 47.5,
+      "prob_justa": null,
+      "prob_implicita": 46.08,
+      "cuota": 117,
+      "cuota_justa_mercado": null,
+      "ev_pct": 3.07,
+      "ev_kalshi_pct": -0.7,
+      "precio_minimo": 115,
+      "precio_publicado": 115,
+      "precio_equilibrio": 111,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +3.07% · no tomar peor de +115",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "CLE Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": -109,
+     "prob_estimada": 52.5,
+     "razon": "El ML de CLE esta fuera de banda, pero el margen tiene sustento: M. Barnett (FIP 5.63, 13% de bb) no lanza desde el 17-ago y detras hay un bullpen de 5.18 con D. Rom quemado. CLE anota 5.5 c/j en la semana y ATH apenas 3.3 con ops .656. Ventaja modesta, lo digo: es la tercera lectura del dia.",
+     "equipos": [
+      "ATH",
+      "CLE"
+     ],
+     "destacado": "CLE",
+     "hora": "6:10 PM CT",
+     "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva"
+     ],
+     "contra": "D. Espino tiene 2.0 IP de muestra en el ano: si no dura, el spread depende de que el bullpen de CLE aguante un margen contra un lineup que si pega HR (8 en seis juegos).",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "CLE",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": -108,
+     "valor": {
+      "prob_estimada": 52.5,
+      "prob_justa": 49.89,
+      "prob_implicita": 52.15,
+      "cuota": -109,
+      "cuota_justa_mercado": 100,
+      "ev_pct": 0.67,
+      "ev_kalshi_pct": -2.68,
+      "precio_minimo": -104,
+      "precio_publicado": -104,
+      "precio_equilibrio": -110,
+      "discrepancia_pp": 2.61,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +0.67% por debajo del minimo exigido (2.5%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "La tanda gira en torno a bullpens agotados: TEX llega a su duelo con TOR tras 11.6 entradas de relevo en dos dias contra un D. Cease en su mejor version, y ese cierre desigual es la lectura mas clara del dia. En CIN, las salidas de tres entradas de C. Burns abren la puerta al F5 de CHC, y en CLE el margen contra un M. Barnett inactivo un mes con bullpen roto sostiene el spread. El resto del calendario (KC/PIT, BOS/TB, ATL/HOU, WSH/STL) ofrece lecturas que el precio ya recoge."
   },
   {
    "n": 2,
    "lote": "msgbatch_01RfAVtZJkdajVSLKsJypBfW",
    "enviado_utc": "2026-09-19T00:52:53Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-19T13:00:36Z",
+   "uso": {
+    "tokens_entrada": 33542,
+    "tokens_salida": 5139,
+    "coste": 0.2962
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "SD F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -108,
+     "prob_estimada": 54.0,
+     "razon": "El F5 aisla lo mejor de SD: N. Pivetta (31% K, 6% BB, FIP 3.32) contra T. Phillips, cuyo FIP 4.62 y K-BB de 8.9% no aguantan su ERA. La ofensiva de SD llega a 7.0 c/j y ops .931 en la semana frente a 4.5 c/j de MIA, y Kalshi cobra solo 1.9 puntos de margen. Lectura moderada, no grande.",
+     "equipos": [
+      "MIA",
+      "SD"
+     ],
+     "destacado": "SD",
+     "hora": "8:40 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+     ],
+     "contra": "N. Pivetta viene de salidas de 4.0 y 5.0 entradas con pocos lanzamientos y, a tres bandas, un empate a las cinco entradas pierde la posicion.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "SD",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 54.0,
+      "prob_justa": null,
+      "prob_implicita": 51.92,
+      "cuota": -108,
+      "cuota_justa_mercado": null,
+      "ev_pct": 4.0,
+      "ev_kalshi_pct": 0.63,
+      "precio_minimo": -111,
+      "precio_publicado": -111,
+      "precio_equilibrio": -117,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +4.00% · no tomar peor de -111",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "LAD Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": -136,
+     "prob_estimada": 57.0,
+     "razon": "T. Glasnow (32% K, FIP 3.14) contra una alineacion de SF con cuatro bates por debajo de .625 de ops, y el bullpen de SF es el mas flojo del dia (4.35 de ERA, fip_core 1.689) para las entradas finales. LAD batea .745 vs zurdos y suma 4.4 c/j en la semana: el margen de dos carreras es mas probable de lo que paga el mercado.",
+     "equipos": [
+      "SF",
+      "LAD"
+     ],
+     "destacado": "LAD",
+     "hora": "9:15 PM CT",
+     "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva"
+     ],
+     "contra": "El bullpen de LAD lleva 12.3 entradas en dos dias con B. Treinen y S. Halvorsen quemados, y T. Glasnow viene de 4.0 entradas con 4 boletos: un juego corto del abridor deja el margen en manos cansadas.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "LAD",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": -137,
+     "valor": {
+      "prob_estimada": 57.0,
+      "prob_justa": 55.45,
+      "prob_implicita": 57.63,
+      "cuota": -136,
+      "cuota_justa_mercado": -124,
+      "ev_pct": -1.09,
+      "ev_kalshi_pct": -4.06,
+      "precio_minimo": -121,
+      "precio_publicado": -121,
+      "precio_equilibrio": -132,
+      "discrepancia_pp": 1.55,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV -1.09% por debajo del minimo exigido (3.9%)",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "MIA/SD o7.5",
+     "deporte": "MLB",
+     "tipo": "o7.5",
+     "cuota": -110,
+     "prob_estimada": 52.5,
+     "razon": "Lectura de poca ventaja y lo digo: SD promedia 6.6 a favor y 4.4 en contra en sus ultimos 10 (9/10 sobre 8.5) y MIA 6.0 y 6.0, con T. Phillips de FIP 4.62 y Y. Matsui quemado en el bullpen de SD. El 7.5 queda bajo para dos ofensivas que anotan, aunque el parque y el umpire empujan en contra.",
+     "equipos": [
+      "MIA",
+      "SD"
+     ],
+     "destacado": null,
+     "hora": "8:40 PM CT",
+     "capas": [
+      "ofensiva",
+      "forma",
+      "bullpen"
+     ],
+     "contra": "Petco (pf 94), viento hacia dentro y umpire -1.9% de carreras, con N. Pivetta y M. Miller capaces de dejar a MIA en dos carreras.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "over",
+      "linea": 7.5
+     },
+     "cuota_apertura_ref": -110,
+     "valor": {
+      "prob_estimada": 52.5,
+      "prob_justa": 50.0,
+      "prob_implicita": 52.38,
+      "cuota": -110,
+      "cuota_justa_mercado": -100,
+      "ev_pct": 0.23,
+      "ev_kalshi_pct": -3.1,
+      "precio_minimo": -104,
+      "precio_publicado": -104,
+      "precio_equilibrio": -110,
+      "discrepancia_pp": 2.5,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +0.23% por debajo del minimo exigido (2.6%)",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda nocturna con poco valor claro. La mejor lectura esta en San Diego: el F5 de SD apoya a N. Pivetta y a una ofensiva encendida frente al FIP alto de T. Phillips, en el mercado mas limpio del dia. En Los Angeles, el spread de LAD gana sentido por la alineacion debil de SF y su bullpen flojo, con el riesgo de un bullpen local cansado. El over de MIA/SD queda como lectura de ventaja corta. MIN/LAA y NYY/AZ no ofrecen discrepancia suficiente contra la linea justa y se dejan pasar."
   }
  ]
 }

@@ -252,6 +252,125 @@
      "neto_u": -1.0
     }
    ]
+  },
+  "2026-09-18": {
+   "fecha": "2026-09-18",
+   "opus": {
+    "analisis": 5,
+    "senales": 2,
+    "senales_w": 0,
+    "senales_l": 1,
+    "neto_u": -1.0,
+    "analisis_w": 2,
+    "analisis_l": 2,
+    "brier": 0.2593,
+    "n_brier": 4,
+    "picks": [
+     "PIT F5 ML",
+     "TOR F5 ML"
+    ]
+   },
+   "fable": {
+    "analisis": 6,
+    "senales": 2,
+    "senales_w": 2,
+    "senales_l": 0,
+    "neto_u": 2.1,
+    "analisis_w": 5,
+    "analisis_l": 1,
+    "brier": 0.2443,
+    "n_brier": 6,
+    "picks": [
+     "CHC F5 ML",
+     "SD F5 ML"
+    ]
+   },
+   "coinciden": [],
+   "tandas_fable": [
+    {
+     "n": 1,
+     "estado": "listo"
+    },
+    {
+     "n": 2,
+     "estado": "listo"
+    }
+   ],
+   "coste_fable": 0.8001,
+   "detalle_fable": [
+    {
+     "pick": "TOR ML",
+     "cuota": -136,
+     "tanda": 1,
+     "nivel": "oro",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "TOR 1-7 TEX",
+     "prob_estimada": 58.5,
+     "ev_pct": 1.51,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "CHC F5 ML",
+     "cuota": 117,
+     "tanda": 1,
+     "nivel": "plata",
+     "publicado": true,
+     "resultado": "W",
+     "marcador": "CHC 4-6 CIN",
+     "prob_estimada": 47.5,
+     "ev_pct": 3.07,
+     "neto_u": 1.17
+    },
+    {
+     "pick": "CLE Spread -1.5",
+     "cuota": -109,
+     "tanda": 1,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "ATH 3-5 CLE",
+     "prob_estimada": 52.5,
+     "ev_pct": 0.67,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "SD F5 ML",
+     "cuota": -108,
+     "tanda": 2,
+     "nivel": "oro",
+     "publicado": true,
+     "resultado": "W",
+     "marcador": "MIA 2-8 SD",
+     "prob_estimada": 54.0,
+     "ev_pct": 4.0,
+     "neto_u": 0.93
+    },
+    {
+     "pick": "LAD Spread -1.5",
+     "cuota": -136,
+     "tanda": 2,
+     "nivel": "plata",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "SF 2-8 LAD",
+     "prob_estimada": 57.0,
+     "ev_pct": -1.09,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "MIA/SD o7.5",
+     "cuota": -110,
+     "tanda": 2,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "MIA 2-8 SD",
+     "prob_estimada": 52.5,
+     "ev_pct": 0.23,
+     "neto_u": 0.0
+    }
+   ]
   }
  }
 }
