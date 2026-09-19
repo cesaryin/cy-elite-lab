@@ -7,26 +7,52 @@
 body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased}
 .mono{font-variant-numeric:tabular-nums}
 .app{max-width:480px;margin:0 auto;min-height:100vh;padding-top:66px;padding-bottom:calc(74px + env(safe-area-inset-bottom));position:relative;overflow-x:hidden}
-.topbar{position:fixed;top:0;left:0;right:0;z-index:30;max-width:480px;margin:0 auto;background:rgba(13,17,23,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:15px 18px;text-align:center}
-.topbar h1{font-size:24px;font-weight:800;letter-spacing:.5px;background:linear-gradient(90deg,#d4af37,#f0c75e,#d4af37);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.date{padding:16px 18px 4px;font-size:14px;color:var(--mut);font-weight:600}
-/* LAS CUATRO PAGINAS EMPIEZAN A LA MISMA ALTURA (3-sep-2026).
-   Picks e Historial abren con la linea .date; LAB y Trends no --Cesar los
-   pidio sin encabezado-- y por eso su contenido arrancaba 41px mas arriba.
-   Cambiando de pestaña se notaba el salto. 41px es exactamente lo que ocupa
-   esa linea (16 de padding + 21 de texto + 4), asi que este hueco no es un
-   numero inventado: es el mismo sitio, solo que vacio. Los 12 de abajo son
-   los que las otras dos reciben del margen de su ultima tarjeta. */
-.lab-real,.trends-real{padding-top:41px;padding-bottom:12px}
-/* ...Y LAS DOS ARRANCAN IGUAL DE VERDAD (5-sep-2026). El padding de arriba las
-   pone a la misma altura, pero solo el LAB llegaba ahi: su primera tarjeta no
-   lleva margen (`.gitem+.gitem`, solo entre hermanas) mientras que Trends abre
-   con un `.sep`, que lleva 30px de margen para separar una capa de la de
-   arriba. Sumaba 71 contra 41 y Trends caia mas abajo. El primer separador no
-   separa de nada, asi que aqui no tiene margen. Va en el CSS del shell y no en
-   CSS_TRENDS a proposito: en trends.html suelto ese margen SI hace falta, es
-   el aire que deja la cabecera de la pagina. */
-.trends-real>.sep:first-child{margin-top:0}
+/* LA BARRA DE ARRIBA, COMO EN LINEMATE (19-sep-2026). Cesar mando un video de esa
+   app y eligio la version con el nombre al centro viendo el mockup (opcion 1).
+   Antes era una caja casi opaca y desenfocada: lo que pasaba por debajo no se veia.
+   Ahora no hay caja ni desenfoque: el contenido pasa por debajo del nombre y se
+   sigue leyendo, oscurecido. Los tramos del degradado son los MEDIDOS en el video,
+   pixel a pixel: ~73% a la altura del nombre, ~45% abajo, y se suelta del todo al
+   final. En reposo no hay nada debajo y la barra es del color de la pagina.
+   El velo es un ::before que baja 16px por debajo de la barra: pointer-events:none,
+   para que esos 16px no se coman los toques de la tarjeta que pase por ahi (la
+   leccion del 5-sep). El 5-sep se rechazaron tres versiones que solo difuminaban el
+   borde de la caja vieja: la diferencia es que aqui la caja desaparece. */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:30;max-width:480px;margin:0 auto;padding:15px 18px;text-align:center}
+.topbar::before{content:"";position:absolute;left:0;right:0;top:0;bottom:-16px;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(13,17,23,.92) 0%,rgba(13,17,23,.74) 28%,rgba(13,17,23,.55) 62%,rgba(13,17,23,.42) 82%,rgba(13,17,23,0) 100%)}
+.topbar h1{font-size:24px;font-weight:800;letter-spacing:.5px;background:linear-gradient(90deg,#d4af37,#f0c75e,#d4af37);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 1px 8px rgba(0,0,0,.55))}
+/* LA CABECERA DE CADA PAGINA (19-sep-2026, opcion C, elegida por Cesar viendo el
+   mockup de las 8 paginas reales). El titulo a la izquierda y, a la derecha, el
+   numero que importa en esa pagina: el dia, los partidos, el acierto, lo que
+   falta para el cobro. Ver _cabecera().
+   Sustituye a la linea gris .date, que cada pagina usaba a su manera (la fecha en
+   Analisis, el nombre en Ajustes, nada en Modelo y Mercado) y que ademas iba 18px
+   mas adentro que las tarjetas. La cabecera va al borde de ellas.
+   Las secciones de dentro (.sec-h en el Record, .set-h en Ajustes) van todas en
+   el mismo estilo: letra normal, mas grande, sin mayusculas. */
+.cab{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;padding:16px 2px 12px;font-family:var(--font)}
+.cab-tx{min-width:0}
+.cab-t{margin:0;font-family:var(--font);font-size:23px;font-weight:800;letter-spacing:-.015em;line-height:1.15;color:var(--text);text-wrap:balance}
+.cab-s{margin:4px 0 0;font-size:12.5px;line-height:1.35;color:var(--mut)}
+.cab-d{text-align:right;flex-shrink:0}
+.cab-n{font-size:23px;font-weight:800;line-height:1;color:var(--text);font-variant-numeric:tabular-nums;white-space:nowrap}
+.cab-l{margin-top:5px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);white-space:nowrap}
+.sec-h{font-size:15px;font-weight:700;letter-spacing:-.005em;color:var(--text);padding:26px 2px 8px}
+/* LOS MISMOS HUECOS EN LAS OCHO (19-sep-2026, Cesar: "que tengan el mismo margen
+   superior e inferior, que todo quede bien compacto"). Medidos con Edge a 430px
+   antes de tocar nada: bajo la cabecera habia 0, 6, 12 o 26px segun la pagina
+   (Record y Ajustes abren con una seccion que traia su propio aire), y antes del
+   pie 26 en seis paginas y 38 en Modelo y Mercado (su envoltorio sumaba 12 mas).
+   Ahora: el titulo a 82px de arriba, 12px bajo la cabecera y 24px antes del pie,
+   en todas. El primer bloque pierde su margen de arriba; el pie pone el suyo, y
+   el margen de abajo del ultimo bloque (12 en las tarjetas) se funde con el. */
+section.on>.cab+*{margin-top:0}
+section.on>.cab+.sec-h,section.on>.cab+.set-h{padding-top:0}
+.lab-real,.trends-real{padding-bottom:0}
+/* El primer separador de Mercado es el rotulo «MERCADO», que repetia el titulo de
+   la cabecera. En trends.html suelto SI hace falta (alli no hay cabecera). */
+.trends-real>.sep:first-child{display:none}
+.trends-real>.sep:first-child+h2{margin-top:0}
 main{padding:0 16px}
 section{display:none}section.on{display:block}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;margin:12px 0}
@@ -203,7 +229,7 @@ section{display:none}section.on{display:block}
 /* AJUSTES (11-sep-2026) — ver generar_ajustes(). Filas de una linea con su
    icono, agrupadas bajo cabeceras cortas: el patron de la pantalla de ajustes
    de una app, que es lo que pidio Cesar. */
-.set-h{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin:22px 0 8px;padding-left:2px}
+.set-h{font-size:15px;font-weight:700;letter-spacing:-.005em;color:var(--text);margin:0;padding:26px 2px 8px}
 .set-g{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden}
 .set-f{display:flex;align-items:center;gap:12px;padding:13px 14px;border-top:1px solid var(--line2);color:var(--text);text-decoration:none;min-height:52px}
 .set-g>*:first-child,.set-g>*:first-child>summary{border-top:none}
@@ -228,7 +254,7 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
    porque cada pagina termina en un bloque con sus propios margenes. Ahora el
    aire lo pone el pie y no lo que tenga encima: margen fijo arriba, y abajo el
    padding de .app lo separa de la barra inferior. */
-.legal{margin:26px 0 0;padding-top:14px;border-top:1px solid var(--line2)}
+.legal{margin:24px 0 0;padding-top:14px;border-top:1px solid var(--line2)}
 .legal-c{font-size:10.5px;line-height:1.55;color:#5a626d;text-align:center;
   max-width:34em;margin:0 auto}
 /* LA RUEDA DE AJUSTES en la barra de arriba. La barra es text-align:center y
@@ -788,36 +814,36 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .glo-h:first-child{padding-top:3px}
 .lg:last-child{border-bottom:none}
 .lg b{color:#e6edf3}
-</style></head><body><div class="app"><div class="topbar"><h1>CY Elite Lab</h1><a href="/ajustes" class="t-set" aria-label="Ajustes e información"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10 3.09V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></a></div><main><section class="on"><div class="lab-real"><div class="gitem">
+</style></head><body><div class="app"><div class="topbar"><h1>CY Elite Lab</h1><a href="/ajustes" class="t-set" aria-label="Ajustes e información"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10 3.09V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></a></div><main><section class="on"><div class="cab"><div class="cab-tx"><h2 class="cab-t">Modelo</h2><p class="cab-s">La proyección de los 15 partidos de hoy</p></div><div class="cab-d"><div class="cab-n">15</div><div class="cab-l">partidos</div></div></div><div class="lab-real"><div class="gitem">
 <div class="gc">
   <div class="e-hd">Rate Field · <time class="h-loc" data-utc="2026-09-19T18:10:00Z">1:10 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -2.0%</span><span class="lb-aj up" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +0.3%</span></div></div>
-  <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/DET.png" alt="DET" onerror="this.style.display='none'"><div class="e-ab">DET<span class="e-ml">+121</span></div><div class="e-win">46.9% win</div><div class="e-jm">(+113)</div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -2.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -2.4%</span><span class="lb-aj up" title="Umpire del plato: efecto medido en 3 temporadas y encogido por su muestra"><i>UMP</i> Wegner +2.9%</span></div></div>
+  <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/DET.png" alt="DET" onerror="this.style.display='none'"><div class="e-ab">DET<span class="e-ml">+121</span></div><div class="e-win">48.0% win</div><div class="e-jm">(+108)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>4.42</span><i>EXP<br>RUNS</i>
+      <div class="e-runs"><span>4.53</span><i>EXP<br>RUNS</i>
         <span>4.55</span></div>
-      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>41%</b></span><i></i><span>o4.5 <b>43%</b></span></div>
-      <div class="e-tot">Total esperado <b>8.98</b></div>
-      <div class="e-mkt">8.0 (+100/-120)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
-    </div><div class="e-eq"><img class="e-lg" src="logos/CWS.png" alt="CWS" onerror="this.style.display='none'"><div class="e-ab">CWS<span class="e-ml">-138</span></div><div class="e-win">53.1% win</div><div class="e-jm">(-113)</div></div></div>
-  <div class="n-eds"><span class="ec peq" title="El modelo le da 46.9% a DET y el precio que te pagan pide 45.2%: +1.7 puntos a favor, comision incluida.">DET ML +1.7%</span><span class="ec peq" title="El modelo da 54.5% al over y el precio pide 50.0%: +4.5 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 8 +4.5%</span></div>
+      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>43%</b></span><i></i><span>o4.5 <b>43%</b></span></div>
+      <div class="e-tot">Total esperado <b>9.08</b></div>
+      <div class="e-mkt">8.0 (+100/-120)</div><span class="lb-pill ok"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Confirmado</span>
+    </div><div class="e-eq"><img class="e-lg" src="logos/CWS.png" alt="CWS" onerror="this.style.display='none'"><div class="e-ab">CWS<span class="e-ml">-138</span></div><div class="e-win">52.0% win</div><div class="e-jm">(-108)</div></div></div>
+  <div class="n-eds"><span class="ec peq" title="El modelo le da 48.0% a DET y el precio que te pagan pide 45.2%: +2.8 puntos a favor, comision incluida.">DET ML +2.8%</span><span class="ec peq" title="El modelo da 55.5% al over y el precio pide 50.0%: +5.5 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 8 +5.5%</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">J. Jobe <span class="mn">(R)</span></div><div class="q-nom r">S. Burke <span class="mn">(R)</span></div><div class="q-val">3.89<span class="gr n-c">C+</span> · 4.53<span class="gr n-c">C-</span> · 14.2%<span class="gr n-b">B-</span></div><div class="q-val r">3.47<span class="gr n-b">B</span> · 3.79<span class="gr n-c">C+</span> · 17.2%<span class="gr n-b">B</span></div><div class="q-bo"><div><i>BP</i>3.84 <em class="">10.4 IP</em></div><div><i>OF</i><b class="">100</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>3.63 <em class="dn">2 quem.</em></div><div><i>OF</i><b class="">99</b> <em class="mut">vs RHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(0)" id="detAr0" aria-expanded="false" aria-controls="det0">Detalle ▾</button></div>
-  <div class="det" id="det0" style="display:none"><div class="d-teams"><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/DET.png" alt="DET" onerror="this.style.display='none'"><span>DET</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-c">C-</span></td><td><span class="gr n-c">C+</span></td><td><span class="gr n-b">B</span></td><td><span class="gr n-d">F</span></td><td><span class="gr n-b">B+</span></td></tr></tbody></table><div class="d-bt">Abridor</div><div class="d-sub">Jackson Jobe <span class="mut">(2-2)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>3.89<span class="gr n-c">C+</span></span></div><div class="d-ln"><span>FIP 3 años <i class="d-nt">el que usa el modelo</i></span><span>5.0</span></div><div class="d-ln"><span>K-BB%</span><span>14.2%<span class="gr n-b">B-</span></span></div><div class="d-bt">Últimos 5 starts</div><div class="d-ln"><span>vs COL</span><span>6.1 IP · 1 ER · 8 K</span></div><div class="d-ln"><span>vs CLE</span><span>5.0 IP · 2 ER · 7 K</span></div><div class="d-ln"><span>vs MIN</span><span>5.0 IP · 4 ER · 4 K</span></div><div class="d-ln"><span>vs TB</span><span>4.1 IP · 1 ER · 4 K</span></div><div class="d-ln"><span>vs PIT</span><span>5.1 IP · 1 ER · 3 K</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>10.4</span></div><div class="d-pen">2 días seguidos: ninguno</div></div><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/CWS.png" alt="CWS" onerror="this.style.display='none'"><span>CWS</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-d">D</span></td><td><span class="gr n-b">B+</span></td><td><span class="gr n-b">B</span></td><td><span class="gr n-d">D</span></td><td><span class="gr n-c">C+</span></td></tr></tbody></table><div class="d-bt">Abridor</div><div class="d-sub">Sean Burke <span class="mut">(9-7)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>3.47<span class="gr n-b">B</span></span></div><div class="d-ln"><span>FIP 3 años <i class="d-nt">el que usa el modelo</i></span><span>4.08</span></div><div class="d-ln"><span>K-BB%</span><span>17.2%<span class="gr n-b">B</span></span></div><div class="d-bt">Últimos 5 starts</div><div class="d-ln"><span>vs PIT</span><span>1.1 IP · 7 ER · 2 K</span></div><div class="d-ln"><span>vs HOU</span><span>5.2 IP · 0 ER · 6 K</span></div><div class="d-ln"><span>vs TEX</span><span>3.0 IP · 2 ER · 3 K</span></div><div class="d-ln"><span>vs NYM</span><span>6.0 IP · 4 ER · 4 K</span></div><div class="d-ln"><span>vs DET</span><span>4.1 IP · 4 ER · 2 K</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>7.0</span></div><div class="d-pen">2 días seguidos: Bryan Hudson, Jordan Hicks</div></div></div></div>
+  <div class="det" id="det0" style="display:none"><div class="d-teams"><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/DET.png" alt="DET" onerror="this.style.display='none'"><span>DET</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-c">C-</span></td><td><span class="gr n-c">C+</span></td><td><span class="gr n-b">B</span></td><td><span class="gr n-d">F</span></td><td><span class="gr n-b">B+</span></td></tr></tbody></table><div class="d-bt">Abridor</div><div class="d-sub">Jackson Jobe <span class="mut">(2-2)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>3.89<span class="gr n-c">C+</span></span></div><div class="d-ln"><span>FIP 3 años <i class="d-nt">el que usa el modelo</i></span><span>5.0</span></div><div class="d-ln"><span>K-BB%</span><span>14.2%<span class="gr n-b">B-</span></span></div><div class="d-bt">Últimos 5 starts</div><div class="d-ln"><span>vs COL</span><span>6.1 IP · 1 ER · 8 K</span></div><div class="d-ln"><span>vs CLE</span><span>5.0 IP · 2 ER · 7 K</span></div><div class="d-ln"><span>vs MIN</span><span>5.0 IP · 4 ER · 4 K</span></div><div class="d-ln"><span>vs TB</span><span>4.1 IP · 1 ER · 4 K</span></div><div class="d-ln"><span>vs PIT</span><span>5.1 IP · 1 ER · 3 K</span></div><div class="d-bt">Lineup · OPS</div><div class="d-ln"><span>1 K. McGonigle <span class="mut">3B · L</span></span><span>.806</span></div><div class="d-ln"><span>2 H. Lee <span class="mut">2B · R</span></span><span>.752</span></div><div class="d-ln"><span>3 C. Keith <span class="mut">1B · L</span></span><span>.733</span></div><div class="d-ln"><span>4 R. Greene <span class="mut">DH · L</span></span><span>.853</span></div><div class="d-ln"><span>5 D. Dingler <span class="mut">C · R</span></span><span>.752</span></div><div class="d-ln"><span>6 M. Clark <span class="mut">CF · L</span></span><span>.795</span></div><div class="d-ln"><span>7 B. Malgeri <span class="mut">RF · R</span></span><span>.695</span></div><div class="d-ln"><span>8 B. Callahan <span class="mut">LF · L</span></span><span>.643</span></div><div class="d-ln"><span>9 J. Peck <span class="mut">SS · R</span></span><span>.577</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>10.4</span></div><div class="d-pen">2 días seguidos: ninguno</div></div><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/CWS.png" alt="CWS" onerror="this.style.display='none'"><span>CWS</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-d">D</span></td><td><span class="gr n-b">B+</span></td><td><span class="gr n-b">B</span></td><td><span class="gr n-d">D</span></td><td><span class="gr n-c">C+</span></td></tr></tbody></table><div class="d-bt">Abridor</div><div class="d-sub">Sean Burke <span class="mut">(9-7)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>3.47<span class="gr n-b">B</span></span></div><div class="d-ln"><span>FIP 3 años <i class="d-nt">el que usa el modelo</i></span><span>4.08</span></div><div class="d-ln"><span>K-BB%</span><span>17.2%<span class="gr n-b">B</span></span></div><div class="d-bt">Últimos 5 starts</div><div class="d-ln"><span>vs PIT</span><span>1.1 IP · 7 ER · 2 K</span></div><div class="d-ln"><span>vs HOU</span><span>5.2 IP · 0 ER · 6 K</span></div><div class="d-ln"><span>vs TEX</span><span>3.0 IP · 2 ER · 3 K</span></div><div class="d-ln"><span>vs NYM</span><span>6.0 IP · 4 ER · 4 K</span></div><div class="d-ln"><span>vs DET</span><span>4.1 IP · 4 ER · 2 K</span></div><div class="d-bt">Lineup · OPS</div><div class="d-ln"><span>1 S. Antonacci <span class="mut">LF · L</span></span><span>.756</span></div><div class="d-ln"><span>2 K. Teel <span class="mut">C · L</span></span><span>.660</span></div><div class="d-ln"><span>3 M. Vargas <span class="mut">3B · R</span></span><span>.834</span></div><div class="d-ln"><span>4 M. Murakami <span class="mut">1B · L</span></span><span>.811</span></div><div class="d-ln"><span>5 A. Benintendi <span class="mut">DH · L</span></span><span>.723</span></div><div class="d-ln"><span>6 C. Montgomery <span class="mut">SS · L</span></span><span>.713</span></div><div class="d-ln"><span>7 C. Meidroth <span class="mut">2B · R</span></span><span>.744</span></div><div class="d-ln"><span>8 B. Montgomery <span class="mut">RF · S</span></span><span>.635</span></div><div class="d-ln"><span>9 B. Doyle <span class="mut">CF · R</span></span><span>.593</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>7.0</span></div><div class="d-pen">2 días seguidos: Bryan Hudson, Jordan Hicks</div></div></div></div>
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">Oriole Park at Camden Yards · <time class="h-loc" data-utc="2026-09-19T20:05:00Z">3:05 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +4.0%</span><span class="lb-aj up" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +2.7%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +4.0%</span><span class="lb-aj up" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +0.5%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/MIL.png" alt="MIL" onerror="this.style.display='none'"><div class="e-ab">MIL<span class="e-ml">-130</span></div><div class="e-win">45.9% win</div><div class="e-jm">(+118)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>4.37</span><i>EXP<br>RUNS</i>
-        <span>4.6</span></div>
-      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>41%</b></span><i></i><span>o4.5 <b>44%</b></span></div>
-      <div class="e-tot">Total esperado <b>8.96</b></div>
+      <div class="e-runs"><span>4.27</span><i>EXP<br>RUNS</i>
+        <span>4.5</span></div>
+      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>40%</b></span><i></i><span>o4.5 <b>42%</b></span></div>
+      <div class="e-tot">Total esperado <b>8.77</b></div>
       <div class="e-mkt">7.5 (-115/-104)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/BAL.png" alt="BAL" onerror="this.style.display='none'"><div class="e-ab">BAL<span class="e-ml">+112</span></div><div class="e-win">54.1% win</div><div class="e-jm">(-118)</div></div></div>
-  <div class="n-eds"><span class="ec on" title="El modelo le da 54.1% a BAL y el precio que te pagan pide 47.2%: +6.9 puntos a favor, comision incluida.">BAL ML +6.9%</span><span class="ec peq" title="El modelo da 58.3% al over y el precio pide 53.5%: +4.8 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 7.5 +4.8%</span></div>
+  <div class="n-eds"><span class="ec on" title="El modelo le da 54.1% a BAL y el precio que te pagan pide 47.2%: +6.9 puntos a favor, comision incluida.">BAL ML +6.9%</span><span class="ec peq" title="El modelo da 56.6% al over y el precio pide 53.5%: +3.1 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 7.5 +3.1%</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">R. Gasser <span class="mn">(L)</span></div><div class="q-nom r">T. Rogers <span class="mn">(L)</span></div><div class="q-val">4.30<span class="gr n-c">C</span> · 4.32<span class="gr n-c">C+</span> · 14.6%<span class="gr n-b">B-</span></div><div class="q-val r">4.22<span class="gr n-c">C</span> · 3.79<span class="gr n-b">B</span> · 16.0%<span class="gr n-b">B</span></div><div class="q-bo"><div><i>BP</i>3.63 <em class="dn">1 quem.</em></div><div><i>OF</i><b class="">100</b> <em class="mut">vs LHP</em></div></div><div class="q-bo r"><div><i>BP</i>3.61 <em class="">4.7 IP</em></div><div><i>OF</i><b class="">99</b> <em class="mut">vs LHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(1)" id="detAr1" aria-expanded="false" aria-controls="det1">Detalle ▾</button></div>
@@ -842,16 +868,16 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">Citi Field · <time class="h-loc" data-utc="2026-09-19T20:10:00Z">3:10 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -2.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -3.0%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -2.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -2.6%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/PHI.png" alt="PHI" onerror="this.style.display='none'"><div class="e-ab">PHI<span class="e-ml">+107</span></div><div class="e-win">44.7% win</div><div class="e-jm">(+124)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>3.91</span><i>EXP<br>RUNS</i>
-        <span>4.22</span></div>
+      <div class="e-runs"><span>3.92</span><i>EXP<br>RUNS</i>
+        <span>4.24</span></div>
       <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>35%</b></span><i></i><span>o4.5 <b>39%</b></span></div>
-      <div class="e-tot">Total esperado <b>8.13</b></div>
+      <div class="e-tot">Total esperado <b>8.16</b></div>
       <div class="e-mkt">8.0 (-110/-110)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/NYM.png" alt="NYM" onerror="this.style.display='none'"><div class="e-ab">NYM<span class="e-ml">-121</span></div><div class="e-win">55.3% win</div><div class="e-jm">(-124)</div></div></div>
-  <div class="n-eds"><span class="ec peq" title="El modelo le da 55.3% a NYM y el precio que te pagan pide 54.8%: +0.5 puntos a favor, comision incluida.">NYM ML +0.5%</span><span class="ec peq" title="El modelo da 53.5% al under y el precio pide 52.4%: +1.1 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Under 8 +1.1%</span></div>
+  <div class="n-eds"><span class="ec peq" title="El modelo le da 55.3% a NYM y el precio que te pagan pide 54.8%: +0.5 puntos a favor, comision incluida.">NYM ML +0.5%</span><span class="ec peq" title="El modelo da 53.2% al under y el precio pide 52.4%: +0.8 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Under 8 +0.8%</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">A. Painter <span class="mn">(R)</span></div><div class="q-nom r">C. Scott <span class="mn">(R)</span></div><div class="q-val">5.54<span class="gr n-d">D</span> · 4.65<span class="gr n-c">C-</span> · 11.2%<span class="gr n-c">C</span></div><div class="q-val r">3.76<span class="gr n-b">B-</span> · 3.9<span class="gr n-b">B-</span> · 17.9%<span class="gr n-b">B</span></div><div class="q-bo"><div><i>BP</i>3.79 <em class="">8.5 IP</em></div><div><i>OF</i><b class="">98</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>4.77 <em class="">5.3 IP</em></div><div><i>OF</i><b class="">98</b> <em class="mut">vs RHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(3)" id="detAr3" aria-expanded="false" aria-controls="det3">Detalle ▾</button></div>
@@ -859,16 +885,16 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">Progressive Field · <time class="h-loc" data-utc="2026-09-19T22:10:00Z">5:10 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -2.0%</span><span class="lb-aj " title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +0.0%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -2.0%</span><span class="lb-aj up" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +1.4%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/ATH.png" alt="ATH" onerror="this.style.display='none'"><div class="e-ab">ATH<span class="e-ml">+155</span></div><div class="e-win">45.4% win</div><div class="e-jm">(+120)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>4.1</span><i>EXP<br>RUNS</i>
-        <span>4.36</span></div>
-      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>37%</b></span><i></i><span>o4.5 <b>41%</b></span></div>
-      <div class="e-tot">Total esperado <b>8.46</b></div>
+      <div class="e-runs"><span>4.16</span><i>EXP<br>RUNS</i>
+        <span>4.43</span></div>
+      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>38%</b></span><i></i><span>o4.5 <b>42%</b></span></div>
+      <div class="e-tot">Total esperado <b>8.58</b></div>
       <div class="e-mkt">7.5 (-118/-102)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/CLE.png" alt="CLE" onerror="this.style.display='none'"><div class="e-ab">CLE<span class="e-ml">-184</span></div><div class="e-win">54.6% win</div><div class="e-jm">(-120)</div></div></div>
-  <div class="n-eds"><span class="ec on" title="El modelo le da 45.4% a ATH y el precio que te pagan pide 39.2%: +6.2 puntos a favor, comision incluida.">ATH ML +6.2%</span><span class="ec off" title="Ni el over ni el under sobrepasan su precio. El modelo da 54.0% de over.">Sin ventaja total</span></div>
+  <div class="n-eds"><span class="ec on" title="El modelo le da 45.4% a ATH y el precio que te pagan pide 39.2%: +6.2 puntos a favor, comision incluida.">ATH ML +6.2%</span><span class="ec peq" title="El modelo da 55.0% al over y el precio pide 54.1%: +0.9 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 7.5 +0.9%</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">J. Lopez <span class="mn">(L)</span></div><div class="q-nom r">T. Bibee <span class="mn">(R)</span></div><div class="q-val">5.02<span class="gr n-c">C-</span> · 4.88<span class="gr n-c">C-</span> · 10.0%<span class="gr n-c">C-</span></div><div class="q-val r">4.16<span class="gr n-c">C</span> · 4.56<span class="gr n-c">C</span> · 11.8%<span class="gr n-c">C</span></div><div class="q-bo"><div><i>BP</i>4.9 <em class="">7.7 IP</em></div><div><i>OF</i><b class="">99</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>3.5 <em class="">8.0 IP</em></div><div><i>OF</i><b class="dn">93</b> <em class="mut">vs LHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(4)" id="detAr4" aria-expanded="false" aria-controls="det4">Detalle ▾</button></div>
@@ -876,16 +902,16 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">Great American Ball Park · <time class="h-loc" data-utc="2026-09-19T22:40:00Z">5:40 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +4.0%</span><span class="lb-aj up" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +1.1%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +4.0%</span><span class="lb-aj up" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +9.8%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/CHC.png" alt="CHC" onerror="this.style.display='none'"><div class="e-ab">CHC<span class="e-ml">-136</span></div><div class="e-win">57.0% win</div><div class="e-jm">(-133)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>6.58</span><i>EXP<br>RUNS</i>
-        <span>5.42</span></div>
-      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>63%</b></span><i></i><span>o4.5 <b>52%</b></span></div>
-      <div class="e-tot">Total esperado <b>12.0</b></div>
+      <div class="e-runs"><span>7.14</span><i>EXP<br>RUNS</i>
+        <span>5.89</span></div>
+      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>67%</b></span><i></i><span>o4.5 <b>57%</b></span></div>
+      <div class="e-tot">Total esperado <b>13.03</b></div>
       <div class="e-mkt">9.5 (+100/-122)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/CIN.png" alt="CIN" onerror="this.style.display='none'"><div class="e-ab">CIN<span class="e-ml">+118</span></div><div class="e-win">43.0% win</div><div class="e-jm">(+133)</div></div></div>
-  <div class="n-eds"><span class="ec off" title="CHC: el modelo le da 57.0% y el precio ya pide 57.6%. No hay valor en ninguno de los dos lados.">Sin ventaja ML</span><span class="ec peq" title="El modelo da 66.8% al over y el precio pide 50.0%: +16.8 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 9.5 +16.8%</span></div>
+  <div class="n-eds"><span class="ec off" title="CHC: el modelo le da 57.0% y el precio ya pide 57.6%. No hay valor en ninguno de los dos lados.">Sin ventaja ML</span><span class="ec peq" title="El modelo da 74.5% al over y el precio pide 50.0%: +24.5 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 9.5 +24.5%</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">M. Boyd <span class="mn">(L)</span></div><div class="q-nom r">N. Lodolo <span class="mn">(L)</span></div><div class="q-val">4.16<span class="gr n-c">C</span> · 4.35<span class="gr n-b">B-</span> · 11.4%<span class="gr n-c">C</span></div><div class="q-val r">5.12<span class="gr n-c">C-</span> · 5.34<span class="gr n-c">C</span> · 8.5%<span class="gr n-d">D</span></div><div class="q-bo"><div><i>BP</i>4.05 <em class="">2.2 IP</em></div><div><i>OF</i><b class="up">112</b> <em class="mut">vs LHP</em></div></div><div class="q-bo r"><div><i>BP</i>4.48 <em class="">11.2 IP</em></div><div><i>OF</i><b class="up">104</b> <em class="mut">vs LHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(5)" id="detAr5" aria-expanded="false" aria-controls="det5">Detalle ▾</button></div>
@@ -893,16 +919,16 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">PNC Park · <time class="h-loc" data-utc="2026-09-19T22:40:00Z">5:40 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +2.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -0.5%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +2.0%</span><span class="lb-aj up" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +1.4%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/KC.png" alt="KC" onerror="this.style.display='none'"><div class="e-ab">KC<span class="e-ml">-101</span></div><div class="e-win">41.8% win</div><div class="e-jm">(+139)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>4.17</span><i>EXP<br>RUNS</i>
-        <span>4.81</span></div>
-      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>38%</b></span><i></i><span>o4.5 <b>46%</b></span></div>
-      <div class="e-tot">Total esperado <b>8.98</b></div>
+      <div class="e-runs"><span>4.25</span><i>EXP<br>RUNS</i>
+        <span>4.9</span></div>
+      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>39%</b></span><i></i><span>o4.5 <b>47%</b></span></div>
+      <div class="e-tot">Total esperado <b>9.15</b></div>
       <div class="e-mkt">8.0 (-112/-106)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/PIT.png" alt="PIT" onerror="this.style.display='none'"><div class="e-ab">PIT<span class="e-ml">-113</span></div><div class="e-win">58.2% win</div><div class="e-jm">(-139)</div></div></div>
-  <div class="n-eds"><span class="ec on" title="El modelo le da 58.2% a PIT y el precio que te pagan pide 53.1%: +5.1 puntos a favor, comision incluida.">PIT ML +5.1%</span><span class="ec peq" title="El modelo da 54.5% al over y el precio pide 52.8%: +1.7 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 8 +1.7%</span></div>
+  <div class="n-eds"><span class="ec on" title="El modelo le da 58.2% a PIT y el precio que te pagan pide 53.1%: +5.1 puntos a favor, comision incluida.">PIT ML +5.1%</span><span class="ec peq" title="El modelo da 56.1% al over y el precio pide 52.8%: +3.3 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 8 +3.3%</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">N. Cameron <span class="mn">(L)</span></div><div class="q-nom r">B. Chandler <span class="mn">(R)</span></div><div class="q-val">3.84<span class="gr n-b">B-</span> · 3.81<span class="gr n-b">B-</span> · 14.0%<span class="gr n-c">C+</span></div><div class="q-val r">4.28<span class="gr n-c">C</span> · 4.23<span class="gr n-b">B-</span> · 9.0%<span class="gr n-c">C-</span></div><div class="q-bo"><div><i>BP</i>4.59 <em class="dn">1 quem.</em></div><div><i>OF</i><b class="">100</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>3.73 <em class="dn">1 quem.</em></div><div><i>OF</i><b class="">98</b> <em class="mut">vs LHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(6)" id="detAr6" aria-expanded="false" aria-controls="det6">Detalle ▾</button></div>
@@ -944,16 +970,16 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">Busch Stadium · <time class="h-loc" data-utc="2026-09-19T23:15:00Z">6:15 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -6.0%</span><span class="lb-aj " title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +0.0%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -6.0%</span><span class="lb-aj up" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +8.1%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/WSH.png" alt="WSH" onerror="this.style.display='none'"><div class="e-ab">WSH<span class="e-ml">+110</span></div><div class="e-win">51.4% win</div><div class="e-jm">(-106)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>4.75</span><i>EXP<br>RUNS</i>
-        <span>4.43</span></div>
-      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>45%</b></span><i></i><span>o4.5 <b>42%</b></span></div>
-      <div class="e-tot">Total esperado <b>9.18</b></div>
+      <div class="e-runs"><span>5.14</span><i>EXP<br>RUNS</i>
+        <span>4.79</span></div>
+      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>50%</b></span><i></i><span>o4.5 <b>46%</b></span></div>
+      <div class="e-tot">Total esperado <b>9.93</b></div>
       <div class="e-mkt">8.5 (-115/-103)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/STL.png" alt="STL" onerror="this.style.display='none'"><div class="e-ab">STL<span class="e-ml">-130</span></div><div class="e-win">48.6% win</div><div class="e-jm">(+106)</div></div></div>
-  <div class="n-eds"><span class="ec on" title="El modelo le da 51.4% a WSH y el precio que te pagan pide 47.6%: +3.8 puntos a favor, comision incluida.">WSH ML +3.8%</span><span class="ec off" title="Ni el over ni el under sobrepasan su precio. El modelo da 51.6% de over.">Sin ventaja total</span></div>
+  <div class="n-eds"><span class="ec on" title="El modelo le da 51.4% a WSH y el precio que te pagan pide 47.6%: +3.8 puntos a favor, comision incluida.">WSH ML +3.8%</span><span class="ec peq" title="El modelo da 58.0% al over y el precio pide 53.5%: +4.5 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 8.5 +4.5%</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">A. Alvarez <span class="mn">(L)</span></div><div class="q-nom r">M. McGreevy <span class="mn">(R)</span></div><div class="q-val">3.35<span class="gr n-b">B+</span> · 3.57<span class="gr n-a">A-</span> · 12.2%<span class="gr n-c">C</span></div><div class="q-val r">3.83<span class="gr n-b">B-</span> · 4.23<span class="gr n-c">C+</span> · 10.2%<span class="gr n-c">C-</span></div><div class="q-bo"><div><i>BP</i>4.44 <em class="">4.0 IP</em></div><div><i>OF</i><b class="">102</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>4.12 <em class="">6.0 IP</em></div><div><i>OF</i><b class="">100</b> <em class="mut">vs LHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(9)" id="detAr9" aria-expanded="false" aria-controls="det9">Detalle ▾</button></div>
@@ -961,16 +987,16 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">Coors Field · <time class="h-loc" data-utc="2026-09-20T00:10:00Z">7:10 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +25.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -7.5%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +25.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -5.7%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/SEA.png" alt="SEA" onerror="this.style.display='none'"><div class="e-ab">SEA<span class="e-ml">-159</span></div><div class="e-win">49.5% win</div><div class="e-jm">(+102)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>5.58</span><i>EXP<br>RUNS</i>
-        <span>5.42</span></div>
-      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>54%</b></span><i></i><span>o4.5 <b>52%</b></span></div>
-      <div class="e-tot">Total esperado <b>11.0</b></div>
+      <div class="e-runs"><span>5.68</span><i>EXP<br>RUNS</i>
+        <span>5.52</span></div>
+      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>55%</b></span><i></i><span>o4.5 <b>54%</b></span></div>
+      <div class="e-tot">Total esperado <b>11.21</b></div>
       <div class="e-mkt">11.5 (+101/-122)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/COL.png" alt="COL" onerror="this.style.display='none'"><div class="e-ab">COL<span class="e-ml">+133</span></div><div class="e-win">50.5% win</div><div class="e-jm">(-102)</div></div></div>
-  <div class="n-eds"><span class="ec on" title="El modelo le da 50.5% a COL y el precio que te pagan pide 42.9%: +7.6 puntos a favor, comision incluida.">COL ML +7.6%</span><span class="ec peq" title="El modelo da 58.6% al under y el precio pide 55.0%: +3.6 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Under 11.5 +3.6%</span></div>
+  <div class="n-eds"><span class="ec on" title="El modelo le da 50.5% a COL y el precio que te pagan pide 42.9%: +7.6 puntos a favor, comision incluida.">COL ML +7.6%</span><span class="ec peq" title="El modelo da 56.8% al under y el precio pide 55.0%: +1.8 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Under 11.5 +1.8%</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">B. Miller <span class="mn">(R)</span></div><div class="q-nom r">J. Quintana <span class="mn">(L)</span></div><div class="q-val">4.19<span class="gr n-c">C</span> · 4.49<span class="gr n-c">C</span> · 16.5%<span class="gr n-b">B</span></div><div class="q-val r">5.27<span class="gr n-c">C-</span> · 4.8<span class="gr n-c">C-</span> · 1.7%<span class="gr n-d">F</span></div><div class="q-bo"><div><i>BP</i>4.28 <em class="">2.5 IP</em></div><div><i>OF</i><b class="dn">91</b> <em class="mut">vs LHP</em></div></div><div class="q-bo r"><div><i>BP</i>4.85 <em class="dn">3 quem.</em></div><div><i>OF</i><b class="up">105</b> <em class="mut">vs RHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(10)" id="detAr10" aria-expanded="false" aria-controls="det10">Detalle ▾</button></div>
@@ -995,16 +1021,16 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">Petco Park · <time class="h-loc" data-utc="2026-09-20T00:40:00Z">7:40 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -6.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -0.6%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -6.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -0.7%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/MIA.png" alt="MIA" onerror="this.style.display='none'"><div class="e-ab">MIA<span class="e-ml">+134</span></div><div class="e-win">36.3% win</div><div class="e-jm">(+175)</div></div>
     <div class="e-num">
       <div class="e-runs"><span>3.37</span><i>EXP<br>RUNS</i>
         <span>4.41</span></div>
       <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>28%</b></span><i></i><span>o4.5 <b>41%</b></span></div>
-      <div class="e-tot">Total esperado <b>7.79</b></div>
+      <div class="e-tot">Total esperado <b>7.78</b></div>
       <div class="e-mkt">7.5 (-106/-113)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/SD.png" alt="SD" onerror="this.style.display='none'"><div class="e-ab">SD<span class="e-ml">-156</span></div><div class="e-win">63.7% win</div><div class="e-jm">(-175)</div></div></div>
-  <div class="n-eds"><span class="ec peq" title="El modelo le da 63.7% a SD y el precio que te pagan pide 60.9%: +2.8 puntos a favor, comision incluida.">SD ML +2.8%</span><span class="ec off" title="Ni el over ni el under sobrepasan su precio. El modelo da 48.2% de over.">Sin ventaja total</span></div>
+  <div class="n-eds"><span class="ec peq" title="El modelo le da 63.7% a SD y el precio que te pagan pide 60.9%: +2.8 puntos a favor, comision incluida.">SD ML +2.8%</span><span class="ec off" title="Ni el over ni el under sobrepasan su precio. El modelo da 48.1% de over.">Sin ventaja total</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">E. Pérez <span class="mn">(R)</span></div><div class="q-nom r">C. Mize <span class="mn">(R)</span></div><div class="q-val">3.99<span class="gr n-c">C+</span> · 4.15<span class="gr n-b">B-</span> · 15.1%<span class="gr n-b">B-</span></div><div class="q-val r">3.69<span class="gr n-b">B-</span> · 3.81<span class="gr n-b">B</span> · 14.9%<span class="gr n-b">B-</span></div><div class="q-bo"><div><i>BP</i>4.32 <em class="">4.1 IP</em></div><div><i>OF</i><b class="">102</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>3.29 <em class="dn">1 quem.</em></div><div><i>OF</i><b class="">99</b> <em class="mut">vs RHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(12)" id="detAr12" aria-expanded="false" aria-controls="det12">Detalle ▾</button></div>
@@ -1012,16 +1038,16 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">UNIQLO Field at Dodger Stadium · <time class="h-loc" data-utc="2026-09-20T01:10:00Z">8:10 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +2.0%</span><span class="lb-aj " title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +0.0%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +2.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -1.1%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/SF.png" alt="SF" onerror="this.style.display='none'"><div class="e-ab">SF<span class="e-ml">+311</span></div><div class="e-win">25.9% win</div><div class="e-jm">(+286)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>3.35</span><i>EXP<br>RUNS</i>
-        <span>5.72</span></div>
+      <div class="e-runs"><span>3.32</span><i>EXP<br>RUNS</i>
+        <span>5.66</span></div>
       <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>27%</b></span><i></i><span>o4.5 <b>55%</b></span></div>
-      <div class="e-tot">Total esperado <b>9.07</b></div>
+      <div class="e-tot">Total esperado <b>8.97</b></div>
       <div class="e-mkt">7.5 (+100/-120)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/LAD.png" alt="LAD" onerror="this.style.display='none'"><div class="e-ab">LAD<span class="e-ml">-404</span></div><div class="e-win">74.1% win</div><div class="e-jm">(-286)</div></div></div>
-  <div class="n-eds"><span class="ec peq" title="El modelo le da 25.9% a SF y el precio que te pagan pide 24.3%: +1.6 puntos a favor, comision incluida.">SF ML +1.6%</span><span class="ec peq" title="El modelo da 59.2% al over y el precio pide 50.0%: +9.2 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 7.5 +9.2%</span></div>
+  <div class="n-eds"><span class="ec peq" title="El modelo le da 25.9% a SF y el precio que te pagan pide 24.3%: +1.6 puntos a favor, comision incluida.">SF ML +1.6%</span><span class="ec peq" title="El modelo da 58.4% al over y el precio pide 50.0%: +8.4 puntos. OJO: el modelo de totales acierta el lado el 50.9% (227 juegos) — esto es contexto, no una ventaja.">Over 7.5 +8.4%</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">TBD</div><div class="q-nom r">T. Skubal <span class="mn">(L)</span></div><div class="q-val">— · — · —</div><div class="q-val r">2.70<span class="gr n-a">A</span> · 2.91<span class="gr n-a">A+</span> · 25.9%<span class="gr n-a">A+</span></div><div class="q-bo"><div><i>BP</i>4.88 <em class="">3.1 IP</em></div><div><i>OF</i><b class="dn">94</b> <em class="mut">vs LHP</em></div></div><div class="q-bo r"><div><i>BP</i>4.03 <em class="">9.0 IP</em></div><div><i>OF</i><b class="">—</b> <em class="mut">vs ?HP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(13)" id="detAr13" aria-expanded="false" aria-controls="det13">Detalle ▾</button></div>
@@ -1029,23 +1055,23 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">Angel Stadium · <time class="h-loc" data-utc="2026-09-20T01:38:00Z">8:38 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -2.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -1.1%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -2.0%</span><span class="lb-aj " title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> +0.0%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/MIN.png" alt="MIN" onerror="this.style.display='none'"><div class="e-ab">MIN<span class="e-ml">-105</span></div><div class="e-win">43.7% win</div><div class="e-jm">(+129)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>3.55</span><i>EXP<br>RUNS</i>
-        <span>3.92</span></div>
-      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>30%</b></span><i></i><span>o4.5 <b>35%</b></span></div>
-      <div class="e-tot">Total esperado <b>7.47</b></div>
+      <div class="e-runs"><span>3.59</span><i>EXP<br>RUNS</i>
+        <span>3.96</span></div>
+      <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>31%</b></span><i></i><span>o4.5 <b>36%</b></span></div>
+      <div class="e-tot">Total esperado <b>7.55</b></div>
       <div class="e-mkt">7.5 (+105/-125)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/LAA.png" alt="LAA" onerror="this.style.display='none'"><div class="e-ab">LAA<span class="e-ml">-108</span></div><div class="e-win">56.3% win</div><div class="e-jm">(-129)</div></div></div>
-  <div class="n-eds"><span class="ec on" title="El modelo le da 56.3% a LAA y el precio que te pagan pide 51.9%: +4.4 puntos a favor, comision incluida.">LAA ML +4.4%</span><span class="ec off" title="Ni el over ni el under sobrepasan su precio. El modelo da 45.4% de over.">Sin ventaja total</span></div>
+  <div class="n-eds"><span class="ec on" title="El modelo le da 56.3% a LAA y el precio que te pagan pide 51.9%: +4.4 puntos a favor, comision incluida.">LAA ML +4.4%</span><span class="ec off" title="Ni el over ni el under sobrepasan su precio. El modelo da 46.1% de over.">Sin ventaja total</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">J. Ryan <span class="mn">(R)</span></div><div class="q-nom r">R. Detmers <span class="mn">(L)</span></div><div class="q-val">3.84<span class="gr n-b">B-</span> · 3.85<span class="gr n-b">B</span> · 20.7%<span class="gr n-a">A-</span></div><div class="q-val r">3.36<span class="gr n-b">B+</span> · 3.29<span class="gr n-b">B+</span> · 22.0%<span class="gr n-a">A</span></div><div class="q-bo"><div><i>BP</i>3.84 <em class="">3.4 IP</em></div><div><i>OF</i><b class="dn">95</b> <em class="mut">vs LHP</em></div></div><div class="q-bo r"><div><i>BP</i>4.27 <em class="dn">1 quem.</em></div><div><i>OF</i><b class="dn">93</b> <em class="mut">vs RHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(14)" id="detAr14" aria-expanded="false" aria-controls="det14">Detalle ▾</button></div>
   <div class="det" id="det14" style="display:none"><div class="d-teams"><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/MIN.png" alt="MIN" onerror="this.style.display='none'"><span>MIN</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-b">B-</span></td><td><span class="gr n-c">C+</span></td><td><span class="gr n-d">D</span></td><td><span class="gr n-d">D</span></td><td><span class="gr n-c">C-</span></td></tr></tbody></table><div class="d-bt">Abridor</div><div class="d-sub">Joe Ryan <span class="mut">(6-10)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>3.84<span class="gr n-b">B-</span></span></div><div class="d-ln"><span>FIP 3 años <i class="d-nt">el que usa el modelo</i></span><span>3.6</span></div><div class="d-ln"><span>K-BB%</span><span>20.7%<span class="gr n-a">A-</span></span></div><div class="d-bt">Últimos 5 starts</div><div class="d-ln"><span>vs CLE</span><span>4.0 IP · 4 ER · 1 K</span></div><div class="d-ln"><span>vs DET</span><span>4.0 IP · 2 ER · 7 K</span></div><div class="d-ln"><span>vs KC</span><span>5.1 IP · 4 ER · 3 K</span></div><div class="d-ln"><span>vs KC</span><span>6.0 IP · 4 ER · 4 K</span></div><div class="d-ln"><span>vs CLE</span><span>4.0 IP · 8 ER · 3 K</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>3.4</span></div><div class="d-pen">2 días seguidos: ninguno</div></div><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/LAA.png" alt="LAA" onerror="this.style.display='none'"><span>LAA</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-d">F</span></td><td><span class="gr n-d">F</span></td><td><span class="gr n-d">D</span></td><td><span class="gr n-c">C</span></td><td><span class="gr n-c">C</span></td></tr></tbody></table><div class="d-bt">Abridor</div><div class="d-sub">Reid Detmers <span class="mut">(6-8)</span> · LHP</div><div class="d-ln"><span>ERA</span><span>3.36<span class="gr n-b">B+</span></span></div><div class="d-ln"><span>FIP 3 años <i class="d-nt">el que usa el modelo</i></span><span>3.33</span></div><div class="d-ln"><span>K-BB%</span><span>22.0%<span class="gr n-a">A</span></span></div><div class="d-bt">Últimos 5 starts</div><div class="d-ln"><span>vs SEA</span><span>6.0 IP · 3 ER · 8 K</span></div><div class="d-ln"><span>vs BOS</span><span>6.0 IP · 0 ER · 9 K</span></div><div class="d-ln"><span>vs NYY</span><span>7.0 IP · 1 ER · 8 K</span></div><div class="d-ln"><span>vs PHI</span><span>6.0 IP · 1 ER · 2 K</span></div><div class="d-ln"><span>vs TEX</span><span>6.0 IP · 0 ER · 5 K</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>4.4</span></div><div class="d-pen">2 días seguidos: Luke Murphy</div></div></div></div>
 </div></div><div class="lab-pie">
   <div><div class="lab-pk">Actualizado</div></div>
-  <div class="lab-pv">09/19/2026 8:03 AM</div>
+  <div class="lab-pv">09/19/2026 10:46 AM</div>
 </div><div class="leg">
 <button class="leg-acc" onclick="legTog()"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Glosario — qué significa cada dato <span id="legAr">▾</span></button>
 <div class="leg-panel" id="legPanel" style="display:none">
@@ -1186,4 +1212,4 @@ function recTog(){var p=document.getElementById('recPanel');var o=p.style.displa
     document.head.appendChild(sc);
   } catch (e) {}
 })();
-</script><!-- generado 09/19/2026 8:03 AM --></body></html>
+</script><!-- generado 09/19/2026 10:46 AM --></body></html>
