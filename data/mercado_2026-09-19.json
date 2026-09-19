@@ -3565,6 +3565,71 @@
      "inicio_utc": "2026-09-20T01:38Z"
     }
    }
+  },
+  {
+   "ts": "2026-09-19T23:51:15+00:00",
+   "juegos": {
+    "SEA@COL": {
+     "ml": {
+      "SEA": -149,
+      "COL": 123
+     },
+     "total": {
+      "linea": 10.5,
+      "over": -120,
+      "under": -101
+     },
+     "inicio_utc": "2026-09-20T00:10Z"
+    },
+    "NYY@AZ": {
+     "ml": {
+      "NYY": -164,
+      "AZ": 136
+     },
+     "total": {
+      "linea": 7.5,
+      "over": 102,
+      "under": -122
+     },
+     "inicio_utc": "2026-09-20T00:10Z"
+    },
+    "MIA@SD": {
+     "ml": {
+      "MIA": 131,
+      "SD": -159
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -107,
+      "under": -113
+     },
+     "inicio_utc": "2026-09-20T00:40Z"
+    },
+    "SF@LAD": {
+     "ml": {
+      "SF": 317,
+      "LAD": -414
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -106,
+      "under": -113
+     },
+     "inicio_utc": "2026-09-20T01:10Z"
+    },
+    "MIN@LAA": {
+     "ml": {
+      "MIN": 105,
+      "LAA": -126
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -125,
+      "under": 104
+     },
+     "inicio_utc": "2026-09-20T01:38Z"
+    }
+   }
   }
  ]
 }
