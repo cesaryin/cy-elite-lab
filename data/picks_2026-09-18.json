@@ -203,6 +203,168 @@
         "abridores": true,
         "gratis": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "NYY ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -102,
+      "prob_estimada": 51.5,
+      "razon": "El mercado alargó a NYY 5.3 pp por la baja de A. Judge (aviso de ESPN, aún sin confirmación oficial) y lo dejó en precio parejo pese a que AZ batea .689 de OPS vs derechos en la temporada y enfrenta a G. Cole. NYY llega con 5.0 c/j y .725 de ops en la semana y un bullpen de 2.82 contra 3.32, ventaja real en el cierre.",
+      "equipos": [
+        "NYY",
+        "AZ"
+      ],
+      "destacado": "NYY",
+      "hora": "8:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "bullpen",
+        "ofensiva",
+        "matchup"
+      ],
+      "contra": "AZ batea .776 de OPS vs zurdos y .844 en la semana, y Chase Field (pf 106) con techo castiga cualquier error de Cole, que en su última salida duró 4.1 con 5 limpias.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-19T01:40:00Z",
+      "cuota_apertura_ref": -106,
+      "valor": {
+        "prob_estimada": 51.5,
+        "prob_justa": 48.77,
+        "prob_implicita": 50.5,
+        "cuota": -102,
+        "cuota_justa_mercado": 105,
+        "ev_pct": 1.99,
+        "ev_kalshi_pct": -1.48,
+        "precio_minimo": -101,
+        "precio_publicado": -101,
+        "precio_equilibrio": -106,
+        "discrepancia_pp": 2.73,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.99% por debajo del minimo exigido (2.1%)",
+        "mejor_precio": {
+          "cuota": 101,
+          "casa": "betus"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "delta_pp": -5.3
+        },
+        "sombra": {
+          "extra_umbral_1_5": true,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 9,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": [
+          {
+            "equipo": "AZ",
+            "split": "vs_zurdos",
+            "rival": "Gerrit Cole",
+            "mano_rival": "R",
+            "numero": ".776",
+            "frase": "en de 2.82 contra 3.32, ventaja real en el cierre. AZ batea .776 de OPS vs zurdos y"
+          }
+        ]
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-19T00:51:25Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "LAA ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -103,
+      "prob_estimada": 51.5,
+      "razon": "Ventaja de localía en un juego que la línea justa pone 49.1-50.9: MIN llega a 3.0 c/j y .610 de ops en la semana, sin T. Larnach ni B. Buxton, y con A.J. Minter, J. Hoffman y el cerrador Y. Gómez quemados dos días seguidos. LAA no batea bien (.622) pero tiene el bullpen entero disponible para el cierre.",
+      "equipos": [
+        "MIN",
+        "LAA"
+      ],
+      "destacado": "LAA",
+      "hora": "8:38 PM CT",
+      "capas": [
+        "bullpen",
+        "ofensiva",
+        "forma"
+      ],
+      "contra": "G. Rodriguez tiene 6.10 de ERA y 4.71 de FIP, y con viento de 7 mph hacia el jardín central cualquier tanda de MIN, que batea .740 vs derechos, puede resolverlo temprano.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "LAA",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-19T01:38:00Z",
+      "cuota_apertura_ref": -108,
+      "valor": {
+        "prob_estimada": 51.5,
+        "prob_justa": 49.1,
+        "prob_implicita": 50.74,
+        "cuota": -103,
+        "cuota_justa_mercado": 104,
+        "ev_pct": 1.5,
+        "ev_kalshi_pct": -1.95,
+        "precio_minimo": -101,
+        "precio_publicado": -101,
+        "precio_equilibrio": -106,
+        "discrepancia_pp": 2.4,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.50% por debajo del minimo exigido (2.2%)",
+        "mejor_precio": {
+          "cuota": 102,
+          "casa": "betrivers"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "delta_pp": 2.7
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-19T00:51:25Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
@@ -213,7 +375,13 @@
     "TB ML -137: TB batea 6.0 c/j pero el precio ya paga todo eso frente al 55.6% justo.",
     "CLE Spread -1.5: M. Barnett (7.08) invita, pero D. Espino solo tiene 2.0 entradas de muestra y la ofensiva de CLE es .689 de temporada; demasiada incertidumbre para un -1.5.",
     "ATL ML -117 y NYM/PHI: juegos de abridor corto en NYM y precio sin margen en HOU.",
-    "SEA/COL y ATH/CLE ML: fuera de la banda de cuotas."
+    "SEA/COL y ATH/CLE ML: fuera de la banda de cuotas.",
+    "MIA/SD: el ML de SD (-204) y el de MIA (+170) quedan fuera de banda; SD Spread -1.5 a +108 no llega, con total 7.5 el margen de 2+ carreras que estimo (~45%) está por debajo del 46.2% de la línea justa.",
+    "MIA/SD u7.5: SD viene a 7.0 c/j y .931 de ops en la semana, la comprobación de ofensiva caliente falla de lleno.",
+    "MIN/LAA u8.0: dos ofensivas frías, pero el bullpen de MIN llega quemado y el viento sopla 7.1 mph hacia el central; dos de las cuatro comprobaciones fallan.",
+    "NYY/AZ o7.5: el mercado bajó la línea de 8.0 a 7.5 con fuerza, señal directa en contra pese al parque de pf 106.",
+    "SF/LAD: ML de LAD (-310) y SF (+256) fuera de banda; LAD -1.5 a -136 pide 55.4% de margen y con el bullpen local quemado (12.3 ip en dos días) no lo veo.",
+    "Team totals de LAD: solo aparecen en el bloque informativo de precios, sin cuota apostable ni línea justa en los datos del juego."
   ],
   "vivo": {
     "plan": {
@@ -374,13 +542,38 @@
         "sin_ventaja": 1,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-09-19T00:51:25Z",
+        "min_ct": 1190,
+        "claves": [
+          "MIN@LAA@2026-09-19T01:38:00Z",
+          "MIA@SD@2026-09-19T01:40:00Z",
+          "NYY@AZ@2026-09-19T01:40:00Z",
+          "SF@LAD@2026-09-19T02:15:00Z"
+        ],
+        "juegos": [
+          "MIN@LAA",
+          "MIA@SD",
+          "NYY@AZ",
+          "SF@LAD"
+        ],
+        "alineaciones": [
+          8,
+          8
+        ],
+        "senales": [],
+        "sin_ventaja": 2,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 2-1 (+0.81 U).\n• DET ML (SEÑAL ELITE), perdida: DET 1-3 CWS.\n• LAD F5 ML (SEÑAL ELITE), ganada: LAD 8-2 CIN.\n• SD F5 ML (SEÑAL FUERTE), ganada: SD 9-2 COL.\n2 ganadas con ventaja medida; 1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 24% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 2,
-    "seguimiento": 1,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
     "riesgo_u": 2.0,
     "ev_min": 2.0
