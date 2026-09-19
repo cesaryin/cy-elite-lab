@@ -1,0 +1,13 @@
+{
+ "fecha": "2026-09-19",
+ "modelo": "claude-fable-5-1",
+ "esfuerzo": "medium",
+ "tandas": [
+  {
+   "n": 1,
+   "lote": "msgbatch_014ZLZmcpRiFK8qXYwZVvDzd",
+   "enviado_utc": "2026-09-19T19:32:31Z",
+   "estado": "enviado"
+  }
+ ]
+}
