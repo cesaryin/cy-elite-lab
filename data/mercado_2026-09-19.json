@@ -3298,6 +3298,131 @@
      "inicio_utc": "2026-09-20T01:38Z"
     }
    }
+  },
+  {
+   "ts": "2026-09-19T22:40:17+00:00",
+   "juegos": {
+    "CHC@CIN": {
+     "ml": {
+      "CHC": -148,
+      "CIN": 123
+     },
+     "total": {
+      "linea": 9.0,
+      "over": -117,
+      "under": -103
+     },
+     "inicio_utc": "2026-09-19T22:40Z"
+    },
+    "KC@PIT": {
+     "ml": {
+      "KC": -101,
+      "PIT": -119
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -102,
+      "under": -118
+     },
+     "inicio_utc": "2026-09-19T22:40Z"
+    },
+    "TOR@TEX": {
+     "ml": {
+      "TOR": -106,
+      "TEX": -114
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -114,
+      "under": -105
+     },
+     "inicio_utc": "2026-09-19T23:05Z"
+    },
+    "ATL@HOU": {
+     "ml": {
+      "ATL": 114,
+      "HOU": -137
+     },
+     "total": {
+      "linea": 8.5,
+      "over": -120,
+      "under": -101
+     },
+     "inicio_utc": "2026-09-19T23:10Z"
+    },
+    "WSH@STL": {
+     "ml": {
+      "WSH": -104,
+      "STL": -115
+     },
+     "total": {
+      "linea": 8.5,
+      "over": -124,
+      "under": 103
+     },
+     "inicio_utc": "2026-09-19T23:15Z"
+    },
+    "SEA@COL": {
+     "ml": {
+      "SEA": -149,
+      "COL": 123
+     },
+     "total": {
+      "linea": 10.5,
+      "over": -120,
+      "under": -101
+     },
+     "inicio_utc": "2026-09-20T00:10Z"
+    },
+    "NYY@AZ": {
+     "ml": {
+      "NYY": -164,
+      "AZ": 136
+     },
+     "total": {
+      "linea": 7.5,
+      "over": 102,
+      "under": -122
+     },
+     "inicio_utc": "2026-09-20T00:10Z"
+    },
+    "MIA@SD": {
+     "ml": {
+      "MIA": 131,
+      "SD": -159
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -107,
+      "under": -113
+     },
+     "inicio_utc": "2026-09-20T00:40Z"
+    },
+    "SF@LAD": {
+     "ml": {
+      "SF": 317,
+      "LAD": -414
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -106,
+      "under": -113
+     },
+     "inicio_utc": "2026-09-20T01:10Z"
+    },
+    "MIN@LAA": {
+     "ml": {
+      "MIN": -108,
+      "LAA": -111
+     },
+     "total": {
+      "linea": 7.5,
+      "over": 102,
+      "under": -123
+     },
+     "inicio_utc": "2026-09-20T01:38Z"
+    }
+   }
   }
  ]
 }
