@@ -422,7 +422,18 @@ details.dd .pnl{border:1px solid var(--line);border-top:none;border-radius:0 0 1
 .hres.W{color:var(--green);background:rgba(63,185,80,.14)}.hres.L{color:var(--red);background:rgba(240,82,77,.13)}.hres.P{color:var(--faint);background:var(--line2)}
 .hb{flex:1}.hb .hp{font-size:14px;font-weight:700}.hb .hd{font-size:11.5px;color:var(--faint);font-weight:600}
 .hn{font-size:14px;font-weight:800}.hn.g{color:var(--green)}.hn.r{color:var(--red)}.hn.z{color:var(--faint)}
-.aut-texto{font-size:13px;color:var(--soft);line-height:1.6;white-space:pre-line}
+/* EL CIERRE DEL DIA (19-sep-2026) — ver _cierre_del_dia(). */
+.cie{display:flex;flex-direction:column;gap:11px}
+.cie-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cie-est{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:3px 10px;border:1px solid}
+.cie-est.g{color:var(--green);background:rgba(63,185,80,.12);border-color:#1d4428}
+.cie-est.r{color:var(--red);background:rgba(248,81,73,.1);border-color:#5c2523}
+.cie-est.z{color:var(--soft);background:var(--line2);border-color:var(--line)}
+.cie-cnt{font-size:12.5px;color:var(--mut);font-weight:600}
+.cie-res{font-size:13.5px;color:var(--soft);line-height:1.55}
+.cie-res b{color:var(--text)}
+.cie-pie{border-top:1px solid var(--line2);padding-top:10px;font-size:12.5px;color:var(--mut);line-height:1.5}
+.cie-pie b{color:var(--text)}
 .frame-wrap{border:none;margin:0}
 .frame{width:100%;height:calc(100vh - 150px);border:1px solid var(--line);border-radius:14px;background:var(--bg)}
 .note{color:var(--faint);font-size:12px;text-align:center;padding:12px 8px 2px;line-height:1.55}
@@ -601,4 +612,4 @@ function cmpDx(i){var d=document.getElementById('cmpd'+i);d.style.display=d.styl
     document.head.appendChild(sc);
   } catch (e) {}
 })();
-</script><!-- generado 09/19/2026 11:42 AM --></body></html>
+</script><!-- generado 09/19/2026 12:01 PM --></body></html>
