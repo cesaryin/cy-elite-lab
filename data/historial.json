@@ -5064,5 +5064,146 @@
     "clv_metodo": "kalshi_historico",
     "causa": "varianza",
     "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-09-19",
+    "pick": "NYM F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 113,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.13,
+    "marcador": "PHI 3-10 NYM",
+    "veredicto": "apostable",
+    "prob_estimada": 49.0,
+    "prob_justa": null,
+    "ev_pct": 4.37,
+    "precio_publicado": 109,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva"
+    ],
+    "contra": "Painter viene de 7 IP sin carrera ante AZ y PHI tiene el lineup con mas techo (Schwarber, Harper); ademas en este precio de Kalshi el empate de las 5 entradas se pierde y su probabilidad ronda el 16%.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-19T19:30:25Z"
+    },
+    "clv": -0.4,
+    "prob_cierre": 46.5,
+    "clv_metodo": "kalshi_historico",
+    "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-09-19",
+    "pick": "CLE Spread -1.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 118,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.18,
+    "marcador": "ATH 6-12 CLE",
+    "veredicto": "apostable",
+    "prob_estimada": 47.0,
+    "prob_justa": 44.02,
+    "ev_pct": 2.46,
+    "precio_publicado": 118,
+    "discrepancia_pp": 2.98,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "pitcheo"
+    ],
+    "contra": "El total bajo de 8.5 a 7.5 (movimiento FUERTE) apunta a un juego corto de carreras, y en un 3-2 o 4-3 el -1.5 se cae aunque CLE gane.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-19T19:30:25Z"
+    },
+    "clv": -2.4,
+    "prob_cierre": 43.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": -0.5,
+    "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-09-19",
+    "pick": "ATL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 114,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.14,
+    "marcador": "ATL 6-3 HOU",
+    "veredicto": "apostable",
+    "prob_estimada": 48.0,
+    "prob_justa": 44.93,
+    "ev_pct": 2.72,
+    "precio_publicado": 113,
+    "discrepancia_pp": 3.07,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "La linea se alargo de +100 a +114 con fuerza media, es decir el dinero fue a HOU, y Y. Alvarez con .1031 de ops puede decidir un juego cerrado el solo.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA",
+      "a_favor": true,
+      "delta_pp": -3.3
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-19T22:10:25Z"
+    },
+    "clv": -2.2,
+    "prob_cierre": 44.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": -0.4,
+    "cuadrante": "merecido"
   }
 ]

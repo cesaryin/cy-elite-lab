@@ -496,5 +496,133 @@
       "abridores": true,
       "ts": "2026-09-19T00:51:25Z"
     }
+  },
+  {
+    "fecha": "2026-09-19",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "MIL 1-0 BAL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 53.0,
+    "prob_justa": 50.11,
+    "ev_pct": 2.07,
+    "precio_publicado": -107,
+    "discrepancia_pp": 2.89,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "El dinero movio BAL de +112 a -111 (FUERTE) en mi contra, T. Rogers tiene mejor FIP (3.79) que R. Gasser y MIL rinde peor ante zurdos (.710 ops).",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": false,
+      "delta_pp": 5.4
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-19T19:30:25Z"
+    }
+  },
+  {
+    "fecha": "2026-09-19",
+    "pick": "PIT ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -118,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "KC 5-6 PIT",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.5,
+    "prob_justa": 52.11,
+    "ev_pct": 2.53,
+    "precio_publicado": -116,
+    "discrepancia_pp": 3.39,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "B. Chandler regala bases (11.8% de BB) y N. Cameron viene de dos salidas de 6 entradas con 1 y 0 limpias: si el zurdo domina, PIT se queda sin margen.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-19T22:10:25Z"
+    }
+  },
+  {
+    "fecha": "2026-09-19",
+    "pick": "CHC ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -145,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CHC 5-2 CIN",
+    "veredicto": "seguimiento",
+    "prob_estimada": 61.0,
+    "prob_justa": 57.11,
+    "ev_pct": 3.07,
+    "precio_publicado": -140,
+    "discrepancia_pp": 3.89,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "matchup",
+      "ofensiva",
+      "bullpen"
+    ],
+    "contra": "El precio ya va cargado a -145 y el parque (pf 104) con 88 grados y viento hacia afuera permite que un par de batazos de E. De La Cruz igualen el juego pese a la ventaja.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-19T22:10:25Z"
+    }
   }
 ]

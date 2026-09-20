@@ -371,6 +371,130 @@
      "neto_u": 0.0
     }
    ]
+  },
+  "2026-09-19": {
+   "fecha": "2026-09-19",
+   "opus": {
+    "analisis": 6,
+    "senales": 3,
+    "senales_w": 3,
+    "senales_l": 0,
+    "neto_u": 3.45,
+    "analisis_w": 6,
+    "analisis_l": 0,
+    "brier": 0.2304,
+    "n_brier": 6,
+    "picks": [
+     "NYM F5 ML",
+     "CLE Spread -1.5",
+     "ATL ML"
+    ]
+   },
+   "fable": {
+    "analisis": 6,
+    "senales": 3,
+    "senales_w": 1,
+    "senales_l": 1,
+    "neto_u": -0.07,
+    "analisis_w": 3,
+    "analisis_l": 2,
+    "brier": 0.2281,
+    "n_brier": 5,
+    "picks": [
+     "PHI ML",
+     "TB F5 ML",
+     "WSH ML"
+    ]
+   },
+   "coinciden": [
+    "CLE Spread -1.5",
+    "PIT ML"
+   ],
+   "tandas_fable": [
+    {
+     "n": 1,
+     "estado": "listo"
+    },
+    {
+     "n": 2,
+     "estado": "listo"
+    }
+   ],
+   "coste_fable": 0.7824,
+   "detalle_fable": [
+    {
+     "pick": "PHI ML",
+     "cuota": 107,
+     "tanda": 1,
+     "nivel": "bronce",
+     "publicado": true,
+     "resultado": "L",
+     "marcador": "PHI 3-10 NYM",
+     "prob_estimada": 49.5,
+     "ev_pct": 2.47,
+     "neto_u": -1.0
+    },
+    {
+     "pick": "TB F5 ML",
+     "cuota": 104,
+     "tanda": 1,
+     "nivel": "bronce",
+     "publicado": true,
+     "resultado": "P",
+     "marcador": "BOS 1-2 TB",
+     "prob_estimada": 50.0,
+     "ev_pct": 2.0,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "CLE Spread -1.5",
+     "cuota": 118,
+     "tanda": 1,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "ATH 6-12 CLE",
+     "prob_estimada": 46.0,
+     "ev_pct": 0.28,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "WSH ML",
+     "cuota": -108,
+     "tanda": 2,
+     "nivel": "plata",
+     "publicado": true,
+     "resultado": "W",
+     "marcador": "WSH 8-5 STL",
+     "prob_estimada": 53.5,
+     "ev_pct": 3.04,
+     "neto_u": 0.93
+    },
+    {
+     "pick": "PIT ML",
+     "cuota": -118,
+     "tanda": 2,
+     "nivel": "plata",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "KC 5-6 PIT",
+     "prob_estimada": 55.0,
+     "ev_pct": 1.61,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "SD Spread -1.5",
+     "cuota": 140,
+     "tanda": 2,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "MIA 6-7 SD",
+     "prob_estimada": 43.0,
+     "ev_pct": 3.2,
+     "neto_u": 0.0
+    }
+   ]
   }
  }
 }

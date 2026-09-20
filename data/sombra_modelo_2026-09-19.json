@@ -7,13 +7,365 @@
    "n": 1,
    "lote": "msgbatch_014ZLZmcpRiFK8qXYwZVvDzd",
    "enviado_utc": "2026-09-19T19:32:31Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-20T13:00:26Z",
+   "uso": {
+    "tokens_entrada": 33646,
+    "tokens_salida": 5679,
+    "coste": 0.3102
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "PHI ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": 107,
+     "prob_estimada": 49.5,
+     "razon": "El juego se decide en las entradas 6-9 y ahi la brecha es enorme: bullpen NYM 4.98 con K. Senga cerrando a 7.05, contra 3.90 y J. Duran (1.76) del lado de PHI. La ventaja de C. Scott sobre A. Painter es real pero se compensa con un lineup NYM que impulsa 3.6 c/j (ops .694) y sale con R. Mauricio (.440) de DH.",
+     "equipos": [
+      "PHI",
+      "NYM"
+     ],
+     "destacado": "PHI",
+     "hora": "3:10 PM CT",
+     "capas": [
+      "bullpen",
+      "pitcheo",
+      "ofensiva"
+     ],
+     "contra": "A. Painter (5.54 ERA, 5 ER hace dos salidas y 4 bb en la ultima) puede dejar el juego roto antes de que el bullpen de NYM entre en escena, y PHI solo produce 3.8 c/j en la semana.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "PHI",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": 104,
+     "valor": {
+      "prob_estimada": 49.5,
+      "prob_justa": 46.51,
+      "prob_implicita": 48.31,
+      "cuota": 107,
+      "cuota_justa_mercado": 115,
+      "ev_pct": 2.47,
+      "ev_kalshi_pct": -1.15,
+      "precio_minimo": 107,
+      "precio_publicado": 107,
+      "precio_equilibrio": 103,
+      "discrepancia_pp": 2.99,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +2.47% · no tomar peor de +107",
+      "mejor_precio": {
+       "cuota": 109,
+       "casa": "betonlineag"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "TB F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": 104,
+     "prob_estimada": 50.0,
+     "razon": "El F5 aisla lo que favorece a TB y quita lo que le pesa: F. Peralta viene de 17 IP y 2 ER en tres salidas frente a un B. Bello con k-bb de 9.6% y apenas 459 bateadores en el ano, y saca del juego a un bullpen TB con dos brazos quemados. Ofensiva BOS fria (.640 ops, 3.7 c/j) contra TB a 5.8 c/j con derecho en la loma.",
+     "equipos": [
+      "BOS",
+      "TB"
+     ],
+     "destacado": "TB",
+     "hora": "3:10 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "bullpen"
+     ],
+     "contra": "Es Kalshi a tres bandas: un empate tras cinco entradas (17% de probabilidad justa) PIERDE la apuesta, y Peralta tiene 8.5% de bb que puede regalar una entrada larga a BOS.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "TB",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 50.0,
+      "prob_justa": null,
+      "prob_implicita": 49.02,
+      "cuota": 104,
+      "cuota_justa_mercado": null,
+      "ev_pct": 2.0,
+      "ev_kalshi_pct": -1.57,
+      "precio_minimo": 104,
+      "precio_publicado": 104,
+      "precio_equilibrio": 100,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +2.00% · no tomar peor de +104",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "CLE Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": 118,
+     "prob_estimada": 46.0,
+     "razon": "El ML de CLE esta fuera de banda y el margen de dos es donde queda el poco valor: ATH batea .572 ops y 2.8 c/j en la semana, su bullpen (5.19, fip_core 1.53) permite 6.1 c/j en los ultimos 10 y J. Lopez regala bases (11% bb). Ventaja honesta pequena; lo digo tal cual.",
+     "equipos": [
+      "ATH",
+      "CLE"
+     ],
+     "destacado": "CLE",
+     "hora": "5:10 PM CT",
+     "capas": [
+      "ofensiva",
+      "bullpen",
+      "pitcheo"
+     ],
+     "contra": "T. Bibee permitio 5 ER en dos de sus tres ultimas salidas y CLE batea .661 ops contra zurdos; con el total bajado de 8.5 a 7.5, un juego de pocas carreras hace muy dificil cubrir -1.5.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "CLE",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": 118,
+     "valor": {
+      "prob_estimada": 46.0,
+      "prob_justa": 44.02,
+      "prob_implicita": 45.87,
+      "cuota": 118,
+      "cuota_justa_mercado": 127,
+      "ev_pct": 0.28,
+      "ev_kalshi_pct": -3.51,
+      "precio_minimo": 122,
+      "precio_publicado": 122,
+      "precio_equilibrio": 118,
+      "discrepancia_pp": 1.98,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +0.28% por debajo del minimo exigido (2.0%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda de tarde con cuatro juegos y poco valor limpio. La lectura mas clara esta en PHI contra NYM, donde la diferencia de bullpens (Senga cerrando a 7.05 frente a Duran a 1.76) pesa mas que la ventaja de C. Scott sobre A. Painter y el mercado paga a PHI como perro. En TB el valor se concentra en las primeras cinco entradas: F. Peralta llega afilado, B. Bello trae peripheriales pobres y BOS batea frio, pero el bullpen de TB tiene dos brazos quemados, asi que el F5 es el mercado correcto (con el aviso de que en Kalshi el empate pierde). CLE -1.5 es una lectura de margen pequeno contra un ATH sin bate y con bullpen roto. MIL se descarta por bullpen agotado y un movimiento fuerte de mercado hacia BAL que los datos no explican."
   },
   {
    "n": 2,
    "lote": "msgbatch_011Q5U3HPB2yzSWQxuPy1nEj",
    "enviado_utc": "2026-09-19T22:13:00Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-20T13:00:27Z",
+   "uso": {
+    "tokens_entrada": 62641,
+    "tokens_salida": 6360,
+    "coste": 0.4722
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "WSH ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -108,
+     "prob_estimada": 53.5,
+     "razon": "El mercado lo paga como moneda al aire y el cruce ofensivo no es parejo: STL llega con ops .537 y 3.2 c/j en la semana ante un zurdo con 23.2% K, mientras WSH produce 5.4 c/j y batea .776 vs zurdos con J. Wood y A. Chaparro sobre .870. La tanda de STL incluye tres bates bajo .660.",
+     "equipos": [
+      "WSH",
+      "STL"
+     ],
+     "destacado": "WSH",
+     "hora": "6:15 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma",
+      "matchup"
+     ],
+     "contra": "El bullpen de WSH (4.32 de era, cerrador con 4 salvados) puede regalar el cierre aunque A. Alvarez deje el juego arriba.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "WSH",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -104,
+     "valor": {
+      "prob_estimada": 53.5,
+      "prob_justa": 50.0,
+      "prob_implicita": 51.92,
+      "cuota": -108,
+      "cuota_justa_mercado": -100,
+      "ev_pct": 3.04,
+      "ev_kalshi_pct": -0.33,
+      "precio_minimo": -109,
+      "precio_publicado": -109,
+      "precio_equilibrio": -115,
+      "discrepancia_pp": 3.5,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +3.04% · no tomar peor de -109",
+      "mejor_precio": {
+       "cuota": -104,
+       "casa": "draftkings"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA",
+       "a_favor": false,
+       "delta_pp": -3.4
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "PIT ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -118,
+     "prob_estimada": 55.0,
+     "razon": "KC llega con la ofensiva mas fria de la tanda (ops .554, 2.7 c/j y 60 K en 6 juegos, 3.1 c/j en los ultimos 10) y sin C. Kimbrel en el bullpen de peor era del duelo. PIT batea .803 con 4.5 c/j en la semana y .754 vs derechos; el edge sobre la linea justa es moderado, no grande.",
+     "equipos": [
+      "KC",
+      "PIT"
+     ],
+     "destacado": "PIT",
+     "hora": "5:40 PM CT",
+     "capas": [
+      "ofensiva",
+      "bullpen",
+      "forma"
+     ],
+     "contra": "N. Cameron es el mejor abridor del juego (FIP 3.81, dos salidas seguidas de 6 IP con 1 ER o menos) y G. Soto esta quemado, asi que PIT cierra sin su cerrador.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "PIT",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -119,
+     "valor": {
+      "prob_estimada": 55.0,
+      "prob_justa": 52.11,
+      "prob_implicita": 54.13,
+      "cuota": -118,
+      "cuota_justa_mercado": -109,
+      "ev_pct": 1.61,
+      "ev_kalshi_pct": -1.6,
+      "precio_minimo": -114,
+      "precio_publicado": -114,
+      "precio_equilibrio": -122,
+      "discrepancia_pp": 2.89,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.61% por debajo del minimo exigido (3.0%)",
+      "mejor_precio": {
+       "cuota": -113,
+       "casa": "betonlineag"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "SD Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": 140,
+     "prob_estimada": 43.0,
+     "razon": "El ML de SD va cargado, pero el margen tiene respaldo: ofensiva de 7.1 c/j y ops .937 en la semana contra E. Perez, que permitio 14 ER en sus ultimas 13.2 IP con 10.6% de boletos. El bullpen de MIA (4.57, cerrador 5.37) abre la puerta a que el juego se rompa tarde.",
+     "equipos": [
+      "MIA",
+      "SD"
+     ],
+     "destacado": "SD",
+     "hora": "7:40 PM CT",
+     "capas": [
+      "ofensiva",
+      "bullpen",
+      "pitcheo"
+     ],
+     "contra": "El total bajo de 8.0 a 7.5 con fuerza y Petco es parque de 94: un juego corto reduce la probabilidad de ganar por dos o mas.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "SD",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": 139,
+     "valor": {
+      "prob_estimada": 43.0,
+      "prob_justa": 40.09,
+      "prob_implicita": 41.67,
+      "cuota": 140,
+      "cuota_justa_mercado": 149,
+      "ev_pct": 3.2,
+      "ev_kalshi_pct": -0.88,
+      "precio_minimo": 138,
+      "precio_publicado": 138,
+      "precio_equilibrio": 133,
+      "discrepancia_pp": 2.91,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "cuota +140 fuera del rango -162/+125",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda con pocos huecos claros. La lectura de mas peso es WSH en STL: el mercado lo pone al 50% pero STL batea .537 en la semana ante un zurdo con buen K% y WSH produce 5.4 c/j. Detras, PIT contra la ofensiva helada y el bullpen mermado de KC, y el margen de SD ante un E. Perez castigado en sus ultimas salidas, con el aviso de que el total bajo a 7.5. NYY, LAD y SEA no llegan al valor que exige su precio y el under de MIN/LAA choca con la linea subiendo."
   }
  ]
 }
