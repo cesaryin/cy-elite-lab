@@ -1,6 +1,6 @@
 {
  "fecha": "2026-09-20",
- "tomado_utc": "2026-09-20T16:40:21+00:00",
+ "tomado_utc": "2026-09-20T19:30:20+00:00",
  "n_juegos": 15,
  "juegos": {
   "PHI@NYM": {
@@ -217,67 +217,67 @@
    "id": "d99e3dbbb8b295eec806a390d5a0d113",
    "away": "ATH",
    "home": "CLE",
-   "inicio_utc": "2026-09-20T17:41:00Z",
-   "n_casas": 9,
+   "inicio_utc": "2026-09-20T19:46:00Z",
+   "n_casas": 8,
    "fuente": "consenso_us",
    "ml": {
-    "ATH": 201,
-    "CLE": -245
+    "ATH": 214,
+    "CLE": -260
    },
    "total": {
     "linea": 7.0,
-    "over": -107,
-    "under": -114,
-    "n_casas": 8
+    "over": -110,
+    "under": -110,
+    "n_casas": 7
    },
    "spread": {
     "ATH": {
      "linea": 1.5,
-     "cuota": -112,
-     "n_casas": 9
+     "cuota": -108,
+     "n_casas": 8
     },
     "CLE": {
      "linea": -1.5,
-     "cuota": -107,
-     "n_casas": 9
+     "cuota": -111,
+     "n_casas": 8
     }
    },
    "casas_ml": {
-    "ATH": 9,
-    "CLE": 9
+    "ATH": 8,
+    "CLE": 8
    },
    "mejor": {
     "ml": {
      "ATH": {
-      "cuota": 212,
+      "cuota": 231,
       "casa": "betonlineag"
      },
      "CLE": {
-      "cuota": -236,
-      "casa": "mybookieag"
+      "cuota": -245,
+      "casa": "fanduel"
      }
     },
     "total": {
      "linea": 7.0,
      "over": {
       "cuota": 100,
-      "casa": "lowvig"
+      "casa": "betmgm"
      },
      "under": {
-      "cuota": -110,
-      "casa": "betus"
+      "cuota": -105,
+      "casa": "draftkings"
      }
     },
     "spread": {
      "ATH": {
       "linea": 1.5,
-      "cuota": -107,
+      "cuota": -102,
       "casa": "lowvig"
      },
      "CLE": {
       "linea": -1.5,
-      "cuota": -103,
-      "casa": "mybookieag"
+      "cuota": -106,
+      "casa": "fanduel"
      }
     }
    },
@@ -427,44 +427,44 @@
    "id": "7b148d0f1eaf595528a0bf3c835fdfb3",
    "away": "DET",
    "home": "CWS",
-   "inicio_utc": "2026-09-20T18:11:00Z",
-   "n_casas": 9,
+   "inicio_utc": "2026-09-20T19:41:00Z",
+   "n_casas": 8,
    "fuente": "consenso_us",
    "ml": {
-    "CWS": -118,
-    "DET": 100
+    "CWS": -115,
+    "DET": 101
    },
    "total": {
     "linea": 8.0,
     "over": -115,
     "under": -105,
-    "n_casas": 8
+    "n_casas": 6
    },
    "spread": {
     "CWS": {
-     "linea": -1.5,
-     "cuota": 176,
-     "n_casas": 5
+     "linea": 1.5,
+     "cuota": -199,
+     "n_casas": 4
     },
     "DET": {
-     "linea": 1.5,
-     "cuota": -205,
-     "n_casas": 5
+     "linea": -1.5,
+     "cuota": 164,
+     "n_casas": 4
     }
    },
    "casas_ml": {
-    "CWS": 9,
-    "DET": 9
+    "CWS": 8,
+    "DET": 8
    },
    "mejor": {
     "ml": {
      "CWS": {
-      "cuota": -111,
-      "casa": "betonlineag"
+      "cuota": -109,
+      "casa": "betrivers"
      },
      "DET": {
       "cuota": 103,
-      "casa": "bovada"
+      "casa": "betonlineag"
      }
     },
     "total": {
@@ -480,14 +480,14 @@
     },
     "spread": {
      "CWS": {
-      "linea": -1.5,
-      "cuota": 179,
-      "casa": "lowvig"
+      "linea": 1.5,
+      "cuota": -190,
+      "casa": "betrivers"
      },
      "DET": {
-      "linea": 1.5,
-      "cuota": -204,
-      "casa": "lowvig"
+      "linea": -1.5,
+      "cuota": 168,
+      "casa": "fanduel"
      }
     }
    },
@@ -712,7 +712,7 @@
    "fuente": "consenso_us",
    "ml": {
     "LAA": 100,
-    "MIN": -117
+    "MIN": -114
    },
    "total": {
     "linea": 8.5,
@@ -723,7 +723,7 @@
    "spread": {
     "LAA": {
      "linea": 1.5,
-     "cuota": -167,
+     "cuota": -170,
      "n_casas": 9
     },
     "MIN": {
@@ -761,13 +761,13 @@
     "spread": {
      "LAA": {
       "linea": 1.5,
-      "cuota": -165,
-      "casa": "betonlineag"
+      "cuota": -164,
+      "casa": "fanduel"
      },
      "MIN": {
       "linea": -1.5,
       "cuota": 146,
-      "casa": "fanduel"
+      "casa": "mybookieag"
      }
     }
    },
@@ -781,8 +781,8 @@
    "n_casas": 9,
    "fuente": "consenso_us",
    "ml": {
-    "AZ": -118,
-    "NYY": 100
+    "AZ": -122,
+    "NYY": 105
    },
    "total": {
     "linea": 8.0,
@@ -792,14 +792,14 @@
    },
    "spread": {
     "AZ": {
-     "linea": 1.5,
-     "cuota": -200,
-     "n_casas": 5
+     "linea": -1.5,
+     "cuota": 166,
+     "n_casas": 6
     },
     "NYY": {
-     "linea": -1.5,
-     "cuota": 165,
-     "n_casas": 5
+     "linea": 1.5,
+     "cuota": -193,
+     "n_casas": 6
     }
    },
    "casas_ml": {
@@ -809,11 +809,11 @@
    "mejor": {
     "ml": {
      "AZ": {
-      "cuota": -113,
-      "casa": "betus"
+      "cuota": -118,
+      "casa": "betrivers"
      },
      "NYY": {
-      "cuota": 106,
+      "cuota": 111,
       "casa": "betonlineag"
      }
     },
@@ -830,14 +830,14 @@
     },
     "spread": {
      "AZ": {
-      "linea": 1.5,
-      "cuota": -187,
-      "casa": "mybookieag"
+      "linea": -1.5,
+      "cuota": 175,
+      "casa": "bovada"
      },
      "NYY": {
-      "linea": -1.5,
-      "cuota": 168,
-      "casa": "fanduel"
+      "linea": 1.5,
+      "cuota": -190,
+      "casa": "betonlineag"
      }
     }
    },
@@ -851,25 +851,25 @@
    "n_casas": 9,
    "fuente": "consenso_us",
    "ml": {
-    "LAD": -265,
+    "LAD": -275,
     "SF": 226
    },
    "total": {
     "linea": 8.5,
-    "over": -105,
-    "under": -115,
+    "over": -106,
+    "under": -114,
     "n_casas": 9
    },
    "spread": {
     "LAD": {
      "linea": -1.5,
-     "cuota": -126,
-     "n_casas": 9
+     "cuota": -125,
+     "n_casas": 8
     },
     "SF": {
      "linea": 1.5,
      "cuota": 105,
-     "n_casas": 9
+     "n_casas": 8
     }
    },
    "casas_ml": {
@@ -879,8 +879,8 @@
    "mejor": {
     "ml": {
      "LAD": {
-      "cuota": -260,
-      "casa": "fanduel"
+      "cuota": -265,
+      "casa": "betus"
      },
      "SF": {
       "cuota": 236,
@@ -894,19 +894,19 @@
       "casa": "lowvig"
      },
      "under": {
-      "cuota": -113,
-      "casa": "lowvig"
+      "cuota": -110,
+      "casa": "bovada"
      }
     },
     "spread": {
      "LAD": {
       "linea": -1.5,
-      "cuota": -124,
-      "casa": "betrivers"
+      "cuota": -119,
+      "casa": "mybookieag"
      },
      "SF": {
       "linea": 1.5,
-      "cuota": 116,
+      "cuota": 110,
       "casa": "lowvig"
      }
     }
@@ -922,12 +922,12 @@
    "fuente": "consenso_us",
    "ml": {
     "MIA": 129,
-    "SD": -152
+    "SD": -154
    },
    "total": {
-    "linea": 8.5,
-    "over": -102,
-    "under": -118,
+    "linea": 8.0,
+    "over": -110,
+    "under": -107,
     "n_casas": 7
    },
    "spread": {
@@ -938,7 +938,7 @@
     },
     "SD": {
      "linea": -1.5,
-     "cuota": 145,
+     "cuota": 144,
      "n_casas": 9
     }
    },
@@ -949,35 +949,35 @@
    "mejor": {
     "ml": {
      "MIA": {
-      "cuota": 131,
+      "cuota": 136,
       "casa": "betonlineag"
      },
      "SD": {
-      "cuota": -139,
-      "casa": "betrivers"
+      "cuota": -143,
+      "casa": "betus"
      }
     },
     "total": {
-     "linea": 8.5,
+     "linea": 8.0,
      "over": {
-      "cuota": 102,
-      "casa": "fanduel"
+      "cuota": -107,
+      "casa": "lowvig"
      },
      "under": {
-      "cuota": -113,
-      "casa": "lowvig"
+      "cuota": -105,
+      "casa": "betmgm"
      }
     },
     "spread": {
      "MIA": {
       "linea": 1.5,
-      "cuota": -167,
-      "casa": "mybookieag"
+      "cuota": -165,
+      "casa": "betonlineag"
      },
      "SD": {
       "linea": -1.5,
-      "cuota": 155,
-      "casa": "betrivers"
+      "cuota": 150,
+      "casa": "fanduel"
      }
     }
    },
@@ -1034,8 +1034,8 @@
       "casa": "lowvig"
      },
      "under": {
-      "cuota": -107,
-      "casa": "mybookieag"
+      "cuota": -110,
+      "casa": "fanduel"
      }
     },
     "spread": {
@@ -1046,7 +1046,7 @@
      },
      "MIL": {
       "linea": -1.5,
-      "cuota": -110,
+      "cuota": -106,
       "casa": "mybookieag"
      }
     }

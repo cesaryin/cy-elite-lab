@@ -8,6 +8,12 @@
    "lote": "msgbatch_01GNfeCQ23iJBorsa3C43kP2",
    "enviado_utc": "2026-09-20T16:43:09Z",
    "estado": "enviado"
+  },
+  {
+   "n": 2,
+   "lote": "msgbatch_015Qd2fb5S7pC7XmoeyEWTMv",
+   "enviado_utc": "2026-09-20T19:32:02Z",
+   "estado": "enviado"
   }
  ]
 }
