@@ -285,7 +285,7 @@
   },
   "inicio_utc": "2026-09-20T00:40Z",
   "visto": "2026-09-20T00:21:22+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "MIN@LAA": {
   "ml": {
@@ -294,8 +294,8 @@
   },
   "total": {
    "linea": 7.0,
-   "over": -125,
-   "under": 104
+   "over": -120,
+   "under": -101
   },
   "spread": {
    "MIN": {
@@ -308,7 +308,7 @@
    }
   },
   "inicio_utc": "2026-09-20T01:38Z",
-  "visto": "2026-09-20T00:21:22+00:00",
+  "visto": "2026-09-20T01:10:10+00:00",
   "cerrado": false
  },
  "SEA@COL": {
@@ -357,6 +357,6 @@
   },
   "inicio_utc": "2026-09-20T01:10Z",
   "visto": "2026-09-20T00:21:22+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
