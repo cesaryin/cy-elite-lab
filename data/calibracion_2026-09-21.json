@@ -872,11 +872,22 @@
     "faltan": []
    },
    "alarma": null
+  },
+  {
+   "id": "sistema.mercado",
+   "area": "Sistema",
+   "pregunta": "¿El Mercado enseñó los precios que pidió?",
+   "minimo": 1,
+   "estado": "sin muestra",
+   "n": 0,
+   "texto": "sin el menú del Mercado de ayer",
+   "datos": null,
+   "alarma": null
   }
  ],
  "cuenta": {
   "medida": 12,
-  "sin muestra": 21,
+  "sin muestra": 22,
   "alarma": 0,
   "error": 0
  }
