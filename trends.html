@@ -5,6 +5,7 @@
 --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font-family:inherit}
 .mono{font-variant-numeric:tabular-nums}
 .app{max-width:480px;margin:0 auto;min-height:100vh;padding-top:66px;padding-bottom:calc(74px + env(safe-area-inset-bottom));position:relative;overflow-x:hidden}
 /* LA BARRA DE ARRIBA, COMO EN LINEMATE (19-sep-2026). Cesar mando un video de esa
@@ -617,28 +618,9 @@ table.t9 .r{color:var(--red)}
 /* ---------- pie ---------- */
 .leyenda{font-size:10.5px;color:var(--faint);margin-top:10px;line-height:1.75}
 .leyenda b{color:var(--mute)}
-/* ---------- EL GLOSARIO (10-sep-2026) ----------
-   Cesar: "esto puedes ponerlo tipo Glosario como esta en LAB, asi queda igual y
-   mas uniforme". Antes era un parrafo corrido de abreviaturas al pie; ahora es
-   un desplegable con secciones, con la misma forma que el del LAB.
-   Se usa <details> nativo y no un boton con JS: Trends ya lo usa para las
-   fichas de juego (.fi) y asi la pagina no necesita script para esto. */
-.tg-acc{margin-top:18px;background:var(--surf);border:1px solid var(--line);
-         border-radius:12px;overflow:hidden}
-.tg-sum{display:flex;align-items:center;justify-content:space-between;gap:8px;
-         padding:12px 14px;cursor:pointer;list-style:none;font-family:var(--disp);
-         font-size:12.5px;font-weight:700;color:var(--soft)}
-.tg-sum::-webkit-details-marker{display:none}
-.tg-ar{color:var(--mute);font-size:11px;transition:transform .15s}
-.tg-acc[open] .tg-ar{transform:rotate(180deg)}
-.tg-panel{padding:2px 14px 14px;border-top:1px solid var(--line2)}
-.tg-h{font-size:13.5px;font-weight:700;color:var(--text);margin:14px 0 6px}
-.tg{font-size:13px;line-height:1.7;color:var(--soft);margin-bottom:8px}
-/* En negrita solo el termino que abre la entrada; el resto del parrafo en letra normal
-   (21-sep-2026, Cesar). El del Modelo va igual. */
-.tg b{font-weight:400;color:inherit}
-.tg>b:first-child{font-weight:700;color:var(--text)}
-.tg i{color:var(--mute);font-style:italic}
+/* EL GLOSARIO: desde el 21-sep-2026 es la pieza comun con el Modelo (src/comun/glosario.py,
+   se añade al final de CSS_TRENDS). Cesar: «tenian que ser igual ya que brindan la misma
+   informacion». */
 footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-height:1.8;
        padding-top:16px;border-top:1px solid var(--line)}
 
@@ -750,6 +732,19 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
    Asi que la regla dice el tamano que ya tenia heredado de table.t9: no cambia
    ni un pixel de como se ve hoy, y deja escrito que es deliberado. */
 .trends-real table.t4 th,.trends-real table.t4 td{font-size:10.5px}
+
+.gl{margin-top:18px;background:#161b22;border:1px solid #30363d;border-radius:12px;overflow:hidden}
+.gl-s{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 15px;
+ cursor:pointer;list-style:none;font-family:inherit;font-size:14px;font-weight:700;color:#e6edf3}
+.gl-s::-webkit-details-marker{display:none}
+.gl-ar{color:#8b949e;font-size:11px;transition:transform .15s}
+.gl[open] .gl-ar{transform:rotate(180deg)}
+.gl-p{padding:2px 15px 14px;border-top:1px solid #21262d}
+.gl-h{font-size:13.5px;font-weight:700;line-height:1.5;color:#e6edf3;margin:14px 0 6px}
+.gl-e{font-size:13px;font-weight:400;line-height:1.7;color:#c9d1d9;margin:0 0 8px}
+.gl-e b{font-weight:400;color:inherit}
+.gl-e>b:first-child{font-weight:700;color:#e6edf3}
+.gl-e i{color:#8b949e;font-style:italic}
 
 /* LA CAPA EN VIVO (14-sep-2026), ver src/generador/vivo_web.py. La pinta el
    navegador con datos de MLB y ESPN; sin ellos no aparece nada. */
@@ -874,28 +869,9 @@ table.t9 .r{color:var(--red)}
 /* ---------- pie ---------- */
 .leyenda{font-size:10.5px;color:var(--faint);margin-top:10px;line-height:1.75}
 .leyenda b{color:var(--mute)}
-/* ---------- EL GLOSARIO (10-sep-2026) ----------
-   Cesar: "esto puedes ponerlo tipo Glosario como esta en LAB, asi queda igual y
-   mas uniforme". Antes era un parrafo corrido de abreviaturas al pie; ahora es
-   un desplegable con secciones, con la misma forma que el del LAB.
-   Se usa <details> nativo y no un boton con JS: Trends ya lo usa para las
-   fichas de juego (.fi) y asi la pagina no necesita script para esto. */
-.tg-acc{margin-top:18px;background:var(--surf);border:1px solid var(--line);
-         border-radius:12px;overflow:hidden}
-.tg-sum{display:flex;align-items:center;justify-content:space-between;gap:8px;
-         padding:12px 14px;cursor:pointer;list-style:none;font-family:var(--disp);
-         font-size:12.5px;font-weight:700;color:var(--soft)}
-.tg-sum::-webkit-details-marker{display:none}
-.tg-ar{color:var(--mute);font-size:11px;transition:transform .15s}
-.tg-acc[open] .tg-ar{transform:rotate(180deg)}
-.tg-panel{padding:2px 14px 14px;border-top:1px solid var(--line2)}
-.tg-h{font-size:13.5px;font-weight:700;color:var(--text);margin:14px 0 6px}
-.tg{font-size:13px;line-height:1.7;color:var(--soft);margin-bottom:8px}
-/* En negrita solo el termino que abre la entrada; el resto del parrafo en letra normal
-   (21-sep-2026, Cesar). El del Modelo va igual. */
-.tg b{font-weight:400;color:inherit}
-.tg>b:first-child{font-weight:700;color:var(--text)}
-.tg i{color:var(--mute);font-style:italic}
+/* EL GLOSARIO: desde el 21-sep-2026 es la pieza comun con el Modelo (src/comun/glosario.py,
+   se añade al final de CSS_TRENDS). Cesar: «tenian que ser igual ya que brindan la misma
+   informacion». */
 footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-height:1.8;
        padding-top:16px;border-top:1px solid var(--line)}
 
@@ -1007,6 +983,19 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
    Asi que la regla dice el tamano que ya tenia heredado de table.t9: no cambia
    ni un pixel de como se ve hoy, y deja escrito que es deliberado. */
 .trends-real table.t4 th,.trends-real table.t4 td{font-size:10.5px}
+
+.gl{margin-top:18px;background:#161b22;border:1px solid #30363d;border-radius:12px;overflow:hidden}
+.gl-s{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 15px;
+ cursor:pointer;list-style:none;font-family:inherit;font-size:14px;font-weight:700;color:#e6edf3}
+.gl-s::-webkit-details-marker{display:none}
+.gl-ar{color:#8b949e;font-size:11px;transition:transform .15s}
+.gl[open] .gl-ar{transform:rotate(180deg)}
+.gl-p{padding:2px 15px 14px;border-top:1px solid #21262d}
+.gl-h{font-size:13.5px;font-weight:700;line-height:1.5;color:#e6edf3;margin:14px 0 6px}
+.gl-e{font-size:13px;font-weight:400;line-height:1.7;color:#c9d1d9;margin:0 0 8px}
+.gl-e b{font-weight:400;color:inherit}
+.gl-e>b:first-child{font-weight:700;color:#e6edf3}
+.gl-e i{color:#8b949e;font-style:italic}
 </style><div class="trends-real">
 
   <div class="sep"><span class="n">MERCADO</span><span class="ln"></span></div>
@@ -1025,7 +1014,7 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
   <h2>El juego, mercado a mercado</h2>
   <div class="h2s">El abridor, el cruce contra su mano y <b>todos los mercados</b> con su
   cuota y lo que se han movido hoy. El visitante arriba y el local debajo.</div>
-  <div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:35:00Z">5:35 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/TOR.png" alt="TOR"></td><td class="l sp">T. Yesavage</td><td>25-32 <b>44%</b></td><td><b>+102</b><i>&mdash;</i></td><td><b>+141</b><i class="sube">+1.0</i></td><td><b>+174</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/BAL.png" alt="BAL"></td><td class="l sp">S. Baz</td><td>23-28 <b>45%</b></td><td><b>-102</b><i>&mdash;</i></td><td><b>+141</b><i>&mdash;</i></td><td><b>+208</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 7.5 &middot; over <b>+106</b> / under <b>-106</b> &middot; serie TOR <b>6-4</b>, media 10.5 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:40:00Z">5:40 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/WSH.png" alt="WSH"></td><td class="l sp">D. Herz</td><td class="r">18-29 <b>38%</b></td><td><b>+125</b><i class="sube">+2.0</i></td><td><b>+160</b><i class="sube">+2.0</i></td><td><b>+208</b><i class="sube">+2.0</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/DET.png" alt="DET"></td><td class="l sp">R. Ryan</td><td class="r">18-28 <b>39%</b></td><td><b>-125</b><i class="baja">-3.0</i></td><td><b>+120</b><i class="baja">-2.5</i></td><td><b>+167</b><i class="baja">-2.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-130</b> / under <b>+130</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-22T01:45:00Z">8:45 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/MIN.png" alt="MIN"></td><td class="l sp">Z. Matthews</td><td>23-30 <b>43%</b></td><td><b>-111</b><i>&mdash;</i></td><td><b>+135</b><i>&mdash;</i></td><td><b>+147</b><i class="sube">+1.0</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/SF.png" alt="SF"></td><td class="l sp">B. Tidwell</td><td>24-29 <b>45%</b></td><td><b>+111</b><i>&mdash;</i></td><td><b>+150</b><i class="baja">-0.5</i></td><td><b>+228</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-125</b> / under <b>+125</b></div></div>
+  <div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:35:00Z">5:35 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/TOR.png" alt="TOR"></td><td class="l sp">T. Yesavage</td><td>25-32 <b>44%</b></td><td><b>+102</b><i>&mdash;</i></td><td><b>+141</b><i class="sube">+1.0</i></td><td><b>+174</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/BAL.png" alt="BAL"></td><td class="l sp">S. Baz</td><td>23-28 <b>45%</b></td><td><b>-102</b><i>&mdash;</i></td><td><b>+141</b><i>&mdash;</i></td><td><b>+212</b><i class="baja">-0.5</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 7.5 &middot; over <b>+106</b> / under <b>-106</b> &middot; serie TOR <b>6-4</b>, media 10.5 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:40:00Z">5:40 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/WSH.png" alt="WSH"></td><td class="l sp">D. Herz</td><td class="r">18-29 <b>38%</b></td><td><b>+125</b><i class="sube">+2.0</i></td><td><b>+160</b><i class="sube">+2.0</i></td><td><b>+208</b><i class="sube">+2.0</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/DET.png" alt="DET"></td><td class="l sp">R. Ryan</td><td class="r">18-28 <b>39%</b></td><td><b>-125</b><i class="baja">-3.0</i></td><td><b>+120</b><i class="baja">-2.5</i></td><td><b>+167</b><i class="baja">-2.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-130</b> / under <b>+130</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-22T01:45:00Z">8:45 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/MIN.png" alt="MIN"></td><td class="l sp">Z. Matthews</td><td>23-30 <b>43%</b></td><td><b>-111</b><i>&mdash;</i></td><td><b>+135</b><i>&mdash;</i></td><td><b>+147</b><i class="sube">+1.0</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/SF.png" alt="SF"></td><td class="l sp">B. Tidwell</td><td>24-29 <b>45%</b></td><td><b>+111</b><i>&mdash;</i></td><td><b>+150</b><i class="baja">-0.5</i></td><td><b>+228</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-130</b> / under <b>+130</b></div></div>
 
   <div class="sep"><span class="n">TEMPORADA</span><span class="ln"></span></div>
   <h2>La temporada, entera</h2>
@@ -1039,32 +1028,27 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
   <b>dos</b> vienen frías, el sello avisa de que dispara la regla del under.</div>
   <div class="jc3"><div class="jch4"><span class="pil on">dispara el under 7.5</span><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:35:00Z">5:35 PM</time></span></div><div class="tw"><table class="t9 t4"><thead><tr><th class="l">EQ</th><th>C/J 7d</th><th>OPS 7d</th><th>HR</th><th>vs ZUR</th><th>vs DER</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/TOR.png" alt="TOR"></td><td class="r">3.5</td><td class="r">.600</td><td>2</td><td>.652</td><td>.711</td></tr><tr><td class="eq"><img class="lgc" src="logos/BAL.png" alt="BAL"></td><td class="r">3.5</td><td>.677</td><td>10</td><td>.702</td><td>.711</td></tr></tbody></table></div></div><div class="jc3"><div class="jch4"><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:40:00Z">5:40 PM</time></span></div><div class="tw"><table class="t9 t4"><thead><tr><th class="l">EQ</th><th>C/J 7d</th><th>OPS 7d</th><th>HR</th><th>vs ZUR</th><th>vs DER</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/WSH.png" alt="WSH"></td><td>5.2</td><td>.679</td><td>5</td><td>.774</td><td>.736</td></tr><tr><td class="eq"><img class="lgc" src="logos/DET.png" alt="DET"></td><td>4.4</td><td>.734</td><td>4</td><td>.701</td><td>.723</td></tr></tbody></table></div></div><div class="jc3"><div class="jch4"><span class="hh mono"><time class="h-loc" data-utc="2026-09-22T01:45:00Z">8:45 PM</time></span></div><div class="tw"><table class="t9 t4"><thead><tr><th class="l">EQ</th><th>C/J 7d</th><th>OPS 7d</th><th>HR</th><th>vs ZUR</th><th>vs DER</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/MIN.png" alt="MIN"></td><td>4.1</td><td>.664</td><td>6</td><td>.677</td><td>.740</td></tr><tr><td class="eq"><img class="lgc" src="logos/SF.png" alt="SF"></td><td class="r">4.0</td><td>.650</td><td>5</td><td>.669</td><td>.732</td></tr></tbody></table></div></div>
 
-  <details class="tg-acc">
-    <summary class="tg-sum"><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Glosario — qué significa cada dato</span><span class="tg-ar">▾</span></summary>
-    <div class="tg-panel">
+  <details class="gl"><summary class="gl-s"><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Glosario — qué significa cada dato</span><span class="gl-ar">▾</span></summary><div class="gl-p">
+<div class="gl-h">Cómo se leen las tarjetas</div>
+<div class="gl-e"><b>El orden</b> — en todas las tarjetas el <b>visitante</b> va arriba y el <b>local</b> debajo. Siempre, sin excepción, para que no haya que mirar dos veces.</div>
+<div class="gl-e"><b>Las secciones</b> — <b>MERCADO</b> y <b>TUS ANÁLISIS</b> son de HOY y sirven para decidir. <b>POR JUEGO</b> es el detalle de cada partido. <b>TEMPORADA</b> y <b>ÚLTIMOS 7 DÍAS</b> son de consulta: contexto, no decisión.</div>
 
-      <div class="tg-h">Cómo se leen las tarjetas</div>
-      <div class="tg"><b>El orden</b> — en todas las tarjetas el <b>visitante</b> va arriba y el <b>local</b> debajo. Siempre, sin excepción, para que no haya que mirar dos veces.</div>
-      <div class="tg"><b>Las secciones</b> — <b>MERCADO</b> y <b>TUS ANÁLISIS</b> son de HOY y sirven para decidir. <b>POR JUEGO</b> es el detalle de cada partido. <b>TEMPORADA</b> y <b>ÚLTIMOS 7 DÍAS</b> son de consulta: contexto, no decisión.</div>
+<div class="gl-h">La tabla de la temporada</div>
+<div class="gl-e"><b>ÚLT10 · RCH · O8.5</b> — el récord en los últimos 10 juegos, la racha actual y cuántos de sus juegos pasaron de 8.5 carreras.</div>
+<div class="gl-e"><b>AÑO / REC</b> — carreras <b>anotadas</b> y <b>recibidas</b> por juego en la temporada. Juntas dicen si un equipo gana marcando o aguantando.</div>
+<div class="gl-e"><b>NRFI</b> — <i>No Run First Inning</i>: con qué frecuencia la primera entrada acaba sin carreras.</div>
+<div class="gl-e"><b>F5</b> — cuántos de sus juegos pasaron de 4.5 carreras en las <b>primeras cinco entradas</b>. Las cinco primeras dejan al bullpen fuera, así que dependen casi solo de los dos abridores.</div>
 
-      <div class="tg-h">La tabla de la temporada</div>
-      <div class="tg"><b>ÚLT10 · RCH · O8.5</b> — el récord en los últimos 10 juegos, la racha actual y cuántos de sus juegos pasaron de 8.5 carreras.</div>
-      <div class="tg"><b>AÑO / REC</b> — carreras <b>anotadas</b> y <b>recibidas</b> por juego en la temporada. Juntas dicen si un equipo gana marcando o aguantando.</div>
-      <div class="tg"><b>NRFI</b> — <i>No Run First Inning</i>: con qué frecuencia la primera entrada acaba sin carreras.</div>
-      <div class="tg"><b>F5</b> — cuántos de sus juegos pasaron de 4.5 carreras en las <b>primeras cinco entradas</b>. Las cinco primeras dejan al bullpen fuera, así que dependen casi solo de los dos abridores.</div>
+<div class="gl-h">Los mercados y su movimiento</div>
+<div class="gl-e"><b>ML · F5 · RL · TT</b> — moneyline del juego completo, moneyline de las primeras cinco, run line (ganar por 2 o más) y team total (las carreras de UN equipo). En cada celda, arriba <b>la cuota de ahora</b> y debajo <b>cuánto se ha movido desde que abrieron</b>.</div>
+<div class="gl-e"><b>Cómo leer el movimiento</b> — si una línea se mueve hacia un lado, el dinero entró ahí <b>antes</b> de que el mercado moviera el número. A favor del análisis confirma; en contra es un aviso. Y ojo con leerlo al revés: que ya se haya movido a tu favor significa que <b>llegas tarde</b>, no que aciertes.</div>
+<div class="gl-e"><b>Un guion en vez de cuota</b> — ese mercado no tiene precio ahora mismo, no es un fallo. Kalshi no lista todos los mercados de todos los juegos.</div>
 
-      <div class="tg-h">Los mercados y su movimiento</div>
-      <div class="tg"><b>ML · F5 · RL · TT</b> — moneyline del juego completo, moneyline de las primeras cinco, run line (ganar por 2 o más) y team total (las carreras de UN equipo). En cada celda, arriba <b>la cuota de ahora</b> y debajo <b>cuánto se ha movido desde que abrieron</b>.</div>
-      <div class="tg"><b>Cómo leer el movimiento</b> — si una línea se mueve hacia un lado, el dinero entró ahí <b>antes</b> de que el mercado moviera el número. A favor del análisis confirma; en contra es un aviso. Y ojo con leerlo al revés: que ya se haya movido a tu favor significa que <b>llegas tarde</b>, no que aciertes.</div>
-      <div class="tg"><b>Un guion en vez de cuota</b> — ese mercado no tiene precio ahora mismo, no es un fallo. Kalshi no lista todos los mercados de todos los juegos.</div>
-
-      <div class="tg-h">De dónde sale todo</div>
-      <div class="tg"><b>Las estadísticas</b> — de MLB, oficiales.</div>
-      <div class="tg"><b>Los precios y el movimiento</b> — de un mercado de referencia con comisión muy baja, que es el que mejor refleja el precio real.</div>
-      <div class="tg"><b>Nada estimado</b> — si un dato no está, sale un guion. Ninguna cifra de esta página es un cálculo aproximado ni un relleno.</div>
-
-    </div>
-  </details>
+<div class="gl-h">De dónde sale todo</div>
+<div class="gl-e"><b>Las estadísticas</b> — de MLB, oficiales.</div>
+<div class="gl-e"><b>Los precios y el movimiento</b> — de un mercado de referencia con comisión muy baja, que es el que mejor refleja el precio real.</div>
+<div class="gl-e"><b>Nada estimado</b> — si un dato no está, sale un guion. Ninguna cifra de esta página es un cálculo aproximado ni un relleno.</div>
+</div></details>
 
 </div></section><footer class="legal"><div class="legal-c">© 2026 CY Elite Lab. Todos los derechos reservados.</div><div class="legal-l"><a href="/legal#terminos">Términos</a> · <a href="/legal#privacidad">Privacidad</a> · <a href="/legal#reembolsos">Reembolsos</a></div></footer></main><nav><a href="/" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg><span>Análisis</span></a><a href="/modelo" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6.5L5.2 18a2 2 0 0 0 1.8 3h10a2 2 0 0 0 1.8-3L14 9.5V3"/><path d="M7.5 15h9"/></svg><span>Modelo</span></a><a href="/mercado" class="nav-i on" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span>Mercado</span></a><a href="/record" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>Récord</span></a></nav></div><script>
 (function(){
@@ -1414,4 +1398,4 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
     if (!document.hidden) { mlb(); espn(); }
   });
 })();
-</script><!-- generado 09/21/2026 11:26 AM --></body></html>
+</script><!-- generado 09/21/2026 11:52 AM --></body></html>

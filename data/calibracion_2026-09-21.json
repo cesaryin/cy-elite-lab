@@ -788,10 +788,10 @@
    "pregunta": "¿Nuestro ranking de abridores se parece al de la referencia?",
    "minimo": 20,
    "estado": "medida",
-   "n": 65,
-   "texto": "ranking de abridores contra la referencia: correlación +0.753 · error mediano 22 puestos",
+   "n": 69,
+   "texto": "ranking de abridores contra la referencia: correlación +0.750 · error mediano 22 puestos",
    "datos": {
-    "correlacion": 0.753,
+    "correlacion": 0.75,
     "error_mediano": 22
    },
    "alarma": null
@@ -861,25 +861,23 @@
    "area": "Sistema",
    "pregunta": "¿El archivo de precios de Kalshi sigue creciendo?",
    "minimo": 1,
-   "estado": "alarma",
-   "n": 989,
-   "texto": "989 precios archivados, el último del 2026-09-15",
+   "estado": "medida",
+   "n": 1013,
+   "texto": "1013 precios archivados, el último del 2026-09-17",
    "datos": {
-    "ultima_fecha": "2026-09-15",
-    "dias": 6,
+    "ultima_fecha": "2026-09-17",
+    "dias": 4,
     "ayer": 989,
-    "recogido_hasta": "2026-09-15",
-    "faltan": [
-     "2026-09-16"
-    ]
+    "recogido_hasta": "2026-09-17",
+    "faltan": []
    },
-   "alarma": "al archivo de Kalshi le faltan los partidos del 2026-09-16: el recolector (lunes y jueves, 8:40) no ha pasado. Kalshi los borra a los ~70 días: Actions → «Archivar los precios de la semana»"
+   "alarma": null
   }
  ],
  "cuenta": {
-  "medida": 11,
+  "medida": 12,
   "sin muestra": 21,
-  "alarma": 1,
+  "alarma": 0,
   "error": 0
  }
 }
