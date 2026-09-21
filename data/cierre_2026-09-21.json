@@ -12,15 +12,15 @@
   "spread": {
    "TOR": {
     "linea": -1.5,
-    "cuota": 161
+    "cuota": 159
    },
    "BAL": {
     "linea": 1.5,
-    "cuota": -196
+    "cuota": -194
    }
   },
   "inicio_utc": "2026-09-21T22:35Z",
-  "visto": "2026-09-21T19:33:43+00:00",
+  "visto": "2026-09-21T19:35:13+00:00",
   "cerrado": false
  },
  "WSH@DET": {
@@ -36,15 +36,15 @@
   "spread": {
    "WSH": {
     "linea": 1.5,
-    "cuota": -191
+    "cuota": -187
    },
    "DET": {
     "linea": -1.5,
-    "cuota": 157
+    "cuota": 153
    }
   },
   "inicio_utc": "2026-09-21T22:40Z",
-  "visto": "2026-09-21T19:33:43+00:00",
+  "visto": "2026-09-21T19:35:13+00:00",
   "cerrado": false
  },
  "MIN@SF": {
@@ -68,7 +68,7 @@
    }
   },
   "inicio_utc": "2026-09-22T01:45Z",
-  "visto": "2026-09-21T19:33:43+00:00",
+  "visto": "2026-09-21T19:35:13+00:00",
   "cerrado": false
  }
 }
