@@ -169,7 +169,7 @@ section{display:none}section.on{display:block}
 .pl-av{background:rgba(212,175,55,.07);border:1px solid var(--gold);border-radius:14px;padding:16px 17px;margin-bottom:20px}
 .pl-av-t{font-size:15px;font-weight:800;color:var(--gold2);line-height:1.35;margin-bottom:9px}
 .pl-av p{font-size:13px;line-height:1.62;color:var(--soft);margin:0 0 10px}
-.pl-av p b{color:var(--text)}
+.pl-av p b{color:var(--text);font-weight:800}
 .pl-av-p{margin-bottom:0!important;color:var(--text)!important;font-weight:600}
 .pl-prog{display:flex;justify-content:space-between;align-items:baseline;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:9px 12px;margin:0 0 10px;font-size:12.5px;font-variant-numeric:tabular-nums}
 .pl-prog b{font-size:15px;color:var(--gold2)}
@@ -466,8 +466,8 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .nav-i:focus-visible{outline:2px solid var(--gold);outline-offset:-3px;border-radius:8px}
 
 #cmp{margin:13px 0}
-.cmp-acc{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px 15px;color:#e6edf3;font-weight:800;font-size:14.5px;cursor:pointer}
-.cmp-rt{display:flex;align-items:center;gap:7px;flex-shrink:0;font-weight:600;font-size:12px;color:#8b949e}
+.cmp-acc{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px 15px;color:#e6edf3;font-weight:800;font-size:14px;cursor:pointer}
+.cmp-rt{display:flex;align-items:center;gap:7px;flex-shrink:0;font-weight:600;font-size:12.5px;color:#8b949e}
 .cmp-panel{border:1px solid #30363d;border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:11px;background:#0f141a}
 .cmp-g{background:#161b22;border:1px solid #30363d;border-radius:11px;margin-bottom:8px;overflow:hidden}
 /* LA REJILLA QUE SUJETA LAS COLUMNAS (10-sep-2026).
@@ -493,7 +493,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
    La clase .win se conserva y marca al que gana el duelo solo con el grosor,
    sin color. */
 .cmp-p.win .cmp-nm{font-weight:800}
-.cmp-rec{flex-shrink:0;font-size:10.5px;color:#8b949e;font-variant-numeric:tabular-nums}
+.cmp-rec{flex-shrink:0;font-size:11px;color:#8b949e;font-variant-numeric:tabular-nums}
 .cmp-nums{flex-shrink:0;display:flex;align-items:baseline;gap:4px}
 /* LAS TRES COLUMNAS, IGUALES (10-sep-2026). La ERA iba a 12.5px y en negrita
    800 mientras BP y SV iban a 10.5px normales: se leia como si fueran tres
@@ -502,7 +502,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
    quede todo igual". Mismo tamano, mismo grosor y mismo ancho de columna las
    tres; la ERA conserva el gris claro porque es el dato del que va el bloque,
    BP y SV van en gris apagado. */
-.cmp-er,.cmp-pen,.cmp-cl{width:32px;text-align:right;font-size:11.5px;font-weight:600;font-variant-numeric:tabular-nums}
+.cmp-er,.cmp-pen,.cmp-cl{width:32px;text-align:right;font-size:11px;font-weight:600;font-variant-numeric:tabular-nums}
 .cmp-er{color:#e6edf3}
 .cmp-pen,.cmp-cl{color:#8b949e}
 .cmp-lg{width:18px;height:18px;object-fit:contain;flex-shrink:0}
@@ -510,14 +510,14 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
    .cmp-g, que tiene 1px de borde. 11 + 1 = 12, y asi las etiquetas caen justo
    encima de sus numeros. */
 .cmp-hd{display:flex;justify-content:flex-end;gap:9px;padding:0 12px 5px}
-.cmp-hd .cmp-er,.cmp-hd .cmp-pen,.cmp-hd .cmp-cl{font-size:9px;font-weight:800;color:#6e7681;letter-spacing:.5px}
+.cmp-hd .cmp-er,.cmp-hd .cmp-pen,.cmp-hd .cmp-cl{font-size:10px;font-weight:800;color:#6e7681;letter-spacing:.5px}
 .cmp-vsp{width:96px;flex-shrink:0}
-.cmp-v{text-align:right;font-size:10px;font-weight:900;background:#0f141a;color:#8b949e;border:1px solid #30363d;border-radius:6px;padding:4px 7px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cmp-v{text-align:right;font-size:10px;font-weight:800;background:#0f141a;color:#8b949e;border:1px solid #30363d;border-radius:6px;padding:4px 7px;white-space:nowrap;font-variant-numeric:tabular-nums}
 .cmp-v.alta{background:#0f2e1a;color:#3fb950;border-color:#1f5c37}
 @media (max-width:409px){.cmp-cl,.cmp-hd .cmp-cl{display:none}}
-.cmp-d{display:none;padding:0 11px 9px;font-size:11.5px;color:#c9d1d9}
+.cmp-d{display:none;padding:0 11px 9px;font-size:11px;color:#c9d1d9}
 .cmp-ln{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-top:1px solid #21262d}
-.cmp-note{font-size:10.5px;color:#6e7681;text-align:center;margin-top:4px}
+.cmp-note{font-size:11px;color:#6e7681;text-align:center;margin-top:4px}
 .ico{width:1.05em;height:1.05em;flex-shrink:0;vertical-align:-.16em;margin-right:.32em}
 /* El aire entre juegos vive aqui y no en el `gap` de la rejilla: el
    dashboard no usa `.grid` —cuelga los .gitem de .lab-real, que no tiene
@@ -896,7 +896,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
   <div class="det" id="det2" style="display:none"><div class="d-teams"><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/MIN.png" alt="MIN" onerror="this.style.display='none'"><span>MIN</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-b">B-</span></td><td><span class="gr n-b">B-</span></td><td><span class="gr n-d">D</span></td><td><span class="gr n-d">D</span></td><td><span class="gr n-c">C-</span></td></tr></tbody></table><div class="d-bt">Abridor</div><div class="d-sub">Zebby Matthews <span class="mut">(9-10)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>4.74<span class="gr n-c">C-</span></span></div><div class="d-ln"><span>FIP 3 años <i class="d-nt">su calidad de fondo</i></span><span>4.56</span></div><div class="d-ln"><span>K-BB%</span><span>13.0%<span class="gr n-c">C</span></span></div><div class="d-bt">Últimos 5 starts</div><div class="d-ln"><span>vs NYY</span><span>6.0 IP · 0 ER · 8 K</span></div><div class="d-ln"><span>vs DET</span><span>2.1 IP · 5 ER · 2 K</span></div><div class="d-ln"><span>vs CWS</span><span>5.0 IP · 4 ER · 4 K</span></div><div class="d-ln"><span>vs CWS</span><span>8.1 IP · 1 ER · 5 K</span></div><div class="d-ln"><span>vs ATH</span><span>7.0 IP · 1 ER · 7 K</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>7.5</span></div><div class="d-pen">2 días seguidos: ninguno</div></div><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/SF.png" alt="SF" onerror="this.style.display='none'"><span>SF</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-c">C</span></td><td><span class="gr n-c">C+</span></td><td><span class="gr n-d">F</span></td><td><span class="gr n-c">C-</span></td><td><span class="gr n-c">C</span></td></tr></tbody></table><div class="d-bt">Abridor</div><div class="d-sub">Blade Tidwell <span class="mut">(1-2)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>4.56<span class="gr n-c">C</span></span></div><div class="d-ln"><span>FIP 3 años <i class="d-nt">su calidad de fondo</i></span><span>5.23</span></div><div class="d-ln"><span>K-BB%</span><span>9.5%<span class="gr n-c">C-</span></span></div><div class="d-bt">Últimos 5 starts</div><div class="d-ln"><span>vs STL</span><span>6.2 IP · 2 ER · 4 K</span></div><div class="d-ln"><span>vs STL</span><span>4.0 IP · 4 ER · 2 K</span></div><div class="d-ln"><span>vs PIT</span><span>5.0 IP · 2 ER · 5 K</span></div><div class="d-ln"><span>vs AZ</span><span>5.0 IP · 6 ER · 4 K</span></div><div class="d-ln"><span>vs BOS</span><span>5.2 IP · 0 ER · 7 K</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>4.7</span></div><div class="d-pen">2 días seguidos: ninguno</div></div></div></div>
 </div></div><div class="lab-pie">
   <div><div class="lab-pk">Actualizado</div></div>
-  <div class="lab-pv">09/21/2026 1:24 PM</div>
+  <div class="lab-pv">09/21/2026 1:28 PM</div>
 </div><details class="gl"><summary class="gl-s"><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Glosario — qué significa cada dato</span><span class="gl-ar">▾</span></summary><div class="gl-p"><div class="gl-h">La tarjeta</div>
 <div class="gl-e"><b><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Confirmado / <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</b> — si los dos equipos YA publicaron su alineación oficial del día o todavía no. Con la alineación confirmada, el modelo proyecta con los nueve bateadores que van a jugar de verdad.</div>
 <div class="gl-e"><b>La cuota junto al equipo</b> — lo que paga el mercado ahora: el consenso de las casas y, si todavía no lo hay, el precio de Kalshi.</div>
@@ -1028,4 +1028,4 @@ function recTog(){var p=document.getElementById('recPanel');var o=p.style.displa
     document.head.appendChild(sc);
   } catch (e) {}
 })();
-</script><!-- generado 09/21/2026 1:24 PM --></body></html>
+</script><!-- generado 09/21/2026 1:28 PM --></body></html>
