@@ -5072,141 +5072,6 @@
     "cuadrante": "merecido"
   },
   {
-    "fecha": "2026-08-20",
-    "pick": "CWS ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -102,
-    "unidades": 1.5,
-    "resultado": "L",
-    "neto_u": -1.5,
-    "marcador": "ATL 2-0 CWS",
-    "clv": -1.0,
-    "prob_cierre": 49.5,
-    "clv_metodo": "kalshi_historico",
-    "causa": "sin_datos"
-  },
-  {
-    "fecha": "2026-08-20",
-    "pick": "ATH/KC o8.0",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -115,
-    "unidades": 1.0,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": "ATH 2-6 KC",
-    "clv": 2.0,
-    "prob_cierre": 55.5,
-    "clv_metodo": "kalshi_historico"
-  },
-  {
-    "fecha": "2026-08-20",
-    "pick": "STL ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -106,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.94,
-    "marcador": "STL 10-9 CIN",
-    "clv": 0.0,
-    "prob_cierre": 51.5,
-    "clv_metodo": "kalshi_historico"
-  },
-  {
-    "fecha": "2026-09-18",
-    "pick": "PIT F5 ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -117,
-    "unidades": 1.0,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": "KC 5-8 PIT",
-    "veredicto": "apostable",
-    "prob_estimada": 57.0,
-    "prob_justa": null,
-    "ev_pct": 5.72,
-    "precio_publicado": -123,
-    "discrepancia_pp": null,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "ofensiva",
-      "matchup"
-    ],
-    "contra": "El empate de las cinco entradas cuenta como derrota en este mercado y KC, con Witt Jr. y Pasquantino, puede sacar una carrera aislada y dejarlo 1-1.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE"
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": true,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-18T22:10:19Z"
-    },
-    "clv": -0.4,
-    "prob_cierre": 53.5,
-    "clv_metodo": "kalshi_historico"
-  },
-  {
-    "fecha": "2026-09-18",
-    "pick": "TOR F5 ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": 108,
-    "unidades": 1.0,
-    "resultado": "L",
-    "neto_u": -1.0,
-    "marcador": "TOR 1-7 TEX",
-    "veredicto": "apostable",
-    "prob_estimada": 49.5,
-    "prob_justa": null,
-    "ev_pct": 2.96,
-    "precio_publicado": 107,
-    "discrepancia_pp": null,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "ofensiva",
-      "parque"
-    ],
-    "contra": "Cease camina gente (10.8% BB) y TEX batea .264 vs zurdos pero solo .695 vs derechos; un empate a cero en cinco entradas, muy probable en este parque, paga en contra.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "MEDIA"
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": true,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-18T22:10:19Z"
-    },
-    "clv": 0.4,
-    "prob_cierre": 48.5,
-    "clv_metodo": "kalshi_historico",
-    "causa": "varianza",
-    "cuadrante": "mala_suerte"
-  },
-  {
     "fecha": "2026-09-20",
     "pick": "TB F5 ML",
     "deporte": "MLB",
@@ -5345,5 +5210,140 @@
     "clv_metodo": "kalshi_historico",
     "clv_limpio": 4.2,
     "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-08-20",
+    "pick": "CWS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -102,
+    "unidades": 1.5,
+    "resultado": "L",
+    "neto_u": -1.5,
+    "marcador": "ATL 2-0 CWS",
+    "clv": -1.0,
+    "prob_cierre": 49.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "sin_datos"
+  },
+  {
+    "fecha": "2026-08-20",
+    "pick": "ATH/KC o8.0",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -115,
+    "unidades": 1.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "ATH 2-6 KC",
+    "clv": 2.0,
+    "prob_cierre": 55.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-08-20",
+    "pick": "STL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -106,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.94,
+    "marcador": "STL 10-9 CIN",
+    "clv": 0.0,
+    "prob_cierre": 51.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-18",
+    "pick": "PIT F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -117,
+    "unidades": 1.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "KC 5-8 PIT",
+    "veredicto": "apostable",
+    "prob_estimada": 57.0,
+    "prob_justa": null,
+    "ev_pct": 5.72,
+    "precio_publicado": -123,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "El empate de las cinco entradas cuenta como derrota en este mercado y KC, con Witt Jr. y Pasquantino, puede sacar una carrera aislada y dejarlo 1-1.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-18T22:10:19Z"
+    },
+    "clv": -0.4,
+    "prob_cierre": 53.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-18",
+    "pick": "TOR F5 ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 108,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "TOR 1-7 TEX",
+    "veredicto": "apostable",
+    "prob_estimada": 49.5,
+    "prob_justa": null,
+    "ev_pct": 2.96,
+    "precio_publicado": 107,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "parque"
+    ],
+    "contra": "Cease camina gente (10.8% BB) y TEX batea .264 vs zurdos pero solo .695 vs derechos; un empate a cero en cinco entradas, muy probable en este parque, paga en contra.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-18T22:10:19Z"
+    },
+    "clv": 0.4,
+    "prob_cierre": 48.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
   }
 ]

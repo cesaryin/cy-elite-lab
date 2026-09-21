@@ -496,6 +496,134 @@
     }
   },
   {
+    "fecha": "2026-09-20",
+    "pick": "DET ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 100,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "DET 1-8 CWS",
+    "veredicto": "seguimiento",
+    "prob_estimada": 51.5,
+    "prob_justa": 48.02,
+    "ev_pct": 3.0,
+    "precio_publicado": -101,
+    "discrepancia_pp": 3.48,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "forma",
+      "pitcheo"
+    ],
+    "contra": "Melton lleva salidas cortas (2.2 IP en la ultima) y el bullpen de DET acumula 9.4 entradas en dos dias, con el de CWS mas fresco y con mejor cerrador disponible.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": true,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-20T16:40:20Z"
+    }
+  },
+  {
+    "fecha": "2026-09-20",
+    "pick": "LAD Spread -1.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -125,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "SF 1-3 LAD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 57.0,
+    "prob_justa": 53.25,
+    "ev_pct": 2.6,
+    "precio_publicado": -122,
+    "discrepancia_pp": 3.75,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "pitcheo"
+    ],
+    "contra": "J. Dreyer suma solo 242 bateadores enfrentados y perfila como salida corta: si LAD tiene que usar bullpen temprano, el juego se aprieta y el -1.5 se cae.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-20T19:30:19Z"
+    }
+  },
+  {
+    "fecha": "2026-09-20",
+    "pick": "MIN/LAA u8.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -125,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "MIN 8-0 LAA",
+    "veredicto": "seguimiento",
+    "prob_estimada": 56.5,
+    "prob_justa": 53.25,
+    "ev_pct": 1.7,
+    "precio_publicado": -120,
+    "discrepancia_pp": 3.25,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "parque",
+      "umpire",
+      "mercado"
+    ],
+    "contra": "Ninguno de los dos abridores da confianza (D. Kremer 5.35 y R. Johnson 4.88 de ERA) y el 7 de cada 10 juegos recientes de ambos equipos paso de 8.5 carreras.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": -0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-20T19:30:19Z"
+    }
+  },
+  {
     "fecha": "2026-09-18",
     "pick": "WSH F5 ML",
     "deporte": "MLB",
@@ -623,134 +751,6 @@
       "alineaciones": true,
       "abridores": true,
       "ts": "2026-09-19T00:51:25Z"
-    }
-  },
-  {
-    "fecha": "2026-09-20",
-    "pick": "DET ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": 100,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "DET 1-8 CWS",
-    "veredicto": "seguimiento",
-    "prob_estimada": 51.5,
-    "prob_justa": 48.02,
-    "ev_pct": 3.0,
-    "precio_publicado": -101,
-    "discrepancia_pp": 3.48,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "forma",
-      "pitcheo"
-    ],
-    "contra": "Melton lleva salidas cortas (2.2 IP en la ultima) y el bullpen de DET acumula 9.4 entradas en dos dias, con el de CWS mas fresco y con mejor cerrador disponible.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "MEDIA"
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": true,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-20T16:40:20Z"
-    }
-  },
-  {
-    "fecha": "2026-09-20",
-    "pick": "LAD Spread -1.5",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -125,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "SF 1-3 LAD",
-    "veredicto": "seguimiento",
-    "prob_estimada": 57.0,
-    "prob_justa": 53.25,
-    "ev_pct": 2.6,
-    "precio_publicado": -122,
-    "discrepancia_pp": 3.75,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": true
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "bullpen",
-      "pitcheo"
-    ],
-    "contra": "J. Dreyer suma solo 242 bateadores enfrentados y perfila como salida corta: si LAD tiene que usar bullpen temprano, el juego se aprieta y el -1.5 se cae.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 2,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-20T19:30:19Z"
-    }
-  },
-  {
-    "fecha": "2026-09-20",
-    "pick": "MIN/LAA u8.5",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -125,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "MIN 8-0 LAA",
-    "veredicto": "seguimiento",
-    "prob_estimada": 56.5,
-    "prob_justa": 53.25,
-    "ev_pct": 1.7,
-    "precio_publicado": -120,
-    "discrepancia_pp": 3.25,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "parque",
-      "umpire",
-      "mercado"
-    ],
-    "contra": "Ninguno de los dos abridores da confianza (D. Kremer 5.35 y R. Johnson 4.88 de ERA) y el 7 de cada 10 juegos recientes de ambos equipos paso de 8.5 carreras.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE",
-      "a_favor": true,
-      "mov_linea": -0.5
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-20T19:30:19Z"
     }
   }
 ]
