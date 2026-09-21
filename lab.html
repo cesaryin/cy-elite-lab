@@ -1,6 +1,6 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Modelo · CY Elite Lab</title><meta name="google-site-verification" content="xdkj6Fp3ejJGJtHyyTTRjChzL4xnyODr5oWhE0P6ISQ"><link rel="canonical" href="https://cyelitelab.com/modelo"><meta name="description" content="Modelo estadístico de MLB con récord público: 127-107 en 234 análisis cerrados (54.3%). Cada resultado verificado en dos fuentes independientes."><meta name="theme-color" content="#0d1117"><meta property="og:type" content="website"><meta property="og:site_name" content="CY Elite Lab"><meta property="og:title" content="CY Elite Lab — 2026-09-21"><meta property="og:description" content="Modelo estadístico de MLB con récord público: 127-107 en 234 análisis cerrados (54.3%). Cada resultado verificado en dos fuentes independientes."><meta property="og:image" content="https://cyelitelab.com/og.png?v=2026-09-21"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://cyelitelab.com/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="CY Elite Lab — 2026-09-21"><meta name="twitter:description" content="Modelo estadístico de MLB con récord público: 127-107 en 234 análisis cerrados (54.3%). Cada resultado verificado en dos fuentes independientes."><meta name="twitter:image" content="https://cyelitelab.com/og.png?v=2026-09-21"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='o' gradientUnits='userSpaceOnUse' x1='40' y1='22.03' x2='55' y2='77.97'%3E%3Cstop offset='0' stop-color='%23ffecaa'/%3E%3Cstop offset='.28' stop-color='%23f0c862'/%3E%3Cstop offset='.52' stop-color='%23c99630'/%3E%3Cstop offset='.7' stop-color='%23f4d072'/%3E%3Cstop offset='1' stop-color='%239e6e1d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%230a0b0d'/%3E%3Cpath fill='url(%23o)' d='M35.8 22.03 A23.76 23.76 0 0 0 35.8 69.55 L35.8 60.37 A14.58 14.58 0 0 1 35.8 31.21Z M35.8 22.03 L52.07 22.03 L63.47 37.53 L75.25 22.03 L88 22.03 L67.77 48.31 L67.77 77.97 L58.08 77.97 L58.08 48.38 L45.46 31.21 L35.8 31.21Z M35.8 60.37 L50.43 60.37 L55.36 67.09 L55.36 69.55 L35.8 69.55Z'/%3E%3C/svg%3E"><link rel="apple-touch-icon" sizes="180x180" href="https://cyelitelab.com/icono-v2-180.png"><link rel="manifest" href="https://cyelitelab.com/manifest.json"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}</script><style>
 :root{--bg:#0d1117;--card:#161b22;--panel:#0f141a;--line:#30363d;--line2:#21262d;
---text:#e6edf3;--soft:#c9d1d9;--mut:#8b949e;--faint:#6e7681;--mut2:#9aa3ac;
+--text:#e6edf3;--soft:#c9d1d9;--mut:#8b949e;--faint:#6e7681;--mut2:#8b949e;
 --green:#3fb950;--red:#f85149;--gold:#d4af37;--gold2:#f0c75e;--purple:#a371f7;--blue:#58a6ff;
 --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}html{-webkit-text-size-adjust:100%}
@@ -37,7 +37,7 @@ button,input,select,textarea{font-family:inherit}
 .cab-s{margin:4px 0 0;font-size:12.5px;line-height:1.35;color:var(--mut)}
 .cab-d{text-align:right;flex-shrink:0}
 .cab-n{font-size:23px;font-weight:800;line-height:1;color:var(--text);font-variant-numeric:tabular-nums;white-space:nowrap}
-.cab-l{margin-top:5px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);white-space:nowrap}
+.cab-l{margin-top:5px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);white-space:nowrap}
 .sec-h{font-size:15px;font-weight:700;letter-spacing:-.005em;color:var(--text);padding:26px 2px 8px}
 /* LOS MISMOS HUECOS EN LAS OCHO (19-sep-2026, Cesar: "que tengan el mismo margen
    superior e inferior, que todo quede bien compacto"). Medidos con Edge a 430px
@@ -109,31 +109,31 @@ section{display:none}section.on{display:block}
 /* EL SISTEMA VIVO (14-sep-2026), ver _seccion_vivo(). Aprobado por Cesar en el
    mockup: la tira de tandas, la hora de publicacion y lo plegado. */
 .vv-tira{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px 4px;margin:12px 0}
-.vv-h{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding-bottom:8px}
+.vv-h{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding-bottom:8px}
 .vv-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold2);margin-right:7px;vertical-align:1px;box-shadow:0 0 0 3px rgba(240,199,94,.18)}
 .vv-c{color:var(--gold2);font-variant-numeric:tabular-nums}
-.vv-t{display:grid;grid-template-columns:16px auto minmax(0,1fr) auto;gap:8px;align-items:center;padding:7px 0;border-top:1px solid var(--line2);font-size:12px}
+.vv-t{display:grid;grid-template-columns:16px auto minmax(0,1fr) auto;gap:8px;align-items:center;padding:7px 0;border-top:1px solid var(--line2);font-size:12.5px}
 .vv-t .ico{width:15px;height:15px;margin:0;color:var(--soft)}
 .vv-t.esp .ico{color:var(--faint)}
 .vv-th{font-weight:700;color:var(--text);font-variant-numeric:tabular-nums;white-space:nowrap}
 .vv-th .h-loc{border-bottom:none}
 .vv-tj{color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.vv-tr{font-weight:700;color:var(--mut);font-size:11.5px;white-space:nowrap}
+.vv-tr{font-weight:700;color:var(--mut);font-size:11px;white-space:nowrap}
 .vv-tr.si{color:var(--gold2)}
 .vv-t.esp .vv-th,.vv-t.esp .vv-tr{color:var(--faint)}
 .vv-pub{margin-top:11px;display:flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:var(--mut);background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:6px 9px;line-height:1.35}
 .vv-pub .ico{width:14px;height:14px;margin:0;color:var(--soft)}
-.vv-vac-t{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:800;color:var(--text)}
+.vv-vac-t{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;color:var(--text)}
 .vv-vac-t .ico{width:20px;height:20px;margin:0;color:var(--faint)}
 .vv-vac-d{font-size:13px;color:var(--soft);line-height:1.55;margin-top:7px}
-.vv-vac-s{font-size:11.5px;color:var(--faint);margin-top:8px}
+.vv-vac-s{font-size:11px;color:var(--faint);margin-top:8px}
 .vv-sv{border-top:1px solid var(--line2)}
 .vv-sv:first-child{border-top:none}
 .vv-sv>summary{list-style:none;cursor:pointer;padding:9px 1px}
 .vv-sv>summary::-webkit-details-marker{display:none}
 .vv-sv>.card{margin:2px 0 12px}
 .vv-svt{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:14px;font-weight:800;color:var(--text)}
-.vv-svd{font-size:12px;color:var(--mut);margin-top:2px;line-height:1.45}
+.vv-svd{font-size:12.5px;color:var(--mut);margin-top:2px;line-height:1.45}
 .vv-svd b{color:var(--soft)}
 @media (prefers-reduced-motion:no-preference){.vv-dot{animation:vvlat 2.4s ease-in-out infinite}}
 @keyframes vvlat{50%{box-shadow:0 0 0 6px rgba(240,199,94,0)}}
@@ -171,8 +171,8 @@ section{display:none}section.on{display:block}
 .pl-av p{font-size:13px;line-height:1.62;color:var(--soft);margin:0 0 10px}
 .pl-av p b{color:var(--text)}
 .pl-av-p{margin-bottom:0!important;color:var(--text)!important;font-weight:600}
-.pl-prog{display:flex;justify-content:space-between;align-items:baseline;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:9px 12px;margin:0 0 10px;font-size:12px;font-variant-numeric:tabular-nums}
-.pl-prog b{font-size:16px;color:var(--gold2)}
+.pl-prog{display:flex;justify-content:space-between;align-items:baseline;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:9px 12px;margin:0 0 10px;font-size:12.5px;font-variant-numeric:tabular-nums}
+.pl-prog b{font-size:15px;color:var(--gold2)}
 .pl-card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:17px 18px;margin-bottom:13px}
 /* El gratis se queda con el borde neutro a proposito: es el que menos
    tiene que llamar la atencion, pero la clase se DECLARA para que no
@@ -182,10 +182,10 @@ section{display:none}section.on{display:block}
 .pl-card.pl-elite{border-color:var(--gold);background:linear-gradient(160deg,#1e1a0e,var(--card))}
 .pl-n{font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--mut)}
 .pl-vip .pl-n{color:var(--blue)}.pl-elite .pl-n{color:var(--gold2)}
-.pl-p{font-size:33px;font-weight:900;letter-spacing:-.03em;margin-top:5px;line-height:1;font-variant-numeric:tabular-nums}
+.pl-p{font-size:30px;font-weight:800;letter-spacing:-.03em;margin-top:5px;line-height:1;font-variant-numeric:tabular-nums}
 .pl-p small{font-size:13px;font-weight:600;color:var(--mut);letter-spacing:0}
 .pl-p .pl-cts{font-size:.5em;font-weight:800;letter-spacing:0;vertical-align:.62em;margin-left:1px}
-.pl-anual{font-size:11.5px;color:var(--green);font-weight:600;margin-top:6px}
+.pl-anual{font-size:11px;color:var(--green);font-weight:600;margin-top:6px}
 .pl-g{font-size:13px;color:var(--soft);margin-top:9px;padding-bottom:11px;border-bottom:1px solid var(--line2);line-height:1.45}
 .pl-l{list-style:none;margin:11px 0 0;padding:0;display:grid;gap:8px}
 .pl-l li{display:flex;gap:9px;align-items:flex-start;font-size:13px;line-height:1.45;color:var(--soft)}
@@ -198,7 +198,7 @@ section{display:none}section.on{display:block}
 .pl-esp p{font-size:13px;color:var(--mut);line-height:1.6;margin:0 0 14px}
 .pl-btn{display:inline-block;background:var(--gold);color:#0d1117;font-weight:800;font-size:14px;padding:12px 22px;border-radius:10px;text-decoration:none}
 .pl-btn:hover,.pl-btn:focus-visible{background:var(--gold2)}
-.pl-esp-n{font-size:11.5px;color:var(--faint);margin-top:11px}
+.pl-esp-n{font-size:11px;color:var(--faint);margin-top:11px}
 .pl-esp-n b{color:var(--gold2)}
 .pl-fine{font-size:11px;color:var(--faint);line-height:1.6;margin-top:18px;text-align:center}
 .pl-fine a{color:var(--mut)}
@@ -213,16 +213,16 @@ section{display:none}section.on{display:block}
 .lgl-nav a{flex:1;min-width:92px;text-align:center;font-size:12.5px;font-weight:700;color:var(--soft);background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 6px;text-decoration:none}
 .lgl-nav a:hover,.lgl-nav a:focus-visible{border-color:var(--gold);color:var(--gold2)}
 .lgl{display:block;margin-top:26px;scroll-margin-top:74px}
-.legal-l{margin-top:9px;font-size:11.5px;color:var(--faint);text-align:center}
+.legal-l{margin-top:9px;font-size:11px;color:var(--faint);text-align:center}
 .legal-l a{color:var(--mut);text-decoration:none;padding:0 3px}
 .legal-l a:hover,.legal-l a:focus-visible{color:var(--gold2);text-decoration:underline}
-.lgl-h{font-size:18px;font-weight:700}
+.lgl-h{font-size:15px;font-weight:700}
 .lgl h3{font-size:15px;font-weight:700;color:var(--text);margin:20px 0 7px}
-.lgl p{font-size:14px;line-height:1.7;color:var(--soft);margin:0 0 11px}
+.lgl p{font-size:13px;line-height:1.7;color:var(--soft);margin:0 0 11px}
 .lgl p b{color:var(--text)}
-.lgl-f{font-size:11.5px;color:var(--faint);margin-top:11px}
+.lgl-f{font-size:11px;color:var(--faint);margin-top:11px}
 .lgl-u{margin:0 0 11px;padding-left:18px;display:grid;gap:7px}
-.lgl-u li{font-size:14px;line-height:1.7;color:var(--soft)}
+.lgl-u li{font-size:13px;line-height:1.7;color:var(--soft)}
 .lgl-u li b{color:var(--text)}
 .lgl-av{background:rgba(88,166,255,.09);border:1px solid rgba(88,166,255,.34);border-left-width:3px;border-radius:0 11px 11px 0;padding:12px 14px;font-size:13px;line-height:1.6;color:var(--soft);margin:14px 0}
 .lgl-n{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 13px}
@@ -237,9 +237,9 @@ section{display:none}section.on{display:block}
 a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 .set-i{width:22px;height:22px;flex-shrink:0;color:var(--mut);display:grid;place-items:center}
 .set-i svg{width:20px;height:20px}
-.set-t{flex:1;min-width:0;font-size:14.5px;font-weight:600;display:flex;flex-direction:column;gap:2px}
-.set-n{font-size:11.5px;font-weight:500;color:var(--faint);line-height:1.4}
-.set-v{font-size:13px;color:var(--mut);flex-shrink:0;font-weight:500}
+.set-t{flex:1;min-width:0;font-size:14px;font-weight:600;display:flex;flex-direction:column;gap:2px}
+.set-n{font-size:11px;font-weight:400;color:var(--faint);line-height:1.4}
+.set-v{font-size:13px;color:var(--mut);flex-shrink:0;font-weight:400}
 .set-ar{width:17px;height:17px;color:var(--faint);flex-shrink:0}
 .set-d>summary{display:flex;align-items:center;gap:12px;padding:13px 14px;border-top:1px solid var(--line2);cursor:pointer;list-style:none;min-height:52px}
 .set-d>summary::-webkit-details-marker{display:none}
@@ -249,14 +249,14 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 .set-p b{color:var(--text)}
 .set-p a{color:var(--blue)}
 .set-tel{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:11px 13px;font-variant-numeric:tabular-nums;line-height:1.9}
-.set-pie{text-align:center;font-size:11.5px;color:var(--faint);margin-top:26px;line-height:1.7}
+.set-pie{text-align:center;font-size:11px;color:var(--faint);margin-top:26px;line-height:1.7}
 /* EL COPYRIGHT, IGUAL EN LAS CINCO PAGINAS (11-sep-2026). Antes salia
    centrado en unas y a la izquierda en otras, y con separaciones distintas,
    porque cada pagina termina en un bloque con sus propios margenes. Ahora el
    aire lo pone el pie y no lo que tenga encima: margen fijo arriba, y abajo el
    padding de .app lo separa de la barra inferior. */
 .legal{margin:24px 0 0;padding-top:14px;border-top:1px solid var(--line2)}
-.legal-c{font-size:10.5px;line-height:1.55;color:#5a626d;text-align:center;
+.legal-c{font-size:11px;line-height:1.55;color:#6e7681;text-align:center;
   max-width:34em;margin:0 auto}
 /* LA RUEDA DE AJUSTES en la barra de arriba. La barra es text-align:center y
    el titulo va centrado de verdad (no en un flex), asi que el boton se coloca
@@ -288,12 +288,12 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 .pata .pn{flex:1;font-size:15px;font-weight:700}.pata .pc{font-size:14px;font-weight:800;color:var(--mut)}
 .combo{display:flex;justify-content:space-between;align-items:center;margin-top:9px;padding-top:11px;border-top:1px solid var(--line2);font-weight:700}
 .combo .cuota{font-size:20px;color:var(--purple)}
-.resumen{background:var(--card);border-left:3px solid var(--green);border-radius:8px;padding:15px 16px;font-size:14px;color:var(--soft);line-height:1.55;margin:12px 0}
+.resumen{background:var(--card);border-left:3px solid var(--green);border-radius:8px;padding:15px 16px;font-size:13px;color:var(--soft);line-height:1.55;margin:12px 0}
 .clv-box{background:#0d1117;border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin:12px 0}
 .clv-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
 .clv-ti{font-size:12.5px;font-weight:800;color:var(--soft)}
-.clv-n{font-size:17px;font-weight:900}.clv-n.g{color:var(--green)}.clv-n.r{color:var(--red)}
-.clv-sub{font-size:12px;color:var(--mut);margin-top:3px}.clv-lec{font-size:11.5px;color:var(--faint);margin-top:4px;font-style:italic}
+.clv-n{font-size:15px;font-weight:800}.clv-n.g{color:var(--green)}.clv-n.r{color:var(--red)}
+.clv-sub{font-size:12.5px;color:var(--mut);margin-top:3px}.clv-lec{font-size:11.5px;color:var(--faint);margin-top:4px;font-style:italic}
 /* ===== HISTORIAL PRO (2-sep-2026) ==========================================
    TODAS las clases llevan prefijo "hi-", sin excepcion. Es la leccion del mismo
    dia: el dashboard concatena su hoja, la del LAB y la de Trends, y a igualdad
@@ -303,7 +303,7 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 /* el veredicto: lo primero que se lee, y sin maquillaje */
 .hi-ver{background:var(--card);border:1px solid var(--line);border-radius:14px;
   padding:14px 15px;border-left:3px solid var(--gold2)}
-.hi-ver h4{font-size:10.5px;font-weight:800;letter-spacing:.12em;
+.hi-ver h4{font-size:11px;font-weight:800;letter-spacing:.12em;
   text-transform:uppercase;color:var(--gold2);margin:0 0 8px}
 .hi-ver p{font-size:13px;line-height:1.62;color:var(--text);margin:0}
 .hi-ver p+p{margin-top:8px;color:var(--mut);font-size:12.5px}
@@ -313,15 +313,15 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 .hi-hero{background:var(--card);border:1px solid var(--line);border-radius:14px;
   padding:15px;overflow:hidden}
 .hi-ht{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.hi-hn{font-size:34px;font-weight:800;line-height:1;letter-spacing:-.02em;
+.hi-hn{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.02em;
   font-variant-numeric:tabular-nums}
 .hi-hs{font-size:12.5px;color:var(--mut)}
 .hi-hg{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:13px;
   padding-top:12px;border-top:1px solid var(--line)}
 .hi-kpi{text-align:center}
-.hi-kpi b{display:block;font-size:15.5px;font-weight:800;color:var(--text);
+.hi-kpi b{display:block;font-size:15px;font-weight:800;color:var(--text);
   line-height:1.2;font-variant-numeric:tabular-nums}
-.hi-kpi span{display:block;font-size:10.5px;color:var(--mut);margin-top:2px}
+.hi-kpi span{display:block;font-size:11px;color:var(--mut);margin-top:2px}
 .hi-nota{font-size:12.5px;line-height:1.6;color:var(--mut);margin:10px 2px 0}
 
 /* la curva. El trazo toma el COLOR DEL LADO en el que esta (verde arriba del
@@ -341,18 +341,18 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 .hi-clv{background:var(--card);border:1px solid var(--line);border-radius:14px;
   padding:15px}
 .hi-clvt{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
-.hi-clvn{font-size:29px;font-weight:800;line-height:1;letter-spacing:-.02em;
+.hi-clvn{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.02em;
   font-variant-numeric:tabular-nums}
 .hi-clvs{font-size:12.5px;color:var(--mut)}
 .hi-pr{margin-top:13px;padding-top:12px;border-top:1px solid var(--line)}
-.hi-prh{font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+.hi-prh{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
   color:var(--mut);margin-bottom:9px}
 .hi-pr2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
 .hi-pr2>div{background:var(--bg);border:1px solid var(--line);border-radius:10px;
   padding:10px}
-.hi-pr2 b{display:block;font-size:16.5px;font-weight:800;line-height:1.2;
+.hi-pr2 b{display:block;font-size:15px;font-weight:800;line-height:1.2;
   font-variant-numeric:tabular-nums}
-.hi-pr2 span{display:block;font-size:10.5px;color:var(--mut);margin-top:3px;
+.hi-pr2 span{display:block;font-size:11px;color:var(--mut);margin-top:3px;
   line-height:1.4}
 
 /* barras divergentes. EL COLOR NO LLEVA EL SIGNIFICADO: verde y rojo no se
@@ -361,7 +361,7 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 .hi-brs{display:flex;flex-direction:column;gap:9px}
 .hi-br{display:grid;grid-template-columns:1fr 92px 62px;align-items:center;gap:9px}
 .hi-brk{font-size:12.5px;font-weight:700;color:var(--text);min-width:0}
-.hi-brk span{display:block;font-size:10.5px;font-weight:400;color:var(--mut);
+.hi-brk span{display:block;font-size:11px;font-weight:400;color:var(--mut);
   margin-top:1px;font-variant-numeric:tabular-nums}
 .hi-brt{position:relative;height:16px;background:var(--card);border-radius:4px}
 .hi-brt i{position:absolute;top:3px;height:10px;border-radius:3px}
@@ -374,7 +374,7 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 
 /* mes a mes */
 .hi-t{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
-.hi-t th{font-size:9.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+.hi-t th{font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
   color:var(--mut);text-align:right;padding:0 4px 7px}
 .hi-t th:first-child{text-align:left}
 .hi-t td{font-size:12.5px;padding:7px 4px;border-top:1px solid var(--line)}
@@ -392,7 +392,7 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 .hi-pkr.P{background:var(--line);color:var(--mut)}
 .hi-pkb{flex:1;min-width:0}
 .hi-pkp{font-size:12.5px;font-weight:700;color:var(--text)}
-.hi-pkd{font-size:10.5px;color:var(--mut);margin-top:1px;
+.hi-pkd{font-size:11px;color:var(--mut);margin-top:1px;
   font-variant-numeric:tabular-nums}
 .hi-pkn{font-size:12.5px;font-weight:800;font-variant-numeric:tabular-nums}
 
@@ -401,7 +401,7 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 .hi-hn.r,.hi-clvn.r,.hi-brv.r,.hi-pkn.r,.hi-kpi b.r,.hi-pr2 b.r,.hi-t td.r{color:var(--red)}
 .hi-brv.z,.hi-pkn.z,.hi-t td.z{color:var(--mut)}
 .acc{width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 15px;color:var(--text);font-weight:800;font-size:14px;cursor:pointer;margin:10px 0;display:flex;align-items:center;gap:7px}
-.acc .cnt{color:var(--mut);font-weight:600;font-size:12px}.acc .ar{margin-left:auto;color:var(--mut)}
+.acc .cnt{color:var(--mut);font-weight:600;font-size:12.5px}.acc .ar{margin-left:auto;color:var(--mut)}
 /* los iconos de linea: en filas con gap, el gap ya los separa */
 .acc .ico,.badge .ico{margin-right:0}
 .pl-m .ico{display:block;width:13px;height:13px;margin:0}
@@ -410,18 +410,18 @@ details.dd .pnl{border:1px solid var(--line);border-top:none;border-radius:0 0 1
 .dlist{list-style:none;font-size:13px;color:var(--soft)}.dlist li{padding:6px 0;border-top:1px solid var(--line2)}.dlist li:first-child{border:none}
 .hero{background:linear-gradient(160deg,#16191f,#101216);border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0 4px}
 .hero .lbl{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
-.hero .net{font-size:42px;font-weight:800;letter-spacing:-.03em;line-height:1;margin:6px 0 2px}
+.hero .net{font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1;margin:6px 0 2px}
 .hero .net.g{color:var(--green)}.hero .net.r{color:var(--red)}
 .hero .sub2{font-size:13px;color:var(--mut);font-weight:600}
 .hero .bar{height:7px;border-radius:99px;background:var(--red);margin:14px 0 10px;overflow:hidden;display:flex}
 .hero .bar i{background:var(--green);display:block}
 .hero .stats{display:flex;gap:8px}
 .hero .stat{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:9px 11px}
-.hero .stat b{font-size:17px;font-weight:800}.hero .stat span{display:block;font-size:10px;color:var(--faint);font-weight:600;margin-top:1px;text-transform:uppercase;letter-spacing:.05em}
+.hero .stat b{font-size:15px;font-weight:800}.hero .stat span{display:block;font-size:10px;color:var(--faint);font-weight:600;margin-top:1px;text-transform:uppercase;letter-spacing:.05em}
 .hrow{display:flex;align-items:center;gap:12px;padding:11px 4px;border-bottom:1px solid var(--line2)}
 .hres{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;font-size:11px;font-weight:800;flex:none}
 .hres.W{color:var(--green);background:rgba(63,185,80,.14)}.hres.L{color:var(--red);background:rgba(240,82,77,.13)}.hres.P{color:var(--faint);background:var(--line2)}
-.hb{flex:1}.hb .hp{font-size:14px;font-weight:700}.hb .hd{font-size:11.5px;color:var(--faint);font-weight:600}
+.hb{flex:1}.hb .hp{font-size:14px;font-weight:700}.hb .hd{font-size:11px;color:var(--faint);font-weight:600}
 .hn{font-size:14px;font-weight:800}.hn.g{color:var(--green)}.hn.r{color:var(--red)}.hn.z{color:var(--faint)}
 /* EL CIERRE DEL DIA (19-sep-2026) — ver _cierre_del_dia(). */
 .cie{display:flex;flex-direction:column;gap:11px}
@@ -431,13 +431,13 @@ details.dd .pnl{border:1px solid var(--line);border-top:none;border-radius:0 0 1
 .cie-est.r{color:var(--red);background:rgba(248,81,73,.1);border-color:#5c2523}
 .cie-est.z{color:var(--soft);background:var(--line2);border-color:var(--line)}
 .cie-cnt{font-size:12.5px;color:var(--mut);font-weight:600}
-.cie-res{font-size:13.5px;color:var(--soft);line-height:1.55}
+.cie-res{font-size:13px;color:var(--soft);line-height:1.55}
 .cie-res b{color:var(--text)}
 .cie-pie{border-top:1px solid var(--line2);padding-top:10px;font-size:12.5px;color:var(--mut);line-height:1.5}
 .cie-pie b{color:var(--text)}
 .frame-wrap{border:none;margin:0}
 .frame{width:100%;height:calc(100vh - 150px);border:1px solid var(--line);border-radius:14px;background:var(--bg)}
-.note{color:var(--faint);font-size:12px;text-align:center;padding:12px 8px 2px;line-height:1.55}
+.note{color:var(--faint);font-size:12.5px;text-align:center;padding:12px 8px 2px;line-height:1.55}
 .nota-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;text-align:center;color:var(--soft);margin:12px 0}
 nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 auto;background:rgba(15,20,26,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;padding:8px 4px calc(8px + env(safe-area-inset-bottom))}
 .nav-i{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:none;color:var(--faint);font-family:inherit;cursor:pointer;padding:5px 0;text-decoration:none}
@@ -550,7 +550,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
    el COLOR de la letra, como se hizo con el boton Detalle. La pastilla con
    fondo y borde competia con los chips de ventaja de mas abajo, que si
    necesitan caja porque alli el color significa una banda medida. */
-.lb-pill{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+.lb-pill{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
       white-space:nowrap}
 .lb-pill.ok{color:#3fb950}
 .lb-pill.pr{color:#f0c75e}
@@ -561,13 +561,13 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .lb-aj{font-size:11px;font-weight:600;color:#8b949e;background:#0d1117;
      border:1px solid #21262d;border-radius:7px;padding:3px 8px;white-space:nowrap;
      font-variant-numeric:tabular-nums}
-.lb-aj i{font-style:normal;font-weight:700;font-size:9.5px;letter-spacing:.08em;
+.lb-aj i{font-style:normal;font-weight:700;font-size:10px;letter-spacing:.08em;
      text-transform:uppercase;color:#6e7681;margin-right:4px}
 .lb-aj.up{color:#3fb950}
 .lb-aj.dn{color:#d29922}
 /* ===== EL DUELO, EN ESPEJO (2-sep-2026) =====================================
    Se espeja la ALINEACION, nunca el ORDEN de lo que hay dentro. Ver _card_full. */
-.e-hd{text-align:center;font-size:11.5px;font-weight:500;color:#6e7681;
+.e-hd{text-align:center;font-size:11px;font-weight:400;color:#6e7681;
       padding-bottom:5px}
 /* Los chips van PEGADOS a la sede: son la misma cosa --donde y en que
    condiciones se juega--. El aire que habia entre los dos pasa abajo, que es
@@ -580,68 +580,68 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .e-lg{width:34px;height:34px;object-fit:contain}
 .e-ab{font-weight:700;font-size:13px;color:#e6edf3;display:flex;align-items:baseline;
       gap:4px}
-.e-ml,.e-win{font-size:11px;font-weight:500;color:#8b949e;
+.e-ml,.e-win{font-size:11px;font-weight:400;color:#8b949e;
       font-variant-numeric:tabular-nums}
 .e-num{text-align:center;min-width:132px}
 .e-runs{display:flex;align-items:center;justify-content:center;gap:8px}
-.e-runs span{font-weight:700;font-size:22px;color:#e6edf3;line-height:1;
+.e-runs span{font-weight:700;font-size:23px;color:#e6edf3;line-height:1;
       font-variant-numeric:tabular-nums}
-.e-runs i{font-style:normal;font-weight:700;font-size:8px;line-height:1.25;
+.e-runs i{font-style:normal;font-weight:700;font-size:10px;line-height:1.25;
       letter-spacing:.09em;color:#6e7681}
 /* La probabilidad de cada equipo va con la MISMA reja que los EXP RUNS
    --mismo gap, mismo ancho para el hueco central-- para que cada porcentaje
    caiga justo debajo de su equipo y no haya que adivinar cual es cual. */
 .e-teq{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:3px}
-.e-teq span{font-size:10px;font-weight:500;color:#8b949e;min-width:56px;
+.e-teq span{font-size:10px;font-weight:400;color:#8b949e;min-width:56px;
       text-align:center;white-space:nowrap}
 .e-teq b{color:#c9d1d9;font-weight:700}
 .e-teq i{display:block;width:26px}
-.e-tot{font-size:12.5px;font-weight:500;color:#c9d1d9;margin-top:7px}
+.e-tot{font-size:12.5px;font-weight:400;color:#c9d1d9;margin-top:7px}
 .e-tot b{color:#e6edf3;font-weight:700}
-.e-mkt{font-size:10.5px;font-weight:500;color:#6e7681;margin-top:4px;
+.e-mkt{font-size:11px;font-weight:400;color:#6e7681;margin-top:4px;
       font-variant-numeric:tabular-nums}
 .e-num .lb-pill{display:inline-block;margin-top:6px}
 /* EL FONDO EN REJILLA: cada fila comparte altura con la del otro equipo, asi
    que BP y OF arrancan SIEMPRE a la misma altura en los dos lados. Con dos
    columnas sueltas, una linea de mas en un lado descuadraba todo lo de abajo. */
-.q-rot{text-align:center;font-size:8.5px;font-weight:700;letter-spacing:.1em;
+.q-rot{text-align:center;font-size:10px;font-weight:700;letter-spacing:.1em;
       color:#6e7681;margin:13px 0 7px}
 .q-g{display:grid;grid-template-columns:1fr 1fr;column-gap:12px;align-items:start}
 .q-g>*{min-width:0}
 .q-g>.r{text-align:right}
 .q-nom{font-weight:600;font-size:12.5px;line-height:1.35;color:#e6edf3}
-.q-nom .mn{color:#6e7681;font-weight:500}
-.q-val{font-size:11.5px;font-weight:500;line-height:1.5;color:#c9d1d9;margin-top:2px;
+.q-nom .mn{color:#6e7681;font-weight:400}
+.q-val{font-size:11px;font-weight:400;line-height:1.5;color:#c9d1d9;margin-top:2px;
       font-variant-numeric:tabular-nums;white-space:nowrap}
 /* La nota, DENTRO de la linea de metricas, va sin caja: solo el color. Con caja
    (padding 1px 5px + margen 5px) las tres sumaban unos 40px y forzaban el salto
    justo en la ultima. Mismo criterio que el estado del lineup y el boton. */
-.q-bo{font-size:11.5px;font-weight:500;line-height:1.7;color:#c9d1d9;margin-top:10px;
+.q-bo{font-size:11px;font-weight:400;line-height:1.7;color:#c9d1d9;margin-top:10px;
       font-variant-numeric:tabular-nums}
-.q-bo i{font-style:normal;font-weight:700;font-size:8.5px;letter-spacing:.08em;
+.q-bo i{font-style:normal;font-weight:700;font-size:10px;letter-spacing:.08em;
       color:#6e7681;margin-right:5px}
 .q-bo b{font-weight:600;color:#e6edf3}
 .q-bo b.up{color:#3fb950}
 .q-bo b.dn{color:#d29922}
-.q-bo em{font-style:normal;font-size:10.5px;color:#8b949e}
+.q-bo em{font-style:normal;font-size:11px;color:#8b949e}
 .q-bo em.up{color:#3fb950}
 .q-bo em.dn{color:#d29922}
 .q-bo em.mut{color:#6e7681}
 /* El perfil de 5 categorias, dentro del Detalle y bajo el logo de cada equipo. */
 .d-pf{width:100%;border-collapse:collapse;margin:1px 0 4px;
       font-variant-numeric:tabular-nums}
-.d-pf th{font-size:8px;font-weight:700;letter-spacing:.05em;color:#6e7681;
+.d-pf th{font-size:10px;font-weight:700;letter-spacing:.05em;color:#6e7681;
       padding:0 1px 3px;text-align:center}
 .d-pf td{padding:1px;text-align:center;font-size:11px}
 .lb-t4{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;
          font-size:13px;margin-top:10px}
-.lb-t4 th{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:#6e7681;
+.lb-t4 th{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:#6e7681;
             font-weight:700;padding:0 4px 5px;text-align:right}
 .lb-t4 th.l{text-align:left}
 .lb-t4 td{padding:6px 4px;text-align:right;color:#c9d1d9}
 .lb-t4 tr.b td{border-bottom:1px solid #21262d}
-.lb-t4 td.eq{text-align:left;font-weight:800;font-size:14.5px;color:#e6edf3}
-.lb-t4 td.eq2{text-align:left;font-size:12.5px;color:#e6edf3;font-weight:500}
+.lb-t4 td.eq{text-align:left;font-weight:800;font-size:14px;color:#e6edf3}
+.lb-t4 td.eq2{text-align:left;font-size:12.5px;color:#e6edf3;font-weight:400}
 .lb-eqin{display:flex;align-items:center;gap:7px}
 .lb-lgt{width:22px;height:22px;object-fit:contain;flex-shrink:0}
 .lb-t4 td.lb-win{color:#58a6ff;font-weight:600}
@@ -652,9 +652,9 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .lb-totr td{border-top:1px solid #30363d;padding-top:9px}
 .lb-totk{text-align:left;font-size:11px;font-weight:700;letter-spacing:.07em;
         text-transform:uppercase;color:#6e7681;vertical-align:middle}
-.lb-totm{text-align:left;font-size:11.5px;color:#8b949e;vertical-align:middle}
+.lb-totm{text-align:left;font-size:11px;color:#8b949e;vertical-align:middle}
 .lb-totm b{color:#c9d1d9;font-weight:600;font-size:13px}
-.lb-totv{font-size:19px;font-weight:700;color:#e6edf3;vertical-align:middle;
+.lb-totv{font-size:15px;font-weight:700;color:#e6edf3;vertical-align:middle;
         letter-spacing:-.02em}
 /* El GRADO va pegado a su metrica. Antes se ponian "ERA C" y "K-BB D" como dos
    etiquetas seguidas en la misma celda y se leian juntas: la causa no era el
@@ -697,9 +697,9 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .lab-pie{display:flex;align-items:center;justify-content:space-between;gap:10px;
          margin-top:16px;padding:12px 14px;background:#161b22;border:1px solid #30363d;
          border-radius:14px}
-.lab-pk{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+.lab-pk{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
         color:#6e7681}
-.lab-pn{font-size:11.5px;color:#8b949e;margin-top:2px}
+.lab-pn{font-size:11px;color:#8b949e;margin-top:2px}
 .lab-pv{font-size:12.5px;color:#c9d1d9;text-align:right;font-variant-numeric:tabular-nums}
 /* ---- Detalle en pestañas ---- */
 /* DETALLE POR EQUIPO (DET 2). Dos columnas grandes: en cada una, todo lo de
@@ -707,7 +707,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
    para ver un juego entero. */
 .d-teams{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .d-team{min-width:0}
-.d-th{display:flex;align-items:center;gap:7px;font-weight:800;font-size:13.5px;
+.d-th{display:flex;align-items:center;gap:7px;font-weight:800;font-size:14px;
       color:#e6edf3;padding-bottom:7px;margin-bottom:8px;border-bottom:1px solid #30363d}
 .d-lg{width:20px;height:20px;object-fit:contain;flex-shrink:0}
 .d-cols{display:grid;grid-template-columns:1fr 1fr;gap:8px}
@@ -715,7 +715,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .d-sub{font-size:10px;font-weight:800;color:#c9d1d9;margin-bottom:2px;white-space:nowrap;
        overflow:hidden;text-overflow:ellipsis}
 .d-team>.d-bt:first-child{margin-top:0}
-.d-bt{font-size:8.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#6e7681;
+.d-bt{font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#6e7681;
       margin:6px 0 2px}
 .d-ln{display:flex;justify-content:space-between;gap:5px;font-size:10px;color:#8b949e;
       padding:1.5px 0;border-bottom:1px solid #21262d;font-variant-numeric:tabular-nums}
@@ -724,11 +724,11 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 /* La nota que distingue los dos FIP (9-sep-2026): el de la temporada y el de
    tres anos, que es el que usa el modelo. Sin ella los dos numeros parecian el
    mismo dato mal calculado. */
-.d-nt{font-style:normal;color:#6e7681;font-size:9px}
+.d-nt{font-style:normal;color:#6e7681;font-size:10px}
 .d-pen{font-size:10px;color:#8b949e;line-height:1.4}
 @media(max-width:339px){.d-cols,}
-.gc-top{display:flex;justify-content:space-between;align-items:center;color:#9aa3ac;font-size:11.5px;margin-bottom:8px}
-.bd{font-size:10.5px;font-weight:800;padding:2px 9px;border-radius:99px}
+.gc-top{display:flex;justify-content:space-between;align-items:center;color:#8b949e;font-size:11px;margin-bottom:8px}
+.bd{font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px}
 .bd-c{background:#12261a;border:1px solid #1d4428;color:#3fb950}
 .bd-p{background:#2d1e05;border:1px solid #5c4a1a;color:#f0c75e}
 .bd-f{background:#0d1b2a;border:1px solid #1f4068;color:#58a6ff}
@@ -739,31 +739,31 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
    paquete DESPUES del suyo, y el suyo tiene .logo{42px}: los 3 logos de la
    seccion de picks salian a 34px. Los logos que el LAB si usa llevan su propia
    clase con prefijo (.e-lg, .lb-lgt, .d-lg), que no se pisa con nadie. */
-.gc-ab{font-weight:900;font-size:15px;margin-top:2px}
-.e-jm{font-size:10.5px;color:#6e7681;font-variant-numeric:tabular-nums;margin-top:1px}
-.gc-ml{font-size:11px;color:#9aa3ac}
+.gc-ab{font-weight:800;font-size:15px;margin-top:2px}
+.e-jm{font-size:11px;color:#6e7681;font-variant-numeric:tabular-nums;margin-top:1px}
+.gc-ml{font-size:11px;color:#8b949e}
 .gc-w{font-size:11px;color:#58a6ff;font-weight:700}
 .gc-mid{text-align:center;flex:1}
-.gc-pr{font-size:24px;font-weight:900;color:#e6edf3;margin:0 6px}
-.gc-x{display:inline-block;font-size:8.5px;color:#9aa3ac;vertical-align:middle;line-height:1.1}
-.gc-tot{font-size:12px;margin:4px 0 2px}
+.gc-pr{font-size:24px;font-weight:800;color:#e6edf3;margin:0 6px}
+.gc-x{display:inline-block;font-size:10px;color:#8b949e;vertical-align:middle;line-height:1.1}
+.gc-tot{font-size:12.5px;margin:4px 0 2px}
 .gc-sp{display:grid;grid-template-columns:1fr auto 1fr;gap:9px;align-items:start;font-size:11px;color:#c9d1d9;margin-top:6px}
 .sp-c{min-width:0}
 .sp-c.r{text-align:right}
-.sp-n{font-size:12px;font-weight:700;color:#e6edf3;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sp-e{font-size:11px;color:#9aa3ac;font-variant-numeric:tabular-nums;margin-top:1px}
+.sp-n{font-size:12.5px;font-weight:700;color:#e6edf3;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp-e{font-size:11px;color:#8b949e;font-variant-numeric:tabular-nums;margin-top:1px}
 .sp-g{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
 .sp-c.r .sp-g{justify-content:flex-end}
 .sp-vs{font-size:10px;color:#6e7681;padding-top:3px}
-.mut{color:#9aa3ac}
-.mut2{color:#6e7681;font-size:11.5px}
+.mut{color:#8b949e}
+.mut2{color:#6e7681;font-size:11px}
 .gc-edges{display:flex;gap:8px;justify-content:center;margin-top:8px;padding-top:8px;border-top:1px solid #21262d;flex-wrap:wrap}
 .bn-edges{display:flex;gap:8px;margin-top:8px;padding-top:8px;border-top:1px solid #21262d}
-.ec{flex:1;min-width:0;text-align:center;font-size:11.5px;font-weight:800;padding:7px 8px;border-radius:8px;border:1px solid #30363d;background:#0d1117;color:#9aa3ac;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
+.ec{flex:1;min-width:0;text-align:center;font-size:11px;font-weight:800;padding:7px 8px;border-radius:8px;border:1px solid #30363d;background:#0d1117;color:#8b949e;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
 .ec.on{color:#3fb950;background:rgba(63,185,80,.13);border-color:#1d4428}
 .ec.peq{color:#e6edf3;background:#161b22;border-color:#30363d}
 .ec.warn{color:#d29922;background:rgba(210,153,34,.10);border-color:#4a3a12}
-.ec.off{color:#9aa3ac;background:#161b22;border-color:#30363d}
+.ec.off{color:#8b949e;background:#161b22;border-color:#30363d}
 /* AQUI VIVIA .chip, y era CSS MUERTO que hacia daño (2-sep-2026). El LAB no lo
    usa --su _chip() emite class="ec"-- pero el dashboard pega este paquete y el
    de Trends uno detras de otro, y Trends SI usa .chip. Lo que sobrevivia de
@@ -772,7 +772,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
    chip, ya tiene .ec, que va con prefijo y no se pisa con nadie. */
 /* Los ceros son a proposito: blindan la nota contra cualquier clase que
    comparta nombre en el futuro (fue lo que paso con .gc). */
-.gr{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.02em;
+.gr{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.02em;
     vertical-align:middle;padding:0;border:0;border-radius:0;background:none}
 /* Solo el COLOR. El fondo se reserva para el Perfil (.d-pf .gr). */
 /* LOS NOMBRES VIEJOS SIGUEN AQUI COMO ALIAS, y no es por pereza. Las tarjetas
@@ -784,7 +784,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
    cuando no queden snapshots viejos, o sea al dia siguiente. */
 .gr.n-a,.gr.ga{color:#3fb950}
 .gr.n-b,.gr.gb{color:#56b98a}
-.gr.n-c,.gr.gc{color:#9aa3ac}
+.gr.n-c,.gr.gc{color:#8b949e}
 .gr.n-d,.gr.gd{color:#f85149}
 /* EN EL PERFIL SI VA LA CAJA. Alli cada letra ocupa una celda ella sola, y sin
    fondo las de color se veian mas chicas que las grises: la caja las iguala.
@@ -797,23 +797,23 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .d-pf .gr.n-d,.d-pf .gr.gd{background:#2b1618;border-color:#42211f}
 .lg.w2{color:#c9d1d9;background:#161b22;border-left:2px solid #d29922;padding:8px 10px;border-radius:0 7px 7px 0;margin:7px 0;line-height:1.65}
 .gc-amb{display:flex;gap:8px;justify-content:center;margin-top:8px;flex-wrap:wrap}
-.mini{font-size:10.5px;color:#9aa3ac}
+.mini{font-size:11px;color:#8b949e}
 .mini.lw{color:#f0c75e;font-weight:700}
-.det-btn{display:block;margin:10px auto 0;background:none;border:1px solid #30363d;border-radius:8px;color:#58a6ff;font-size:11.5px;font-weight:700;padding:4px 14px;cursor:pointer}
+.det-btn{display:block;margin:10px auto 0;background:none;border:1px solid #30363d;border-radius:8px;color:#58a6ff;font-size:11px;font-weight:700;padding:4px 14px;cursor:pointer}
 .det{margin-top:10px;border-top:1px solid #21262d;padding-top:8px}
 .det-sec{margin-bottom:10px}
 .det-t{font-size:11px;font-weight:800;color:#58a6ff;letter-spacing:.5px;margin-bottom:4px}
-.det-sub{font-size:11.5px;font-weight:700;color:#e6edf3;margin:6px 0 2px}
-.det-ln{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;color:#9aa3ac;padding:2.5px 0;border-bottom:1px solid #1c2128}
+.det-sub{font-size:11px;font-weight:700;color:#e6edf3;margin:6px 0 2px}
+.det-ln{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:#8b949e;padding:2.5px 0;border-bottom:1px solid #1c2128}
 .det-ln>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .det-ln span:last-child{text-align:right;color:#c9d1d9;flex-shrink:0}
-.det-pen{font-size:11px;color:#9aa3ac;line-height:1.45;padding:2px 0}
+.det-pen{font-size:11px;color:#8b949e;line-height:1.45;padding:2px 0}
 .det-cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 /* En movil TAMBIEN dos columnas, cada equipo en la suya: antes se
    colapsaban a una y habia que bajar media pantalla para comparar los
    dos lineups. Se compensa apretando la tipografia. */
-@media(max-width:520px){.det-cols{gap:7px}.det-ln{font-size:10.5px;gap:5px;padding:2px 0}
-  .det-sub{font-size:10.5px}.det-t{font-size:10px}.det-pen{font-size:10px}}
+@media(max-width:520px){.det-cols{gap:7px}.det-ln{font-size:11px;gap:5px;padding:2px 0}
+  .det-sub{font-size:11px}.det-t{font-size:10px}.det-pen{font-size:10px}}
 /* Por debajo de 340px ya no caben dos: ahi si se apilan. */
 @media(max-width:339px){.det-cols{grid-template-columns:1fr}}
 .det-col{min-width:0}
@@ -826,7 +826,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .glo{font-size:13px;color:#c9d1d9;line-height:1.7;margin:0 0 8px}
 .glo b{font-weight:400;color:inherit}
 .glo>b:first-child{font-weight:700;color:#e6edf3}
-.glo-h{font-size:13.5px;font-weight:700;color:#e6edf3;margin:14px 0 6px}
+.glo-h{font-size:14px;font-weight:700;color:#e6edf3;margin:14px 0 6px}
 .glo-h:first-child{margin-top:8px}
 .lg:last-child{border-bottom:none}
 .lg b{color:#e6edf3}
@@ -838,7 +838,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .gl-ar{color:#8b949e;font-size:11px;transition:transform .15s}
 .gl[open] .gl-ar{transform:rotate(180deg)}
 .gl-p{padding:2px 15px 14px;border-top:1px solid #21262d}
-.gl-h{font-size:13.5px;font-weight:700;line-height:1.5;color:#e6edf3;margin:14px 0 6px}
+.gl-h{font-size:14px;font-weight:700;line-height:1.5;color:#e6edf3;margin:14px 0 6px}
 .gl-e{font-size:13px;font-weight:400;line-height:1.7;color:#c9d1d9;margin:0 0 8px}
 .gl-e b{font-weight:400;color:inherit}
 .gl-e>b:first-child{font-weight:700;color:#e6edf3}
@@ -846,16 +846,16 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 </style></head><body><div class="app"><div class="topbar"><h1>CY Elite Lab</h1><a href="/ajustes" class="t-set" aria-label="Ajustes e información"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10 3.09V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></a></div><main><section class="on"><div class="cab"><div class="cab-tx"><h2 class="cab-t">Modelo</h2><p class="cab-s">La proyección de los 3 partidos de hoy</p></div><div class="cab-d"><div class="cab-n">3</div><div class="cab-l">partidos</div></div></div><div class="lab-real"><div class="gitem">
 <div class="gc">
   <div class="e-hd">Oriole Park at Camden Yards · <time class="h-loc" data-utc="2026-09-21T22:35:00Z">5:35 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +4.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -4.9%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +4.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -5.4%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/TOR.png" alt="TOR" onerror="this.style.display='none'"><div class="e-ab">TOR<span class="e-ml">-105</span></div><div class="e-win">48.4% win</div><div class="e-jm">(+107)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>3.92</span><i>EXP<br>RUNS</i>
-        <span>3.91</span></div>
+      <div class="e-runs"><span>3.9</span><i>EXP<br>RUNS</i>
+        <span>3.89</span></div>
       <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>35%</b></span><i></i><span>o4.5 <b>35%</b></span></div>
-      <div class="e-tot">Total esperado <b>7.83</b></div>
+      <div class="e-tot">Total esperado <b>7.79</b></div>
       <div class="e-mkt">7.5 (-115/-105)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/BAL.png" alt="BAL" onerror="this.style.display='none'"><div class="e-ab">BAL<span class="e-ml">-111</span></div><div class="e-win">51.6% win</div><div class="e-jm">(-107)</div></div></div>
-  <div class="n-eds"><span class="ec off" title="BAL: el modelo le da 51.6% y el precio ya pide 52.6%. No hay valor en ninguno de los dos lados.">Sin ventaja ML</span><span class="ec peq" title="El modelo da 51.5% al under y el precio pide 51.2%: +0.3 puntos. Medido cada mañana: el lado que marca acierta el 38.5% necesitando el 52.3% (26 partidos); se pondrá verde cuando acierte 3 puntos por encima en 150 partidos.">Under 7.5 +0.3%</span></div>
+  <div class="n-eds"><span class="ec off" title="BAL: el modelo le da 51.6% y el precio ya pide 52.6%. No hay valor en ninguno de los dos lados.">Sin ventaja ML</span><span class="ec peq" title="El modelo da 51.8% al under y el precio pide 51.2%: +0.6 puntos. Medido cada mañana: el lado que marca acierta el 38.5% necesitando el 52.3% (26 partidos); se pondrá verde cuando acierte 3 puntos por encima en 150 partidos.">Under 7.5 +0.6%</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
   <div class="q-g"><div class="q-nom">T. Yesavage <span class="mn">(R)</span></div><div class="q-nom r">S. Baz <span class="mn">(R)</span></div><div class="q-val">3.65<span class="gr n-b">B</span> · 4.15<span class="gr n-b">B-</span> · 11.7%<span class="gr n-c">C</span></div><div class="q-val r">4.11<span class="gr n-c">C</span> · 3.77<span class="gr n-b">B-</span> · 12.4%<span class="gr n-c">C</span></div><div class="q-bo"><div><i>BP</i>3.51 <em class="dn">2 quem.</em></div><div><i>OF</i><b class="">98</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>3.58 <em class="">3.3 IP</em></div><div><i>OF</i><b class="">98</b> <em class="mut">vs RHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(0)" id="detAr0" aria-expanded="false" aria-controls="det0">Detalle ▾</button></div>
@@ -863,7 +863,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">Comerica Park · <time class="h-loc" data-utc="2026-09-21T22:40:00Z">5:40 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj " title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +0.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -5.1%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj " title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> +0.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -5.0%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/WSH.png" alt="WSH" onerror="this.style.display='none'"><div class="e-ab">WSH<span class="e-ml">+130</span></div><div class="e-win">45.2% win</div><div class="e-jm">(+121)</div></div>
     <div class="e-num">
       <div class="e-runs"><span>4.29</span><i>EXP<br>RUNS</i>
@@ -874,29 +874,29 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
     </div><div class="e-eq"><img class="e-lg" src="logos/DET.png" alt="DET" onerror="this.style.display='none'"><div class="e-ab">DET<span class="e-ml">-152</span></div><div class="e-win">54.8% win</div><div class="e-jm">(-121)</div></div></div>
   <div class="n-eds"><span class="ec peq" title="El modelo le da 45.2% a WSH y el precio que te pagan pide 43.5%: +1.7 puntos a favor, comision incluida.">WSH ML +1.7%</span><span class="ec off" title="Ni el over ni el under sobrepasan su precio. El modelo da 53.5% de over.">Sin ventaja total</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
-  <div class="q-g"><div class="q-nom">D. Herz <span class="mn">(L)</span></div><div class="q-nom r">R. Ryan <span class="mn">(R)</span></div><div class="q-val">— · — · —</div><div class="q-val r">— · — · —</div><div class="q-bo"><div><i>BP</i>4.49 <em class="dn">3 quem.</em></div><div><i>OF</i><b class="">102</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>3.87 <em class="">6.1 IP</em></div><div><i>OF</i><b class="">98</b> <em class="mut">vs LHP</em></div></div></div>
+  <div class="q-g"><div class="q-nom">D. Herz <span class="mn">(L)</span></div><div class="q-nom r">R. Ryan <span class="mn">(R)</span></div><div class="q-val">— · — · —</div><div class="q-val r">— · — · —</div><div class="q-bo"><div><i>BP</i>4.44 <em class="dn">3 quem.</em></div><div><i>OF</i><b class="">102</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>3.87 <em class="">6.1 IP</em></div><div><i>OF</i><b class="">98</b> <em class="mut">vs LHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(1)" id="detAr1" aria-expanded="false" aria-controls="det1">Detalle ▾</button></div>
   <div class="det" id="det1" style="display:none"><div class="d-teams"><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/WSH.png" alt="WSH" onerror="this.style.display='none'"><span>WSH</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-c">C+</span></td><td><span class="gr n-a">A</span></td><td><span class="gr n-c">C+</span></td><td><span class="gr n-a">A</span></td><td><span class="gr n-c">C</span></td></tr></tbody></table><div class="d-bt">Abridor</div><div class="d-sub">DJ Herz · LHP</div><div class="d-ln"><span>FIP 3 años <i class="d-nt">su calidad de fondo</i></span><span>3.62</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>4.4</span></div><div class="d-pen">2 días seguidos: Erik Tolman, Will Dion, Yovanny Cruz</div></div><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/DET.png" alt="DET" onerror="this.style.display='none'"><span>DET</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-c">C-</span></td><td><span class="gr n-c">C+</span></td><td><span class="gr n-b">B</span></td><td><span class="gr n-d">F</span></td><td><span class="gr n-b">B+</span></td></tr></tbody></table><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>6.1</span></div><div class="d-pen">2 días seguidos: ninguno</div></div></div></div>
 </div></div><div class="gitem">
 <div class="gc">
   <div class="e-hd">Oracle Park · <time class="h-loc" data-utc="2026-09-22T01:45:00Z">8:45 PM</time></div>
-  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -6.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -4.3%</span></div></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: cuanto anota este estadio respecto a la media de la liga"><i>PF</i> -6.0%</span><span class="lb-aj dn" title="Clima: cuanto se aparta el dia de lo NORMAL en este parque en esta epoca"><i>WX</i> -3.9%</span></div></div>
   <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/MIN.png" alt="MIN" onerror="this.style.display='none'"><div class="e-ab">MIN<span class="e-ml">-117</span></div><div class="e-win">47.8% win</div><div class="e-jm">(+109)</div></div>
     <div class="e-num">
-      <div class="e-runs"><span>4.36</span><i>EXP<br>RUNS</i>
-        <span>4.4</span></div>
+      <div class="e-runs"><span>4.37</span><i>EXP<br>RUNS</i>
+        <span>4.42</span></div>
       <div class="e-teq" title="Probabilidad real de que el equipo pase de 4.5 carreras. Ojo: el equilibrio no esta en 4.5, esta cerca de 5.2."><span>o4.5 <b>41%</b></span><i></i><span>o4.5 <b>41%</b></span></div>
-      <div class="e-tot">Total esperado <b>8.75</b></div>
+      <div class="e-tot">Total esperado <b>8.79</b></div>
       <div class="e-mkt">8.0 (-118/-102)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</span>
     </div><div class="e-eq"><img class="e-lg" src="logos/SF.png" alt="SF" onerror="this.style.display='none'"><div class="e-ab">SF<span class="e-ml">+100</span></div><div class="e-win">52.2% win</div><div class="e-jm">(-109)</div></div></div>
-  <div class="n-eds"><span class="ec peq" title="El modelo le da 52.2% a SF y el precio que te pagan pide 50.0%: +2.2 puntos a favor, comision incluida.">SF ML +2.2%</span><span class="ec off" title="Ni el over ni el under sobrepasan su precio. El modelo da 52.4% de over.">Sin ventaja total</span></div>
+  <div class="n-eds"><span class="ec peq" title="El modelo le da 52.2% a SF y el precio que te pagan pide 50.0%: +2.2 puntos a favor, comision incluida.">SF ML +2.2%</span><span class="ec off" title="Ni el over ni el under sobrepasan su precio. El modelo da 52.7% de over.">Sin ventaja total</span></div>
   <div class="q-rot">ERA · FIP · K-BB</div>
-  <div class="q-g"><div class="q-nom">Z. Matthews <span class="mn">(R)</span></div><div class="q-nom r">B. Tidwell <span class="mn">(R)</span></div><div class="q-val">4.74<span class="gr n-c">C-</span> · 4.7<span class="gr n-c">C-</span> · 13.0%<span class="gr n-c">C</span></div><div class="q-val r">4.56<span class="gr n-c">C</span> · 4.54 · 9.5%<span class="gr n-c">C-</span></div><div class="q-bo"><div><i>BP</i>3.88 <em class="">7.5 IP</em></div><div><i>OF</i><b class="">102</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>4.47 <em class="">4.7 IP</em></div><div><i>OF</i><b class="">101</b> <em class="mut">vs RHP</em></div></div></div>
+  <div class="q-g"><div class="q-nom">Z. Matthews <span class="mn">(R)</span></div><div class="q-nom r">B. Tidwell <span class="mn">(R)</span></div><div class="q-val">4.74<span class="gr n-c">C-</span> · 4.7<span class="gr n-c">C-</span> · 13.0%<span class="gr n-c">C</span></div><div class="q-val r">4.56<span class="gr n-c">C</span> · 4.54 · 9.5%<span class="gr n-c">C-</span></div><div class="q-bo"><div><i>BP</i>3.84 <em class="">7.5 IP</em></div><div><i>OF</i><b class="">102</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>4.47 <em class="">4.7 IP</em></div><div><i>OF</i><b class="">101</b> <em class="mut">vs RHP</em></div></div></div>
   <div class="detwrap"><button type="button" class="detb" onclick="detTog(2)" id="detAr2" aria-expanded="false" aria-controls="det2">Detalle ▾</button></div>
   <div class="det" id="det2" style="display:none"><div class="d-teams"><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/MIN.png" alt="MIN" onerror="this.style.display='none'"><span>MIN</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-b">B-</span></td><td><span class="gr n-b">B-</span></td><td><span class="gr n-d">D</span></td><td><span class="gr n-d">D</span></td><td><span class="gr n-c">C-</span></td></tr></tbody></table><div class="d-bt">Abridor</div><div class="d-sub">Zebby Matthews <span class="mut">(9-10)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>4.74<span class="gr n-c">C-</span></span></div><div class="d-ln"><span>FIP 3 años <i class="d-nt">su calidad de fondo</i></span><span>4.56</span></div><div class="d-ln"><span>K-BB%</span><span>13.0%<span class="gr n-c">C</span></span></div><div class="d-bt">Últimos 5 starts</div><div class="d-ln"><span>vs NYY</span><span>6.0 IP · 0 ER · 8 K</span></div><div class="d-ln"><span>vs DET</span><span>2.1 IP · 5 ER · 2 K</span></div><div class="d-ln"><span>vs CWS</span><span>5.0 IP · 4 ER · 4 K</span></div><div class="d-ln"><span>vs CWS</span><span>8.1 IP · 1 ER · 5 K</span></div><div class="d-ln"><span>vs ATH</span><span>7.0 IP · 1 ER · 7 K</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>7.5</span></div><div class="d-pen">2 días seguidos: ninguno</div></div><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/SF.png" alt="SF" onerror="this.style.display='none'"><span>SF</span></div><div class="d-bt">Perfil</div><table class="d-pf"><thead><tr><th title="Contacto — con cuánta frecuencia pone la bola en juego (menos ponches)">CON</th><th title="Poder — cuánto pega cuando conecta (SLG menos AVG)">POW</th><th title="Disciplina — cuánto camina, o sea cuánto respeta la zona">EYE</th><th title="Bases — cuánto gana corriendo (robos, descontando los fallados)">BSR</th><th title="Defensa — cuántas bolas en juego convierte en out">DEF</th></tr></thead><tbody><tr><td><span class="gr n-c">C</span></td><td><span class="gr n-c">C+</span></td><td><span class="gr n-d">F</span></td><td><span class="gr n-c">C-</span></td><td><span class="gr n-c">C</span></td></tr></tbody></table><div class="d-bt">Abridor</div><div class="d-sub">Blade Tidwell <span class="mut">(1-2)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>4.56<span class="gr n-c">C</span></span></div><div class="d-ln"><span>FIP 3 años <i class="d-nt">su calidad de fondo</i></span><span>5.23</span></div><div class="d-ln"><span>K-BB%</span><span>9.5%<span class="gr n-c">C-</span></span></div><div class="d-bt">Últimos 5 starts</div><div class="d-ln"><span>vs STL</span><span>6.2 IP · 2 ER · 4 K</span></div><div class="d-ln"><span>vs STL</span><span>4.0 IP · 4 ER · 2 K</span></div><div class="d-ln"><span>vs PIT</span><span>5.0 IP · 2 ER · 5 K</span></div><div class="d-ln"><span>vs AZ</span><span>5.0 IP · 6 ER · 4 K</span></div><div class="d-ln"><span>vs BOS</span><span>5.2 IP · 0 ER · 7 K</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP en 48 h</span><span>4.7</span></div><div class="d-pen">2 días seguidos: ninguno</div></div></div></div>
 </div></div><div class="lab-pie">
   <div><div class="lab-pk">Actualizado</div></div>
-  <div class="lab-pv">09/21/2026 11:52 AM</div>
+  <div class="lab-pv">09/21/2026 1:24 PM</div>
 </div><details class="gl"><summary class="gl-s"><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Glosario — qué significa cada dato</span><span class="gl-ar">▾</span></summary><div class="gl-p"><div class="gl-h">La tarjeta</div>
 <div class="gl-e"><b><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Confirmado / <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Proyectado</b> — si los dos equipos YA publicaron su alineación oficial del día o todavía no. Con la alineación confirmada, el modelo proyecta con los nueve bateadores que van a jugar de verdad.</div>
 <div class="gl-e"><b>La cuota junto al equipo</b> — lo que paga el mercado ahora: el consenso de las casas y, si todavía no lo hay, el precio de Kalshi.</div>
@@ -1028,4 +1028,4 @@ function recTog(){var p=document.getElementById('recPanel');var o=p.style.displa
     document.head.appendChild(sc);
   } catch (e) {}
 })();
-</script><!-- generado 09/21/2026 11:52 AM --></body></html>
+</script><!-- generado 09/21/2026 1:24 PM --></body></html>

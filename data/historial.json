@@ -5235,7 +5235,7 @@
     "unidades": 1.0,
     "resultado": "P",
     "neto_u": 0.0,
-    "marcador": "ATH 2-6 KC",
+    "marcador": null,
     "clv": 2.0,
     "prob_cierre": 55.5,
     "clv_metodo": "kalshi_historico"
