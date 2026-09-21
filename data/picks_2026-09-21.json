@@ -1,0 +1,68 @@
+{
+  "picks": [],
+  "parlay": null,
+  "resumen": "",
+  "descartes": [],
+  "vivo": {
+    "plan": {
+      "fecha": "2026-09-21",
+      "creado": "2026-09-21T13:01:06Z",
+      "tandas_dia": 2,
+      "tope_tanda": 2,
+      "tope_dia": 3,
+      "margen_min": 30,
+      "una_tanda": "una tanda iba a analizar 1 partido(s): el dia va en una sola",
+      "tandas": [
+        {
+          "min_ct": 1020,
+          "min_reloj": 540,
+          "hora": "5:00 PM",
+          "utc": "2026-09-21T22:00:00Z",
+          "juegos": [
+            {
+              "clave": "TOR@BAL",
+              "inicio_utc": "2026-09-21T22:35:00Z"
+            },
+            {
+              "clave": "WSH@DET",
+              "inicio_utc": "2026-09-21T22:40:00Z"
+            },
+            {
+              "clave": "MIN@SF",
+              "inicio_utc": "2026-09-22T01:45:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 2.1
+        }
+      ],
+      "refrescos_lab": [
+        {
+          "min_ct": 1010,
+          "min_reloj_lab": 530,
+          "hora": "4:50 PM",
+          "utc": "2026-09-21T21:50:00Z",
+          "bloque": "5:35 PM",
+          "juegos": 2
+        },
+        {
+          "min_ct": 1200,
+          "min_reloj_lab": 720,
+          "hora": "8:00 PM",
+          "utc": "2026-09-22T01:00:00Z",
+          "bloque": "8:45 PM",
+          "juegos": 1
+        }
+      ],
+      "sin_tanda": []
+    },
+    "tandas": []
+  },
+  "autopsia": "Señales publicadas: 3-0 (+2.80 U).\n• MIA/SD o8.0 (SEÑAL ELITE), ganada: MIA 3-7 SD, 10 carreras con la línea en 8.0.\n• TB F5 ML (SEÑAL ELITE), ganada: BOS 1-5 TB.\n• PHI F5 ML (SEÑAL FUERTE), ganada: PHI 7-2 NYM.\n3 ganadas con ventaja medida.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
+  "valor_dia": {
+    "apostables": 0,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 0.0,
+    "ev_min": null
+  }
+}

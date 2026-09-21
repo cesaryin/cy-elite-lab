@@ -1,0 +1,630 @@
+{
+ "v": 5,
+ "fecha": "2026-09-21",
+ "rpg": 4.487,
+ "era": 4.175,
+ "pf": {
+  "2395": 94.0,
+  "3289": 98.0,
+  "32": 94.0,
+  "17": 94.0,
+  "2": 104.0,
+  "2602": 104.0,
+  "2392": 100.0,
+  "2680": 94.0,
+  "2889": 94.0,
+  "2681": 104.0,
+  "22": 102.0,
+  "680": 85.0,
+  "14": 102.0,
+  "4169": 100.0,
+  "4705": 100.0,
+  "7": 104.0,
+  "15": 106.0,
+  "3309": 104.0,
+  "2394": 100.0,
+  "3313": 102.0,
+  "3": 106.0,
+  "4": 98.0,
+  "5325": 88.0,
+  "5": 98.0,
+  "3312": 106.0,
+  "19": 125.0,
+  "31": 102.0,
+  "1": 98.0,
+  "2529": 116.0,
+  "12": 94.0,
+  "2523": 106.1,
+  "10": 99.5
+ },
+ "pf_equipo": {
+  "SF": 94.0,
+  "NYM": 98.0,
+  "MIL": 94.0,
+  "CHC": 94.0,
+  "BAL": 104.0,
+  "CIN": 104.0,
+  "HOU": 100.0,
+  "SD": 94.0,
+  "STL": 94.0,
+  "PHI": 104.0,
+  "LAD": 102.0,
+  "SEA": 85.0,
+  "TOR": 102.0,
+  "MIA": 100.0,
+  "ATL": 100.0,
+  "KC": 104.0,
+  "AZ": 106.0,
+  "WSH": 104.0,
+  "DET": 100.0,
+  "NYY": 102.0,
+  "BOS": 106.0,
+  "CWS": 98.0,
+  "TEX": 88.0,
+  "CLE": 98.0,
+  "MIN": 106.0,
+  "COL": 125.0,
+  "PIT": 102.0,
+  "LAA": 98.0,
+  "ATH": 99.5,
+  "TB": 106.1
+ },
+ "pf_detalle": {
+  "2395": {
+   "pf": 94.0,
+   "bruto": 97.4,
+   "juegos": 237,
+   "equipo": "SF",
+   "fuente": "referencia",
+   "pf_propio": 97.9
+  },
+  "3289": {
+   "pf": 98.0,
+   "bruto": 98.6,
+   "juegos": 241,
+   "equipo": "NYM",
+   "fuente": "referencia",
+   "pf_propio": 98.9
+  },
+  "32": {
+   "pf": 94.0,
+   "bruto": 97.9,
+   "juegos": 239,
+   "equipo": "MIL",
+   "fuente": "referencia",
+   "pf_propio": 98.4
+  },
+  "17": {
+   "pf": 94.0,
+   "bruto": 96.7,
+   "juegos": 238,
+   "equipo": "CHC",
+   "fuente": "referencia",
+   "pf_propio": 97.4
+  },
+  "2": {
+   "pf": 104.0,
+   "bruto": 98.3,
+   "juegos": 240,
+   "equipo": "BAL",
+   "fuente": "referencia",
+   "pf_propio": 98.7
+  },
+  "2602": {
+   "pf": 104.0,
+   "bruto": 99.6,
+   "juegos": 243,
+   "equipo": "CIN",
+   "fuente": "referencia",
+   "pf_propio": 99.6
+  },
+  "2392": {
+   "pf": 100.0,
+   "bruto": 98.7,
+   "juegos": 243,
+   "equipo": "HOU",
+   "fuente": "referencia",
+   "pf_propio": 99.0
+  },
+  "2680": {
+   "pf": 94.0,
+   "bruto": 94.8,
+   "juegos": 239,
+   "equipo": "SD",
+   "fuente": "referencia",
+   "pf_propio": 95.9
+  },
+  "2889": {
+   "pf": 94.0,
+   "bruto": 94.5,
+   "juegos": 243,
+   "equipo": "STL",
+   "fuente": "referencia",
+   "pf_propio": 95.5
+  },
+  "2681": {
+   "pf": 104.0,
+   "bruto": 105.9,
+   "juegos": 236,
+   "equipo": "PHI",
+   "fuente": "referencia",
+   "pf_propio": 104.7
+  },
+  "22": {
+   "pf": 102.0,
+   "bruto": 100.2,
+   "juegos": 239,
+   "equipo": "LAD",
+   "fuente": "referencia",
+   "pf_propio": 100.1
+  },
+  "680": {
+   "pf": 85.0,
+   "bruto": 89.9,
+   "juegos": 237,
+   "equipo": "SEA",
+   "fuente": "referencia",
+   "pf_propio": 91.9
+  },
+  "14": {
+   "pf": 102.0,
+   "bruto": 101.2,
+   "juegos": 240,
+   "equipo": "TOR",
+   "fuente": "referencia",
+   "pf_propio": 101.0
+  },
+  "4169": {
+   "pf": 100.0,
+   "bruto": 98.5,
+   "juegos": 240,
+   "equipo": "MIA",
+   "fuente": "referencia",
+   "pf_propio": 98.8
+  },
+  "4705": {
+   "pf": 100.0,
+   "bruto": 100.0,
+   "juegos": 241,
+   "equipo": "ATL",
+   "fuente": "referencia",
+   "pf_propio": 100.0
+  },
+  "7": {
+   "pf": 104.0,
+   "bruto": 102.4,
+   "juegos": 237,
+   "equipo": "KC",
+   "fuente": "referencia",
+   "pf_propio": 101.9
+  },
+  "15": {
+   "pf": 106.0,
+   "bruto": 100.9,
+   "juegos": 241,
+   "equipo": "AZ",
+   "fuente": "referencia",
+   "pf_propio": 100.8
+  },
+  "3309": {
+   "pf": 104.0,
+   "bruto": 102.5,
+   "juegos": 240,
+   "equipo": "WSH",
+   "fuente": "referencia",
+   "pf_propio": 102.0
+  },
+  "2394": {
+   "pf": 100.0,
+   "bruto": 99.7,
+   "juegos": 236,
+   "equipo": "DET",
+   "fuente": "referencia",
+   "pf_propio": 99.8
+  },
+  "3313": {
+   "pf": 102.0,
+   "bruto": 100.9,
+   "juegos": 236,
+   "equipo": "NYY",
+   "fuente": "referencia",
+   "pf_propio": 100.7
+  },
+  "3": {
+   "pf": 106.0,
+   "bruto": 102.1,
+   "juegos": 239,
+   "equipo": "BOS",
+   "fuente": "referencia",
+   "pf_propio": 101.7
+  },
+  "4": {
+   "pf": 98.0,
+   "bruto": 98.0,
+   "juegos": 241,
+   "equipo": "CWS",
+   "fuente": "referencia",
+   "pf_propio": 98.4
+  },
+  "5325": {
+   "pf": 88.0,
+   "bruto": 92.5,
+   "juegos": 240,
+   "equipo": "TEX",
+   "fuente": "referencia",
+   "pf_propio": 94.0
+  },
+  "5": {
+   "pf": 98.0,
+   "bruto": 102.0,
+   "juegos": 242,
+   "equipo": "CLE",
+   "fuente": "referencia",
+   "pf_propio": 101.6
+  },
+  "3312": {
+   "pf": 106.0,
+   "bruto": 101.3,
+   "juegos": 240,
+   "equipo": "MIN",
+   "fuente": "referencia",
+   "pf_propio": 101.0
+  },
+  "19": {
+   "pf": 125.0,
+   "bruto": 110.5,
+   "juegos": 238,
+   "equipo": "COL",
+   "fuente": "referencia",
+   "pf_propio": 108.4
+  },
+  "31": {
+   "pf": 102.0,
+   "bruto": 104.5,
+   "juegos": 240,
+   "equipo": "PIT",
+   "fuente": "referencia",
+   "pf_propio": 103.6
+  },
+  "1": {
+   "pf": 98.0,
+   "bruto": 97.5,
+   "juegos": 243,
+   "equipo": "LAA",
+   "fuente": "referencia",
+   "pf_propio": 98.0
+  },
+  "2529": {
+   "pf": 116.0,
+   "bruto": 112.5,
+   "juegos": 150,
+   "equipo": "ATH",
+   "fuente": "propio x escala",
+   "pf_propio": 108.9
+  },
+  "12": {
+   "pf": 94.0,
+   "bruto": 98.6,
+   "juegos": 162,
+   "equipo": "TB",
+   "fuente": "referencia",
+   "pf_propio": 99.0
+  },
+  "2523": {
+   "pf": 106.1,
+   "bruto": 105.9,
+   "juegos": 81,
+   "equipo": "TB",
+   "fuente": "propio x escala",
+   "pf_propio": 103.4
+  },
+  "10": {
+   "pf": 99.5,
+   "bruto": 99.5,
+   "juegos": 81,
+   "equipo": "ATH",
+   "fuente": "propio x escala",
+   "pf_propio": 99.7
+  }
+ },
+ "pf_savant": {
+  "3": {
+   "runs": 106,
+   "woba": 103,
+   "hit": 105,
+   "hr": 88,
+   "bb": 98,
+   "so": 97,
+   "nombre": "Fenway Park",
+   "pa": "55333"
+  },
+  "7": {
+   "runs": 102,
+   "woba": 101,
+   "hit": 104,
+   "hr": 88,
+   "bb": 100,
+   "so": 89,
+   "nombre": "Kauffman Stadium",
+   "pa": "53547"
+  },
+  "14": {
+   "runs": 102,
+   "woba": 101,
+   "hit": 101,
+   "hr": 105,
+   "bb": 100,
+   "so": 97,
+   "nombre": "Rogers Centre",
+   "pa": "57123"
+  },
+  "4705": {
+   "runs": 100,
+   "woba": 100,
+   "hit": 102,
+   "hr": 100,
+   "bb": 97,
+   "so": 102,
+   "nombre": "Truist Park",
+   "pa": "54796"
+  },
+  "2680": {
+   "runs": 94,
+   "woba": 97,
+   "hit": 96,
+   "hr": 105,
+   "bb": 103,
+   "so": 101,
+   "nombre": "Petco Park",
+   "pa": "55064"
+  },
+  "3309": {
+   "runs": 104,
+   "woba": 102,
+   "hit": 103,
+   "hr": 104,
+   "bb": 99,
+   "so": 94,
+   "nombre": "Nationals Park",
+   "pa": "55105"
+  },
+  "2392": {
+   "runs": 100,
+   "woba": 100,
+   "hit": 99,
+   "hr": 112,
+   "bb": 101,
+   "so": 107,
+   "nombre": "Daikin Park",
+   "pa": "54599"
+  },
+  "17": {
+   "runs": 96,
+   "woba": 98,
+   "hit": 96,
+   "hr": 106,
+   "bb": 102,
+   "so": 101,
+   "nombre": "Wrigley Field",
+   "pa": "56077"
+  },
+  "1": {
+   "runs": 98,
+   "woba": 99,
+   "hit": 98,
+   "hr": 100,
+   "bb": 99,
+   "so": 106,
+   "nombre": "Angel Stadium",
+   "pa": "54732"
+  },
+  "32": {
+   "runs": 96,
+   "woba": 98,
+   "hit": 95,
+   "hr": 103,
+   "bb": 106,
+   "so": 110,
+   "nombre": "American Family Field",
+   "pa": "55983"
+  },
+  "12": {
+   "runs": 94,
+   "woba": 97,
+   "hit": 98,
+   "hr": 104,
+   "bb": 91,
+   "so": 103,
+   "nombre": "Tropicana Field",
+   "pa": "36378"
+  },
+  "22": {
+   "runs": 102,
+   "woba": 101,
+   "hit": 98,
+   "hr": 124,
+   "bb": 102,
+   "so": 102,
+   "nombre": "UNIQLO Field at Dodger Stadium",
+   "pa": "57215"
+  },
+  "2681": {
+   "runs": 104,
+   "woba": 102,
+   "hit": 103,
+   "hr": 115,
+   "bb": 95,
+   "so": 104,
+   "nombre": "Citizens Bank Park",
+   "pa": "54487"
+  },
+  "3289": {
+   "runs": 96,
+   "woba": 98,
+   "hit": 96,
+   "hr": 101,
+   "bb": 106,
+   "so": 103,
+   "nombre": "Citi Field",
+   "pa": "57728"
+  },
+  "4169": {
+   "runs": 100,
+   "woba": 100,
+   "hit": 100,
+   "hr": 86,
+   "bb": 102,
+   "so": 96,
+   "nombre": "loanDepot park",
+   "pa": "55755"
+  },
+  "2889": {
+   "runs": 94,
+   "woba": 97,
+   "hit": 102,
+   "hr": 75,
+   "bb": 94,
+   "so": 91,
+   "nombre": "Busch Stadium",
+   "pa": "54245"
+  },
+  "15": {
+   "runs": 106,
+   "woba": 103,
+   "hit": 105,
+   "hr": 93,
+   "bb": 99,
+   "so": 90,
+   "nombre": "Chase Field",
+   "pa": "55352"
+  },
+  "680": {
+   "runs": 85,
+   "woba": 92,
+   "hit": 90,
+   "hr": 99,
+   "bb": 95,
+   "so": 116,
+   "nombre": "T-Mobile Park",
+   "pa": "53277"
+  },
+  "31": {
+   "runs": 102,
+   "woba": 101,
+   "hit": 103,
+   "hr": 83,
+   "bb": 99,
+   "so": 99,
+   "nombre": "PNC Park",
+   "pa": "55520"
+  },
+  "5325": {
+   "runs": 88,
+   "woba": 94,
+   "hit": 95,
+   "hr": 94,
+   "bb": 94,
+   "so": 101,
+   "nombre": "Globe Life Field",
+   "pa": "54355"
+  },
+  "3313": {
+   "runs": 102,
+   "woba": 101,
+   "hit": 95,
+   "hr": 118,
+   "bb": 114,
+   "so": 103,
+   "nombre": "Yankee Stadium",
+   "pa": "56990"
+  },
+  "2395": {
+   "runs": 94,
+   "woba": 97,
+   "hit": 100,
+   "hr": 79,
+   "bb": 95,
+   "so": 96,
+   "nombre": "Oracle Park",
+   "pa": "54283"
+  },
+  "5": {
+   "runs": 98,
+   "woba": 99,
+   "hit": 99,
+   "hr": 94,
+   "bb": 101,
+   "so": 105,
+   "nombre": "Progressive Field",
+   "pa": "54891"
+  },
+  "3312": {
+   "runs": 104,
+   "woba": 102,
+   "hit": 103,
+   "hr": 94,
+   "bb": 98,
+   "so": 97,
+   "nombre": "Target Field",
+   "pa": "55410"
+  },
+  "2": {
+   "runs": 104,
+   "woba": 102,
+   "hit": 103,
+   "hr": 109,
+   "bb": 95,
+   "so": 100,
+   "nombre": "Oriole Park at Camden Yards",
+   "pa": "55944"
+  },
+  "4": {
+   "runs": 98,
+   "woba": 99,
+   "hit": 98,
+   "hr": 98,
+   "bb": 103,
+   "so": 98,
+   "nombre": "Rate Field",
+   "pa": "55251"
+  },
+  "2394": {
+   "runs": 100,
+   "woba": 100,
+   "hit": 99,
+   "hr": 101,
+   "bb": 99,
+   "so": 98,
+   "nombre": "Comerica Park",
+   "pa": "53706"
+  },
+  "19": {
+   "runs": 125,
+   "woba": 112,
+   "hit": 117,
+   "hr": 108,
+   "bb": 97,
+   "so": 90,
+   "nombre": "Coors Field",
+   "pa": "56067"
+  },
+  "2602": {
+   "runs": 102,
+   "woba": 101,
+   "hit": 98,
+   "hr": 113,
+   "bb": 110,
+   "so": 104,
+   "nombre": "Great American Ball Park",
+   "pa": "54996"
+  }
+ },
+ "ops_vl": 0.712,
+ "ops_vr": 0.7226,
+ "fip_c": 3.091,
+ "fuente": {
+  "rpg": "real",
+  "era": "real",
+  "pf": "real (32 parques)"
+ }
+}

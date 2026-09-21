@@ -368,6 +368,134 @@
     }
   },
   {
+    "fecha": "2026-09-19",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -108,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "MIL 1-0 BAL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 53.0,
+    "prob_justa": 50.11,
+    "ev_pct": 2.07,
+    "precio_publicado": -107,
+    "discrepancia_pp": 2.89,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "El dinero movio BAL de +112 a -111 (FUERTE) en mi contra, T. Rogers tiene mejor FIP (3.79) que R. Gasser y MIL rinde peor ante zurdos (.710 ops).",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": false,
+      "delta_pp": 5.4
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-19T19:30:25Z"
+    }
+  },
+  {
+    "fecha": "2026-09-19",
+    "pick": "PIT ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -118,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "KC 5-6 PIT",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.5,
+    "prob_justa": 52.11,
+    "ev_pct": 2.53,
+    "precio_publicado": -116,
+    "discrepancia_pp": 3.39,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "B. Chandler regala bases (11.8% de BB) y N. Cameron viene de dos salidas de 6 entradas con 1 y 0 limpias: si el zurdo domina, PIT se queda sin margen.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-19T22:10:25Z"
+    }
+  },
+  {
+    "fecha": "2026-09-19",
+    "pick": "CHC ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -145,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CHC 5-2 CIN",
+    "veredicto": "seguimiento",
+    "prob_estimada": 61.0,
+    "prob_justa": 57.11,
+    "ev_pct": 3.07,
+    "precio_publicado": -140,
+    "discrepancia_pp": 3.89,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "matchup",
+      "ofensiva",
+      "bullpen"
+    ],
+    "contra": "El precio ya va cargado a -145 y el parque (pf 104) con 88 grados y viento hacia afuera permite que un par de batazos de E. De La Cruz igualen el juego pese a la ventaja.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-19T22:10:25Z"
+    }
+  },
+  {
     "fecha": "2026-09-18",
     "pick": "WSH F5 ML",
     "deporte": "MLB",
@@ -498,76 +626,32 @@
     }
   },
   {
-    "fecha": "2026-09-19",
-    "pick": "MIL ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -108,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "MIL 1-0 BAL",
-    "veredicto": "seguimiento",
-    "prob_estimada": 53.0,
-    "prob_justa": 50.11,
-    "ev_pct": 2.07,
-    "precio_publicado": -107,
-    "discrepancia_pp": 2.89,
-    "sombra_umbral": {
-      "extra_umbral_1_5": true,
-      "extra_umbral_plano": true
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "bullpen",
-      "forma"
-    ],
-    "contra": "El dinero movio BAL de +112 a -111 (FUERTE) en mi contra, T. Rogers tiene mejor FIP (3.79) que R. Gasser y MIL rinde peor ante zurdos (.710 ops).",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE",
-      "a_favor": false,
-      "delta_pp": 5.4
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-19T19:30:25Z"
-    }
-  },
-  {
-    "fecha": "2026-09-19",
-    "pick": "PIT ML",
+    "fecha": "2026-09-20",
+    "pick": "DET ML",
     "deporte": "MLB",
     "nivel": "plata",
-    "cuota": -118,
+    "cuota": 100,
     "unidades": 0.0,
-    "resultado": "W",
+    "resultado": "L",
     "neto_u": 0.0,
-    "marcador": "KC 5-6 PIT",
+    "marcador": "DET 1-8 CWS",
     "veredicto": "seguimiento",
-    "prob_estimada": 55.5,
-    "prob_justa": 52.11,
-    "ev_pct": 2.53,
-    "precio_publicado": -116,
-    "discrepancia_pp": 3.39,
+    "prob_estimada": 51.5,
+    "prob_justa": 48.02,
+    "ev_pct": 3.0,
+    "precio_publicado": -101,
+    "discrepancia_pp": 3.48,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
-      "extra_umbral_plano": true
+      "extra_umbral_plano": false
     },
     "linea_precio": null,
     "capas": [
       "ofensiva",
-      "bullpen",
-      "forma"
+      "forma",
+      "pitcheo"
     ],
-    "contra": "B. Chandler regala bases (11.8% de BB) y N. Cameron viene de dos salidas de 6 entradas con 1 y 0 limpias: si el zurdo domina, PIT se queda sin margen.",
+    "contra": "Melton lleva salidas cortas (2.2 IP en la ultima) y el bullpen de DET acumula 9.4 entradas en dos dias, con el de CWS mas fresco y con mejor cerrador disponible.",
     "contexto": {
       "mercado_movido": true,
       "fuerza": "MEDIA"
@@ -575,54 +659,98 @@
     "abogado": null,
     "citas_dudosas": 0,
     "vivo": {
-      "tanda": 2,
+      "tanda": 1,
       "publicado": false,
-      "fuera_por_tope": false,
+      "fuera_por_tope": true,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-09-19T22:10:25Z"
+      "ts": "2026-09-20T16:40:20Z"
     }
   },
   {
-    "fecha": "2026-09-19",
-    "pick": "CHC ML",
+    "fecha": "2026-09-20",
+    "pick": "LAD Spread -1.5",
     "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -145,
+    "nivel": "plata",
+    "cuota": -125,
     "unidades": 0.0,
     "resultado": "W",
     "neto_u": 0.0,
-    "marcador": "CHC 5-2 CIN",
+    "marcador": "SF 1-3 LAD",
     "veredicto": "seguimiento",
-    "prob_estimada": 61.0,
-    "prob_justa": 57.11,
-    "ev_pct": 3.07,
-    "precio_publicado": -140,
-    "discrepancia_pp": 3.89,
+    "prob_estimada": 57.0,
+    "prob_justa": 53.25,
+    "ev_pct": 2.6,
+    "precio_publicado": -122,
+    "discrepancia_pp": 3.75,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
       "extra_umbral_plano": true
     },
     "linea_precio": null,
     "capas": [
-      "matchup",
       "ofensiva",
-      "bullpen"
+      "bullpen",
+      "pitcheo"
     ],
-    "contra": "El precio ya va cargado a -145 y el parque (pf 104) con 88 grados y viento hacia afuera permite que un par de batazos de E. De La Cruz igualen el juego pese a la ventaja.",
+    "contra": "J. Dreyer suma solo 242 bateadores enfrentados y perfila como salida corta: si LAD tiene que usar bullpen temprano, el juego se aprieta y el -1.5 se cae.",
     "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE"
+      "mercado_movido": false
     },
     "abogado": null,
-    "citas_dudosas": 1,
+    "citas_dudosas": 2,
     "vivo": {
       "tanda": 2,
       "publicado": false,
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-09-19T22:10:25Z"
+      "ts": "2026-09-20T19:30:19Z"
+    }
+  },
+  {
+    "fecha": "2026-09-20",
+    "pick": "MIN/LAA u8.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -125,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "MIN 8-0 LAA",
+    "veredicto": "seguimiento",
+    "prob_estimada": 56.5,
+    "prob_justa": 53.25,
+    "ev_pct": 1.7,
+    "precio_publicado": -120,
+    "discrepancia_pp": 3.25,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "parque",
+      "umpire",
+      "mercado"
+    ],
+    "contra": "Ninguno de los dos abridores da confianza (D. Kremer 5.35 y R. Johnson 4.88 de ERA) y el 7 de cada 10 juegos recientes de ambos equipos paso de 8.5 carreras.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": -0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-20T19:30:19Z"
     }
   }
 ]

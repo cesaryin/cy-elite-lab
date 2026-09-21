@@ -495,6 +495,131 @@
      "neto_u": 0.0
     }
    ]
+  },
+  "2026-09-20": {
+   "fecha": "2026-09-20",
+   "opus": {
+    "analisis": 6,
+    "senales": 3,
+    "senales_w": 3,
+    "senales_l": 0,
+    "neto_u": 2.8,
+    "analisis_w": 5,
+    "analisis_l": 1,
+    "brier": 0.2124,
+    "n_brier": 6,
+    "picks": [
+     "TB F5 ML",
+     "PHI F5 ML",
+     "MIA/SD o8.0"
+    ]
+   },
+   "fable": {
+    "analisis": 6,
+    "senales": 2,
+    "senales_w": 2,
+    "senales_l": 0,
+    "neto_u": 1.87,
+    "analisis_w": 5,
+    "analisis_l": 1,
+    "brier": 0.2213,
+    "n_brier": 6,
+    "picks": [
+     "TB F5 ML",
+     "MIA/SD o8.0"
+    ]
+   },
+   "coinciden": [
+    "LAD Spread -1.5",
+    "MIA/SD o8.0",
+    "MIN/LAA u8.5",
+    "TB F5 ML"
+   ],
+   "tandas_fable": [
+    {
+     "n": 1,
+     "estado": "listo"
+    },
+    {
+     "n": 2,
+     "estado": "listo"
+    }
+   ],
+   "coste_fable": 0.8637,
+   "detalle_fable": [
+    {
+     "pick": "TB F5 ML",
+     "cuota": -104,
+     "tanda": 1,
+     "nivel": "oro",
+     "publicado": true,
+     "resultado": "W",
+     "marcador": "BOS 1-5 TB",
+     "prob_estimada": 54.0,
+     "ev_pct": 5.92,
+     "neto_u": 0.96
+    },
+    {
+     "pick": "TEX F5 ML",
+     "cuota": -113,
+     "tanda": 1,
+     "nivel": "plata",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "TOR 7-2 TEX",
+     "prob_estimada": 54.5,
+     "ev_pct": 2.73,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "PIT ML",
+     "cuota": -118,
+     "tanda": 1,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "KC 3-4 PIT",
+     "prob_estimada": 55.0,
+     "ev_pct": 1.61,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "MIA/SD o8.0",
+     "cuota": -110,
+     "tanda": 2,
+     "nivel": "plata",
+     "publicado": true,
+     "resultado": "W",
+     "marcador": "MIA 3-7 SD",
+     "prob_estimada": 54.0,
+     "ev_pct": 3.09,
+     "neto_u": 0.91
+    },
+    {
+     "pick": "MIN/LAA u8.5",
+     "cuota": -125,
+     "tanda": 2,
+     "nivel": "plata",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "MIN 8-0 LAA",
+     "prob_estimada": 55.0,
+     "ev_pct": -1.0,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "LAD Spread -1.5",
+     "cuota": -125,
+     "tanda": 2,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "SF 1-3 LAD",
+     "prob_estimada": 55.0,
+     "ev_pct": -1.0,
+     "neto_u": 0.0
+    }
+   ]
   }
  }
 }

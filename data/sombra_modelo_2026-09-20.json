@@ -7,13 +7,355 @@
    "n": 1,
    "lote": "msgbatch_01GNfeCQ23iJBorsa3C43kP2",
    "enviado_utc": "2026-09-20T16:43:09Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-21T13:00:27Z",
+   "uso": {
+    "tokens_entrada": 63096,
+    "tokens_salida": 8398,
+    "coste": 0.5254
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "TB F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -104,
+     "prob_estimada": 54.0,
+     "razon": "El F5 de Kalshi aisla a G. Jax (fip_multi 2.93) contra P. Sandoval (4.99 ERA, 10.9% BB, 2.2 IP y 4 ER en su ultima salida) y deja fuera el cierre. TB llega con 5.7 c/j y ops .736 en la semana; BOS trae 3.0 c/j, ops .631 y un lineup con Story .635 y Eaton .544. Mercado con solo 1 punto de vig.",
+     "equipos": [
+      "BOS",
+      "TB"
+     ],
+     "destacado": "TB",
+     "hora": "12:40 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma",
+      "parque"
+     ],
+     "contra": "Jax es un convertido que ya tuvo una salida de 2.2 IP y 6 ER este mes, y en Kalshi el empate a cinco entradas (15.8% justo) se pierde, no se devuelve.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "TB",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 54.0,
+      "prob_justa": null,
+      "prob_implicita": 50.98,
+      "cuota": -104,
+      "cuota_justa_mercado": null,
+      "ev_pct": 5.92,
+      "ev_kalshi_pct": 2.49,
+      "precio_minimo": -111,
+      "precio_publicado": -111,
+      "precio_equilibrio": -117,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +5.92% · no tomar peor de -111",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "TEX F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -113,
+     "prob_estimada": 54.5,
+     "razon": "S. Miles llega de tres salidas de 2, 1 y 2 IP: es un abridor corto, asi que gran parte del F5 de TOR lo cubre su bullpen con B. Cellucci quemado. Enfrente J. deGrom (31.2% K, 6 IP y 0 ER con 12 K hace dos salidas) contra un lineup TOR frio (.630 ops, 3.7 c/j). TEX anota 5.7 c/j en la semana.",
+     "equipos": [
+      "TOR",
+      "TEX"
+     ],
+     "destacado": "TEX",
+     "hora": "1:35 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+     ],
+     "contra": "Globe Life (pf 88) y un TEX de solo .696 ops vs derechos pueden dejar el F5 empatado a 0 o 1, y en Kalshi el empate (17.5% justo) es derrota.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "TEX",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 54.5,
+      "prob_justa": null,
+      "prob_implicita": 53.05,
+      "cuota": -113,
+      "cuota_justa_mercado": null,
+      "ev_pct": 2.73,
+      "ev_kalshi_pct": -0.56,
+      "precio_minimo": -112,
+      "precio_publicado": -112,
+      "precio_equilibrio": -119,
+      "discrepancia_pp": null,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +2.73% por debajo del minimo exigido (2.8%)",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": true,
+       "extra_umbral_plano": true
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "PIT ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -118,
+     "prob_estimada": 55.0,
+     "razon": "L. Bachar lanzo ayer y sus tres ultimas salidas fueron de 2 IP o menos: PIT va a un juego de bullpen con el relevo mas profundo del duelo (3.78 vs 4.90 de KC, con L. Erceg en 5.96 y C. Kimbrel fuera). PIT batea .871 ops y 5.0 c/j en la semana; KC trae .616 ops, 3.3 c/j y 61 K en 6 juegos. Ventaja modesta, de unos 3 puntos.",
+     "equipos": [
+      "KC",
+      "PIT"
+     ],
+     "destacado": "PIT",
+     "hora": "12:35 PM CT",
+     "capas": [
+      "bullpen",
+      "ofensiva",
+      "pitcheo"
+     ],
+     "contra": "M. Wacha da 6 IP casi fijas y el bullpen PIT ya gasto a B. Eisert, C. Doval y L. Weaver ayer: si el juego llega a las entradas 7-9 apretado, el relevo largo de PIT es el que sufre.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "PIT",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -120,
+     "valor": {
+      "prob_estimada": 55.0,
+      "prob_justa": 51.98,
+      "prob_implicita": 54.13,
+      "cuota": -118,
+      "cuota_justa_mercado": -108,
+      "ev_pct": 1.61,
+      "ev_kalshi_pct": -1.6,
+      "precio_minimo": -114,
+      "precio_publicado": -114,
+      "precio_equilibrio": -122,
+      "discrepancia_pp": 3.02,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.61% por debajo del minimo exigido (3.0%)",
+      "mejor_precio": {
+       "cuota": -110,
+       "casa": "betrivers"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE",
+       "a_favor": false,
+       "delta_pp": -5.4
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda de mediodia sin favoritos claros en el ML, asi que el valor esta en las primeras cinco entradas: TB con G. Jax frente a un P. Sandoval descontrolado y un lineup BOS frio, y TEX con J. deGrom contra un TOR que llega con .630 ops y un abridor de dos entradas en S. Miles. PIT aparece como lectura menor por su bullpen profundo ante un KC que no anota. El resto de la tanda, incluidos los totales, se queda demasiado cerca de la linea justa para tomar posicion."
   },
   {
    "n": 2,
    "lote": "msgbatch_015Qd2fb5S7pC7XmoeyEWTMv",
    "enviado_utc": "2026-09-20T19:32:02Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-21T13:00:28Z",
+   "uso": {
+    "tokens_entrada": 38579,
+    "tokens_salida": 5817,
+    "coste": 0.3383
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "MIA/SD o8.0",
+     "deporte": "MLB",
+     "tipo": "o8.0",
+     "cuota": -110,
+     "prob_estimada": 54.0,
+     "razon": "Dos ofensivas calientes contra dos abridores que vienen golpeados: SD anota 7.1 c/j con ops .927 en la semana y pasó de 8.5 en 10 de 10; MIA 4.8 c/j y ops .744. S. Alcantara permitió 15 carreras en sus 3 últimas salidas y W. Buehler no pasa de 5 entradas, lo que carga a un bullpen de SD con dos brazos quemados. La justa da 50.3% al over.",
+     "equipos": [
+      "MIA",
+      "SD"
+     ],
+     "destacado": null,
+     "hora": "3:10 PM CT",
+     "capas": [
+      "ofensiva",
+      "pitcheo",
+      "bullpen",
+      "forma"
+     ],
+     "contra": "Petco (pf 94) es el parque más frío de la tanda y Alcantara tiene ERA 3.84 de temporada: si recupera su nivel, 8 carreras quedan lejos.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "over",
+      "linea": 8.0
+     },
+     "cuota_apertura_ref": -113,
+     "valor": {
+      "prob_estimada": 54.0,
+      "prob_justa": 50.33,
+      "prob_implicita": 52.38,
+      "cuota": -110,
+      "cuota_justa_mercado": -101,
+      "ev_pct": 3.09,
+      "ev_kalshi_pct": -0.24,
+      "precio_minimo": -111,
+      "precio_publicado": -111,
+      "precio_equilibrio": -117,
+      "discrepancia_pp": 3.67,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +3.09% · no tomar peor de -111",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "MIN/LAA u8.5",
+     "deporte": "MLB",
+     "tipo": "u8.5",
+     "cuota": -125,
+     "prob_estimada": 55.0,
+     "razon": "Las dos ofensivas vienen frías: MIN 3.1 c/j en sus últimos 10 (ops .627 en la semana) y LAA 4.0 c/j (ops .642), con lineups llenos de bates por debajo de .650. Parque neutro-bajo (pf 98) y umpire que resta carreras. Ventaja modesta sobre la justa (53.3%), no un pick grande.",
+     "equipos": [
+      "MIN",
+      "LAA"
+     ],
+     "destacado": null,
+     "hora": "3:07 PM CT",
+     "capas": [
+      "ofensiva",
+      "parque",
+      "umpire"
+     ],
+     "contra": "D. Kremer y R. Johnson traen FIP de 4.79 y 5.21 y ambos equipos pasaron de 8.5 en 7 de sus últimos 10; si los abridores se caen temprano, los bullpens vienen de usar seis relevistas cada uno ayer.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "under",
+      "linea": 8.5
+     },
+     "valor": {
+      "prob_estimada": 55.0,
+      "prob_justa": 53.25,
+      "prob_implicita": 55.56,
+      "cuota": -125,
+      "cuota_justa_mercado": -114,
+      "ev_pct": -1.0,
+      "ev_kalshi_pct": -4.11,
+      "precio_minimo": -113,
+      "precio_publicado": -113,
+      "precio_equilibrio": -122,
+      "discrepancia_pp": 1.75,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV -1.00% por debajo del minimo exigido (3.4%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE",
+       "a_favor": true,
+       "mov_linea": -0.5
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "LAD Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": -125,
+     "prob_estimada": 55.0,
+     "razon": "LAD llega con la ofensiva más caliente del día (ops .896, 5.7 c/j, 13 HR en la semana) contra un zurdo con dos de sus tres últimas salidas de 4 carreras en menos de 4 entradas, y el lineup de SF ante zurdos batea ops .671 con cuatro bates por debajo de .610. El margen de dos carreras es el mercado más limpio del juego con el ML fuera de banda; la ventaja sobre la justa (53.3%) es corta.",
+     "equipos": [
+      "SF",
+      "LAD"
+     ],
+     "destacado": "LAD",
+     "hora": "3:10 PM CT",
+     "capas": [
+      "ofensiva",
+      "matchup",
+      "pitcheo"
+     ],
+     "contra": "J. Dreyer apenas suma 242 bateadores enfrentados y su última salida registrada fue de una entrada: un abridor corto deja el juego en un bullpen con E. Díaz quemado y Vesia y Phillips usados ayer.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "LAD",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": -131,
+     "valor": {
+      "prob_estimada": 55.0,
+      "prob_justa": 53.25,
+      "prob_implicita": 55.56,
+      "cuota": -125,
+      "cuota_justa_mercado": -114,
+      "ev_pct": -1.0,
+      "ev_kalshi_pct": -4.11,
+      "precio_minimo": -113,
+      "precio_publicado": -113,
+      "precio_equilibrio": -122,
+      "discrepancia_pp": 1.75,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV -1.00% por debajo del minimo exigido (3.4%)",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda de tarde con el valor en los totales: el over de MIA/SD junta dos lineups calientes con dos abridores golpeados en sus últimas salidas, y el under de MIN/LAA se apoya en dos ofensivas frías en un parque neutro. La ofensiva de LAD contra un zurdo irregular deja el margen de -1.5 como lectura de menor ventaja. NYY ofrecía un precio interesante, pero el mercado se movió con fuerza hacia AZ y eso obliga a apartarse; MIL/BAL queda fuera hasta que se publiquen las alineaciones."
   }
  ]
 }
