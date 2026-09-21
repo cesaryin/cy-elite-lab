@@ -21,7 +21,7 @@
   },
   "inicio_utc": "2026-09-21T22:35Z",
   "visto": "2026-09-21T20:30:57+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "WSH@DET": {
   "ml": {
@@ -45,17 +45,17 @@
   },
   "inicio_utc": "2026-09-21T22:40Z",
   "visto": "2026-09-21T21:50:20+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "MIN@SF": {
   "ml": {
-   "MIN": -124,
-   "SF": 103
+   "MIN": -123,
+   "SF": 102
   },
   "total": {
-   "linea": 8.5,
-   "over": -105,
-   "under": -115
+   "linea": 8.0,
+   "over": -112,
+   "under": -107
   },
   "spread": {
    "MIN": {
@@ -68,7 +68,7 @@
    }
   },
   "inicio_utc": "2026-09-22T01:45Z",
-  "visto": "2026-09-21T21:50:20+00:00",
+  "visto": "2026-09-21T22:40:14+00:00",
   "cerrado": false
  }
 }
