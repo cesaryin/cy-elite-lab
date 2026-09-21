@@ -862,13 +862,13 @@
    "pregunta": "¿El archivo de precios de Kalshi sigue creciendo?",
    "minimo": 1,
    "estado": "medida",
-   "n": 1013,
-   "texto": "1013 precios archivados, el último del 2026-09-17",
+   "n": 1058,
+   "texto": "1058 precios archivados, el último del 2026-09-20",
    "datos": {
-    "ultima_fecha": "2026-09-17",
-    "dias": 4,
+    "ultima_fecha": "2026-09-20",
+    "dias": 1,
     "ayer": 989,
-    "recogido_hasta": "2026-09-17",
+    "recogido_hasta": "2026-09-20",
     "faltan": []
    },
    "alarma": null

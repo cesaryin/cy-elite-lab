@@ -58,7 +58,9 @@ main{padding:0 16px}
 section{display:none}section.on{display:block}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;margin:12px 0}
 .card.elite{border:1px solid var(--gold);background:linear-gradient(160deg,#1e1a0e,#161b22)}
-.badge{font-size:12px;font-weight:800;letter-spacing:.4px;color:var(--mut);margin-bottom:12px;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.card.valor{border:1px solid #aab4c2;background:linear-gradient(160deg,#1b1f26,#161b22)}
+.card.bronce{border:1px solid #cc8b52;background:linear-gradient(160deg,#20170f,#161b22)}
+.badge{font-size:12.5px;font-weight:800;letter-spacing:.4px;color:var(--mut);margin-bottom:12px;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
 .badge.elite{color:var(--gold2)}.badge.valor{color:#aab4c2}.badge.bronce{color:#cc8b52}.badge.parlay{color:var(--purple)}
 .stars{letter-spacing:1px;font-size:11px}
 .row{display:flex;align-items:center;gap:12px}
@@ -66,11 +68,11 @@ section{display:none}section.on{display:block}
 .logo{width:42px;height:42px;object-fit:contain;background:none;border:none}
 .logo:nth-child(2){margin-left:6px}.logo.sm{width:30px;height:30px}
 .info{flex:1;min-width:0}
-.pick{font-size:22px;font-weight:800;line-height:1.15;letter-spacing:-.01em}
-.sub{color:var(--mut);font-size:12px;font-weight:600;margin-top:3px}
+.pick{font-size:23px;font-weight:800;line-height:1.15;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:12.5px;font-weight:600;margin-top:3px}
 .odds{text-align:right;flex-shrink:0}
 .cuota{font-size:23px;font-weight:800}.cuota.pos{color:var(--green)}.cuota.neg{color:var(--text)}
-.u{background:var(--line2);border-radius:8px;padding:2px 9px;font-size:12px;font-weight:700;display:inline-block;margin-top:4px;color:var(--soft)}
+.u{background:var(--line2);border-radius:8px;padding:2px 9px;font-size:12.5px;font-weight:700;display:inline-block;margin-top:4px;color:var(--soft)}
 /* PRECIO MINIMO (27-ago-2026) — el dato que hace el pick valido en CUALQUIER
    casa. Reusa la estructura del chip de ventaja para no romper el diseno.
 
@@ -83,17 +85,17 @@ section{display:none}section.on{display:block}
 .pm{margin-top:11px;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.38);border-radius:12px;padding:10px 13px}
 .pm-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
 .pm-l{font-size:13px;font-weight:800;color:var(--text);white-space:nowrap}
-.pm-v{font-size:23px;font-weight:900;color:#58a6ff;line-height:1;flex-shrink:0}
-.pm-b{font-size:11.5px;color:var(--mut);font-weight:600;margin-top:5px;line-height:1.5;font-variant-numeric:tabular-nums}
+.pm-v{font-size:23px;font-weight:800;color:#58a6ff;line-height:1;flex-shrink:0}
+.pm-b{font-size:11px;color:var(--mut);font-weight:600;margin-top:5px;line-height:1.5;font-variant-numeric:tabular-nums}
 .pm-b b{color:var(--soft)}
 .pm-g{color:var(--green);font-weight:700}
 .pm.lejos{background:rgba(210,153,34,.09);border-color:rgba(210,153,34,.4)}
 .pm.lejos .pm-v{color:#d29922}
 /* LOS CUATRO PASOS (10-sep-2026) — ver _pasos(). */
 .paso{margin-top:12px}
-.paso-l{font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.paso-l{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
 .paso-l.riesgo{color:#d29922}
-.paso-t{font-size:13.5px;color:var(--soft);line-height:1.5}
+.paso-t{font-size:13px;color:var(--soft);line-height:1.5}
 .paso-t b{color:var(--text)}
 /* SEGUIMIENTO — se publica el analisis pero NO lleva dinero.
    ANTES SE APAGABA LA TARJETA ENTERA (opacity:.62 + el pick y la cuota en
@@ -121,7 +123,7 @@ section{display:none}section.on{display:block}
 .vv-tr{font-weight:700;color:var(--mut);font-size:11px;white-space:nowrap}
 .vv-tr.si{color:var(--gold2)}
 .vv-t.esp .vv-th,.vv-t.esp .vv-tr{color:var(--faint)}
-.vv-pub{margin-top:11px;display:flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:var(--mut);background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:6px 9px;line-height:1.35}
+.vv-pub{margin-top:11px;display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:var(--mut);background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:6px 9px;line-height:1.35}
 .vv-pub .ico{width:14px;height:14px;margin:0;color:var(--soft)}
 .vv-vac-t{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;color:var(--text)}
 .vv-vac-t .ico{width:20px;height:20px;margin:0;color:var(--faint)}
@@ -137,8 +139,8 @@ section{display:none}section.on{display:block}
 .vv-svd b{color:var(--soft)}
 @media (prefers-reduced-motion:no-preference){.vv-dot{animation:vvlat 2.4s ease-in-out infinite}}
 @keyframes vvlat{50%{box-shadow:0 0 0 6px rgba(240,199,94,0)}}
-.u.seg{background:rgba(88,166,255,.14);border:1px solid rgba(88,166,255,.5);color:#79b8ff;font-size:10.5px;letter-spacing:.3px}
-.razon{color:var(--soft);font-size:13.5px;line-height:1.62;margin-top:13px;border-left:2px solid var(--gold);padding-left:12px}
+.u.seg{background:rgba(88,166,255,.14);border:1px solid rgba(88,166,255,.5);color:#79b8ff;font-size:11px;letter-spacing:.3px}
+.razon{color:var(--soft);font-size:13px;line-height:1.62;margin-top:13px;border-left:2px solid var(--gold);padding-left:12px}
 /* La hora local lleva un subrayado de puntos: avisa de que ese dato se ha
    adaptado a tu reloj, y el title cuenta cual era la de Houston. Sin color
    propio — no es una alerta, es una cortesia. */
@@ -148,7 +150,7 @@ section{display:none}section.on{display:block}
    contenido, no la categoria. Que se vea que ahi hay una señal elite es medio
    argumento de venta; taparla tambien seria tirarlo. */
 .card.cerr{border-style:dashed}
-.cerr-t{color:var(--soft);font-size:19px}
+.cerr-t{color:var(--soft);font-size:15px}
 .cerr-ic{width:26px;height:26px;color:var(--faint)}
 .gan{margin-top:13px;background:linear-gradient(160deg,rgba(212,175,55,.10),var(--panel));border:1px solid rgba(212,175,55,.4);border-radius:12px;padding:13px 14px}
 .gan-t{font-size:13px;font-weight:800;color:var(--gold2);margin-bottom:6px}
@@ -287,13 +289,13 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 .pata{display:flex;align-items:center;gap:11px;padding:8px 0}
 .pata .pn{flex:1;font-size:15px;font-weight:700}.pata .pc{font-size:14px;font-weight:800;color:var(--mut)}
 .combo{display:flex;justify-content:space-between;align-items:center;margin-top:9px;padding-top:11px;border-top:1px solid var(--line2);font-weight:700}
-.combo .cuota{font-size:20px;color:var(--purple)}
+.combo .cuota{font-size:23px;color:var(--purple)}
 .resumen{background:var(--card);border-left:3px solid var(--green);border-radius:8px;padding:15px 16px;font-size:13px;color:var(--soft);line-height:1.55;margin:12px 0}
 .clv-box{background:#0d1117;border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin:12px 0}
 .clv-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
 .clv-ti{font-size:12.5px;font-weight:800;color:var(--soft)}
 .clv-n{font-size:15px;font-weight:800}.clv-n.g{color:var(--green)}.clv-n.r{color:var(--red)}
-.clv-sub{font-size:12.5px;color:var(--mut);margin-top:3px}.clv-lec{font-size:11.5px;color:var(--faint);margin-top:4px;font-style:italic}
+.clv-sub{font-size:12.5px;color:var(--mut);margin-top:3px}.clv-lec{font-size:11px;color:var(--faint);margin-top:4px;font-style:italic}
 /* ===== HISTORIAL PRO (2-sep-2026) ==========================================
    TODAS las clases llevan prefijo "hi-", sin excepcion. Es la leccion del mismo
    dia: el dashboard concatena su hoja, la del LAB y la de Trends, y a igualdad
@@ -769,7 +771,7 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
 .trends-real .lv-par .lgc{width:16px;height:16px;margin-right:1px}
 .trends-real .lv-par span{margin-left:3px;color:var(--soft)}
 .trends-real .lv-fav{margin-left:4px}
-</style></head><body><div class="app"><div class="topbar"><h1>CY Elite Lab</h1><a href="/ajustes" class="t-set" aria-label="Ajustes e información"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10 3.09V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></a></div><main><section class="on"><div class="cab"><div class="cab-tx"><h2 class="cab-t">Mercado</h2><p class="cab-s">Movimientos del día, cada partido y la temporada</p></div><div class="cab-d"><div class="cab-n">1</div><div class="cab-l">movimiento</div></div></div><style>.trends-real{--bg:#0b0f14; --surf:#161b22; --surf2:#1c222b; --line:#2a3038; --line2:#21262d;
+</style></head><body><div class="app"><div class="topbar"><h1>CY Elite Lab</h1><a href="/ajustes" class="t-set" aria-label="Ajustes e información"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10 3.09V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></a></div><main><section class="on"><div class="cab"><div class="cab-tx"><h2 class="cab-t">Mercado</h2><p class="cab-s">Movimientos del día, cada partido y la temporada</p></div><div class="cab-d"><div class="cab-n">2</div><div class="cab-l">movimientos</div></div></div><style>.trends-real{--bg:#0b0f14; --surf:#161b22; --surf2:#1c222b; --line:#2a3038; --line2:#21262d;
   --text:#e6edf3; --soft:#c9d1d9; --mute:#8b949e; --faint:#6e7681;
   --gold:#f0c75e; --gold-bg:rgba(240,199,94,.10); --gold-ln:rgba(240,199,94,.30);
   --green:#3fb950; --red:#f85149; --amber:#d29922; --blue:#58a6ff;
@@ -1003,7 +1005,7 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
   <div class="h2s">Dónde ha entrado el dinero desde que abrieron las líneas esta mañana.
   Si una línea se mueve hacia un lado, el dinero entró ahí antes de que el mercado moviera
   el número: <b>a favor</b> de tu análisis confirma, <b>en contra</b> es un aviso.</div>
-  <div class="mv"><div class="mvl"><img class="lgc" src="logos/WSH.png" alt="WSH"><img class="lgc" src="logos/DET.png" alt="DET"></div><div class="mvt"><b>DET</b> en el F5 Moneyline<span class="mvs mono">48% &rarr; 46%</span></div><div class="mvr"><i class="baja mono">-2.5</i><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:40:00Z">5:40 PM</time></span></div></div>
+  <div class="mv"><div class="mvl"><img class="lgc" src="logos/WSH.png" alt="WSH"><img class="lgc" src="logos/DET.png" alt="DET"></div><div class="mvt"><b>DET</b> en el Moneyline<span class="mvs mono">58% &rarr; 56%</span></div><div class="mvr"><i class="baja mono">-3.0</i><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:40:00Z">5:40 PM</time></span></div></div><div class="mv"><div class="mvl"><img class="lgc" src="logos/TOR.png" alt="TOR"><img class="lgc" src="logos/BAL.png" alt="BAL"></div><div class="mvt"><b>Over</b> en el Total 7.5<span class="mvs mono">52% &rarr; 48%</span></div><div class="mvr"><i class="baja mono">-3.0</i><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:35:00Z">5:35 PM</time></span></div></div>
 
   <div class="sep"><span class="n">TUS ANÁLISIS</span><span class="ln"></span></div>
   <h2>Tus análisis contra el mercado</h2>
@@ -1014,7 +1016,7 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
   <h2>El juego, mercado a mercado</h2>
   <div class="h2s">El abridor, el cruce contra su mano y <b>todos los mercados</b> con su
   cuota y lo que se han movido hoy. El visitante arriba y el local debajo.</div>
-  <div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:35:00Z">5:35 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/TOR.png" alt="TOR"></td><td class="l sp">T. Yesavage</td><td>25-32 <b>44%</b></td><td><b>-102</b><i class="sube">+1.0</i></td><td><b>+141</b><i class="sube">+1.0</i></td><td><b>+174</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/BAL.png" alt="BAL"></td><td class="l sp">S. Baz</td><td>23-28 <b>45%</b></td><td><b>+102</b><i class="baja">-1.0</i></td><td>&mdash;</td><td><b>+208</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">serie TOR <b>6-4</b>, media 10.5 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:40:00Z">5:40 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/WSH.png" alt="WSH"></td><td class="l sp">D. Herz</td><td class="r">18-29 <b>38%</b></td><td><b>+125</b><i class="sube">+2.0</i></td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/DET.png" alt="DET"></td><td class="l sp">R. Ryan</td><td class="r">18-28 <b>39%</b></td><td>&mdash;</td><td><b>+120</b><i class="baja">-2.5</i></td><td><b>+167</b><i class="baja">-2.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-141</b> / under <b>+141</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-22T01:45:00Z">8:45 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/MIN.png" alt="MIN"></td><td class="l sp">Z. Matthews</td><td>23-30 <b>43%</b></td><td>&mdash;</td><td><b>+135</b><i>&mdash;</i></td><td><b>+153</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/SF.png" alt="SF"></td><td class="l sp">B. Tidwell</td><td>24-29 <b>45%</b></td><td><b>+111</b><i>&mdash;</i></td><td>&mdash;</td><td><b>+228</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-130</b> / under <b>+130</b></div></div>
+  <div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:35:00Z">5:35 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/TOR.png" alt="TOR"></td><td class="l sp">T. Yesavage</td><td>25-32 <b>44%</b></td><td><b>-102</b><i class="sube">+1.0</i></td><td><b>+141</b><i class="sube">+1.0</i></td><td><b>+174</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/BAL.png" alt="BAL"></td><td class="l sp">S. Baz</td><td>23-28 <b>45%</b></td><td><b>+102</b><i class="baja">-1.0</i></td><td><b>+141</b><i>&mdash;</i></td><td><b>+208</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 7.5 &middot; over <b>+106</b> / under <b>-106</b> &middot; serie TOR <b>6-4</b>, media 10.5 c.</div></div><div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-21T22:40:00Z">5:40 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/WSH.png" alt="WSH"></td><td class="l sp">D. Herz</td><td class="r">18-29 <b>38%</b></td><td><b>+125</b><i class="sube">+2.0</i></td><td><b>+160</b><i class="sube">+2.0</i></td><td><b>+208</b><i class="sube">+2.0</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/DET.png" alt="DET"></td><td class="l sp">R. Ryan</td><td class="r">18-28 <b>39%</b></td><td><b>-125</b><i class="baja">-3.0</i></td><td><b>+120</b><i class="baja">-2.5</i></td><td><b>+167</b><i class="baja">-2.0</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-141</b> / under <b>+141</b></div></div><div class="jc3"><div class="jch3"><span class="hh mono"><time class="h-loc" data-utc="2026-09-22T01:45:00Z">8:45 PM</time></span></div><div class="tw"><table class="t9 t2"><colgroup><col class="c-eq"><col class="c-sp"><col class="c-vs"><col class="c-mk"><col class="c-mk"><col class="c-mk"><col class="c-mk"></colgroup><thead><tr><th class="l">EQ</th><th class="l">ABRIDOR</th><th>vs MANO</th><th>ML</th><th>F5</th><th>RL&minus;1.5</th><th>TT</th></tr></thead><tbody><tr class="b"><td class="eq"><img class="lgc" src="logos/MIN.png" alt="MIN"></td><td class="l sp">Z. Matthews</td><td>23-30 <b>43%</b></td><td><b>-111</b><i>&mdash;</i></td><td><b>+135</b><i>&mdash;</i></td><td><b>+153</b><i>&mdash;</i></td><td>&mdash;</td></tr><tr><td class="eq"><img class="lgc" src="logos/SF.png" alt="SF"></td><td class="l sp">B. Tidwell</td><td>24-29 <b>45%</b></td><td><b>+111</b><i>&mdash;</i></td><td><b>+153</b><i class="baja">-1.0</i></td><td><b>+228</b><i>&mdash;</i></td><td>&mdash;</td></tr></tbody></table></div><div class="pie2">Total 8 &middot; over <b>-130</b> / under <b>+130</b></div></div>
 
   <div class="sep"><span class="n">TEMPORADA</span><span class="ln"></span></div>
   <h2>La temporada, entera</h2>
@@ -1398,4 +1400,4 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
     if (!document.hidden) { mlb(); espn(); }
   });
 })();
-</script><!-- generado 09/21/2026 1:54 PM --></body></html>
+</script><!-- generado 09/21/2026 2:08 PM --></body></html>
