@@ -32,6 +32,13 @@ name: Reloj del dia (dispara el motor)
 # (data/plan_tandas_<fecha>.json) y lanza tanda.yml a las horas que ese plan
 # eligio. Con la misma llave: no hizo falta ni Cloudflare ni una llave nueva.
 #
+# LA AGENDA, EL RECOLECTOR DE KALSHI Y LA PRUEBA DE FUENTES (21-sep-2026). Vivian
+# solo de un cron del motor, y en el motor el cron llega con 2-4 horas de retraso (la
+# agenda de las 7:15 llegaba a las 11). Ahora los lanza el reloj: la agenda cada dia a
+# las 8:05, el recolector los lunes y jueves a las 8:40 y las fuentes los lunes a las
+# 9:15 (hora de Chicago en verano). Sus cron se quedan de respaldo: el recolector y las
+# fuentes no duplican nada, y la agenda mira si ya aviso hoy antes de avisar.
+#
 # LOS REFRESCOS DEL LAB TAMBIEN LOS PONE EL PLAN (14-sep-2026). Ya no van a las 4
 # horas fijas: uno ~45 min antes de cada bloque de partidos ("min_reloj_lab"). Si un
 # dia no hay plan, el reloj los lanza a las horas de siempre (minutos 140, 320, 500
@@ -136,8 +143,14 @@ jobs:
           #           datos de sobra y quedan mas de 3 horas de margen, que con
           #           el CLV en -1.44 pp importa: cada hora que pasa, el mercado
           #           se ajusta y el precio empeora.
+          #   AGENDA, RECOLECTOR, FUENTES (21-sep-2026) -> ver la cabecera. El
+          #           recolector y las fuentes solo salen los dias de su semana
+          #           (DIA_SEM, mas abajo); los demas dias se saltan sin esperar.
           TARGETS="
           0:picks.yml
+          5:agenda.yml
+          40:recolector
+          75:fuentes
           90:vigilante.yml
           215:cierre-captura.yml
           395:cierre-captura.yml
@@ -181,6 +194,7 @@ jobs:
           # vigilante y dos capturas, y con dos objetivos en el mismo minuto el reloj
           # da el segundo por pasado. El plan nunca los elige (RELOJ_FIJOS).
           JORNADA=$(date -u -d @$ANCLA +%F)
+          DIA_SEM=$(date -u -d @$ANCLA +%u)          # 1 = lunes ... 7 = domingo
           PLAN_URL="https://raw.githubusercontent.com/${{ github.repository }}/master/data/plan_tandas_${JORNADA}.json"
           # Hasta el 1080 desde el 18-sep: mas alla del 780 no hay tandas, solo los
           # avisos de resultados (data/avisos_res_<fecha>.json, ver mas abajo). El 790
@@ -205,7 +219,17 @@ jobs:
           for T in $TARGETS; do
             MIN="${T%%:*}"
             WF="${T##*:}"
-            [ "$MIN" -le "${DESDE:-0}" ] && continue
+            # EL TESTIGO VACIO VALE -1, NO 0 (21-sep-2026). Un reloj que despierta un cron
+            # no trae inputs: DESDE llega vacio y aqui valia 0, asi que se saltaba el
+            # minuto 0, el RUN de las 8:00. Los cron de arriba caen entre las 12:35 y las
+            # 12:58 UTC: uno que llegara puntual cancelaria al reloj bueno (que espera a
+            # las 13:00) y el dia se quedaba sin picks. Es el mismo fallo que el del
+            # 4-sep con el valor por defecto, por el otro camino.
+            [ "$MIN" -le "${DESDE:--1}" ] && continue
+            case "$WF" in
+              recolector) case "$DIA_SEM" in 1|4) ;; *) continue ;; esac ;;
+              fuentes)    [ "$DIA_SEM" = "1" ] || continue ;;
+            esac
 
             OBJ=$((ANCLA + MIN * 60))
             AHORA=$(date +%s)
@@ -276,6 +300,10 @@ jobs:
               continue
             fi
 
+            case "$WF" in
+              recolector) WF=backtest-recolectar.yml ;;
+              fuentes)    WF=probar-fuentes.yml ;;
+            esac
             CUERPO='{"ref":"main"}'
             if [ "$WF" = "picks.yml" ]; then
               CUERPO='{"ref":"main","inputs":{"arranca_reloj":"false"}}'
