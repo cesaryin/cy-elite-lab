@@ -1,0 +1,74 @@
+{
+ "TOR@BAL": {
+  "ml": {
+   "TOR": -107,
+   "BAL": -112
+  },
+  "total": {
+   "linea": 7.5,
+   "over": -115,
+   "under": -105
+  },
+  "spread": {
+   "TOR": {
+    "linea": -1.5,
+    "cuota": 154
+   },
+   "BAL": {
+    "linea": 1.5,
+    "cuota": -187
+   }
+  },
+  "inicio_utc": "2026-09-21T22:35Z",
+  "visto": "2026-09-21T07:00:50+00:00",
+  "cerrado": false
+ },
+ "WSH@DET": {
+  "ml": {
+   "WSH": 129,
+   "DET": -156
+  },
+  "total": {
+   "linea": 8.0,
+   "over": -119,
+   "under": -102
+  },
+  "spread": {
+   "WSH": {
+    "linea": 1.5,
+    "cuota": -167
+   },
+   "DET": {
+    "linea": -1.5,
+    "cuota": 138
+   }
+  },
+  "inicio_utc": "2026-09-21T22:40Z",
+  "visto": "2026-09-21T07:00:50+00:00",
+  "cerrado": false
+ },
+ "MIN@SF": {
+  "ml": {
+   "MIN": -118,
+   "SF": -102
+  },
+  "total": {
+   "linea": 8.0,
+   "over": -118,
+   "under": -102
+  },
+  "spread": {
+   "MIN": {
+    "linea": -1.5,
+    "cuota": 144
+   },
+   "SF": {
+    "linea": 1.5,
+    "cuota": -175
+   }
+  },
+  "inicio_utc": "2026-09-22T01:45Z",
+  "visto": "2026-09-21T07:00:50+00:00",
+  "cerrado": false
+ }
+}
