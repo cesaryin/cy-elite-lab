@@ -1,8 +1,238 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "WSH/DET o8.5",
+      "deporte": "MLB",
+      "tipo": "o8.5",
+      "cuota": -115,
+      "prob_estimada": 54.5,
+      "razon": "Dos abridores sin carga de trabajo fiable (D. Herz vuelve de IL de 60 dias y R. Ryan sube de menores hoy) obligan a bullpens largos, y el de WSH esta a 4.26 con Tolman, Dion y Cruz quemados dos dias seguidos. WSH viene de 5.2 c/j y DET de 5.6 anotadas en sus ultimos 10; viento 6.2 mph hacia afuera y umpire +2.4%.",
+      "equipos": [
+        "WSH",
+        "DET"
+      ],
+      "destacado": null,
+      "hora": "5:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "bullpen",
+        "ofensiva",
+        "clima",
+        "umpire"
+      ],
+      "contra": "Si Ryan y Herz aguantan cinco entradas limpias con 59F y DET mete a Holton-Jansen, el juego se queda en 7 y el numero se cae.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.5
+      },
+      "inicio_utc": "2026-09-21T22:40:00Z",
+      "cuota_apertura_ref": -114,
+      "valor": {
+        "prob_estimada": 54.5,
+        "prob_justa": 51.08,
+        "prob_implicita": 53.49,
+        "cuota": -115,
+        "cuota_justa_mercado": -104,
+        "ev_pct": 1.89,
+        "ev_kalshi_pct": -1.37,
+        "precio_minimo": -112,
+        "precio_publicado": -112,
+        "precio_equilibrio": -119,
+        "discrepancia_pp": 3.42,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.89% por debajo del minimo exigido (2.9%)",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "mov_linea": 0.5
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 5,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-21T22:00:20Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "MIN/SF o8.5",
+      "deporte": "MLB",
+      "tipo": "o8.5",
+      "cuota": -105,
+      "prob_estimada": 52.0,
+      "razon": "Duelo de abridores flojos: Z. Matthews 4.74 y B. Tidwell 4.56 con FIP multianual 5.23, mas dos bullpens por encima de 3.95 y 4.36. SF ha pasado el 8.5 en 8 de sus ultimos 10 (4.6 a favor y 5.7 en contra) y hoy sopla viento de 11 mph hacia el jardin central con umpire de +5.0% en carreras.",
+      "equipos": [
+        "MIN",
+        "SF"
+      ],
+      "destacado": null,
+      "hora": "8:45 PM CT",
+      "capas": [
+        "pitcheo",
+        "bullpen",
+        "clima",
+        "umpire",
+        "forma"
+      ],
+      "contra": "Oracle Park sigue siendo el parque mas supresor del grupo (pf 94) y las dos ofensivas estan en ~4.0 c/j en la semana; la ventaja aqui es pequena.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.5
+      },
+      "inicio_utc": "2026-09-22T01:45:00Z",
+      "cuota_apertura_ref": -105,
+      "valor": {
+        "prob_estimada": 52.0,
+        "prob_justa": 48.92,
+        "prob_implicita": 51.22,
+        "cuota": -105,
+        "cuota_justa_mercado": 104,
+        "ev_pct": 1.52,
+        "ev_kalshi_pct": -1.89,
+        "precio_minimo": -103,
+        "precio_publicado": -103,
+        "precio_equilibrio": -108,
+        "discrepancia_pp": 3.08,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.52% por debajo del minimo exigido (2.3%)",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "mov_linea": 0.5
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 10,
+        "no_encontrados": [],
+        "campo_equivocado": [
+          {
+            "numero": "5.7",
+            "frase": ". SF ha pasado el 8.5 en 8 de sus ultimos 10 (4.6 a favor y 5.7 en contra) y hoy so",
+            "esta_en": [
+              "forma.home.carreras_contra"
+            ]
+          }
+        ],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-21T22:00:20Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": false,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "TOR/BAL u7.5",
+      "deporte": "MLB",
+      "tipo": "u7.5",
+      "cuota": -115,
+      "prob_estimada": 53.0,
+      "razon": "Las dos ofensivas estan frias a la vez: TOR .600 de ops y 3.5 c/j, BAL .219 de avg y 3.5 c/j en la semana. Bullpen de TOR a 3.18 con L. Varland (1.29) y BAL recupera a F. Bautista; viento de 5 mph entrando y umpire de -0.9%. Ventaja corta y lo digo: el precio ya paga casi lo justo.",
+      "equipos": [
+        "TOR",
+        "BAL"
+      ],
+      "destacado": null,
+      "hora": "5:35 PM CT",
+      "capas": [
+        "ofensiva",
+        "bullpen",
+        "clima",
+        "umpire"
+      ],
+      "contra": "Camden es parque de bateo (pf 104) y T. Yesavage vuelve de IL con 2.0 IP en su ultima salida: si dura tres entradas, el bullpen de TOR (Sewald y Rogers quemados) tiene que cubrir demasiado.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.5
+      },
+      "inicio_utc": "2026-09-21T22:35:00Z",
+      "cuota_apertura_ref": -118,
+      "valor": {
+        "prob_estimada": 53.0,
+        "prob_justa": 51.2,
+        "prob_implicita": 53.49,
+        "cuota": -115,
+        "cuota_justa_mercado": -105,
+        "ev_pct": -0.91,
+        "ev_kalshi_pct": -4.17,
+        "precio_minimo": -106,
+        "precio_publicado": -106,
+        "precio_equilibrio": -112,
+        "discrepancia_pp": 1.8,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -0.91% por debajo del minimo exigido (2.9%)",
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-21T22:00:20Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
   "resumen": "",
-  "descartes": [],
+  "descartes": [
+    "TOR/BAL ML: consenso exactamente 50/50 sin vig y ambas ofensivas en 3.5 c/j; no tengo forma de separar los lados.",
+    "WSH ML +114: el dinero acorto la linea hacia WSH, pero con dos abridores sin muestra fiable no tengo base para superar el 45% de la linea justa.",
+    "MIN ML -124: la ofensiva de MIN viene con .664 de ops y 4.1 c/j; SYS-004 no respalda pagar favorito con ese lineup.",
+    "F5 de Kalshi en los tres juegos: vig de ~1-3 pp, mercados muy limpios y ninguna de mis estimaciones se separa de la justa.",
+    "Spreads -1.5: ninguna de las ventajas identificadas es de margen, son de volumen de carreras."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-09-21",
@@ -55,14 +285,38 @@
       ],
       "sin_tanda": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-09-21T22:00:20Z",
+        "min_ct": 1020,
+        "claves": [
+          "TOR@BAL@2026-09-21T22:35:00Z",
+          "WSH@DET@2026-09-21T22:40:00Z",
+          "MIN@SF@2026-09-22T01:45:00Z"
+        ],
+        "juegos": [
+          "TOR@BAL",
+          "WSH@DET",
+          "MIN@SF"
+        ],
+        "alineaciones": [
+          5,
+          6
+        ],
+        "senales": [],
+        "sin_ventaja": 3,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 3-0 (+2.80 U).\n• MIA/SD o8.0 (SEÑAL ELITE), ganada: MIA 3-7 SD, 10 carreras con la línea en 8.0.\n• TB F5 ML (SEÑAL ELITE), ganada: BOS 1-5 TB.\n• PHI F5 ML (SEÑAL FUERTE), ganada: PHI 7-2 NYM.\n3 ganadas con ventaja medida.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 0,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
-    "ev_min": null
+    "ev_min": 2.0
   }
 }
