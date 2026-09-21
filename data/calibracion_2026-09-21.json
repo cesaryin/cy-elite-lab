@@ -812,6 +812,32 @@
    "alarma": null
   },
   {
+   "id": "mercado.dinero",
+   "area": "Mercado",
+   "pregunta": "¿El lado hacia el que se mueve el consenso se cumple más de lo que pide? (lo que enseña el Mercado)",
+   "minimo": 150,
+   "estado": "sin muestra",
+   "n": 52,
+   "texto": "el lado hacia el que se movió el consenso se cumple 42.3% necesitando 55.1% (margen -12.8)",
+   "datos": {
+    "acierto": 42.3,
+    "necesita": 55.1,
+    "margen": -12.8
+   },
+   "alarma": null
+  },
+  {
+   "id": "mercado.regla_under",
+   "area": "Mercado",
+   "pregunta": "¿La regla del under se cumple en vivo más de lo que pide su precio?",
+   "minimo": 40,
+   "estado": "sin muestra",
+   "n": 0,
+   "texto": "se mide desde el 2026-09-28, cuando se abre el informe de octubre",
+   "datos": null,
+   "alarma": null
+  },
+  {
    "id": "sistema.archivo",
    "area": "Sistema",
    "pregunta": "¿Se guardó ayer todo lo que se tiene que guardar?",
@@ -887,7 +913,7 @@
  ],
  "cuenta": {
   "medida": 12,
-  "sin muestra": 22,
+  "sin muestra": 24,
   "alarma": 0,
   "error": 0
  }
