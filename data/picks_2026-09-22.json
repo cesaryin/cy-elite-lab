@@ -1,8 +1,230 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "PIT F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": -100,
+      "prob_estimada": 52.5,
+      "razon": "A dinero parejo el mercado limpio da a PIT 48,6% en las cinco entradas y la discrepancia esta en el bate: STL llega con .589 de ops y 3,8 carreras por juego en la semana frente a un abridor local con 28,7% de ponches, mientras PIT batea .895 de ops y 5,0 c/j. Pallante apenas poncha (16,5%) contra un lineup caliente.",
+      "equipos": [
+        "STL",
+        "PIT"
+      ],
+      "destacado": "PIT",
+      "hora": "5:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "matchup"
+      ],
+      "contra": "J. Jones tiene 4.17 de ERA y una salida corta puede costar un inning grande temprano; en el F5 de consenso un empate devuelve el dinero, pero en el precio de Kalshi el empate pierde.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "PIT",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-22T22:40:00Z",
+      "valor": {
+        "prob_estimada": 52.5,
+        "prob_justa": null,
+        "prob_implicita": 50.0,
+        "cuota": -100,
+        "cuota_justa_mercado": null,
+        "ev_pct": 5.0,
+        "ev_kalshi_pct": 1.5,
+        "precio_minimo": -106,
+        "precio_publicado": -106,
+        "precio_equilibrio": -110,
+        "discrepancia_pp": null,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +5.00% · no tomar peor de -106",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "MEDIA"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 3,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-22T22:00:18Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "DET F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": -104,
+      "prob_estimada": 53.0,
+      "razon": "R. Cornelio reparte boletos al 17,6% y sus dos ultimas salidas fueron de 2 y 3 entradas: WSH mete su bullpen (4.34) dentro del propio F5. DET llega con .280 y .823 de ops en la semana (4,9 c/j) y su abridor viene de 5 entradas sin carrera.",
+      "equipos": [
+        "WSH",
+        "DET"
+      ],
+      "destacado": "DET",
+      "hora": "5:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "bullpen"
+      ],
+      "contra": "Un abridor de muy pocos bateadores enfrentados puede dominar cinco entradas y WSH tiene .733 de ops contra derechos; ademas el empate en el precio de Kalshi pierde.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "DET",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-22T22:40:00Z",
+      "valor": {
+        "prob_estimada": 53.0,
+        "prob_justa": null,
+        "prob_implicita": 50.98,
+        "cuota": -104,
+        "cuota_justa_mercado": null,
+        "ev_pct": 3.96,
+        "ev_kalshi_pct": 0.53,
+        "precio_minimo": -107,
+        "precio_publicado": -107,
+        "precio_equilibrio": -112,
+        "discrepancia_pp": null,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +3.96% · no tomar peor de -107",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 4,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-22T22:00:18Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true,
+        "gratis": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "TEX ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -126,
+      "prob_estimada": 57.0,
+      "razon": "La brecha de relevo es la capa principal: 3.32 de TEX contra 4.98 de NYM, y TEX batea .767 de ops contra zurdos frente a un S. Manaea que no pasa de 5-6 entradas. Es el analisis mas flojo de los tres: la ventaja sobre la linea justa es corta y M. Gore llega con tres salidas malas.",
+      "equipos": [
+        "NYM",
+        "TEX"
+      ],
+      "destacado": "TEX",
+      "hora": "7:05 PM CT",
+      "capas": [
+        "bullpen",
+        "ofensiva",
+        "matchup"
+      ],
+      "contra": "M. Gore viene de 4, 4 y 3 entradas con 3, 4 y 5 limpias: si repite, TEX entrega el juego antes de que su bullpen pese, y la alineacion de NYM no esta publicada.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TEX",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-23T00:05:00Z",
+      "cuota_apertura_ref": -133,
+      "valor": {
+        "prob_estimada": 57.0,
+        "prob_justa": 53.7,
+        "prob_implicita": 55.75,
+        "cuota": -126,
+        "cuota_justa_mercado": -116,
+        "ev_pct": 2.24,
+        "ev_kalshi_pct": -0.86,
+        "precio_minimo": -122,
+        "precio_publicado": -122,
+        "precio_equilibrio": -132,
+        "discrepancia_pp": 3.3,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +2.24% por debajo del minimo exigido (3.4%)",
+        "mejor_precio": {
+          "cuota": -119,
+          "casa": "betonlineag"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": false,
+          "delta_pp": 2.8
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": true
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 3,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-22T22:00:18Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": false,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
-  "resumen": "",
-  "descartes": [],
+  "resumen": "Dia con poco margen en los moneyline y el valor concentrado en las cinco entradas. En PNC el cruce es claro: un lineup visitante congelado (.589 de ops, 3,8 c/j) contra un abridor local que poncha al 28,7%, mientras PIT batea .895 en la semana frente a un derecho de apenas 16,5% de ponches. En Detroit el abridor visitante no controla la zona (17,6% de boletos) y sus dos ultimas salidas duraron 2 y 3 entradas, asi que el bullpen de 4.34 de WSH entra dentro del propio F5 contra la ofensiva mas caliente de la tanda. El de Texas es mas flojo y se marca como tal: la ventaja viene del bullpen (3.32 contra 4.98) y del .767 de TEX ante zurdos, pero su abridor llega en mal momento.",
+  "descartes": [
+    "TB/NYY: el under de 6.0 ya esta muy bajo y NYY suma 5,6 c/j con 8 de 10 juegos pasados de 8.5; el ML de NYY no se separa lo suficiente del 53,8% justo.",
+    "MIL/PHI: PHI a -141 con su ofensiva en 3,7 c/j y .648 de ops no da margen, y MIL viene de 6,8 c/j en diez juegos, lo que revienta el under de 7.0.",
+    "CLE/BOS: BOS con 2,5 c/j y .597 de ops en la semana no sostiene un ML, y CLE castiga poco a los zurdos (.671); el total ya bajo de 6.5 a 6.0.",
+    "CIN/ATL: ML fuera de banda y el spread de ATL -1.5 se apoya en un abridor con 5.03 de ERA y 13,7% de boletos, sin ventaja clara sobre el 50,2% justo.",
+    "CWS/KC: el bullpen de CWS es muy superior pero el precio ya lo paga; sin discrepancia contra el 52,2% justo.",
+    "MIA/CHC: precios de ML fuera de banda y el under de 6.5 choca con CHC en 5,8 c/j.",
+    "STL/PIT ML: PIT a -165 queda fuera de la banda de precio; el valor del juego esta en las cinco entradas."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-09-22",
@@ -130,14 +352,53 @@
         "TB@NYY"
       ]
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-09-22T22:00:18Z",
+        "min_ct": 1020,
+        "claves": [
+          "TB@NYY@2026-09-22T23:05:00Z",
+          "WSH@DET@2026-09-22T22:40:00Z",
+          "STL@PIT@2026-09-22T22:40:00Z",
+          "MIL@PHI@2026-09-22T22:40:00Z",
+          "CLE@BOS@2026-09-22T22:45:00Z",
+          "CIN@ATL@2026-09-22T23:15:00Z",
+          "CWS@KC@2026-09-22T23:40:00Z",
+          "MIA@CHC@2026-09-22T23:40:00Z",
+          "NYM@TEX@2026-09-23T00:05:00Z"
+        ],
+        "juegos": [
+          "TB@NYY",
+          "WSH@DET",
+          "STL@PIT",
+          "MIL@PHI",
+          "CLE@BOS",
+          "CIN@ATL",
+          "CWS@KC",
+          "MIA@CHC",
+          "NYM@TEX"
+        ],
+        "alineaciones": [
+          17,
+          18
+        ],
+        "senales": [
+          "PIT F5 ML",
+          "DET F5 ML"
+        ],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 3-0 (+2.80 U).\n• MIA/SD o8.0 (SEÑAL ELITE), ganada: MIA 3-7 SD, 10 carreras con la línea en 8.0.\n• TB F5 ML (SEÑAL ELITE), ganada: BOS 1-5 TB.\n• PHI F5 ML (SEÑAL FUERTE), ganada: PHI 7-2 NYM.\n3 ganadas con ventaja medida.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 0,
-    "seguimiento": 0,
+    "apostables": 2,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
-    "riesgo_u": 0.0,
-    "ev_min": null
+    "riesgo_u": 2.0,
+    "ev_min": 2.0
   }
 }
