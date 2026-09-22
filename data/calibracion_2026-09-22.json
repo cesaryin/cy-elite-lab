@@ -46,8 +46,8 @@
    "pregunta": "¿Lo que lleva dinero acierta más que lo que se queda sin él?",
    "minimo": 30,
    "estado": "medida",
-   "n": 34,
-   "texto": "con dinero 25-22 (margen 2.8) · sin dinero 16-18 (margen -5.6)",
+   "n": 37,
+   "texto": "con dinero 25-22 (margen 2.8) · sin dinero 18-19 (margen -4.0)",
    "datos": {
     "con_dinero": {
      "n": 47,
@@ -59,12 +59,12 @@
      "neto": 2.6
     },
     "sin_dinero": {
-     "n": 34,
-     "w": 16,
-     "l": 18,
-     "acierto": 47.1,
+     "n": 37,
+     "w": 18,
+     "l": 19,
+     "acierto": 48.6,
      "necesita": 52.7,
-     "margen": -5.6,
+     "margen": -4.0,
      "neto": 0.0
     }
    },
@@ -486,25 +486,25 @@
    "pregunta": "¿Acierta más en partidos con noticias de impacto alto?",
    "minimo": 30,
    "estado": "sin muestra",
-   "n": 7,
-   "texto": "partido con noticia de impacto alto 6-1 (margen +33.5) · sin noticia de impacto alto 14-10 (margen +6.8)",
+   "n": 9,
+   "texto": "partido con noticia de impacto alto 8-1 (margen +36.4) · sin noticia de impacto alto 14-11 (margen +4.5)",
    "datos": {
     "partido con noticia de impacto alto": {
-     "n": 7,
-     "w": 6,
+     "n": 9,
+     "w": 8,
      "l": 1,
-     "acierto": 85.7,
-     "necesita": 52.3,
-     "margen": 33.5,
+     "acierto": 88.9,
+     "necesita": 52.5,
+     "margen": 36.4,
      "neto": 1.09
     },
     "sin noticia de impacto alto": {
-     "n": 24,
+     "n": 25,
      "w": 14,
-     "l": 10,
-     "acierto": 58.3,
+     "l": 11,
+     "acierto": 56.0,
      "necesita": 51.5,
-     "margen": 6.8,
+     "margen": 4.5,
      "neto": 5.2
     }
    },
