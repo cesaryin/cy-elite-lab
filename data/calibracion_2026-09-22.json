@@ -788,11 +788,11 @@
    "pregunta": "¿Nuestro ranking de abridores se parece al de la referencia?",
    "minimo": 20,
    "estado": "medida",
-   "n": 69,
-   "texto": "ranking de abridores contra la referencia: correlación +0.750 · error mediano 22 puestos",
+   "n": 96,
+   "texto": "ranking de abridores contra la referencia: correlación +0.792 · error mediano 21 puestos",
    "datos": {
-    "correlacion": 0.75,
-    "error_mediano": 22
+    "correlacion": 0.792,
+    "error_mediano": 21.5
    },
    "alarma": null
   },
@@ -835,6 +835,20 @@
    "n": 0,
    "texto": "se mide desde el 2026-09-28, cuando se abre el informe de octubre",
    "datos": null,
+   "alarma": null
+  },
+  {
+   "id": "mercado.clv_consenso",
+   "area": "Mercado",
+   "pregunta": "¿El precio de los análisis mejora al cierre del consenso? (CLV, dato de apoyo)",
+   "minimo": 30,
+   "estado": "sin muestra",
+   "n": 5,
+   "texto": "CLV contra el consenso -0.00 pp de media; mejora el cierre en el 60% (5)",
+   "datos": {
+    "clv_pp": -0.0,
+    "bate_cierre": 60.0
+   },
    "alarma": null
   },
   {
@@ -922,7 +936,7 @@
  ],
  "cuenta": {
   "medida": 13,
-  "sin muestra": 23,
+  "sin muestra": 24,
   "alarma": 0,
   "error": 0
  }
