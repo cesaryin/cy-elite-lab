@@ -49,26 +49,26 @@
  },
  "MIN@SF": {
   "ml": {
-   "MIN": -125,
-   "SF": 104
+   "MIN": -132,
+   "SF": 109
   },
   "total": {
    "linea": 8.0,
-   "over": -113,
-   "under": -106
+   "over": -110,
+   "under": -110
   },
   "spread": {
    "MIN": {
     "linea": -1.5,
-    "cuota": 135
+    "cuota": 133
    },
    "SF": {
     "linea": 1.5,
-    "cuota": -163
+    "cuota": -161
    }
   },
   "inicio_utc": "2026-09-22T01:45Z",
-  "visto": "2026-09-22T01:06:52+00:00",
+  "visto": "2026-09-22T01:10:12+00:00",
   "cerrado": false
  }
 }
