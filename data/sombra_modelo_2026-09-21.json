@@ -7,7 +7,187 @@
    "n": 1,
    "lote": "msgbatch_017PUN9eAhphTWazFdejWVrL",
    "enviado_utc": "2026-09-21T22:01:46Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-22T13:00:26Z",
+   "uso": {
+    "tokens_entrada": 28726,
+    "tokens_salida": 3851,
+    "coste": 0.2399
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "BAL ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -108,
+     "prob_estimada": 53.0,
+     "razon": "El mercado lo pone a 50/50, pero el juego se decide en el bullpen y ahi BAL llega fresco (3.3 IP en dos dias, F. Bautista de vuelta) mientras TOR tiene a P. Sewald y T. Rogers quemados y a L. Varland usado ayer. T. Yesavage vuelve hoy de la IL sin lanzar desde agosto, lo que empuja el juego antes hacia ese bullpen. Ofensiva BAL .677 ops y 10 hr en la semana contra .600 de TOR.",
+     "equipos": [
+      "TOR",
+      "BAL"
+     ],
+     "destacado": "BAL",
+     "hora": "5:35 PM CT",
+     "capas": [
+      "bullpen",
+      "ofensiva",
+      "pitcheo"
+     ],
+     "contra": "S. Baz viene de dos salidas flojas (5 er y 3 er) y el bullpen de TOR, aun cansado, es mejor en ERA de temporada (3.18 vs 3.77).",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "BAL",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -108,
+     "valor": {
+      "prob_estimada": 53.0,
+      "prob_justa": 50.0,
+      "prob_implicita": 51.92,
+      "cuota": -108,
+      "cuota_justa_mercado": -100,
+      "ev_pct": 2.07,
+      "ev_kalshi_pct": -1.3,
+      "precio_minimo": -107,
+      "precio_publicado": -107,
+      "precio_equilibrio": -112,
+      "discrepancia_pp": 3.0,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +2.07% por debajo del minimo exigido (2.5%)",
+      "mejor_precio": {
+       "cuota": -103,
+       "casa": "lowvig"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": true,
+       "extra_umbral_plano": true
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "WSH/DET o8.5",
+     "deporte": "MLB",
+     "tipo": "o8.5",
+     "cuota": -115,
+     "prob_estimada": 53.5,
+     "razon": "Dos abridores sin muestra en MLB este año (D. Herz vuelve de la IL de 60 dias, R. Ryan recien llamado): juego de bullpens, y el de WSH llega con tres relevistas quemados y 4.26 de ERA. Ofensivas activas (WSH 5.2 c/j, DET 4.4 c/j y .734 ops en la semana), viento 6 mph hacia afuera y umpire +2.4% en carreras.",
+     "equipos": [
+      "WSH",
+      "DET"
+     ],
+     "destacado": null,
+     "hora": "5:40 PM CT",
+     "capas": [
+      "ofensiva",
+      "bullpen",
+      "clima",
+      "umpire"
+     ],
+     "contra": "La linea ya subio de 8.0 a 8.5 con fuerza, asi que parte de este argumento ya esta en el precio, y el bullpen de DET (3.40) puede tapar el cierre.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "over",
+      "linea": 8.5
+     },
+     "cuota_apertura_ref": -114,
+     "valor": {
+      "prob_estimada": 53.5,
+      "prob_justa": 51.08,
+      "prob_implicita": 53.49,
+      "cuota": -115,
+      "cuota_justa_mercado": -104,
+      "ev_pct": 0.02,
+      "ev_kalshi_pct": -3.24,
+      "precio_minimo": -108,
+      "precio_publicado": -108,
+      "precio_equilibrio": -115,
+      "discrepancia_pp": 2.42,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +0.02% por debajo del minimo exigido (2.9%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE",
+       "a_favor": true,
+       "mov_linea": 0.5
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "MIN ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -124,
+     "prob_estimada": 55.0,
+     "razon": "Ventaja corta y lo digo: B. Tidwell lleva 9.5% de bb y FIP multi 5.23, SF permite 5.7 c/j en sus ultimos 10 y su alineacion aun no esta publicada con media lista de titulares en la IL. MIN batea .740 ops vs derechos en la temporada y llega a 4.1 c/j en la semana.",
+     "equipos": [
+      "MIN",
+      "SF"
+     ],
+     "destacado": "MIN",
+     "hora": "8:45 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma"
+     ],
+     "contra": "Z. Matthews (4.74 ERA) alterna salidas de 0 y 5 carreras, la ofensiva de MIN viene fria (.664 ops) y la alineacion de SF sin publicar es un hueco que puede sorprender.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "MIN",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -124,
+     "valor": {
+      "prob_estimada": 55.0,
+      "prob_justa": 53.52,
+      "prob_implicita": 55.36,
+      "cuota": -124,
+      "cuota_justa_mercado": -115,
+      "ev_pct": -0.65,
+      "ev_kalshi_pct": -3.77,
+      "precio_minimo": -113,
+      "precio_publicado": -113,
+      "precio_equilibrio": -122,
+      "discrepancia_pp": 1.48,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV -0.65% por debajo del minimo exigido (3.3%)",
+      "mejor_precio": {
+       "cuota": -118,
+       "casa": "betus"
+      },
+      "alcanzable": false,
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda corta de tres juegos con abridores de poca muestra. La lectura mas clara esta en BAL, donde el mercado paga 50/50 sin descontar el bullpen cansado de TOR ni la vuelta de T. Yesavage. En WSH/DET, dos abridores sin recorrido, bullpen de WSH quemado y clima a favor del bateo apoyan el over 8.5, aunque la linea ya subio. MIN contra SF es la lectura mas floja: abridor rival descontrolado y alineacion local sin publicar, pero con ventaja corta."
   }
  ]
 }

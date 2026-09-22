@@ -1,0 +1,929 @@
+{
+ "fecha": "2026-09-22",
+ "medidas": [
+  {
+   "id": "cerebro.calibracion",
+   "area": "Cerebro",
+   "pregunta": "Cuando dice X%, ¿gana X%?",
+   "minimo": 100,
+   "estado": "sin muestra",
+   "n": 64,
+   "texto": "se desvía -3.2 puntos de media (negativo = se cree más de lo que acierta)",
+   "datos": {
+    "bandas": {
+     "0-50": {
+      "n": 15,
+      "dice": 47.9,
+      "gana": 46.7
+     },
+     "50-55": {
+      "n": 37,
+      "dice": 52.7,
+      "gana": 48.6
+     }
+    },
+    "desvio": -3.2
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.brier",
+   "area": "Cerebro",
+   "pregunta": "¿Su probabilidad le gana a la del mercado?",
+   "minimo": 100,
+   "estado": "sin muestra",
+   "n": 50,
+   "texto": "Brier del cerebro 0.2565 contra 0.2527 del mercado: gana el mercado",
+   "datos": {
+    "cerebro": 0.2565,
+    "mercado": 0.2527
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.filtro",
+   "area": "Cerebro",
+   "pregunta": "¿Lo que lleva dinero acierta más que lo que se queda sin él?",
+   "minimo": 30,
+   "estado": "medida",
+   "n": 34,
+   "texto": "con dinero 25-22 (margen 2.8) · sin dinero 16-18 (margen -5.6)",
+   "datos": {
+    "con_dinero": {
+     "n": 47,
+     "w": 25,
+     "l": 22,
+     "acierto": 53.2,
+     "necesita": 50.4,
+     "margen": 2.8,
+     "neto": 2.6
+    },
+    "sin_dinero": {
+     "n": 34,
+     "w": 16,
+     "l": 18,
+     "acierto": 47.1,
+     "necesita": 52.7,
+     "margen": -5.6,
+     "neto": 0.0
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.medallas",
+   "area": "Cerebro",
+   "pregunta": "¿Elite acierta más que Fuerte, y Fuerte más que Moderada?",
+   "minimo": 30,
+   "estado": "sin muestra",
+   "n": 12,
+   "texto": "Elite 8-13 (margen -12.7) · Fuerte 9-5 (margen +13.3) · Moderada 8-4 (margen +17.6)",
+   "datos": {
+    "Elite": {
+     "n": 21,
+     "w": 8,
+     "l": 13,
+     "acierto": 38.1,
+     "necesita": 50.7,
+     "margen": -12.7,
+     "neto": -5.53
+    },
+    "Fuerte": {
+     "n": 14,
+     "w": 9,
+     "l": 5,
+     "acierto": 64.3,
+     "necesita": 50.9,
+     "margen": 13.3,
+     "neto": 3.7
+    },
+    "Moderada": {
+     "n": 12,
+     "w": 8,
+     "l": 4,
+     "acierto": 66.7,
+     "necesita": 49.1,
+     "margen": 17.6,
+     "neto": 4.43
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.mercados",
+   "area": "Cerebro",
+   "pregunta": "¿En qué mercado acierta más de lo que exige el precio?",
+   "minimo": 30,
+   "estado": "sin muestra",
+   "n": 15,
+   "texto": "F5 ML 6-4 (margen +10.0) · ganador (ML) 9-10 (margen -2.1) · run line 2-0 (margen +53.9) · total de equipo 0-1 (margen -55.8) · total del juego 8-7 (margen +1.4)",
+   "datos": {
+    "F5 ML": {
+     "n": 10,
+     "w": 6,
+     "l": 4,
+     "acierto": 60.0,
+     "necesita": 50.0,
+     "margen": 10.0,
+     "neto": 1.83
+    },
+    "ganador (ML)": {
+     "n": 19,
+     "w": 9,
+     "l": 10,
+     "acierto": 47.4,
+     "necesita": 49.5,
+     "margen": -2.1,
+     "neto": -0.83
+    },
+    "run line": {
+     "n": 2,
+     "w": 2,
+     "l": 0,
+     "acierto": 100.0,
+     "necesita": 46.1,
+     "margen": 53.9,
+     "neto": 2.34
+    },
+    "total de equipo": {
+     "n": 1,
+     "w": 0,
+     "l": 1,
+     "acierto": 0.0,
+     "necesita": 55.8,
+     "margen": -55.8,
+     "neto": -1.0
+    },
+    "total del juego": {
+     "n": 15,
+     "w": 8,
+     "l": 7,
+     "acierto": 53.3,
+     "necesita": 52.0,
+     "margen": 1.4,
+     "neto": 0.26
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.capas",
+   "area": "Cerebro",
+   "pregunta": "¿Qué capas que cita predicen y cuáles solo acompañan?",
+   "minimo": 30,
+   "estado": "medida",
+   "n": 30,
+   "texto": "bullpen 10-12 (margen -4.3) · forma 8-8 (margen +0.4) · matchup 7-5 (margen +9.1) · mercado 0-1 (margen -54.5) · modelo 0-4 (margen -50.8) · ofensiva 18-21 (margen -3.6) · parque 1-3 (margen -23.8) · pitcheo 12-18 (margen -9.9)",
+   "datos": {
+    "bullpen": {
+     "n": 22,
+     "w": 10,
+     "l": 12,
+     "acierto": 45.5,
+     "necesita": 49.8,
+     "margen": -4.3,
+     "neto": 1.66
+    },
+    "forma": {
+     "n": 16,
+     "w": 8,
+     "l": 8,
+     "acierto": 50.0,
+     "necesita": 49.6,
+     "margen": 0.4,
+     "neto": -0.79
+    },
+    "matchup": {
+     "n": 12,
+     "w": 7,
+     "l": 5,
+     "acierto": 58.3,
+     "necesita": 49.2,
+     "margen": 9.1,
+     "neto": 1.97
+    },
+    "mercado": {
+     "n": 1,
+     "w": 0,
+     "l": 1,
+     "acierto": 0.0,
+     "necesita": 54.5,
+     "margen": -54.5,
+     "neto": 0.0
+    },
+    "modelo": {
+     "n": 4,
+     "w": 0,
+     "l": 4,
+     "acierto": 0.0,
+     "necesita": 50.8,
+     "margen": -50.8,
+     "neto": -2.0
+    },
+    "ofensiva": {
+     "n": 39,
+     "w": 18,
+     "l": 21,
+     "acierto": 46.2,
+     "necesita": 49.8,
+     "margen": -3.6,
+     "neto": 1.46
+    },
+    "parque": {
+     "n": 4,
+     "w": 1,
+     "l": 3,
+     "acierto": 25.0,
+     "necesita": 48.8,
+     "margen": -23.8,
+     "neto": -1.0
+    },
+    "pitcheo": {
+     "n": 30,
+     "w": 12,
+     "l": 18,
+     "acierto": 40.0,
+     "necesita": 49.9,
+     "margen": -9.9,
+     "neto": -0.82
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.alineaciones",
+   "area": "Cerebro",
+   "pregunta": "¿Con las alineaciones publicadas elige mejor?",
+   "minimo": 30,
+   "estado": "sin muestra",
+   "n": 1,
+   "texto": "con alineaciones 9-4 (margen +19.9) · sin alineaciones 1-0 (margen +46.1) · antes del 14-sep (a las 8:00) 15-18 (margen -5.2)",
+   "datos": {
+    "con alineaciones": {
+     "n": 13,
+     "w": 9,
+     "l": 4,
+     "acierto": 69.2,
+     "necesita": 49.3,
+     "margen": 19.9,
+     "neto": 5.44
+    },
+    "sin alineaciones": {
+     "n": 1,
+     "w": 1,
+     "l": 0,
+     "acierto": 100.0,
+     "necesita": 53.9,
+     "margen": 46.1,
+     "neto": 0.85
+    },
+    "antes del 14-sep (a las 8:00)": {
+     "n": 33,
+     "w": 15,
+     "l": 18,
+     "acierto": 45.5,
+     "necesita": 50.7,
+     "margen": -5.2,
+     "neto": -3.69
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.citas",
+   "area": "Cerebro",
+   "pregunta": "¿Los análisis con citas dudosas aciertan menos?",
+   "minimo": 30,
+   "estado": "sin muestra",
+   "n": 2,
+   "texto": "con citas dudosas 2-0 (margen +51.1) · sin citas dudosas 8-4 (margen +16.9)",
+   "datos": {
+    "con citas dudosas": {
+     "n": 2,
+     "w": 2,
+     "l": 0,
+     "acierto": 100.0,
+     "necesita": 48.9,
+     "margen": 51.1,
+     "neto": 2.1
+    },
+    "sin citas dudosas": {
+     "n": 12,
+     "w": 8,
+     "l": 4,
+     "acierto": 66.7,
+     "necesita": 49.7,
+     "margen": 16.9,
+     "neto": 4.19
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.ev",
+   "area": "Cerebro",
+   "pregunta": "¿Más valor esperado acierta más?",
+   "minimo": 30,
+   "estado": "sin muestra",
+   "n": 15,
+   "texto": "EV 3-5 13-11 (margen +3.3) · EV 5+ 4-4 (margen -0.3) · EV < 3 8-7 (margen +3.6)",
+   "datos": {
+    "EV 3-5": {
+     "n": 24,
+     "w": 13,
+     "l": 11,
+     "acierto": 54.2,
+     "necesita": 50.8,
+     "margen": 3.3,
+     "neto": 1.46
+    },
+    "EV 5+": {
+     "n": 8,
+     "w": 4,
+     "l": 4,
+     "acierto": 50.0,
+     "necesita": 50.3,
+     "margen": -0.3,
+     "neto": -0.04
+    },
+    "EV < 3": {
+     "n": 15,
+     "w": 8,
+     "l": 7,
+     "acierto": 53.3,
+     "necesita": 49.7,
+     "margen": 3.6,
+     "neto": 1.18
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.cuota",
+   "area": "Cerebro",
+   "pregunta": "¿En qué tramo de cuota gana?",
+   "minimo": 30,
+   "estado": "sin muestra",
+   "n": 13,
+   "texto": "favorito −110/−162 8-5 (margen +7.9) · parejo −109/+109 12-14 (margen -3.9) · perro +110/+125 5-3 (margen +16.3)",
+   "datos": {
+    "favorito −110/−162": {
+     "n": 13,
+     "w": 8,
+     "l": 5,
+     "acierto": 61.5,
+     "necesita": 53.7,
+     "margen": 7.9,
+     "neto": 1.88
+    },
+    "parejo −109/+109": {
+     "n": 26,
+     "w": 12,
+     "l": 14,
+     "acierto": 46.2,
+     "necesita": 50.0,
+     "margen": -3.9,
+     "neto": -2.12
+    },
+    "perro +110/+125": {
+     "n": 8,
+     "w": 5,
+     "l": 3,
+     "acierto": 62.5,
+     "necesita": 46.2,
+     "margen": 16.3,
+     "neto": 2.84
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.libro",
+   "area": "Cerebro",
+   "pregunta": "¿Qué fichas del libro ya tienen su muestra y qué dicen?",
+   "minimo": 1,
+   "estado": "medida",
+   "n": 8,
+   "texto": "8 fichas con medida automática; 0 ya tienen su muestra",
+   "datos": {
+    "banda-109-125": {
+     "estado": "observacion",
+     "n": 16,
+     "margen": 1.1,
+     "veredicto": "sin muestra (16 de 30)"
+    },
+    "banda-162-125": {
+     "estado": "en_prueba",
+     "n": 2,
+     "margen": 46.9,
+     "veredicto": "sin muestra (2 de 30)"
+    },
+    "tramo-110-125": {
+     "estado": "en_prueba",
+     "n": 24,
+     "margen": 7.9,
+     "veredicto": "sin muestra (24 de 40)"
+    },
+    "cerebro-13-sep": {
+     "estado": "en_prueba",
+     "n": 14,
+     "margen": 21.8,
+     "veredicto": "sin muestra (14 de 60)"
+    },
+    "f5-kalshi": {
+     "estado": "observacion",
+     "n": 10,
+     "margen": 10.0,
+     "veredicto": "sin muestra (10 de 30)"
+    },
+    "abogado-tumbado": {
+     "estado": "observacion",
+     "n": 0,
+     "margen": null,
+     "veredicto": "sin muestra (0 de 30)"
+    },
+    "umbral-1-5": {
+     "estado": "observacion",
+     "n": 5,
+     "margen": 6.5,
+     "veredicto": "sin muestra (5 de 30)"
+    },
+    "umbral-plano-favoritos": {
+     "estado": "observacion",
+     "n": 8,
+     "margen": 19.5,
+     "veredicto": "sin muestra (8 de 30)"
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.fable",
+   "area": "Cerebro",
+   "pregunta": "¿Opus 5 o Fable 5.1?",
+   "minimo": 12,
+   "estado": "sin muestra",
+   "n": 6,
+   "texto": "Opus 8-4 (+4.06 U) · Fable 8-4 (+3.84 U) · Fable estima mejor 4 de 6 días",
+   "datos": {
+    "opus": [
+     8,
+     4,
+     4.06
+    ],
+    "fable": [
+     8,
+     4,
+     3.84
+    ],
+    "fable_mejor_brier_dias": 4
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.noticias",
+   "area": "Cerebro",
+   "pregunta": "¿Acierta más en partidos con noticias de impacto alto?",
+   "minimo": 30,
+   "estado": "sin muestra",
+   "n": 7,
+   "texto": "partido con noticia de impacto alto 6-1 (margen +33.5) · sin noticia de impacto alto 14-10 (margen +6.8)",
+   "datos": {
+    "partido con noticia de impacto alto": {
+     "n": 7,
+     "w": 6,
+     "l": 1,
+     "acierto": 85.7,
+     "necesita": 52.3,
+     "margen": 33.5,
+     "neto": 1.09
+    },
+    "sin noticia de impacto alto": {
+     "n": 24,
+     "w": 14,
+     "l": 10,
+     "acierto": 58.3,
+     "necesita": 51.5,
+     "margen": 6.8,
+     "neto": 5.2
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.posicion",
+   "area": "Cerebro",
+   "pregunta": "¿Los análisis que marca el vigilante rinden peor?",
+   "minimo": 30,
+   "estado": "sin muestra",
+   "n": 0,
+   "texto": "0 análisis marcados desde el 14-sep · sin marca 10-4 (margen +21.8)",
+   "datos": {
+    "sin marca": {
+     "n": 14,
+     "w": 10,
+     "l": 4,
+     "acierto": 71.4,
+     "necesita": 49.6,
+     "margen": 21.8,
+     "neto": 6.29
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.movimiento",
+   "area": "Cerebro",
+   "pregunta": "¿Acierta más cuando la línea se movió a su favor?",
+   "minimo": 30,
+   "estado": "sin muestra",
+   "n": 4,
+   "texto": "la línea se movió a favor 2-2 (margen +0.2) · movida, sin dirección guardada 8-3 (margen +22.7)",
+   "datos": {
+    "la línea se movió a favor": {
+     "n": 4,
+     "w": 2,
+     "l": 2,
+     "acierto": 50.0,
+     "necesita": 49.8,
+     "margen": 0.2,
+     "neto": 0.09
+    },
+    "movida, sin dirección guardada": {
+     "n": 11,
+     "w": 8,
+     "l": 3,
+     "acierto": 72.7,
+     "necesita": 50.0,
+     "margen": 22.7,
+     "neto": 5.01
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "cerebro.linea_precio",
+   "area": "Cerebro",
+   "pregunta": "¿Cuántos análisis traen una línea que no es la del precio?",
+   "minimo": 30,
+   "estado": "sin muestra",
+   "n": 0,
+   "texto": "0 análisis con línea distinta de la del precio (0 cerrados)",
+   "datos": {
+    "n": 0,
+    "w": 0,
+    "l": 0,
+    "acierto": null,
+    "necesita": null,
+    "margen": null,
+    "neto": 0
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.ganador",
+   "area": "Modelo",
+   "pregunta": "¿La probabilidad del ganador le gana a la del mercado?",
+   "minimo": 150,
+   "estado": "sin muestra",
+   "n": 48,
+   "texto": "Brier 0.2118 contra 0.2145 del mercado · pendiente 0.717",
+   "datos": {
+    "brier_modelo": 0.2118,
+    "brier_mercado": 0.2145,
+    "pendiente": 0.717,
+    "acierto_modelo": 77.1,
+    "acierto_mercado": 68.8
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.chip_ml",
+   "area": "Modelo",
+   "pregunta": "¿El lado que marca el chip del ganador acierta más de lo que exige su precio?",
+   "minimo": 150,
+   "estado": "sin muestra",
+   "n": 39,
+   "texto": "el lado que marca acierta 46.2% necesitando 47.0% · los verdes (20): 50.0% necesitando 45.2%",
+   "datos": {
+    "acierto": 46.2,
+    "necesita": 47.0,
+    "margen": -0.8,
+    "n_verdes": 20,
+    "acierto_verdes": 50.0,
+    "necesita_verdes": 45.2
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.total",
+   "area": "Modelo",
+   "pregunta": "¿El total proyectado se desvía de las carreras reales?",
+   "minimo": 30,
+   "estado": "medida",
+   "n": 48,
+   "texto": "proyecta 8.83 · real 8.67 · sesgo +0.16 · error 3.08",
+   "datos": {
+    "total_proyecta": 8.83,
+    "total_real": 8.67,
+    "total_sesgo": 0.16,
+    "total_error": 3.08
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.chip_total",
+   "area": "Modelo",
+   "pregunta": "¿El lado que marca el chip del total acierta? (su puerta del verde)",
+   "minimo": 150,
+   "estado": "sin muestra",
+   "n": 26,
+   "texto": "el lado que marca acierta 38.5% necesitando 52.3% · verde cerrado",
+   "datos": {
+    "n": 26,
+    "puerta_n": 150,
+    "puerta_margen": 3.0,
+    "acierto": 38.5,
+    "necesita": 52.3,
+    "margen": -13.8,
+    "margen_exacto": -13.791690131879584,
+    "w": 10,
+    "n_3pp": 12,
+    "acierto_3pp": 25.0,
+    "necesita_3pp": 52.6
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.parques",
+   "area": "Modelo",
+   "pregunta": "¿El total se desvía en algún tipo de parque?",
+   "minimo": 150,
+   "estado": "sin muestra",
+   "n": 48,
+   "texto": "bajos 13 (sesgo -0.51) · neutros 29 (sesgo +0.19) · altos 6 (sesgo —)",
+   "datos": {
+    "bajos": {
+     "n": 13,
+     "sesgo": -0.51,
+     "error_tipico": 0.75,
+     "sd": 0.7
+    },
+    "neutros": {
+     "n": 29,
+     "sesgo": 0.19,
+     "error_tipico": 0.84,
+     "sd": 0.2
+    },
+    "altos": {
+     "n": 6
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.clima",
+   "area": "Modelo",
+   "pregunta": "¿El ajuste del clima acierta?",
+   "minimo": 150,
+   "estado": "sin muestra",
+   "n": 48,
+   "texto": "suma carreras (WX > +1%) 8 (sesgo +1.98) · neutro 27 (sesgo -0.18) · resta carreras (WX < −1%) 13 (sesgo -0.24)",
+   "datos": {
+    "suma carreras (WX > +1%)": {
+     "n": 8,
+     "sesgo": 1.98
+    },
+    "neutro": {
+     "n": 27,
+     "sesgo": -0.18
+    },
+    "resta carreras (WX < −1%)": {
+     "n": 13,
+     "sesgo": -0.24
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.umpire",
+   "area": "Modelo",
+   "pregunta": "¿El ajuste del umpire acierta?",
+   "minimo": 150,
+   "estado": "sin muestra",
+   "n": 48,
+   "texto": "sin efecto 48 (sesgo +0.16)",
+   "datos": {
+    "sin efecto": {
+     "n": 48,
+     "sesgo": 0.16
+    }
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.lineup",
+   "area": "Modelo",
+   "pregunta": "¿Con la alineación puesta proyecta mejor?",
+   "minimo": 30,
+   "estado": "medida",
+   "n": 48,
+   "texto": "error por la mañana 3.08 · con la alineación 3.08",
+   "datos": {
+    "error_manana": 3.08,
+    "error_ultima": 3.08,
+    "mueve_lineup": 0.3
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.f5",
+   "area": "Modelo",
+   "pregunta": "¿El total de las 5 primeras entradas se desvía?",
+   "minimo": 150,
+   "estado": "sin muestra",
+   "n": 48,
+   "texto": "total de las 5 entradas: sesgo -0.40 · error 2.83",
+   "datos": {
+    "sesgo": -0.4,
+    "error": 2.83
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.equipos",
+   "area": "Modelo",
+   "pregunta": "¿Las carreras de cada equipo y su over 4.5 aciertan?",
+   "minimo": 150,
+   "estado": "sin muestra",
+   "n": 96,
+   "texto": "carreras por equipo: sesgo +0.08 · error 2.35 · o4.5: Brier 0.2477 contra 0.2483 de decir siempre lo mismo",
+   "datos": {
+    "sesgo": 0.08,
+    "error": 2.35,
+    "brier_o45": 0.2477,
+    "brier_constante": 0.2483
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.referencia",
+   "area": "Modelo",
+   "pregunta": "¿El total del LAB acierta más que el de la referencia?",
+   "minimo": 30,
+   "estado": "medida",
+   "n": 46,
+   "texto": "total: el LAB se desvía +0.42 (error 3.20) · la referencia -0.13 (error 3.12)",
+   "datos": {
+    "lab_sesgo": 0.42,
+    "lab_error": 3.2,
+    "ref_sesgo": -0.13,
+    "ref_error": 3.12
+   },
+   "alarma": null
+  },
+  {
+   "id": "modelo.abridores",
+   "area": "Modelo",
+   "pregunta": "¿Nuestro ranking de abridores se parece al de la referencia?",
+   "minimo": 20,
+   "estado": "medida",
+   "n": 69,
+   "texto": "ranking de abridores contra la referencia: correlación +0.750 · error mediano 22 puestos",
+   "datos": {
+    "correlacion": 0.75,
+    "error_mediano": 22
+   },
+   "alarma": null
+  },
+  {
+   "id": "mercado.movimiento",
+   "area": "Mercado",
+   "pregunta": "¿El lado hacia el que se mueve la línea gana más de lo que exige?",
+   "minimo": 150,
+   "estado": "medida",
+   "n": 156,
+   "texto": "el lado hacia el que se movió la línea gana 47.4% necesitando 54.1% (margen -6.7)",
+   "datos": {
+    "acierto": 47.4,
+    "necesita": 54.1,
+    "margen": -6.7
+   },
+   "alarma": null
+  },
+  {
+   "id": "mercado.dinero",
+   "area": "Mercado",
+   "pregunta": "¿El lado hacia el que se mueve el consenso se cumple más de lo que pide? (lo que enseña el Mercado)",
+   "minimo": 150,
+   "estado": "sin muestra",
+   "n": 55,
+   "texto": "el lado hacia el que se movió el consenso se cumple 41.8% necesitando 55.0% (margen -13.1)",
+   "datos": {
+    "acierto": 41.8,
+    "necesita": 55.0,
+    "margen": -13.1
+   },
+   "alarma": null
+  },
+  {
+   "id": "mercado.regla_under",
+   "area": "Mercado",
+   "pregunta": "¿La regla del under se cumple en vivo más de lo que pide su precio?",
+   "minimo": 40,
+   "estado": "sin muestra",
+   "n": 0,
+   "texto": "se mide desde el 2026-09-28, cuando se abre el informe de octubre",
+   "datos": null,
+   "alarma": null
+  },
+  {
+   "id": "sistema.archivo",
+   "area": "Sistema",
+   "pregunta": "¿Se guardó ayer todo lo que se tiene que guardar?",
+   "minimo": 1,
+   "estado": "medida",
+   "n": 10,
+   "texto": "el archivo del 2026-09-21 está completo",
+   "datos": {
+    "fecha": "2026-09-21",
+    "faltan": []
+   },
+   "alarma": null
+  },
+  {
+   "id": "sistema.noticias",
+   "area": "Sistema",
+   "pregunta": "¿El lector de noticias devolvió fichas cuando había noticias?",
+   "minimo": 1,
+   "estado": "medida",
+   "n": 3,
+   "texto": "3 lecturas con 20+ noticias y 0 fichas sin motivo: 2026-09-16 run, 2026-09-16 tanda2, 2026-09-18 tanda1",
+   "datos": {
+    "lecturas_vacias_sin_motivo": [
+     "2026-09-16 run",
+     "2026-09-16 tanda2",
+     "2026-09-18 tanda1"
+    ]
+   },
+   "alarma": null
+  },
+  {
+   "id": "sistema.registro",
+   "area": "Sistema",
+   "pregunta": "¿El registro del Modelo guardó precio y cuotas del total?",
+   "minimo": 1,
+   "estado": "medida",
+   "n": 3,
+   "texto": "3 partidos · 3 con precio del ganador · 3 con cuotas del total",
+   "datos": {
+    "con_ml": 3,
+    "con_cuotas_total": 3
+   },
+   "alarma": null
+  },
+  {
+   "id": "sistema.kalshi",
+   "area": "Sistema",
+   "pregunta": "¿El archivo de precios de Kalshi sigue creciendo?",
+   "minimo": 1,
+   "estado": "medida",
+   "n": 1058,
+   "texto": "1058 precios archivados, el último del 2026-09-20",
+   "datos": {
+    "ultima_fecha": "2026-09-20",
+    "dias": 2,
+    "ayer": 1058,
+    "recogido_hasta": "2026-09-20",
+    "faltan": []
+   },
+   "alarma": null
+  },
+  {
+   "id": "sistema.mercado",
+   "area": "Sistema",
+   "pregunta": "¿El Mercado enseñó los precios que pidió?",
+   "minimo": 1,
+   "estado": "medida",
+   "n": 18,
+   "texto": "18 de 18 precios en 3 partidos · TT con línea en 3",
+   "datos": {
+    "partidos": 3,
+    "con_evento": 3,
+    "vacios": [],
+    "pedidos": 18,
+    "llegaron": 18,
+    "no_listados": 0,
+    "sin_precio": 0,
+    "con_tt": 3
+   },
+   "alarma": null
+  }
+ ],
+ "cuenta": {
+  "medida": 13,
+  "sin muestra": 23,
+  "alarma": 0,
+  "error": 0
+ }
+}

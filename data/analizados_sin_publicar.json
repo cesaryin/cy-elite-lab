@@ -752,5 +752,139 @@
       "abridores": true,
       "ts": "2026-09-19T00:51:25Z"
     }
+  },
+  {
+    "fecha": "2026-09-21",
+    "pick": "WSH/DET o8.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -115,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "WSH 2-9 DET",
+    "veredicto": "seguimiento",
+    "prob_estimada": 54.5,
+    "prob_justa": 51.08,
+    "ev_pct": 1.89,
+    "precio_publicado": -112,
+    "discrepancia_pp": 3.42,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva",
+      "clima",
+      "umpire"
+    ],
+    "contra": "Si Ryan y Herz aguantan cinco entradas limpias con 59F y DET mete a Holton-Jansen, el juego se queda en 7 y el numero se cae.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": 0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-21T22:00:20Z"
+    }
+  },
+  {
+    "fecha": "2026-09-21",
+    "pick": "MIN/SF o8.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -105,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "MIN 2-5 SF",
+    "veredicto": "seguimiento",
+    "prob_estimada": 52.0,
+    "prob_justa": 48.92,
+    "ev_pct": 1.52,
+    "precio_publicado": -103,
+    "discrepancia_pp": 3.08,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "clima",
+      "umpire",
+      "forma"
+    ],
+    "contra": "Oracle Park sigue siendo el parque mas supresor del grupo (pf 94) y las dos ofensivas estan en ~4.0 c/j en la semana; la ventaja aqui es pequena.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": 0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": false,
+      "abridores": true,
+      "ts": "2026-09-21T22:00:20Z"
+    }
+  },
+  {
+    "fecha": "2026-09-21",
+    "pick": "TOR/BAL u7.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -115,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "TOR 3-4 BAL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 53.0,
+    "prob_justa": 51.2,
+    "ev_pct": -0.91,
+    "precio_publicado": -106,
+    "discrepancia_pp": 1.8,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "clima",
+      "umpire"
+    ],
+    "contra": "Camden es parque de bateo (pf 104) y T. Yesavage vuelve de IL con 2.0 IP en su ultima salida: si dura tres entradas, el bullpen de TOR (Sewald y Rogers quemados) tiene que cubrir demasiado.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-21T22:00:20Z"
+    }
   }
 ]
