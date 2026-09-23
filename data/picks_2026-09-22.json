@@ -212,10 +212,219 @@
         "alineaciones": false,
         "abridores": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "MIN F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": 113,
+      "prob_estimada": 49.0,
+      "razon": "El valor está en las cinco entradas: T. Bradley (3.81, 27.5% de ponches) enfrenta a una alineación de SF hoy demolida por las bajas, con Bandura (.411), Davidson (.500) y Whitcomb (.518) en el orden y sin J. Lee ni Adames. MIN llega con 4.0 c/j y .738 de OPS vs derechos.",
+      "equipos": [
+        "MIN",
+        "SF"
+      ],
+      "destacado": "MIN",
+      "hora": "8:45 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "matchup"
+      ],
+      "contra": "A. Molina lleva solo 114 bateadores enfrentados pero con 3.87 de FIP y 5.3% de boletos; si repite su salida de 5.2 IP en blanco, el F5 se va a empate (en Kalshi el empate paga en contra) o se cae.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "MIN",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-23T01:45:00Z",
+      "valor": {
+        "prob_estimada": 49.0,
+        "prob_justa": null,
+        "prob_implicita": 46.95,
+        "cuota": 113,
+        "cuota_justa_mercado": null,
+        "ev_pct": 4.37,
+        "ev_kalshi_pct": 0.66,
+        "precio_minimo": 109,
+        "precio_publicado": 109,
+        "precio_equilibrio": 105,
+        "discrepancia_pp": null,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.37% · no tomar peor de +109",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 10,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-23T00:00:20Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "SD/LAD o8.5",
+      "deporte": "MLB",
+      "tipo": "o8.5",
+      "cuota": -104,
+      "prob_estimada": 52.5,
+      "razon": "Dos ofensivas encendidas: SD con 7.2 c/j y .967 de OPS en la semana (13 HR), LAD con 5.8 c/j y .943. Enfrente, LAD abre con B. Stewart, perfil de juego de bullpen con el relevo cargado (7.3 IP en dos días). El mercado ya movió la línea de 8.0 a 8.5 y aun así el precio paga par.",
+      "equipos": [
+        "SD",
+        "LAD"
+      ],
+      "destacado": null,
+      "hora": "9:10 PM CT",
+      "capas": [
+        "ofensiva",
+        "bullpen",
+        "forma"
+      ],
+      "contra": "Los dos bullpens son de élite (SD 3.29 con M. Miller en 1.21; LAD 3.69) y LAD solo permite 2.8 c/j en sus últimos 10: si King y el relevo controlan, el 8.5 queda largo.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.5
+      },
+      "inicio_utc": "2026-09-23T02:10:00Z",
+      "cuota_apertura_ref": -103,
+      "valor": {
+        "prob_estimada": 52.5,
+        "prob_justa": 48.6,
+        "prob_implicita": 50.98,
+        "cuota": -104,
+        "cuota_justa_mercado": 106,
+        "ev_pct": 2.98,
+        "ev_kalshi_pct": -0.45,
+        "precio_minimo": -105,
+        "precio_publicado": -105,
+        "precio_equilibrio": -110,
+        "discrepancia_pp": 3.9,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +2.98% con ventaja, fuera por el tope: el día ya tenía 3 señales",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "mov_linea": 0.5
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        },
+        "veredicto_original": "apostable"
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 12,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-23T00:00:20Z",
+        "publicado": false,
+        "fuera_por_tope": true,
+        "motivo_tope": "el día ya tenía 3 señales",
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "SEA F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": 108,
+      "prob_estimada": 49.5,
+      "razon": "Aislar a los abridores es donde está el margen: L. Gilbert (3.69, 20.8% de K-BB) contra C. Javier (5.31 y 9.7% de boletos). HOU llega frío con 3.2 c/j en la semana y 2.8 en sus últimos 10, y el parque con techo reduce el ruido. Ventaja corta pero real sobre la línea justa.",
+      "equipos": [
+        "HOU",
+        "SEA"
+      ],
+      "destacado": "SEA",
+      "hora": "8:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "parque"
+      ],
+      "contra": "El dinero movió a SEA de -149 a -135, señal en contra, y su propia ofensiva anda en .677 de OPS con 3.6 c/j: un F5 sin carreras acaba en empate, que en Kalshi se pierde.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "SEA",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-23T01:40:00Z",
+      "valor": {
+        "prob_estimada": 49.5,
+        "prob_justa": null,
+        "prob_implicita": 48.08,
+        "cuota": 108,
+        "cuota_justa_mercado": null,
+        "ev_pct": 2.96,
+        "ev_kalshi_pct": -0.67,
+        "precio_minimo": 107,
+        "precio_publicado": 107,
+        "precio_equilibrio": 103,
+        "discrepancia_pp": null,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +2.96% con ventaja, fuera por el tope: el día ya tenía 3 señales",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        },
+        "veredicto_original": "apostable"
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 8,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-23T00:00:20Z",
+        "publicado": false,
+        "fuera_por_tope": true,
+        "motivo_tope": "el día ya tenía 3 señales",
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
-  "resumen": "Dia con poco margen en los moneyline y el valor concentrado en las cinco entradas. En PNC el cruce es claro: un lineup visitante congelado (.589 de ops, 3,8 c/j) contra un abridor local que poncha al 28,7%, mientras PIT batea .895 en la semana frente a un derecho de apenas 16,5% de ponches. En Detroit el abridor visitante no controla la zona (17,6% de boletos) y sus dos ultimas salidas duraron 2 y 3 entradas, asi que el bullpen de 4.34 de WSH entra dentro del propio F5 contra la ofensiva mas caliente de la tanda. El de Texas es mas flojo y se marca como tal: la ventaja viene del bullpen (3.32 contra 4.98) y del .767 de TEX ante zurdos, pero su abridor llega en mal momento.",
+  "resumen": "Dia con poco margen en los moneyline y el valor concentrado en las cinco entradas. En PNC el cruce es claro: un lineup visitante congelado (.589 de ops, 3,8 c/j) contra un abridor local que poncha al 28,7%, mientras PIT batea .895 en la semana frente a un derecho de apenas 16,5% de ponches. En Detroit el abridor visitante no controla la zona (17,6% de boletos) y sus dos ultimas salidas duraron 2 y 3 entradas, asi que el bullpen de 4.34 de WSH entra dentro del propio F5 contra la ofensiva mas caliente de la tanda. El de Texas es mas flojo y se marca como tal: la ventaja viene del bullpen (3.32 contra 4.98) y del .767 de TEX ante zurdos, pero su abridor llega en mal momento.\n\nNoche corta de cartelera y con poco margen en los moneyline: casi todo el valor aparece al aislar las primeras cinco entradas. En SF la alineación de hoy es la más floja del día por acumulación de bajas y eso favorece a T. Bradley; en Seattle la diferencia entre Gilbert y Javier es mayor de lo que paga el F5. El único total que convence es el de Los Ángeles, con SD y LAD promediando 7.2 y 5.8 carreras por juego en la semana y un abridor local de recorrido muy corto. Se descarta el under de Sacramento pese a dos ofensivas heladas: parque corto, viento hacia afuera y umpire que suma carreras lo desaconsejan.",
   "descartes": [
     "TB/NYY: el under de 6.0 ya esta muy bajo y NYY suma 5,6 c/j con 8 de 10 juegos pasados de 8.5; el ML de NYY no se separa lo suficiente del 53,8% justo.",
     "MIL/PHI: PHI a -141 con su ofensiva en 3,7 c/j y .648 de ops no da margen, y MIL viene de 6,8 c/j en diez juegos, lo que revienta el under de 7.0.",
@@ -223,7 +432,12 @@
     "CIN/ATL: ML fuera de banda y el spread de ATL -1.5 se apoya en un abridor con 5.03 de ERA y 13,7% de boletos, sin ventaja clara sobre el 50,2% justo.",
     "CWS/KC: el bullpen de CWS es muy superior pero el precio ya lo paga; sin discrepancia contra el 52,2% justo.",
     "MIA/CHC: precios de ML fuera de banda y el under de 6.5 choca con CHC en 5,8 c/j.",
-    "STL/PIT ML: PIT a -165 queda fuera de la banda de precio; el valor del juego esta en las cinco entradas."
+    "STL/PIT ML: PIT a -165 queda fuera de la banda de precio; el valor del juego esta en las cinco entradas.",
+    "AZ @ COL: AZ -183 y COL +154 quedan fuera de la banda de precio; el spread -1.5 y el F5 de AZ no ofrecen separación contra la línea justa en un parque de factor 125.",
+    "LAA @ ATH u9.5: las dos ofensivas están heladas (2.5 y 2.3 c/j), pero el parque tiene factor 116, el viento sopla 6 mph hacia el jardín central y el umpire suma 2.6% de carreras; con dos de las comprobaciones fallando no se toma el under.",
+    "LAA/ATH ML: el mercado lo tiene en 50/50 exacto y ninguna capa separa a dos equipos con bullpens de 4.40 y 5.11 y lineups de mínimos.",
+    "SEA ML -135: la ventaja de abridor es clara pero el precio ya la cobra entera y el movimiento de línea fue en contra; el valor del juego está en el F5.",
+    "MIN ML -134 y HOU/SEA u7.0: probabilidad demasiado pegada a la línea justa para el precio exigido."
   ],
   "vivo": {
     "plan": {
@@ -390,15 +604,44 @@
         "sin_ventaja": 1,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-09-23T00:00:20Z",
+        "min_ct": 1140,
+        "claves": [
+          "AZ@COL@2026-09-23T00:40:00Z",
+          "LAA@ATH@2026-09-23T01:40:00Z",
+          "HOU@SEA@2026-09-23T01:40:00Z",
+          "MIN@SF@2026-09-23T01:45:00Z",
+          "SD@LAD@2026-09-23T02:10:00Z"
+        ],
+        "juegos": [
+          "AZ@COL",
+          "LAA@ATH",
+          "HOU@SEA",
+          "MIN@SF",
+          "SD@LAD"
+        ],
+        "alineaciones": [
+          10,
+          10
+        ],
+        "senales": [
+          "MIN F5 ML"
+        ],
+        "sin_ventaja": 0,
+        "fuera_por_tope": 2,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 3-0 (+2.80 U).\n• MIA/SD o8.0 (SEÑAL ELITE), ganada: MIA 3-7 SD, 10 carreras con la línea en 8.0.\n• TB F5 ML (SEÑAL ELITE), ganada: BOS 1-5 TB.\n• PHI F5 ML (SEÑAL FUERTE), ganada: PHI 7-2 NYM.\n3 ganadas con ventaja medida.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 2,
-    "seguimiento": 1,
+    "apostables": 3,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
-    "riesgo_u": 2.0,
+    "riesgo_u": 3.0,
     "ev_min": 2.0
   }
 }
