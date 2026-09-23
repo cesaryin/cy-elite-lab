@@ -330,12 +330,23 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
    contenedor de sus hijos absolutos.
    (Y escrito sin llaves a proposito: un comentario con sintaxis CSS dentro
    hace que el propio guardian lo lea como una regla de verdad.) */
-.t-set{position:absolute;right:12px;top:50%;transform:translateY(-50%);
+.t-set{position:absolute;right:12px;top:50%;transform:translateY(-50%);z-index:2;
   display:grid;place-items:center;width:36px;height:36px;border-radius:50%;
   color:var(--mut);text-decoration:none}
 .t-set:hover,.t-set:focus-visible{color:var(--gold2);background:var(--line2)}
 .t-set svg{width:21px;height:21px}
-.t-atras{position:absolute;left:12px;top:50%;transform:translateY(-50%);
+/* EL z-index DE LOS DOS BOTONES DE LA BARRA (23-sep-2026, lo encontro Cesar:
+   «el boton de atras, al darle encima con el dedo, no funciona; si doy mas a la
+   derecha si»). LA CAUSA: el h1 de la marca lleva un filter:drop-shadow, y un
+   filtro CREA UN CONTEXTO DE APILADO. Eso hace que el titulo se pinte en la
+   misma capa que los elementos posicionados y, por ir DESPUES en el HTML, por
+   ENCIMA de la flecha. El h1 ocupa todo el ancho, asi que se tragaba el toque.
+   La rueda no lo sufria porque va DESPUES del h1 y le gana por orden.
+   Con z-index los dos botones quedan arriba pase lo que pase, y deja de
+   depender del orden del HTML. No se le quita el filtro al h1: ese resplandor
+   es lo que hace legible la marca sobre lo que pasa por debajo al hacer scroll
+   (barra sin caja, decision del 19-sep). */
+.t-atras{position:absolute;left:12px;top:50%;transform:translateY(-50%);z-index:2;
   display:grid;place-items:center;width:36px;height:36px;border-radius:50%;
   color:var(--mut);text-decoration:none}
 .t-atras:hover,.t-atras:focus-visible{color:var(--gold2);background:var(--line2)}
@@ -807,4 +818,4 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
   });
 
 })();
-</script><!-- generado 09/23/2026 5:37 PM --></body></html>
+</script><!-- generado 09/23/2026 5:43 PM --></body></html>
