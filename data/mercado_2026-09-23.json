@@ -4084,6 +4084,131 @@
      "inicio_utc": "2026-09-24T02:10Z"
     }
    }
+  },
+  {
+   "ts": "2026-09-23T22:50:37+00:00",
+   "juegos": {
+    "CLE@BOS": {
+     "ml": {
+      "CLE": 118,
+      "BOS": -143
+     },
+     "total": {
+      "linea": 6.5,
+      "over": -119,
+      "under": -101
+     },
+     "inicio_utc": "2026-09-23T23:00Z"
+    },
+    "TB@NYY": {
+     "ml": {
+      "TB": 117,
+      "NYY": -141
+     },
+     "total": {
+      "linea": 6.5,
+      "over": -109,
+      "under": -110
+     },
+     "inicio_utc": "2026-09-23T23:05Z"
+    },
+    "CIN@ATL": {
+     "ml": {
+      "CIN": 223,
+      "ATL": -278
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -117,
+      "under": -102
+     },
+     "inicio_utc": "2026-09-23T23:15Z"
+    },
+    "CWS@KC": {
+     "ml": {
+      "CWS": -120,
+      "KC": -101
+     },
+     "total": {
+      "linea": 8.5,
+      "over": -110,
+      "under": -109
+     },
+     "inicio_utc": "2026-09-23T23:40Z"
+    },
+    "MIA@CHC": {
+     "ml": {
+      "MIA": 158,
+      "CHC": -193
+     },
+     "total": {
+      "linea": 6.5,
+      "over": -120,
+      "under": 100
+     },
+     "inicio_utc": "2026-09-23T23:40Z"
+    },
+    "NYM@TEX": {
+     "ml": {
+      "NYM": -109,
+      "TEX": -110
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -108,
+      "under": -112
+     },
+     "inicio_utc": "2026-09-24T00:05Z"
+    },
+    "AZ@COL": {
+     "ml": {
+      "AZ": -167,
+      "COL": 137
+     },
+     "total": {
+      "linea": 11.0,
+      "over": -110,
+      "under": -109
+     },
+     "inicio_utc": "2026-09-24T00:40Z"
+    },
+    "LAA@ATH": {
+     "ml": {
+      "LAA": -131,
+      "ATH": 109
+     },
+     "total": {
+      "linea": 9.5,
+      "over": 100,
+      "under": -120
+     },
+     "inicio_utc": "2026-09-24T01:40Z"
+    },
+    "HOU@SEA": {
+     "ml": {
+      "HOU": 101,
+      "SEA": -122
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -102,
+      "under": -118
+     },
+     "inicio_utc": "2026-09-24T02:00Z"
+    },
+    "SD@LAD": {
+     "ml": {
+      "SD": 183,
+      "LAD": -225
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -114,
+      "under": -105
+     },
+     "inicio_utc": "2026-09-24T02:10Z"
+    }
+   }
   }
  ]
 }
