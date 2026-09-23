@@ -788,11 +788,11 @@
    "pregunta": "¿Nuestro ranking de abridores se parece al de la referencia?",
    "minimo": 20,
    "estado": "medida",
-   "n": 96,
-   "texto": "ranking de abridores contra la referencia: correlación +0.792 · error mediano 21 puestos",
+   "n": 119,
+   "texto": "ranking de abridores contra la referencia: correlación +0.819 · error mediano 23 puestos",
    "datos": {
-    "correlacion": 0.792,
-    "error_mediano": 21.5
+    "correlacion": 0.819,
+    "error_mediano": 23
    },
    "alarma": null
   },
@@ -848,6 +848,25 @@
    "datos": {
     "clv_pp": -0.0,
     "bate_cierre": 60.0
+   },
+   "alarma": null
+  },
+  {
+   "id": "negocio.puerta",
+   "area": "Sistema",
+   "pregunta": "¿Cuánto falta para la condición del cobro que promete Planes?",
+   "minimo": 1,
+   "estado": "medida",
+   "n": 20,
+   "texto": "20 de 100 análisis · faltan 80 · margen +0.6",
+   "datos": {
+    "n": 20,
+    "faltan": 80,
+    "margen": 0.6,
+    "pide_n": 100,
+    "pide_margen": 3.0,
+    "cumple": false,
+    "desde": "2026-09-10"
    },
    "alarma": null
   },
@@ -935,7 +954,7 @@
   }
  ],
  "cuenta": {
-  "medida": 13,
+  "medida": 14,
   "sin muestra": 24,
   "alarma": 0,
   "error": 0

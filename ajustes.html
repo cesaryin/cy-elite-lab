@@ -204,6 +204,30 @@ section{display:none}section.on{display:block}
 .pl-esp-n b{color:var(--gold2)}
 .pl-fine{font-size:11px;color:var(--faint);line-height:1.6;margin-top:18px;text-align:center}
 .pl-fine a{color:var(--mut)}
+/* EL CAMPO DEL CORREO (23-sep-2026, PLAN_NEGOCIO §16.6, mockup aprobado por
+   César). Va en la portada y en el Récord, antes del pie legal.
+   EL COLOR ES EL AZUL Y NO EL DORADO, y lo pidió él: «no le pongas el color
+   dorado, ya que en análisis ese es el color de la jugada elite». El azul es
+   el que ya usan el precio mínimo y el seguimiento. */
+.cy-ml{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--blue);
+ border-radius:12px;padding:14px 16px;margin:12px 0}
+.cy-ml-t{font-size:14px;font-weight:800;color:var(--text);margin-bottom:5px}
+.cy-ml-d{font-size:13px;line-height:1.55;color:var(--mut);margin-bottom:11px}
+.cy-ml-d b{color:var(--soft);font-weight:600}
+.cy-ml-f{display:flex;gap:8px}
+.cy-ml-f input{flex:1;min-width:0;background:var(--bg);border:1px solid var(--line);
+ border-radius:9px;padding:11px 12px;color:var(--text);font:400 16px var(--font)}
+.cy-ml-f input::placeholder{color:var(--faint)}
+.cy-ml-f button{flex-shrink:0;background:var(--blue);color:#0d1117;border:none;
+ border-radius:9px;padding:11px 16px;font:800 13.5px var(--font);cursor:pointer}
+.cy-ml-f button[disabled]{opacity:.55}
+.cy-ml-n{font-size:11px;color:var(--faint);margin-top:8px;line-height:1.5}
+.cy-ml-e{font-size:12px;color:var(--red);margin-top:8px}
+.cy-ml-ok{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:var(--soft);line-height:1.55}
+.cy-ml-ok b{color:var(--text)}
+.cy-ml-ok svg{width:17px;height:17px;flex-shrink:0;color:var(--green);margin-top:1px}
+/* La trampa para robots: fuera de la pantalla y fuera del tabulador. */
+.cy-ml-trampa{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 /* EL COBRO ENCENDIDO (23-sep-2026) — ver _planes_vendiendo() y _plan_tarjeta().
    Estos valores son EXACTAMENTE los del mockup que aprobo Cesar («El cobro de CY
    Elite», pantalla «1 · Planes»): no hay ni un numero elegido aqui. Lo unico que
@@ -776,4 +800,4 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
   });
 
 })();
-</script><!-- generado 09/23/2026 1:14 PM --></body></html>
+</script><!-- generado 09/23/2026 4:32 PM --></body></html>
