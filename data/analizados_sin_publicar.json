@@ -886,5 +886,135 @@
       "abridores": true,
       "ts": "2026-09-21T22:00:20Z"
     }
+  },
+  {
+    "fecha": "2026-09-22",
+    "pick": "TEX ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -126,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "NYM 6-3 TEX",
+    "veredicto": "seguimiento",
+    "prob_estimada": 57.0,
+    "prob_justa": 53.7,
+    "ev_pct": 2.24,
+    "precio_publicado": -122,
+    "discrepancia_pp": 3.3,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "bullpen",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "M. Gore viene de 4, 4 y 3 entradas con 3, 4 y 5 limpias: si repite, TEX entrega el juego antes de que su bullpen pese, y la alineacion de NYM no esta publicada.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": false,
+      "delta_pp": 2.8
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": false,
+      "abridores": true,
+      "ts": "2026-09-22T22:00:18Z"
+    }
+  },
+  {
+    "fecha": "2026-09-22",
+    "pick": "SD/LAD o8.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -104,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "SD 0-7 LAD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 52.5,
+    "prob_justa": 48.6,
+    "ev_pct": 2.98,
+    "precio_publicado": -105,
+    "discrepancia_pp": 3.9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "Los dos bullpens son de élite (SD 3.29 con M. Miller en 1.21; LAD 3.69) y LAD solo permite 2.8 c/j en sus últimos 10: si King y el relevo controlan, el 8.5 queda largo.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": 0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": true,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-23T00:00:20Z"
+    }
+  },
+  {
+    "fecha": "2026-09-22",
+    "pick": "SEA F5 ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 108,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "HOU 7-0 SEA",
+    "veredicto": "seguimiento",
+    "prob_estimada": 49.5,
+    "prob_justa": null,
+    "ev_pct": 2.96,
+    "precio_publicado": 107,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "parque"
+    ],
+    "contra": "El dinero movió a SEA de -149 a -135, señal en contra, y su propia ofensiva anda en .677 de OPS con 3.6 c/j: un F5 sin carreras acaba en empate, que en Kalshi se pierde.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": true,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-23T00:00:20Z"
+    }
   }
 ]

@@ -5345,5 +5345,144 @@
     "clv_metodo": "kalshi_historico",
     "causa": "varianza",
     "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-09-22",
+    "pick": "PIT F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -100,
+    "unidades": 1.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "STL 0-2 PIT",
+    "veredicto": "apostable",
+    "prob_estimada": 52.5,
+    "prob_justa": null,
+    "ev_pct": 5.0,
+    "precio_publicado": -106,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "J. Jones tiene 4.17 de ERA y una salida corta puede costar un inning grande temprano; en el F5 de consenso un empate devuelve el dinero, pero en el precio de Kalshi el empate pierde.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-22T22:00:18Z"
+    },
+    "clv": -0.5,
+    "prob_cierre": 49.5,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-22",
+    "pick": "DET F5 ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -104,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "WSH 3-1 DET",
+    "veredicto": "apostable",
+    "prob_estimada": 53.0,
+    "prob_justa": null,
+    "ev_pct": 3.96,
+    "precio_publicado": -107,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "bullpen"
+    ],
+    "contra": "Un abridor de muy pocos bateadores enfrentados puede dominar cinco entradas y WSH tiene .733 de ops contra derechos; ademas el empate en el precio de Kalshi pierde.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-22T22:00:18Z"
+    },
+    "clv": -1.5,
+    "prob_cierre": 49.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-09-22",
+    "pick": "MIN F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 113,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "MIN 3-2 SF",
+    "veredicto": "apostable",
+    "prob_estimada": 49.0,
+    "prob_justa": null,
+    "ev_pct": 4.37,
+    "precio_publicado": 109,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "A. Molina lleva solo 114 bateadores enfrentados pero con 3.87 de FIP y 5.3% de boletos; si repite su salida de 5.2 IP en blanco, el F5 se va a empate (en Kalshi el empate paga en contra) o se cae.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-23T00:00:20Z"
+    },
+    "clv": -0.4,
+    "prob_cierre": 46.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "ajustado",
+    "cuadrante": "mala_suerte"
   }
 ]

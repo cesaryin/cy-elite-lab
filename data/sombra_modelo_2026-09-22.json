@@ -7,13 +7,366 @@
    "n": 1,
    "lote": "msgbatch_01Ksm9JG45cCZWWSay9iX5jp",
    "enviado_utc": "2026-09-22T22:03:18Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-23T13:00:35Z",
+   "uso": {
+    "tokens_entrada": 54432,
+    "tokens_salida": 7694,
+    "coste": 0.4645
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "WSH/DET o8.0",
+     "deporte": "MLB",
+     "tipo": "o8.0",
+     "cuota": -120,
+     "prob_estimada": 55.5,
+     "razon": "Dos ofensivas con 7/10 juegos sobre 8.5 y el juego va a caer pronto en manos de dos bullpens vulnerables. R. Cornelio camina al 17.6% y no pasa de 3 entradas, lo que carga al bullpen de WSH (4.34); el de DET viene de 10.1 IP en dos dias. DET batea .823 de ops y 4.9 c/j en la semana, WSH 4.7 c/j.",
+     "equipos": [
+      "WSH",
+      "DET"
+     ],
+     "destacado": null,
+     "hora": "5:40 PM CT",
+     "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva",
+      "forma"
+     ],
+     "contra": "D. Anderson viene de 5.0 IP sin carreras y el viento en Comerica no ayuda al bateo; si Cornelio aguanta 4 limpias con sus ponches, el 8.0 se queda corto de alcanzar.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "over",
+      "linea": 8.0
+     },
+     "valor": {
+      "prob_estimada": 55.5,
+      "prob_justa": 52.17,
+      "prob_implicita": 54.55,
+      "cuota": -120,
+      "cuota_justa_mercado": -109,
+      "ev_pct": 1.75,
+      "ev_kalshi_pct": -1.43,
+      "precio_minimo": -116,
+      "precio_publicado": -116,
+      "precio_equilibrio": -124,
+      "discrepancia_pp": 3.33,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.75% por debajo del minimo exigido (3.1%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE",
+       "a_favor": true,
+       "mov_linea": 0.5
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "CWS ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -118,
+     "prob_estimada": 55.5,
+     "razon": "La diferencia esta en las entradas 5-9 y en el bateo: bullpen CWS 3.25 contra 4.84 de KC con L. Erceg en 5.96, y ofensiva CWS con 5.2 c/j en la semana y .741 de ops vs zurdos frente a KC con 3.2 c/j en sus ultimos 10 y .693 vs zurdos. La linea justa (52.2%) casi no cobra esa brecha.",
+     "equipos": [
+      "CWS",
+      "KC"
+     ],
+     "destacado": "CWS",
+     "hora": "6:40 PM CT",
+     "capas": [
+      "bullpen",
+      "ofensiva",
+      "matchup",
+      "forma"
+     ],
+     "contra": "D. Lynch IV (3.29) es el mejor abridor del juego y A. Kay no pasa de 4 entradas, asi que CWS necesita que su bullpen cubra cinco entradas limpias en un parque que favorece al bateo.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "CWS",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -125,
+     "valor": {
+      "prob_estimada": 55.5,
+      "prob_justa": 52.23,
+      "prob_implicita": 54.13,
+      "cuota": -118,
+      "cuota_justa_mercado": -109,
+      "ev_pct": 2.53,
+      "ev_kalshi_pct": -0.68,
+      "precio_minimo": -116,
+      "precio_publicado": -116,
+      "precio_equilibrio": -124,
+      "discrepancia_pp": 3.27,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +2.53% por debajo del minimo exigido (3.0%)",
+      "mejor_precio": {
+       "cuota": -112,
+       "casa": "betus"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": true
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "ATL Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": -110,
+     "prob_estimada": 52.5,
+     "razon": "El ML de ATL queda fuera de banda y la ventaja se traslada al margen: CIN llega con 2.8 c/j y .583 de ops en la semana, 3.1 c/j y 7.2 en contra en sus ultimos 10, con C. Jorge (.385) abriendo la tanda. B. Williamson (fip 5.27, k-bb 2.0%) y un bullpen de 4.36 dejan la puerta abierta a que ATL, con 5.2 c/j, gane holgado. Ventaja modesta.",
+     "equipos": [
+      "CIN",
+      "ATL"
+     ],
+     "destacado": "ATL",
+     "hora": "6:15 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "bullpen",
+      "forma"
+     ],
+     "contra": "J. Ritchie tambien camina al 13.7% (6 ER en su ultima salida) y el fondo de la alineacion de ATL (S. Murphy .566, H. Kim .339) puede mantener el juego a una carrera aunque ATL lo gane.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "ATL",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": -111,
+     "valor": {
+      "prob_estimada": 52.5,
+      "prob_justa": 50.22,
+      "prob_implicita": 52.38,
+      "cuota": -110,
+      "cuota_justa_mercado": -101,
+      "ev_pct": 0.23,
+      "ev_kalshi_pct": -3.1,
+      "precio_minimo": -104,
+      "precio_publicado": -104,
+      "precio_equilibrio": -110,
+      "discrepancia_pp": 2.28,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +0.23% por debajo del minimo exigido (2.6%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda de tarde con tres lecturas: el over 8.0 de WSH/DET apoyado en dos bullpens vulnerables y dos ofensivas que vienen pasando de 8.5; el ML de CWS por la brecha de bullpen y bateo contra un KC frio; y el margen de ATL -1.5 ante un CIN que no anota. El resto del cartel esta bien cobrado por el mercado o queda fuera de banda."
   },
   {
    "n": 2,
    "lote": "msgbatch_01F712TPHsUroTToUV2Jrpg1",
    "enviado_utc": "2026-09-23T00:01:53Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-23T13:00:36Z",
+   "uso": {
+    "tokens_entrada": 38184,
+    "tokens_salida": 6621,
+    "coste": 0.3564
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "MIN ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -134,
+     "prob_estimada": 58.5,
+     "razon": "La alineacion publicada de SF hoy es mucho mas floja que su ofensiva de temporada: cinco bates por debajo de .600 de OPS (Davidson .500, Whitcomb .518, Bandura .411, Cavanaugh .590, Koss .599) con J. Lee y W. Adames en IL. Ademas el bullpen de SF viene de 7.5 IP en dos dias con dos quemados. MIN batea .738 de OPS vs derechos y 4.0 c/j en la semana.",
+     "equipos": [
+      "MIN",
+      "SF"
+     ],
+     "destacado": "MIN",
+     "hora": "8:45 PM CT",
+     "capas": [
+      "ofensiva",
+      "bullpen",
+      "matchup"
+     ],
+     "contra": "MIN llega con OPS .651 en los ultimos 7 dias y A. Molina trae FIP 3.87, asi que un abridor eficaz de SF deja el juego en manos de un lineup de MIN que tampoco impulsa mucho.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "MIN",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -136,
+     "valor": {
+      "prob_estimada": 58.5,
+      "prob_justa": 55.07,
+      "prob_implicita": 57.26,
+      "cuota": -134,
+      "cuota_justa_mercado": -123,
+      "ev_pct": 2.16,
+      "ev_kalshi_pct": -0.83,
+      "precio_minimo": -129,
+      "precio_publicado": -129,
+      "precio_equilibrio": -140,
+      "discrepancia_pp": 3.43,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +2.16% por debajo del minimo exigido (3.8%)",
+      "mejor_precio": {
+       "cuota": -128,
+       "casa": "lowvig"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": true
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "SD/LAD o8.5",
+     "deporte": "MLB",
+     "tipo": "o8.5",
+     "cuota": -104,
+     "prob_estimada": 51.5,
+     "razon": "LAD abre con B. Stewart, un relevista sin salidas registradas, y su bullpen viene de 7.3 IP en dos dias: mucha carga para cubrir nueve entradas. Las dos ofensivas estan calientes (SD 7.2 c/j y OPS .967; LAD 5.8 c/j y OPS .943 en la semana) y M. King camina 9.2% con FIP 4.21. Ventaja modesta, no grande.",
+     "equipos": [
+      "SD",
+      "LAD"
+     ],
+     "destacado": null,
+     "hora": "9:10 PM CT",
+     "capas": [
+      "ofensiva",
+      "bullpen",
+      "pitcheo"
+     ],
+     "contra": "LAD ha permitido solo 2.8 c/j en sus ultimos 10 y la racha de SD viene en parte contra COL y SF; con M. Miller (1.21) y un bullpen de SD elite, los ultimos innings pueden cerrarse en cero y el mercado ya subio la linea de 8.0 a 8.5.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "over",
+      "linea": 8.5
+     },
+     "cuota_apertura_ref": -103,
+     "valor": {
+      "prob_estimada": 51.5,
+      "prob_justa": 48.6,
+      "prob_implicita": 50.98,
+      "cuota": -104,
+      "cuota_justa_mercado": 106,
+      "ev_pct": 1.02,
+      "ev_kalshi_pct": -2.41,
+      "precio_minimo": -101,
+      "precio_publicado": -101,
+      "precio_equilibrio": -106,
+      "discrepancia_pp": 2.9,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.02% por debajo del minimo exigido (2.2%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE",
+       "a_favor": true,
+       "mov_linea": 0.5
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "AZ Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": -118,
+     "prob_estimada": 54.0,
+     "razon": "El ML de AZ (-183) queda fuera de banda; el margen es donde puede haber algo: K. Freeland (6.38 ERA, FIP 4.85) en Coors contra un lineup de AZ que batea .778 de OPS vs zurdos, y un bullpen de COL de 5.29 ERA contra uno de AZ de 3.27 que puede abrir el juego tarde. COL recibe 6.4 c/j en sus ultimos 10.",
+     "equipos": [
+      "AZ",
+      "COL"
+     ],
+     "destacado": "AZ",
+     "hora": "7:40 PM CT",
+     "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva",
+      "parque"
+     ],
+     "contra": "Coors iguala partidos: la alineacion de COL trae varios bates de .800+ y AZ viene 4-6 recibiendo 5.0 c/j, ademas el ML de AZ se alargo de -198 a -181 (dinero contra AZ).",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "AZ",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": -118,
+     "valor": {
+      "prob_estimada": 54.0,
+      "prob_justa": 51.98,
+      "prob_implicita": 54.13,
+      "cuota": -118,
+      "cuota_justa_mercado": -108,
+      "ev_pct": -0.24,
+      "ev_kalshi_pct": -3.45,
+      "precio_minimo": -110,
+      "precio_publicado": -110,
+      "precio_equilibrio": -117,
+      "discrepancia_pp": 2.02,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV -0.24% por debajo del minimo exigido (3.0%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda nocturna con dos lecturas de valor concreto y una tercera de margen. La principal es el ML de MIN: la alineacion que publica SF hoy es una version muy rebajada de su ofensiva, con cinco bates por debajo de .600 de OPS y un bullpen exigido en los dos ultimos dias. En SD/LAD el over de 8.5 se apoya en la salida de B. Stewart con un bullpen de LAD cargado y dos lineups calientes, aunque el mercado ya subio la linea y la ventaja es modesta. En Coors el ML de AZ queda fuera de banda, asi que la lectura pasa al spread -1.5 contra K. Freeland y un bullpen de COL de 5.29. LAA/ATH y HOU/SEA se quedan sin posicion: el under de dos ofensivas frias en Sacramento se rompe con el parque y el bullpen de ATH, y en Seattle el mercado ya movio el total y el ML contra las lecturas posibles."
   }
  ]
 }
