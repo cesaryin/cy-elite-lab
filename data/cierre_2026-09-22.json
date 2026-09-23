@@ -309,7 +309,7 @@
   },
   "inicio_utc": "2026-09-23T01:40Z",
   "visto": "2026-09-23T01:10:51+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "HOU@SEA": {
   "ml": {
@@ -333,7 +333,7 @@
   },
   "inicio_utc": "2026-09-23T01:40Z",
   "visto": "2026-09-23T01:10:51+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "MIN@SF": {
   "ml": {
@@ -357,7 +357,7 @@
   },
   "inicio_utc": "2026-09-23T01:45Z",
   "visto": "2026-09-23T01:10:51+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "SD@LAD": {
   "ml": {
@@ -381,6 +381,6 @@
   },
   "inicio_utc": "2026-09-23T02:10Z",
   "visto": "2026-09-23T01:10:51+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
