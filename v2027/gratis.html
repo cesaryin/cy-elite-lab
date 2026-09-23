@@ -210,21 +210,24 @@ section{display:none}section.on{display:block}
    cambia es el nombre --alli eran .mk-* porque era un mockup suelto, y aqui la
    casa usa un prefijo por pagina (.pl-) para que revisar_todo.py no las vea
    huerfanas ni choquen con las de otra pagina. */
-.pl-tog{display:flex;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:4px;margin:4px 0 12px}
+.pl-tog{display:flex;gap:8px;background:var(--card);border:1px solid var(--line2);border-radius:10px;padding:4px;margin:0 0 12px}
 .pl-tog span{flex:1;text-align:center;border-radius:8px;padding:9px 6px;color:var(--mut);font:700 13px var(--font)}
-.pl-tog span.on{background:var(--card);color:var(--text)}
-/* EL ANUAL SE VE PERO ESTA CERRADO (decision de Cesar, 22-sep). Se distingue por
-   la letra apagada y por lo que DICE debajo, no solo por el color. */
-.pl-tog span.off{color:var(--faint)}
-.pl-tog small{display:block;color:var(--green);font-weight:700;font-size:11px}
-.pl-tog span.off small{color:var(--faint);font-weight:600}
+/* EL MENSUAL, ENCENDIDO EN DORADO: es el unico que se puede comprar hoy. */
+.pl-tog span.on{background:var(--gold);color:#0d1117}
+/* EL ANUAL SE VE PERO ESTA CERRADO (decision de Cesar, 22-sep). Lo dicen TRES
+   cosas y no solo el color: la letra apagada, el candado y la linea de debajo. */
+.pl-tog span.off{color:var(--faint);font-weight:600;display:flex;align-items:center;justify-content:center;gap:6px}
+.pl-lock{width:13px;height:13px;flex-shrink:0}
 .pl-fund{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:11px 13px;font-size:13px;color:var(--soft);margin-bottom:12px;line-height:1.5}
 .pl-fund b{color:var(--text)}
-.pl-cond{background:rgba(212,175,55,.07);border:1px solid var(--gold);border-radius:14px;padding:16px 17px;margin-bottom:20px}
-.pl-cond-t{font-size:14px;font-weight:800;color:var(--gold2);line-height:1.35;margin-bottom:9px}
-.pl-cond p{font-size:13px;line-height:1.62;color:var(--soft);margin:0 0 10px}
-.pl-cond p b{color:var(--text)}
-.pl-cond-p{margin-bottom:0!important;color:var(--text)!important;font-weight:600}
+/* «ANTES DE PAGAR, ESTO» — del lienzo del 22-sep, artboard «Planes, dia 1 de
+   2027», que es el que eligio Cesar el 23-sep viendo la vista previa. Los
+   valores son los suyos: el borde dorado al 30 %, no el dorado entero. */
+.pl-antes{background:var(--card);border:1px solid rgba(212,175,55,.30);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+.pl-antes-t{font-size:14px;font-weight:700;color:var(--gold2);margin-bottom:6px}
+.pl-antes p{font-size:13px;line-height:1.62;color:var(--soft);margin:0}
+.pl-antes p b{color:var(--text);font-weight:600}
+.pl-tog-n{font-size:12.5px;color:var(--mut);line-height:1.6;margin:-6px 2px 14px}
 .pl-cta{display:block;text-align:center;margin-top:14px;background:var(--gold);color:#0d1117;border-radius:10px;padding:12px;font:800 14px var(--font);text-decoration:none}
 .pl-cta:hover,.pl-cta:focus-visible{background:var(--gold2)}
 .pl-actual{margin-top:14px;text-align:center;font-size:12.5px;color:var(--mut);border:1px dashed var(--line);border-radius:10px;padding:10px}
@@ -349,6 +352,23 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
   line-height:1.2;font-variant-numeric:tabular-nums}
 .hi-kpi span{display:block;font-size:11px;color:var(--mut);margin-top:2px}
 .hi-nota{font-size:12.5px;line-height:1.6;color:var(--mut);margin:10px 2px 0}
+/* LA TEMPORADA CERRADA, EN UNA TARJETA (23-sep-2026) — ver _temporada_cerrada().
+   Del lienzo del 22-sep, artboard «Récord por temporada». Cesar: «ya es una
+   temporada cerrada, no es necesario tanta información ni tanto espacio». */
+.hi-tc{display:flex;flex-direction:column;gap:12px}
+.hi-tc-h{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.hi-tc-g{display:flex;gap:8px}
+.hi-tc-n{flex:1;text-align:center;min-width:0}
+.hi-tc-n b{display:block;font-size:30px;font-weight:800;line-height:1.05;color:var(--text);font-variant-numeric:tabular-nums}
+.hi-tc-n b.g{color:var(--green)}.hi-tc-n b.r{color:var(--red)}
+.hi-tc-n span{display:block;font-size:11px;color:var(--mut);margin-top:4px;line-height:1.4}
+.hi-tc-p{font-size:12.5px;color:var(--mut);line-height:1.65;margin:0}
+.hi-tc-p b{color:var(--soft);font-weight:600}
+.hi-tc-b{display:block;text-align:center;background:none;border:1px solid var(--line);color:var(--soft);font-size:14px;font-weight:700;text-decoration:none;padding:11px;border-radius:9px}
+.hi-tc-b:hover,.hi-tc-b:focus-visible{border-color:var(--gold);color:var(--gold2)}
+.hi-cero{background:var(--panel);border:1px solid var(--line2);border-radius:12px;padding:14px 16px;margin-top:12px}
+.hi-cero-t{font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px}
+.hi-cero p{font-size:13px;color:var(--soft);line-height:1.65;margin:0}
 
 /* la curva. El trazo toma el COLOR DEL LADO en el que esta (verde arriba del
    cero, rojo abajo) con el mismo recorte que el area: nada de un cuarto color
@@ -639,4 +659,4 @@ function cmpDx(i){var d=document.getElementById('cmpd'+i);d.style.display=d.styl
     document.head.appendChild(sc);
   } catch (e) {}
 })();
-</script><!-- generado 09/23/2026 10:19 AM --></body></html>
+</script><!-- generado 09/23/2026 11:17 AM --></body></html>
