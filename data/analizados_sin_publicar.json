@@ -624,6 +624,136 @@
     }
   },
   {
+    "fecha": "2026-09-23",
+    "pick": "PIT ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -136,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "STL 5-1 PIT",
+    "veredicto": "seguimiento",
+    "prob_estimada": 58.5,
+    "prob_justa": 55.68,
+    "ev_pct": 1.51,
+    "precio_publicado": -128,
+    "discrepancia_pp": 2.82,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "pitcheo"
+    ],
+    "contra": "L. Bachar dura una o dos entradas y obliga a un juego de bullpen largo; si STL despierta contra el relevo medio, el precio cargado deja de compensar.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": false,
+      "delta_pp": -4.1
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-23T22:00:24Z"
+    }
+  },
+  {
+    "fecha": "2026-09-23",
+    "pick": "TB/NYY u6.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -113,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "TB 2-9 NYY",
+    "veredicto": "seguimiento",
+    "prob_estimada": 54.0,
+    "prob_justa": 50.65,
+    "ev_pct": 1.79,
+    "precio_publicado": -110,
+    "discrepancia_pp": 3.35,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "clima"
+    ],
+    "contra": "M. Englert es un novato recien subido con 4.54 de era: si no pasa de la tercera, TB puede meter cuatro carreras temprano y el 6.5 se rompe solo.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": -0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-23T22:00:24Z"
+    }
+  },
+  {
+    "fecha": "2026-09-23",
+    "pick": "AZ/COL o11.0",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -114,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "AZ 5-3 COL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 54.0,
+    "prob_justa": 50.98,
+    "ev_pct": 1.37,
+    "precio_publicado": -110,
+    "discrepancia_pp": 3.02,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "parque",
+      "clima",
+      "bullpen",
+      "ofensiva"
+    ],
+    "contra": "La ofensiva de COL esta en caida libre (2.8 c/j, ops .613 en 6 juegos) y AZ batea solo .232/.688 vs derechos: si ambos lineups fallan, 11 carreras es un numero alto incluso en Coors.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-24T00:00:21Z"
+    }
+  },
+  {
     "fecha": "2026-09-18",
     "pick": "WSH F5 ML",
     "deporte": "MLB",
@@ -1015,136 +1145,6 @@
       "alineaciones": true,
       "abridores": true,
       "ts": "2026-09-23T00:00:20Z"
-    }
-  },
-  {
-    "fecha": "2026-09-23",
-    "pick": "PIT ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -136,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "STL 5-1 PIT",
-    "veredicto": "seguimiento",
-    "prob_estimada": 58.5,
-    "prob_justa": 55.68,
-    "ev_pct": 1.51,
-    "precio_publicado": -128,
-    "discrepancia_pp": 2.82,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "bullpen",
-      "pitcheo"
-    ],
-    "contra": "L. Bachar dura una o dos entradas y obliga a un juego de bullpen largo; si STL despierta contra el relevo medio, el precio cargado deja de compensar.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE",
-      "a_favor": false,
-      "delta_pp": -4.1
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-23T22:00:24Z"
-    }
-  },
-  {
-    "fecha": "2026-09-23",
-    "pick": "TB/NYY u6.5",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -113,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "TB 2-9 NYY",
-    "veredicto": "seguimiento",
-    "prob_estimada": 54.0,
-    "prob_justa": 50.65,
-    "ev_pct": 1.79,
-    "precio_publicado": -110,
-    "discrepancia_pp": 3.35,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "bullpen",
-      "clima"
-    ],
-    "contra": "M. Englert es un novato recien subido con 4.54 de era: si no pasa de la tercera, TB puede meter cuatro carreras temprano y el 6.5 se rompe solo.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE",
-      "a_favor": true,
-      "mov_linea": -0.5
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-23T22:00:24Z"
-    }
-  },
-  {
-    "fecha": "2026-09-23",
-    "pick": "AZ/COL o11.0",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -114,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "AZ 5-3 COL",
-    "veredicto": "seguimiento",
-    "prob_estimada": 54.0,
-    "prob_justa": 50.98,
-    "ev_pct": 1.37,
-    "precio_publicado": -110,
-    "discrepancia_pp": 3.02,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "parque",
-      "clima",
-      "bullpen",
-      "ofensiva"
-    ],
-    "contra": "La ofensiva de COL esta en caida libre (2.8 c/j, ops .613 en 6 juegos) y AZ batea solo .232/.688 vs derechos: si ambos lineups fallan, 11 carreras es un numero alto incluso en Coors.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 1,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-24T00:00:21Z"
     }
   }
 ]
