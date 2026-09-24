@@ -2297,17 +2297,94 @@
    }
   },
   {
-   "ts": "2026-09-24T22:40:17+00:00",
+   "ts": "2026-09-24T22:39:40+00:00",
    "juegos": {
     "CLE@BOS": {
      "ml": {
-      "CLE": 106,
-      "BOS": -127
+      "CLE": 107,
+      "BOS": -129
      },
      "total": {
       "linea": 6.5,
-      "over": -112,
-      "under": -107
+      "over": -115,
+      "under": -105
+     },
+     "inicio_utc": "2026-09-24T22:45Z"
+    },
+    "TB@NYY": {
+     "ml": {
+      "TB": 123,
+      "NYY": -149
+     },
+     "total": {
+      "linea": 6.0,
+      "over": -105,
+      "under": -115
+     },
+     "inicio_utc": "2026-09-24T23:05Z"
+    },
+    "CIN@ATL": {
+     "ml": {
+      "CIN": 194,
+      "ATL": -239
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -115,
+      "under": -105
+     },
+     "inicio_utc": "2026-09-24T23:15Z"
+    },
+    "LAA@SEA": {
+     "ml": {
+      "LAA": 162,
+      "SEA": -197
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -110,
+      "under": -110
+     },
+     "inicio_utc": "2026-09-25T01:40Z"
+    },
+    "HOU@ATH": {
+     "ml": {
+      "HOU": -174,
+      "ATH": 144
+     },
+     "total": {
+      "linea": 10.5,
+      "over": -114,
+      "under": -106
+     },
+     "inicio_utc": "2026-09-25T01:40Z"
+    },
+    "SD@LAD": {
+     "ml": {
+      "SD": 145,
+      "LAD": -175
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -102,
+      "under": -118
+     },
+     "inicio_utc": "2026-09-25T02:10Z"
+    }
+   }
+  },
+  {
+   "ts": "2026-09-24T22:40:48+00:00",
+   "juegos": {
+    "CLE@BOS": {
+     "ml": {
+      "CLE": 107,
+      "BOS": -129
+     },
+     "total": {
+      "linea": 6.5,
+      "over": -115,
+      "under": -105
      },
      "inicio_utc": "2026-09-24T22:45Z"
     },
