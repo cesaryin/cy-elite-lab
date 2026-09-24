@@ -5484,5 +5484,150 @@
     "clv_metodo": "kalshi_historico",
     "causa": "ajustado",
     "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-09-23",
+    "pick": "CWS/KC o8.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -110,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.91,
+    "marcador": "CWS 4-5 KC",
+    "veredicto": "apostable",
+    "prob_estimada": 54.5,
+    "prob_justa": 50.0,
+    "ev_pct": 4.05,
+    "precio_publicado": -113,
+    "discrepancia_pp": 4.5,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "parque",
+      "umpire"
+    ],
+    "contra": "El viento sopla hacia dentro a 8 mph y el bullpen de CWS (3.31) es profundo y capaz de apagar el juego tras las primeras entradas.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-23T22:00:24Z"
+    },
+    "clv": -0.9,
+    "prob_cierre": 51.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": 1.5,
+    "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-09-23",
+    "pick": "HOU/SEA u7.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -103,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "HOU 5-6 SEA",
+    "veredicto": "apostable",
+    "prob_estimada": 53.0,
+    "prob_justa": 48.38,
+    "ev_pct": 4.46,
+    "precio_publicado": -107,
+    "discrepancia_pp": 4.62,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "parque",
+      "umpire",
+      "mercado"
+    ],
+    "contra": "E. Pecko tiene apenas 116 bateadores enfrentados y un fip de 4.77: si lo castigan temprano, el bullpen de HOU viene de 7.0 IP en dos dias y el under muere en la sexta.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": -0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": false,
+      "abridores": true,
+      "ts": "2026-09-24T00:00:21Z"
+    },
+    "clv": -1.2,
+    "prob_cierre": 49.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": 1.1,
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-09-23",
+    "pick": "LAA F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 104,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "LAA 3-7 ATH",
+    "veredicto": "apostable",
+    "prob_estimada": 51.5,
+    "prob_justa": null,
+    "ev_pct": 5.06,
+    "precio_publicado": -101,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup",
+      "ofensiva"
+    ],
+    "contra": "El lineup de LAA es el peor de la tanda (Moore .484, Teodosio .472, Heineman .439) y puede no anotarle ni a un abridor malo; si el F5 acaba igualado en el consenso el dinero se devuelve, pero en Kalshi el empate se pierde.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-24T00:00:21Z"
+    },
+    "clv": -0.0,
+    "prob_cierre": 49.0,
+    "clv_metodo": "kalshi_historico",
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
   }
 ]

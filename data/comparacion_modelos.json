@@ -814,6 +814,128 @@
      "neto_u": 0.0
     }
    ]
+  },
+  "2026-09-23": {
+   "fecha": "2026-09-23",
+   "opus": {
+    "analisis": 6,
+    "senales": 3,
+    "senales_w": 1,
+    "senales_l": 2,
+    "neto_u": -1.09,
+    "analisis_w": 1,
+    "analisis_l": 5,
+    "brier": 0.2798,
+    "n_brier": 6,
+    "picks": [
+     "CWS/KC o8.5",
+     "HOU/SEA u7.5",
+     "LAA F5 ML"
+    ]
+   },
+   "fable": {
+    "analisis": 6,
+    "senales": 2,
+    "senales_w": 0,
+    "senales_l": 1,
+    "neto_u": -1.0,
+    "analisis_w": 1,
+    "analisis_l": 4,
+    "brier": 0.2722,
+    "n_brier": 5,
+    "picks": [
+     "NYM F5 ML",
+     "LAA F5 ML"
+    ]
+   },
+   "coinciden": [
+    "LAA F5 ML"
+   ],
+   "tandas_fable": [
+    {
+     "n": 1,
+     "estado": "listo"
+    },
+    {
+     "n": 2,
+     "estado": "listo"
+    }
+   ],
+   "coste_fable": 0.7664,
+   "detalle_fable": [
+    {
+     "pick": "NYM F5 ML",
+     "cuota": 122,
+     "tanda": 1,
+     "nivel": "oro",
+     "publicado": true,
+     "resultado": "P",
+     "marcador": "NYM 7-2 TEX",
+     "prob_estimada": 47.5,
+     "ev_pct": 5.45,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "CWS ML",
+     "cuota": -119,
+     "tanda": 1,
+     "nivel": "plata",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "CWS 4-5 KC",
+     "prob_estimada": 55.0,
+     "ev_pct": 1.22,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "ATL Spread -1.5",
+     "cuota": -118,
+     "tanda": 1,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "CIN 2-3 ATL",
+     "prob_estimada": 54.5,
+     "ev_pct": 0.69,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "LAA F5 ML",
+     "cuota": 104,
+     "tanda": 2,
+     "nivel": "oro",
+     "publicado": true,
+     "resultado": "L",
+     "marcador": "LAA 3-7 ATH",
+     "prob_estimada": 51.5,
+     "ev_pct": 5.06,
+     "neto_u": -1.0
+    },
+    {
+     "pick": "LAD F5 ML",
+     "cuota": -138,
+     "tanda": 2,
+     "nivel": "plata",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "SD 5-1 LAD",
+     "prob_estimada": 59.0,
+     "ev_pct": 1.75,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "AZ ML",
+     "cuota": -158,
+     "tanda": 2,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "AZ 5-3 COL",
+     "prob_estimada": 61.5,
+     "ev_pct": 0.42,
+     "neto_u": 0.0
+    }
+   ]
   }
  }
 }

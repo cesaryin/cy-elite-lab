@@ -7,13 +7,354 @@
    "n": 1,
    "lote": "msgbatch_01Qmz777mKNujDbJpWqVjWTs",
    "enviado_utc": "2026-09-23T22:02:38Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-24T13:00:27Z",
+   "uso": {
+    "tokens_entrada": 55278,
+    "tokens_salida": 7726,
+    "coste": 0.4695
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "NYM F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": 122,
+     "prob_estimada": 47.5,
+     "razon": "El F5 aisla el mayor desequilibrio del juego: N. McLean (FIP 3.79, 26% K) contra C. Bradford (FIP 4.26, 11.8% K, 3 salidas seguidas de 4-5.2 IP con 3-5 ER) y saca del cuadro el bullpen de NYM (4.94). Ofensiva NYM 4.2 c/j y ops .700 en la semana. Es el F5 de Kalshi a tres bandas: el empate se pierde.",
+     "equipos": [
+      "NYM",
+      "TEX"
+     ],
+     "destacado": "NYM",
+     "hora": "7:05 PM CT",
+     "capas": [
+      "pitcheo",
+      "matchup",
+      "parque"
+     ],
+     "contra": "NYM batea .682 de ops contra zurdos en la temporada y en un parque de pf 88 un F5 empatado (~17%) se pierde en Kalshi.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "NYM",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 47.5,
+      "prob_justa": null,
+      "prob_implicita": 45.05,
+      "cuota": 122,
+      "cuota_justa_mercado": null,
+      "ev_pct": 5.45,
+      "ev_kalshi_pct": 1.6,
+      "precio_minimo": 115,
+      "precio_publicado": 115,
+      "precio_equilibrio": 111,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +5.45% · no tomar peor de +115",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "CWS ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -119,
+     "prob_estimada": 55.0,
+     "razon": "Ofensiva CWS caliente (6.5 c/j, ops .773 y 9 HR en la semana; .714 vs derechos) contra S. Lugo (5.06) y, sobre todo, un bullpen KC de 5.02 con L. Erceg en 5.96 como cerrador: el cierre del juego favorece claramente a CWS (bullpen 3.31).",
+     "equipos": [
+      "CWS",
+      "KC"
+     ],
+     "destacado": "CWS",
+     "hora": "6:40 PM CT",
+     "capas": [
+      "ofensiva",
+      "bullpen",
+      "matchup"
+     ],
+     "contra": "B. Hudson viene de salidas de 1-2 entradas como relevista: si abre corto, el bullpen CWS (4 brazos ayer) tiene que cubrir 6-7 entradas.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "CWS",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -120,
+     "valor": {
+      "prob_estimada": 55.0,
+      "prob_justa": 52.2,
+      "prob_implicita": 54.34,
+      "cuota": -119,
+      "cuota_justa_mercado": -109,
+      "ev_pct": 1.22,
+      "ev_kalshi_pct": -1.98,
+      "precio_minimo": -114,
+      "precio_publicado": -114,
+      "precio_equilibrio": -122,
+      "discrepancia_pp": 2.8,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.22% por debajo del minimo exigido (3.1%)",
+      "mejor_precio": {
+       "cuota": -114,
+       "casa": "betus"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "ATL Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": -118,
+     "prob_estimada": 54.5,
+     "razon": "C. Sale (FIP 2.71, 30% K) contra una alineacion CIN con tres bates de ops .000, .467 y .432 en el fondo; A. Abbott (10.7% BB) y un bullpen CIN de 4.32 sin T. Santillan dan margen a ATL (4.0 c/j, ops .706). Ventaja pequena sobre la justa: lectura de poco peso.",
+     "equipos": [
+      "CIN",
+      "ATL"
+     ],
+     "destacado": "ATL",
+     "hora": "6:15 PM CT",
+     "capas": [
+      "pitcheo",
+      "matchup",
+      "bullpen"
+     ],
+     "contra": "El total bajo a 7.0 y el viento sopla hacia dentro a 9 mph: en un juego de pocas carreras, ganar por 2 depende de una ofensiva ATL que no viene caliente.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "ATL",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": -118,
+     "valor": {
+      "prob_estimada": 54.5,
+      "prob_justa": 51.74,
+      "prob_implicita": 54.13,
+      "cuota": -118,
+      "cuota_justa_mercado": -107,
+      "ev_pct": 0.69,
+      "ev_kalshi_pct": -2.52,
+      "precio_minimo": -112,
+      "precio_publicado": -112,
+      "precio_equilibrio": -119,
+      "discrepancia_pp": 2.76,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +0.69% por debajo del minimo exigido (3.0%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda de matchups parejos donde el mercado ya tiene casi todo pagado. La mejor lectura sale del F5 de NYM, donde N. McLean domina a C. Bradford y el bullpen de NYM queda fuera del cuadro. Le sigue CWS ML por la diferencia de bullpens frente a KC y la ofensiva CWS caliente contra S. Lugo, y como lectura de menor peso el spread de ATL con C. Sale ante una alineacion CIN muy debilitada por abajo. El resto de juegos (TOR/BAL, MIL/PHI, TB/NYY, CLE/BOS, MIA/CHC) no separa lo suficiente de la linea justa o tropieza con ofensivas frias y movimientos de linea en contra."
   },
   {
    "n": 2,
    "lote": "msgbatch_01CmpHFNrvGGSF7UETiGQCfW",
    "enviado_utc": "2026-09-24T00:02:05Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-24T13:00:27Z",
+   "uso": {
+    "tokens_entrada": 32579,
+    "tokens_salida": 5361,
+    "coste": 0.2969
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "LAA F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": 104,
+     "prob_estimada": 51.5,
+     "razon": "El F5 aisla la mayor brecha de abridores de la tanda: W. Ureña (FIP 3.71, 21 IP y 5 ER en sus 3 ultimas) contra J. Springs (FIP 5.58, 3.1 IP y 6 ER en la ultima). LAA batea .692 vs zurdos y ATH .720 vs derechos: parejo, asi que las cinco entradas las decide el brazo. La linea justa da 48% y el mercado paga +104.",
+     "equipos": [
+      "LAA",
+      "ATH"
+     ],
+     "destacado": "LAA",
+     "hora": "8:40 PM CT",
+     "capas": [
+      "pitcheo",
+      "matchup",
+      "ofensiva"
+     ],
+     "contra": "La ofensiva de LAA viene fria (.635 OPS, 3.3 c/j, 65 K en 6 juegos) y el fondo del lineup baja de .500 de OPS; en Kalshi el empate a las cinco pierde (en el consenso se devuelve).",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "LAA",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 51.5,
+      "prob_justa": null,
+      "prob_implicita": 49.02,
+      "cuota": 104,
+      "cuota_justa_mercado": null,
+      "ev_pct": 5.06,
+      "ev_kalshi_pct": 1.49,
+      "precio_minimo": -101,
+      "precio_publicado": -101,
+      "precio_equilibrio": -106,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +5.06% · no tomar peor de -101",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "LAD F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -138,
+     "prob_estimada": 59.0,
+     "razon": "Y. Yamamoto (FIP 3.49, 21 IP y 5 ER en sus 3 ultimas, 6% de BB) contra R. Ray, que regalo 10 BB en sus dos ultimas salidas cortas, y un lineup de LAD que batea .758 vs zurdos y llega a 6.3 c/j con S. Ohtani de vuelta. El F5 evita el bullpen de LAD, que carga 8 IP en dos dias. La justa da 56.3%.",
+     "equipos": [
+      "SD",
+      "LAD"
+     ],
+     "destacado": "LAD",
+     "hora": "9:10 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup",
+      "bullpen"
+     ],
+     "contra": "SD llega con la ofensiva mas caliente del dia (6.7 c/j, .889 OPS, 10 HR en 6 juegos) y en Kalshi un empate a las cinco pierde, no se devuelve.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "LAD",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 59.0,
+      "prob_justa": null,
+      "prob_implicita": 57.98,
+      "cuota": -138,
+      "cuota_justa_mercado": null,
+      "ev_pct": 1.75,
+      "ev_kalshi_pct": -1.19,
+      "precio_minimo": -131,
+      "precio_publicado": -131,
+      "precio_equilibrio": -143,
+      "discrepancia_pp": null,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.75% por debajo del minimo exigido (4.0%)",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "AZ ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -158,
+     "prob_estimada": 61.5,
+     "razon": "Lectura de poca ventaja: la justa da 59.4% y estimo 61.5%. AZ llega con 5.0 c/j y .804 OPS en la semana frente a un COL 2-8 que anota 2.8 c/j con 56 K en 6 juegos; la diferencia de bullpens (3.26 vs 5.26, cerrador de COL con 5.12) decide el cierre a favor de AZ en Coors.",
+     "equipos": [
+      "AZ",
+      "COL"
+     ],
+     "destacado": "AZ",
+     "hora": "7:40 PM CT",
+     "capas": [
+      "bullpen",
+      "ofensiva",
+      "forma"
+     ],
+     "contra": "M. Kelly (5.00 ERA, 10% BB) en Coors con viento a favor puede regalar el juego temprano, y AZ solo batea .688 vs derechos; ademas COL batea .752 vs derechos en la temporada.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "AZ",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -167,
+     "valor": {
+      "prob_estimada": 61.5,
+      "prob_justa": 59.41,
+      "prob_implicita": 61.24,
+      "cuota": -158,
+      "cuota_justa_mercado": -146,
+      "ev_pct": 0.42,
+      "ev_kalshi_pct": -2.29,
+      "precio_minimo": -141,
+      "precio_publicado": -141,
+      "precio_equilibrio": -159,
+      "discrepancia_pp": 2.09,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +0.42% por debajo del minimo exigido (4.8%)",
+      "mejor_precio": {
+       "cuota": -155,
+       "casa": "betrivers"
+      },
+      "alcanzable": false,
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda nocturna con dos lecturas de primeras cinco entradas donde la brecha de abridores es grande y el juego completo tiene contaminacion (bullpen cargado en LAD, lineup frio en LAA): el F5 de LAA con W. Ureña frente a J. Springs y el F5 de LAD con Y. Yamamoto ante un R. Ray descontrolado. En Coors, AZ ML frente a un COL desplomado queda como lectura de poca ventaja. HOU/SEA se deja fuera por el movimiento fuerte del mercado hacia HOU y la ofensiva fria de SEA."
   }
  ]
 }
