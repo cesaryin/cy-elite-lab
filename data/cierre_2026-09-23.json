@@ -309,7 +309,7 @@
   },
   "inicio_utc": "2026-09-24T01:40Z",
   "visto": "2026-09-24T01:26:35+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "HOU@SEA": {
   "ml": {
@@ -333,7 +333,7 @@
   },
   "inicio_utc": "2026-09-24T02:00Z",
   "visto": "2026-09-24T01:26:35+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "SD@LAD": {
   "ml": {
@@ -357,7 +357,7 @@
   },
   "inicio_utc": "2026-09-24T02:10Z",
   "visto": "2026-09-24T01:26:35+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TOR@BAL#22:35": {
   "ml": {
