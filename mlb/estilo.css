@@ -1,4 +1,4 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Planes · CY Elite Lab</title><meta name="google-site-verification" content="xdkj6Fp3ejJGJtHyyTTRjChzL4xnyODr5oWhE0P6ISQ"><link rel="canonical" href="https://cyelitelab.com/planes"><meta name="description" content="Modelo estadístico de MLB con récord público: 128-111 en 239 análisis cerrados (53.6%). Cada resultado verificado en dos fuentes independientes."><meta name="theme-color" content="#0d1117"><meta property="og:type" content="website"><meta property="og:site_name" content="CY Elite Lab"><meta property="og:title" content="CY Elite Lab — 2026-09-24"><meta property="og:description" content="Modelo estadístico de MLB con récord público: 128-111 en 239 análisis cerrados (53.6%). Cada resultado verificado en dos fuentes independientes."><meta property="og:image" content="https://cyelitelab.com/og.png?v=2026-09-24"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://cyelitelab.com/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="CY Elite Lab — 2026-09-24"><meta name="twitter:description" content="Modelo estadístico de MLB con récord público: 128-111 en 239 análisis cerrados (53.6%). Cada resultado verificado en dos fuentes independientes."><meta name="twitter:image" content="https://cyelitelab.com/og.png?v=2026-09-24"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='o' gradientUnits='userSpaceOnUse' x1='40' y1='22.03' x2='55' y2='77.97'%3E%3Cstop offset='0' stop-color='%23ffecaa'/%3E%3Cstop offset='.28' stop-color='%23f0c862'/%3E%3Cstop offset='.52' stop-color='%23c99630'/%3E%3Cstop offset='.7' stop-color='%23f4d072'/%3E%3Cstop offset='1' stop-color='%239e6e1d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%230a0b0d'/%3E%3Cpath fill='url(%23o)' d='M35.8 22.03 A23.76 23.76 0 0 0 35.8 69.55 L35.8 60.37 A14.58 14.58 0 0 1 35.8 31.21Z M35.8 22.03 L52.07 22.03 L63.47 37.53 L75.25 22.03 L88 22.03 L67.77 48.31 L67.77 77.97 L58.08 77.97 L58.08 48.38 L45.46 31.21 L35.8 31.21Z M35.8 60.37 L50.43 60.37 L55.36 67.09 L55.36 69.55 L35.8 69.55Z'/%3E%3C/svg%3E"><link rel="apple-touch-icon" sizes="180x180" href="https://cyelitelab.com/icono-v2-180.png"><link rel="manifest" href="https://cyelitelab.com/manifest.json"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}</script><style>
+
 :root{--bg:#0d1117;--card:#161b22;--panel:#0f141a;--line:#30363d;--line2:#21262d;
 --text:#e6edf3;--soft:#c9d1d9;--mut:#8b949e;--faint:#6e7681;--mut2:#8b949e;
 --green:#3fb950;--red:#f85149;--gold:#d4af37;--gold2:#f0c75e;--purple:#a371f7;--blue:#58a6ff;
@@ -611,135 +611,364 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .cmp-d{display:none;padding:0 11px 9px;font-size:11px;color:#c9d1d9}
 .cmp-ln{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-top:1px solid #21262d}
 .cmp-note{font-size:11px;color:#6e7681;text-align:center;margin-top:4px}
-.ico{width:1.05em;height:1.05em;flex-shrink:0;vertical-align:-.16em;margin-right:.32em}.pl-esp [hidden]{display:none!important}</style></head><body><div class="app"><div class="topbar"><a href="/ajustes" class="t-atras" aria-label="Volver a ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></a><h1>CY Elite Lab</h1><a href="/" class="t-set" aria-label="Cerrar ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></a></div><main><section class="on"><div class="cab"><div class="cab-tx"><h2 class="cab-t">Planes</h2><p class="cab-s">Qué incluye cada plan y cuándo se podrá comprar</p></div></div><div class="pl-av"><div class="pl-av-t">Hoy no se puede comprar nada. Y es a propósito.</div><p>Este sistema <b>todavía no ha demostrado que gane dinero</b>, y hasta que lo demuestre no cobra. El récord está publicado entero, con las rachas malas dentro, para que lo compruebes tú mismo.</p><p>La condición está escrita de antemano para que no se pueda reinterpretar después: <b>100 análisis cerrados</b> con un margen de <b>+3 puntos</b> sobre lo que hacía falta acertar, y un intervalo de confianza que no toque el cero.</p><div class="pl-prog"><span><b>23</b> de 100 análisis</span><span class="mut">faltan 77</span></div><p class="pl-av-p">Mientras tanto, <b>todo lo que ves es gratis</b>.</p></div><div class="pl-card pl-free"><div class="pl-n">GRATIS</div><div class="pl-p">0 $<small> para siempre</small></div><div class="pl-g">Todo el producto, con el partido ya terminado</div><ul class="pl-l"><li><span class="pl-m si"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>La señal gratis del día, en vivo</span></li><li><span class="pl-m si"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>El récord entero, con las rachas malas</span></li><li><span class="pl-m si"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>Todas las señales del día, cuando su partido ha terminado</span></li><li><span class="pl-m si"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>El glosario del modelo y del mercado</span></li><li class="off"><span class="pl-m no"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></span><span>Las señales a tiempo de usarlas</span></li><li class="off"><span class="pl-m no"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></span><span>El precio mínimo de cada una</span></li><li class="off"><span class="pl-m no"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></span><span>El Modelo y el Mercado completos</span></li></ul></div><div class="pl-card pl-vip"><div class="pl-n">VIP</div><div class="pl-p">19<span class="pl-cts">.99</span> $<small> al mes</small></div><div class="pl-anual">154.99 $ al año · ahorras 84.89 $ · (un 35 %)</div><div class="pl-g">Las señales a tiempo</div><ul class="pl-l"><li><span class="pl-m si"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>Todo lo del plan gratis</span></li><li><span class="pl-m si"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Todas las señales en vivo</b>, antes del partido (hasta 3 al día)</span></li><li><span class="pl-m si"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>El <b>precio mínimo</b> de cada señal</span></li><li class="off"><span class="pl-m no"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></span><span>El Modelo y el Mercado completos</span></li><li class="off"><span class="pl-m no"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></span><span>Aviso al móvil</span></li></ul></div><div class="pl-card pl-elite"><div class="pl-n">ELITE</div><div class="pl-p">39<span class="pl-cts">.99</span> $<small> al mes</small></div><div class="pl-anual">310.99 $ al año · ahorras 168.89 $ · (un 35 %)</div><div class="pl-g">El sistema entero, sin nada escondido</div><ul class="pl-l"><li><span class="pl-m si"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>Todo lo del plan VIP</span></li><li><span class="pl-m si"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>CY Elite Modelo</b>: proyecciones, park factors, clima</span></li><li><span class="pl-m si"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>CY Elite Mercado</b>: movimiento de líneas en el día</span></li><li><span class="pl-m si"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span>Aviso al móvil cuando salen las señales</span></li></ul></div><div id="pl-esp-fuera"><div class="cy-ml cy-ml-liso" id="cy-ml"><div id="cy-ml-pide"><div class="cy-ml-t">Acceso anticipado a los planes</div><div class="cy-ml-d"><b>Precio de fundador: −25 % de descuento</b>.</div><form class="cy-ml-f" id="cy-ml-f" novalidate><label class="cy-ml-trampa" aria-hidden="true">Web<input type="text" id="cy-ml-web" tabindex="-1" autocomplete="off"></label><input type="email" id="cy-ml-c" inputmode="email" autocomplete="email" maxlength="254" placeholder="tu@correo.com" aria-label="Correo electrónico" required><button type="submit" id="cy-ml-b">Reservar</button></form><label class="cy-ml-mas"><input type="checkbox" id="cy-ml-lun"><span>Mándame también el resumen semanal.</span></label><div class="cy-ml-e" id="cy-ml-e" hidden></div></div><div id="cy-ml-ok" hidden><div class="cy-ml-ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><b>Reservado.</b> Precio de fundador registrado. Un solo correo, el día de la apertura.<span id="cy-ml-ok-sem" hidden> Y el resumen semanal, los lunes: baja en un clic.</span></div></div></div><span hidden id="cy-ml-o">planes</span></div></div><div class="pl-esp" id="pl-esp-dentro" hidden><div class="pl-esp-t">Ya tienes cuenta</div><p id="pl-esp-txt"></p><a class="pl-btn" href="/cuenta">Ver mi cuenta</a><div class="pl-esp-n" id="pl-esp-n"></div></div><div class="pl-fine">Los precios se renovarían solos hasta cancelarlos, y cancelar será un botón. Lo que se devuelve y lo que no está escrito desde ya en <a href="/legal#reembolsos">reembolsos</a>.</div></section><footer class="legal"><div class="legal-c">© 2026 CY Elite Lab. Todos los derechos reservados.</div><div class="legal-l"><a href="/legal#terminos">Términos</a> · <a href="/legal#privacidad">Privacidad</a> · <a href="/legal#reembolsos">Reembolsos</a></div></footer></main><nav><a href="/" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg><span>Análisis</span></a><a href="/modelo" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6.5L5.2 18a2 2 0 0 0 1.8 3h10a2 2 0 0 0 1.8-3L14 9.5V3"/><path d="M7.5 15h9"/></svg><span>Modelo</span></a><a href="/mercado" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span>Mercado</span></a><a href="/record" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>Récord</span></a></nav></div><script>
-(function(){
-  var els = document.querySelectorAll('time[data-utc]');
-  if (!els.length) return;
-  var f;
-  try {
-    // SIN LA ZONA (15-sep-2026, Cesar): «8:00 PM», no «8:00 PM CDT».
-    f = new Intl.DateTimeFormat([], {hour:'numeric', minute:'2-digit'});
-  } catch (e) { return; }          // navegador viejo: se queda la de Houston
-  for (var i = 0; i < els.length; i++) {
-    var el = els[i], d = new Date(el.getAttribute('data-utc'));
-    if (isNaN(d.getTime())) continue;
-    var ct = el.textContent;
-    try {
-      el.textContent = f.format(d);
-      el.title = 'Hora de tu dispositivo · ' + ct + ' en Houston';
-    } catch (e) {}
-  }
-})();
-</script><script>
-(function () {
-  try {
-    var LS = "sb-wzhoeptnsaaewtralkla-auth-token", LIB = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js", SRI = "sha384-iLddHTLokph6Omwoyid4XKxHaWa6w41BnoEj0q5oOrzmYPpHIKt1wyjReA7s//pP", SB_URL = "https://wzhoeptnsaaewtralkla.supabase.co", SB_CLAVE = "sb_publishable_MnTtV32UEIqjwt_NIGdUrw_LFe9hInM";
-    var COOKIE = 'cy_sesion';
-    var dom = /(^|\.)cyelitelab\.com$/.test(location.hostname) ? '; domain=cyelitelab.com' : '';
-    function poner(token, seg) {
-      document.cookie = COOKIE + '=' + token + '; path=/; max-age=' + Math.max(0, Math.floor(seg)) +
-                        '; secure; samesite=lax' + dom;
-    }
-    function quitar() {
-      if (document.cookie.indexOf(COOKIE + '=') < 0) return;
-      document.cookie = COOKIE + '=; path=/; max-age=0; secure; samesite=lax' + dom;
-    }
-    function datos(token) {
-      try {
-        var p = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
-        while (p.length % 4) p += '=';
-        return JSON.parse(atob(p));
-      } catch (e) { return null; }
-    }
-    function puedeVer(d) {
-      var pag = {'/': 'analisis', '/lab': 'modelo', '/trends': 'mercado'}[location.pathname];
-      var am = (d && d.app_metadata) || {};
-      if (!pag) return false;
-      if (am.rol === 'ceo') return true;
-      if (am.plan !== 'elite' && am.plan !== 'vip') return false;
-      if (am.plan_hasta && !(Date.parse(am.plan_hasta) > Date.now())) return false;
-      return am.plan === 'elite' || pag === 'analisis';
-    }
-    function revisar(token) {
-      if (!puedeVer(datos(token))) return;
-      var meta = document.querySelector('meta[name="cy-portero"]');
-      var libre = !!meta && meta.getAttribute('content') === 'libre';
-      if (!libre && !(meta === null && location.search)) return;
-      var marca = 'cy-portero:' + location.pathname, huella = token.slice(-16);
-      try {
-        if (sessionStorage.getItem(marca) === huella) return;
-        sessionStorage.setItem(marca, huella);
-      } catch (e) { return; }
-      if (libre) location.reload();
-      else location.replace(location.pathname + location.hash);
-    }
-    var crudo = null;
-    try { crudo = localStorage.getItem(LS); } catch (e) {}
-    if (!crudo) { quitar(); return; }
-    var s = JSON.parse(crudo), ahora = Date.now() / 1000;
-    if (s && s.access_token && s.expires_at && s.expires_at - ahora > 60) {
-      poner(s.access_token, s.expires_at - ahora);
-      revisar(s.access_token);
-      return;
-    }
-    if (document.getElementById('cu')) return;   // la cuenta ya renueva y pone la cookie
-    var sc = document.createElement('script');
-    sc.src = LIB; sc.integrity = SRI; sc.crossOrigin = 'anonymous'; sc.async = true;
-    sc.onload = function () {
-      try {
-        var sb = window.supabase.createClient(SB_URL, SB_CLAVE, {
-          auth: { persistSession: true, autoRefreshToken: false, detectSessionInUrl: false } });
-        sb.auth.getSession().then(function (r) {
-          var se = r && r.data && r.data.session;
-          if (se && se.access_token) {
-            poner(se.access_token, (se.expires_at || 0) - Date.now() / 1000);
-            revisar(se.access_token);
-          } else {
-            quitar();
-          }
-        });
-      } catch (e) {}
-    };
-    document.head.appendChild(sc);
-  } catch (e) {}
-})();
-</script><script>(function(){
-var caja=document.getElementById('cy-ml');if(!caja)return;
-/* ¿YA ESTA DENTRO? Entonces el campo no se enseña. */
-try{
-  if(localStorage.getItem('cy_lista')||localStorage.getItem('sb-wzhoeptnsaaewtralkla-auth-token')){
-    caja.hidden=true;return;
-  }
-}catch(e){}
-var f=document.getElementById('cy-ml-f');if(!f)return;
-var c=document.getElementById('cy-ml-c'),b=document.getElementById('cy-ml-b'),
-    e=document.getElementById('cy-ml-e'),o=document.getElementById('cy-ml-o');
-function mal(t){e.textContent=t;e.hidden=false;}
-f.addEventListener('submit',async function(ev){
-  ev.preventDefault();e.hidden=true;
-  var v=(c.value||'').trim();
-  /* Se mira aqui tambien para no gastar una peticion con un correo a medias.
-     Quien decide de verdad es el portero: esto es cortesia, no seguridad. */
-  if(!/^[^\s@]+@[^\s@.]+\.[^\s@]+$/.test(v))return mal('Escribe un correo válido.');
-  var lun=document.getElementById('cy-ml-lun'),sem=!!(lun&&lun.checked);
-  b.disabled=true;var antes=b.textContent;b.textContent='...';
-  try{
-    var r=await fetch('/portero/lista',{method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({correo:v,origen:o?o.textContent:'web',semanal:sem,
-                           web:document.getElementById('cy-ml-web').value})});
-    var d=await r.json();
-    if(!d.ok)throw new Error(d.motivo||'');
-    /* SE ANOTA ANTES DE NADA: es lo que hace que al volver no se lo pida otra vez. */
-    try{localStorage.setItem('cy_lista',v);}catch(z){}
-    document.getElementById('cy-ml-pide').hidden=true;
-    document.getElementById('cy-ml-ok').hidden=false;
-    /* El resumen semanal viaja en la MISMA peticion que el alta (24-sep-2026,
-       opcion B): una sola llamada, y no hay forma de quedarse a medias con el
-       correo guardado y la casilla sin guardar. Solo se le confirma si la marco. */
-    if(sem)document.getElementById('cy-ml-ok-sem').hidden=false;
-  }catch(x){
-    b.disabled=false;b.textContent=antes;
-    mal(x.message||'No se pudo guardar. Inténtalo en un momento.');
-  }
-});})();</script><script>(function(){try{var r=localStorage.getItem("sb-wzhoeptnsaaewtralkla-auth-token");if(!r)return;var s=JSON.parse(r);var u=s&&(s.user||(s.currentSession&&s.currentSession.user));if(!u)return;var av=!!(u.user_metadata&&u.user_metadata.aviso_planes);var ceo=(u.app_metadata||{}).rol==="ceo";document.getElementById("pl-esp-fuera").hidden=true;document.getElementById("pl-esp-dentro").hidden=false;document.getElementById("pl-esp-txt").textContent=ceo?"Entras como CEO: lo ves todo, sin plan.":(av?"Tienes el aviso activado: te escribiremos una sola vez, el día que se pueda comprar.":"No tienes el aviso activado. Si quieres que te avisemos el día que abra, actívalo en tu cuenta.");document.getElementById("pl-esp-n").textContent=ceo?"":(av?"Con el aviso activado entras con descuento de fundador.":"Con el aviso activado, entras con descuento de fundador.");}catch(e){}})();</script><!-- generado 09/24/2026 5:36 PM --></body></html>
+.ico{width:1.05em;height:1.05em;flex-shrink:0;vertical-align:-.16em;margin-right:.32em}
+/* El aire entre juegos vive aqui y no en el `gap` de la rejilla: el
+   dashboard no usa `.grid` —cuelga los .gitem de .lab-real, que no tiene
+   ni una regla— y alli los juegos salian pegados unos a otros. */
+.gitem{min-width:0}
+.gitem+.gitem{margin-top:12px}
+/* ============ LA TARJETA (rediseño del 30-ago-2026) ============
+   Dos cosas la hacian ver "pequeña y apretada", y las dos estan medidas:
+   habia tipografia de 8.5 px y las tarjetas iban a 8 px de padding, mientras
+   Trends no baja de 10.5 y respira a 11-13. Aqui se adopta la escala de Trends
+   y las medidas de las tarjetas de PICKS (radio 16, padding 15/16, margen 12),
+   que es lo que hace que las tres paginas se vean de la misma web.
+   NO se meten variables CSS a proposito: este CSS se copia al dashboard
+   filtrado por selector, y alli los tokens se llaman distinto (--card, --mut),
+   SELECTOR SIMPLE, Y NO ES UN DETALLE (31-ago-2026): esta regla era
+   `.gc.card`, que exige las DOS clases. Al incrustar el LAB en el
+   dashboard, _tarjetas_del_lab quita `card` (`gc card` -> `gc`) para que no
+   choque con la `.card` del shell, que es la de los picks. Asi que la regla
+   viajaba pero no llegaba a aplicarse nunca: en lab.html la tarjeta tenia su
+   borde y en el dashboard —donde Cesar mira a diario— salia plana, sin nada
+   que separase un juego del siguiente. Con `.gc` a secas ya no depende de
+   una clase que puede viajar o no.
+   El margen sale de aqui y se va a `.gitem`: ver abajo. */
+.gc{background:#161b22;border:1px solid #30363d;border-radius:16px;
+    padding:15px 16px;overflow:visible}
+.lb-head{display:flex;align-items:center;justify-content:space-between;gap:10px;
+       padding-bottom:11px;border-bottom:1px solid #21262d}
+.lb-hr{font-size:13px;font-weight:600;color:#c9d1d9;font-variant-numeric:tabular-nums}
+/* SIN CAJA (1-sep-2026, peticion de Cesar): el estado del lineup se dice con
+   el COLOR de la letra, como se hizo con el boton Detalle. La pastilla con
+   fondo y borde competia con los chips de ventaja de mas abajo, que si
+   necesitan caja porque alli el color significa una banda medida. */
+.lb-pill{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+      white-space:nowrap}
+.lb-pill.ok{color:#3fb950}
+.lb-pill.pr{color:#f0c75e}
+/* PF / WX / UMP: los tres multiplicadores del total, cada uno con su %.
+   Caja neutra y el color SOLO en el numero, igual que en Trends: aqui el
+   color dice el signo, no una banda de valor. */
+.lb-ajs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.lb-aj{font-size:11px;font-weight:600;color:#8b949e;background:#0d1117;
+     border:1px solid #21262d;border-radius:7px;padding:3px 8px;white-space:nowrap;
+     font-variant-numeric:tabular-nums}
+.lb-aj i{font-style:normal;font-weight:700;font-size:10px;letter-spacing:.08em;
+     text-transform:uppercase;color:#6e7681;margin-right:4px}
+.lb-aj.up{color:#3fb950}
+.lb-aj.dn{color:#d29922}
+/* ===== EL DUELO, EN ESPEJO (2-sep-2026) =====================================
+   Se espeja la ALINEACION, nunca el ORDEN de lo que hay dentro. Ver _card_full. */
+.e-hd{text-align:center;font-size:11px;font-weight:400;color:#6e7681;
+      padding-bottom:5px}
+/* Los chips van PEGADOS a la sede: son la misma cosa --donde y en que
+   condiciones se juega--. El aire que habia entre los dos pasa abajo, que es
+   donde de verdad separa: entre el contexto y el duelo. */
+.e-chips{display:flex;justify-content:center;margin-bottom:2px}
+.e-chips .lb-ajs{justify-content:center;margin-top:0}
+.e-mid{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;
+       margin:12px 0 11px}
+.e-eq{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:0}
+.e-lg{width:34px;height:34px;object-fit:contain}
+.e-ab{font-weight:700;font-size:13px;color:#e6edf3;display:flex;align-items:baseline;
+      gap:4px}
+.e-ml,.e-win{font-size:11px;font-weight:400;color:#8b949e;
+      font-variant-numeric:tabular-nums}
+.e-num{text-align:center;min-width:132px}
+.e-runs{display:flex;align-items:center;justify-content:center;gap:8px}
+.e-runs span{font-weight:700;font-size:23px;color:#e6edf3;line-height:1;
+      font-variant-numeric:tabular-nums}
+.e-runs i{font-style:normal;font-weight:700;font-size:10px;line-height:1.25;
+      letter-spacing:.09em;color:#6e7681}
+/* La probabilidad de cada equipo va con la MISMA reja que los EXP RUNS
+   --mismo gap, mismo ancho para el hueco central-- para que cada porcentaje
+   caiga justo debajo de su equipo y no haya que adivinar cual es cual. */
+.e-teq{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:3px}
+.e-teq span{font-size:10px;font-weight:400;color:#8b949e;min-width:56px;
+      text-align:center;white-space:nowrap}
+.e-teq b{color:#c9d1d9;font-weight:700}
+.e-teq i{display:block;width:26px}
+.e-tot{font-size:12.5px;font-weight:400;color:#c9d1d9;margin-top:7px}
+.e-tot b{color:#e6edf3;font-weight:700}
+.e-mkt{font-size:11px;font-weight:400;color:#6e7681;margin-top:4px;
+      font-variant-numeric:tabular-nums}
+.e-num .lb-pill{display:inline-block;margin-top:6px}
+/* EL FONDO EN REJILLA: cada fila comparte altura con la del otro equipo, asi
+   que BP y OF arrancan SIEMPRE a la misma altura en los dos lados. Con dos
+   columnas sueltas, una linea de mas en un lado descuadraba todo lo de abajo. */
+.q-rot{text-align:center;font-size:10px;font-weight:700;letter-spacing:.1em;
+      color:#6e7681;margin:13px 0 7px}
+.q-g{display:grid;grid-template-columns:1fr 1fr;column-gap:12px;align-items:start}
+.q-g>*{min-width:0}
+.q-g>.r{text-align:right}
+.q-nom{font-weight:600;font-size:12.5px;line-height:1.35;color:#e6edf3}
+.q-nom .mn{color:#6e7681;font-weight:400}
+.q-val{font-size:11px;font-weight:400;line-height:1.5;color:#c9d1d9;margin-top:2px;
+      font-variant-numeric:tabular-nums;white-space:nowrap}
+/* La nota, DENTRO de la linea de metricas, va sin caja: solo el color. Con caja
+   (padding 1px 5px + margen 5px) las tres sumaban unos 40px y forzaban el salto
+   justo en la ultima. Mismo criterio que el estado del lineup y el boton. */
+.q-bo{font-size:11px;font-weight:400;line-height:1.7;color:#c9d1d9;margin-top:10px;
+      font-variant-numeric:tabular-nums}
+.q-bo i{font-style:normal;font-weight:700;font-size:10px;letter-spacing:.08em;
+      color:#6e7681;margin-right:5px}
+.q-bo b{font-weight:600;color:#e6edf3}
+.q-bo b.up{color:#3fb950}
+.q-bo b.dn{color:#d29922}
+.q-bo em{font-style:normal;font-size:11px;color:#8b949e}
+.q-bo em.up{color:#3fb950}
+.q-bo em.dn{color:#d29922}
+.q-bo em.mut{color:#6e7681}
+/* El perfil de 5 categorias, dentro del Detalle y bajo el logo de cada equipo. */
+.d-pf{width:100%;border-collapse:collapse;margin:1px 0 4px;
+      font-variant-numeric:tabular-nums}
+.d-pf th{font-size:10px;font-weight:700;letter-spacing:.05em;color:#6e7681;
+      padding:0 1px 3px;text-align:center}
+.d-pf td{padding:1px;text-align:center;font-size:11px}
+.lb-t4{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;
+         font-size:13px;margin-top:10px}
+.lb-t4 th{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:#6e7681;
+            font-weight:700;padding:0 4px 5px;text-align:right}
+.lb-t4 th.l{text-align:left}
+.lb-t4 td{padding:6px 4px;text-align:right;color:#c9d1d9}
+.lb-t4 tr.b td{border-bottom:1px solid #21262d}
+.lb-t4 td.eq{text-align:left;font-weight:800;font-size:14px;color:#e6edf3}
+.lb-t4 td.eq2{text-align:left;font-size:12.5px;color:#e6edf3;font-weight:400}
+.lb-eqin{display:flex;align-items:center;gap:7px}
+.lb-lgt{width:22px;height:22px;object-fit:contain;flex-shrink:0}
+.lb-t4 td.lb-win{color:#58a6ff;font-weight:600}
+.mn{color:#6e7681}
+/* El TOTAL cae en la columna EXP: el total ES la suma de las dos carreras
+   esperadas, asi que ahi la cuenta se ve sola y no hace falta rotularlo
+   "modelo" — ya esta bajo la cabecera que dice EXP. */
+.lb-totr td{border-top:1px solid #30363d;padding-top:9px}
+.lb-totk{text-align:left;font-size:11px;font-weight:700;letter-spacing:.07em;
+        text-transform:uppercase;color:#6e7681;vertical-align:middle}
+.lb-totm{text-align:left;font-size:11px;color:#8b949e;vertical-align:middle}
+.lb-totm b{color:#c9d1d9;font-weight:600;font-size:13px}
+.lb-totv{font-size:15px;font-weight:700;color:#e6edf3;vertical-align:middle;
+        letter-spacing:-.02em}
+/* El GRADO va pegado a su metrica. Antes se ponian "ERA C" y "K-BB D" como dos
+   etiquetas seguidas en la misma celda y se leian juntas: la causa no era el
+   espaciado sino repetir un rotulo que la cabecera de la tabla ya da. */
+/* LA NOTA VA SIN CAJA (2-sep-2026, peticion de Cesar). Solo la letra en su
+   color, igual que el estado del lineup y el boton Detalle. Con fondo y
+   padding, tres notas seguidas en una linea sumaban ~40px, forzaban el salto
+   y en movil se veian apretadas y descuadradas. La caja sobrevive en UN sitio
+   --la tabla del Perfil-- porque alli cada letra va sola en su celda y sin caja
+   las de color se leian mas pequenas que las grises. Ver .d-pf .gr. */
+.gr{font-size:10px;font-weight:700;margin-left:4px;
+    white-space:nowrap;vertical-align:middle}
+.n-eds{display:flex;gap:7px;margin-top:12px}
+/* Boton Detalle: solo texto azul, centrado y al final de la tarjeta, que es lo
+   unico que se pulsa. Con caja y a media altura partia la tarjeta en dos. */
+.detwrap{display:flex;justify-content:center;margin-top:13px;padding-top:11px;
+         border-top:1px solid #21262d}
+/* Es un <button> por accesibilidad (teclado y lector de pantalla), pero NO debe
+   PARECER un boton: Cesar lo quiere como texto azul y punto. Un <button> trae
+   borde, fondo gris y fuente propia del navegador, asi que hay que apagarlos a
+   mano — si no, vuelve a salir la caja. */
+.detb{display:inline-flex;align-items:center;gap:6px;padding:2px 6px;font-size:12.5px;
+      font-weight:600;color:#58a6ff;cursor:pointer;
+      background:none;border:0;font-family:inherit;line-height:inherit;
+      -webkit-appearance:none;appearance:none}
+.detb:hover{color:#79c0ff}
+.detb:focus-visible{outline:2px solid #58a6ff;outline-offset:3px;border-radius:4px}
+/* CONTEXTO en dos lineas, y en un solo sitio (ya no se repite en el Detalle) */
+.lb-ctx{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;margin-top:12px;
+     padding-top:11px;border-top:1px solid #21262d}
+.lb-cx{min-width:0}
+.lb-cxk{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+     color:#6e7681}
+.lb-cxv{font-size:12.5px;color:#c9d1d9;white-space:nowrap;overflow:hidden;
+     text-overflow:ellipsis;font-variant-numeric:tabular-nums}
+.lb-cxv b{color:#e6edf3;font-weight:600}
+.lb-cxv .up{color:#3fb950}
+.lb-cxv .dn{color:#d29922}
+/* Pie "Actualizado", debajo de todas las tarjetas */
+.lab-pie{display:flex;align-items:center;justify-content:space-between;gap:10px;
+         margin-top:16px;padding:12px 14px;background:#161b22;border:1px solid #30363d;
+         border-radius:14px}
+.lab-pk{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+        color:#6e7681}
+.lab-pn{font-size:11px;color:#8b949e;margin-top:2px}
+.lab-pv{font-size:12.5px;color:#c9d1d9;text-align:right;font-variant-numeric:tabular-nums}
+/* ---- Detalle en pestañas ---- */
+/* DETALLE POR EQUIPO (DET 2). Dos columnas grandes: en cada una, todo lo de
+   ese equipo. Sustituye a las pestañas, que obligaban a tocar cuatro veces
+   para ver un juego entero. */
+.d-teams{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.d-team{min-width:0}
+.d-th{display:flex;align-items:center;gap:7px;font-weight:800;font-size:14px;
+      color:#e6edf3;padding-bottom:7px;margin-bottom:8px;border-bottom:1px solid #30363d}
+.d-lg{width:20px;height:20px;object-fit:contain;flex-shrink:0}
+.d-cols{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.d-col{min-width:0}
+.d-sub{font-size:10px;font-weight:800;color:#c9d1d9;margin-bottom:2px;white-space:nowrap;
+       overflow:hidden;text-overflow:ellipsis}
+.d-team>.d-bt:first-child{margin-top:0}
+.d-bt{font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#6e7681;
+      margin:6px 0 2px}
+.d-ln{display:flex;justify-content:space-between;gap:5px;font-size:10px;color:#8b949e;
+      padding:1.5px 0;border-bottom:1px solid #21262d;font-variant-numeric:tabular-nums}
+.d-ln>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.d-ln>span:last-child{flex-shrink:0;color:#c9d1d9}
+/* La nota que distingue los dos FIP (9-sep-2026): el de la temporada y el de
+   tres anos, que es el que usa el modelo. Sin ella los dos numeros parecian el
+   mismo dato mal calculado. */
+.d-nt{font-style:normal;color:#6e7681;font-size:10px}
+.d-pen{font-size:10px;color:#8b949e;line-height:1.4}
+@media(max-width:339px){.d-cols,}
+.gc-top{display:flex;justify-content:space-between;align-items:center;color:#8b949e;font-size:11px;margin-bottom:8px}
+.bd{font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px}
+.bd-c{background:#12261a;border:1px solid #1d4428;color:#3fb950}
+.bd-p{background:#2d1e05;border:1px solid #5c4a1a;color:#f0c75e}
+.bd-f{background:#0d1b2a;border:1px solid #1f4068;color:#58a6ff}
+.gc-row{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.gc-side{text-align:center;width:70px}
+/* AQUI VIVIA .logo, y era CSS MUERTO que encogia logos ajenos (2-sep-2026).
+   Solo la usaba _card_f5, que no se renderiza. Pero el dashboard pega este
+   paquete DESPUES del suyo, y el suyo tiene .logo{42px}: los 3 logos de la
+   seccion de picks salian a 34px. Los logos que el LAB si usa llevan su propia
+   clase con prefijo (.e-lg, .lb-lgt, .d-lg), que no se pisa con nadie. */
+.gc-ab{font-weight:800;font-size:15px;margin-top:2px}
+.e-jm{font-size:11px;color:#6e7681;font-variant-numeric:tabular-nums;margin-top:1px}
+.gc-ml{font-size:11px;color:#8b949e}
+.gc-w{font-size:11px;color:#58a6ff;font-weight:700}
+.gc-mid{text-align:center;flex:1}
+.gc-pr{font-size:24px;font-weight:800;color:#e6edf3;margin:0 6px}
+.gc-x{display:inline-block;font-size:10px;color:#8b949e;vertical-align:middle;line-height:1.1}
+.gc-tot{font-size:12.5px;margin:4px 0 2px}
+.gc-sp{display:grid;grid-template-columns:1fr auto 1fr;gap:9px;align-items:start;font-size:11px;color:#c9d1d9;margin-top:6px}
+.sp-c{min-width:0}
+.sp-c.r{text-align:right}
+.sp-n{font-size:12.5px;font-weight:700;color:#e6edf3;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp-e{font-size:11px;color:#8b949e;font-variant-numeric:tabular-nums;margin-top:1px}
+.sp-g{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.sp-c.r .sp-g{justify-content:flex-end}
+.sp-vs{font-size:10px;color:#6e7681;padding-top:3px}
+.mut{color:#8b949e}
+.mut2{color:#6e7681;font-size:11px}
+.gc-edges{display:flex;gap:8px;justify-content:center;margin-top:8px;padding-top:8px;border-top:1px solid #21262d;flex-wrap:wrap}
+.bn-edges{display:flex;gap:8px;margin-top:8px;padding-top:8px;border-top:1px solid #21262d}
+.ec{flex:1;min-width:0;text-align:center;font-size:11px;font-weight:800;padding:7px 8px;border-radius:8px;border:1px solid #30363d;background:#0d1117;color:#8b949e;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
+.ec.on{color:#3fb950;background:rgba(63,185,80,.13);border-color:#1d4428}
+.ec.peq{color:#e6edf3;background:#161b22;border-color:#30363d}
+.ec.warn{color:#d29922;background:rgba(210,153,34,.10);border-color:#4a3a12}
+.ec.off{color:#8b949e;background:#161b22;border-color:#30363d}
+/* AQUI VIVIA .chip, y era CSS MUERTO que hacia daño (2-sep-2026). El LAB no lo
+   usa --su _chip() emite class="ec"-- pero el dashboard pega este paquete y el
+   de Trends uno detras de otro, y Trends SI usa .chip. Lo que sobrevivia de
+   esta regla (font-weight:800, display) engordaba los chips de Trends sin que
+   nada en el LAB se beneficiara. Se elimina: si algun dia el LAB necesita un
+   chip, ya tiene .ec, que va con prefijo y no se pisa con nadie. */
+/* Los ceros son a proposito: blindan la nota contra cualquier clase que
+   comparta nombre en el futuro (fue lo que paso con .gc). */
+.gr{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.02em;
+    vertical-align:middle;padding:0;border:0;border-radius:0;background:none}
+/* Solo el COLOR. El fondo se reserva para el Perfil (.d-pf .gr). */
+/* LOS NOMBRES VIEJOS SIGUEN AQUI COMO ALIAS, y no es por pereza. Las tarjetas
+   de los juegos que ya empezaron quedan CONGELADAS como HTML en
+   data/lab_cards_{fecha}.json, y ese HTML se escribio con las clases viejas.
+   El dia del renombrado se publicaron 78 notas congeladas que se quedaron sin
+   regla de color --la caja no volvio, porque .gr ya declara sus ceros y va
+   despues de .gc, pero el color si se perdio--. Los alias se pueden borrar
+   cuando no queden snapshots viejos, o sea al dia siguiente. */
+.gr.n-a,.gr.ga{color:#3fb950}
+.gr.n-b,.gr.gb{color:#56b98a}
+.gr.n-c,.gr.gc{color:#8b949e}
+.gr.n-d,.gr.gd{color:#f85149}
+/* EN EL PERFIL SI VA LA CAJA. Alli cada letra ocupa una celda ella sola, y sin
+   fondo las de color se veian mas chicas que las grises: la caja las iguala.
+   Ancho minimo para que A+ y C ocupen lo mismo y la fila quede a plomo. */
+.d-pf .gr{padding:2px 0;border-radius:5px;border:1px solid transparent;
+    min-width:26px;text-align:center;margin:0;font-size:10px}
+.d-pf .gr.n-a,.d-pf .gr.ga{background:#12261a;border-color:#1c3b28}
+.d-pf .gr.n-b,.d-pf .gr.gb{background:#16241f;border-color:#20372e}
+.d-pf .gr.n-c,.d-pf .gr.gc{background:#21262d;border-color:#30363d}
+.d-pf .gr.n-d,.d-pf .gr.gd{background:#2b1618;border-color:#42211f}
+.lg.w2{color:#c9d1d9;background:#161b22;border-left:2px solid #d29922;padding:8px 10px;border-radius:0 7px 7px 0;margin:7px 0;line-height:1.65}
+.gc-amb{display:flex;gap:8px;justify-content:center;margin-top:8px;flex-wrap:wrap}
+.mini{font-size:11px;color:#8b949e}
+.mini.lw{color:#f0c75e;font-weight:700}
+.det-btn{display:block;margin:10px auto 0;background:none;border:1px solid #30363d;border-radius:8px;color:#58a6ff;font-size:11px;font-weight:700;padding:4px 14px;cursor:pointer}
+.det{margin-top:10px;border-top:1px solid #21262d;padding-top:8px}
+.det-sec{margin-bottom:10px}
+.det-t{font-size:11px;font-weight:800;color:#58a6ff;letter-spacing:.5px;margin-bottom:4px}
+.det-sub{font-size:11px;font-weight:700;color:#e6edf3;margin:6px 0 2px}
+.det-ln{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:#8b949e;padding:2.5px 0;border-bottom:1px solid #1c2128}
+.det-ln>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.det-ln span:last-child{text-align:right;color:#c9d1d9;flex-shrink:0}
+.det-pen{font-size:11px;color:#8b949e;line-height:1.45;padding:2px 0}
+.det-cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+/* En movil TAMBIEN dos columnas, cada equipo en la suya: antes se
+   colapsaban a una y habia que bajar media pantalla para comparar los
+   dos lineups. Se compensa apretando la tipografia. */
+@media(max-width:520px){.det-cols{gap:7px}.det-ln{font-size:11px;gap:5px;padding:2px 0}
+  .det-sub{font-size:11px}.det-t{font-size:10px}.det-pen{font-size:10px}}
+/* Por debajo de 340px ya no caben dos: ahi si se apilan. */
+@media(max-width:339px){.det-cols{grid-template-columns:1fr}}
+.det-col{min-width:0}
+.leg{margin-top:12px}
+.leg-acc{width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px 15px;color:#e6edf3;font-weight:800;font-size:14px;cursor:pointer}
+.leg-panel{border:1px solid #30363d;border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:6px 14px;background:#0f141a}
+/* EL GLOSARIO, COMO EL DEL MERCADO (21-sep-2026, Cesar: «sin esas lineas y las letras de
+   los parrafos normales no en negrita»). Sin raya bajo cada entrada ni bajo cada titulo;
+   en negrita solo el termino que abre la entrada, y el resto del parrafo en letra normal. */
+.glo{font-size:13px;color:#c9d1d9;line-height:1.7;margin:0 0 8px}
+.glo b{font-weight:400;color:inherit}
+.glo>b:first-child{font-weight:700;color:#e6edf3}
+.glo-h{font-size:14px;font-weight:700;color:#e6edf3;margin:14px 0 6px}
+.glo-h:first-child{margin-top:8px}
+.lg:last-child{border-bottom:none}
+.lg b{color:#e6edf3}
+
+.gl{margin-top:18px;background:#161b22;border:1px solid #30363d;border-radius:12px;overflow:hidden}
+.gl-s{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 15px;
+ cursor:pointer;list-style:none;font-family:inherit;font-size:14px;font-weight:700;color:#e6edf3}
+.gl-s::-webkit-details-marker{display:none}
+.gl-ar{color:#8b949e;font-size:11px;transition:transform .15s}
+.gl[open] .gl-ar{transform:rotate(180deg)}
+.gl-p{padding:2px 15px 14px;border-top:1px solid #21262d}
+.gl-h{font-size:14px;font-weight:700;line-height:1.5;color:#e6edf3;margin:14px 0 6px}
+.gl-e{font-size:13px;font-weight:400;line-height:1.7;color:#c9d1d9;margin:0 0 8px}
+.gl-e b{font-weight:400;color:inherit}
+.gl-e>b:first-child{font-weight:700;color:#e6edf3}
+.gl-e i{color:#8b949e;font-style:italic}
+
+.pp{max-width:560px;margin:0 auto;padding-block:18px 40px;padding-left:16px;padding-right:16px}
+.pp-marca{font:800 24px var(--font);letter-spacing:.5px;
+  background:linear-gradient(90deg,#d4af37,#f0c75e);-webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;background-clip:text;text-decoration:none;display:inline-block}
+.pp-mig{font-size:11px;color:var(--faint);margin:14px 0 6px}
+.pp-mig a{color:var(--mut);text-decoration:none}
+.pp-h1{font:800 23px var(--font);letter-spacing:-.015em;margin:0 0 4px;line-height:1.2}
+.pp-sub{font-size:13px;color:var(--mut);margin:0}
+.pp-fin{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding:6px 12px;
+  border:1px solid var(--line);border-radius:999px;background:var(--card);font:700 13px var(--font)}
+.pp-fin i{font-style:normal;font-size:10px;letter-spacing:.08em;color:var(--mut)}
+.pp-fin b{font-size:15px}
+.pp-sec{font-size:15px;font-weight:700;letter-spacing:-.005em;margin:26px 0 8px}
+.pp-p{font-size:13px;color:var(--soft);line-height:1.62;margin:0 0 12px}
+.pp-mk{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 16px}
+.pp-mk table{width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed}
+.pp-mk th{font:700 10px var(--font);letter-spacing:.08em;text-transform:uppercase;
+  color:var(--mut);text-align:right;padding:0 0 8px}
+.pp-mk th:first-child{text-align:left}
+.pp-mk td{padding:7px 0;border-top:1px solid var(--line2);text-align:right;
+  font-variant-numeric:tabular-nums}
+.pp-mk td:first-child{text-align:left;color:var(--mut);font-size:12.5px}
+.pp-mov{margin-top:11px;padding-top:11px;border-top:1px solid var(--line2);
+  font-size:12.5px;color:var(--soft);line-height:1.55}
+.pp-mov b{color:var(--text)}
+.pp-tapa{background:var(--panel);border:1px dashed var(--line);border-radius:13px;
+  padding:20px 18px;text-align:center}
+.pp-tapa-t{font:700 14px var(--font);margin-bottom:6px}
+.pp-tapa-d{font-size:12.5px;color:var(--mut);line-height:1.6;margin:0 auto;max-width:42ch}
+.pp-tapa-b{display:inline-block;margin-top:13px;background:var(--gold);color:#0d1117;
+  font:800 14px var(--font);text-decoration:none;padding:11px 22px;border-radius:9px}
+.pp-pie{margin-top:34px;padding-top:16px;border-top:1px solid var(--line2);
+  font-size:11px;color:var(--faint);line-height:1.75}
+.pp-pie a{color:var(--mut)}
+.gc.card{margin:0}

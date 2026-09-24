@@ -800,11 +800,11 @@
    "pregunta": "¿Nuestro ranking de abridores se parece al de la referencia?",
    "minimo": 20,
    "estado": "medida",
-   "n": 119,
-   "texto": "ranking de abridores contra la referencia: correlación +0.819 · error mediano 23 puestos",
+   "n": 142,
+   "texto": "ranking de abridores contra la referencia: correlación +0.834 · error mediano 21 puestos",
    "datos": {
-    "correlacion": 0.819,
-    "error_mediano": 23
+    "correlacion": 0.834,
+    "error_mediano": 21.0
    },
    "alarma": null
   },
