@@ -215,17 +215,236 @@
         "alineaciones": true,
         "abridores": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "HOU/SEA u7.5",
+      "deporte": "MLB",
+      "tipo": "u7.5",
+      "cuota": -103,
+      "prob_estimada": 53.0,
+      "razon": "Las dos ofensivas llegan frias (HOU 3.7 c/j y SEA 3.4 c/j con ops .654 en la semana) al parque mas supresor del calendario (pf 85, techo cerrado, sin clima en juego) y con umpire de -1.9% en carreras. La linea ya bajo de 8.0 a 7.5, senal de que el numero, no el precio, se movio hacia abajo.",
+      "equipos": [
+        "HOU",
+        "SEA"
+      ],
+      "destacado": null,
+      "hora": "9:10 PM CT",
+      "capas": [
+        "ofensiva",
+        "parque",
+        "umpire",
+        "mercado"
+      ],
+      "contra": "E. Pecko tiene apenas 116 bateadores enfrentados y un fip de 4.77: si lo castigan temprano, el bullpen de HOU viene de 7.0 IP en dos dias y el under muere en la sexta.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.5
+      },
+      "inicio_utc": "2026-09-24T02:10:00Z",
+      "cuota_apertura_ref": -102,
+      "valor": {
+        "prob_estimada": 53.0,
+        "prob_justa": 48.38,
+        "prob_implicita": 50.74,
+        "cuota": -103,
+        "cuota_justa_mercado": 107,
+        "ev_pct": 4.46,
+        "ev_kalshi_pct": 1.01,
+        "precio_minimo": -107,
+        "precio_publicado": -107,
+        "precio_equilibrio": -112,
+        "discrepancia_pp": 4.62,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +4.46% · no tomar peor de -107",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "mov_linea": -0.5
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-24T00:00:21Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": false,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "AZ/COL o11.0",
+      "deporte": "MLB",
+      "tipo": "o11.0",
+      "cuota": -114,
+      "prob_estimada": 54.0,
+      "razon": "Coors con pf 125 y viento de 7.1 mph hacia el jardin central, dos abridores con ERA por encima de 5.00 y el bullpen local en 5.26. AZ llega con 5.0 c/j y ops .804 en la semana; COL ha pasado de 8.5 en 8 de sus ultimos 10.",
+      "equipos": [
+        "AZ",
+        "COL"
+      ],
+      "destacado": null,
+      "hora": "7:40 PM CT",
+      "capas": [
+        "parque",
+        "clima",
+        "bullpen",
+        "ofensiva"
+      ],
+      "contra": "La ofensiva de COL esta en caida libre (2.8 c/j, ops .613 en 6 juegos) y AZ batea solo .232/.688 vs derechos: si ambos lineups fallan, 11 carreras es un numero alto incluso en Coors.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 11.0
+      },
+      "inicio_utc": "2026-09-24T00:40:00Z",
+      "cuota_apertura_ref": -110,
+      "valor": {
+        "prob_estimada": 54.0,
+        "prob_justa": 50.98,
+        "prob_implicita": 53.27,
+        "cuota": -114,
+        "cuota_justa_mercado": -104,
+        "ev_pct": 1.37,
+        "ev_kalshi_pct": -1.9,
+        "precio_minimo": -110,
+        "precio_publicado": -110,
+        "precio_equilibrio": -117,
+        "discrepancia_pp": 3.02,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.37% por debajo del minimo exigido (2.8%)",
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 10,
+        "no_encontrados": [
+          {
+            "numero": "8.5",
+            "frase": "llega con 5.0 c/j y ops .804 en la semana; COL ha pasado de 8.5 en 8 de sus ultimos"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-24T00:00:21Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "oro",
+      "pick": "LAA F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": 104,
+      "prob_estimada": 51.5,
+      "razon": "El F5 aisla la unica ventaja clara del juego: W. Urena (2.74 ERA, fip 3.71, 7.0 IP sin carrera en su ultima) contra J. Springs (6.18 ERA, fip 5.58, 3.1 IP y 6 limpias en la suya). Analisis flojo en respaldo ofensivo: LAA apenas promedia 3.3 c/j y ops .635 en la semana, por eso se limita a las cinco primeras y no al juego completo.",
+      "equipos": [
+        "LAA",
+        "ATH"
+      ],
+      "destacado": "LAA",
+      "hora": "8:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup",
+        "ofensiva"
+      ],
+      "contra": "El lineup de LAA es el peor de la tanda (Moore .484, Teodosio .472, Heineman .439) y puede no anotarle ni a un abridor malo; si el F5 acaba igualado en el consenso el dinero se devuelve, pero en Kalshi el empate se pierde.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "LAA",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-24T01:40:00Z",
+      "valor": {
+        "prob_estimada": 51.5,
+        "prob_justa": null,
+        "prob_implicita": 49.02,
+        "cuota": 104,
+        "cuota_justa_mercado": null,
+        "ev_pct": 5.06,
+        "ev_kalshi_pct": 1.49,
+        "precio_minimo": -101,
+        "precio_publicado": -101,
+        "precio_equilibrio": -106,
+        "discrepancia_pp": null,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +5.06% · no tomar peor de -101",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "MEDIA"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 11,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-24T00:00:21Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
-  "resumen": "Jornada de bates frios casi en todas partes, y por eso lo que mas destaca es la excepcion: en Kansas City chocan las dos unicas ofensivas calientes del cartel con un abridor corto por un lado y un bullpen local de 5.02 por el otro, con parque y umpire a favor de las carreras. En Pittsburgh el contraste es igual de claro: local con .885 de ops en la semana contra una STL con 54 ponches en cinco juegos. El tercer apunte, el under en el Bronx, es de ventaja corta y se publica como tal: dos ofensivas apagadas, dos bullpenes de elite y viento hacia dentro, con el riesgo del novato M. Englert. Se descartan MIL en las cinco entradas por el movimiento fuerte en contra y los totales de Atlanta y Filadelfia por falta de margen.",
+  "resumen": "Jornada de bates frios casi en todas partes, y por eso lo que mas destaca es la excepcion: en Kansas City chocan las dos unicas ofensivas calientes del cartel con un abridor corto por un lado y un bullpen local de 5.02 por el otro, con parque y umpire a favor de las carreras. En Pittsburgh el contraste es igual de claro: local con .885 de ops en la semana contra una STL con 54 ponches en cinco juegos. El tercer apunte, el under en el Bronx, es de ventaja corta y se publica como tal: dos ofensivas apagadas, dos bullpenes de elite y viento hacia dentro, con el riesgo del novato M. Englert. Se descartan MIL en las cinco entradas por el movimiento fuerte en contra y los totales de Atlanta y Filadelfia por falta de margen.\n\nTanda nocturna con dos lecturas de total y una de abridores. La mas limpia esta en T-Mobile: dos ofensivas por debajo de 3.8 carreras por juego, el parque mas supresor del dia, umpire negativo en carreras y una linea que bajo medio punto. En el extremo opuesto, la altura y el viento a favor sostienen el over de AZ/COL con dos abridores por encima de 5.00 de efectividad y el bullpen local hundido. Y en LAA/ATH la diferencia entre W. Urena y J. Springs solo se puede cobrar en las cinco primeras, porque el lineup visitante no da para sostener un juego completo. SD/LAD queda fuera por precio y porque el over no discrepa del consenso.",
   "descartes": [
     "MIL F5 ML en Kalshi: L. Henderson daba ventaja real sobre A. Nola, pero el movimiento FUERTE de MIL de -145 a -122 va justo en contra y descarta la señal.",
     "TOR ML: el abridor local T. Gibson es malisimo (7.36, 15.5% de boletos), pero TOR llega con .588 de ops y 3.6 c/j, sin ofensiva funcional para cobrarlo (SYS-004).",
     "CIN/ATL u7.0: C. Sale y el relevo de ATL invitan, pero ATL viene anotando 5.1 c/j en sus ultimos 10 contra un A. Abbott de 4.70; la linea ya bajo de 7.5 a 7.0 y no queda ventaja.",
     "MIA/CHC: CHC a -185 esta fuera de banda y el over 6.5 a -120 no deja margen suficiente sobre la linea justa.",
     "MIL/PHI u7.0: bullpenes buenos y bates frios, pero PHI lleva 8 de 10 juegos por encima de 8.5 carreras y el parque es de 104; ventaja insuficiente.",
-    "NYM/TEX: mercado practicamente 50-50 sin discrepancia que nombrar en ningun mercado."
+    "NYM/TEX: mercado practicamente 50-50 sin discrepancia que nombrar en ningun mercado.",
+    "AZ ML -158: la linea justa ya le da 59.4% y su split vs derechos (.232/.688) choca con la ofensiva caliente de la semana; sin margen sobre el precio.",
+    "COL +139 y LAD -220 / SD +185: fuera de la banda de precio operable.",
+    "LAA/ATH u9.5: las dos ofensivas estan por debajo de 4.0 c/j, pero el parque (pf 116), el calor de 88F y el bullpen de ATH (5.11 ERA, 6.3 IP en dos dias) rompen dos de las cuatro comprobaciones obligatorias del under.",
+    "SD/LAD o8.0: dos ofensivas calientes, pero Y. Yamamoto (fip 3.49, 14 IP con 1 limpia en sus dos ultimas) y un parque neutro dejan la ventaja sobre el 51.1% justo en nada.",
+    "HOU ML +109: el mercado lo acorto desde +124, pero la alineacion visitante no esta publicada y E. Pecko es el abridor mas debil del duelo; hueco de informacion sobre el lado que paga."
   ],
   "vivo": {
     "plan": {
@@ -393,15 +612,43 @@
         "sin_ventaja": 2,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-09-24T00:00:21Z",
+        "min_ct": 1140,
+        "claves": [
+          "AZ@COL@2026-09-24T00:40:00Z",
+          "LAA@ATH@2026-09-24T01:40:00Z",
+          "SD@LAD@2026-09-24T02:10:00Z",
+          "HOU@SEA@2026-09-24T02:10:00Z"
+        ],
+        "juegos": [
+          "AZ@COL",
+          "LAA@ATH",
+          "SD@LAD",
+          "HOU@SEA"
+        ],
+        "alineaciones": [
+          7,
+          8
+        ],
+        "senales": [
+          "LAA F5 ML",
+          "HOU/SEA u7.5"
+        ],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 0-2 (-2.00 U).\n• MIN F5 ML (SEÑAL ELITE), perdida: MIN 3-2 SF.\n• DET F5 ML (SEÑAL FUERTE), perdida: WSH 3-1 DET.\n2 perdidas con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 1,
-    "seguimiento": 2,
+    "apostables": 3,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
-    "riesgo_u": 1.0,
+    "riesgo_u": 3.0,
     "ev_min": 2.0
   }
 }
