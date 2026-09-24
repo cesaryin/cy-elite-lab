@@ -883,6 +883,17 @@
    "alarma": null
   },
   {
+   "id": "sistema.refrescos",
+   "area": "Sistema",
+   "pregunta": "¿Corrieron ayer todos los refrescos del LAB, y a su hora?",
+   "minimo": 1,
+   "estado": "sin muestra",
+   "n": 0,
+   "texto": "todavía sin registro de refrescos (empieza el 24-sep)",
+   "datos": null,
+   "alarma": null
+  },
+  {
    "id": "sistema.archivo",
    "area": "Sistema",
    "pregunta": "¿Se guardó ayer todo lo que se tiene que guardar?",
@@ -970,7 +981,7 @@
  ],
  "cuenta": {
   "medida": 14,
-  "sin muestra": 23,
+  "sin muestra": 24,
   "alarma": 1,
   "error": 0
  }
