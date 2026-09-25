@@ -5629,5 +5629,149 @@
     "clv_metodo": "kalshi_historico",
     "causa": "ajustado",
     "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-09-24",
+    "pick": "PIT F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -100,
+    "unidades": 1.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "STL 1-2 PIT",
+    "veredicto": "apostable",
+    "prob_estimada": 53.0,
+    "prob_justa": null,
+    "ev_pct": 6.0,
+    "precio_publicado": -108,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma"
+    ],
+    "contra": "En Kalshi el empate de las cinco entradas (cerca del 18%) se pierde, y con un total tan bajo un 0-0 o 1-1 es un escenario real.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-24T16:00:21Z"
+    },
+    "clv": -1.0,
+    "prob_cierre": 49.0,
+    "clv_metodo": "kalshi_historico"
+  },
+  {
+    "fecha": "2026-09-24",
+    "pick": "CWS/KC o9.0",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 100,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.0,
+    "marcador": "CWS 9-1 KC",
+    "veredicto": "apostable",
+    "prob_estimada": 52.0,
+    "prob_justa": 47.83,
+    "ev_pct": 4.0,
+    "precio_publicado": -104,
+    "discrepancia_pp": 4.17,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva",
+      "parque"
+    ],
+    "contra": "R. Dobnak lleva 3.08 de efectividad y si dura seis entradas el juego se queda corto; además el viento sopla hacia dentro y el umpire resta 1.2% de carreras.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": 0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-24T16:00:21Z"
+    },
+    "clv": 3.5,
+    "prob_cierre": 53.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": 5.7,
+    "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-09-24",
+    "pick": "CLE/BOS u6.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -102,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.98,
+    "marcador": "CLE 1-0 BOS",
+    "veredicto": "apostable",
+    "prob_estimada": 52.0,
+    "prob_justa": 48.46,
+    "ev_pct": 2.98,
+    "precio_publicado": -103,
+    "discrepancia_pp": 3.54,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "clima",
+      "matchup"
+    ],
+    "contra": "D. Espino solo ha tirado 1 y 2 entradas en sus ultimas salidas: CLE necesita siete u ocho de bullpen con T. Herrin quemado, y en un parque de pf 106 eso es mucha exposicion para un total tan bajo.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": -1.0
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-24T21:30:25Z"
+    },
+    "clv": -2.0,
+    "prob_cierre": 48.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": 0.0,
+    "cuadrante": "merecido"
   }
 ]

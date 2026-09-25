@@ -936,6 +936,130 @@
      "neto_u": 0.0
     }
    ]
+  },
+  "2026-09-24": {
+   "fecha": "2026-09-24",
+   "opus": {
+    "analisis": 6,
+    "senales": 3,
+    "senales_w": 2,
+    "senales_l": 0,
+    "neto_u": 1.98,
+    "analisis_w": 5,
+    "analisis_l": 0,
+    "brier": 0.2119,
+    "n_brier": 5,
+    "picks": [
+     "PIT F5 ML",
+     "CWS/KC o9.0",
+     "CLE/BOS u6.5"
+    ]
+   },
+   "fable": {
+    "analisis": 6,
+    "senales": 2,
+    "senales_w": 0,
+    "senales_l": 1,
+    "neto_u": -1.0,
+    "analisis_w": 3,
+    "analisis_l": 2,
+    "brier": 0.2349,
+    "n_brier": 5,
+    "picks": [
+     "PIT F5 ML",
+     "NYY F5 ML"
+    ]
+   },
+   "coinciden": [
+    "CWS/KC o9.0",
+    "HOU/ATH o10.5",
+    "PIT F5 ML"
+   ],
+   "tandas_fable": [
+    {
+     "n": 1,
+     "estado": "listo"
+    },
+    {
+     "n": 2,
+     "estado": "listo"
+    }
+   ],
+   "coste_fable": 0.7697,
+   "detalle_fable": [
+    {
+     "pick": "PIT F5 ML",
+     "cuota": -100,
+     "tanda": 1,
+     "nivel": "oro",
+     "publicado": true,
+     "resultado": "P",
+     "marcador": "STL 1-2 PIT",
+     "prob_estimada": 53.0,
+     "ev_pct": 6.0,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "CWS/KC o9.0",
+     "cuota": 100,
+     "tanda": 1,
+     "nivel": "plata",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "CWS 9-1 KC",
+     "prob_estimada": 50.5,
+     "ev_pct": 1.0,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "AZ Spread -1.5",
+     "cuota": -124,
+     "tanda": 1,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "AZ 12-8 COL",
+     "prob_estimada": 55.5,
+     "ev_pct": 0.26,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "ATL Spread -1.5",
+     "cuota": -105,
+     "tanda": 2,
+     "nivel": "oro",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "CIN 7-6 ATL",
+     "prob_estimada": 52.0,
+     "ev_pct": 1.52,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "NYY F5 ML",
+     "cuota": 113,
+     "tanda": 2,
+     "nivel": "oro",
+     "publicado": true,
+     "resultado": "L",
+     "marcador": "TB 4-6 NYY",
+     "prob_estimada": 49.0,
+     "ev_pct": 4.37,
+     "neto_u": -1.0
+    },
+    {
+     "pick": "HOU/ATH o10.5",
+     "cuota": -115,
+     "tanda": 2,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "HOU 7-5 ATH",
+     "prob_estimada": 53.0,
+     "ev_pct": -0.91,
+     "neto_u": 0.0
+    }
+   ]
   }
  }
 }

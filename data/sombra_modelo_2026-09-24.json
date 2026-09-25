@@ -7,13 +7,351 @@
    "n": 1,
    "lote": "msgbatch_018aKe7DFdoPkh33FhhCJgSp",
    "enviado_utc": "2026-09-24T16:01:48Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-25T13:00:35Z",
+   "uso": {
+    "tokens_entrada": 36078,
+    "tokens_salida": 7412,
+    "coste": 0.3657
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "PIT F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -100,
+     "prob_estimada": 53.0,
+     "razon": "El F5 aisla la mayor ventaja del juego: P. Skenes (fip_multi 2.73, 27.9% K) contra un lineup de STL helado (ops .588 y 3.2 c/j en la semana, .688 vs derechos). K. Leahy viene de salidas de 3.0, 3.0 y 2.2 entradas, asi que STL cubre parte de las cinco con relevo mientras PIT batea .813 de ops reciente.",
+     "equipos": [
+      "STL",
+      "PIT"
+     ],
+     "destacado": "PIT",
+     "hora": "11:35 AM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+     ],
+     "contra": "En Kalshi el empate del F5 (17.6% justa) pierde la posicion, y Skenes viene de permitir 5 carreras en su ultima salida.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "PIT",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 53.0,
+      "prob_justa": null,
+      "prob_implicita": 50.0,
+      "cuota": -100,
+      "cuota_justa_mercado": null,
+      "ev_pct": 6.0,
+      "ev_kalshi_pct": 2.5,
+      "precio_minimo": -108,
+      "precio_publicado": -108,
+      "precio_equilibrio": -112,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +6.00% · no tomar peor de -108",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "CWS/KC o9.0",
+     "deporte": "MLB",
+     "tipo": "o9.0",
+     "cuota": 100,
+     "prob_estimada": 50.5,
+     "razon": "Dos ofensivas calientes (CWS 6.7 c/j y ops .761; KC 5.2 c/j y .280 de avg en la semana) contra D. Sandlin (6.29 de ERA) y un R. Dobnak que apenas ponca (15.6% K, k-bb 7.5). El bullpen de KC (5.14) abre la puerta tarde y el parque (pf 104) ayuda. Ventaja moderada: el 9.0 ya recoge parte de esto.",
+     "equipos": [
+      "CWS",
+      "KC"
+     ],
+     "destacado": null,
+     "hora": "1:10 PM CT",
+     "capas": [
+      "ofensiva",
+      "pitcheo",
+      "bullpen",
+      "parque"
+     ],
+     "contra": "El bullpen de CWS es bueno (3.32) y el viento sopla ligeramente hacia dentro con un umpire de -1.2% en carreras; un 9 exacto se queda corto.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "over",
+      "linea": 9.0
+     },
+     "cuota_apertura_ref": 100,
+     "valor": {
+      "prob_estimada": 50.5,
+      "prob_justa": 47.83,
+      "prob_implicita": 50.0,
+      "cuota": 100,
+      "cuota_justa_mercado": 109,
+      "ev_pct": 1.0,
+      "ev_kalshi_pct": -2.5,
+      "precio_minimo": 102,
+      "precio_publicado": 102,
+      "precio_equilibrio": -102,
+      "discrepancia_pp": 2.67,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.00% por debajo del minimo exigido (2.0%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE",
+       "a_favor": true,
+       "mov_linea": 0.5
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "AZ Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": -124,
+     "prob_estimada": 55.5,
+     "razon": "El ML de AZ esta fuera de banda, y el margen es lo que respalda el dato: AZ anota 5.4 c/j (ops .749) frente a T. Gordon (6.01 de ERA, 16 carreras en sus tres ultimas salidas) y un bullpen de COL de 5.25, en un parque de pf 125. COL llega con 2.8 c/j en la semana. Ventaja corta y honesta: es la lectura mas floja del dia.",
+     "equipos": [
+      "AZ",
+      "COL"
+     ],
+     "destacado": "AZ",
+     "hora": "2:10 PM CT",
+     "capas": [
+      "ofensiva",
+      "pitcheo",
+      "bullpen",
+      "parque"
+     ],
+     "contra": "La alineacion de AZ no esta publicada, J. Morillo esta quemado tras dos dias seguidos y E. Rodriguez viene de 7 carreras: en COL cualquier ventaja de una carrera se evapora tarde.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "AZ",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": -123,
+     "valor": {
+      "prob_estimada": 55.5,
+      "prob_justa": 53.16,
+      "prob_implicita": 55.36,
+      "cuota": -124,
+      "cuota_justa_mercado": -113,
+      "ev_pct": 0.26,
+      "ev_kalshi_pct": -2.87,
+      "precio_minimo": -116,
+      "precio_publicado": -116,
+      "precio_equilibrio": -124,
+      "discrepancia_pp": 2.34,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +0.26% por debajo del minimo exigido (3.3%)",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda de mediodia con poco valor limpio. La lectura mas clara es el F5 de PIT, donde P. Skenes se cruza con un lineup de STL en su peor momento y K. Leahy apenas pasa de tres entradas. En Kansas City el o9.0 se apoya en dos ofensivas calientes contra abridores y bullpen flojos, aunque el mercado ya subio la linea. El spread de AZ en Coors es una lectura de margen con ventaja corta. Se descartan MIA/CHC y NYM/TEX por huecos de alineacion, bullpens quemados o precios fuera de banda."
   },
   {
    "n": 2,
    "lote": "msgbatch_015AAyiD9VWjVEerxwGGLUAq",
    "enviado_utc": "2026-09-24T21:33:13Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-25T13:00:36Z",
+   "uso": {
+    "tokens_entrada": 45841,
+    "tokens_salida": 6991,
+    "coste": 0.404
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "ATL Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": -105,
+     "prob_estimada": 52.0,
+     "razon": "B. Singer llega con 21 carreras limpias y 15 bases por bolas en sus 3 ultimas salidas (12.1 IP), y la alineacion de CIN trae dos bates por debajo de .430 de OPS con una ofensiva de 2.8 c/j en la semana. ATL anota 4.8 c/j en sus ultimos 10 con 8 HR en 5 juegos: el margen de 2+ carreras esta respaldado y el ML esta fuera de banda.",
+     "equipos": [
+      "CIN",
+      "ATL"
+     ],
+     "destacado": "ATL",
+     "hora": "6:15 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "bullpen",
+      "forma"
+     ],
+     "contra": "El spread paga casi lo mismo que una moneda al aire y el bullpen de ATL lanzo 8.1 entradas en dos dias: una victoria por una carrera tumba el analisis aunque el juego salga como se espera.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "ATL",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": -106,
+     "valor": {
+      "prob_estimada": 52.0,
+      "prob_justa": 48.92,
+      "prob_implicita": 51.22,
+      "cuota": -105,
+      "cuota_justa_mercado": 104,
+      "ev_pct": 1.52,
+      "ev_kalshi_pct": -1.89,
+      "precio_minimo": -103,
+      "precio_publicado": -103,
+      "precio_equilibrio": -108,
+      "discrepancia_pp": 3.08,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.52% por debajo del minimo exigido (2.3%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "NYY F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": 113,
+     "prob_estimada": 49.0,
+     "razon": "C. Schlittler (1.94 ERA, FIP 2.89, 31.3% K) viene de 19 IP con 2 carreras y el F5 lo aisla del bullpen de NYY, que hoy tiene a D. Bednar y J. Schreiber quemados. TB batea .196 con OPS .560 en la semana (61 K en 7 juegos) y NYY tiene OPS .736 contra zurdos frente a I. Seymour.",
+     "equipos": [
+      "TB",
+      "NYY"
+     ],
+     "destacado": "NYY",
+     "hora": "6:05 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "bullpen",
+      "matchup"
+     ],
+     "contra": "Con dos abridores de muchos ponches y total en 6.0, el empate tras cinco entradas es muy probable (el mercado le da ~21%) y en Kalshi ese empate se pierde; ademas la alineacion de NYY sin A. Judge ni G. Stanton batea .215 en la semana.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "NYY",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 49.0,
+      "prob_justa": null,
+      "prob_implicita": 46.95,
+      "cuota": 113,
+      "cuota_justa_mercado": null,
+      "ev_pct": 4.37,
+      "ev_kalshi_pct": 0.66,
+      "precio_minimo": 109,
+      "precio_publicado": 109,
+      "precio_equilibrio": 105,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +4.37% · no tomar peor de +109",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "HOU/ATH o10.5",
+     "deporte": "MLB",
+     "tipo": "o10.5",
+     "cuota": -115,
+     "prob_estimada": 53.0,
+     "razon": "Ventaja corta y lo digo: M. Barnett (7.16 ERA, 13.7% BB) en un parque con factor 116, con los DOS bullpens quemados (HOU: A. Blubaugh y L. VanWey; ATH: H. Harris y L. Medina) y HOU con OPS .808 y 12 HR en 6 juegos. ATH permite 7.0 c/j en sus ultimos 10. Las alineaciones aun no estan publicadas y no hay dato de clima.",
+     "equipos": [
+      "HOU",
+      "ATH"
+     ],
+     "destacado": null,
+     "hora": "8:40 PM CT",
+     "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva",
+      "parque"
+     ],
+     "contra": "La linea ya esta en 10.5 y el mercado tiene todo esto en el precio; HOU anota solo 3.7 c/j en sus ultimos 10 y P. Lambert (3.70 ERA) puede cubrir 6 entradas limpias y dejar el over corto.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "over",
+      "linea": 10.5
+     },
+     "cuota_apertura_ref": -114,
+     "valor": {
+      "prob_estimada": 53.0,
+      "prob_justa": 51.08,
+      "prob_implicita": 53.49,
+      "cuota": -115,
+      "cuota_justa_mercado": -104,
+      "ev_pct": -0.91,
+      "ev_kalshi_pct": -4.17,
+      "precio_minimo": -106,
+      "precio_publicado": -106,
+      "precio_equilibrio": -112,
+      "discrepancia_pp": 1.92,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV -0.91% por debajo del minimo exigido (2.9%)",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tarde marcada por descalabros de abridores: el mercado ya lo sabe en CIN-ATL, pero la implosion de B. Singer y una alineacion de CIN con dos bates bajo .430 de OPS respaldan a ATL por margen mas que su ML fuera de banda. En NYY, C. Schlittler es el abridor mas dominante del dia y el F5 lo separa de un bullpen con dos brazos quemados, contra una ofensiva de TB helada. En HOU-ATH el parque, M. Barnett y dos bullpens agotados apuntan a carreras, aunque con ventaja corta y sin alineaciones. Los unders del dia caen por bullpens usados o por una ofensiva caliente en cada matchup."
   }
  ]
 }
