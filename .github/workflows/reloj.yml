@@ -35,7 +35,8 @@ name: Reloj del dia (dispara el motor)
 # LA AGENDA, EL RECOLECTOR DE KALSHI Y LA PRUEBA DE FUENTES (21-sep-2026). Vivian
 # solo de un cron del motor, y en el motor el cron llega con 2-4 horas de retraso (la
 # agenda de las 7:15 llegaba a las 11). Ahora los lanza el reloj: la agenda cada dia a
-# las 8:05, el recolector los lunes y jueves a las 8:40 y las fuentes los lunes a las
+# las 8:05, el recolector los lunes y jueves a las 8:40, las redes a las 8:45 --y los
+# lunes tambien el resumen de la semana a las 8:50-- y las fuentes los lunes a las
 # 9:15 (hora de Chicago en verano). Sus cron se quedan de respaldo: el recolector y las
 # fuentes no duplican nada, y la agenda mira si ya aviso hoy antes de avisar.
 #
@@ -150,6 +151,8 @@ jobs:
           0:picks.yml
           5:agenda.yml
           40:recolector
+          45:redes-dia
+          50:redes-semana
           75:fuentes
           90:vigilante.yml
           215:cierre-captura.yml
@@ -229,6 +232,7 @@ jobs:
             case "$WF" in
               recolector) case "$DIA_SEM" in 1|4) ;; *) continue ;; esac ;;
               fuentes)    [ "$DIA_SEM" = "1" ] || continue ;;
+              redes-semana) [ "$DIA_SEM" = "1" ] || continue ;;
             esac
 
             OBJ=$((ANCLA + MIN * 60))
@@ -308,6 +312,14 @@ jobs:
             if [ "$WF" = "picks.yml" ]; then
               CUERPO='{"ref":"main","inputs":{"arranca_reloj":"false"}}'
             fi
+            # LAS REDES (25-sep-2026, PLAN_NEGOCIO 16.3 punto 3). Van DESPUES del run
+            # de las 8:00: es ese run el que cierra el dia anterior y verifica los
+            # marcadores en dos fuentes, y sin el no hay nada que contar. El resumen
+            # de la semana solo sale los lunes, con la semana ya terminada.
+            case "$WF" in
+              redes-dia)    WF=redes.yml; CUERPO='{"ref":"main","inputs":{"que":"dia"}}' ;;
+              redes-semana) WF=redes.yml; CUERPO='{"ref":"main","inputs":{"que":"semana"}}' ;;
+            esac
 
             curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  $WF -> %{http_code}\n" -X POST \
               -H "Authorization: Bearer $TK" -H "$A" \
