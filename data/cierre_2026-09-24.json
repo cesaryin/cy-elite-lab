@@ -237,7 +237,7 @@
   },
   "inicio_utc": "2026-09-25T01:40Z",
   "visto": "2026-09-25T01:10:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "SD@LAD": {
   "ml": {
@@ -261,7 +261,7 @@
   },
   "inicio_utc": "2026-09-25T02:10Z",
   "visto": "2026-09-25T01:10:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "HOU@ATH": {
   "ml": {
@@ -285,6 +285,6 @@
   },
   "inicio_utc": "2026-09-25T01:40Z",
   "visto": "2026-09-25T01:10:14+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
