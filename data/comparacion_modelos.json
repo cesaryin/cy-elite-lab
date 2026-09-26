@@ -1060,6 +1060,129 @@
      "neto_u": 0.0
     }
    ]
+  },
+  "2026-09-25": {
+   "fecha": "2026-09-25",
+   "opus": {
+    "analisis": 6,
+    "senales": 2,
+    "senales_w": 2,
+    "senales_l": 0,
+    "neto_u": 1.88,
+    "analisis_w": 5,
+    "analisis_l": 1,
+    "brier": 0.2275,
+    "n_brier": 6,
+    "picks": [
+     "TB/PHI u6.5",
+     "HOU F5 ML"
+    ]
+   },
+   "fable": {
+    "analisis": 6,
+    "senales": 3,
+    "senales_w": 2,
+    "senales_l": 1,
+    "neto_u": 1.01,
+    "analisis_w": 4,
+    "analisis_l": 2,
+    "brier": 0.2626,
+    "n_brier": 6,
+    "picks": [
+     "PHI F5 ML",
+     "AZ ML",
+     "HOU F5 ML"
+    ]
+   },
+   "coinciden": [
+    "AZ ML",
+    "HOU F5 ML"
+   ],
+   "tandas_fable": [
+    {
+     "n": 1,
+     "estado": "listo"
+    },
+    {
+     "n": 2,
+     "estado": "listo"
+    }
+   ],
+   "coste_fable": 0.8055,
+   "detalle_fable": [
+    {
+     "pick": "PHI F5 ML",
+     "cuota": -100,
+     "tanda": 1,
+     "nivel": "plata",
+     "publicado": true,
+     "resultado": "L",
+     "marcador": "TB 2-0 PHI",
+     "prob_estimada": 51.5,
+     "ev_pct": 3.0,
+     "neto_u": -1.0
+    },
+    {
+     "pick": "STL/MIL u8.0",
+     "cuota": -119,
+     "tanda": 1,
+     "nivel": "plata",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "STL 4-8 MIL",
+     "prob_estimada": 54.5,
+     "ev_pct": 0.3,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "CLE Spread -1.5",
+     "cuota": 124,
+     "tanda": 1,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "CLE 12-9 KC",
+     "prob_estimada": 45.5,
+     "ev_pct": 1.92,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "AZ ML",
+     "cuota": 108,
+     "tanda": 2,
+     "nivel": "bronce",
+     "publicado": true,
+     "resultado": "W",
+     "marcador": "AZ 11-4 SD",
+     "prob_estimada": 49.5,
+     "ev_pct": 2.96,
+     "neto_u": 1.08
+    },
+    {
+     "pick": "HOU F5 ML",
+     "cuota": -108,
+     "tanda": 2,
+     "nivel": "oro",
+     "publicado": true,
+     "resultado": "W",
+     "marcador": "HOU 5-6 ATH",
+     "prob_estimada": 54.0,
+     "ev_pct": 4.0,
+     "neto_u": 0.93
+    },
+    {
+     "pick": "LAA ML",
+     "cuota": -101,
+     "tanda": 2,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "LAA 7-5 SEA",
+     "prob_estimada": 50.0,
+     "ev_pct": -0.5,
+     "neto_u": 0.0
+    }
+   ]
   }
  }
 }

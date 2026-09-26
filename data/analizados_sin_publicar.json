@@ -1273,5 +1273,172 @@
       "abridores": true,
       "ts": "2026-09-24T21:30:25Z"
     }
+  },
+  {
+    "fecha": "2026-09-25",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -142,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CLE 12-9 KC",
+    "veredicto": "seguimiento",
+    "prob_estimada": 59.0,
+    "prob_justa": 56.46,
+    "ev_pct": 0.55,
+    "precio_publicado": -130,
+    "discrepancia_pp": 2.54,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "KC viene caliente con el madero (5.0 carreras por juego y .783 de ops en la semana) y CLE batea solo .666 de ops contra zurdos, justo la mano de N. Cameron.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-25T21:30:23Z"
+    }
+  },
+  {
+    "fecha": "2026-09-25",
+    "pick": "ATL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -117,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "ATL 0-3 MIA",
+    "veredicto": "seguimiento",
+    "prob_estimada": 54.5,
+    "prob_justa": 51.88,
+    "ev_pct": 1.08,
+    "precio_publicado": -112,
+    "discrepancia_pp": 2.62,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "bullpen",
+      "ofensiva",
+      "pitcheo"
+    ],
+    "contra": "El bullpen de ATL ya cargo 8.1 entradas en dos dias y hoy tiene que cubrir casi el juego entero: si se estira, la ventaja de relevo se evapora.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-25T21:30:23Z"
+    }
+  },
+  {
+    "fecha": "2026-09-25",
+    "pick": "HOU/ATH o9.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -115,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "HOU 5-6 ATH",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.0,
+    "prob_justa": 51.08,
+    "ev_pct": 2.83,
+    "precio_publicado": -114,
+    "discrepancia_pp": 3.92,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "parque",
+      "clima"
+    ],
+    "contra": "H. Brown (3.26) puede dominar cinco o seis entradas y el bullpen de HOU con J. Hader (1.01) cierra sin permitir carreras, dejando el juego en 7-8.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-26T00:50:21Z"
+    }
+  },
+  {
+    "fecha": "2026-09-25",
+    "pick": "AZ ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 108,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "AZ 11-4 SD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 49.0,
+    "prob_justa": 46.3,
+    "ev_pct": 1.92,
+    "precio_publicado": 109,
+    "discrepancia_pp": 2.7,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "bullpen",
+      "ofensiva",
+      "pitcheo"
+    ],
+    "contra": "AZ cae a .694 de OPS contra derechos y SD viene 8-2 en casa con 6.0 c/j; si Mize aguanta seis entradas el cierre ni siquiera hace falta.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-26T00:50:21Z"
+    }
   }
 ]

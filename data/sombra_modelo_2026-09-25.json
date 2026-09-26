@@ -7,13 +7,360 @@
    "n": 1,
    "lote": "msgbatch_01H8Bdoy5jdZtptDiTCe5M2R",
    "enviado_utc": "2026-09-25T21:33:29Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-26T13:00:32Z",
+   "uso": {
+    "tokens_entrada": 54386,
+    "tokens_salida": 9171,
+    "coste": 0.5012
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "PHI F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -100,
+     "prob_estimada": 51.5,
+     "razon": "El F5 de Kalshi aisla la ventaja real del juego: C. Sánchez (K-BB 21.3%) contra un lineup de TB helado (ops .554 y 3.0 c/j en la semana, .681 vs zurdos). PHI batea poco (.611) pero F. Peralta es claramente peor y el mercado paga par un lado que veo por encima del 50%.",
+     "equipos": [
+      "TB",
+      "PHI"
+     ],
+     "destacado": "PHI",
+     "hora": "5:40 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+     ],
+     "contra": "Es a tres bandas: con dos ofensivas frias el empate tras cinco entradas (19.6% justo) es muy probable y en Kalshi ese empate se pierde; ademas PHI llega a 3.5 c/j y puede no producir contra Peralta.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "PHI",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 51.5,
+      "prob_justa": null,
+      "prob_implicita": 50.0,
+      "cuota": -100,
+      "cuota_justa_mercado": null,
+      "ev_pct": 3.0,
+      "ev_kalshi_pct": -0.5,
+      "precio_minimo": -101,
+      "precio_publicado": -101,
+      "precio_equilibrio": -106,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +3.00% · no tomar peor de -101",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "STL/MIL u8.0",
+     "deporte": "MLB",
+     "tipo": "u8.0",
+     "cuota": -119,
+     "prob_estimada": 54.5,
+     "razon": "Dos ofensivas frias (STL 2.8 c/j y ops .578 con 67 K; MIL 3.8 c/j y .616) en el parque mas cerrado del dia (pf 94, techo, umpire -1.0%). Ni M. McGreevy ni R. Gasser dominan, pero el contexto empuja hacia pocas carreras y la linea justa solo da 51.8% al under.",
+     "equipos": [
+      "STL",
+      "MIL"
+     ],
+     "destacado": null,
+     "hora": "6:40 PM CT",
+     "capas": [
+      "ofensiva",
+      "parque",
+      "umpire",
+      "forma"
+     ],
+     "contra": "Ambos bullpens vienen cargados (STL 8.4 ip en 2 dias con R. Stanek quemado; MIL 9.4 ip): si los abridores salen en la quinta, las entradas 6-9 pueden reventar un under que ademas llega con precio -119 y margen pequeno.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "under",
+      "linea": 8.0
+     },
+     "cuota_apertura_ref": -114,
+     "valor": {
+      "prob_estimada": 54.5,
+      "prob_justa": 51.83,
+      "prob_implicita": 54.34,
+      "cuota": -119,
+      "cuota_justa_mercado": -108,
+      "ev_pct": 0.3,
+      "ev_kalshi_pct": -2.9,
+      "precio_minimo": -112,
+      "precio_publicado": -112,
+      "precio_equilibrio": -119,
+      "discrepancia_pp": 2.67,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +0.30% por debajo del minimo exigido (3.1%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "MEDIA",
+       "a_favor": true,
+       "mov_linea": 0.0
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "CLE Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": 124,
+     "prob_estimada": 45.5,
+     "razon": "La ventaja de CLE esta en las ultimas entradas, no en el ML cargado: bullpen de KC con 12.4 ip en dos dias, A. Gose quemado y cerrador con era 5.83, frente a un pen de CLE elite. G. Williams (K 33.5%) sostiene el arranque y KC concede 6.1 c/j en sus ultimos 10; el margen es la lectura mas pagada.",
+     "equipos": [
+      "CLE",
+      "KC"
+     ],
+     "destacado": "CLE",
+     "hora": "6:40 PM CT",
+     "capas": [
+      "bullpen",
+      "pitcheo",
+      "forma"
+     ],
+     "contra": "KC batea caliente (.783 y 5.0 c/j en la semana) y CLE solo tiene ops .666 vs zurdos con 3.7 c/j: un juego de una carrera con N. Cameron aguantando seis entradas deja el spread fuera aunque CLE gane.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "CLE",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": 131,
+     "valor": {
+      "prob_estimada": 45.5,
+      "prob_justa": 43.07,
+      "prob_implicita": 44.64,
+      "cuota": 124,
+      "cuota_justa_mercado": 132,
+      "ev_pct": 1.92,
+      "ev_kalshi_pct": -1.96,
+      "precio_minimo": 125,
+      "precio_publicado": 125,
+      "precio_equilibrio": 120,
+      "discrepancia_pp": 2.43,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.92% por debajo del minimo exigido (2.0%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": true,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda con poca ventaja clara. Lo mas limpio es el F5 de PHI en Kalshi, donde C. Sánchez enfrenta a una ofensiva de TB helada y el mercado paga par. El under de STL/MIL se apoya en dos lineups frios dentro del parque mas cerrado del dia, con el riesgo de bullpens cargados. En CLE/KC la lectura de mas valor es el margen, por la diferencia enorme entre bullpens y el desgaste del pen de KC. NYM/WSH queda fuera por abridor sin confirmar y movimiento fuerte de linea; TOR, CWS y TEX no separan de su linea justa."
   },
   {
    "n": 2,
    "lote": "msgbatch_01ASqotZU5zoLdqJ58ndnYLt",
    "enviado_utc": "2026-09-26T00:51:49Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-26T13:00:32Z",
+   "uso": {
+    "tokens_entrada": 34162,
+    "tokens_salida": 5338,
+    "coste": 0.3043
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "AZ ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": 108,
+     "prob_estimada": 49.5,
+     "razon": "La ventaja concreta esta en el cierre: SD tiene a M. Miller, A. Morejon y Y. Matsui quemados (lanzaron los dos dias previos) y J. Adam tambien trabajo ayer, con 9.3 IP de bullpen en 48 horas; el de AZ llega fresco. AZ pega 6.5 c/j y ops .847 en la semana frente a un C. Mize que viene de 5 ER y 5 BB en 3 IP.",
+     "equipos": [
+      "AZ",
+      "SD"
+     ],
+     "destacado": "AZ",
+     "hora": "8:40 PM CT",
+     "capas": [
+      "bullpen",
+      "ofensiva",
+      "pitcheo"
+     ],
+     "contra": "AZ batea .694 de ops contra derechos en la temporada y SD viene 8-2 con 6.0 c/j; si B. Pfaadt no pasa de la 5ta el bullpen fresco de AZ no alcanza a compensar.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "AZ",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": 111,
+     "valor": {
+      "prob_estimada": 49.5,
+      "prob_justa": 46.3,
+      "prob_implicita": 48.08,
+      "cuota": 108,
+      "cuota_justa_mercado": 116,
+      "ev_pct": 2.96,
+      "ev_kalshi_pct": -0.67,
+      "precio_minimo": 107,
+      "precio_publicado": 107,
+      "precio_equilibrio": 103,
+      "discrepancia_pp": 3.2,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +2.96% · no tomar peor de +107",
+      "mejor_precio": {
+       "cuota": 111,
+       "casa": "lowvig"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "HOU F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -108,
+     "prob_estimada": 54.0,
+     "razon": "El F5 aisla la brecha de abridores y esquiva el bullpen cargado de HOU (11.6 IP en dos dias, B. Abreu quemado). J. Lopez viene de 10 ER en 2.2 IP y 5 ER en 3.2 IP; H. Brown lleva 20 K y 1 ER en sus dos ultimas salidas. HOU pega .776 de ops y 12 HR en la semana, en parque de pf 116 y viento a favor.",
+     "equipos": [
+      "HOU",
+      "ATH"
+     ],
+     "destacado": "HOU",
+     "hora": "8:40 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "parque"
+     ],
+     "contra": "Es el mercado de Kalshi a tres bandas: el empate del F5 (14.7% justa) pierde, y ATH llega con .848 de ops y 5.0 c/j en la semana contra un H. Brown que regala 11.9% de bases por bolas.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "HOU",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 54.0,
+      "prob_justa": null,
+      "prob_implicita": 51.92,
+      "cuota": -108,
+      "cuota_justa_mercado": null,
+      "ev_pct": 4.0,
+      "ev_kalshi_pct": 0.63,
+      "precio_minimo": -111,
+      "precio_publicado": -111,
+      "precio_equilibrio": -117,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +4.00% · no tomar peor de -111",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "LAA ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": -101,
+     "prob_estimada": 50.0,
+     "razon": "Lectura de poca ventaja y lo digo claro: R. Detmers (fip 3.31, k-bb 22.0%) supera con margen a B. Miller (fip 4.41) y SEA batea solo .652 de ops contra zurdos con 3.3 c/j en la semana. LAA no es un lineup que impulse (3.7 c/j, ops .675), asi que la ventaja es solo la del abridor.",
+     "equipos": [
+      "LAA",
+      "SEA"
+     ],
+     "destacado": "LAA",
+     "hora": "9:10 PM CT",
+     "capas": [
+      "pitcheo",
+      "matchup"
+     ],
+     "contra": "El fondo de la alineacion de LAA (tres bateadores por debajo de .500 de ops) y un bullpen de 4.45 con R. Watson cerrando dejan el juego en manos de un abridor que solo aguanta 5-6 entradas.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "LAA",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": -101,
+     "valor": {
+      "prob_estimada": 50.0,
+      "prob_justa": 48.34,
+      "prob_implicita": 50.25,
+      "cuota": -101,
+      "cuota_justa_mercado": 107,
+      "ev_pct": -0.5,
+      "ev_kalshi_pct": -3.98,
+      "precio_minimo": 105,
+      "precio_publicado": 105,
+      "precio_equilibrio": 100,
+      "discrepancia_pp": 1.66,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV -0.50% por debajo del minimo exigido (2.1%)",
+      "mejor_precio": {
+       "cuota": 102,
+       "casa": "betrivers"
+      },
+      "alcanzable": false,
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE",
+       "a_favor": false,
+       "delta_pp": -3.1
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda nocturna de cuatro juegos. La lectura mas clara sale de AZ en SD: el bullpen de SD llega con sus tres mejores brazos quemados y AZ viene bateando 6.5 carreras por juego, mientras C. Mize se cae en sus ultimas salidas. En HOU-ATH la brecha entre H. Brown y J. Lopez es enorme, pero el bullpen cargado de HOU y el ML fuera de banda mandan el analisis al F5. LAA-SEA es un duelo de ofensivas frias donde R. Detmers da una ventaja pequeña y honesta a LAA. LAD-SF queda fuera de banda por todos lados con T. Skubal en el monte."
   }
  ]
 }
