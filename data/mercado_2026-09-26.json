@@ -1042,6 +1042,131 @@
      "inicio_utc": "2026-09-27T01:40Z"
     }
    }
+  },
+  {
+   "ts": "2026-09-26T19:20:40+00:00",
+   "juegos": {
+    "LAD@SF": {
+     "ml": {
+      "LAD": -287,
+      "SF": 229
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -123,
+      "under": 102
+     },
+     "inicio_utc": "2026-09-26T20:05Z"
+    },
+    "ATL@MIA": {
+     "ml": {
+      "ATL": -117,
+      "MIA": -103
+     },
+     "total": {
+      "linea": 8.5,
+      "over": -112,
+      "under": -107
+     },
+     "inicio_utc": "2026-09-26T20:10Z"
+    },
+    "TEX@MIN": {
+     "ml": {
+      "TEX": -125,
+      "MIN": 104
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -105,
+      "under": -114
+     },
+     "inicio_utc": "2026-09-26T20:10Z"
+    },
+    "CLE@KC": {
+     "ml": {
+      "CLE": -114,
+      "KC": -105
+     },
+     "total": {
+      "linea": 8.5,
+      "over": -102,
+      "under": -118
+     },
+     "inicio_utc": "2026-09-26T23:10Z"
+    },
+    "COL@CWS": {
+     "ml": {
+      "COL": 203,
+      "CWS": -252
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -115,
+      "under": -105
+     },
+     "inicio_utc": "2026-09-26T23:10Z"
+    },
+    "STL@MIL": {
+     "ml": {
+      "STL": 135,
+      "MIL": -163
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -109,
+      "under": -111
+     },
+     "inicio_utc": "2026-09-26T23:10Z"
+    },
+    "TB@PHI": {
+     "ml": {
+      "TB": -108,
+      "PHI": -112
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -107,
+      "under": -112
+     },
+     "inicio_utc": "2026-09-26T23:15Z"
+    },
+    "AZ@SD": {
+     "ml": {
+      "AZ": 104,
+      "SD": -126
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -114,
+      "under": -105
+     },
+     "inicio_utc": "2026-09-27T00:40Z"
+    },
+    "LAA@SEA": {
+     "ml": {
+      "LAA": 134,
+      "SEA": -162
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -119,
+      "under": -101
+     },
+     "inicio_utc": "2026-09-27T01:40Z"
+    },
+    "HOU@ATH": {
+     "ml": {
+      "HOU": -161,
+      "ATH": 133
+     },
+     "total": {
+      "linea": 10.0,
+      "over": -103,
+      "under": -117
+     },
+     "inicio_utc": "2026-09-27T01:40Z"
+    }
+   }
   }
  ]
 }
