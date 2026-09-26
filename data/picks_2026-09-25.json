@@ -217,17 +217,230 @@
         "alineaciones": true,
         "abridores": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "HOU/ATH o9.5",
+      "deporte": "MLB",
+      "tipo": "o9.0",
+      "cuota": -115,
+      "prob_estimada": 55.0,
+      "razon": "J. Lopez llega con 5.68 de ERA y viene de 2.2 IP con 10 carreras; enfrente ATH batea .289 con 5.0 c/j en la semana y HOU suma 4.3 c/j con 12 HR. Parque de 116 de factor y viento de 10 mph hacia el jardin central empujan la pelota.",
+      "equipos": [
+        "HOU",
+        "ATH"
+      ],
+      "destacado": null,
+      "hora": "8:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "parque",
+        "clima"
+      ],
+      "contra": "H. Brown (3.26) puede dominar cinco o seis entradas y el bullpen de HOU con J. Hader (1.01) cierra sin permitir carreras, dejando el juego en 7-8.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 9.0
+      },
+      "inicio_utc": "2026-09-26T01:40:00Z",
+      "cuota_apertura_ref": -111,
+      "valor": {
+        "prob_estimada": 55.0,
+        "prob_justa": 51.08,
+        "prob_implicita": 53.49,
+        "cuota": -115,
+        "cuota_justa_mercado": -104,
+        "ev_pct": 2.83,
+        "ev_kalshi_pct": -0.43,
+        "precio_minimo": -114,
+        "precio_publicado": -114,
+        "precio_equilibrio": -122,
+        "discrepancia_pp": 3.92,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +2.83% por debajo del minimo exigido (2.9%)",
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": true,
+          "extra_umbral_plano": true
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-26T00:50:21Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "HOU F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": -108,
+      "prob_estimada": 53.5,
+      "razon": "El F5 aisla la unica ventaja clara del juego: H. Brown con 28.1% de ponches y 3.92 de FIP contra un J. Lopez de 5.01 de FIP que no pasa de la cuarta en sus ultimas salidas. El bullpen de ATH (5.11) queda fuera de la ecuacion.",
+      "equipos": [
+        "HOU",
+        "ATH"
+      ],
+      "destacado": "HOU",
+      "hora": "8:40 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup"
+      ],
+      "contra": "HOU batea solo .710 de OPS contra zurdos y en Kalshi el empate de las cinco entradas (casi 15%) se pierde, no se devuelve.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "HOU",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-26T01:40:00Z",
+      "valor": {
+        "prob_estimada": 53.5,
+        "prob_justa": null,
+        "prob_implicita": 51.92,
+        "cuota": -108,
+        "cuota_justa_mercado": null,
+        "ev_pct": 3.04,
+        "ev_kalshi_pct": -0.33,
+        "precio_minimo": -109,
+        "precio_publicado": -109,
+        "precio_equilibrio": -115,
+        "discrepancia_pp": null,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +3.04% · no tomar peor de -109",
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 5,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-26T00:50:21Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "AZ ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 108,
+      "prob_estimada": 49.0,
+      "razon": "Ventaja pequena y hay que decirlo: el valor viene del bullpen de SD con A. Morejon, M. Miller y Y. Matsui quemados tras lanzar los dos ultimos dias, justo lo que sostiene su precio. AZ llega con 6.5 c/j y .847 de OPS en la semana y C. Mize viene de 3.0 IP con 5 carreras.",
+      "equipos": [
+        "AZ",
+        "SD"
+      ],
+      "destacado": "AZ",
+      "hora": "8:40 PM CT",
+      "capas": [
+        "bullpen",
+        "ofensiva",
+        "pitcheo"
+      ],
+      "contra": "AZ cae a .694 de OPS contra derechos y SD viene 8-2 en casa con 6.0 c/j; si Mize aguanta seis entradas el cierre ni siquiera hace falta.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "AZ",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-26T01:40:00Z",
+      "cuota_apertura_ref": 111,
+      "valor": {
+        "prob_estimada": 49.0,
+        "prob_justa": 46.3,
+        "prob_implicita": 48.08,
+        "cuota": 108,
+        "cuota_justa_mercado": 116,
+        "ev_pct": 1.92,
+        "ev_kalshi_pct": -1.71,
+        "precio_minimo": 109,
+        "precio_publicado": 109,
+        "precio_equilibrio": 105,
+        "discrepancia_pp": 2.7,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.92% por debajo del minimo exigido (2.0%)",
+        "mejor_precio": {
+          "cuota": 111,
+          "casa": "lowvig"
+        },
+        "alcanzable": true,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "extra_umbral_1_5": true,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 5,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-26T00:50:21Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
-  "resumen": "Tanda de mercados muy ajustados. La lectura mas limpia esta en el total de Filadelfia: dos ofensivas hundidas en la ultima semana, viento fuerte hacia el home y un umpire que resta carreras, con la linea ya baja en 6.5. Despues, CLE se apoya en su abridor y en un bullpen rival con 5.18 de era y 12.4 entradas acumuladas en dos dias, aunque KC batea caliente. Y una lectura menor en Miami, donde ATL va con apertura corta y el relevo manda el juego. El resto de los partidos esta bien tasado y no ofrece nada que discutirle al precio.",
+  "resumen": "Tanda de mercados muy ajustados. La lectura mas limpia esta en el total de Filadelfia: dos ofensivas hundidas en la ultima semana, viento fuerte hacia el home y un umpire que resta carreras, con la linea ya baja en 6.5. Despues, CLE se apoya en su abridor y en un bullpen rival con 5.18 de era y 12.4 entradas acumuladas en dos dias, aunque KC batea caliente. Y una lectura menor en Miami, donde ATL va con apertura corta y el relevo manda el juego. El resto de los partidos esta bien tasado y no ofrece nada que discutirle al precio.\n\nNoche corta de cuatro juegos y poco donde discrepar del precio. Lo mas claro esta en Sutter Health Park: un abridor local con 5.68 de ERA que viene de una paliza, ATH bateando .289 en la semana, parque de 116 y viento hacia afuera; ahi el over del 9.0 y el F5 de HOU son las dos lecturas con respaldo. En Petco la señal es de contexto puro: el bullpen de SD llega con su trio de alta leverage quemado y AZ paga por encima de par, aunque la ventaja es pequena. LAD/SF y LAA/SEA se quedan fuera por precio y por señales que apuntan en contra.",
   "descartes": [
     "PHI ML a -177 queda fuera de la banda de precio y TB no tiene con que castigar a C. Sanchez con .554 de ops en la semana.",
     "NYM/WSH: abridor de NYM sin confirmar y la linea del total subio de 8.0 a 8.5 con movimiento fuerte; hueco de informacion, sin lectura fiable.",
     "TOR ML -153: el precio ya paga todo el pitcheo y TOR anota 2.8 carreras por juego en la semana, lineup demasiado frio para un favorito cargado (SYS-004).",
     "COL/CWS o8.0: CWS con 7.7 carreras por juego invita, pero 59 F, viento hacia dentro, parque de 98 y S. Burke en 3.40 le quitan el margen que exige el precio -119.",
     "TEX/MIN: el dinero alargo a MIN y bajo el total de 7.5 a 7.0 (movimiento fuerte); con TEX en .589 de ops la semana, el ML de -123 no deja ventaja.",
-    "PIT/DET: mercado casi perfecto (justa 51.76 para DET) y bullpens equivalentes; sin discrepancia que nombrar."
+    "PIT/DET: mercado casi perfecto (justa 51.76 para DET) y bullpens equivalentes; sin discrepancia que nombrar.",
+    "LAD/SF: ML de LAD (-325), su spread -1.5 y el +1.5 de SF quedan fuera de la banda de precio; el under 7.5 con Skubal es tentador pero el viento de 12.9 mph hacia afuera y el movimiento FUERTE de precio hacia el over lo desaconsejan.",
+    "LAA/SEA u6.5: las dos ofensivas frias (3.7 y 3.3 c/j en sus ultimos 10) invitan, pero el total ya bajo de 7.0 a 6.5, el umpire A. Fletcher suma 5.0% de carreras y ninguno de los dos bullpenes (4.45 y 4.36) da garantias en el cierre.",
+    "LAA/SEA ML: dos lineups con varios bates por debajo de .620 de OPS y precio practicamente igual a la linea justa; sin ventaja medible.",
+    "HOU ML (-186) y ATH (+162): fuera de la banda de precio permitida."
   ],
   "vivo": {
     "plan": {
@@ -399,15 +612,42 @@
         "sin_ventaja": 2,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-09-26T00:50:21Z",
+        "min_ct": 1190,
+        "claves": [
+          "HOU@ATH@2026-09-26T01:40:00Z",
+          "AZ@SD@2026-09-26T01:40:00Z",
+          "LAA@SEA@2026-09-26T02:10:00Z",
+          "LAD@SF@2026-09-26T02:15:00Z"
+        ],
+        "juegos": [
+          "HOU@ATH",
+          "AZ@SD",
+          "LAA@SEA",
+          "LAD@SF"
+        ],
+        "alineaciones": [
+          8,
+          8
+        ],
+        "senales": [
+          "HOU F5 ML"
+        ],
+        "sin_ventaja": 2,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 2-0 (+1.98 U).\n• CWS/KC o9.0 (SEÑAL ELITE), ganada: CWS 9-1 KC, 10 carreras con la línea en 9.0.\n• CLE/BOS u6.5 (SEÑAL MODERADA), ganada: CLE 1-0 BOS, 1 carreras con la línea en 6.5.\n2 ganadas con ventaja medida.\nEn lo que se puede juzgar, el 18% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 1,
-    "seguimiento": 2,
+    "apostables": 2,
+    "seguimiento": 4,
     "sin_prob_estimada": 0,
-    "riesgo_u": 1.0,
+    "riesgo_u": 2.0,
     "ev_min": 2.0
   }
 }
