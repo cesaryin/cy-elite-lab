@@ -1,0 +1,266 @@
+{
+ "BAL@NYY": {
+  "ml": {
+   "BAL": 113,
+   "NYY": -136
+  },
+  "total": {
+   "linea": 7.5,
+   "over": -112,
+   "under": -108
+  },
+  "spread": {
+   "BAL": {
+    "linea": 1.5,
+    "cuota": -194
+   },
+   "NYY": {
+    "linea": -1.5,
+    "cuota": 159
+   }
+  },
+  "inicio_utc": "2026-09-27T17:05Z",
+  "visto": "2026-09-27T07:02:36+00:00",
+  "cerrado": false
+ },
+ "NYM@WSH": {
+  "ml": {
+   "NYM": -110,
+   "WSH": -110
+  },
+  "total": {
+   "linea": 8.0,
+   "over": -118,
+   "under": -102
+  },
+  "spread": {
+   "NYM": {
+    "linea": -1.5,
+    "cuota": 153
+   },
+   "WSH": {
+    "linea": 1.5,
+    "cuota": -186
+   }
+  },
+  "inicio_utc": "2026-09-27T17:05Z",
+  "visto": "2026-09-27T07:02:36+00:00",
+  "cerrado": false
+ },
+ "TB@PHI": {
+  "ml": {
+   "TB": 122,
+   "PHI": -147
+  },
+  "total": {
+   "linea": 7.0,
+   "over": -117,
+   "under": -103
+  },
+  "spread": {
+   "TB": {
+    "linea": 1.5,
+    "cuota": -186
+   },
+   "PHI": {
+    "linea": -1.5,
+    "cuota": 153
+   }
+  },
+  "inicio_utc": "2026-09-27T19:05Z",
+  "visto": "2026-09-27T07:02:36+00:00",
+  "cerrado": false
+ },
+ "CIN@TOR": {
+  "ml": {
+   "CIN": 147,
+   "TOR": -179
+  },
+  "total": {
+   "linea": 8.5,
+   "over": -121,
+   "under": 100
+  },
+  "spread": {
+   "CIN": {
+    "linea": 1.5,
+    "cuota": -143
+   },
+   "TOR": {
+    "linea": -1.5,
+    "cuota": 119
+   }
+  },
+  "inicio_utc": "2026-09-27T19:07Z",
+  "visto": "2026-09-27T07:02:36+00:00",
+  "cerrado": false
+ },
+ "ATL@MIA": {
+  "ml": {
+   "ATL": -110,
+   "MIA": -110
+  },
+  "total": {
+   "linea": 8.5,
+   "over": -122,
+   "under": 101
+  },
+  "spread": {
+   "ATL": {
+    "linea": -1.5,
+    "cuota": 148
+   },
+   "MIA": {
+    "linea": 1.5,
+    "cuota": -180
+   }
+  },
+  "inicio_utc": "2026-09-27T19:10Z",
+  "visto": "2026-09-27T07:02:36+00:00",
+  "cerrado": false
+ },
+ "PIT@DET": {
+  "ml": {
+   "PIT": -135,
+   "DET": 112
+  },
+  "total": {
+   "linea": 8.0,
+   "over": -107,
+   "under": -112
+  },
+  "spread": {
+   "PIT": {
+    "linea": -1.5,
+    "cuota": 128
+   },
+   "DET": {
+    "linea": 1.5,
+    "cuota": -155
+   }
+  },
+  "inicio_utc": "2026-09-27T19:10Z",
+  "visto": "2026-09-27T07:02:36+00:00",
+  "cerrado": false
+ },
+ "CLE@KC": {
+  "ml": {
+   "CLE": -149,
+   "KC": 123
+  },
+  "total": {
+   "linea": 8.5,
+   "over": -110,
+   "under": -110
+  },
+  "spread": {
+   "CLE": {
+    "linea": -1.5,
+    "cuota": 113
+   },
+   "KC": {
+    "linea": 1.5,
+    "cuota": -136
+   }
+  },
+  "inicio_utc": "2026-09-27T19:10Z",
+  "visto": "2026-09-27T07:02:36+00:00",
+  "cerrado": false
+ },
+ "COL@CWS": {
+  "ml": {
+   "COL": 170,
+   "CWS": -208
+  },
+  "total": {
+   "linea": 8.5,
+   "over": -105,
+   "under": -115
+  },
+  "spread": {
+   "COL": {
+    "linea": 1.5,
+    "cuota": -119
+   },
+   "CWS": {
+    "linea": -1.5,
+    "cuota": -101
+   }
+  },
+  "inicio_utc": "2026-09-27T19:10Z",
+  "visto": "2026-09-27T07:02:36+00:00",
+  "cerrado": false
+ },
+ "STL@MIL": {
+  "ml": {
+   "STL": 202,
+   "MIL": -249
+  },
+  "total": {
+   "linea": 7.0,
+   "over": -102,
+   "under": -119
+  },
+  "spread": {
+   "STL": {
+    "linea": 1.5,
+    "cuota": -120
+   },
+   "MIL": {
+    "linea": -1.5,
+    "cuota": 100
+   }
+  },
+  "inicio_utc": "2026-09-27T19:10Z",
+  "visto": "2026-09-27T07:02:36+00:00",
+  "cerrado": false
+ },
+ "TEX@MIN": {
+  "ml": {
+   "TEX": -126,
+   "MIN": 104
+  },
+  "total": {
+   "linea": 8.0,
+   "over": -118,
+   "under": -102
+  },
+  "spread": {
+   "TEX": {
+    "linea": -1.5,
+    "cuota": 135
+   },
+   "MIN": {
+    "linea": 1.5,
+    "cuota": -163
+   }
+  },
+  "inicio_utc": "2026-09-27T19:10Z",
+  "visto": "2026-09-27T07:02:36+00:00",
+  "cerrado": false
+ },
+ "LAA@SEA": {
+  "ml": {
+   "LAA": 149,
+   "SEA": -181
+  },
+  "total": {
+   "linea": 7.0,
+   "over": -120,
+   "under": 100
+  },
+  "spread": {
+   "LAA": {
+    "linea": 1.5,
+    "cuota": -150
+   },
+   "SEA": {
+    "linea": -1.5,
+    "cuota": 124
+   }
+  },
+  "inicio_utc": "2026-09-27T19:10Z",
+  "visto": "2026-09-27T07:02:36+00:00",
+  "cerrado": false
+ }
+}
