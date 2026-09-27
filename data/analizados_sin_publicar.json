@@ -754,6 +754,173 @@
     }
   },
   {
+    "fecha": "2026-09-25",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -142,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CLE 12-9 KC",
+    "veredicto": "seguimiento",
+    "prob_estimada": 59.0,
+    "prob_justa": 56.46,
+    "ev_pct": 0.55,
+    "precio_publicado": -130,
+    "discrepancia_pp": 2.54,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "KC viene caliente con el madero (5.0 carreras por juego y .783 de ops en la semana) y CLE batea solo .666 de ops contra zurdos, justo la mano de N. Cameron.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-25T21:30:23Z"
+    }
+  },
+  {
+    "fecha": "2026-09-25",
+    "pick": "ATL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -117,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "ATL 0-3 MIA",
+    "veredicto": "seguimiento",
+    "prob_estimada": 54.5,
+    "prob_justa": 51.88,
+    "ev_pct": 1.08,
+    "precio_publicado": -112,
+    "discrepancia_pp": 2.62,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "bullpen",
+      "ofensiva",
+      "pitcheo"
+    ],
+    "contra": "El bullpen de ATL ya cargo 8.1 entradas en dos dias y hoy tiene que cubrir casi el juego entero: si se estira, la ventaja de relevo se evapora.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-25T21:30:23Z"
+    }
+  },
+  {
+    "fecha": "2026-09-25",
+    "pick": "HOU/ATH o9.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -115,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "HOU 5-6 ATH",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.0,
+    "prob_justa": 51.08,
+    "ev_pct": 2.83,
+    "precio_publicado": -114,
+    "discrepancia_pp": 3.92,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "parque",
+      "clima"
+    ],
+    "contra": "H. Brown (3.26) puede dominar cinco o seis entradas y el bullpen de HOU con J. Hader (1.01) cierra sin permitir carreras, dejando el juego en 7-8.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-26T00:50:21Z"
+    }
+  },
+  {
+    "fecha": "2026-09-25",
+    "pick": "AZ ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 108,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "AZ 11-4 SD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 49.0,
+    "prob_justa": 46.3,
+    "ev_pct": 1.92,
+    "precio_publicado": 109,
+    "discrepancia_pp": 2.7,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "bullpen",
+      "ofensiva",
+      "pitcheo"
+    ],
+    "contra": "AZ cae a .694 de OPS contra derechos y SD viene 8-2 en casa con 6.0 c/j; si Mize aguanta seis entradas el cierre ni siquiera hace falta.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-26T00:50:21Z"
+    }
+  },
+  {
     "fecha": "2026-09-18",
     "pick": "WSH F5 ML",
     "deporte": "MLB",
@@ -1275,157 +1442,77 @@
     }
   },
   {
-    "fecha": "2026-09-25",
-    "pick": "CLE ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -142,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "CLE 12-9 KC",
-    "veredicto": "seguimiento",
-    "prob_estimada": 59.0,
-    "prob_justa": 56.46,
-    "ev_pct": 0.55,
-    "precio_publicado": -130,
-    "discrepancia_pp": 2.54,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "bullpen",
-      "forma"
-    ],
-    "contra": "KC viene caliente con el madero (5.0 carreras por juego y .783 de ops en la semana) y CLE batea solo .666 de ops contra zurdos, justo la mano de N. Cameron.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE"
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-25T21:30:23Z"
-    }
-  },
-  {
-    "fecha": "2026-09-25",
-    "pick": "ATL ML",
+    "fecha": "2026-09-26",
+    "pick": "LAD/SF u7.5",
     "deporte": "MLB",
     "nivel": "bronce",
-    "cuota": -117,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "ATL 0-3 MIA",
-    "veredicto": "seguimiento",
-    "prob_estimada": 54.5,
-    "prob_justa": 51.88,
-    "ev_pct": 1.08,
-    "precio_publicado": -112,
-    "discrepancia_pp": 2.62,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "bullpen",
-      "ofensiva",
-      "pitcheo"
-    ],
-    "contra": "El bullpen de ATL ya cargo 8.1 entradas en dos dias y hoy tiene que cubrir casi el juego entero: si se estira, la ventaja de relevo se evapora.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-25T21:30:23Z"
-    }
-  },
-  {
-    "fecha": "2026-09-25",
-    "pick": "HOU/ATH o9.5",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -115,
+    "cuota": -124,
     "unidades": 0.0,
     "resultado": "W",
     "neto_u": 0.0,
-    "marcador": "HOU 5-6 ATH",
+    "marcador": "LAD 4-3 SF",
     "veredicto": "seguimiento",
-    "prob_estimada": 55.0,
-    "prob_justa": 51.08,
-    "ev_pct": 2.83,
-    "precio_publicado": -114,
-    "discrepancia_pp": 3.92,
+    "prob_estimada": 56.5,
+    "prob_justa": 53.04,
+    "ev_pct": 2.06,
+    "precio_publicado": -120,
+    "discrepancia_pp": 3.46,
     "sombra_umbral": {
-      "extra_umbral_1_5": true,
+      "extra_umbral_1_5": false,
       "extra_umbral_plano": true
     },
     "linea_precio": null,
     "capas": [
       "pitcheo",
       "ofensiva",
-      "parque",
-      "clima"
+      "parque"
     ],
-    "contra": "H. Brown (3.26) puede dominar cinco o seis entradas y el bullpen de HOU con J. Hader (1.01) cierra sin permitir carreras, dejando el juego en 7-8.",
+    "contra": "El bullpen de SF (4.31, cerrador con 4.50) puede regalar carreras tardias a un lineup de LAD que va a 4.2 c/j, y el viento sopla 6.4 mph hacia afuera.",
     "contexto": {
-      "mercado_movido": false
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": -0.5
     },
     "abogado": null,
     "citas_dudosas": 0,
     "vivo": {
-      "tanda": 2,
+      "tanda": 1,
       "publicado": false,
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-09-26T00:50:21Z"
+      "ts": "2026-09-26T18:20:19Z"
     }
   },
   {
-    "fecha": "2026-09-25",
-    "pick": "AZ ML",
+    "fecha": "2026-09-26",
+    "pick": "TB/PHI u7.0",
     "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": 108,
+    "nivel": "plata",
+    "cuota": -115,
     "unidades": 0.0,
-    "resultado": "W",
+    "resultado": "L",
     "neto_u": 0.0,
-    "marcador": "AZ 11-4 SD",
+    "marcador": "TB 12-1 PHI",
     "veredicto": "seguimiento",
-    "prob_estimada": 49.0,
-    "prob_justa": 46.3,
-    "ev_pct": 1.92,
-    "precio_publicado": 109,
-    "discrepancia_pp": 2.7,
+    "prob_estimada": 54.5,
+    "prob_justa": 50.97,
+    "ev_pct": 1.89,
+    "precio_publicado": -112,
+    "discrepancia_pp": 3.53,
     "sombra_umbral": {
-      "extra_umbral_1_5": true,
+      "extra_umbral_1_5": false,
       "extra_umbral_plano": false
     },
     "linea_precio": null,
     "capas": [
-      "bullpen",
       "ofensiva",
+      "clima",
+      "bullpen",
       "pitcheo"
     ],
-    "contra": "AZ cae a .694 de OPS contra derechos y SD viene 8-2 en casa con 6.0 c/j; si Mize aguanta seis entradas el cierre ni siquiera hace falta.",
+    "contra": "A. Nola abre con solo dos dias de descanso (aviso de ESPN sin confirmacion oficial): si dura tres entradas, PHI tira de relevo temprano y el under de 7.0 se rompe rapido.",
     "contexto": {
       "mercado_movido": true,
       "fuerza": "FUERTE"
@@ -1438,7 +1525,49 @@
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-09-26T00:50:21Z"
+      "ts": "2026-09-26T22:30:19Z"
+    }
+  },
+  {
+    "fecha": "2026-09-26",
+    "pick": "HOU/ATH o10.0",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -106,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "HOU 13-2 ATH",
+    "veredicto": "seguimiento",
+    "prob_estimada": 52.5,
+    "prob_justa": 49.45,
+    "ev_pct": 2.03,
+    "precio_publicado": -105,
+    "discrepancia_pp": 3.05,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "parque",
+      "clima",
+      "bullpen"
+    ],
+    "contra": "H. Wesneski (3.50) y J. Perkins (25.2% de ponches) pueden dar cinco entradas limpias cada uno y el umpire G. Morales resta un 1.9% de carreras; con 10 el margen de error es minimo.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": false,
+      "abridores": true,
+      "ts": "2026-09-26T22:30:19Z"
     }
   }
 ]

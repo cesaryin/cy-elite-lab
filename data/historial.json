@@ -5357,6 +5357,98 @@
     "cuadrante": "mala_suerte"
   },
   {
+    "fecha": "2026-09-25",
+    "pick": "TB/PHI u6.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -105,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.95,
+    "marcador": "TB 2-0 PHI",
+    "veredicto": "apostable",
+    "prob_estimada": 53.0,
+    "prob_justa": 48.92,
+    "ev_pct": 3.48,
+    "precio_publicado": -107,
+    "discrepancia_pp": 4.08,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "pitcheo",
+      "clima",
+      "umpire"
+    ],
+    "contra": "El parque es de 104 de factor de carreras y F. Peralta reparte boletos (8.5% bb); un inning de tres carreras con una linea de solo 6.5 lo revienta enseguida.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-25T21:30:23Z"
+    },
+    "clv": -1.2,
+    "prob_cierre": 50.0,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": 1.1,
+    "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-09-25",
+    "pick": "HOU F5 ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "HOU 5-6 ATH",
+    "veredicto": "apostable",
+    "prob_estimada": 53.5,
+    "prob_justa": null,
+    "ev_pct": 3.04,
+    "precio_publicado": -109,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup"
+    ],
+    "contra": "HOU batea solo .710 de OPS contra zurdos y en Kalshi el empate de las cinco entradas (casi 15%) se pierde, no se devuelve.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-26T00:50:21Z"
+    },
+    "clv": 2.1,
+    "prob_cierre": 54.0,
+    "clv_metodo": "kalshi_historico",
+    "cuadrante": "merecido"
+  },
+  {
     "fecha": "2026-08-20",
     "pick": "CWS ML",
     "deporte": "MLB",
@@ -5775,21 +5867,21 @@
     "cuadrante": "merecido"
   },
   {
-    "fecha": "2026-09-25",
-    "pick": "TB/PHI u6.5",
+    "fecha": "2026-09-26",
+    "pick": "MIN ML",
     "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -105,
+    "nivel": "oro",
+    "cuota": 106,
     "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.95,
-    "marcador": "TB 2-0 PHI",
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "TEX 6-2 MIN",
     "veredicto": "apostable",
-    "prob_estimada": 53.0,
-    "prob_justa": 48.92,
-    "ev_pct": 3.48,
-    "precio_publicado": -107,
-    "discrepancia_pp": 4.08,
+    "prob_estimada": 51.0,
+    "prob_justa": 46.63,
+    "ev_pct": 5.06,
+    "precio_publicado": 100,
+    "discrepancia_pp": 4.37,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
       "extra_umbral_plano": false
@@ -5798,13 +5890,11 @@
     "capas": [
       "ofensiva",
       "pitcheo",
-      "clima",
-      "umpire"
+      "forma"
     ],
-    "contra": "El parque es de 104 de factor de carreras y F. Peralta reparte boletos (8.5% bb); un inning de tres carreras con una linea de solo 6.5 lo revienta enseguida.",
+    "contra": "El bullpen de MIN (3.96) es peor que el de TEX (3.52) y pierde a J. Hoffman por lesion confirmada hoy, asi que un juego cerrado se decide en el lado debil.",
     "contexto": {
-      "mercado_movido": true,
-      "fuerza": "MEDIA"
+      "mercado_movido": false
     },
     "abogado": null,
     "citas_dudosas": 0,
@@ -5814,29 +5904,79 @@
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-09-25T21:30:23Z"
+      "ts": "2026-09-26T18:20:19Z"
     },
-    "clv": -1.2,
-    "prob_cierre": 50.0,
+    "clv": -2.0,
+    "prob_cierre": 46.5,
     "clv_metodo": "kalshi_historico",
-    "clv_limpio": 1.1,
+    "clv_limpio": -0.1,
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-09-26",
+    "pick": "CIN/TOR u8.0",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 105,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.05,
+    "marcador": "CIN 5-1 TOR",
+    "veredicto": "apostable",
+    "prob_estimada": 50.5,
+    "prob_justa": 46.93,
+    "ev_pct": 3.53,
+    "precio_publicado": 102,
+    "discrepancia_pp": 3.57,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "umpire"
+    ],
+    "contra": "R. Lowder llega con 6.01 de ERA y salidas de 3.0 y 3.1 entradas: si lo revientan temprano, el under muere antes de la quinta.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA",
+      "a_favor": true,
+      "mov_linea": 0.0
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-26T18:20:19Z"
+    },
+    "clv": -5.3,
+    "prob_cierre": 43.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": -3.4,
     "cuadrante": "merecido"
   },
   {
-    "fecha": "2026-09-25",
-    "pick": "HOU F5 ML",
+    "fecha": "2026-09-26",
+    "pick": "KC F5 ML",
     "deporte": "MLB",
     "nivel": "plata",
-    "cuota": -108,
+    "cuota": 122,
     "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 0.93,
-    "marcador": "HOU 5-6 ATH",
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "CLE 11-5 KC",
     "veredicto": "apostable",
-    "prob_estimada": 53.5,
+    "prob_estimada": 46.5,
     "prob_justa": null,
-    "ev_pct": 3.04,
-    "precio_publicado": -109,
+    "ev_pct": 3.23,
+    "precio_publicado": 120,
     "discrepancia_pp": null,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
@@ -5845,11 +5985,13 @@
     "linea_precio": null,
     "capas": [
       "pitcheo",
-      "matchup"
+      "ofensiva",
+      "bullpen"
     ],
-    "contra": "HOU batea solo .710 de OPS contra zurdos y en Kalshi el empate de las cinco entradas (casi 15%) se pierde, no se devuelve.",
+    "contra": "Bibee tiene mejor arsenal que su ERA y CLE llega 8-2 con la rotacion ordenada; si Wacha repite los 4 boletos de su ultima salida, KC pierde el F5 por si solo.",
     "contexto": {
-      "mercado_movido": false
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
     },
     "abogado": null,
     "citas_dudosas": 0,
@@ -5859,11 +6001,12 @@
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-09-26T00:50:21Z"
+      "ts": "2026-09-26T22:30:19Z"
     },
-    "clv": 2.1,
-    "prob_cierre": 54.0,
+    "clv": -0.5,
+    "prob_cierre": 44.5,
     "clv_metodo": "kalshi_historico",
-    "cuadrante": "merecido"
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
   }
 ]

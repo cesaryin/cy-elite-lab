@@ -1183,6 +1183,116 @@
      "neto_u": 0.0
     }
    ]
+  },
+  "2026-09-26": {
+   "fecha": "2026-09-26",
+   "opus": {
+    "analisis": 6,
+    "senales": 3,
+    "senales_w": 1,
+    "senales_l": 2,
+    "neto_u": -0.95,
+    "analisis_w": 3,
+    "analisis_l": 3,
+    "brier": 0.2389,
+    "n_brier": 6,
+    "picks": [
+     "MIN ML",
+     "CIN/TOR u8.0",
+     "KC F5 ML"
+    ]
+   },
+   "fable": {
+    "analisis": 5,
+    "senales": 1,
+    "senales_w": 0,
+    "senales_l": 1,
+    "neto_u": -1.0,
+    "analisis_w": 1,
+    "analisis_l": 4,
+    "brier": 0.2866,
+    "n_brier": 5,
+    "picks": [
+     "MIN ML"
+    ]
+   },
+   "coinciden": [
+    "MIN ML",
+    "TB/PHI u7.0"
+   ],
+   "tandas_fable": [
+    {
+     "n": 1,
+     "estado": "listo"
+    },
+    {
+     "n": 2,
+     "estado": "listo"
+    }
+   ],
+   "coste_fable": 0.7278,
+   "detalle_fable": [
+    {
+     "pick": "MIN ML",
+     "cuota": 106,
+     "tanda": 1,
+     "nivel": "plata",
+     "publicado": true,
+     "resultado": "L",
+     "marcador": "TEX 6-2 MIN",
+     "prob_estimada": 50.0,
+     "ev_pct": 3.0,
+     "neto_u": -1.0
+    },
+    {
+     "pick": "LAD Spread -1.5",
+     "cuota": -155,
+     "tanda": 1,
+     "nivel": "plata",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "LAD 4-3 SF",
+     "prob_estimada": 61.0,
+     "ev_pct": 0.35,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "TB/PHI u7.0",
+     "cuota": -115,
+     "tanda": 2,
+     "nivel": "oro",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "TB 12-1 PHI",
+     "prob_estimada": 55.0,
+     "ev_pct": 2.83,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "CWS Spread -1.5",
+     "cuota": -115,
+     "tanda": 2,
+     "nivel": "plata",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "COL 9-6 CWS",
+     "prob_estimada": 54.5,
+     "ev_pct": 1.89,
+     "neto_u": 0.0
+    },
+    {
+     "pick": "CLE/KC o8.0",
+     "cuota": -120,
+     "tanda": 2,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "W",
+     "marcador": "CLE 11-5 KC",
+     "prob_estimada": 54.0,
+     "ev_pct": -1.0,
+     "neto_u": 0.0
+    }
+   ]
   }
  }
 }

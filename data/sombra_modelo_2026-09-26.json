@@ -7,13 +7,300 @@
    "n": 1,
    "lote": "msgbatch_01DxHit4kV3XX5esYqPgWCwt",
    "enviado_utc": "2026-09-26T18:21:42Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-27T13:00:25Z",
+   "uso": {
+    "tokens_entrada": 32567,
+    "tokens_salida": 6146,
+    "coste": 0.3165
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "MIN ML",
+     "deporte": "MLB",
+     "tipo": "ML",
+     "cuota": 106,
+     "prob_estimada": 50.0,
+     "razon": "El mercado cobra a TEX como favorito con N. Eovaldi volviendo tras 7 semanas sin lanzar (ultima salida 7-ago), casi seguro con limite, y con una ofensiva helada: ops .554 y 3.0 c/j en la semana, sin Jung ni Pederson. MIN llega con 5.3 c/j, ops .737 contra derechos y 6-4 en sus ultimos 10.",
+     "equipos": [
+      "TEX",
+      "MIN"
+     ],
+     "destacado": "MIN",
+     "hora": "3:10 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma"
+     ],
+     "contra": "Eovaldi es el mejor abridor del duelo por FIP y K-BB (18.2% vs 10.3% de B. Ober), el bullpen de TEX (3.52) supera al de MIN, que ademas pierde a J. Hoffman hoy, y hay 73% de lluvia.",
+     "resolucion": {
+      "mercado": "ml",
+      "equipo": "MIN",
+      "lado": null,
+      "linea": null
+     },
+     "cuota_apertura_ref": 104,
+     "valor": {
+      "prob_estimada": 50.0,
+      "prob_justa": 46.63,
+      "prob_implicita": 48.54,
+      "cuota": 106,
+      "cuota_justa_mercado": 114,
+      "ev_pct": 3.0,
+      "ev_kalshi_pct": -0.6,
+      "precio_minimo": 104,
+      "precio_publicado": 104,
+      "precio_equilibrio": 100,
+      "discrepancia_pp": 3.37,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +3.00% · no tomar peor de +104",
+      "mejor_precio": {
+       "cuota": 112,
+       "casa": "betrivers"
+      },
+      "alcanzable": true,
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "LAD Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": -155,
+     "prob_estimada": 61.0,
+     "razon": "La ventaja es corta y lo digo: con el ML fuera de banda, el margen es el unico sitio donde mirar. La alineacion de SF publicada hoy suma cinco bateadores por debajo de .600 de ops y viene de 2.3 c/j con 69 ponches en 6 juegos; contra B. Snell (33% K) el cero es probable. LAD batea .791 en la semana y .757 vs zurdos.",
+     "equipos": [
+      "LAD",
+      "SF"
+     ],
+     "destacado": "LAD",
+     "hora": "3:05 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+     ],
+     "contra": "M. Wilkinson acaba de tirarle 5 entradas en blanco a LAD el 20-sep y Oracle Park (pf 94) reduce carreras, asi que un triunfo de LAD por una sola carrera es un escenario muy real.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "LAD",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": -157,
+     "valor": {
+      "prob_estimada": 61.0,
+      "prob_justa": 58.51,
+      "prob_implicita": 60.78,
+      "cuota": -155,
+      "cuota_justa_mercado": -141,
+      "ev_pct": 0.35,
+      "ev_kalshi_pct": -2.4,
+      "precio_minimo": -139,
+      "precio_publicado": -139,
+      "precio_equilibrio": -156,
+      "discrepancia_pp": 2.49,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +0.35% por debajo del minimo exigido (4.7%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda corta de cuatro juegos. La lectura principal esta en MIN, donde el mercado paga al perro con TEX estrenando a N. Eovaldi tras siete semanas fuera y un lineup en .554 de ops, mientras MIN produce 5.3 carreras por juego. En LAD/SF el ML no es jugable por precio y el valor, modesto, vive en el margen de -1.5 contra una alineacion de SF diezmada frente a B. Snell. El under de CIN/TOR se queda fuera por el limite probable de T. Yesavage y el uso del bullpen de TOR, y ATL/MIA no ofrece referencia limpia con Suter abriendo como relevista."
   },
   {
    "n": 2,
    "lote": "msgbatch_01VgU4KY6YyZ7v1CTzqxSAvK",
    "enviado_utc": "2026-09-26T22:32:29Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-27T13:00:26Z",
+   "uso": {
+    "tokens_entrada": 46913,
+    "tokens_salida": 7070,
+    "coste": 0.4113
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "TB/PHI u7.0",
+     "deporte": "MLB",
+     "tipo": "u7.0",
+     "cuota": -115,
+     "prob_estimada": 55.0,
+     "razon": "Las dos ofensivas llegan congeladas (TB 3.0 c/j y ops .539; PHI 3.0 c/j y ops .563 en la semana, ambas bajo 4.0 en sus ultimos 10) y el clima empuja al under: 58F, viento de 10.8 mph hacia DENTRO y umpire con efecto -0.6%. G. Jax viene de tres salidas de 5.0 IP con 0-1 ER y ambos bullpens estan frescos.",
+     "equipos": [
+      "TB",
+      "PHI"
+     ],
+     "destacado": null,
+     "hora": "6:15 PM CT",
+     "capas": [
+      "ofensiva",
+      "clima",
+      "pitcheo",
+      "bullpen"
+     ],
+     "contra": "A. Nola abriria con solo dos dias de descanso (ficha ESPN sin confirmar): si dura poco y el bullpen de PHI, con T. Mayza quemado, entra temprano, la ofensiva de TB puede romper el numero; ademas hay 43% de lluvia.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "under",
+      "linea": 7.0
+     },
+     "cuota_apertura_ref": -120,
+     "valor": {
+      "prob_estimada": 55.0,
+      "prob_justa": 50.97,
+      "prob_implicita": 53.49,
+      "cuota": -115,
+      "cuota_justa_mercado": -104,
+      "ev_pct": 2.83,
+      "ev_kalshi_pct": -0.43,
+      "precio_minimo": -114,
+      "precio_publicado": -114,
+      "precio_equilibrio": -122,
+      "discrepancia_pp": 4.03,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +2.83% por debajo del minimo exigido (2.9%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": true,
+       "extra_umbral_plano": true
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "CWS Spread -1.5",
+     "deporte": "MLB",
+     "tipo": "Spread -1.5",
+     "cuota": -115,
+     "prob_estimada": 54.5,
+     "razon": "El margen lo respalda la brecha ofensiva: CWS 7.3 c/j y ops .831 en la semana (ops .745 vs zurdos) contra J. Quintana (K% 11.1, fip 5.02, ultimas tres salidas con 3, 6 y 3 ER), mientras COL batea 3.3 c/j y ops .647. El bullpen de CWS (3.30, sin quemados) contra el de COL (5.06) sostiene la diferencia en las entradas finales.",
+     "equipos": [
+      "COL",
+      "CWS"
+     ],
+     "destacado": "CWS",
+     "hora": "6:10 PM CT",
+     "capas": [
+      "ofensiva",
+      "pitcheo",
+      "bullpen",
+      "matchup"
+     ],
+     "contra": "D. Martin no pasa de 5.2 IP en sus tres ultimas salidas y el spread -1.5 muere en cualquier juego de una carrera aunque CWS gane; la alineacion de COL trae varios bates de ops .800+ de temporada.",
+     "resolucion": {
+      "mercado": "spread",
+      "equipo": "CWS",
+      "lado": null,
+      "linea": -1.5
+     },
+     "cuota_apertura_ref": -117,
+     "valor": {
+      "prob_estimada": 54.5,
+      "prob_justa": 51.08,
+      "prob_implicita": 53.49,
+      "cuota": -115,
+      "cuota_justa_mercado": -104,
+      "ev_pct": 1.89,
+      "ev_kalshi_pct": -1.37,
+      "precio_minimo": -112,
+      "precio_publicado": -112,
+      "precio_equilibrio": -119,
+      "discrepancia_pp": 3.42,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.89% por debajo del minimo exigido (2.9%)",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "CLE/KC o8.0",
+     "deporte": "MLB",
+     "tipo": "o8.0",
+     "cuota": -120,
+     "prob_estimada": 54.0,
+     "razon": "Ventaja corta y lo digo: las dos ofensivas llegan calientes (KC 5.7 c/j y ops .835; CLE 4.8 c/j y ops .727) contra T. Bibee (fip 4.57, 6 ER en su ultima salida) y el bullpen de KC (5.31, cerrador L. Erceg 5.70). El bullpen de CLE viene de 13.2 IP en dos dias con E. Sabrowski y H. Gaddis quemados, y el parque (pf 104) suma.",
+     "equipos": [
+      "CLE",
+      "KC"
+     ],
+     "destacado": null,
+     "hora": "6:10 PM CT",
+     "capas": [
+      "ofensiva",
+      "bullpen",
+      "parque"
+     ],
+     "contra": "M. Wacha (3.33, 2 ER en su ultima salida) y el umpire J. Libka (-1.9% de carreras) pueden dejar el juego corto, y el precio -120 ya cobra parte del over.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "over",
+      "linea": 8.0
+     },
+     "valor": {
+      "prob_estimada": 54.0,
+      "prob_justa": 52.17,
+      "prob_implicita": 54.55,
+      "cuota": -120,
+      "cuota_justa_mercado": -109,
+      "ev_pct": -1.0,
+      "ev_kalshi_pct": -4.18,
+      "precio_minimo": -109,
+      "precio_publicado": -109,
+      "precio_equilibrio": -117,
+      "discrepancia_pp": 1.83,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV -1.00% por debajo del minimo exigido (3.1%)",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Tanda de sabado con poca ventaja en los moneylines: los precios ya recogen a los favoritos y el valor esta en los totales y el margen. La lectura principal es el under de TB/PHI, con dos ofensivas bajo 3.0 carreras por juego, viento fuerte hacia dentro y G. Jax en su mejor momento, aunque el descanso corto de A. Nola y la lluvia son el riesgo. En CWS la brecha ofensiva contra J. Quintana y el contraste de bullpens respaldan el spread -1.5, y en CLE/KC el over 8.0 se apoya en dos lineups calientes, el bullpen flojo de KC y el desgaste del de CLE, con una ventaja corta que se dice tal cual. AZ queda fuera por el abridor sin confirmar y SEA/LAA porque los bullpens no permiten el under aunque las ofensivas esten frias."
   }
  ]
 }
