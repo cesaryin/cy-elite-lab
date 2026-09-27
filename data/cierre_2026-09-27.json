@@ -69,7 +69,7 @@
   },
   "inicio_utc": "2026-09-27T19:05Z",
   "visto": "2026-09-27T13:02:51+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CIN@TOR": {
   "ml": {
@@ -93,7 +93,7 @@
   },
   "inicio_utc": "2026-09-27T19:07Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "ATL@MIA": {
   "ml": {
@@ -117,7 +117,7 @@
   },
   "inicio_utc": "2026-09-27T19:10Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "PIT@DET": {
   "ml": {
@@ -141,7 +141,7 @@
   },
   "inicio_utc": "2026-09-27T19:10Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CLE@KC": {
   "ml": {
@@ -165,7 +165,7 @@
   },
   "inicio_utc": "2026-09-27T19:10Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "COL@CWS": {
   "ml": {
@@ -189,7 +189,7 @@
   },
   "inicio_utc": "2026-09-27T19:10Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "STL@MIL": {
   "ml": {
@@ -213,7 +213,7 @@
   },
   "inicio_utc": "2026-09-27T19:10Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TEX@MIN": {
   "ml": {
@@ -237,7 +237,7 @@
   },
   "inicio_utc": "2026-09-27T19:10Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "LAA@SEA": {
   "ml": {
@@ -261,7 +261,7 @@
   },
   "inicio_utc": "2026-09-27T19:10Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CHC@BOS": {
   "ml": {
@@ -285,7 +285,7 @@
   },
   "inicio_utc": "2026-09-27T19:05Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "HOU@ATH": {
   "ml": {
@@ -309,7 +309,7 @@
   },
   "inicio_utc": "2026-09-27T19:05Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "LAD@SF": {
   "ml": {
@@ -333,7 +333,7 @@
   },
   "inicio_utc": "2026-09-27T19:05Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "AZ@SD": {
   "ml": {
@@ -357,7 +357,7 @@
   },
   "inicio_utc": "2026-09-27T19:10Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "TB@PHI#18:30": {
   "ml": {
@@ -381,6 +381,6 @@
   },
   "inicio_utc": "2026-09-27T18:30Z",
   "visto": "2026-09-27T18:20:19+00:00",
-  "cerrado": false
+  "cerrado": true
  }
 }
