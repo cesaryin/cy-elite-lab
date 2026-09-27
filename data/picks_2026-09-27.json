@@ -1,8 +1,231 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "plata",
+      "pick": "CHC/BOS u7.5",
+      "deporte": "MLB",
+      "tipo": "u7.5",
+      "cuota": -114,
+      "prob_estimada": 55.0,
+      "razon": "Las dos ofensivas estan congeladas: CHC 3.0 c/j y ops .642 en la semana, BOS 1.7 c/j y ops .595, con solo 1 de 10 juegos sobre 8.5 en la forma de BOS. Se juega bajo techo en un parque de pf 94 y el bullpen local (3.10) sostiene el cierre sin relevistas quemados.",
+      "equipos": [
+        "CHC",
+        "BOS"
+      ],
+      "destacado": null,
+      "hora": "2:05 PM CT",
+      "capas": [
+        "ofensiva",
+        "parque",
+        "bullpen",
+        "forma"
+      ],
+      "contra": "T. Houck vuelve de la IL de 60 dias sin datos de temporada y con limite de entradas probable, lo que abre el juego al bullpen mucho antes de lo normal.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 7.5
+      },
+      "inicio_utc": "2026-09-27T19:05:00Z",
+      "cuota_apertura_ref": -114,
+      "valor": {
+        "prob_estimada": 55.0,
+        "prob_justa": 50.98,
+        "prob_implicita": 53.27,
+        "cuota": -114,
+        "cuota_justa_mercado": -104,
+        "ev_pct": 3.25,
+        "ev_kalshi_pct": -0.02,
+        "precio_minimo": -115,
+        "precio_publicado": -115,
+        "precio_equilibrio": -122,
+        "discrepancia_pp": 4.02,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +3.25% · no tomar peor de -115",
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 6,
+        "no_encontrados": [
+          {
+            "numero": "8.5",
+            "frase": "mana, BOS 1.7 c/j y ops .595, con solo 1 de 10 juegos sobre 8.5 en la forma de BOS."
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-27T17:50:19Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true,
+        "gratis": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "HOU/ATH o10.0",
+      "deporte": "MLB",
+      "tipo": "o10.0",
+      "cuota": -108,
+      "prob_estimada": 53.0,
+      "razon": "Entorno de carreras extremo: parque de pf 117 con viento de 6 mph hacia afuera y umpire de +1.0%. HOU llega con 6.5 c/j, ops .914 y 18 HR en la semana, ATH con 4.8 c/j, y el bullpen local tiene 5.27 de era para tapar el final.",
+      "equipos": [
+        "HOU",
+        "ATH"
+      ],
+      "destacado": null,
+      "hora": "2:05 PM CT",
+      "capas": [
+        "ofensiva",
+        "parque",
+        "clima",
+        "bullpen"
+      ],
+      "contra": "La linea de 10 ya es altisima y el bullpen de HOU (3.75 con J. Hader) puede congelar la segunda mitad si su ofensiva resuelve temprano.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 10.0
+      },
+      "inicio_utc": "2026-09-27T19:05:00Z",
+      "cuota_apertura_ref": -108,
+      "valor": {
+        "prob_estimada": 53.0,
+        "prob_justa": 49.57,
+        "prob_implicita": 51.92,
+        "cuota": -108,
+        "cuota_justa_mercado": 102,
+        "ev_pct": 2.07,
+        "ev_kalshi_pct": -1.3,
+        "precio_minimo": -107,
+        "precio_publicado": -107,
+        "precio_equilibrio": -112,
+        "discrepancia_pp": 3.43,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +2.07% por debajo del minimo exigido (2.5%)",
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": true,
+          "extra_umbral_plano": true
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 6,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-27T17:50:19Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "TB/PHI u6.5",
+      "deporte": "MLB",
+      "tipo": "u6.5",
+      "cuota": -115,
+      "prob_estimada": 54.5,
+      "razon": "Viento de 17 mph soplando hacia dentro y 61 grados anulan el parque corto, y PHI viene con 2.7 c/j y ops .555 en la semana. Ambos bullpenes son fiables (B. Baker 1.44, J. Duran 1.85) y ninguno tiene relevistas quemados.",
+      "equipos": [
+        "TB",
+        "PHI"
+      ],
+      "destacado": null,
+      "hora": "1:30 PM CT",
+      "capas": [
+        "ofensiva",
+        "clima",
+        "bullpen",
+        "pitcheo"
+      ],
+      "contra": "El mercado ya bajo la linea de 7.0 a 6.5, asi que el descuento esta hecho, y TB (4.4 c/j) no es una ofensiva fria de verdad ante un N. Martinez de solo 15% de ponches.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "under",
+        "linea": 6.5
+      },
+      "inicio_utc": "2026-09-27T18:30:00Z",
+      "cuota_apertura_ref": -115,
+      "valor": {
+        "prob_estimada": 54.5,
+        "prob_justa": 51.2,
+        "prob_implicita": 53.49,
+        "cuota": -115,
+        "cuota_justa_mercado": -105,
+        "ev_pct": 1.89,
+        "ev_kalshi_pct": -1.37,
+        "precio_minimo": -112,
+        "precio_publicado": -112,
+        "precio_equilibrio": -119,
+        "discrepancia_pp": 3.3,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.89% por debajo del minimo exigido (2.9%)",
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "mov_linea": -0.5
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-27T17:50:19Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
-  "resumen": "",
-  "descartes": [],
+  "resumen": "Jornada dominada por ofensivas frias y por un unico entorno de carreras real. La lectura mas limpia esta en Tropicana Field: CHC y BOS llegan con 3.0 y 1.7 carreras por juego en la semana, parque supresor bajo techo y bullpen local elite. En el otro extremo, HOU y ATH juegan en un parque de pf 117 con viento hacia afuera y un bullpen local de 5.27, el unico escenario del dia que pide carreras. En Filadelfia el viento de 17 mph hacia dentro y la ofensiva local en 2.7 c/j apuntan al under, aunque el mercado ya bajo la linea de 7.0 a 6.5. Se descartan CLE/KC y PIT/DET por movimientos fuertes de linea en contra y falta de datos de abridor.",
+  "descartes": [
+    "CLE/KC: la lectura apuntaba a CLE por su bullpen de 3.12 y su forma, pero la linea se acorto 7.8 pp hacia KC (de +123 a -111) con fuerza FUERTE; movimiento asi en contra basta para descartar.",
+    "PIT/DET: R. Ryan casi no tiene muestra (3.0 ip) y la linea alargo a PIT de -135 a -104; sin referencia del abridor local no hay ventaja medible.",
+    "AZ en SD: AZ -158 solo daria ~1.5 puntos sobre la justa de 58.5, y su ops vs derechos (.698) no acompaña el estallido de 8.3 c/j de la semana.",
+    "LAD en SF: el ML esta fuera de banda y el spread -1.5 apenas discrepa de la justa; ademas LAD abre con J. Dreyer en rol de una entrada y con T. Scott quemado.",
+    "LAA/SEA u7.0: parque de pf 85 y techo invitan, pero la linea ya esta en 7.0 y los dos bullpenes (4.58 y 4.35) no sostienen un under tan bajo."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-09-27",
@@ -98,14 +321,60 @@
         "BAL@NYY"
       ]
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-09-27T17:50:19Z",
+        "min_ct": 770,
+        "claves": [
+          "TB@PHI@2026-09-27T18:30:00Z",
+          "CHC@BOS@2026-09-27T19:05:00Z",
+          "HOU@ATH@2026-09-27T19:05:00Z",
+          "LAD@SF@2026-09-27T19:05:00Z",
+          "CIN@TOR@2026-09-27T19:07:00Z",
+          "CLE@KC@2026-09-27T19:10:00Z",
+          "PIT@DET@2026-09-27T19:10:00Z",
+          "AZ@SD@2026-09-27T19:10:00Z",
+          "LAA@SEA@2026-09-27T19:10:00Z",
+          "TEX@MIN@2026-09-27T19:10:00Z",
+          "COL@CWS@2026-09-27T19:10:00Z",
+          "ATL@MIA@2026-09-27T19:10:00Z",
+          "STL@MIL@2026-09-27T19:10:00Z"
+        ],
+        "juegos": [
+          "TB@PHI",
+          "CHC@BOS",
+          "HOU@ATH",
+          "LAD@SF",
+          "CIN@TOR",
+          "CLE@KC",
+          "PIT@DET",
+          "AZ@SD",
+          "LAA@SEA",
+          "TEX@MIN",
+          "COL@CWS",
+          "ATL@MIA",
+          "STL@MIL"
+        ],
+        "alineaciones": [
+          26,
+          26
+        ],
+        "senales": [
+          "CHC/BOS u7.5"
+        ],
+        "sin_ventaja": 2,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 1-2 (-0.95 U).\n• MIN ML (SEÑAL ELITE), perdida: TEX 6-2 MIN.\n• CIN/TOR u8.0 (SEÑAL FUERTE), ganada: CIN 5-1 TOR, 6 carreras con la línea en 8.0.\n• KC F5 ML (SEÑAL FUERTE), perdida: CLE 11-5 KC.\n1 ganada con ventaja medida; 2 perdidas con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 16% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 0,
-    "seguimiento": 0,
+    "apostables": 1,
+    "seguimiento": 2,
     "sin_prob_estimada": 0,
-    "riesgo_u": 0.0,
-    "ev_min": null
+    "riesgo_u": 1.0,
+    "ev_min": 2.0
   }
 }
