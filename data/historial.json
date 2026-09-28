@@ -5592,6 +5592,54 @@
     "cuadrante": "mala_suerte"
   },
   {
+    "fecha": "2026-09-27",
+    "pick": "CHC/BOS u7.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -114,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "CHC 6-2 BOS",
+    "veredicto": "apostable",
+    "prob_estimada": 55.0,
+    "prob_justa": 50.98,
+    "ev_pct": 3.25,
+    "precio_publicado": -115,
+    "discrepancia_pp": 4.02,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "parque",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "T. Houck vuelve de la IL de 60 dias sin datos de temporada y con limite de entradas probable, lo que abre el juego al bullpen mucho antes de lo normal.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-27T17:50:19Z"
+    },
+    "clv": 0.0,
+    "cuota_cierre": -114,
+    "clv_metodo": "foto_espn",
+    "clv_limpio": 0.0,
+    "causa": "ajustado",
+    "cuadrante": "mala_suerte"
+  },
+  {
     "fecha": "2026-08-20",
     "pick": "CWS ML",
     "deporte": "MLB",
@@ -5650,6 +5698,8 @@
     "ev_pct": 5.72,
     "precio_publicado": -123,
     "discrepancia_pp": null,
+    "fuente_precio": null,
+    "casas_precio": null,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
       "extra_umbral_plano": false
@@ -5695,6 +5745,8 @@
     "ev_pct": 2.96,
     "precio_publicado": 107,
     "discrepancia_pp": null,
+    "fuente_precio": null,
+    "casas_precio": null,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
       "extra_umbral_plano": false
@@ -5742,6 +5794,8 @@
     "ev_pct": 5.0,
     "precio_publicado": -106,
     "discrepancia_pp": null,
+    "fuente_precio": null,
+    "casas_precio": null,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
       "extra_umbral_plano": false
@@ -5787,6 +5841,8 @@
     "ev_pct": 3.96,
     "precio_publicado": -107,
     "discrepancia_pp": null,
+    "fuente_precio": null,
+    "casas_precio": null,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
       "extra_umbral_plano": false
@@ -5834,6 +5890,8 @@
     "ev_pct": 4.37,
     "precio_publicado": 109,
     "discrepancia_pp": null,
+    "fuente_precio": null,
+    "casas_precio": null,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
       "extra_umbral_plano": false
@@ -5881,6 +5939,8 @@
     "ev_pct": 6.0,
     "precio_publicado": -108,
     "discrepancia_pp": null,
+    "fuente_precio": null,
+    "casas_precio": null,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
       "extra_umbral_plano": false
@@ -5925,6 +5985,8 @@
     "ev_pct": 4.0,
     "precio_publicado": -104,
     "discrepancia_pp": 4.17,
+    "fuente_precio": null,
+    "casas_precio": null,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
       "extra_umbral_plano": false
@@ -5975,6 +6037,8 @@
     "ev_pct": 2.98,
     "precio_publicado": -103,
     "discrepancia_pp": 3.54,
+    "fuente_precio": null,
+    "casas_precio": null,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
       "extra_umbral_plano": false
@@ -6008,53 +6072,5 @@
     "clv_metodo": "kalshi_historico",
     "clv_limpio": 0.0,
     "cuadrante": "merecido"
-  },
-  {
-    "fecha": "2026-09-27",
-    "pick": "CHC/BOS u7.5",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -114,
-    "unidades": 1.0,
-    "resultado": "L",
-    "neto_u": -1.0,
-    "marcador": "CHC 6-2 BOS",
-    "veredicto": "apostable",
-    "prob_estimada": 55.0,
-    "prob_justa": 50.98,
-    "ev_pct": 3.25,
-    "precio_publicado": -115,
-    "discrepancia_pp": 4.02,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "parque",
-      "bullpen",
-      "forma"
-    ],
-    "contra": "T. Houck vuelve de la IL de 60 dias sin datos de temporada y con limite de entradas probable, lo que abre el juego al bullpen mucho antes de lo normal.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 1,
-    "vivo": {
-      "tanda": 1,
-      "publicado": true,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-27T17:50:19Z"
-    },
-    "clv": 0.0,
-    "cuota_cierre": -114,
-    "clv_metodo": "foto_espn",
-    "clv_limpio": 0.0,
-    "causa": "ajustado",
-    "cuadrante": "mala_suerte"
   }
 ]
