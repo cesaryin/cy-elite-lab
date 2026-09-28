@@ -1293,6 +1293,86 @@
      "neto_u": 0.0
     }
    ]
+  },
+  "2026-09-27": {
+   "fecha": "2026-09-27",
+   "opus": {
+    "analisis": 3,
+    "senales": 1,
+    "senales_w": 0,
+    "senales_l": 1,
+    "neto_u": -1.0,
+    "analisis_w": 0,
+    "analisis_l": 3,
+    "brier": 0.2935,
+    "n_brier": 3,
+    "picks": [
+     "CHC/BOS u7.5"
+    ]
+   },
+   "fable": {
+    "analisis": 3,
+    "senales": 2,
+    "senales_w": 0,
+    "senales_l": 2,
+    "neto_u": -2.0,
+    "analisis_w": 0,
+    "analisis_l": 3,
+    "brier": 0.2898,
+    "n_brier": 3,
+    "picks": [
+     "COL/CWS o8.5",
+     "AZ F5 ML"
+    ]
+   },
+   "coinciden": [
+    "CHC/BOS u7.5"
+   ],
+   "tandas_fable": [
+    {
+     "n": 1,
+     "estado": "listo"
+    }
+   ],
+   "coste_fable": 0.6278,
+   "detalle_fable": [
+    {
+     "pick": "COL/CWS o8.5",
+     "cuota": -105,
+     "tanda": 1,
+     "nivel": "oro",
+     "publicado": true,
+     "resultado": "L",
+     "marcador": "COL 2-4 CWS",
+     "prob_estimada": 54.0,
+     "ev_pct": 5.43,
+     "neto_u": -1.0
+    },
+    {
+     "pick": "AZ F5 ML",
+     "cuota": -100,
+     "tanda": 1,
+     "nivel": "oro",
+     "publicado": true,
+     "resultado": "L",
+     "marcador": "AZ 4-9 SD",
+     "prob_estimada": 53.5,
+     "ev_pct": 7.0,
+     "neto_u": -1.0
+    },
+    {
+     "pick": "CHC/BOS u7.5",
+     "cuota": -114,
+     "tanda": 1,
+     "nivel": "bronce",
+     "publicado": false,
+     "resultado": "L",
+     "marcador": "CHC 6-2 BOS",
+     "prob_estimada": 54.0,
+     "ev_pct": 1.37,
+     "neto_u": 0.0
+    }
+   ]
   }
  }
 }

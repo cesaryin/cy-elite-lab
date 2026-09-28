@@ -7,7 +7,174 @@
    "n": 1,
    "lote": "msgbatch_014cK4B9fAr7pBFWsrNRyASs",
    "enviado_utc": "2026-09-27T17:52:00Z",
-   "estado": "enviado"
+   "estado": "listo",
+   "recogido_utc": "2026-09-28T13:00:31Z",
+   "uso": {
+    "tokens_entrada": 70913,
+    "tokens_salida": 10931,
+    "coste": 0.6278
+   },
+   "picks": [
+    {
+     "nivel": "oro",
+     "pick": "COL/CWS o8.5",
+     "deporte": "MLB",
+     "tipo": "o8.5",
+     "cuota": -105,
+     "prob_estimada": 54.0,
+     "razon": "Dos abridores flojos (K. Freeland 6.58 ERA; A. Kay no pasa de 4 IP en sus 3 salidas) y dos bullpens expuestos: COL 5.14 de ERA y CWS con 9.9 IP en 2 dias y B. Hudson quemado. CWS anota 6.4 c/j en los ultimos 10 y ops .869 en la semana; COL 4.0 c/j con 10 HR. Umpire +1.2% y viento 3.6 hacia afuera.",
+     "equipos": [
+      "COL",
+      "CWS"
+     ],
+     "destacado": null,
+     "hora": "2:10 PM CT",
+     "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva",
+      "umpire"
+     ],
+     "contra": "La alineacion de CWS trae varios bates flojos (T. Pham .489, L. Acuna .535, D. Romo .527) y el parque es neutro-corto (pf 98); si Kay aguanta 5 limpias el over se queda en 7-8.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "over",
+      "linea": 8.5
+     },
+     "cuota_apertura_ref": -105,
+     "valor": {
+      "prob_estimada": 54.0,
+      "prob_justa": 48.92,
+      "prob_implicita": 51.22,
+      "cuota": -105,
+      "cuota_justa_mercado": 104,
+      "ev_pct": 5.43,
+      "ev_kalshi_pct": 2.02,
+      "precio_minimo": -111,
+      "precio_publicado": -111,
+      "precio_equilibrio": -117,
+      "discrepancia_pp": 5.08,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +5.43% · no tomar peor de -111",
+      "contexto": {
+       "mercado_movido": true,
+       "fuerza": "FUERTE"
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "plata",
+     "pick": "AZ F5 ML",
+     "deporte": "MLB",
+     "tipo": "F5 ML",
+     "cuota": -100,
+     "prob_estimada": 53.5,
+     "razon": "M. Soroka (FIP 3.42, 7 IP/1 ER y 5 IP/1 ER en sus dos ultimas) contra R. Vasquez (K% 15.0, sin salida desde el 1-sep) mientras AZ llega con ofensiva 8.3 c/j y ops .935 en la semana. La alineacion de SD hoy es claramente mas floja que su ofensiva de temporada (J. Bowen .452, S. Song .543, F. Fermin .578). Mercado F5 de Kalshi a tres bandas, vig 1.97.",
+     "equipos": [
+      "AZ",
+      "SD"
+     ],
+     "destacado": "AZ",
+     "hora": "2:10 PM CT",
+     "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+     ],
+     "contra": "AZ batea solo .698 de ops vs derechos en la temporada y en Kalshi el empate de las cinco entradas (15.7% justo) es derrota, no devolucion.",
+     "resolucion": {
+      "mercado": "f5_ml",
+      "equipo": "AZ",
+      "lado": null,
+      "linea": null
+     },
+     "valor": {
+      "prob_estimada": 53.5,
+      "prob_justa": null,
+      "prob_implicita": 50.0,
+      "cuota": -100,
+      "cuota_justa_mercado": null,
+      "ev_pct": 7.0,
+      "ev_kalshi_pct": 3.5,
+      "precio_minimo": -110,
+      "precio_publicado": -110,
+      "precio_equilibrio": -115,
+      "discrepancia_pp": null,
+      "unidades": 1.0,
+      "veredicto": "apostable",
+      "motivo": "EV +7.00% · no tomar peor de -110",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 1.0
+    },
+    {
+     "nivel": "bronce",
+     "pick": "CHC/BOS u7.5",
+     "deporte": "MLB",
+     "tipo": "u7.5",
+     "cuota": -114,
+     "prob_estimada": 54.0,
+     "razon": "Las dos ofensivas vienen frias en los ultimos 10 (CHC 3.8 c/j, BOS 2.2 c/j y ops .595 en la semana, 1/10 sobre 8.5), en parque cerrado con pf 94 y con bullpens frescos y solidos (BOS 3.10 con A. Chapman, CHC 3.73, sin quemados). S. Imanaga llega con 1 ER en cada una de sus dos ultimas. Ventaja moderada: lo digo como capa a favor, no como certeza.",
+     "equipos": [
+      "CHC",
+      "BOS"
+     ],
+     "destacado": null,
+     "hora": "2:05 PM CT",
+     "capas": [
+      "ofensiva",
+      "bullpen",
+      "parque",
+      "pitcheo"
+     ],
+     "contra": "T. Houck vuelve de la IL de 60 dias sin ERA en los datos y casi seguro con limite corto, lo que carga el bullpen de BOS (11.3 IP en 2 dias) desde temprano; ademas el umpire E. Jimenez suma +2.3% de carreras.",
+     "resolucion": {
+      "mercado": "total",
+      "equipo": null,
+      "lado": "under",
+      "linea": 7.5
+     },
+     "cuota_apertura_ref": -114,
+     "valor": {
+      "prob_estimada": 54.0,
+      "prob_justa": 50.98,
+      "prob_implicita": 53.27,
+      "cuota": -114,
+      "cuota_justa_mercado": -104,
+      "ev_pct": 1.37,
+      "ev_kalshi_pct": -1.9,
+      "precio_minimo": -110,
+      "precio_publicado": -110,
+      "precio_equilibrio": -117,
+      "discrepancia_pp": 3.02,
+      "unidades": 0.0,
+      "veredicto": "seguimiento",
+      "motivo": "EV +1.37% por debajo del minimo exigido (2.8%)",
+      "contexto": {
+       "mercado_movido": false
+      },
+      "sombra": {
+       "extra_umbral_1_5": false,
+       "extra_umbral_plano": false
+      }
+     },
+     "unidades": 0.0
+    }
+   ],
+   "resumen": "Ultimo dia de temporada con varias alineaciones de suplentes, asi que el filtro principal ha sido comparar los nueve publicados con la ofensiva real de cada equipo. El mayor desajuste esta en el over de COL@CWS, con dos abridores cortos y dos bullpens expuestos frente a una ofensiva de CWS que anota 6.4 c/j. El F5 de AZ aprovecha a M. Soroka contra una alineacion de SD claramente reducida, y el under de CHC@BOS se apoya en dos ofensivas frias bajo techo con bullpens frescos, aunque la vuelta de T. Houck sin datos lo deja con menos ventaja. Los grandes favoritos del dia (PHI, LAD, MIL, HOU) quedan fuera de banda o sin discrepancia real contra la linea justa."
   }
  ]
 }

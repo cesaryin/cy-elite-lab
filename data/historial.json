@@ -5449,6 +5449,149 @@
     "cuadrante": "merecido"
   },
   {
+    "fecha": "2026-09-26",
+    "pick": "MIN ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 106,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "TEX 6-2 MIN",
+    "veredicto": "apostable",
+    "prob_estimada": 51.0,
+    "prob_justa": 46.63,
+    "ev_pct": 5.06,
+    "precio_publicado": 100,
+    "discrepancia_pp": 4.37,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "pitcheo",
+      "forma"
+    ],
+    "contra": "El bullpen de MIN (3.96) es peor que el de TEX (3.52) y pierde a J. Hoffman por lesion confirmada hoy, asi que un juego cerrado se decide en el lado debil.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-26T18:20:19Z"
+    },
+    "clv": -2.0,
+    "prob_cierre": 46.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": -0.1,
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-09-26",
+    "pick": "CIN/TOR u8.0",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 105,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.05,
+    "marcador": "CIN 5-1 TOR",
+    "veredicto": "apostable",
+    "prob_estimada": 50.5,
+    "prob_justa": 46.93,
+    "ev_pct": 3.53,
+    "precio_publicado": 102,
+    "discrepancia_pp": 3.57,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "umpire"
+    ],
+    "contra": "R. Lowder llega con 6.01 de ERA y salidas de 3.0 y 3.1 entradas: si lo revientan temprano, el under muere antes de la quinta.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA",
+      "a_favor": true,
+      "mov_linea": 0.0
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-26T18:20:19Z"
+    },
+    "clv": -5.3,
+    "prob_cierre": 43.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": -3.4,
+    "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-09-26",
+    "pick": "KC F5 ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 122,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "CLE 11-5 KC",
+    "veredicto": "apostable",
+    "prob_estimada": 46.5,
+    "prob_justa": null,
+    "ev_pct": 3.23,
+    "precio_publicado": 120,
+    "discrepancia_pp": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "bullpen"
+    ],
+    "contra": "Bibee tiene mejor arsenal que su ERA y CLE llega 8-2 con la rotacion ordenada; si Wacha repite los 4 boletos de su ultima salida, KC pierde el F5 por si solo.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-26T22:30:19Z"
+    },
+    "clv": -0.5,
+    "prob_cierre": 44.5,
+    "clv_metodo": "kalshi_historico",
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
+  },
+  {
     "fecha": "2026-08-20",
     "pick": "CWS ML",
     "deporte": "MLB",
@@ -5867,21 +6010,21 @@
     "cuadrante": "merecido"
   },
   {
-    "fecha": "2026-09-26",
-    "pick": "MIN ML",
+    "fecha": "2026-09-27",
+    "pick": "CHC/BOS u7.5",
     "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": 106,
+    "nivel": "plata",
+    "cuota": -114,
     "unidades": 1.0,
     "resultado": "L",
     "neto_u": -1.0,
-    "marcador": "TEX 6-2 MIN",
+    "marcador": "CHC 6-2 BOS",
     "veredicto": "apostable",
-    "prob_estimada": 51.0,
-    "prob_justa": 46.63,
-    "ev_pct": 5.06,
-    "precio_publicado": 100,
-    "discrepancia_pp": 4.37,
+    "prob_estimada": 55.0,
+    "prob_justa": 50.98,
+    "ev_pct": 3.25,
+    "precio_publicado": -115,
+    "discrepancia_pp": 4.02,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
       "extra_umbral_plano": false
@@ -5889,124 +6032,29 @@
     "linea_precio": null,
     "capas": [
       "ofensiva",
-      "pitcheo",
+      "parque",
+      "bullpen",
       "forma"
     ],
-    "contra": "El bullpen de MIN (3.96) es peor que el de TEX (3.52) y pierde a J. Hoffman por lesion confirmada hoy, asi que un juego cerrado se decide en el lado debil.",
+    "contra": "T. Houck vuelve de la IL de 60 dias sin datos de temporada y con limite de entradas probable, lo que abre el juego al bullpen mucho antes de lo normal.",
     "contexto": {
       "mercado_movido": false
     },
     "abogado": null,
-    "citas_dudosas": 0,
+    "citas_dudosas": 1,
     "vivo": {
       "tanda": 1,
       "publicado": true,
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-09-26T18:20:19Z"
+      "ts": "2026-09-27T17:50:19Z"
     },
-    "clv": -2.0,
-    "prob_cierre": 46.5,
-    "clv_metodo": "kalshi_historico",
-    "clv_limpio": -0.1,
-    "causa": "varianza",
-    "cuadrante": "mala_suerte"
-  },
-  {
-    "fecha": "2026-09-26",
-    "pick": "CIN/TOR u8.0",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": 105,
-    "unidades": 1.0,
-    "resultado": "W",
-    "neto_u": 1.05,
-    "marcador": "CIN 5-1 TOR",
-    "veredicto": "apostable",
-    "prob_estimada": 50.5,
-    "prob_justa": 46.93,
-    "ev_pct": 3.53,
-    "precio_publicado": 102,
-    "discrepancia_pp": 3.57,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "bullpen",
-      "umpire"
-    ],
-    "contra": "R. Lowder llega con 6.01 de ERA y salidas de 3.0 y 3.1 entradas: si lo revientan temprano, el under muere antes de la quinta.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "MEDIA",
-      "a_favor": true,
-      "mov_linea": 0.0
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": true,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-26T18:20:19Z"
-    },
-    "clv": -5.3,
-    "prob_cierre": 43.5,
-    "clv_metodo": "kalshi_historico",
-    "clv_limpio": -3.4,
-    "cuadrante": "merecido"
-  },
-  {
-    "fecha": "2026-09-26",
-    "pick": "KC F5 ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": 122,
-    "unidades": 1.0,
-    "resultado": "L",
-    "neto_u": -1.0,
-    "marcador": "CLE 11-5 KC",
-    "veredicto": "apostable",
-    "prob_estimada": 46.5,
-    "prob_justa": null,
-    "ev_pct": 3.23,
-    "precio_publicado": 120,
-    "discrepancia_pp": null,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "ofensiva",
-      "bullpen"
-    ],
-    "contra": "Bibee tiene mejor arsenal que su ERA y CLE llega 8-2 con la rotacion ordenada; si Wacha repite los 4 boletos de su ultima salida, KC pierde el F5 por si solo.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE"
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": true,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-26T22:30:19Z"
-    },
-    "clv": -0.5,
-    "prob_cierre": 44.5,
-    "clv_metodo": "kalshi_historico",
-    "causa": "varianza",
+    "clv": 0.0,
+    "cuota_cierre": -114,
+    "clv_metodo": "foto_espn",
+    "clv_limpio": 0.0,
+    "causa": "ajustado",
     "cuadrante": "mala_suerte"
   }
 ]

@@ -921,6 +921,135 @@
     }
   },
   {
+    "fecha": "2026-09-26",
+    "pick": "LAD/SF u7.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -124,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "LAD 4-3 SF",
+    "veredicto": "seguimiento",
+    "prob_estimada": 56.5,
+    "prob_justa": 53.04,
+    "ev_pct": 2.06,
+    "precio_publicado": -120,
+    "discrepancia_pp": 3.46,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "parque"
+    ],
+    "contra": "El bullpen de SF (4.31, cerrador con 4.50) puede regalar carreras tardias a un lineup de LAD que va a 4.2 c/j, y el viento sopla 6.4 mph hacia afuera.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": -0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-26T18:20:19Z"
+    }
+  },
+  {
+    "fecha": "2026-09-26",
+    "pick": "TB/PHI u7.0",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -115,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "TB 12-1 PHI",
+    "veredicto": "seguimiento",
+    "prob_estimada": 54.5,
+    "prob_justa": 50.97,
+    "ev_pct": 1.89,
+    "precio_publicado": -112,
+    "discrepancia_pp": 3.53,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "clima",
+      "bullpen",
+      "pitcheo"
+    ],
+    "contra": "A. Nola abre con solo dos dias de descanso (aviso de ESPN sin confirmacion oficial): si dura tres entradas, PHI tira de relevo temprano y el under de 7.0 se rompe rapido.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-26T22:30:19Z"
+    }
+  },
+  {
+    "fecha": "2026-09-26",
+    "pick": "HOU/ATH o10.0",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -106,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "HOU 13-2 ATH",
+    "veredicto": "seguimiento",
+    "prob_estimada": 52.5,
+    "prob_justa": 49.45,
+    "ev_pct": 2.03,
+    "precio_publicado": -105,
+    "discrepancia_pp": 3.05,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "parque",
+      "clima",
+      "bullpen"
+    ],
+    "contra": "H. Wesneski (3.50) y J. Perkins (25.2% de ponches) pueden dar cinco entradas limpias cada uno y el umpire G. Morales resta un 1.9% de carreras; con 10 el margen de error es minimo.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": false,
+      "abridores": true,
+      "ts": "2026-09-26T22:30:19Z"
+    }
+  },
+  {
     "fecha": "2026-09-18",
     "pick": "WSH F5 ML",
     "deporte": "MLB",
@@ -1442,32 +1571,75 @@
     }
   },
   {
-    "fecha": "2026-09-26",
-    "pick": "LAD/SF u7.5",
+    "fecha": "2026-09-27",
+    "pick": "HOU/ATH o10.0",
     "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -124,
+    "nivel": "plata",
+    "cuota": -108,
     "unidades": 0.0,
-    "resultado": "W",
+    "resultado": "L",
     "neto_u": 0.0,
-    "marcador": "LAD 4-3 SF",
+    "marcador": "HOU 9-0 ATH",
     "veredicto": "seguimiento",
-    "prob_estimada": 56.5,
-    "prob_justa": 53.04,
-    "ev_pct": 2.06,
-    "precio_publicado": -120,
-    "discrepancia_pp": 3.46,
+    "prob_estimada": 53.0,
+    "prob_justa": 49.57,
+    "ev_pct": 2.07,
+    "precio_publicado": -107,
+    "discrepancia_pp": 3.43,
     "sombra_umbral": {
-      "extra_umbral_1_5": false,
+      "extra_umbral_1_5": true,
       "extra_umbral_plano": true
     },
     "linea_precio": null,
     "capas": [
-      "pitcheo",
       "ofensiva",
-      "parque"
+      "parque",
+      "clima",
+      "bullpen"
     ],
-    "contra": "El bullpen de SF (4.31, cerrador con 4.50) puede regalar carreras tardias a un lineup de LAD que va a 4.2 c/j, y el viento sopla 6.4 mph hacia afuera.",
+    "contra": "La linea de 10 ya es altisima y el bullpen de HOU (3.75 con J. Hader) puede congelar la segunda mitad si su ofensiva resuelve temprano.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-27T17:50:19Z"
+    }
+  },
+  {
+    "fecha": "2026-09-27",
+    "pick": "TB/PHI u6.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -115,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "TB 3-7 PHI",
+    "veredicto": "seguimiento",
+    "prob_estimada": 54.5,
+    "prob_justa": 51.2,
+    "ev_pct": 1.89,
+    "precio_publicado": -112,
+    "discrepancia_pp": 3.3,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "clima",
+      "bullpen",
+      "pitcheo"
+    ],
+    "contra": "El mercado ya bajo la linea de 7.0 a 6.5, asi que el descuento esta hecho, y TB (4.4 c/j) no es una ofensiva fria de verdad ante un N. Martinez de solo 15% de ponches.",
     "contexto": {
       "mercado_movido": true,
       "fuerza": "FUERTE",
@@ -1482,92 +1654,7 @@
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-09-26T18:20:19Z"
-    }
-  },
-  {
-    "fecha": "2026-09-26",
-    "pick": "TB/PHI u7.0",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -115,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "TB 12-1 PHI",
-    "veredicto": "seguimiento",
-    "prob_estimada": 54.5,
-    "prob_justa": 50.97,
-    "ev_pct": 1.89,
-    "precio_publicado": -112,
-    "discrepancia_pp": 3.53,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "clima",
-      "bullpen",
-      "pitcheo"
-    ],
-    "contra": "A. Nola abre con solo dos dias de descanso (aviso de ESPN sin confirmacion oficial): si dura tres entradas, PHI tira de relevo temprano y el under de 7.0 se rompe rapido.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE"
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-26T22:30:19Z"
-    }
-  },
-  {
-    "fecha": "2026-09-26",
-    "pick": "HOU/ATH o10.0",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -106,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "HOU 13-2 ATH",
-    "veredicto": "seguimiento",
-    "prob_estimada": 52.5,
-    "prob_justa": 49.45,
-    "ev_pct": 2.03,
-    "precio_publicado": -105,
-    "discrepancia_pp": 3.05,
-    "sombra_umbral": {
-      "extra_umbral_1_5": true,
-      "extra_umbral_plano": true
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "parque",
-      "clima",
-      "bullpen"
-    ],
-    "contra": "H. Wesneski (3.50) y J. Perkins (25.2% de ponches) pueden dar cinco entradas limpias cada uno y el umpire G. Morales resta un 1.9% de carreras; con 10 el margen de error es minimo.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": false,
-      "abridores": true,
-      "ts": "2026-09-26T22:30:19Z"
+      "ts": "2026-09-27T17:50:19Z"
     }
   }
 ]
