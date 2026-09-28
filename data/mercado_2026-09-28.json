@@ -1,0 +1,57 @@
+{
+ "fotos": [
+  {
+   "ts": "2026-09-28T16:35:17+00:00",
+   "juegos": {
+    "PHI@ATL": {
+     "ml": {
+      "PHI": 167,
+      "ATL": -204
+     },
+     "total": {
+      "linea": 6.5,
+      "over": -125,
+      "under": 103
+     },
+     "inicio_utc": "2026-09-29T18:00Z"
+    },
+    "CWS@HOU": {
+     "ml": {
+      "CWS": 114,
+      "HOU": -137
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -118,
+      "under": -102
+     },
+     "inicio_utc": "2026-09-29T21:00Z"
+    },
+    "BOS@NYY": {
+     "ml": {
+      "BOS": 129,
+      "NYY": -156
+     },
+     "total": {
+      "linea": 6.5,
+      "over": -105,
+      "under": -114
+     },
+     "inicio_utc": "2026-09-30T00:00Z"
+    },
+    "CHC@SD": {
+     "ml": {
+      "CHC": 105,
+      "SD": -126
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -117,
+      "under": -103
+     },
+     "inicio_utc": "2026-09-30T02:00Z"
+    }
+   }
+  }
+ ]
+}
