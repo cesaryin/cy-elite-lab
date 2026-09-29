@@ -766,45 +766,44 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 
   // LA SECCION TARDABA UNOS SEGUNDOS EN SALIR (29-sep-2026, lo vio Cesar: «cuando abro
   // Ajustes demora unos segundos en salir y no sale junto y rapido con todo lo de esa
-  // web»). Medido: la pagina llega en 0,23 s y la respuesta del portero tarda ~1 s --y
-  // detras iban el service worker y una SEGUNDA llamada, una detras de otra--.
+  // web»). Medido: la pagina llega en 0,18-0,23 s y el POST que decidia si enseñarla
+  // tarda **0,85 s** -- cuatro veces mas que una peticion normal, porque un POST no lo
+  // cachea nadie. Y detras iban el service worker y una SEGUNDA llamada.
   //
-  // Dos arreglos, y ninguno cambia quien puede usarla: eso lo sigue diciendo el portero.
+  // EL ARREGLO DE VERDAD NO ESTA AQUI: **esta en el portero**, que ya sabe quien mira y
+  // ahora le quita el `hidden` a la seccion antes de mandar la pagina (conAvisos(), en
+  // portero/src/index.js). Asi llega dentro del HTML, con todo lo demas.
   //
-  //   a) EL SERVICE WORKER ARRANCA YA, en paralelo con la pregunta al portero. No depende
-  //      de la respuesta, asi que esperar a tenerla era tiempo regalado.
-  //   b) ESTE NAVEGADOR SE ACUERDA. Si la ultima vez le dejaron ver la seccion, se enseña
-  //      de entrada y se corrige si el portero dice que no. A quien nunca le han dejado no
-  //      le cambia nada: sigue sin verla. Y el interruptor no funciona hasta que llega la
-  //      clave de verdad, asi que recordarlo no abre ninguna puerta.
-  var RECUERDO = 'cy_avisos_vista';
-  function recordar(si) { try { si ? localStorage.setItem(RECUERDO, '1') : localStorage.removeItem(RECUERDO); } catch (e) {} }
-  function recordado() { try { return localStorage.getItem(RECUERDO) === '1'; } catch (e) { return false; } }
-
-  if (sw) sw.disabled = true;                 // hasta que llegue la clave del portero
-  if (recordado()) {
-    caja.hidden = false;
-    if (!soporta) ver('av-safari');
-    else if (Notification.permission === 'denied') ver('av-bloq');
-    else { ver('av-main'); encendido(false); }
+  // LO QUE HACE ESTE CODIGO AHORA:
+  //   1. Si la seccion YA viene visible, elige main/safari/bloqueados **al momento**, sin
+  //      pedir nada a nadie: eso solo depende del navegador y se sabe sin red.
+  //   2. Arranca el service worker en paralelo, que no depende de ninguna respuesta.
+  //   3. Y pide la clave, que solo hace falta para SUSCRIBIRSE. Mientras no llegue, el
+  //      interruptor esta bloqueado; nada se mueve de sitio cuando llega.
+  //
+  // Si el portero no llegara a hacerlo --no desplegado, o caido-- la pagina sale como
+  // hasta hoy: escondida, y este mismo codigo la enseña cuando vuelva la clave.
+  function cual() {
+    if (!soporta) { ver('av-safari'); return false; }
+    if (Notification.permission === 'denied') { ver('av-bloq'); return false; }
+    ver('av-main'); return true;
   }
 
-  // (a) El service worker, ya. La promesa se guarda y se reusa mas abajo.
-  var listo = (soporta && Notification.permission !== 'denied')
-    ? registro().catch(function () { return null; }) : Promise.resolve(null);
+  if (sw) sw.disabled = true;                 // hasta que llegue la clave del portero
+  var puede = cual();
+  if (!caja.hidden && puede) encendido(false);   // ya visible: se pinta entera, ya
 
-  // 1. ¿Puede usarla quien mira? Lo decide el portero (hoy: solo el CEO).
+  // El service worker, ya, en paralelo. La promesa se guarda y se reusa mas abajo.
+  var listo = puede ? registro().catch(function () { return null; }) : Promise.resolve(null);
+
+  // La clave del portero: para suscribirse, no para enseñar la seccion.
   post({ accion: 'clave' }).then(function (d) {
-    if (!d.ok || !d.clave) { caja.hidden = true; recordar(false); return; }
+    if (!d.ok || !d.clave) { caja.hidden = true; return; }
     CLAVE = d.clave;
     caja.hidden = false;
-    recordar(true);
     if (sw) sw.disabled = false;
     if (!d.publico && $('av-solo')) $('av-solo').hidden = false;
-    // 2. ¿Puede este navegador recibir avisos?
-    if (!soporta) { ver('av-safari'); return; }
-    if (Notification.permission === 'denied') { ver('av-bloq'); return; }
-    ver('av-main');
+    if (!cual()) return;
     return listo.then(function (reg) { return reg && reg.pushManager.getSubscription(); }).then(function (sub) {
       if (!sub) { encendido(false); return; }
       SUB = sub;
@@ -860,4 +859,4 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
   });
 
 })();
-</script><!-- generado 09/29/2026 2:41 PM --></body></html>
+</script><!-- generado 09/29/2026 3:00 PM --></body></html>
