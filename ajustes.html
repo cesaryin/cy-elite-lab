@@ -764,17 +764,48 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 
   Array.prototype.forEach.call(caja.querySelectorAll('[data-av-eq]'), function (e) { e.textContent = equipo; });
 
+  // LA SECCION TARDABA UNOS SEGUNDOS EN SALIR (29-sep-2026, lo vio Cesar: «cuando abro
+  // Ajustes demora unos segundos en salir y no sale junto y rapido con todo lo de esa
+  // web»). Medido: la pagina llega en 0,23 s y la respuesta del portero tarda ~1 s --y
+  // detras iban el service worker y una SEGUNDA llamada, una detras de otra--.
+  //
+  // Dos arreglos, y ninguno cambia quien puede usarla: eso lo sigue diciendo el portero.
+  //
+  //   a) EL SERVICE WORKER ARRANCA YA, en paralelo con la pregunta al portero. No depende
+  //      de la respuesta, asi que esperar a tenerla era tiempo regalado.
+  //   b) ESTE NAVEGADOR SE ACUERDA. Si la ultima vez le dejaron ver la seccion, se enseña
+  //      de entrada y se corrige si el portero dice que no. A quien nunca le han dejado no
+  //      le cambia nada: sigue sin verla. Y el interruptor no funciona hasta que llega la
+  //      clave de verdad, asi que recordarlo no abre ninguna puerta.
+  var RECUERDO = 'cy_avisos_vista';
+  function recordar(si) { try { si ? localStorage.setItem(RECUERDO, '1') : localStorage.removeItem(RECUERDO); } catch (e) {} }
+  function recordado() { try { return localStorage.getItem(RECUERDO) === '1'; } catch (e) { return false; } }
+
+  if (sw) sw.disabled = true;                 // hasta que llegue la clave del portero
+  if (recordado()) {
+    caja.hidden = false;
+    if (!soporta) ver('av-safari');
+    else if (Notification.permission === 'denied') ver('av-bloq');
+    else { ver('av-main'); encendido(false); }
+  }
+
+  // (a) El service worker, ya. La promesa se guarda y se reusa mas abajo.
+  var listo = (soporta && Notification.permission !== 'denied')
+    ? registro().catch(function () { return null; }) : Promise.resolve(null);
+
   // 1. ¿Puede usarla quien mira? Lo decide el portero (hoy: solo el CEO).
   post({ accion: 'clave' }).then(function (d) {
-    if (!d.ok || !d.clave) return;
+    if (!d.ok || !d.clave) { caja.hidden = true; recordar(false); return; }
     CLAVE = d.clave;
     caja.hidden = false;
+    recordar(true);
+    if (sw) sw.disabled = false;
     if (!d.publico && $('av-solo')) $('av-solo').hidden = false;
     // 2. ¿Puede este navegador recibir avisos?
     if (!soporta) { ver('av-safari'); return; }
     if (Notification.permission === 'denied') { ver('av-bloq'); return; }
     ver('av-main');
-    return registro().then(function (reg) { return reg.pushManager.getSubscription(); }).then(function (sub) {
+    return listo.then(function (reg) { return reg && reg.pushManager.getSubscription(); }).then(function (sub) {
       if (!sub) { encendido(false); return; }
       SUB = sub;
       return post({ accion: 'estado', endpoint: sub.endpoint }).then(function (e) {
@@ -829,4 +860,4 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
   });
 
 })();
-</script><!-- generado 09/29/2026 2:30 PM --></body></html>
+</script><!-- generado 09/29/2026 2:41 PM --></body></html>
