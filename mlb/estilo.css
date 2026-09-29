@@ -300,6 +300,17 @@ a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
 .set-n{font-size:11px;font-weight:400;color:var(--faint);line-height:1.4}
 .set-v{font-size:13px;color:var(--mut);flex-shrink:0;font-weight:400}
 .set-ar{width:17px;height:17px;color:var(--faint);flex-shrink:0}
+/* EL SELECTOR DE IDIOMA (29-sep-2026, Plan Idioma fase 4). Son DOS ENLACES,
+   no un boton: cada idioma es una direccion de verdad y por eso Google puede
+   indexar las dos. Un boton que cambiara los textos en el navegador se veria
+   igual y no serviria para nada de lo que se hace esto. */
+.set-lgs{display:inline-flex;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:2px;flex-shrink:0}
+.set-lg{text-decoration:none;border-radius:7px;padding:5px 11px;font-size:12.5px;font-weight:700;color:var(--mut);letter-spacing:.03em;line-height:1.2}
+.set-lg.on{background:var(--card);color:var(--text)}
+a.set-lg:hover,a.set-lg:focus-visible{color:var(--text)}
+/* La fila del idioma no lleva flecha y el par ES/EN tiene su propio borde:
+   sin esto quedaria pegado al borde de la tarjeta. */
+.set-idi{padding-right:10px}
 .set-d>summary{display:flex;align-items:center;gap:12px;padding:13px 14px;border-top:1px solid var(--line2);cursor:pointer;list-style:none;min-height:52px}
 .set-d>summary::-webkit-details-marker{display:none}
 .set-d[open]>summary .set-ar{transform:rotate(180deg)}
