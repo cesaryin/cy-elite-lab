@@ -1,0 +1,1153 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Model · CY Elite Lab</title><meta name="google-site-verification" content="xdkj6Fp3ejJGJtHyyTTRjChzL4xnyODr5oWhE0P6ISQ"><link rel="canonical" href="https://cyelitelab.com/en/modelo"><meta name="description" content="MLB statistical model with public record: 133-114 in 247 closed analysis (53.8%). Every result verified against two independent sources."><meta name="theme-color" content="#0d1117"><meta property="og:type" content="website"><meta property="og:site_name" content="CY Elite Lab"><meta property="og:title" content="CY Elite Lab — 2026-09-29"><meta property="og:description" content="MLB statistical model with public record: 133-114 in 247 closed analysis (53.8%). Every result verified against two independent sources."><meta property="og:image" content="https://cyelitelab.com/og.png?v=2026-09-29"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://cyelitelab.com/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="CY Elite Lab — 2026-09-29"><meta name="twitter:description" content="MLB statistical model with public record: 133-114 in 247 closed analysis (53.8%). Every result verified against two independent sources."><meta name="twitter:image" content="https://cyelitelab.com/og.png?v=2026-09-29"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='o' gradientUnits='userSpaceOnUse' x1='40' y1='22.03' x2='55' y2='77.97'%3E%3Cstop offset='0' stop-color='%23ffecaa'/%3E%3Cstop offset='.28' stop-color='%23f0c862'/%3E%3Cstop offset='.52' stop-color='%23c99630'/%3E%3Cstop offset='.7' stop-color='%23f4d072'/%3E%3Cstop offset='1' stop-color='%239e6e1d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%230a0b0d'/%3E%3Cpath fill='url(%23o)' d='M35.8 22.03 A23.76 23.76 0 0 0 35.8 69.55 L35.8 60.37 A14.58 14.58 0 0 1 35.8 31.21Z M35.8 22.03 L52.07 22.03 L63.47 37.53 L75.25 22.03 L88 22.03 L67.77 48.31 L67.77 77.97 L58.08 77.97 L58.08 48.38 L45.46 31.21 L35.8 31.21Z M35.8 60.37 L50.43 60.37 L55.36 67.09 L55.36 69.55 L35.8 69.55Z'/%3E%3C/svg%3E"><link rel="apple-touch-icon" sizes="180x180" href="https://cyelitelab.com/icono-v2-180.png"><link rel="manifest" href="https://cyelitelab.com/manifest.json"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}</script><style>
+:root{--bg:#0d1117;--card:#161b22;--panel:#0f141a;--line:#30363d;--line2:#21262d;
+--text:#e6edf3;--soft:#c9d1d9;--mut:#8b949e;--faint:#6e7681;--mut2:#8b949e;
+--green:#3fb950;--red:#f85149;--gold:#d4af37;--gold2:#f0c75e;--purple:#a371f7;--blue:#58a6ff;
+--font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{-webkit-text-size-adjust:100%;overflow-y:scroll}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font-family:inherit}
+.mono{font-variant-numeric:tabular-nums}
+.app{max-width:480px;margin:0 auto;min-height:100vh;padding-top:66px;padding-bottom:calc(74px + env(safe-area-inset-bottom));position:relative;overflow-x:hidden}
+/* LA BARRA DE ARRIBA, COMO EN LINEMATE (19-sep-2026). Cesar mando un video de esa
+   app y eligio la version con el nombre al centro viendo el mockup (opcion 1).
+   Antes era una caja casi opaca y desenfocada: lo que pasaba por debajo no se veia.
+   Ahora no hay caja ni desenfoque: el contenido pasa por debajo del nombre y se
+   sigue leyendo, oscurecido. Los tramos del degradado son los MEDIDOS en el video,
+   pixel a pixel: ~73% a la altura del nombre, ~45% abajo, y se suelta del todo al
+   final. En reposo no hay nada debajo y la barra es del color de la pagina.
+   El velo es un ::before que baja 16px por debajo de la barra: pointer-events:none,
+   para que esos 16px no se coman los toques de la tarjeta que pase por ahi (la
+   leccion del 5-sep). El 5-sep se rechazaron tres versiones que solo difuminaban el
+   borde de la caja vieja: la diferencia es que aqui la caja desaparece. */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:30;max-width:480px;margin:0 auto;padding:15px 18px;text-align:center}
+.topbar::before{content:"";position:absolute;left:0;right:0;top:0;bottom:-16px;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(13,17,23,.92) 0%,rgba(13,17,23,.74) 28%,rgba(13,17,23,.55) 62%,rgba(13,17,23,.42) 82%,rgba(13,17,23,0) 100%)}
+.topbar h1{font-size:24px;font-weight:800;letter-spacing:.5px;background:linear-gradient(90deg,#d4af37,#f0c75e,#d4af37);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 1px 8px rgba(0,0,0,.55))}
+/* LA CABECERA DE CADA PAGINA (19-sep-2026, opcion C, elegida por Cesar viendo el
+   mockup de las 8 paginas reales). El titulo a la izquierda y, a la derecha, el
+   numero que importa en esa pagina: el dia, los partidos, el acierto, lo que
+   falta para el cobro. Ver _cabecera().
+   Sustituye a la linea gris .date, que cada pagina usaba a su manera (la fecha en
+   Analisis, el nombre en Ajustes, nada en Modelo y Mercado) y que ademas iba 18px
+   mas adentro que las tarjetas. La cabecera va al borde de ellas.
+   Las secciones de dentro (.sec-h en el Record, .set-h en Ajustes) van todas en
+   el mismo estilo: letra normal, mas grande, sin mayusculas. */
+.cab{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;padding:16px 2px 12px;font-family:var(--font)}
+.cab-tx{min-width:0}
+.cab-t{margin:0;font-family:var(--font);font-size:23px;font-weight:800;letter-spacing:-.015em;line-height:1.15;color:var(--text);text-wrap:balance}
+.cab-s{margin:4px 0 0;font-size:12.5px;line-height:1.35;color:var(--mut)}
+.cab-d{text-align:right;flex-shrink:0}
+.cab-n{font-size:23px;font-weight:800;line-height:1;color:var(--text);font-variant-numeric:tabular-nums;white-space:nowrap}
+.cab-l{margin-top:5px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);white-space:nowrap}
+.sec-h{font-size:15px;font-weight:700;letter-spacing:-.005em;color:var(--text);padding:26px 2px 8px}
+/* LOS MISMOS HUECOS EN LAS OCHO (19-sep-2026, Cesar: "que tengan el mismo margen
+   superior e inferior, que todo quede bien compacto"). Medidos con Edge a 430px
+   antes de tocar nada: bajo la cabecera habia 0, 6, 12 o 26px segun la pagina
+   (Record y Ajustes abren con una seccion que traia su propio aire), y antes del
+   pie 26 en seis paginas y 38 en Modelo y Mercado (su envoltorio sumaba 12 mas).
+   Ahora: el titulo a 82px de arriba, 12px bajo la cabecera y 24px antes del pie,
+   en todas. El primer bloque pierde su margen de arriba; el pie pone el suyo, y
+   el margen de abajo del ultimo bloque (12 en las tarjetas) se funde con el. */
+section.on>.cab+*{margin-top:0}
+section.on>.cab+.sec-h,section.on>.cab+.set-h{padding-top:0}
+.lab-real,.trends-real{padding-bottom:0}
+/* El primer separador de Mercado es el rotulo «MERCADO», que repetia el titulo de
+   la cabecera. En trends.html suelto SI hace falta (alli no hay cabecera). */
+.trends-real>.sep:first-child{display:none}
+.trends-real>.sep:first-child+h2{margin-top:0}
+main{padding:0 16px}
+section{display:none}section.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;margin:12px 0}
+.card.elite{border:1px solid var(--gold);background:linear-gradient(160deg,#1e1a0e,#161b22)}
+.card.valor{border:1px solid #aab4c2;background:linear-gradient(160deg,#1b1f26,#161b22)}
+.card.bronce{border:1px solid #cc8b52;background:linear-gradient(160deg,#20170f,#161b22)}
+.badge{font-size:12.5px;font-weight:800;letter-spacing:.4px;color:var(--mut);margin-bottom:12px;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.badge.elite{color:var(--gold2)}.badge.valor{color:#aab4c2}.badge.bronce{color:#cc8b52}.badge.parlay{color:var(--purple)}
+.stars{letter-spacing:1px;font-size:11px}
+.row{display:flex;align-items:center;gap:12px}
+.logos{display:flex;flex-shrink:0}
+.logo{width:42px;height:42px;object-fit:contain;background:none;border:none}
+.logo:nth-child(2){margin-left:6px}.logo.sm{width:30px;height:30px}
+.info{flex:1;min-width:0}
+.pick{font-size:23px;font-weight:800;line-height:1.15;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:12.5px;font-weight:600;margin-top:3px}
+.odds{text-align:right;flex-shrink:0}
+.cuota{font-size:23px;font-weight:800}.cuota.pos{color:var(--green)}.cuota.neg{color:var(--text)}
+.u{background:var(--line2);border-radius:8px;padding:2px 9px;font-size:12.5px;font-weight:700;display:inline-block;margin-top:4px;color:var(--soft)}
+/* PRECIO MINIMO (27-ago-2026) — el dato que hace el pick valido en CUALQUIER
+   casa. Reusa la estructura del chip de ventaja para no romper el diseno.
+
+   RECOGIDO A DOS LINEAS (10-sep-2026). Antes ocupaba CUATRO: el titulo, el
+   contexto, el mejor precio y la comision de Kalshi, cada uno en su renglon,
+   apilados en una columna estrecha al lado del numero grande. En el celular
+   eso era un tercio de la tarjeta para un dato de dos cifras. Ahora el titulo
+   y el numero comparten linea y todo el contexto va en la de abajo, separado
+   por puntos. Es la opcion que eligio Cesar de las tres que se le enseñaron. */
+.pm{margin-top:11px;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.38);border-radius:12px;padding:10px 13px}
+.pm-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.pm-l{font-size:13px;font-weight:800;color:var(--text);white-space:nowrap}
+.pm-v{font-size:23px;font-weight:800;color:#58a6ff;line-height:1;flex-shrink:0}
+.pm-b{font-size:11px;color:var(--mut);font-weight:600;margin-top:5px;line-height:1.5;font-variant-numeric:tabular-nums}
+.pm-b b{color:var(--soft)}
+.pm-g{color:var(--green);font-weight:700}
+.pm.lejos{background:rgba(210,153,34,.09);border-color:rgba(210,153,34,.4)}
+.pm.lejos .pm-v{color:#d29922}
+/* LOS CUATRO PASOS (10-sep-2026) — ver _pasos(). */
+.paso{margin-top:12px}
+.paso-l{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.paso-l.riesgo{color:#d29922}
+.paso-t{font-size:13px;color:var(--soft);line-height:1.5}
+.paso-t b{color:var(--text)}
+/* SEGUIMIENTO — se publica el analisis pero NO lleva dinero.
+   ANTES SE APAGABA LA TARJETA ENTERA (opacity:.62 + el pick y la cuota en
+   gris). Distinguia, si, pero a costa de no poder leerla: hay dias en que dos
+   de los tres analisis son seguimiento, asi que media pagina quedaba en
+   penumbra justo cuando lo que se quiere es LEERLA --el seguimiento existe
+   para ver si el filtro acierta, y no se puede juzgar lo que no se lee--.
+   Ahora se distingue por COLOR y no por falta de luz: azul, que en esta paleta
+   no significa ni dinero (dorado) ni resultado (verde/rojo), y que se separa
+   del dorado tambien con vision deutan. El borde discontinuo se queda como
+   segunda señal, para no depender solo del color. */
+.card.seg{border-style:dashed;border-color:rgba(88,166,255,.5)}
+/* EL SISTEMA VIVO (14-sep-2026), ver _seccion_vivo(). Aprobado por Cesar en el
+   mockup: la tira de tandas, la hora de publicacion y lo plegado. */
+.vv-tira{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px 4px;margin:12px 0}
+.vv-h{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding-bottom:8px}
+.vv-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold2);margin-right:7px;vertical-align:1px;box-shadow:0 0 0 3px rgba(240,199,94,.18)}
+.vv-c{color:var(--gold2);font-variant-numeric:tabular-nums}
+.vv-t{display:grid;grid-template-columns:16px auto minmax(0,1fr) auto;gap:8px;align-items:center;padding:7px 0;border-top:1px solid var(--line2);font-size:12.5px}
+.vv-t .ico{width:15px;height:15px;margin:0;color:var(--soft)}
+.vv-t.esp .ico{color:var(--faint)}
+.vv-th{font-weight:700;color:var(--text);font-variant-numeric:tabular-nums;white-space:nowrap}
+.vv-th .h-loc{border-bottom:none}
+.vv-tj{color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vv-tr{font-weight:700;color:var(--mut);font-size:11px;white-space:nowrap}
+.vv-tr.si{color:var(--gold2)}
+.vv-t.esp .vv-th,.vv-t.esp .vv-tr{color:var(--faint)}
+.vv-pub{margin-top:11px;display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:var(--mut);background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:6px 9px;line-height:1.35}
+.vv-pub .ico{width:14px;height:14px;margin:0;color:var(--soft)}
+.vv-vac-t{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;color:var(--text)}
+.vv-vac-t .ico{width:20px;height:20px;margin:0;color:var(--faint)}
+.vv-vac-d{font-size:13px;color:var(--soft);line-height:1.55;margin-top:7px}
+.vv-vac-s{font-size:11px;color:var(--faint);margin-top:8px}
+.vv-sv{border-top:1px solid var(--line2)}
+.vv-sv:first-child{border-top:none}
+.vv-sv>summary{list-style:none;cursor:pointer;padding:9px 1px}
+.vv-sv>summary::-webkit-details-marker{display:none}
+.vv-sv>.card{margin:2px 0 12px}
+.vv-svt{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:14px;font-weight:800;color:var(--text)}
+.vv-svd{font-size:12.5px;color:var(--mut);margin-top:2px;line-height:1.45}
+.vv-svd b{color:var(--soft)}
+@media (prefers-reduced-motion:no-preference){.vv-dot{animation:vvlat 2.4s ease-in-out infinite}}
+@keyframes vvlat{50%{box-shadow:0 0 0 6px rgba(240,199,94,0)}}
+.u.seg{background:rgba(88,166,255,.14);border:1px solid rgba(88,166,255,.5);color:#79b8ff;font-size:11px;letter-spacing:.3px}
+.razon{color:var(--soft);font-size:13px;line-height:1.62;margin-top:13px;border-left:2px solid var(--gold);padding-left:12px}
+/* La hora local lleva un subrayado de puntos: avisa de que ese dato se ha
+   adaptado a tu reloj, y el title cuenta cual era la de Houston. Sin color
+   propio — no es una alerta, es una cortesia. */
+.h-loc{border-bottom:1px dotted var(--faint);cursor:help}
+/* LA TARJETA CERRADA Y SU GANCHO (12-sep-2026) — ver _tarjeta_cerrada().
+   Conserva el marco y la medalla del nivel a proposito: lo que se tapa es el
+   contenido, no la categoria. Que se vea que ahi hay una señal elite es medio
+   argumento de venta; taparla tambien seria tirarlo. */
+.card.cerr{border-style:dashed}
+.cerr-t{color:var(--soft);font-size:15px}
+.cerr-ic{width:26px;height:26px;color:var(--faint)}
+.gan{margin-top:13px;background:linear-gradient(160deg,rgba(212,175,55,.10),var(--panel));border:1px solid rgba(212,175,55,.4);border-radius:12px;padding:13px 14px}
+.gan-t{font-size:13px;font-weight:800;color:var(--gold2);margin-bottom:6px}
+.gan-t time{border-bottom-color:rgba(212,175,55,.5)}
+.gan-d{font-size:12.5px;line-height:1.55;color:var(--soft)}
+.gan-d b{color:var(--text)}
+.gan-b{display:inline-block;margin-top:11px;background:var(--gold);color:#0d1117;font-weight:800;font-size:13px;padding:9px 16px;border-radius:9px;text-decoration:none}
+.gan-b:hover,.gan-b:focus-visible{background:var(--gold2)}
+.mut{color:#8b949e}
+/* EL PIE LEGAL (11-sep-2026) — ver _pie(). Se llama .legal y NO .pie porque
+   Trends ya usa .pie para el pie de sus tarjetas de rival, con otros valores:
+   lo cazo comprobar_web.py al publicar, que para eso esta. Deliberadamente
+   discreto: tiene que
+   ESTAR y poder leerse, no competir con los analisis. Va dentro de <main>, asi
+   que el padding-bottom de .app ya lo separa de la barra fija de abajo. */
+/* PLANES (12-sep-2026) — ver generar_planes(). Tarjetas apiladas: el ancho de
+   la app son 480px, asi que tres columnas no caben ni en escritorio. */
+.pl-av{background:rgba(212,175,55,.07);border:1px solid var(--gold);border-radius:14px;padding:16px 17px;margin-bottom:20px}
+.pl-av-t{font-size:15px;font-weight:800;color:var(--gold2);line-height:1.35;margin-bottom:9px}
+.pl-av p{font-size:13px;line-height:1.62;color:var(--soft);margin:0 0 10px}
+.pl-av p b{color:var(--text);font-weight:800}
+.pl-av-p{margin-bottom:0!important;color:var(--text)!important;font-weight:600}
+.pl-prog{display:flex;justify-content:space-between;align-items:baseline;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:9px 12px;margin:0 0 10px;font-size:12.5px;font-variant-numeric:tabular-nums}
+.pl-prog b{font-size:15px;color:var(--gold2)}
+.pl-card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:17px 18px;margin-bottom:13px}
+/* El gratis se queda con el borde neutro a proposito: es el que menos
+   tiene que llamar la atencion, pero la clase se DECLARA para que no
+   salga como huerfana en revisar_todo.py. */
+.pl-card.pl-free{border-color:var(--line)}
+.pl-card.pl-vip{border-color:rgba(88,166,255,.5)}
+.pl-card.pl-elite{border-color:var(--gold);background:linear-gradient(160deg,#1e1a0e,var(--card))}
+.pl-n{font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--mut)}
+.pl-vip .pl-n{color:var(--blue)}.pl-elite .pl-n{color:var(--gold2)}
+.pl-p{font-size:30px;font-weight:800;letter-spacing:-.03em;margin-top:5px;line-height:1;font-variant-numeric:tabular-nums}
+.pl-p small{font-size:13px;font-weight:600;color:var(--mut);letter-spacing:0}
+.pl-p .pl-cts{font-size:.5em;font-weight:800;letter-spacing:0;vertical-align:.62em;margin-left:1px}
+.pl-anual{font-size:11px;color:var(--green);font-weight:600;margin-top:6px}
+.pl-g{font-size:13px;color:var(--soft);margin-top:9px;padding-bottom:11px;border-bottom:1px solid var(--line2);line-height:1.45}
+.pl-l{list-style:none;margin:11px 0 0;padding:0;display:grid;gap:8px}
+.pl-l li{display:flex;gap:9px;align-items:flex-start;font-size:13px;line-height:1.45;color:var(--soft)}
+.pl-l li.off{color:var(--faint)}
+.pl-l li b{color:var(--text)}
+.pl-m{flex-shrink:0;font-size:11px;font-weight:800;margin-top:2px}
+.pl-m.si{color:var(--green)}.pl-m.no{color:var(--red)}
+.pl-esp{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:17px 18px;margin-top:20px;text-align:center}
+.pl-esp-t{font-size:15px;font-weight:800;margin-bottom:8px}
+.pl-esp p{font-size:13px;color:var(--mut);line-height:1.6;margin:0 0 14px}
+.pl-btn{display:inline-block;background:var(--gold);color:#0d1117;font-weight:800;font-size:14px;padding:12px 22px;border-radius:10px;text-decoration:none}
+.pl-btn:hover,.pl-btn:focus-visible{background:var(--gold2)}
+.pl-esp-n{font-size:11px;color:var(--faint);margin-top:11px}
+.pl-esp-n b{color:var(--gold2)}
+.pl-fine{font-size:11px;color:var(--faint);line-height:1.6;margin-top:18px;text-align:center}
+.pl-fine a{color:var(--mut)}
+/* EL CAMPO DEL CORREO (23-sep-2026, PLAN_NEGOCIO §16.6, mockup aprobado por
+   César). Va en la portada y en el Récord, antes del pie legal.
+   EL COLOR ES EL AZUL Y NO EL DORADO, y lo pidió él: «no le pongas el color
+   dorado, ya que en análisis ese es el color de la jugada elite». El azul es
+   el que ya usan el precio mínimo y el seguimiento. */
+.cy-ml{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--blue);
+ border-radius:12px;padding:14px 16px;margin:12px 0}
+.cy-ml-t{font-size:14px;font-weight:800;color:var(--text);margin-bottom:5px}
+.cy-ml-d{font-size:13px;line-height:1.55;color:var(--mut);margin-bottom:11px}
+.cy-ml-d b{color:var(--soft);font-weight:600}
+.cy-ml-f{display:flex;gap:8px}
+.cy-ml-f input{flex:1;min-width:0;background:var(--bg);border:1px solid var(--line);
+ border-radius:9px;padding:11px 12px;color:var(--text);font:400 16px var(--font)}
+.cy-ml-f input::placeholder{color:var(--faint)}
+.cy-ml-f button{flex-shrink:0;background:var(--blue);color:#0d1117;border:none;
+ border-radius:9px;padding:11px 16px;font:800 14px var(--font);cursor:pointer}
+.cy-ml-f button[disabled]{opacity:.55}
+.cy-ml-e{font-size:12.5px;color:var(--red);margin-top:8px}
+.cy-ml-ok{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:var(--soft);line-height:1.55}
+.cy-ml-ok b{color:var(--text)}
+.cy-ml-ok svg{width:17px;height:17px;flex-shrink:0;color:var(--green);margin-top:1px}
+.cy-ml-mas{display:flex;gap:9px;align-items:flex-start;margin-top:11px;padding-top:11px;
+ border-top:1px solid var(--line2);font-size:12.5px;line-height:1.5;color:var(--mut);cursor:pointer}
+.cy-ml-mas input{flex-shrink:0;width:16px;height:16px;margin:1px 0 0;accent-color:var(--blue)}
+/* SIN COLOR EN PLANES (23-sep-2026, César): esa página ya tiene su peso visual
+   --el aviso, el selector, las tres tarjetas-- y un filo azul más competía. En
+   Análisis y en el Récord sí lleva el azul, que ahí es lo único que destaca. */
+.cy-ml.cy-ml-liso{border-left:1px solid var(--line);background:var(--panel)}
+/* La trampa para robots: fuera de la pantalla y fuera del tabulador. */
+.cy-ml-trampa{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+/* EL COBRO ENCENDIDO (23-sep-2026) — ver _planes_vendiendo() y _plan_tarjeta().
+   Estos valores son EXACTAMENTE los del mockup que aprobo Cesar («El cobro de CY
+   Elite», pantalla «1 · Planes»): no hay ni un numero elegido aqui. Lo unico que
+   cambia es el nombre --alli eran .mk-* porque era un mockup suelto, y aqui la
+   casa usa un prefijo por pagina (.pl-) para que revisar_todo.py no las vea
+   huerfanas ni choquen con las de otra pagina. */
+.pl-tog{display:flex;gap:8px;background:var(--card);border:1px solid var(--line2);border-radius:10px;padding:4px;margin:0 0 12px}
+.pl-tog span{flex:1;text-align:center;border-radius:8px;padding:9px 6px;color:var(--mut);font:700 13px var(--font)}
+/* EL MENSUAL, ENCENDIDO EN DORADO: es el unico que se puede comprar hoy. */
+.pl-tog span.on{background:var(--gold);color:#0d1117}
+/* EL ANUAL SE VE PERO ESTA CERRADO (decision de Cesar, 22-sep). Lo dicen TRES
+   cosas y no solo el color: la letra apagada, el candado y la linea de debajo. */
+.pl-tog span.off{color:var(--faint);font-weight:600;display:flex;align-items:center;justify-content:center;gap:6px}
+.pl-lock{width:13px;height:13px;flex-shrink:0}
+.pl-fund{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:11px 13px;font-size:13px;color:var(--soft);margin-bottom:12px;line-height:1.5}
+.pl-fund b{color:var(--text)}
+/* «ANTES DE PAGAR, ESTO» — del lienzo del 22-sep, artboard «Planes, dia 1 de
+   2027», que es el que eligio Cesar el 23-sep viendo la vista previa. Los
+   valores son los suyos: el borde dorado al 30 %, no el dorado entero. */
+.pl-antes{background:var(--card);border:1px solid rgba(212,175,55,.30);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+.pl-antes-t{font-size:14px;font-weight:700;color:var(--gold2);margin-bottom:6px}
+.pl-antes p{font-size:13px;line-height:1.62;color:var(--soft);margin:0}
+.pl-antes p b{color:var(--text);font-weight:600}
+.pl-tog-n{font-size:12.5px;color:var(--mut);line-height:1.6;margin:-6px 2px 14px}
+.pl-cta{display:block;text-align:center;margin-top:14px;background:var(--gold);color:#0d1117;border-radius:10px;padding:12px;font:800 14px var(--font);text-decoration:none}
+.pl-cta:hover,.pl-cta:focus-visible{background:var(--gold2)}
+.pl-actual{margin-top:14px;text-align:center;font-size:12.5px;color:var(--mut);border:1px dashed var(--line);border-radius:10px;padding:10px}
+/* LEGAL (11-sep-2026) — ver generar_legal(). Texto largo para leer en el
+   movil: linea corta, buen interlineado y los titulos bien separados.
+
+   EL PREFIJO ES lgl Y NO lg PORQUE .lg YA ES DE TRENDS (el logo de 22px de
+   sus tablas). Lo canto comprobar_web.py al publicar, igual que antes con
+   .pie. Las cinco paginas comparten hoja de estilo, asi que un prefijo
+   corto acaba chocando: mejor tres letras propias que dos genericas. */
+.lgl-nav{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:6px}
+.lgl-nav a{flex:1;min-width:92px;text-align:center;font-size:12.5px;font-weight:700;color:var(--soft);background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 6px;text-decoration:none}
+.lgl-nav a:hover,.lgl-nav a:focus-visible{border-color:var(--gold);color:var(--gold2)}
+.lgl{display:block;margin-top:26px;scroll-margin-top:74px}
+.legal-l{margin-top:9px;font-size:11px;color:var(--faint);text-align:center}
+.legal-l a{color:var(--mut);text-decoration:none;padding:0 3px}
+.legal-l a:hover,.legal-l a:focus-visible{color:var(--gold2);text-decoration:underline}
+.lgl-h{font-size:15px;font-weight:700}
+.lgl h3{font-size:15px;font-weight:700;color:var(--text);margin:20px 0 7px}
+.lgl p{font-size:13px;line-height:1.7;color:var(--soft);margin:0 0 11px}
+.lgl p b{color:var(--text)}
+.lgl-f{font-size:11px;color:var(--faint);margin-top:11px}
+.lgl-u{margin:0 0 11px;padding-left:18px;display:grid;gap:7px}
+.lgl-u li{font-size:13px;line-height:1.7;color:var(--soft)}
+.lgl-u li b{color:var(--text)}
+.lgl-av{background:rgba(88,166,255,.09);border:1px solid rgba(88,166,255,.34);border-left-width:3px;border-radius:0 11px 11px 0;padding:12px 14px;font-size:13px;line-height:1.6;color:var(--soft);margin:14px 0}
+.lgl-n{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 13px}
+.lgl-volver{color:var(--blue);text-decoration:none;font-weight:600;font-size:13px}
+/* AJUSTES (11-sep-2026) — ver generar_ajustes(). Filas de una linea con su
+   icono, agrupadas bajo cabeceras cortas: el patron de la pantalla de ajustes
+   de una app, que es lo que pidio Cesar. */
+.set-h{font-size:15px;font-weight:700;letter-spacing:-.005em;color:var(--text);margin:0;padding:26px 2px 8px}
+.set-g{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.set-f{display:flex;align-items:center;gap:12px;padding:13px 14px;border-top:1px solid var(--line2);color:var(--text);text-decoration:none;min-height:52px}
+.set-g>*:first-child,.set-g>*:first-child>summary{border-top:none}
+a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
+.set-i{width:22px;height:22px;flex-shrink:0;color:var(--mut);display:grid;place-items:center}
+.set-i svg{width:20px;height:20px}
+.set-t{flex:1;min-width:0;font-size:14px;font-weight:600;display:flex;flex-direction:column;gap:2px}
+.set-n{font-size:11px;font-weight:400;color:var(--faint);line-height:1.4}
+.set-v{font-size:13px;color:var(--mut);flex-shrink:0;font-weight:400}
+.set-ar{width:17px;height:17px;color:var(--faint);flex-shrink:0}
+/* EL SELECTOR DE IDIOMA (29-sep-2026, Plan Idioma fase 4). Son DOS ENLACES,
+   no un boton: cada idioma es una direccion de verdad y por eso Google puede
+   indexar las dos. Un boton que cambiara los textos en el navegador se veria
+   igual y no serviria para nada de lo que se hace esto. */
+.set-lgs{display:inline-flex;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:2px;flex-shrink:0}
+.set-lg{text-decoration:none;border-radius:7px;padding:5px 11px;font-size:12.5px;font-weight:700;color:var(--mut);letter-spacing:.03em;line-height:1.2}
+.set-lg.on{background:var(--card);color:var(--text)}
+a.set-lg:hover,a.set-lg:focus-visible{color:var(--text)}
+/* La fila del idioma no lleva flecha y el par ES/EN tiene su propio borde:
+   sin esto quedaria pegado al borde de la tarjeta. */
+.set-idi{padding-right:10px}
+.set-d>summary{display:flex;align-items:center;gap:12px;padding:13px 14px;border-top:1px solid var(--line2);cursor:pointer;list-style:none;min-height:52px}
+.set-d>summary::-webkit-details-marker{display:none}
+.set-d[open]>summary .set-ar{transform:rotate(180deg)}
+.set-p{padding:2px 16px 16px;font-size:13px;line-height:1.62;color:var(--soft)}
+.set-p p{margin:0 0 10px}.set-p p:last-child{margin-bottom:0}
+.set-p b{color:var(--text)}
+.set-p a{color:var(--blue)}
+.set-tel{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:11px 13px;font-variant-numeric:tabular-nums;line-height:1.9}
+.set-pie{text-align:center;font-size:11px;color:var(--faint);margin-top:26px;line-height:1.7}
+/* EL COPYRIGHT, IGUAL EN LAS CINCO PAGINAS (11-sep-2026). Antes salia
+   centrado en unas y a la izquierda en otras, y con separaciones distintas,
+   porque cada pagina termina en un bloque con sus propios margenes. Ahora el
+   aire lo pone el pie y no lo que tenga encima: margen fijo arriba, y abajo el
+   padding de .app lo separa de la barra inferior. */
+.legal{margin:24px 0 0;padding-top:14px;border-top:1px solid var(--line2)}
+.legal-c{font-size:11px;line-height:1.55;color:#6e7681;text-align:center;
+  max-width:34em;margin:0 auto}
+/* LA RUEDA DE AJUSTES en la barra de arriba. La barra es text-align:center y
+   el titulo va centrado de verdad (no en un flex), asi que el boton se coloca
+   ENCIMA en absoluto: asi el titulo sigue centrado respecto a la pagina y no
+   respecto al hueco que deje el icono.
+
+   AQUI NO VA UN position:relative PARA LA BARRA, y eso importa. Lo puse y
+   comprobar_web.py lo canto al publicar: la barra ya vale position FIXED, asi
+   que una segunda regla mas abajo la pisaba y habria dejado de quedarse fija
+   al hacer scroll. No hace ninguna falta: un elemento fixed YA ES bloque
+   contenedor de sus hijos absolutos.
+   (Y escrito sin llaves a proposito: un comentario con sintaxis CSS dentro
+   hace que el propio guardian lo lea como una regla de verdad.) */
+.t-set{position:absolute;right:12px;top:50%;transform:translateY(-50%);z-index:2;
+  display:grid;place-items:center;width:36px;height:36px;border-radius:50%;
+  color:var(--mut);text-decoration:none}
+.t-set:hover,.t-set:focus-visible{color:var(--gold2);background:var(--line2)}
+.t-set svg{width:21px;height:21px}
+/* EL z-index DE LOS DOS BOTONES DE LA BARRA (23-sep-2026, lo encontro Cesar:
+   «el boton de atras, al darle encima con el dedo, no funciona; si doy mas a la
+   derecha si»). LA CAUSA: el h1 de la marca lleva un filter:drop-shadow, y un
+   filtro CREA UN CONTEXTO DE APILADO. Eso hace que el titulo se pinte en la
+   misma capa que los elementos posicionados y, por ir DESPUES en el HTML, por
+   ENCIMA de la flecha. El h1 ocupa todo el ancho, asi que se tragaba el toque.
+   La rueda no lo sufria porque va DESPUES del h1 y le gana por orden.
+   Con z-index los dos botones quedan arriba pase lo que pase, y deja de
+   depender del orden del HTML. No se le quita el filtro al h1: ese resplandor
+   es lo que hace legible la marca sobre lo que pasa por debajo al hacer scroll
+   (barra sin caja, decision del 19-sep). */
+.t-atras{position:absolute;left:12px;top:50%;transform:translateY(-50%);z-index:2;
+  display:grid;place-items:center;width:36px;height:36px;border-radius:50%;
+  color:var(--mut);text-decoration:none}
+.t-atras:hover,.t-atras:focus-visible{color:var(--gold2);background:var(--line2)}
+.t-atras svg{width:22px;height:22px}
+/* El pitcheo del dia comparte CSS con clasico.html: CSS_PITCHEO. */
+.card.valor .razon{border-color:#aab4c2}.card.bronce .razon{border-color:#cc8b52}
+.card.parlay{border:2px dashed var(--purple);background:#15121d;padding:14px 16px}
+.patas{display:flex;flex-direction:column;gap:2px}
+.pata{display:flex;align-items:center;gap:11px;padding:8px 0}
+.pata .pn{flex:1;font-size:15px;font-weight:700}.pata .pc{font-size:14px;font-weight:800;color:var(--mut)}
+.combo{display:flex;justify-content:space-between;align-items:center;margin-top:9px;padding-top:11px;border-top:1px solid var(--line2);font-weight:700}
+.combo .cuota{font-size:23px;color:var(--purple)}
+.resumen{background:var(--card);border-left:3px solid var(--green);border-radius:8px;padding:15px 16px;font-size:13px;color:var(--soft);line-height:1.55;margin:12px 0}
+.clv-box{background:#0d1117;border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin:12px 0}
+.clv-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.clv-ti{font-size:12.5px;font-weight:800;color:var(--soft)}
+.clv-n{font-size:15px;font-weight:800}.clv-n.g{color:var(--green)}.clv-n.r{color:var(--red)}
+.clv-sub{font-size:12.5px;color:var(--mut);margin-top:3px}.clv-lec{font-size:11px;color:var(--faint);margin-top:4px;font-style:italic}
+/* ===== HISTORIAL PRO (2-sep-2026) ==========================================
+   TODAS las clases llevan prefijo "hi-", sin excepcion. Es la leccion del mismo
+   dia: el dashboard concatena su hoja, la del LAB y la de Trends, y a igualdad
+   de especificidad gana la ultima. Ese dia costo cuatro fallos en vivo --.gc,
+   .logo, .mut y .chip-- todos por clases cortas sin prefijo. */
+
+/* el veredicto: lo primero que se lee, y sin maquillaje */
+.hi-ver{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:14px 15px;border-left:3px solid var(--gold2)}
+.hi-ver h4{font-size:11px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--gold2);margin:0 0 8px}
+.hi-ver p{font-size:13px;line-height:1.62;color:var(--text);margin:0}
+.hi-ver p+p{margin-top:8px;color:var(--mut);font-size:12.5px}
+.hi-ver b{color:var(--text);font-weight:700}
+
+/* el balance */
+.hi-hero{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:15px;overflow:hidden}
+.hi-ht{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.hi-hn{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums}
+.hi-hs{font-size:12.5px;color:var(--mut)}
+.hi-hg{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:13px;
+  padding-top:12px;border-top:1px solid var(--line)}
+.hi-kpi{text-align:center}
+.hi-kpi b{display:block;font-size:15px;font-weight:800;color:var(--text);
+  line-height:1.2;font-variant-numeric:tabular-nums}
+.hi-kpi span{display:block;font-size:11px;color:var(--mut);margin-top:2px}
+.hi-nota{font-size:12.5px;line-height:1.6;color:var(--mut);margin:10px 2px 0}
+/* LA TEMPORADA CERRADA, EN UNA TARJETA (23-sep-2026) — ver _temporada_cerrada().
+   Del lienzo del 22-sep, artboard «Récord por temporada». Cesar: «ya es una
+   temporada cerrada, no es necesario tanta información ni tanto espacio». */
+.hi-tc{display:flex;flex-direction:column;gap:12px}
+.hi-tc-h{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.hi-tc-g{display:flex;gap:8px}
+.hi-tc-n{flex:1;text-align:center;min-width:0}
+.hi-tc-n b{display:block;font-size:30px;font-weight:800;line-height:1.05;color:var(--text);font-variant-numeric:tabular-nums}
+.hi-tc-n b.g{color:var(--green)}.hi-tc-n b.r{color:var(--red)}
+.hi-tc-n span{display:block;font-size:11px;color:var(--mut);margin-top:4px;line-height:1.4}
+.hi-tc-p{font-size:12.5px;color:var(--mut);line-height:1.65;margin:0}
+.hi-tc-p b{color:var(--soft);font-weight:600}
+/* COMO LE FUE CADA MES: lo unico que queda del detalle de la temporada. */
+.hi-tc-ms{display:flex;flex-direction:column}
+.hi-tc-m{display:grid;grid-template-columns:1fr 42px 62px;align-items:baseline;gap:8px;padding:7px 2px;border-top:1px solid var(--line2);font-size:12.5px}
+.hi-tc-m span:first-child{color:var(--text);font-weight:600}
+.hi-tc-m .mut{text-align:right;font-variant-numeric:tabular-nums}
+.hi-tc-m b{text-align:right;font-weight:800;font-variant-numeric:tabular-nums}
+.hi-tc-m b.g{color:var(--green)}.hi-tc-m b.r{color:var(--red)}
+.hi-cero{background:var(--panel);border:1px solid var(--line2);border-radius:12px;padding:14px 16px;margin-top:12px}
+.hi-cero-t{font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px}
+.hi-cero p{font-size:13px;color:var(--soft);line-height:1.65;margin:0}
+
+/* la curva. El trazo toma el COLOR DEL LADO en el que esta (verde arriba del
+   cero, rojo abajo) con el mismo recorte que el area: nada de un cuarto color
+   encima del relleno, y el signo se lee por la posicion, no por el color. */
+.hi-cv{width:100%;height:auto;display:block;margin:14px 0 0}
+.hi-cv .hi-ln{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.hi-cv .hi-ln.g{stroke:var(--green)}
+.hi-cv .hi-ln.r{stroke:var(--red)}
+.hi-cv .hi-ar{stroke:none}
+.hi-cv .hi-ar.g{fill:rgba(63,185,80,.15)}
+.hi-cv .hi-ar.r{fill:rgba(248,81,73,.15)}
+.hi-cv .hi-cero{stroke:var(--line);stroke-width:1;stroke-dasharray:3 3}
+.hi-cv .hi-pt{fill:var(--green);stroke:var(--card);stroke-width:2}
+
+/* CLV */
+.hi-clv{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:15px}
+.hi-clvt{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.hi-clvn{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums}
+.hi-clvs{font-size:12.5px;color:var(--mut)}
+.hi-pr{margin-top:13px;padding-top:12px;border-top:1px solid var(--line)}
+.hi-prh{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--mut);margin-bottom:9px}
+.hi-pr2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.hi-pr2>div{background:var(--bg);border:1px solid var(--line);border-radius:10px;
+  padding:10px}
+.hi-pr2 b{display:block;font-size:15px;font-weight:800;line-height:1.2;
+  font-variant-numeric:tabular-nums}
+.hi-pr2 span{display:block;font-size:11px;color:var(--mut);margin-top:3px;
+  line-height:1.4}
+
+/* barras divergentes. EL COLOR NO LLEVA EL SIGNIFICADO: verde y rojo no se
+   distinguen con daltonismo (DeltaE 2.2 en deuteranopia, medido con el
+   validador). Lo llevan la POSICION respecto al cero y el numero con signo. */
+.hi-brs{display:flex;flex-direction:column;gap:9px}
+.hi-br{display:grid;grid-template-columns:1fr 92px 62px;align-items:center;gap:9px}
+.hi-brk{font-size:12.5px;font-weight:700;color:var(--text);min-width:0}
+.hi-brk span{display:block;font-size:11px;font-weight:400;color:var(--mut);
+  margin-top:1px;font-variant-numeric:tabular-nums}
+.hi-brt{position:relative;height:16px;background:var(--card);border-radius:4px}
+.hi-brt i{position:absolute;top:3px;height:10px;border-radius:3px}
+.hi-brt i.g{background:var(--green)}
+.hi-brt i.r{background:var(--red)}
+.hi-brt i.z{background:var(--mut)}
+.hi-brt b{position:absolute;left:50%;top:0;width:1px;height:16px;background:var(--line)}
+.hi-brv{font-size:13px;font-weight:800;text-align:right;
+  font-variant-numeric:tabular-nums}
+
+/* mes a mes */
+.hi-t{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hi-t th{font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--mut);text-align:right;padding:0 4px 7px}
+.hi-t th:first-child{text-align:left}
+.hi-t td{font-size:12.5px;padding:7px 4px;border-top:1px solid var(--line)}
+.hi-t td.hi-n{text-align:right;font-weight:700}
+.hi-t td.hi-ms{font-weight:700;color:var(--text)}
+
+/* los ultimos picks, dentro del desplegable */
+.hi-pk{display:flex;align-items:center;gap:10px;padding:8px 0;
+  border-bottom:1px solid var(--line)}
+.hi-pk:last-child{border-bottom:none}
+.hi-pkr{width:22px;height:22px;border-radius:6px;display:flex;align-items:center;
+  justify-content:center;font-size:11px;font-weight:800;flex:none}
+.hi-pkr.W{background:rgba(63,185,80,.14);color:var(--green)}
+.hi-pkr.L{background:rgba(248,81,73,.14);color:var(--red)}
+.hi-pkr.P{background:var(--line);color:var(--mut)}
+.hi-pkb{flex:1;min-width:0}
+.hi-pkp{font-size:12.5px;font-weight:700;color:var(--text)}
+.hi-pkd{font-size:11px;color:var(--mut);margin-top:1px;
+  font-variant-numeric:tabular-nums}
+.hi-pkn{font-size:12.5px;font-weight:800;font-variant-numeric:tabular-nums}
+
+/* el verde y el rojo del historial, compartidos por curva, barras y picks */
+.hi-hn.g,.hi-clvn.g,.hi-brv.g,.hi-pkn.g,.hi-kpi b.g,.hi-pr2 b.g,.hi-t td.g{color:var(--green)}
+.hi-hn.r,.hi-clvn.r,.hi-brv.r,.hi-pkn.r,.hi-kpi b.r,.hi-pr2 b.r,.hi-t td.r{color:var(--red)}
+.hi-brv.z,.hi-pkn.z,.hi-t td.z{color:var(--mut)}
+.acc{width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 15px;color:var(--text);font-weight:800;font-size:14px;cursor:pointer;margin:10px 0;display:flex;align-items:center;gap:7px}
+.acc .cnt{color:var(--mut);font-weight:600;font-size:12.5px}.acc .ar{margin-left:auto;color:var(--mut)}
+/* los iconos de linea: en filas con gap, el gap ya los separa */
+.acc .ico,.badge .ico{margin-right:0}
+.pl-m .ico{display:block;width:13px;height:13px;margin:0}
+details.dd summary{list-style:none}details.dd summary::-webkit-details-marker{display:none}
+details.dd .pnl{border:1px solid var(--line);border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:12px;background:var(--panel)}
+.dlist{list-style:none;font-size:13px;color:var(--soft)}.dlist li{padding:6px 0;border-top:1px solid var(--line2)}.dlist li:first-child{border:none}
+.hero{background:linear-gradient(160deg,#16191f,#101216);border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0 4px}
+.hero .lbl{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.hero .net{font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1;margin:6px 0 2px}
+.hero .net.g{color:var(--green)}.hero .net.r{color:var(--red)}
+.hero .sub2{font-size:13px;color:var(--mut);font-weight:600}
+.hero .bar{height:7px;border-radius:99px;background:var(--red);margin:14px 0 10px;overflow:hidden;display:flex}
+.hero .bar i{background:var(--green);display:block}
+.hero .stats{display:flex;gap:8px}
+.hero .stat{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:9px 11px}
+.hero .stat b{font-size:15px;font-weight:800}.hero .stat span{display:block;font-size:10px;color:var(--faint);font-weight:600;margin-top:1px;text-transform:uppercase;letter-spacing:.05em}
+.hrow{display:flex;align-items:center;gap:12px;padding:11px 4px;border-bottom:1px solid var(--line2)}
+.hres{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;font-size:11px;font-weight:800;flex:none}
+.hres.W{color:var(--green);background:rgba(63,185,80,.14)}.hres.L{color:var(--red);background:rgba(240,82,77,.13)}.hres.P{color:var(--faint);background:var(--line2)}
+.hb{flex:1}.hb .hp{font-size:14px;font-weight:700}.hb .hd{font-size:11px;color:var(--faint);font-weight:600}
+.hn{font-size:14px;font-weight:800}.hn.g{color:var(--green)}.hn.r{color:var(--red)}.hn.z{color:var(--faint)}
+/* EL CIERRE DEL DIA (19-sep-2026) — ver _cierre_del_dia(). */
+.cie{display:flex;flex-direction:column;gap:11px}
+.cie-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cie-est{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:3px 10px;border:1px solid}
+.cie-est.g{color:var(--green);background:rgba(63,185,80,.12);border-color:#1d4428}
+.cie-est.r{color:var(--red);background:rgba(248,81,73,.1);border-color:#5c2523}
+.cie-est.z{color:var(--soft);background:var(--line2);border-color:var(--line)}
+.cie-cnt{font-size:12.5px;color:var(--mut);font-weight:600}
+.cie-res{font-size:13px;color:var(--soft);line-height:1.55}
+.cie-res b{color:var(--text)}
+.cie-pie{border-top:1px solid var(--line2);padding-top:10px;font-size:12.5px;color:var(--mut);line-height:1.5}
+.cie-pie b{color:var(--text)}
+.frame-wrap{border:none;margin:0}
+.frame{width:100%;height:calc(100vh - 150px);border:1px solid var(--line);border-radius:14px;background:var(--bg)}
+.note{color:var(--faint);font-size:12.5px;text-align:center;padding:12px 8px 2px;line-height:1.55}
+.nota-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;text-align:center;color:var(--soft);margin:12px 0}
+.bj-vuelta{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--mut)}.bj-vuelta a{color:var(--mut)}
+nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 auto;background:rgba(15,20,26,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;padding:8px 4px calc(8px + env(safe-area-inset-bottom))}
+.nav-i{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:none;color:var(--faint);font-family:inherit;cursor:pointer;padding:5px 0;text-decoration:none}
+.nav-i svg{width:24px;height:24px;display:block}.nav-i span{font-size:11px;font-weight:700}
+.nav-i.on{color:var(--text)}.nav-i.on svg{color:var(--gold2)}
+/* EL MISMO GESTO QUE LA RUEDA (11-sep-2026, peticion de Cesar): al pasar el
+   raton, el icono se enciende en dorado y el texto aclara. Antes los cuatro de
+   abajo eran los unicos elementos pulsables de la web que no respondian.
+
+   DOS DETALLES QUE NO SE VEN PERO IMPORTAN:
+
+   · Va dentro de @media (hover:hover). En un movil NO existe el raton, y un
+     :hover suelto se queda PEGADO despues de tocar: el icono se enciende y
+     asi se queda hasta que tocas otra cosa. Con esta condicion, el telefono
+     ni lee la regla.
+   · El :active si es para el movil: da el destello al tocar, que es la
+     confirmacion de que el dedo acerto.
+
+   La pestaña activa (.on) no cambia al pasar por encima: ya esta encendida y
+   parpadear seria ruido. */
+@media (hover:hover){
+  .nav-i:hover{color:var(--soft)}
+  .nav-i:hover svg{color:var(--gold2)}
+}
+.nav-i:active svg{color:var(--gold2)}
+.nav-i:focus-visible{outline:2px solid var(--gold);outline-offset:-3px;border-radius:8px}
+
+#cmp{margin:13px 0}
+.cmp-acc{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px 15px;color:#e6edf3;font-weight:800;font-size:14px;cursor:pointer}
+.cmp-rt{display:flex;align-items:center;gap:7px;flex-shrink:0;font-weight:600;font-size:12.5px;color:#8b949e}
+.cmp-panel{border:1px solid #30363d;border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:11px;background:#0f141a}
+.cmp-g{background:#161b22;border:1px solid #30363d;border-radius:11px;margin-bottom:8px;overflow:hidden}
+/* LA REJILLA QUE SUJETA LAS COLUMNAS (10-sep-2026).
+   Antes esto era `display:flex` con `.cmp-mt{flex:1}` al lado de un chip de
+   `min-width:84px`. El chip crece con su texto --"SF · +2.5" mide 72px y
+   "WSH · +10.2" mide 90px, medido sobre la fuente real-- asi que cada juego
+   le dejaba a la parte de la izquierda un ancho DISTINTO, y las columnas de
+   ERA / BP / SV aparecian corridas unos pixeles de un juego a otro. Cesar lo
+   vio: "se han movido porque no tienen el mismo tamano".
+   Con grid, la primera pista es siempre `1fr` sobre un ancho fijo: la columna
+   del chip mide 96px pase lo que pase y los numeros caen SIEMPRE en el mismo
+   sitio. La cabecera usa el mismo hueco (.cmp-vsp) y el mismo gap. */
+.cmp-h{display:grid;grid-template-columns:1fr 96px;align-items:center;gap:9px;padding:10px 11px}
+.cmp-mt{min-width:0;display:flex;flex-direction:column;gap:3px}
+.cmp-p{display:flex;align-items:center;gap:5px;font-size:12.5px;line-height:1.35;min-width:0}
+.cmp-who{flex:1;min-width:0;display:flex;align-items:baseline;gap:5px}
+.cmp-nm{min-width:0;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* SIN COLOR EN LA FILA (peticion de Cesar): "noto demasiados colores, dejamos
+   color neutro las letras". La ERA iba tenida por su valor y el nombre del
+   que gana el duelo en dorado; con seis juegos en pantalla son doce numeros y
+   seis nombres pidiendo atencion a la vez. EL UNICO COLOR QUE SE QUEDA es el
+   del chip de ventaja (.cmp-v.alta), que ya dice quien gana y cuanto.
+   La clase .win se conserva y marca al que gana el duelo solo con el grosor,
+   sin color. */
+.cmp-p.win .cmp-nm{font-weight:800}
+.cmp-rec{flex-shrink:0;font-size:11px;color:#8b949e;font-variant-numeric:tabular-nums}
+.cmp-nums{flex-shrink:0;display:flex;align-items:baseline;gap:4px}
+/* LAS TRES COLUMNAS, IGUALES (10-sep-2026). La ERA iba a 12.5px y en negrita
+   800 mientras BP y SV iban a 10.5px normales: se leia como si fueran tres
+   cosas de tres importancias distintas y ademas descuadraba la linea base.
+   Cesar: "los numeros de ERA estan en negrita y mas grande que los demas, que
+   quede todo igual". Mismo tamano, mismo grosor y mismo ancho de columna las
+   tres; la ERA conserva el gris claro porque es el dato del que va el bloque,
+   BP y SV van en gris apagado. */
+.cmp-er,.cmp-pen,.cmp-cl{width:32px;text-align:right;font-size:11px;font-weight:600;font-variant-numeric:tabular-nums}
+.cmp-er{color:#e6edf3}
+.cmp-pen,.cmp-cl{color:#8b949e}
+.cmp-lg{width:18px;height:18px;object-fit:contain;flex-shrink:0}
+/* El padding derecho es 12px y no 11px a proposito: la fila vive dentro de
+   .cmp-g, que tiene 1px de borde. 11 + 1 = 12, y asi las etiquetas caen justo
+   encima de sus numeros. */
+.cmp-hd{display:flex;justify-content:flex-end;gap:9px;padding:0 12px 5px}
+.cmp-hd .cmp-er,.cmp-hd .cmp-pen,.cmp-hd .cmp-cl{font-size:10px;font-weight:800;color:#6e7681;letter-spacing:.5px}
+.cmp-vsp{width:96px;flex-shrink:0}
+.cmp-v{text-align:right;font-size:10px;font-weight:800;background:#0f141a;color:#8b949e;border:1px solid #30363d;border-radius:6px;padding:4px 7px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cmp-v.alta{background:#0f2e1a;color:#3fb950;border-color:#1f5c37}
+@media (max-width:409px){.cmp-cl,.cmp-hd .cmp-cl{display:none}}
+.cmp-d{display:none;padding:0 11px 9px;font-size:11px;color:#c9d1d9}
+.cmp-ln{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-top:1px solid #21262d}
+.cmp-note{font-size:11px;color:#6e7681;text-align:center;margin-top:4px}
+.ico{width:1.05em;height:1.05em;flex-shrink:0;vertical-align:-.16em;margin-right:.32em}
+/* El aire entre juegos vive aqui y no en el `gap` de la rejilla: el
+   dashboard no usa `.grid` —cuelga los .gitem de .lab-real, que no tiene
+   ni una regla— y alli los juegos salian pegados unos a otros. */
+.gitem{min-width:0}
+.gitem+.gitem{margin-top:12px}
+/* ============ LA TARJETA (rediseño del 30-ago-2026) ============
+   Dos cosas la hacian ver "pequeña y apretada", y las dos estan medidas:
+   habia tipografia de 8.5 px y las tarjetas iban a 8 px de padding, mientras
+   Trends no baja de 10.5 y respira a 11-13. Aqui se adopta la escala de Trends
+   y las medidas de las tarjetas de PICKS (radio 16, padding 15/16, margen 12),
+   que es lo que hace que las tres paginas se vean de la misma web.
+   NO se meten variables CSS a proposito: este CSS se copia al dashboard
+   filtrado por selector, y alli los tokens se llaman distinto (--card, --mut),
+   SELECTOR SIMPLE, Y NO ES UN DETALLE (31-ago-2026): esta regla era
+   `.gc.card`, que exige las DOS clases. Al incrustar el LAB en el
+   dashboard, _tarjetas_del_lab quita `card` (`gc card` -> `gc`) para que no
+   choque con la `.card` del shell, que es la de los picks. Asi que la regla
+   viajaba pero no llegaba a aplicarse nunca: en lab.html la tarjeta tenia su
+   borde y en el dashboard —donde Cesar mira a diario— salia plana, sin nada
+   que separase un juego del siguiente. Con `.gc` a secas ya no depende de
+   una clase que puede viajar o no.
+   El margen sale de aqui y se va a `.gitem`: ver abajo. */
+.gc{background:#161b22;border:1px solid #30363d;border-radius:16px;
+    padding:15px 16px;overflow:visible}
+.lb-head{display:flex;align-items:center;justify-content:space-between;gap:10px;
+       padding-bottom:11px;border-bottom:1px solid #21262d}
+.lb-hr{font-size:13px;font-weight:600;color:#c9d1d9;font-variant-numeric:tabular-nums}
+/* SIN CAJA (1-sep-2026, peticion de Cesar): el estado del lineup se dice con
+   el COLOR de la letra, como se hizo con el boton Detalle. La pastilla con
+   fondo y borde competia con los chips de ventaja de mas abajo, que si
+   necesitan caja porque alli el color significa una banda medida. */
+.lb-pill{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+      white-space:nowrap}
+.lb-pill.ok{color:#3fb950}
+.lb-pill.pr{color:#f0c75e}
+/* PF / WX / UMP: los tres multiplicadores del total, cada uno con su %.
+   Caja neutra y el color SOLO en el numero, igual que en Trends: aqui el
+   color dice el signo, no una banda de valor. */
+.lb-ajs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.lb-aj{font-size:11px;font-weight:600;color:#8b949e;background:#0d1117;
+     border:1px solid #21262d;border-radius:7px;padding:3px 8px;white-space:nowrap;
+     font-variant-numeric:tabular-nums}
+.lb-aj i{font-style:normal;font-weight:700;font-size:10px;letter-spacing:.08em;
+     text-transform:uppercase;color:#6e7681;margin-right:4px}
+.lb-aj.up{color:#3fb950}
+.lb-aj.dn{color:#d29922}
+/* ===== EL DUELO, EN ESPEJO (2-sep-2026) =====================================
+   Se espeja la ALINEACION, nunca el ORDEN de lo que hay dentro. Ver _card_full. */
+.e-hd{text-align:center;font-size:11px;font-weight:400;color:#6e7681;
+      padding-bottom:5px}
+/* Los chips van PEGADOS a la sede: son la misma cosa --donde y en que
+   condiciones se juega--. El aire que habia entre los dos pasa abajo, que es
+   donde de verdad separa: entre el contexto y el duelo. */
+.e-chips{display:flex;justify-content:center;margin-bottom:2px}
+.e-chips .lb-ajs{justify-content:center;margin-top:0}
+.e-mid{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;
+       margin:12px 0 11px}
+.e-eq{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:0}
+.e-lg{width:34px;height:34px;object-fit:contain}
+.e-ab{font-weight:700;font-size:13px;color:#e6edf3;display:flex;align-items:baseline;
+      gap:4px}
+.e-ml,.e-win{font-size:11px;font-weight:400;color:#8b949e;
+      font-variant-numeric:tabular-nums}
+.e-num{text-align:center;min-width:132px}
+.e-runs{display:flex;align-items:center;justify-content:center;gap:8px}
+.e-runs span{font-weight:700;font-size:23px;color:#e6edf3;line-height:1;
+      font-variant-numeric:tabular-nums}
+.e-runs i{font-style:normal;font-weight:700;font-size:10px;line-height:1.25;
+      letter-spacing:.09em;color:#6e7681}
+/* La probabilidad de cada equipo va con la MISMA reja que los EXP RUNS
+   --mismo gap, mismo ancho para el hueco central-- para que cada porcentaje
+   caiga justo debajo de su equipo y no haya que adivinar cual es cual. */
+.e-teq{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:3px}
+.e-teq span{font-size:10px;font-weight:400;color:#8b949e;min-width:56px;
+      text-align:center;white-space:nowrap}
+.e-teq b{color:#c9d1d9;font-weight:700}
+.e-teq i{display:block;width:26px}
+.e-tot{font-size:12.5px;font-weight:400;color:#c9d1d9;margin-top:7px}
+.e-tot b{color:#e6edf3;font-weight:700}
+.e-mkt{font-size:11px;font-weight:400;color:#6e7681;margin-top:4px;
+      font-variant-numeric:tabular-nums}
+.e-num .lb-pill{display:inline-block;margin-top:6px}
+/* EL FONDO EN REJILLA: cada fila comparte altura con la del otro equipo, asi
+   que BP y OF arrancan SIEMPRE a la misma altura en los dos lados. Con dos
+   columnas sueltas, una linea de mas en un lado descuadraba todo lo de abajo. */
+.q-rot{text-align:center;font-size:10px;font-weight:700;letter-spacing:.1em;
+      color:#6e7681;margin:13px 0 7px}
+.q-g{display:grid;grid-template-columns:1fr 1fr;column-gap:12px;align-items:start}
+.q-g>*{min-width:0}
+.q-g>.r{text-align:right}
+.q-nom{font-weight:600;font-size:12.5px;line-height:1.35;color:#e6edf3}
+.q-nom .mn{color:#6e7681;font-weight:400}
+.q-val{font-size:11px;font-weight:400;line-height:1.5;color:#c9d1d9;margin-top:2px;
+      font-variant-numeric:tabular-nums;white-space:nowrap}
+/* La nota, DENTRO de la linea de metricas, va sin caja: solo el color. Con caja
+   (padding 1px 5px + margen 5px) las tres sumaban unos 40px y forzaban el salto
+   justo en la ultima. Mismo criterio que el estado del lineup y el boton. */
+.q-bo{font-size:11px;font-weight:400;line-height:1.7;color:#c9d1d9;margin-top:10px;
+      font-variant-numeric:tabular-nums}
+.q-bo i{font-style:normal;font-weight:700;font-size:10px;letter-spacing:.08em;
+      color:#6e7681;margin-right:5px}
+.q-bo b{font-weight:600;color:#e6edf3}
+.q-bo b.up{color:#3fb950}
+.q-bo b.dn{color:#d29922}
+.q-bo em{font-style:normal;font-size:11px;color:#8b949e}
+.q-bo em.up{color:#3fb950}
+.q-bo em.dn{color:#d29922}
+.q-bo em.mut{color:#6e7681}
+/* El perfil de 5 categorias, dentro del Detalle y bajo el logo de cada equipo. */
+.d-pf{width:100%;border-collapse:collapse;margin:1px 0 4px;
+      font-variant-numeric:tabular-nums}
+.d-pf th{font-size:10px;font-weight:700;letter-spacing:.05em;color:#6e7681;
+      padding:0 1px 3px;text-align:center}
+.d-pf td{padding:1px;text-align:center;font-size:11px}
+.lb-t4{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;
+         font-size:13px;margin-top:10px}
+.lb-t4 th{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:#6e7681;
+            font-weight:700;padding:0 4px 5px;text-align:right}
+.lb-t4 th.l{text-align:left}
+.lb-t4 td{padding:6px 4px;text-align:right;color:#c9d1d9}
+.lb-t4 tr.b td{border-bottom:1px solid #21262d}
+.lb-t4 td.eq{text-align:left;font-weight:800;font-size:14px;color:#e6edf3}
+.lb-t4 td.eq2{text-align:left;font-size:12.5px;color:#e6edf3;font-weight:400}
+.lb-eqin{display:flex;align-items:center;gap:7px}
+.lb-lgt{width:22px;height:22px;object-fit:contain;flex-shrink:0}
+.lb-t4 td.lb-win{color:#58a6ff;font-weight:600}
+.mn{color:#6e7681}
+/* El TOTAL cae en la columna EXP: el total ES la suma de las dos carreras
+   esperadas, asi que ahi la cuenta se ve sola y no hace falta rotularlo
+   "modelo" — ya esta bajo la cabecera que dice EXP. */
+.lb-totr td{border-top:1px solid #30363d;padding-top:9px}
+.lb-totk{text-align:left;font-size:11px;font-weight:700;letter-spacing:.07em;
+        text-transform:uppercase;color:#6e7681;vertical-align:middle}
+.lb-totm{text-align:left;font-size:11px;color:#8b949e;vertical-align:middle}
+.lb-totm b{color:#c9d1d9;font-weight:600;font-size:13px}
+.lb-totv{font-size:15px;font-weight:700;color:#e6edf3;vertical-align:middle;
+        letter-spacing:-.02em}
+/* El GRADO va pegado a su metrica. Antes se ponian "ERA C" y "K-BB D" como dos
+   etiquetas seguidas en la misma celda y se leian juntas: la causa no era el
+   espaciado sino repetir un rotulo que la cabecera de la tabla ya da. */
+/* LA NOTA VA SIN CAJA (2-sep-2026, peticion de Cesar). Solo la letra en su
+   color, igual que el estado del lineup y el boton Detalle. Con fondo y
+   padding, tres notas seguidas en una linea sumaban ~40px, forzaban el salto
+   y en movil se veian apretadas y descuadradas. La caja sobrevive en UN sitio
+   --la tabla del Perfil-- porque alli cada letra va sola en su celda y sin caja
+   las de color se leian mas pequenas que las grises. Ver .d-pf .gr. */
+.gr{font-size:10px;font-weight:700;margin-left:4px;
+    white-space:nowrap;vertical-align:middle}
+.n-eds{display:flex;gap:7px;margin-top:12px}
+/* Boton Detalle: solo texto azul, centrado y al final de la tarjeta, que es lo
+   unico que se pulsa. Con caja y a media altura partia la tarjeta en dos. */
+.detwrap{display:flex;justify-content:center;margin-top:13px;padding-top:11px;
+         border-top:1px solid #21262d}
+/* Es un <button> por accesibilidad (teclado y lector de pantalla), pero NO debe
+   PARECER un boton: Cesar lo quiere como texto azul y punto. Un <button> trae
+   borde, fondo gris y fuente propia del navegador, asi que hay que apagarlos a
+   mano — si no, vuelve a salir la caja. */
+.detb{display:inline-flex;align-items:center;gap:6px;padding:2px 6px;font-size:12.5px;
+      font-weight:600;color:#58a6ff;cursor:pointer;
+      background:none;border:0;font-family:inherit;line-height:inherit;
+      -webkit-appearance:none;appearance:none}
+.detb:hover{color:#79c0ff}
+.detb:focus-visible{outline:2px solid #58a6ff;outline-offset:3px;border-radius:4px}
+/* CONTEXTO en dos lineas, y en un solo sitio (ya no se repite en el Detalle) */
+.lb-ctx{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;margin-top:12px;
+     padding-top:11px;border-top:1px solid #21262d}
+.lb-cx{min-width:0}
+.lb-cxk{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+     color:#6e7681}
+.lb-cxv{font-size:12.5px;color:#c9d1d9;white-space:nowrap;overflow:hidden;
+     text-overflow:ellipsis;font-variant-numeric:tabular-nums}
+.lb-cxv b{color:#e6edf3;font-weight:600}
+.lb-cxv .up{color:#3fb950}
+.lb-cxv .dn{color:#d29922}
+/* Pie "Actualizado", debajo de todas las tarjetas */
+.lab-pie{display:flex;align-items:center;justify-content:space-between;gap:10px;
+         margin-top:16px;padding:12px 14px;background:#161b22;border:1px solid #30363d;
+         border-radius:14px}
+.lab-pk{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+        color:#6e7681}
+.lab-pn{font-size:11px;color:#8b949e;margin-top:2px}
+.lab-pv{font-size:12.5px;color:#c9d1d9;text-align:right;font-variant-numeric:tabular-nums}
+/* ---- Detalle en pestañas ---- */
+/* DETALLE POR EQUIPO (DET 2). Dos columnas grandes: en cada una, todo lo de
+   ese equipo. Sustituye a las pestañas, que obligaban a tocar cuatro veces
+   para ver un juego entero. */
+.d-teams{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.d-team{min-width:0}
+.d-th{display:flex;align-items:center;gap:7px;font-weight:800;font-size:14px;
+      color:#e6edf3;padding-bottom:7px;margin-bottom:8px;border-bottom:1px solid #30363d}
+.d-lg{width:20px;height:20px;object-fit:contain;flex-shrink:0}
+.d-cols{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.d-col{min-width:0}
+.d-sub{font-size:10px;font-weight:800;color:#c9d1d9;margin-bottom:2px;white-space:nowrap;
+       overflow:hidden;text-overflow:ellipsis}
+.d-team>.d-bt:first-child{margin-top:0}
+.d-bt{font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#6e7681;
+      margin:6px 0 2px}
+.d-ln{display:flex;justify-content:space-between;gap:5px;font-size:10px;color:#8b949e;
+      padding:1.5px 0;border-bottom:1px solid #21262d;font-variant-numeric:tabular-nums}
+.d-ln>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.d-ln>span:last-child{flex-shrink:0;color:#c9d1d9}
+/* La nota que distingue los dos FIP (9-sep-2026): el de la temporada y el de
+   tres anos, que es el que usa el modelo. Sin ella los dos numeros parecian el
+   mismo dato mal calculado. */
+.d-nt{font-style:normal;color:#6e7681;font-size:10px}
+.d-pen{font-size:10px;color:#8b949e;line-height:1.4}
+@media(max-width:339px){.d-cols,}
+.gc-top{display:flex;justify-content:space-between;align-items:center;color:#8b949e;font-size:11px;margin-bottom:8px}
+.bd{font-size:11px;font-weight:800;padding:2px 9px;border-radius:99px}
+.bd-c{background:#12261a;border:1px solid #1d4428;color:#3fb950}
+.bd-p{background:#2d1e05;border:1px solid #5c4a1a;color:#f0c75e}
+.bd-f{background:#0d1b2a;border:1px solid #1f4068;color:#58a6ff}
+.gc-row{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.gc-side{text-align:center;width:70px}
+/* AQUI VIVIA .logo, y era CSS MUERTO que encogia logos ajenos (2-sep-2026).
+   Solo la usaba _card_f5, que no se renderiza. Pero el dashboard pega este
+   paquete DESPUES del suyo, y el suyo tiene .logo{42px}: los 3 logos de la
+   seccion de picks salian a 34px. Los logos que el LAB si usa llevan su propia
+   clase con prefijo (.e-lg, .lb-lgt, .d-lg), que no se pisa con nadie. */
+.gc-ab{font-weight:800;font-size:15px;margin-top:2px}
+.e-jm{font-size:11px;color:#6e7681;font-variant-numeric:tabular-nums;margin-top:1px}
+.gc-ml{font-size:11px;color:#8b949e}
+.gc-w{font-size:11px;color:#58a6ff;font-weight:700}
+.gc-mid{text-align:center;flex:1}
+.gc-pr{font-size:24px;font-weight:800;color:#e6edf3;margin:0 6px}
+.gc-x{display:inline-block;font-size:10px;color:#8b949e;vertical-align:middle;line-height:1.1}
+.gc-tot{font-size:12.5px;margin:4px 0 2px}
+.gc-sp{display:grid;grid-template-columns:1fr auto 1fr;gap:9px;align-items:start;font-size:11px;color:#c9d1d9;margin-top:6px}
+.sp-c{min-width:0}
+.sp-c.r{text-align:right}
+.sp-n{font-size:12.5px;font-weight:700;color:#e6edf3;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp-e{font-size:11px;color:#8b949e;font-variant-numeric:tabular-nums;margin-top:1px}
+.sp-g{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.sp-c.r .sp-g{justify-content:flex-end}
+.sp-vs{font-size:10px;color:#6e7681;padding-top:3px}
+.mut{color:#8b949e}
+.mut2{color:#6e7681;font-size:11px}
+.gc-edges{display:flex;gap:8px;justify-content:center;margin-top:8px;padding-top:8px;border-top:1px solid #21262d;flex-wrap:wrap}
+.bn-edges{display:flex;gap:8px;margin-top:8px;padding-top:8px;border-top:1px solid #21262d}
+.ec{flex:1;min-width:0;text-align:center;font-size:11px;font-weight:800;padding:7px 8px;border-radius:8px;border:1px solid #30363d;background:#0d1117;color:#8b949e;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
+.ec.on{color:#3fb950;background:rgba(63,185,80,.13);border-color:#1d4428}
+.ec.peq{color:#e6edf3;background:#161b22;border-color:#30363d}
+.ec.warn{color:#d29922;background:rgba(210,153,34,.10);border-color:#4a3a12}
+.ec.off{color:#8b949e;background:#161b22;border-color:#30363d}
+/* AQUI VIVIA .chip, y era CSS MUERTO que hacia daño (2-sep-2026). El LAB no lo
+   usa --su _chip() emite class="ec"-- pero el dashboard pega este paquete y el
+   de Trends uno detras de otro, y Trends SI usa .chip. Lo que sobrevivia de
+   esta regla (font-weight:800, display) engordaba los chips de Trends sin que
+   nada en el LAB se beneficiara. Se elimina: si algun dia el LAB necesita un
+   chip, ya tiene .ec, que va con prefijo y no se pisa con nadie. */
+/* Los ceros son a proposito: blindan la nota contra cualquier clase que
+   comparta nombre en el futuro (fue lo que paso con .gc). */
+.gr{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.02em;
+    vertical-align:middle;padding:0;border:0;border-radius:0;background:none}
+/* Solo el COLOR. El fondo se reserva para el Perfil (.d-pf .gr). */
+/* LOS NOMBRES VIEJOS SIGUEN AQUI COMO ALIAS, y no es por pereza. Las tarjetas
+   de los juegos que ya empezaron quedan CONGELADAS como HTML en
+   data/lab_cards_{fecha}.json, y ese HTML se escribio con las clases viejas.
+   El dia del renombrado se publicaron 78 notas congeladas que se quedaron sin
+   regla de color --la caja no volvio, porque .gr ya declara sus ceros y va
+   despues de .gc, pero el color si se perdio--. Los alias se pueden borrar
+   cuando no queden snapshots viejos, o sea al dia siguiente. */
+.gr.n-a,.gr.ga{color:#3fb950}
+.gr.n-b,.gr.gb{color:#56b98a}
+.gr.n-c,.gr.gc{color:#8b949e}
+.gr.n-d,.gr.gd{color:#f85149}
+/* EN EL PERFIL SI VA LA CAJA. Alli cada letra ocupa una celda ella sola, y sin
+   fondo las de color se veian mas chicas que las grises: la caja las iguala.
+   Ancho minimo para que A+ y C ocupen lo mismo y la fila quede a plomo. */
+.d-pf .gr{padding:2px 0;border-radius:5px;border:1px solid transparent;
+    min-width:26px;text-align:center;margin:0;font-size:10px}
+.d-pf .gr.n-a,.d-pf .gr.ga{background:#12261a;border-color:#1c3b28}
+.d-pf .gr.n-b,.d-pf .gr.gb{background:#16241f;border-color:#20372e}
+.d-pf .gr.n-c,.d-pf .gr.gc{background:#21262d;border-color:#30363d}
+.d-pf .gr.n-d,.d-pf .gr.gd{background:#2b1618;border-color:#42211f}
+.lg.w2{color:#c9d1d9;background:#161b22;border-left:2px solid #d29922;padding:8px 10px;border-radius:0 7px 7px 0;margin:7px 0;line-height:1.65}
+.gc-amb{display:flex;gap:8px;justify-content:center;margin-top:8px;flex-wrap:wrap}
+.mini{font-size:11px;color:#8b949e}
+.mini.lw{color:#f0c75e;font-weight:700}
+.det-btn{display:block;margin:10px auto 0;background:none;border:1px solid #30363d;border-radius:8px;color:#58a6ff;font-size:11px;font-weight:700;padding:4px 14px;cursor:pointer}
+.det{margin-top:10px;border-top:1px solid #21262d;padding-top:8px}
+.det-sec{margin-bottom:10px}
+.det-t{font-size:11px;font-weight:800;color:#58a6ff;letter-spacing:.5px;margin-bottom:4px}
+.det-sub{font-size:11px;font-weight:700;color:#e6edf3;margin:6px 0 2px}
+.det-ln{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:#8b949e;padding:2.5px 0;border-bottom:1px solid #1c2128}
+.det-ln>span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.det-ln span:last-child{text-align:right;color:#c9d1d9;flex-shrink:0}
+.det-pen{font-size:11px;color:#8b949e;line-height:1.45;padding:2px 0}
+.det-cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+/* En movil TAMBIEN dos columnas, cada equipo en la suya: antes se
+   colapsaban a una y habia que bajar media pantalla para comparar los
+   dos lineups. Se compensa apretando la tipografia. */
+@media(max-width:520px){.det-cols{gap:7px}.det-ln{font-size:11px;gap:5px;padding:2px 0}
+  .det-sub{font-size:11px}.det-t{font-size:10px}.det-pen{font-size:10px}}
+/* Por debajo de 340px ya no caben dos: ahi si se apilan. */
+@media(max-width:339px){.det-cols{grid-template-columns:1fr}}
+.det-col{min-width:0}
+.leg{margin-top:12px}
+.leg-acc{width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px 15px;color:#e6edf3;font-weight:800;font-size:14px;cursor:pointer}
+.leg-panel{border:1px solid #30363d;border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:6px 14px;background:#0f141a}
+/* EL GLOSARIO, COMO EL DEL MERCADO (21-sep-2026, Cesar: «sin esas lineas y las letras de
+   los parrafos normales no en negrita»). Sin raya bajo cada entrada ni bajo cada titulo;
+   en negrita solo el termino que abre la entrada, y el resto del parrafo en letra normal. */
+.glo{font-size:13px;color:#c9d1d9;line-height:1.7;margin:0 0 8px}
+.glo b{font-weight:400;color:inherit}
+.glo>b:first-child{font-weight:700;color:#e6edf3}
+.glo-h{font-size:14px;font-weight:700;color:#e6edf3;margin:14px 0 6px}
+.glo-h:first-child{margin-top:8px}
+.lg:last-child{border-bottom:none}
+.lg b{color:#e6edf3}
+
+.gl{margin-top:18px;background:#161b22;border:1px solid #30363d;border-radius:12px;overflow:hidden}
+.gl-s{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 15px;
+ cursor:pointer;list-style:none;font-family:inherit;font-size:14px;font-weight:700;color:#e6edf3}
+.gl-s::-webkit-details-marker{display:none}
+.gl-ar{color:#8b949e;font-size:11px;transition:transform .15s}
+.gl[open] .gl-ar{transform:rotate(180deg)}
+.gl-p{padding:2px 15px 14px;border-top:1px solid #21262d}
+.gl-h{font-size:14px;font-weight:700;line-height:1.5;color:#e6edf3;margin:14px 0 6px}
+.gl-e{font-size:13px;font-weight:400;line-height:1.7;color:#c9d1d9;margin:0 0 8px}
+.gl-e b{font-weight:400;color:inherit}
+.gl-e>b:first-child{font-weight:700;color:#e6edf3}
+.gl-e i{color:#8b949e;font-style:italic}
+</style><meta name="cy-portero" content="libre"><link rel="alternate" hreflang="es" href="https://cyelitelab.com/modelo"><link rel="alternate" hreflang="en" href="https://cyelitelab.com/en/modelo"><link rel="alternate" hreflang="x-default" href="https://cyelitelab.com/modelo"></head><body><div class="app"><div class="topbar"><h1>CY Elite Lab</h1><a href="/en/settings" class="t-set" aria-label="Settings and information"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10 3.09V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></a></div><main><section class="on"><div class="cab"><div class="cab-tx"><h2 class="cab-t">Model</h2><p class="cab-s">Today's projection for 4 games</p></div><div class="cab-d"><div class="cab-n">4</div><div class="cab-l">games</div></div></div><div class="lab-real"><div class="gitem">
+<div class="gc">
+  <div class="e-hd">Truist Park · <time class="h-loc" data-utc="2026-09-29T18:00:00Z">1:00 PM</time></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj " title="Park factor: how much this stadium scores relative to the league average"><i>PF</i> +0.0%</span><span class="lb-aj up" title="Weather: how much this day departs from NORMAL for this park at this time"><i>WX</i> +0.7%</span><span class="lb-aj dn" title="Home plate umpire: effect measured over 3 seasons and adjusted for sample size"><i>UMP</i> Merzel -0.4%</span></div></div>
+  <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/PHI.png" alt="PHI" onerror="this.style.display='none'"><div class="e-ab">PHI<span class="e-ml">+158</span></div><div class="e-win">47.9% win</div><div class="e-jm">(+109)</div></div>
+    <div class="e-num">
+      <div class="e-runs"><span>3.48</span><i>EXP<br>RUNS</i>
+        <span>3.5</span></div>
+      <div class="e-teq" title="True probability that the team exceeds 4.5 runs. Note: the balance is not at 4.5, it is near 5.2."><span>o4.5 <b>29%</b></span><i></i><span>o4.5 <b>29%</b></span></div>
+      <div class="e-tot">Expected total <b>6.98</b></div>
+      <div class="e-mkt">6.5 (-121/+100)</div><span class="lb-pill ok"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Confirmed</span>
+    </div><div class="e-eq"><img class="e-lg" src="logos/ATL.png" alt="ATL" onerror="this.style.display='none'"><div class="e-ab">ATL<span class="e-ml">-192</span></div><div class="e-win">52.1% win</div><div class="e-jm">(-109)</div></div></div>
+  <div class="n-eds"><span class="ec on" title="The Model gives PHI 47.9% and the price offers 38.8%: +9.1 points in your favor, pricing included.">PHI ML +9.1%</span><span class="ec peq" title="The Model gives 50.2% to the under and the Market price asks for 50.0%: +0.2 points. Tracked each morning: the side that marks hits 45.8% needing 52.0% (83 games); it will turn green when it hits 3 points above in 150 games.">Under 6.5 +0.2%</span></div>
+  <div class="q-rot">ERA · FIP · K-BB</div>
+  <div class="q-g"><div class="q-nom">J. Luzardo <span class="mn">(L)</span></div><div class="q-nom r">C. Sale <span class="mn">(L)</span></div><div class="q-val">2.86<span class="gr n-a">A-</span> · 3.08<span class="gr n-a">A</span> · 23.2%<span class="gr n-a">A</span></div><div class="q-val r">2.16<span class="gr n-a">A+</span> · 2.71<span class="gr n-a">A+</span> · 26.1%<span class="gr n-a">A+</span></div><div class="q-bo"><div><i>BP</i>3.78 <em class="">3.0 IP</em></div><div><i>OF</i><b class="">99</b> <em class="mut">vs LHP</em></div></div><div class="q-bo r"><div><i>BP</i>2.97 <em class="">2.1 IP</em></div><div><i>OF</i><b class="">98</b> <em class="mut">vs LHP</em></div></div></div>
+  <div class="detwrap"><button type="button" class="detb" onclick="detTog(0)" id="detAr0" aria-expanded="false" aria-controls="det0">Detail ▾</button></div>
+  <div class="det" id="det0" style="display:none"><div class="d-teams"><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/PHI.png" alt="PHI" onerror="this.style.display='none'"><span>PHI</span></div><div class="d-bt">Profile</div><table class="d-pf"><thead><tr><th title="Contact — how often he puts the ball in play (fewer strikeouts)">CON</th><th title="Power — how hard he hits when he connects (SLG minus AVG)">POW</th><th title="Discipline — how much he walks, meaning how much he respects the zone">EYE</th><th title="Bases — how much he gains running (stolen bases, minus caught stealing)">BSR</th><th title="Defense — how many balls in play he turns into outs">DEF</th></tr></thead><tbody><tr><td><span class="gr n-c">C+</span></td><td><span class="gr n-c">C</span></td><td><span class="gr n-c">C</span></td><td><span class="gr n-b">B</span></td><td><span class="gr n-d">F</span></td></tr></tbody></table><div class="d-bt">Starter</div><div class="d-sub">Jesús Luzardo <span class="mut">(14-5)</span> · LHP</div><div class="d-ln"><span>ERA</span><span>2.86<span class="gr n-a">A-</span></span></div><div class="d-ln"><span>FIP 3-Year <i class="d-nt">his underlying quality</i></span><span>2.94</span></div><div class="d-ln"><span>K-BB%</span><span>23.2%<span class="gr n-a">A</span></span></div><div class="d-bt">Last 5 Starts</div><div class="d-ln"><span>vs ATL</span><span>9.0 IP · 0 ER · 12 K</span></div><div class="d-ln"><span>vs AZ</span><span>6.2 IP · 1 ER · 6 K</span></div><div class="d-ln"><span>vs SEA</span><span>7.0 IP · 0 ER · 9 K</span></div><div class="d-ln"><span>vs STL</span><span>5.2 IP · 2 ER · 9 K</span></div><div class="d-ln"><span>vs MIN</span><span>6.2 IP · 1 ER · 9 K</span></div><div class="d-bt">Lineup · OPS</div><div class="d-ln"><span>1 T. Turner <span class="mut">SS · R</span></span><span>.675</span></div><div class="d-ln"><span>2 K. Schwarber <span class="mut">DH · L</span></span><span>.857</span></div><div class="d-ln"><span>3 B. Harper <span class="mut">RF · L</span></span><span>.865</span></div><div class="d-ln"><span>4 A. Bohm <span class="mut">1B · R</span></span><span>.698</span></div><div class="d-ln"><span>5 D. Hill <span class="mut">CF · R</span></span><span>.733</span></div><div class="d-ln"><span>6 B. De La Cruz <span class="mut">LF · R</span></span><span>.762</span></div><div class="d-ln"><span>7 B. Stott <span class="mut">2B · L</span></span><span>.735</span></div><div class="d-ln"><span>8 E. Sosa <span class="mut">3B · R</span></span><span>.712</span></div><div class="d-ln"><span>9 J. Realmuto <span class="mut">C · R</span></span><span>.614</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP in 48 h</span><span>3.0</span></div><div class="d-pen">2 consecutive days: none</div></div><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/ATL.png" alt="ATL" onerror="this.style.display='none'"><span>ATL</span></div><div class="d-bt">Profile</div><table class="d-pf"><thead><tr><th title="Contact — how often he puts the ball in play (fewer strikeouts)">CON</th><th title="Power — how hard he hits when he connects (SLG minus AVG)">POW</th><th title="Discipline — how much he walks, meaning how much he respects the zone">EYE</th><th title="Bases — how much he gains running (stolen bases, minus caught stealing)">BSR</th><th title="Defense — how many balls in play he turns into outs">DEF</th></tr></thead><tbody><tr><td><span class="gr n-b">B-</span></td><td><span class="gr n-b">B-</span></td><td><span class="gr n-d">F</span></td><td><span class="gr n-c">C</span></td><td><span class="gr n-b">B</span></td></tr></tbody></table><div class="d-bt">Starter</div><div class="d-sub">Chris Sale <span class="mut">(14-9)</span> · LHP</div><div class="d-ln"><span>ERA</span><span>2.16<span class="gr n-a">A+</span></span></div><div class="d-ln"><span>FIP 3-Year <i class="d-nt">his underlying quality</i></span><span>2.28</span></div><div class="d-ln"><span>K-BB%</span><span>26.1%<span class="gr n-a">A+</span></span></div><div class="d-bt">Last 5 Starts</div><div class="d-ln"><span>vs CIN</span><span>5.2 IP · 1 ER · 10 K</span></div><div class="d-ln"><span>vs PHI</span><span>7.0 IP · 3 ER · 6 K</span></div><div class="d-ln"><span>vs PHI</span><span>6.0 IP · 2 ER · 7 K</span></div><div class="d-ln"><span>vs LAD</span><span>9.0 IP · 0 ER · 11 K</span></div><div class="d-ln"><span>vs MIL</span><span>6.0 IP · 2 ER · 6 K</span></div><div class="d-bt">Lineup · OPS</div><div class="d-ln"><span>1 D. Baldwin <span class="mut">C · L</span></span><span>.817</span></div><div class="d-ln"><span>2 R. Acuña Jr. <span class="mut">RF · R</span></span><span>.796</span></div><div class="d-ln"><span>3 M. Olson <span class="mut">1B · L</span></span><span>.823</span></div><div class="d-ln"><span>4 M. Dubón <span class="mut">LF · R</span></span><span>.720</span></div><div class="d-ln"><span>5 M. Harris II <span class="mut">CF · L</span></span><span>.812</span></div><div class="d-ln"><span>6 O. Albies <span class="mut">2B · S</span></span><span>.685</span></div><div class="d-ln"><span>7 A. Riley <span class="mut">3B · R</span></span><span>.654</span></div><div class="d-ln"><span>8 M. Yastrzemski <span class="mut">DH · L</span></span><span>.689</span></div><div class="d-ln"><span>9 H. Kim <span class="mut">SS · R</span></span><span>.359</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP in 48 h</span><span>2.1</span></div><div class="d-pen">2 consecutive days: none</div></div></div></div>
+</div></div><div class="gitem">
+<div class="gc">
+  <div class="e-hd">Daikin Park · <time class="h-loc" data-utc="2026-09-29T21:00:00Z">4:00 PM</time></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj " title="Park factor: how much this stadium scores relative to the league average"><i>PF</i> +0.0%</span><span class="lb-aj"><i>WX</i> Closed</span><span class="lb-aj dn" title="Home plate umpire: effect measured over 3 seasons and adjusted for sample size"><i>UMP</i> MacKay -1.6%</span></div></div>
+  <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/CWS.png" alt="CWS" onerror="this.style.display='none'"><div class="e-ab">CWS<span class="e-ml">+102</span></div><div class="e-win">46.9% win</div><div class="e-jm">(+113)</div></div>
+    <div class="e-num">
+      <div class="e-runs"><span>4.63</span><i>EXP<br>RUNS</i>
+        <span>4.77</span></div>
+      <div class="e-teq" title="True probability that the team exceeds 4.5 runs. Note: the balance is not at 4.5, it is near 5.2."><span>o4.5 <b>44%</b></span><i></i><span>o4.5 <b>46%</b></span></div>
+      <div class="e-tot">Expected total <b>9.4</b></div>
+      <div class="e-mkt">8.0 (-118/-102)</div><span class="lb-pill ok"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Confirmed</span>
+    </div><div class="e-eq"><img class="e-lg" src="logos/HOU.png" alt="HOU" onerror="this.style.display='none'"><div class="e-ab">HOU<span class="e-ml">-123</span></div><div class="e-win">53.1% win</div><div class="e-jm">(-113)</div></div></div>
+  <div class="n-eds"><span class="ec off" title="HOU: the Model gives it 53.1% and the Market price already asks for 55.2%. There is no edge on either side.">No edge ML</span><span class="ec peq" title="The Model gives 58.4% to the over and the Market price asks for 54.1%: +4.3 points. Tracked each morning: the side that marks hits 45.8% needing 52.0% (83 games); it will turn green when it hits 3 points above in 150 games.">Over 8 +4.3%</span></div>
+  <div class="q-rot">ERA · FIP · K-BB</div>
+  <div class="q-g"><div class="q-nom">H. Smith <span class="mn">(L)</span></div><div class="q-nom r">A. Blubaugh <span class="mn">(R)</span></div><div class="q-val">1.29<span class="gr n-a">A+</span> · 3.46 · 22.7%<span class="gr n-a">A</span></div><div class="q-val r">3.66<span class="gr n-b">B</span> · 4.31<span class="gr n-c">C</span> · 13.0%<span class="gr n-c">C</span></div><div class="q-bo"><div><i>BP</i>3.44 <em class="">3.3 IP</em></div><div><i>OF</i><b class="">99</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>3.89 <em class="">7.0 IP</em></div><div><i>OF</i><b class="">100</b> <em class="mut">vs LHP</em></div></div></div>
+  <div class="detwrap"><button type="button" class="detb" onclick="detTog(1)" id="detAr1" aria-expanded="false" aria-controls="det1">Detail ▾</button></div>
+  <div class="det" id="det1" style="display:none"><div class="d-teams"><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/CWS.png" alt="CWS" onerror="this.style.display='none'"><span>CWS</span></div><div class="d-bt">Profile</div><table class="d-pf"><thead><tr><th title="Contact — how often he puts the ball in play (fewer strikeouts)">CON</th><th title="Power — how hard he hits when he connects (SLG minus AVG)">POW</th><th title="Discipline — how much he walks, meaning how much he respects the zone">EYE</th><th title="Bases — how much he gains running (stolen bases, minus caught stealing)">BSR</th><th title="Defense — how many balls in play he turns into outs">DEF</th></tr></thead><tbody><tr><td><span class="gr n-d">D</span></td><td><span class="gr n-b">B+</span></td><td><span class="gr n-b">B</span></td><td><span class="gr n-d">D</span></td><td><span class="gr n-c">C+</span></td></tr></tbody></table><div class="d-bt">Starter</div><div class="d-sub">Hagen Smith <span class="mut">(3-3)</span> · LHP</div><div class="d-ln"><span>ERA</span><span>1.29<span class="gr n-a">A+</span></span></div><div class="d-ln"><span>FIP 3-Year <i class="d-nt">his underlying quality</i></span><span>2.33</span></div><div class="d-ln"><span>K-BB%</span><span>22.7%<span class="gr n-a">A</span></span></div><div class="d-bt">Last 5 Starts</div><div class="d-ln"><span>vs PIT</span><span>2.0 IP · 0 ER · 3 K</span></div><div class="d-bt">Lineup · OPS</div><div class="d-ln"><span>1 S. Antonacci <span class="mut">LF · L</span></span><span>.766</span></div><div class="d-ln"><span>2 K. Teel <span class="mut">C · L</span></span><span>.697</span></div><div class="d-ln"><span>3 M. Vargas <span class="mut">3B · R</span></span><span>.837</span></div><div class="d-ln"><span>4 M. Murakami <span class="mut">1B · L</span></span><span>.825</span></div><div class="d-ln"><span>5 A. Benintendi <span class="mut">DH · L</span></span><span>.715</span></div><div class="d-ln"><span>6 T. Peters <span class="mut">CF · L</span></span><span>.774</span></div><div class="d-ln"><span>7 B. Montgomery <span class="mut">RF · S</span></span><span>.662</span></div><div class="d-ln"><span>8 C. Meidroth <span class="mut">2B · R</span></span><span>.765</span></div><div class="d-ln"><span>9 C. Montgomery <span class="mut">SS · L</span></span><span>.685</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP in 48 h</span><span>3.3</span></div><div class="d-pen">2 consecutive days: none</div></div><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/HOU.png" alt="HOU" onerror="this.style.display='none'"><span>HOU</span></div><div class="d-bt">Profile</div><table class="d-pf"><thead><tr><th title="Contact — how often he puts the ball in play (fewer strikeouts)">CON</th><th title="Power — how hard he hits when he connects (SLG minus AVG)">POW</th><th title="Discipline — how much he walks, meaning how much he respects the zone">EYE</th><th title="Bases — how much he gains running (stolen bases, minus caught stealing)">BSR</th><th title="Defense — how many balls in play he turns into outs">DEF</th></tr></thead><tbody><tr><td><span class="gr n-c">C</span></td><td><span class="gr n-a">A-</span></td><td><span class="gr n-c">C</span></td><td><span class="gr n-d">F</span></td><td><span class="gr n-b">B-</span></td></tr></tbody></table><div class="d-bt">Starter</div><div class="d-sub">AJ Blubaugh <span class="mut">(5-3)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>3.66<span class="gr n-b">B</span></span></div><div class="d-ln"><span>FIP 3-Year <i class="d-nt">his underlying quality</i></span><span>4.3</span></div><div class="d-ln"><span>K-BB%</span><span>13.0%<span class="gr n-c">C</span></span></div><div class="d-bt">Lineup · OPS</div><div class="d-ln"><span>1 J. Peña <span class="mut">SS · R</span></span><span>.802</span></div><div class="d-ln"><span>2 Y. Alvarez <span class="mut">DH · L</span></span><span>1.033</span></div><div class="d-ln"><span>3 I. Paredes <span class="mut">3B · R</span></span><span>.807</span></div><div class="d-ln"><span>4 J. Altuve <span class="mut">2B · R</span></span><span>.701</span></div><div class="d-ln"><span>5 Y. Diaz <span class="mut">C · R</span></span><span>.772</span></div><div class="d-ln"><span>6 C. Walker <span class="mut">1B · R</span></span><span>.726</span></div><div class="d-ln"><span>7 L. Spence <span class="mut">CF · L</span></span><span>.826</span></div><div class="d-ln"><span>8 C. Smith <span class="mut">RF · R</span></span><span>.669</span></div><div class="d-ln"><span>9 T. Trammell <span class="mut">LF · L</span></span><span>.626</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP in 48 h</span><span>7.0</span></div><div class="d-pen">2 consecutive days: none</div></div></div></div>
+</div></div><div class="gitem">
+<div class="gc">
+  <div class="e-hd">Yankee Stadium · <time class="h-loc" data-utc="2026-09-30T00:00:00Z">7:00 PM</time></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj up" title="Park factor: how much this stadium scores relative to the league average"><i>PF</i> +2.0%</span><span class="lb-aj dn" title="Weather: how much this day departs from NORMAL for this park at this time"><i>WX</i> -3.5%</span><span class="lb-aj dn" title="Home plate umpire: effect measured over 3 seasons and adjusted for sample size"><i>UMP</i> Tomlinson -0.6%</span></div></div>
+  <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/BOS.png" alt="BOS" onerror="this.style.display='none'"><div class="e-ab">BOS<span class="e-ml">+116</span></div><div class="e-win">42.8% win</div><div class="e-jm">(+134)</div></div>
+    <div class="e-num">
+      <div class="e-runs"><span>3.39</span><i>EXP<br>RUNS</i>
+        <span>3.82</span></div>
+      <div class="e-teq" title="True probability that the team exceeds 4.5 runs. Note: the balance is not at 4.5, it is near 5.2."><span>o4.5 <b>28%</b></span><i></i><span>o4.5 <b>34%</b></span></div>
+      <div class="e-tot">Expected total <b>7.2</b></div>
+      <div class="e-mkt">6.0 (-113/-106)</div><span class="lb-pill ok"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Confirmed</span>
+    </div><div class="e-eq"><img class="e-lg" src="logos/NYY.png" alt="NYY" onerror="this.style.display='none'"><div class="e-ab">NYY<span class="e-ml">-140</span></div><div class="e-win">57.2% win</div><div class="e-jm">(-134)</div></div></div>
+  <div class="n-eds"><span class="ec off" title="NYY: the Model gives it 57.2% and the price is asking for 58.3%. There is no edge on either side.">No edge ML</span><span class="ec peq" title="The Model gives the over 56.6% and the price is asking for 53.1%: +3.5 points. Tracked each morning: the side that is marked correct hits 45.8% needing 52.0% (83 games); it will turn green when it hits 3 points above in 150 games.">Over 6 +3.5%</span></div>
+  <div class="q-rot">ERA · FIP · K-BB</div>
+  <div class="q-g"><div class="q-nom">P. Tolle <span class="mn">(L)</span></div><div class="q-nom r">C. Schlittler <span class="mn">(R)</span></div><div class="q-val">3.03<span class="gr n-b">B+</span> · 3.32<span class="gr n-b">B+</span> · 21.7%<span class="gr n-a">A-</span></div><div class="q-val r">1.95<span class="gr n-a">A+</span> · 2.88<span class="gr n-a">A</span> · 25.0%<span class="gr n-a">A+</span></div><div class="q-bo"><div><i>BP</i>3.25 <em class="">4.6 IP</em></div><div><i>OF</i><b class="">98</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>3.1 <em class=""></em></div><div><i>OF</i><b class="">103</b> <em class="mut">vs LHP</em></div></div></div>
+  <div class="detwrap"><button type="button" class="detb" onclick="detTog(2)" id="detAr2" aria-expanded="false" aria-controls="det2">Detail ▾</button></div>
+  <div class="det" id="det2" style="display:none"><div class="d-teams"><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/BOS.png" alt="BOS" onerror="this.style.display='none'"><span>BOS</span></div><div class="d-bt">Profile</div><table class="d-pf"><thead><tr><th title="Contact — how often he puts the ball in play (fewer strikeouts)">CON</th><th title="Power — how hard he hits when he connects (SLG minus AVG)">POW</th><th title="Discipline — how much he walks, meaning how much he respects the zone">EYE</th><th title="Bases — how much he gains running (stolen bases, minus caught stealing)">BSR</th><th title="Defense — how many balls in play he turns into outs">DEF</th></tr></thead><tbody><tr><td><span class="gr n-c">C+</span></td><td><span class="gr n-c">C-</span></td><td><span class="gr n-c">C-</span></td><td><span class="gr n-c">C-</span></td><td><span class="gr n-c">C</span></td></tr></tbody></table><div class="d-bt">Starter</div><div class="d-sub">Payton Tolle <span class="mut">(9-6)</span> · LHP</div><div class="d-ln"><span>ERA</span><span>3.03<span class="gr n-b">B+</span></span></div><div class="d-ln"><span>FIP 3-Year <i class="d-nt">his underlying quality</i></span><span>3.28</span></div><div class="d-ln"><span>K-BB%</span><span>21.7%<span class="gr n-a">A-</span></span></div><div class="d-bt">Last 5 Starts</div><div class="d-ln"><span>vs CLE</span><span>5.2 IP · 2 ER · 5 K</span></div><div class="d-ln"><span>vs KC</span><span>6.0 IP · 0 ER · 7 K</span></div><div class="d-ln"><span>vs BAL</span><span>6.0 IP · 1 ER · 12 K</span></div><div class="d-ln"><span>vs SEA</span><span>5.2 IP · 4 ER · 6 K</span></div><div class="d-ln"><span>vs MIA</span><span>5.1 IP · 2 ER · 7 K</span></div><div class="d-bt">Lineup · OPS</div><div class="d-ln"><span>1 R. Anthony <span class="mut">DH · L</span></span><span>.735</span></div><div class="d-ln"><span>2 A. Rutschman <span class="mut">C · S</span></span><span>.741</span></div><div class="d-ln"><span>3 W. Contreras <span class="mut">1B · R</span></span><span>.902</span></div><div class="d-ln"><span>4 W. Abreu <span class="mut">RF · L</span></span><span>.773</span></div><div class="d-ln"><span>5 C. Rafaela <span class="mut">CF · R</span></span><span>.761</span></div><div class="d-ln"><span>6 N. Sogard <span class="mut">2B · S</span></span><span>.727</span></div><div class="d-ln"><span>7 J. Duran <span class="mut">LF · L</span></span><span>.627</span></div><div class="d-ln"><span>8 T. Story <span class="mut">SS · R</span></span><span>.622</span></div><div class="d-ln"><span>9 C. Durbin <span class="mut">3B · R</span></span><span>.710</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP in 48 h</span><span>4.6</span></div><div class="d-pen">2 consecutive days: none</div></div><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/NYY.png" alt="NYY" onerror="this.style.display='none'"><span>NYY</span></div><div class="d-bt">Profile</div><table class="d-pf"><thead><tr><th title="Contact — how often he puts the ball in play (fewer strikeouts)">CON</th><th title="Power — how hard he hits when he connects (SLG minus AVG)">POW</th><th title="Discipline — how much he walks, meaning how much he respects the zone">EYE</th><th title="Bases — how much he gains running (stolen bases, minus caught stealing)">BSR</th><th title="Defense — how many balls in play he turns into outs">DEF</th></tr></thead><tbody><tr><td><span class="gr n-d">D</span></td><td><span class="gr n-b">B+</span></td><td><span class="gr n-b">B+</span></td><td><span class="gr n-b">B-</span></td><td><span class="gr n-b">B+</span></td></tr></tbody></table><div class="d-bt">Starter</div><div class="d-sub">Cam Schlittler <span class="mut">(14-6)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>1.95<span class="gr n-a">A+</span></span></div><div class="d-ln"><span>FIP 3-Year <i class="d-nt">his underlying quality</i></span><span>2.8</span></div><div class="d-ln"><span>K-BB%</span><span>25.0%<span class="gr n-a">A+</span></span></div><div class="d-bt">Last 5 Starts</div><div class="d-ln"><span>vs TB</span><span>3.0 IP · 1 ER · 5 K</span></div><div class="d-ln"><span>vs AZ</span><span>6.0 IP · 1 ER · 6 K</span></div><div class="d-ln"><span>vs NYM</span><span>6.0 IP · 0 ER · 8 K</span></div><div class="d-ln"><span>vs COL</span><span>7.0 IP · 1 ER · 10 K</span></div><div class="d-ln"><span>vs LAA</span><span>8.0 IP · 1 ER · 9 K</span></div><div class="d-bt">Lineup · OPS</div><div class="d-ln"><span>1 P. Goldschmidt <span class="mut">1B · R</span></span><span>.765</span></div><div class="d-ln"><span>2 B. Rice <span class="mut">DH · L</span></span><span>.897</span></div><div class="d-ln"><span>3 H. Ramos <span class="mut">RF · R</span></span><span>.716</span></div><div class="d-ln"><span>4 C. Bellinger <span class="mut">LF · L</span></span><span>.767</span></div><div class="d-ln"><span>5 G. Lombard Jr. <span class="mut">SS · R</span></span><span>.699</span></div><div class="d-ln"><span>6 A. Rosario <span class="mut">3B · R</span></span><span>.684</span></div><div class="d-ln"><span>7 A. Volpe <span class="mut">2B · R</span></span><span>.657</span></div><div class="d-ln"><span>8 S. Jones <span class="mut">CF · L</span></span><span>.742</span></div><div class="d-ln"><span>9 A. Wells <span class="mut">C · L</span></span><span>.624</span></div></div></div></div>
+</div></div><div class="gitem">
+<div class="gc">
+  <div class="e-hd">Petco Park · <time class="h-loc" data-utc="2026-09-30T02:00:00Z">9:00 PM</time></div>
+  <div class="e-chips"><div class="lb-ajs"><span class="lb-aj dn" title="Park factor: how much this stadium scores relative to the league average"><i>PF</i> -6.0%</span><span class="lb-aj " title="Weather: how much this day departs from NORMAL for this park at this time"><i>WX</i> +0.0%</span></div></div>
+  <div class="e-mid"><div class="e-eq"><img class="e-lg" src="logos/CHC.png" alt="CHC" onerror="this.style.display='none'"><div class="e-ab">CHC<span class="e-ml">+103</span></div><div class="e-win">37.6% win</div><div class="e-jm">(+166)</div></div>
+    <div class="e-num">
+      <div class="e-runs"><span>3.78</span><i>EXP<br>RUNS</i>
+        <span>4.8</span></div>
+      <div class="e-teq" title="True probability that the team exceeds 4.5 runs. Note: the balance is not at 4.5, it is near 5.2."><span>o4.5 <b>33%</b></span><i></i><span>o4.5 <b>46%</b></span></div>
+      <div class="e-tot">Expected total <b>8.59</b></div>
+      <div class="e-mkt">7.5 (-102/-118)</div><span class="lb-pill pr"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Projected</span>
+    </div><div class="e-eq"><img class="e-lg" src="logos/SD.png" alt="SD" onerror="this.style.display='none'"><div class="e-ab">SD<span class="e-ml">-124</span></div><div class="e-win">62.4% win</div><div class="e-jm">(-166)</div></div></div>
+  <div class="n-eds"><span class="ec on" title="The Model gives SD 62.4% and the price asks 55.4%: +7.0 points in your favor, commission included.">SD ML +7.0%</span><span class="ec peq" title="The Model gives 55.1% to the over and the price asks for 50.5%: +4.6 points. Measured each morning: the side that the Model marks hits 45.8% needing 52.0% (83 games); it will turn green when it hits 3 points above in 150 games.">Over 7.5 +4.6%</span></div>
+  <div class="q-rot">ERA · FIP · K-BB</div>
+  <div class="q-g"><div class="q-nom">M. Boyd <span class="mn">(L)</span></div><div class="q-nom r">M. King <span class="mn">(R)</span></div><div class="q-val">3.91<span class="gr n-c">C+</span> · 4.25<span class="gr n-b">B-</span> · 11.0%<span class="gr n-c">C</span></div><div class="q-val r">3.21<span class="gr n-b">B+</span> · 4.19<span class="gr n-b">B-</span> · 11.8%<span class="gr n-c">C</span></div><div class="q-bo"><div><i>BP</i>3.93 <em class="">8.0 IP</em></div><div><i>OF</i><b class="up">105</b> <em class="mut">vs RHP</em></div></div><div class="q-bo r"><div><i>BP</i>2.64 <em class="">3.0 IP</em></div><div><i>OF</i><b class="">99</b> <em class="mut">vs LHP</em></div></div></div>
+  <div class="detwrap"><button type="button" class="detb" onclick="detTog(3)" id="detAr3" aria-expanded="false" aria-controls="det3">Detail ▾</button></div>
+  <div class="det" id="det3" style="display:none"><div class="d-teams"><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/CHC.png" alt="CHC" onerror="this.style.display='none'"><span>CHC</span></div><div class="d-bt">Profile</div><table class="d-pf"><thead><tr><th title="Contact — how often he puts the ball in play (fewer strikeouts)">CON</th><th title="Power — how hard he hits when he connects (SLG minus AVG)">POW</th><th title="Discipline — how much he walks, meaning how much he respects the zone">EYE</th><th title="Bases — how much he gains running (stolen bases, minus caught stealing)">BSR</th><th title="Defense — how many balls in play he turns into outs">DEF</th></tr></thead><tbody><tr><td><span class="gr n-b">B</span></td><td><span class="gr n-a">A</span></td><td><span class="gr n-a">A</span></td><td><span class="gr n-b">B+</span></td><td><span class="gr n-b">B+</span></td></tr></tbody></table><div class="d-bt">Starter</div><div class="d-sub">Matthew Boyd <span class="mut">(10-5)</span> · LHP</div><div class="d-ln"><span>ERA</span><span>3.91<span class="gr n-c">C+</span></span></div><div class="d-ln"><span>FIP 3-Year <i class="d-nt">his underlying quality</i></span><span>3.82</span></div><div class="d-ln"><span>K-BB%</span><span>11.0%<span class="gr n-c">C</span></span></div><div class="d-bt">Last 5 Starts</div><div class="d-ln"><span>vs MIA</span><span>7.0 IP · 1 ER · 3 K</span></div><div class="d-ln"><span>vs CIN</span><span>5.0 IP · 1 ER · 4 K</span></div><div class="d-ln"><span>vs PIT</span><span>5.1 IP · 4 ER · 3 K</span></div><div class="d-ln"><span>vs MIL</span><span>7.0 IP · 3 ER · 7 K</span></div><div class="d-ln"><span>vs MIL</span><span>5.1 IP · 3 ER · 3 K</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP in 48 h</span><span>8.0</span></div><div class="d-pen">2 consecutive days: none</div></div><div class="d-team"><div class="d-th"><img class="d-lg" src="logos/SD.png" alt="SD" onerror="this.style.display='none'"><span>SD</span></div><div class="d-bt">Profile</div><table class="d-pf"><thead><tr><th title="Contact — how often he puts the ball in play (fewer strikeouts)">CON</th><th title="Power — how hard he hits when he connects (SLG minus AVG)">POW</th><th title="Discipline — how much he walks, meaning how much he respects the zone">EYE</th><th title="Bases — how much he gains running (stolen bases, minus caught stealing)">BSR</th><th title="Defense — how many balls in play he turns into outs">DEF</th></tr></thead><tbody><tr><td><span class="gr n-b">B-</span></td><td><span class="gr n-c">C-</span></td><td><span class="gr n-b">B-</span></td><td><span class="gr n-a">A-</span></td><td><span class="gr n-c">C+</span></td></tr></tbody></table><div class="d-bt">Starter</div><div class="d-sub">Michael King <span class="mut">(12-10)</span> · RHP</div><div class="d-ln"><span>ERA</span><span>3.21<span class="gr n-b">B+</span></span></div><div class="d-ln"><span>FIP 3-Year <i class="d-nt">his underlying quality</i></span><span>3.89</span></div><div class="d-ln"><span>K-BB%</span><span>11.8%<span class="gr n-c">C</span></span></div><div class="d-bt">Last 5 Starts</div><div class="d-ln"><span>vs LAD</span><span>4.0 IP · 5 ER · 5 K</span></div><div class="d-ln"><span>vs COL</span><span>6.0 IP · 2 ER · 6 K</span></div><div class="d-ln"><span>vs SF</span><span>7.0 IP · 3 ER · 4 K</span></div><div class="d-ln"><span>vs NYY</span><span>6.0 IP · 0 ER · 3 K</span></div><div class="d-ln"><span>vs CIN</span><span>6.0 IP · 0 ER · 6 K</span></div><div class="d-bt">Bullpen</div><div class="d-ln"><span>IP in 48 h</span><span>3.0</span></div><div class="d-pen">2 consecutive days: none</div></div></div></div>
+</div></div><div class="lab-pie">
+  <div><div class="lab-pk">Updated</div></div>
+  <div class="lab-pv">09/29/2026 3:00 PM</div>
+</div><details class="gl"><summary class="gl-s"><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Glossary — what each stat means</span><span class="gl-ar">▾</span></summary><div class="gl-p"><div class="gl-h">The Card</div>
+<div class="gl-e"><b><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Confirmed / <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Projected</b> — whether both teams have ALREADY published their official lineup for the day or not yet. With the lineup confirmed, the Model projects with the nine hitters who will actually play.</div>
+<div class="gl-e"><b>The odds next to the team</b> — what the Market is paying now: the consensus price, and if there is none yet, the reference market price.</div>
+<div class="gl-e"><b>% win and the odds in parentheses</b> — the probability of victory that the Model gives to each team and, below, the odds that would be fair if the Model were right, with no commission. If the odds above pay more than the ones below, the Model sees edge on that side.</div>
+<div class="gl-e"><b>EXP RUNS</b> — the runs that the Model projects for each team. It is a <b>projection</b>, not a line. It is tracked each morning against the runs that actually scored.</div>
+<div class="gl-e"><b>o4.5%</b> — the REAL probability that that team exceeds 4.5 runs. You cannot deduce it by looking at the EXP RUNS: a team scores 4.41 on average but 4.0 at the median, and scores zero 7.2% of the time. That's why <b>the balance of an over 4.5 is not at 4.5, it's near 5.2</b>: with the team projected at 5.00 the over still pays at 48%.</div>
+<div class="gl-e"><b>Expected Total</b> — the sum of the two projections; below, the Market line with the over odds and the under odds. <b>The expected total is not compared to the line</b>, and it's the easiest error to make: it is a projection, and the line is set where half the games cross it (the median). Over 368 games, at each line they score on average between 0.2 and 0.8 runs MORE than the line, so a well-calibrated model always comes in above it. For the over/under check the chip below, which already compares probability against probability.</div>
+<div class="gl-e"><b>Detail ▾</b> — opens, by team: its <b>profile</b> in five categories, the starter with his last 5 starts, the lineup with each batter's OPS and the real bullpen load in 48 hours.</div>
+<div class="gl-e"><b>Profile · CON POW EYE BSR DEF</b> — how that team plays, not just how much: <b>CON</b>contact (how often it puts the ball in play), <b>POW</b>power (how much it hits when it connects), <b>EYE</b> (how much it walks), <b>BSR</b> (how much it gains running) and <b>DEF</b>defense. Two teams with the same OPS can play in opposite ways. It goes in the Detail and not on the card because it is context: the Model projects with the OPS against today's pitcher hand, not with these letters.</div>
+<div class="gl-e"><b>How defense is measured</b> — with <b>defensive efficiency</b>: what percentage of balls in play it converts to outs. Not with the fielding percentage, which only counts errors — and a slow outfielder who never gets to the ball never commits one. Among the 30 teams efficiency ranges from .684 to .737; fielding bunches between .983 and .991.</div>
+<div class="gl-e"><b>Order and the freeze</b> — the cards are ordered by first pitch time, from the earliest of the day to the latest. When a game starts, its card freezes just as it was: a record of what the Model said BEFORE, and refreshes only touch games that have not yet begun. There is no live score here: the Model shows what it projects, not how the game is going.</div>
+
+<div class="gl-h">The pitching</div>
+<div class="gl-e"><b>ERA · FIP · K-BB</b> — the three for the starter, always in that order and with its note beside it. The <b>ERA</b> is what they have scored against him; the <b>FIP</b> is what truly depends on him; the <b>K-BB%</b>, how many strikeouts minus what he gives away. They are the numbers that everyone recognizes, but the Model does not project with any of them (see «What the Model projects with»).</div>
+<div class="gl-e"><b>The two FIP</b> — on the card goes the one from <b>this season</b>, the one you recognize at a glance. In the <b>Detail</b> goes the <b>three-season</b>, which is the pitcher's baseline quality. When the two diverge sharply, that itself is information: that pitcher is having an unusual year relative to his line. <b>The grade (A/B/C) always comes from the three-season.</b></div>
+<div class="gl-e"><b>What the Model projects</b> — from Sep 17, with a <b>composite</b>: two-thirds of the <b>Statcast xERA</b> (the ERA he deserved based on contact quality allowed) and one-third FIP. With it the Model ranks the ~240 starting pitchers in the league in a ranking that is tracked every day, as the reference market does. If a starter has no Statcast sample, the Model uses his three-season FIP. ERA does not enter: splitting the season of 80 starters into even and odd starts, the correlation between the two halves is <b>−0.06 in ERA</b> y <b>+0.32 in FIP</b>. Today's ERA does not predict tomorrow's.</div>
+<div class="gl-e"><b>A starter not yet announced (TBD)</b> — is not treated as an average starter: he enters as <b>that team's bullpen</b>, who will actually pitch. Measured across 2,206 team-games: teams without an announced starter allowed 5.13 runs against 4.48 from the rest.</div>
+<div class="gl-e"><b>A FIP with no grade</b> — means that pitcher does not have enough sample (fewer than 300 batters over three seasons). It is not an error: it is the way not to hand him a letter he has not earned. Inside the Model does the same: it shrinks him toward the league average.</div>
+<div class="gl-e"><b>F (FIP)</b> — measures only what the pitcher controls (strikeouts, walks, home runs); removes luck and defense, which is why it predicts better. Same scale as ERA. FIP lower than his ERA = improvement coming; higher = overvalued.</div>
+<div class="gl-e"><b>BP</b> — that team's bullpen: the ERA and FIP of its relievers, equally weighted. Alongside, how they arrive: <b>rested</b>, the innings he has pitched in 48 hours, or how many relievers are <b>burned out</b> (threw on two straight days). Since Sep 17, the Model measures it with a <b>ranking of the 30 bullpens</b> that mixes each reliever's FIP and xERA, weighted by their innings: a bullpen's ERA is one of baseball's noisiest numbers.</div>
+<div class="gl-e"><b>OF</b> — that team's offense <b>against the hand pitching today</b>, not its overall index: 100 = the league. Batting .700 against lefties is not the same as against righties, and the Model crosses each offense with the opposing starter's hand.</div>
+
+<div class="gl-h">Game context</div>
+<div class="gl-e"><b>PF · WX · UMP</b> — the three factors that multiply the projected total, each with the % it moves. They are shown separately so you can see where the number comes from.</div>
+<div class="gl-e"><b>PF (park factor)</b> — how many runs this stadium scores relative to the league average: the <b>Statcast</b>run index, three seasons and by ballpark (not by team, which breaks when a club moves). It is used in full, without trimming: Coors <b>+25%</b>, Globe Life <b>−12%</b>.</div>
+<div class="gl-e"><b>WX (weather)</b> — how far the day departs from what is <b>normal in THAT park in THAT season</b>, not the league average: the typical Kansas City heat in August is already inside its park factor, and counting it twice inflated the total. Uses temperature, wind and its direction. Measured over 1,513 games: +0.5% per degree above normal and +0.4% per mph of wind toward center field. <b>Closed</b> = the roof is closed and weather does not apply.</div>
+<div class="gl-e"><b>UMP (umpire)</b> — effect of the home plate umpire on runs, measured in 6,934 games over three seasons. Each game is compared to that stadium's average that year (so the park does not contaminate) and the result is shrunk by how many games the umpire has called: at 80 games it retains less than one-third of its number. The true dispersion among umpires is 0.31 runs. If it does not appear, the umpire has not yet been announced.</div>
+
+<div class="gl-h">The Model against the Market</div>
+<div class="gl-e"><b>Fair line</b> — the market consensus with commission already removed: what the market truly believes. It shows how much the Model differs from consensus. The Model's edge, by contrast, is measured against what <b>you get paid</b> (see below), because that difference is what decides whether money is made.</div>
+<div class="gl-e"><b>CHC ML +4.2%</b> — the Model's edge on the winner, in <b>percentage points</b>: what the Model gives that team minus what the price you get paid demands, with commission inside. It appears whenever there is an edge, large or small; if neither side has one, the chip says "No ML edge".</div>
+<div class="gl-e"><b>Over 9.0 +2.1%</b> — the same for the total, also in percentage points. The Model converts its expected runs into probability of over and under, and each side is compared with what that side pays you; whichever has the most surplus appears. <b>Today is context, not a signal:</b> on Sep 17, over 227 games, the totals model had the side hitting 50.9%, and at −110 it takes 52.4% to break even. Now it is tracked each morning: the side that marks hits 45.8% needing 52.0% (83 games); it will turn green when it hits 3 points above in 150 games. <b>It will turn green from 3 points, like the winner's, the day the side it marks is right at least 3 points above what its prices required, over 150 games</b>; and if it drops later, it goes back to white only.</div>
+<div class="gl-e"><b>The chip's color</b> — <b style="color:#3fb950">green</b> = 3 points or more (on the winner; on the total, only when it has earned it, see above), <b>white</b> = less than 3, <b>gray</b> = no edge. <b>Heads up: the color does NOT mean "stronger signal".</b> It is only how far the Model separates from the price. Read the entries below before using it.</div>
+<div class="gl-e"><b><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>The Model's edge is NOT a signal, and this was corrected on Sep 9, 2026</b> — until that date this said the band of 3 to 6 points was "the only one that made money (50.3%, +4.8% ROI)". That number came from comparing the Model with the <b>history of analysis</b>. Measured the right way, <b>against the ACTUAL results of the games</b>, the opposite came out (with the Model and the measurement method before Sep 17):</div>
+<div class="gl-e"><b>3 to 6 points</b> — 40 games: hits <b>35.0%</b> needing 47.4%. ROI <b style="color:#f85149">−31.2%</b>, with confidence interval entirely below zero. <b>It was the worst of the three bands, not the best.</b> · <b>6 to 10 points</b> — 41.2%, ROI −12.4% · <b>More than 10</b> — 28.6%, ROI −18.9%.</div>
+<div class="gl-e"><b>Why it failed</b> — over 507 games with results, the Model had a Brier of <b>0.2488</b> versus <b>0.2386</b> from the Market, worse than always saying the same thing (0.2480). It compressed everything toward 50%: when the Market gave 68% to the home team, the Model said 58%. And when it disagreed with the Market <b>it was wrong in the direction of its disagreement</b>.</div>
+<div class="gl-e"><b>What corrected on Sep 17</b> — it was recalibrated with 372 games split in two: the slope, which measures how much the Model commits compared to the Market (1.00 = equal), went from <b>0.47 a 0.95</b>, and the Brier fell from 0.2433 to <b>0.2378</b> in the half the Model had not seen. That same day the starter composite and the bullpen ranking entered, so <b>that measure needs to be repeated</b>: it is done with data saved each day since then.</div>
+<div class="gl-e"><b>What to do with this</b> — since Sep 9 the Model <b>doesn't reach the brain</b>: the analysis is decided without it, with pitching, bullpen, offense, form and price. The door to return is written in advance: that its Brier equals or beats the Market's <b>over 150 games or more</b>, and each morning's report monitors it alone. Still it would return gradually: first in shadow, with no decision, and then with a small weight. Meanwhile, use it to <b>understand the game</b> —what offense hits, what bullpen holds, how the park and weather weigh—, not to choose the side.</div>
+</div></details></div><script>function detTog(i){var p=document.getElementById('det'+i);var o=p.style.display!=='none';p.style.display=o?'none':'block';var b=document.getElementById('detAr'+i);b.textContent=o?'Detalle ▾':'Detalle ▴';b.setAttribute('aria-expanded',o?'false':'true');}
+function recTog(){var p=document.getElementById('recPanel');var o=p.style.display!=='none';p.style.display=o?'none':'block';document.getElementById('recAr').textContent=o?'▾':'▴';}</script></section><footer class="legal"><div class="legal-c">© 2026 CY Elite Lab. All rights reserved.</div><div class="legal-l"><a href="/en/legal#terminos">Terms</a> · <a href="/en/legal#privacidad">Privacy</a> · <a href="/en/legal#reembolsos">Refunds</a></div></footer></main><nav><a href="/en/" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg><span>Analysis</span></a><a href="/en/model" class="nav-i on" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6.5L5.2 18a2 2 0 0 0 1.8 3h10a2 2 0 0 0 1.8-3L14 9.5V3"/><path d="M7.5 15h9"/></svg><span>Model</span></a><a href="/en/market" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span>Market</span></a><a href="/en/record" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>Record</span></a></nav></div><script>var _t=function(s){return s};
+(function(){
+  var els = document.querySelectorAll('time[data-utc]');
+  if (!els.length) return;
+  var f;
+  try {
+    // SIN LA ZONA (15-sep-2026, Cesar): «8:00 PM», no «8:00 PM CDT».
+    f = new Intl.DateTimeFormat([], {hour:'numeric', minute:'2-digit'});
+  } catch (e) { return; }          // navegador viejo: se queda la de Houston
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i], d = new Date(el.getAttribute('data-utc'));
+    if (isNaN(d.getTime())) continue;
+    var ct = el.textContent;
+    try {
+      el.textContent = f.format(d);
+      el.title = _t('Your device time · ') + ct + _t(' in Houston');
+    } catch (e) {}
+  }
+})();
+</script><script>
+(function () {
+  try {
+    var LS = "sb-wzhoeptnsaaewtralkla-auth-token", LIB = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js", SRI = "sha384-iLddHTLokph6Omwoyid4XKxHaWa6w41BnoEj0q5oOrzmYPpHIKt1wyjReA7s//pP", SB_URL = "https://wzhoeptnsaaewtralkla.supabase.co", SB_CLAVE = "sb_publishable_MnTtV32UEIqjwt_NIGdUrw_LFe9hInM";
+    var COOKIE = 'cy_sesion';
+    var dom = /(^|\.)cyelitelab\.com$/.test(location.hostname) ? '; domain=cyelitelab.com' : '';
+    function poner(token, seg) {
+      document.cookie = COOKIE + '=' + token + '; path=/; max-age=' + Math.max(0, Math.floor(seg)) +
+                        '; secure; samesite=lax' + dom;
+    }
+    function quitar() {
+      if (document.cookie.indexOf(COOKIE + '=') < 0) return;
+      document.cookie = COOKIE + '=; path=/; max-age=0; secure; samesite=lax' + dom;
+    }
+    function datos(token) {
+      try {
+        var p = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+        while (p.length % 4) p += '=';
+        return JSON.parse(atob(p));
+      } catch (e) { return null; }
+    }
+    function puedeVer(d) {
+      var pag = {'/': 'analisis', '/lab': 'modelo', '/trends': 'mercado'}[location.pathname];
+      var am = (d && d.app_metadata) || {};
+      if (!pag) return false;
+      if (am.rol === 'ceo') return true;
+      if (am.plan !== 'elite' && am.plan !== 'vip') return false;
+      if (am.plan_hasta && !(Date.parse(am.plan_hasta) > Date.now())) return false;
+      return am.plan === 'elite' || pag === 'analisis';
+    }
+    function revisar(token) {
+      if (!puedeVer(datos(token))) return;
+      var meta = document.querySelector('meta[name="cy-portero"]');
+      var libre = !!meta && meta.getAttribute('content') === 'libre';
+      if (!libre && !(meta === null && location.search)) return;
+      var marca = 'cy-portero:' + location.pathname, huella = token.slice(-16);
+      try {
+        if (sessionStorage.getItem(marca) === huella) return;
+        sessionStorage.setItem(marca, huella);
+      } catch (e) { return; }
+      if (libre) location.reload();
+      else location.replace(location.pathname + location.hash);
+    }
+    var crudo = null;
+    try { crudo = localStorage.getItem(LS); } catch (e) {}
+    if (!crudo) { quitar(); return; }
+    var s = JSON.parse(crudo), ahora = Date.now() / 1000;
+    if (s && s.access_token && s.expires_at && s.expires_at - ahora > 60) {
+      poner(s.access_token, s.expires_at - ahora);
+      revisar(s.access_token);
+      return;
+    }
+    if (document.getElementById('cu')) return;   // la cuenta ya renueva y pone la cookie
+    var sc = document.createElement('script');
+    sc.src = LIB; sc.integrity = SRI; sc.crossOrigin = 'anonymous'; sc.async = true;
+    sc.onload = function () {
+      try {
+        var sb = window.supabase.createClient(SB_URL, SB_CLAVE, {
+          auth: { persistSession: true, autoRefreshToken: false, detectSessionInUrl: false } });
+        sb.auth.getSession().then(function (r) {
+          var se = r && r.data && r.data.session;
+          if (se && se.access_token) {
+            poner(se.access_token, (se.expires_at || 0) - Date.now() / 1000);
+            revisar(se.access_token);
+          } else {
+            quitar();
+          }
+        });
+      } catch (e) {}
+    };
+    document.head.appendChild(sc);
+  } catch (e) {}
+})();
+</script><!-- generado 09/29/2026 3:00 PM --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"213a962e55df47d88f79e5a2f6237975","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>

@@ -1,0 +1,1126 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Account · CY Elite Lab</title><meta name="google-site-verification" content="xdkj6Fp3ejJGJtHyyTTRjChzL4xnyODr5oWhE0P6ISQ"><meta name="robots" content="noindex,follow"><meta name="description" content="MLB statistical model with public record: 133-114 in 247 closed analysis (53.8%). Every result verified against two independent sources."><meta name="theme-color" content="#0d1117"><meta property="og:type" content="website"><meta property="og:site_name" content="CY Elite Lab"><meta property="og:title" content="CY Elite Lab — 2026-09-29"><meta property="og:description" content="MLB statistical model with public record: 133-114 in 247 closed analysis (53.8%). Every result verified against two independent sources."><meta property="og:image" content="https://cyelitelab.com/og.png?v=2026-09-29"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://cyelitelab.com/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="CY Elite Lab — 2026-09-29"><meta name="twitter:description" content="MLB statistical model with public record: 133-114 in 247 closed analysis (53.8%). Every result verified against two independent sources."><meta name="twitter:image" content="https://cyelitelab.com/og.png?v=2026-09-29"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='o' gradientUnits='userSpaceOnUse' x1='40' y1='22.03' x2='55' y2='77.97'%3E%3Cstop offset='0' stop-color='%23ffecaa'/%3E%3Cstop offset='.28' stop-color='%23f0c862'/%3E%3Cstop offset='.52' stop-color='%23c99630'/%3E%3Cstop offset='.7' stop-color='%23f4d072'/%3E%3Cstop offset='1' stop-color='%239e6e1d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%230a0b0d'/%3E%3Cpath fill='url(%23o)' d='M35.8 22.03 A23.76 23.76 0 0 0 35.8 69.55 L35.8 60.37 A14.58 14.58 0 0 1 35.8 31.21Z M35.8 22.03 L52.07 22.03 L63.47 37.53 L75.25 22.03 L88 22.03 L67.77 48.31 L67.77 77.97 L58.08 77.97 L58.08 48.38 L45.46 31.21 L35.8 31.21Z M35.8 60.37 L50.43 60.37 L55.36 67.09 L55.36 69.55 L35.8 69.55Z'/%3E%3C/svg%3E"><link rel="apple-touch-icon" sizes="180x180" href="https://cyelitelab.com/icono-v2-180.png"><link rel="manifest" href="https://cyelitelab.com/manifest.json"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}</script><style>
+:root{--bg:#0d1117;--card:#161b22;--panel:#0f141a;--line:#30363d;--line2:#21262d;
+--text:#e6edf3;--soft:#c9d1d9;--mut:#8b949e;--faint:#6e7681;--mut2:#8b949e;
+--green:#3fb950;--red:#f85149;--gold:#d4af37;--gold2:#f0c75e;--purple:#a371f7;--blue:#58a6ff;
+--font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{-webkit-text-size-adjust:100%;overflow-y:scroll}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font-family:inherit}
+.mono{font-variant-numeric:tabular-nums}
+.app{max-width:480px;margin:0 auto;min-height:100vh;padding-top:66px;padding-bottom:calc(74px + env(safe-area-inset-bottom));position:relative;overflow-x:hidden}
+/* LA BARRA DE ARRIBA, COMO EN LINEMATE (19-sep-2026). Cesar mando un video de esa
+   app y eligio la version con el nombre al centro viendo el mockup (opcion 1).
+   Antes era una caja casi opaca y desenfocada: lo que pasaba por debajo no se veia.
+   Ahora no hay caja ni desenfoque: el contenido pasa por debajo del nombre y se
+   sigue leyendo, oscurecido. Los tramos del degradado son los MEDIDOS en el video,
+   pixel a pixel: ~73% a la altura del nombre, ~45% abajo, y se suelta del todo al
+   final. En reposo no hay nada debajo y la barra es del color de la pagina.
+   El velo es un ::before que baja 16px por debajo de la barra: pointer-events:none,
+   para que esos 16px no se coman los toques de la tarjeta que pase por ahi (la
+   leccion del 5-sep). El 5-sep se rechazaron tres versiones que solo difuminaban el
+   borde de la caja vieja: la diferencia es que aqui la caja desaparece. */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:30;max-width:480px;margin:0 auto;padding:15px 18px;text-align:center}
+.topbar::before{content:"";position:absolute;left:0;right:0;top:0;bottom:-16px;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(13,17,23,.92) 0%,rgba(13,17,23,.74) 28%,rgba(13,17,23,.55) 62%,rgba(13,17,23,.42) 82%,rgba(13,17,23,0) 100%)}
+.topbar h1{font-size:24px;font-weight:800;letter-spacing:.5px;background:linear-gradient(90deg,#d4af37,#f0c75e,#d4af37);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 1px 8px rgba(0,0,0,.55))}
+/* LA CABECERA DE CADA PAGINA (19-sep-2026, opcion C, elegida por Cesar viendo el
+   mockup de las 8 paginas reales). El titulo a la izquierda y, a la derecha, el
+   numero que importa en esa pagina: el dia, los partidos, el acierto, lo que
+   falta para el cobro. Ver _cabecera().
+   Sustituye a la linea gris .date, que cada pagina usaba a su manera (la fecha en
+   Analisis, el nombre en Ajustes, nada en Modelo y Mercado) y que ademas iba 18px
+   mas adentro que las tarjetas. La cabecera va al borde de ellas.
+   Las secciones de dentro (.sec-h en el Record, .set-h en Ajustes) van todas en
+   el mismo estilo: letra normal, mas grande, sin mayusculas. */
+.cab{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;padding:16px 2px 12px;font-family:var(--font)}
+.cab-tx{min-width:0}
+.cab-t{margin:0;font-family:var(--font);font-size:23px;font-weight:800;letter-spacing:-.015em;line-height:1.15;color:var(--text);text-wrap:balance}
+.cab-s{margin:4px 0 0;font-size:12.5px;line-height:1.35;color:var(--mut)}
+.cab-d{text-align:right;flex-shrink:0}
+.cab-n{font-size:23px;font-weight:800;line-height:1;color:var(--text);font-variant-numeric:tabular-nums;white-space:nowrap}
+.cab-l{margin-top:5px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);white-space:nowrap}
+.sec-h{font-size:15px;font-weight:700;letter-spacing:-.005em;color:var(--text);padding:26px 2px 8px}
+/* LOS MISMOS HUECOS EN LAS OCHO (19-sep-2026, Cesar: "que tengan el mismo margen
+   superior e inferior, que todo quede bien compacto"). Medidos con Edge a 430px
+   antes de tocar nada: bajo la cabecera habia 0, 6, 12 o 26px segun la pagina
+   (Record y Ajustes abren con una seccion que traia su propio aire), y antes del
+   pie 26 en seis paginas y 38 en Modelo y Mercado (su envoltorio sumaba 12 mas).
+   Ahora: el titulo a 82px de arriba, 12px bajo la cabecera y 24px antes del pie,
+   en todas. El primer bloque pierde su margen de arriba; el pie pone el suyo, y
+   el margen de abajo del ultimo bloque (12 en las tarjetas) se funde con el. */
+section.on>.cab+*{margin-top:0}
+section.on>.cab+.sec-h,section.on>.cab+.set-h{padding-top:0}
+.lab-real,.trends-real{padding-bottom:0}
+/* El primer separador de Mercado es el rotulo «MERCADO», que repetia el titulo de
+   la cabecera. En trends.html suelto SI hace falta (alli no hay cabecera). */
+.trends-real>.sep:first-child{display:none}
+.trends-real>.sep:first-child+h2{margin-top:0}
+main{padding:0 16px}
+section{display:none}section.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;margin:12px 0}
+.card.elite{border:1px solid var(--gold);background:linear-gradient(160deg,#1e1a0e,#161b22)}
+.card.valor{border:1px solid #aab4c2;background:linear-gradient(160deg,#1b1f26,#161b22)}
+.card.bronce{border:1px solid #cc8b52;background:linear-gradient(160deg,#20170f,#161b22)}
+.badge{font-size:12.5px;font-weight:800;letter-spacing:.4px;color:var(--mut);margin-bottom:12px;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.badge.elite{color:var(--gold2)}.badge.valor{color:#aab4c2}.badge.bronce{color:#cc8b52}.badge.parlay{color:var(--purple)}
+.stars{letter-spacing:1px;font-size:11px}
+.row{display:flex;align-items:center;gap:12px}
+.logos{display:flex;flex-shrink:0}
+.logo{width:42px;height:42px;object-fit:contain;background:none;border:none}
+.logo:nth-child(2){margin-left:6px}.logo.sm{width:30px;height:30px}
+.info{flex:1;min-width:0}
+.pick{font-size:23px;font-weight:800;line-height:1.15;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:12.5px;font-weight:600;margin-top:3px}
+.odds{text-align:right;flex-shrink:0}
+.cuota{font-size:23px;font-weight:800}.cuota.pos{color:var(--green)}.cuota.neg{color:var(--text)}
+.u{background:var(--line2);border-radius:8px;padding:2px 9px;font-size:12.5px;font-weight:700;display:inline-block;margin-top:4px;color:var(--soft)}
+/* PRECIO MINIMO (27-ago-2026) — el dato que hace el pick valido en CUALQUIER
+   casa. Reusa la estructura del chip de ventaja para no romper el diseno.
+
+   RECOGIDO A DOS LINEAS (10-sep-2026). Antes ocupaba CUATRO: el titulo, el
+   contexto, el mejor precio y la comision de Kalshi, cada uno en su renglon,
+   apilados en una columna estrecha al lado del numero grande. En el celular
+   eso era un tercio de la tarjeta para un dato de dos cifras. Ahora el titulo
+   y el numero comparten linea y todo el contexto va en la de abajo, separado
+   por puntos. Es la opcion que eligio Cesar de las tres que se le enseñaron. */
+.pm{margin-top:11px;background:rgba(88,166,255,.10);border:1px solid rgba(88,166,255,.38);border-radius:12px;padding:10px 13px}
+.pm-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.pm-l{font-size:13px;font-weight:800;color:var(--text);white-space:nowrap}
+.pm-v{font-size:23px;font-weight:800;color:#58a6ff;line-height:1;flex-shrink:0}
+.pm-b{font-size:11px;color:var(--mut);font-weight:600;margin-top:5px;line-height:1.5;font-variant-numeric:tabular-nums}
+.pm-b b{color:var(--soft)}
+.pm-g{color:var(--green);font-weight:700}
+.pm.lejos{background:rgba(210,153,34,.09);border-color:rgba(210,153,34,.4)}
+.pm.lejos .pm-v{color:#d29922}
+/* LOS CUATRO PASOS (10-sep-2026) — ver _pasos(). */
+.paso{margin-top:12px}
+.paso-l{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-bottom:3px}
+.paso-l.riesgo{color:#d29922}
+.paso-t{font-size:13px;color:var(--soft);line-height:1.5}
+.paso-t b{color:var(--text)}
+/* SEGUIMIENTO — se publica el analisis pero NO lleva dinero.
+   ANTES SE APAGABA LA TARJETA ENTERA (opacity:.62 + el pick y la cuota en
+   gris). Distinguia, si, pero a costa de no poder leerla: hay dias en que dos
+   de los tres analisis son seguimiento, asi que media pagina quedaba en
+   penumbra justo cuando lo que se quiere es LEERLA --el seguimiento existe
+   para ver si el filtro acierta, y no se puede juzgar lo que no se lee--.
+   Ahora se distingue por COLOR y no por falta de luz: azul, que en esta paleta
+   no significa ni dinero (dorado) ni resultado (verde/rojo), y que se separa
+   del dorado tambien con vision deutan. El borde discontinuo se queda como
+   segunda señal, para no depender solo del color. */
+.card.seg{border-style:dashed;border-color:rgba(88,166,255,.5)}
+/* EL SISTEMA VIVO (14-sep-2026), ver _seccion_vivo(). Aprobado por Cesar en el
+   mockup: la tira de tandas, la hora de publicacion y lo plegado. */
+.vv-tira{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px 4px;margin:12px 0}
+.vv-h{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);padding-bottom:8px}
+.vv-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold2);margin-right:7px;vertical-align:1px;box-shadow:0 0 0 3px rgba(240,199,94,.18)}
+.vv-c{color:var(--gold2);font-variant-numeric:tabular-nums}
+.vv-t{display:grid;grid-template-columns:16px auto minmax(0,1fr) auto;gap:8px;align-items:center;padding:7px 0;border-top:1px solid var(--line2);font-size:12.5px}
+.vv-t .ico{width:15px;height:15px;margin:0;color:var(--soft)}
+.vv-t.esp .ico{color:var(--faint)}
+.vv-th{font-weight:700;color:var(--text);font-variant-numeric:tabular-nums;white-space:nowrap}
+.vv-th .h-loc{border-bottom:none}
+.vv-tj{color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vv-tr{font-weight:700;color:var(--mut);font-size:11px;white-space:nowrap}
+.vv-tr.si{color:var(--gold2)}
+.vv-t.esp .vv-th,.vv-t.esp .vv-tr{color:var(--faint)}
+.vv-pub{margin-top:11px;display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:var(--mut);background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:6px 9px;line-height:1.35}
+.vv-pub .ico{width:14px;height:14px;margin:0;color:var(--soft)}
+.vv-vac-t{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;color:var(--text)}
+.vv-vac-t .ico{width:20px;height:20px;margin:0;color:var(--faint)}
+.vv-vac-d{font-size:13px;color:var(--soft);line-height:1.55;margin-top:7px}
+.vv-vac-s{font-size:11px;color:var(--faint);margin-top:8px}
+.vv-sv{border-top:1px solid var(--line2)}
+.vv-sv:first-child{border-top:none}
+.vv-sv>summary{list-style:none;cursor:pointer;padding:9px 1px}
+.vv-sv>summary::-webkit-details-marker{display:none}
+.vv-sv>.card{margin:2px 0 12px}
+.vv-svt{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:14px;font-weight:800;color:var(--text)}
+.vv-svd{font-size:12.5px;color:var(--mut);margin-top:2px;line-height:1.45}
+.vv-svd b{color:var(--soft)}
+@media (prefers-reduced-motion:no-preference){.vv-dot{animation:vvlat 2.4s ease-in-out infinite}}
+@keyframes vvlat{50%{box-shadow:0 0 0 6px rgba(240,199,94,0)}}
+.u.seg{background:rgba(88,166,255,.14);border:1px solid rgba(88,166,255,.5);color:#79b8ff;font-size:11px;letter-spacing:.3px}
+.razon{color:var(--soft);font-size:13px;line-height:1.62;margin-top:13px;border-left:2px solid var(--gold);padding-left:12px}
+/* La hora local lleva un subrayado de puntos: avisa de que ese dato se ha
+   adaptado a tu reloj, y el title cuenta cual era la de Houston. Sin color
+   propio — no es una alerta, es una cortesia. */
+.h-loc{border-bottom:1px dotted var(--faint);cursor:help}
+/* LA TARJETA CERRADA Y SU GANCHO (12-sep-2026) — ver _tarjeta_cerrada().
+   Conserva el marco y la medalla del nivel a proposito: lo que se tapa es el
+   contenido, no la categoria. Que se vea que ahi hay una señal elite es medio
+   argumento de venta; taparla tambien seria tirarlo. */
+.card.cerr{border-style:dashed}
+.cerr-t{color:var(--soft);font-size:15px}
+.cerr-ic{width:26px;height:26px;color:var(--faint)}
+.gan{margin-top:13px;background:linear-gradient(160deg,rgba(212,175,55,.10),var(--panel));border:1px solid rgba(212,175,55,.4);border-radius:12px;padding:13px 14px}
+.gan-t{font-size:13px;font-weight:800;color:var(--gold2);margin-bottom:6px}
+.gan-t time{border-bottom-color:rgba(212,175,55,.5)}
+.gan-d{font-size:12.5px;line-height:1.55;color:var(--soft)}
+.gan-d b{color:var(--text)}
+.gan-b{display:inline-block;margin-top:11px;background:var(--gold);color:#0d1117;font-weight:800;font-size:13px;padding:9px 16px;border-radius:9px;text-decoration:none}
+.gan-b:hover,.gan-b:focus-visible{background:var(--gold2)}
+.mut{color:#8b949e}
+/* EL PIE LEGAL (11-sep-2026) — ver _pie(). Se llama .legal y NO .pie porque
+   Trends ya usa .pie para el pie de sus tarjetas de rival, con otros valores:
+   lo cazo comprobar_web.py al publicar, que para eso esta. Deliberadamente
+   discreto: tiene que
+   ESTAR y poder leerse, no competir con los analisis. Va dentro de <main>, asi
+   que el padding-bottom de .app ya lo separa de la barra fija de abajo. */
+/* PLANES (12-sep-2026) — ver generar_planes(). Tarjetas apiladas: el ancho de
+   la app son 480px, asi que tres columnas no caben ni en escritorio. */
+.pl-av{background:rgba(212,175,55,.07);border:1px solid var(--gold);border-radius:14px;padding:16px 17px;margin-bottom:20px}
+.pl-av-t{font-size:15px;font-weight:800;color:var(--gold2);line-height:1.35;margin-bottom:9px}
+.pl-av p{font-size:13px;line-height:1.62;color:var(--soft);margin:0 0 10px}
+.pl-av p b{color:var(--text);font-weight:800}
+.pl-av-p{margin-bottom:0!important;color:var(--text)!important;font-weight:600}
+.pl-prog{display:flex;justify-content:space-between;align-items:baseline;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:9px 12px;margin:0 0 10px;font-size:12.5px;font-variant-numeric:tabular-nums}
+.pl-prog b{font-size:15px;color:var(--gold2)}
+.pl-card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:17px 18px;margin-bottom:13px}
+/* El gratis se queda con el borde neutro a proposito: es el que menos
+   tiene que llamar la atencion, pero la clase se DECLARA para que no
+   salga como huerfana en revisar_todo.py. */
+.pl-card.pl-free{border-color:var(--line)}
+.pl-card.pl-vip{border-color:rgba(88,166,255,.5)}
+.pl-card.pl-elite{border-color:var(--gold);background:linear-gradient(160deg,#1e1a0e,var(--card))}
+.pl-n{font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--mut)}
+.pl-vip .pl-n{color:var(--blue)}.pl-elite .pl-n{color:var(--gold2)}
+.pl-p{font-size:30px;font-weight:800;letter-spacing:-.03em;margin-top:5px;line-height:1;font-variant-numeric:tabular-nums}
+.pl-p small{font-size:13px;font-weight:600;color:var(--mut);letter-spacing:0}
+.pl-p .pl-cts{font-size:.5em;font-weight:800;letter-spacing:0;vertical-align:.62em;margin-left:1px}
+.pl-anual{font-size:11px;color:var(--green);font-weight:600;margin-top:6px}
+.pl-g{font-size:13px;color:var(--soft);margin-top:9px;padding-bottom:11px;border-bottom:1px solid var(--line2);line-height:1.45}
+.pl-l{list-style:none;margin:11px 0 0;padding:0;display:grid;gap:8px}
+.pl-l li{display:flex;gap:9px;align-items:flex-start;font-size:13px;line-height:1.45;color:var(--soft)}
+.pl-l li.off{color:var(--faint)}
+.pl-l li b{color:var(--text)}
+.pl-m{flex-shrink:0;font-size:11px;font-weight:800;margin-top:2px}
+.pl-m.si{color:var(--green)}.pl-m.no{color:var(--red)}
+.pl-esp{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:17px 18px;margin-top:20px;text-align:center}
+.pl-esp-t{font-size:15px;font-weight:800;margin-bottom:8px}
+.pl-esp p{font-size:13px;color:var(--mut);line-height:1.6;margin:0 0 14px}
+.pl-btn{display:inline-block;background:var(--gold);color:#0d1117;font-weight:800;font-size:14px;padding:12px 22px;border-radius:10px;text-decoration:none}
+.pl-btn:hover,.pl-btn:focus-visible{background:var(--gold2)}
+.pl-esp-n{font-size:11px;color:var(--faint);margin-top:11px}
+.pl-esp-n b{color:var(--gold2)}
+.pl-fine{font-size:11px;color:var(--faint);line-height:1.6;margin-top:18px;text-align:center}
+.pl-fine a{color:var(--mut)}
+/* EL CAMPO DEL CORREO (23-sep-2026, PLAN_NEGOCIO §16.6, mockup aprobado por
+   César). Va en la portada y en el Récord, antes del pie legal.
+   EL COLOR ES EL AZUL Y NO EL DORADO, y lo pidió él: «no le pongas el color
+   dorado, ya que en análisis ese es el color de la jugada elite». El azul es
+   el que ya usan el precio mínimo y el seguimiento. */
+.cy-ml{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--blue);
+ border-radius:12px;padding:14px 16px;margin:12px 0}
+.cy-ml-t{font-size:14px;font-weight:800;color:var(--text);margin-bottom:5px}
+.cy-ml-d{font-size:13px;line-height:1.55;color:var(--mut);margin-bottom:11px}
+.cy-ml-d b{color:var(--soft);font-weight:600}
+.cy-ml-f{display:flex;gap:8px}
+.cy-ml-f input{flex:1;min-width:0;background:var(--bg);border:1px solid var(--line);
+ border-radius:9px;padding:11px 12px;color:var(--text);font:400 16px var(--font)}
+.cy-ml-f input::placeholder{color:var(--faint)}
+.cy-ml-f button{flex-shrink:0;background:var(--blue);color:#0d1117;border:none;
+ border-radius:9px;padding:11px 16px;font:800 14px var(--font);cursor:pointer}
+.cy-ml-f button[disabled]{opacity:.55}
+.cy-ml-e{font-size:12.5px;color:var(--red);margin-top:8px}
+.cy-ml-ok{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:var(--soft);line-height:1.55}
+.cy-ml-ok b{color:var(--text)}
+.cy-ml-ok svg{width:17px;height:17px;flex-shrink:0;color:var(--green);margin-top:1px}
+.cy-ml-mas{display:flex;gap:9px;align-items:flex-start;margin-top:11px;padding-top:11px;
+ border-top:1px solid var(--line2);font-size:12.5px;line-height:1.5;color:var(--mut);cursor:pointer}
+.cy-ml-mas input{flex-shrink:0;width:16px;height:16px;margin:1px 0 0;accent-color:var(--blue)}
+/* SIN COLOR EN PLANES (23-sep-2026, César): esa página ya tiene su peso visual
+   --el aviso, el selector, las tres tarjetas-- y un filo azul más competía. En
+   Análisis y en el Récord sí lleva el azul, que ahí es lo único que destaca. */
+.cy-ml.cy-ml-liso{border-left:1px solid var(--line);background:var(--panel)}
+/* La trampa para robots: fuera de la pantalla y fuera del tabulador. */
+.cy-ml-trampa{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+/* EL COBRO ENCENDIDO (23-sep-2026) — ver _planes_vendiendo() y _plan_tarjeta().
+   Estos valores son EXACTAMENTE los del mockup que aprobo Cesar («El cobro de CY
+   Elite», pantalla «1 · Planes»): no hay ni un numero elegido aqui. Lo unico que
+   cambia es el nombre --alli eran .mk-* porque era un mockup suelto, y aqui la
+   casa usa un prefijo por pagina (.pl-) para que revisar_todo.py no las vea
+   huerfanas ni choquen con las de otra pagina. */
+.pl-tog{display:flex;gap:8px;background:var(--card);border:1px solid var(--line2);border-radius:10px;padding:4px;margin:0 0 12px}
+.pl-tog span{flex:1;text-align:center;border-radius:8px;padding:9px 6px;color:var(--mut);font:700 13px var(--font)}
+/* EL MENSUAL, ENCENDIDO EN DORADO: es el unico que se puede comprar hoy. */
+.pl-tog span.on{background:var(--gold);color:#0d1117}
+/* EL ANUAL SE VE PERO ESTA CERRADO (decision de Cesar, 22-sep). Lo dicen TRES
+   cosas y no solo el color: la letra apagada, el candado y la linea de debajo. */
+.pl-tog span.off{color:var(--faint);font-weight:600;display:flex;align-items:center;justify-content:center;gap:6px}
+.pl-lock{width:13px;height:13px;flex-shrink:0}
+.pl-fund{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:11px 13px;font-size:13px;color:var(--soft);margin-bottom:12px;line-height:1.5}
+.pl-fund b{color:var(--text)}
+/* «ANTES DE PAGAR, ESTO» — del lienzo del 22-sep, artboard «Planes, dia 1 de
+   2027», que es el que eligio Cesar el 23-sep viendo la vista previa. Los
+   valores son los suyos: el borde dorado al 30 %, no el dorado entero. */
+.pl-antes{background:var(--card);border:1px solid rgba(212,175,55,.30);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+.pl-antes-t{font-size:14px;font-weight:700;color:var(--gold2);margin-bottom:6px}
+.pl-antes p{font-size:13px;line-height:1.62;color:var(--soft);margin:0}
+.pl-antes p b{color:var(--text);font-weight:600}
+.pl-tog-n{font-size:12.5px;color:var(--mut);line-height:1.6;margin:-6px 2px 14px}
+.pl-cta{display:block;text-align:center;margin-top:14px;background:var(--gold);color:#0d1117;border-radius:10px;padding:12px;font:800 14px var(--font);text-decoration:none}
+.pl-cta:hover,.pl-cta:focus-visible{background:var(--gold2)}
+.pl-actual{margin-top:14px;text-align:center;font-size:12.5px;color:var(--mut);border:1px dashed var(--line);border-radius:10px;padding:10px}
+/* LEGAL (11-sep-2026) — ver generar_legal(). Texto largo para leer en el
+   movil: linea corta, buen interlineado y los titulos bien separados.
+
+   EL PREFIJO ES lgl Y NO lg PORQUE .lg YA ES DE TRENDS (el logo de 22px de
+   sus tablas). Lo canto comprobar_web.py al publicar, igual que antes con
+   .pie. Las cinco paginas comparten hoja de estilo, asi que un prefijo
+   corto acaba chocando: mejor tres letras propias que dos genericas. */
+.lgl-nav{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:6px}
+.lgl-nav a{flex:1;min-width:92px;text-align:center;font-size:12.5px;font-weight:700;color:var(--soft);background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 6px;text-decoration:none}
+.lgl-nav a:hover,.lgl-nav a:focus-visible{border-color:var(--gold);color:var(--gold2)}
+.lgl{display:block;margin-top:26px;scroll-margin-top:74px}
+.legal-l{margin-top:9px;font-size:11px;color:var(--faint);text-align:center}
+.legal-l a{color:var(--mut);text-decoration:none;padding:0 3px}
+.legal-l a:hover,.legal-l a:focus-visible{color:var(--gold2);text-decoration:underline}
+.lgl-h{font-size:15px;font-weight:700}
+.lgl h3{font-size:15px;font-weight:700;color:var(--text);margin:20px 0 7px}
+.lgl p{font-size:13px;line-height:1.7;color:var(--soft);margin:0 0 11px}
+.lgl p b{color:var(--text)}
+.lgl-f{font-size:11px;color:var(--faint);margin-top:11px}
+.lgl-u{margin:0 0 11px;padding-left:18px;display:grid;gap:7px}
+.lgl-u li{font-size:13px;line-height:1.7;color:var(--soft)}
+.lgl-u li b{color:var(--text)}
+.lgl-av{background:rgba(88,166,255,.09);border:1px solid rgba(88,166,255,.34);border-left-width:3px;border-radius:0 11px 11px 0;padding:12px 14px;font-size:13px;line-height:1.6;color:var(--soft);margin:14px 0}
+.lgl-n{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 13px}
+.lgl-volver{color:var(--blue);text-decoration:none;font-weight:600;font-size:13px}
+/* AJUSTES (11-sep-2026) — ver generar_ajustes(). Filas de una linea con su
+   icono, agrupadas bajo cabeceras cortas: el patron de la pantalla de ajustes
+   de una app, que es lo que pidio Cesar. */
+.set-h{font-size:15px;font-weight:700;letter-spacing:-.005em;color:var(--text);margin:0;padding:26px 2px 8px}
+.set-g{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.set-f{display:flex;align-items:center;gap:12px;padding:13px 14px;border-top:1px solid var(--line2);color:var(--text);text-decoration:none;min-height:52px}
+.set-g>*:first-child,.set-g>*:first-child>summary{border-top:none}
+a.set-f:hover,a.set-f:focus-visible{background:var(--line2)}
+.set-i{width:22px;height:22px;flex-shrink:0;color:var(--mut);display:grid;place-items:center}
+.set-i svg{width:20px;height:20px}
+.set-t{flex:1;min-width:0;font-size:14px;font-weight:600;display:flex;flex-direction:column;gap:2px}
+.set-n{font-size:11px;font-weight:400;color:var(--faint);line-height:1.4}
+.set-v{font-size:13px;color:var(--mut);flex-shrink:0;font-weight:400}
+.set-ar{width:17px;height:17px;color:var(--faint);flex-shrink:0}
+/* EL SELECTOR DE IDIOMA (29-sep-2026, Plan Idioma fase 4). Son DOS ENLACES,
+   no un boton: cada idioma es una direccion de verdad y por eso Google puede
+   indexar las dos. Un boton que cambiara los textos en el navegador se veria
+   igual y no serviria para nada de lo que se hace esto. */
+.set-lgs{display:inline-flex;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:2px;flex-shrink:0}
+.set-lg{text-decoration:none;border-radius:7px;padding:5px 11px;font-size:12.5px;font-weight:700;color:var(--mut);letter-spacing:.03em;line-height:1.2}
+.set-lg.on{background:var(--card);color:var(--text)}
+a.set-lg:hover,a.set-lg:focus-visible{color:var(--text)}
+/* La fila del idioma no lleva flecha y el par ES/EN tiene su propio borde:
+   sin esto quedaria pegado al borde de la tarjeta. */
+.set-idi{padding-right:10px}
+.set-d>summary{display:flex;align-items:center;gap:12px;padding:13px 14px;border-top:1px solid var(--line2);cursor:pointer;list-style:none;min-height:52px}
+.set-d>summary::-webkit-details-marker{display:none}
+.set-d[open]>summary .set-ar{transform:rotate(180deg)}
+.set-p{padding:2px 16px 16px;font-size:13px;line-height:1.62;color:var(--soft)}
+.set-p p{margin:0 0 10px}.set-p p:last-child{margin-bottom:0}
+.set-p b{color:var(--text)}
+.set-p a{color:var(--blue)}
+.set-tel{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:11px 13px;font-variant-numeric:tabular-nums;line-height:1.9}
+.set-pie{text-align:center;font-size:11px;color:var(--faint);margin-top:26px;line-height:1.7}
+/* EL COPYRIGHT, IGUAL EN LAS CINCO PAGINAS (11-sep-2026). Antes salia
+   centrado en unas y a la izquierda en otras, y con separaciones distintas,
+   porque cada pagina termina en un bloque con sus propios margenes. Ahora el
+   aire lo pone el pie y no lo que tenga encima: margen fijo arriba, y abajo el
+   padding de .app lo separa de la barra inferior. */
+.legal{margin:24px 0 0;padding-top:14px;border-top:1px solid var(--line2)}
+.legal-c{font-size:11px;line-height:1.55;color:#6e7681;text-align:center;
+  max-width:34em;margin:0 auto}
+/* LA RUEDA DE AJUSTES en la barra de arriba. La barra es text-align:center y
+   el titulo va centrado de verdad (no en un flex), asi que el boton se coloca
+   ENCIMA en absoluto: asi el titulo sigue centrado respecto a la pagina y no
+   respecto al hueco que deje el icono.
+
+   AQUI NO VA UN position:relative PARA LA BARRA, y eso importa. Lo puse y
+   comprobar_web.py lo canto al publicar: la barra ya vale position FIXED, asi
+   que una segunda regla mas abajo la pisaba y habria dejado de quedarse fija
+   al hacer scroll. No hace ninguna falta: un elemento fixed YA ES bloque
+   contenedor de sus hijos absolutos.
+   (Y escrito sin llaves a proposito: un comentario con sintaxis CSS dentro
+   hace que el propio guardian lo lea como una regla de verdad.) */
+.t-set{position:absolute;right:12px;top:50%;transform:translateY(-50%);z-index:2;
+  display:grid;place-items:center;width:36px;height:36px;border-radius:50%;
+  color:var(--mut);text-decoration:none}
+.t-set:hover,.t-set:focus-visible{color:var(--gold2);background:var(--line2)}
+.t-set svg{width:21px;height:21px}
+/* EL z-index DE LOS DOS BOTONES DE LA BARRA (23-sep-2026, lo encontro Cesar:
+   «el boton de atras, al darle encima con el dedo, no funciona; si doy mas a la
+   derecha si»). LA CAUSA: el h1 de la marca lleva un filter:drop-shadow, y un
+   filtro CREA UN CONTEXTO DE APILADO. Eso hace que el titulo se pinte en la
+   misma capa que los elementos posicionados y, por ir DESPUES en el HTML, por
+   ENCIMA de la flecha. El h1 ocupa todo el ancho, asi que se tragaba el toque.
+   La rueda no lo sufria porque va DESPUES del h1 y le gana por orden.
+   Con z-index los dos botones quedan arriba pase lo que pase, y deja de
+   depender del orden del HTML. No se le quita el filtro al h1: ese resplandor
+   es lo que hace legible la marca sobre lo que pasa por debajo al hacer scroll
+   (barra sin caja, decision del 19-sep). */
+.t-atras{position:absolute;left:12px;top:50%;transform:translateY(-50%);z-index:2;
+  display:grid;place-items:center;width:36px;height:36px;border-radius:50%;
+  color:var(--mut);text-decoration:none}
+.t-atras:hover,.t-atras:focus-visible{color:var(--gold2);background:var(--line2)}
+.t-atras svg{width:22px;height:22px}
+/* El pitcheo del dia comparte CSS con clasico.html: CSS_PITCHEO. */
+.card.valor .razon{border-color:#aab4c2}.card.bronce .razon{border-color:#cc8b52}
+.card.parlay{border:2px dashed var(--purple);background:#15121d;padding:14px 16px}
+.patas{display:flex;flex-direction:column;gap:2px}
+.pata{display:flex;align-items:center;gap:11px;padding:8px 0}
+.pata .pn{flex:1;font-size:15px;font-weight:700}.pata .pc{font-size:14px;font-weight:800;color:var(--mut)}
+.combo{display:flex;justify-content:space-between;align-items:center;margin-top:9px;padding-top:11px;border-top:1px solid var(--line2);font-weight:700}
+.combo .cuota{font-size:23px;color:var(--purple)}
+.resumen{background:var(--card);border-left:3px solid var(--green);border-radius:8px;padding:15px 16px;font-size:13px;color:var(--soft);line-height:1.55;margin:12px 0}
+.clv-box{background:#0d1117;border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin:12px 0}
+.clv-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.clv-ti{font-size:12.5px;font-weight:800;color:var(--soft)}
+.clv-n{font-size:15px;font-weight:800}.clv-n.g{color:var(--green)}.clv-n.r{color:var(--red)}
+.clv-sub{font-size:12.5px;color:var(--mut);margin-top:3px}.clv-lec{font-size:11px;color:var(--faint);margin-top:4px;font-style:italic}
+/* ===== HISTORIAL PRO (2-sep-2026) ==========================================
+   TODAS las clases llevan prefijo "hi-", sin excepcion. Es la leccion del mismo
+   dia: el dashboard concatena su hoja, la del LAB y la de Trends, y a igualdad
+   de especificidad gana la ultima. Ese dia costo cuatro fallos en vivo --.gc,
+   .logo, .mut y .chip-- todos por clases cortas sin prefijo. */
+
+/* el veredicto: lo primero que se lee, y sin maquillaje */
+.hi-ver{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:14px 15px;border-left:3px solid var(--gold2)}
+.hi-ver h4{font-size:11px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--gold2);margin:0 0 8px}
+.hi-ver p{font-size:13px;line-height:1.62;color:var(--text);margin:0}
+.hi-ver p+p{margin-top:8px;color:var(--mut);font-size:12.5px}
+.hi-ver b{color:var(--text);font-weight:700}
+
+/* el balance */
+.hi-hero{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:15px;overflow:hidden}
+.hi-ht{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.hi-hn{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums}
+.hi-hs{font-size:12.5px;color:var(--mut)}
+.hi-hg{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:13px;
+  padding-top:12px;border-top:1px solid var(--line)}
+.hi-kpi{text-align:center}
+.hi-kpi b{display:block;font-size:15px;font-weight:800;color:var(--text);
+  line-height:1.2;font-variant-numeric:tabular-nums}
+.hi-kpi span{display:block;font-size:11px;color:var(--mut);margin-top:2px}
+.hi-nota{font-size:12.5px;line-height:1.6;color:var(--mut);margin:10px 2px 0}
+/* LA TEMPORADA CERRADA, EN UNA TARJETA (23-sep-2026) — ver _temporada_cerrada().
+   Del lienzo del 22-sep, artboard «Récord por temporada». Cesar: «ya es una
+   temporada cerrada, no es necesario tanta información ni tanto espacio». */
+.hi-tc{display:flex;flex-direction:column;gap:12px}
+.hi-tc-h{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.hi-tc-g{display:flex;gap:8px}
+.hi-tc-n{flex:1;text-align:center;min-width:0}
+.hi-tc-n b{display:block;font-size:30px;font-weight:800;line-height:1.05;color:var(--text);font-variant-numeric:tabular-nums}
+.hi-tc-n b.g{color:var(--green)}.hi-tc-n b.r{color:var(--red)}
+.hi-tc-n span{display:block;font-size:11px;color:var(--mut);margin-top:4px;line-height:1.4}
+.hi-tc-p{font-size:12.5px;color:var(--mut);line-height:1.65;margin:0}
+.hi-tc-p b{color:var(--soft);font-weight:600}
+/* COMO LE FUE CADA MES: lo unico que queda del detalle de la temporada. */
+.hi-tc-ms{display:flex;flex-direction:column}
+.hi-tc-m{display:grid;grid-template-columns:1fr 42px 62px;align-items:baseline;gap:8px;padding:7px 2px;border-top:1px solid var(--line2);font-size:12.5px}
+.hi-tc-m span:first-child{color:var(--text);font-weight:600}
+.hi-tc-m .mut{text-align:right;font-variant-numeric:tabular-nums}
+.hi-tc-m b{text-align:right;font-weight:800;font-variant-numeric:tabular-nums}
+.hi-tc-m b.g{color:var(--green)}.hi-tc-m b.r{color:var(--red)}
+.hi-cero{background:var(--panel);border:1px solid var(--line2);border-radius:12px;padding:14px 16px;margin-top:12px}
+.hi-cero-t{font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px}
+.hi-cero p{font-size:13px;color:var(--soft);line-height:1.65;margin:0}
+
+/* la curva. El trazo toma el COLOR DEL LADO en el que esta (verde arriba del
+   cero, rojo abajo) con el mismo recorte que el area: nada de un cuarto color
+   encima del relleno, y el signo se lee por la posicion, no por el color. */
+.hi-cv{width:100%;height:auto;display:block;margin:14px 0 0}
+.hi-cv .hi-ln{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.hi-cv .hi-ln.g{stroke:var(--green)}
+.hi-cv .hi-ln.r{stroke:var(--red)}
+.hi-cv .hi-ar{stroke:none}
+.hi-cv .hi-ar.g{fill:rgba(63,185,80,.15)}
+.hi-cv .hi-ar.r{fill:rgba(248,81,73,.15)}
+.hi-cv .hi-cero{stroke:var(--line);stroke-width:1;stroke-dasharray:3 3}
+.hi-cv .hi-pt{fill:var(--green);stroke:var(--card);stroke-width:2}
+
+/* CLV */
+.hi-clv{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:15px}
+.hi-clvt{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.hi-clvn{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums}
+.hi-clvs{font-size:12.5px;color:var(--mut)}
+.hi-pr{margin-top:13px;padding-top:12px;border-top:1px solid var(--line)}
+.hi-prh{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--mut);margin-bottom:9px}
+.hi-pr2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.hi-pr2>div{background:var(--bg);border:1px solid var(--line);border-radius:10px;
+  padding:10px}
+.hi-pr2 b{display:block;font-size:15px;font-weight:800;line-height:1.2;
+  font-variant-numeric:tabular-nums}
+.hi-pr2 span{display:block;font-size:11px;color:var(--mut);margin-top:3px;
+  line-height:1.4}
+
+/* barras divergentes. EL COLOR NO LLEVA EL SIGNIFICADO: verde y rojo no se
+   distinguen con daltonismo (DeltaE 2.2 en deuteranopia, medido con el
+   validador). Lo llevan la POSICION respecto al cero y el numero con signo. */
+.hi-brs{display:flex;flex-direction:column;gap:9px}
+.hi-br{display:grid;grid-template-columns:1fr 92px 62px;align-items:center;gap:9px}
+.hi-brk{font-size:12.5px;font-weight:700;color:var(--text);min-width:0}
+.hi-brk span{display:block;font-size:11px;font-weight:400;color:var(--mut);
+  margin-top:1px;font-variant-numeric:tabular-nums}
+.hi-brt{position:relative;height:16px;background:var(--card);border-radius:4px}
+.hi-brt i{position:absolute;top:3px;height:10px;border-radius:3px}
+.hi-brt i.g{background:var(--green)}
+.hi-brt i.r{background:var(--red)}
+.hi-brt i.z{background:var(--mut)}
+.hi-brt b{position:absolute;left:50%;top:0;width:1px;height:16px;background:var(--line)}
+.hi-brv{font-size:13px;font-weight:800;text-align:right;
+  font-variant-numeric:tabular-nums}
+
+/* mes a mes */
+.hi-t{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hi-t th{font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--mut);text-align:right;padding:0 4px 7px}
+.hi-t th:first-child{text-align:left}
+.hi-t td{font-size:12.5px;padding:7px 4px;border-top:1px solid var(--line)}
+.hi-t td.hi-n{text-align:right;font-weight:700}
+.hi-t td.hi-ms{font-weight:700;color:var(--text)}
+
+/* los ultimos picks, dentro del desplegable */
+.hi-pk{display:flex;align-items:center;gap:10px;padding:8px 0;
+  border-bottom:1px solid var(--line)}
+.hi-pk:last-child{border-bottom:none}
+.hi-pkr{width:22px;height:22px;border-radius:6px;display:flex;align-items:center;
+  justify-content:center;font-size:11px;font-weight:800;flex:none}
+.hi-pkr.W{background:rgba(63,185,80,.14);color:var(--green)}
+.hi-pkr.L{background:rgba(248,81,73,.14);color:var(--red)}
+.hi-pkr.P{background:var(--line);color:var(--mut)}
+.hi-pkb{flex:1;min-width:0}
+.hi-pkp{font-size:12.5px;font-weight:700;color:var(--text)}
+.hi-pkd{font-size:11px;color:var(--mut);margin-top:1px;
+  font-variant-numeric:tabular-nums}
+.hi-pkn{font-size:12.5px;font-weight:800;font-variant-numeric:tabular-nums}
+
+/* el verde y el rojo del historial, compartidos por curva, barras y picks */
+.hi-hn.g,.hi-clvn.g,.hi-brv.g,.hi-pkn.g,.hi-kpi b.g,.hi-pr2 b.g,.hi-t td.g{color:var(--green)}
+.hi-hn.r,.hi-clvn.r,.hi-brv.r,.hi-pkn.r,.hi-kpi b.r,.hi-pr2 b.r,.hi-t td.r{color:var(--red)}
+.hi-brv.z,.hi-pkn.z,.hi-t td.z{color:var(--mut)}
+.acc{width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 15px;color:var(--text);font-weight:800;font-size:14px;cursor:pointer;margin:10px 0;display:flex;align-items:center;gap:7px}
+.acc .cnt{color:var(--mut);font-weight:600;font-size:12.5px}.acc .ar{margin-left:auto;color:var(--mut)}
+/* los iconos de linea: en filas con gap, el gap ya los separa */
+.acc .ico,.badge .ico{margin-right:0}
+.pl-m .ico{display:block;width:13px;height:13px;margin:0}
+details.dd summary{list-style:none}details.dd summary::-webkit-details-marker{display:none}
+details.dd .pnl{border:1px solid var(--line);border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:12px;background:var(--panel)}
+.dlist{list-style:none;font-size:13px;color:var(--soft)}.dlist li{padding:6px 0;border-top:1px solid var(--line2)}.dlist li:first-child{border:none}
+.hero{background:linear-gradient(160deg,#16191f,#101216);border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0 4px}
+.hero .lbl{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.hero .net{font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1;margin:6px 0 2px}
+.hero .net.g{color:var(--green)}.hero .net.r{color:var(--red)}
+.hero .sub2{font-size:13px;color:var(--mut);font-weight:600}
+.hero .bar{height:7px;border-radius:99px;background:var(--red);margin:14px 0 10px;overflow:hidden;display:flex}
+.hero .bar i{background:var(--green);display:block}
+.hero .stats{display:flex;gap:8px}
+.hero .stat{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:9px 11px}
+.hero .stat b{font-size:15px;font-weight:800}.hero .stat span{display:block;font-size:10px;color:var(--faint);font-weight:600;margin-top:1px;text-transform:uppercase;letter-spacing:.05em}
+.hrow{display:flex;align-items:center;gap:12px;padding:11px 4px;border-bottom:1px solid var(--line2)}
+.hres{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;font-size:11px;font-weight:800;flex:none}
+.hres.W{color:var(--green);background:rgba(63,185,80,.14)}.hres.L{color:var(--red);background:rgba(240,82,77,.13)}.hres.P{color:var(--faint);background:var(--line2)}
+.hb{flex:1}.hb .hp{font-size:14px;font-weight:700}.hb .hd{font-size:11px;color:var(--faint);font-weight:600}
+.hn{font-size:14px;font-weight:800}.hn.g{color:var(--green)}.hn.r{color:var(--red)}.hn.z{color:var(--faint)}
+/* EL CIERRE DEL DIA (19-sep-2026) — ver _cierre_del_dia(). */
+.cie{display:flex;flex-direction:column;gap:11px}
+.cie-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cie-est{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:3px 10px;border:1px solid}
+.cie-est.g{color:var(--green);background:rgba(63,185,80,.12);border-color:#1d4428}
+.cie-est.r{color:var(--red);background:rgba(248,81,73,.1);border-color:#5c2523}
+.cie-est.z{color:var(--soft);background:var(--line2);border-color:var(--line)}
+.cie-cnt{font-size:12.5px;color:var(--mut);font-weight:600}
+.cie-res{font-size:13px;color:var(--soft);line-height:1.55}
+.cie-res b{color:var(--text)}
+.cie-pie{border-top:1px solid var(--line2);padding-top:10px;font-size:12.5px;color:var(--mut);line-height:1.5}
+.cie-pie b{color:var(--text)}
+.frame-wrap{border:none;margin:0}
+.frame{width:100%;height:calc(100vh - 150px);border:1px solid var(--line);border-radius:14px;background:var(--bg)}
+.note{color:var(--faint);font-size:12.5px;text-align:center;padding:12px 8px 2px;line-height:1.55}
+.nota-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;text-align:center;color:var(--soft);margin:12px 0}
+.bj-vuelta{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--mut)}.bj-vuelta a{color:var(--mut)}
+nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 auto;background:rgba(15,20,26,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;padding:8px 4px calc(8px + env(safe-area-inset-bottom))}
+.nav-i{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:none;color:var(--faint);font-family:inherit;cursor:pointer;padding:5px 0;text-decoration:none}
+.nav-i svg{width:24px;height:24px;display:block}.nav-i span{font-size:11px;font-weight:700}
+.nav-i.on{color:var(--text)}.nav-i.on svg{color:var(--gold2)}
+/* EL MISMO GESTO QUE LA RUEDA (11-sep-2026, peticion de Cesar): al pasar el
+   raton, el icono se enciende en dorado y el texto aclara. Antes los cuatro de
+   abajo eran los unicos elementos pulsables de la web que no respondian.
+
+   DOS DETALLES QUE NO SE VEN PERO IMPORTAN:
+
+   · Va dentro de @media (hover:hover). En un movil NO existe el raton, y un
+     :hover suelto se queda PEGADO despues de tocar: el icono se enciende y
+     asi se queda hasta que tocas otra cosa. Con esta condicion, el telefono
+     ni lee la regla.
+   · El :active si es para el movil: da el destello al tocar, que es la
+     confirmacion de que el dedo acerto.
+
+   La pestaña activa (.on) no cambia al pasar por encima: ya esta encendida y
+   parpadear seria ruido. */
+@media (hover:hover){
+  .nav-i:hover{color:var(--soft)}
+  .nav-i:hover svg{color:var(--gold2)}
+}
+.nav-i:active svg{color:var(--gold2)}
+.nav-i:focus-visible{outline:2px solid var(--gold);outline-offset:-3px;border-radius:8px}
+
+#cmp{margin:13px 0}
+.cmp-acc{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px 15px;color:#e6edf3;font-weight:800;font-size:14px;cursor:pointer}
+.cmp-rt{display:flex;align-items:center;gap:7px;flex-shrink:0;font-weight:600;font-size:12.5px;color:#8b949e}
+.cmp-panel{border:1px solid #30363d;border-top:none;border-radius:0 0 12px 12px;margin-top:-6px;padding:11px;background:#0f141a}
+.cmp-g{background:#161b22;border:1px solid #30363d;border-radius:11px;margin-bottom:8px;overflow:hidden}
+/* LA REJILLA QUE SUJETA LAS COLUMNAS (10-sep-2026).
+   Antes esto era `display:flex` con `.cmp-mt{flex:1}` al lado de un chip de
+   `min-width:84px`. El chip crece con su texto --"SF · +2.5" mide 72px y
+   "WSH · +10.2" mide 90px, medido sobre la fuente real-- asi que cada juego
+   le dejaba a la parte de la izquierda un ancho DISTINTO, y las columnas de
+   ERA / BP / SV aparecian corridas unos pixeles de un juego a otro. Cesar lo
+   vio: "se han movido porque no tienen el mismo tamano".
+   Con grid, la primera pista es siempre `1fr` sobre un ancho fijo: la columna
+   del chip mide 96px pase lo que pase y los numeros caen SIEMPRE en el mismo
+   sitio. La cabecera usa el mismo hueco (.cmp-vsp) y el mismo gap. */
+.cmp-h{display:grid;grid-template-columns:1fr 96px;align-items:center;gap:9px;padding:10px 11px}
+.cmp-mt{min-width:0;display:flex;flex-direction:column;gap:3px}
+.cmp-p{display:flex;align-items:center;gap:5px;font-size:12.5px;line-height:1.35;min-width:0}
+.cmp-who{flex:1;min-width:0;display:flex;align-items:baseline;gap:5px}
+.cmp-nm{min-width:0;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* SIN COLOR EN LA FILA (peticion de Cesar): "noto demasiados colores, dejamos
+   color neutro las letras". La ERA iba tenida por su valor y el nombre del
+   que gana el duelo en dorado; con seis juegos en pantalla son doce numeros y
+   seis nombres pidiendo atencion a la vez. EL UNICO COLOR QUE SE QUEDA es el
+   del chip de ventaja (.cmp-v.alta), que ya dice quien gana y cuanto.
+   La clase .win se conserva y marca al que gana el duelo solo con el grosor,
+   sin color. */
+.cmp-p.win .cmp-nm{font-weight:800}
+.cmp-rec{flex-shrink:0;font-size:11px;color:#8b949e;font-variant-numeric:tabular-nums}
+.cmp-nums{flex-shrink:0;display:flex;align-items:baseline;gap:4px}
+/* LAS TRES COLUMNAS, IGUALES (10-sep-2026). La ERA iba a 12.5px y en negrita
+   800 mientras BP y SV iban a 10.5px normales: se leia como si fueran tres
+   cosas de tres importancias distintas y ademas descuadraba la linea base.
+   Cesar: "los numeros de ERA estan en negrita y mas grande que los demas, que
+   quede todo igual". Mismo tamano, mismo grosor y mismo ancho de columna las
+   tres; la ERA conserva el gris claro porque es el dato del que va el bloque,
+   BP y SV van en gris apagado. */
+.cmp-er,.cmp-pen,.cmp-cl{width:32px;text-align:right;font-size:11px;font-weight:600;font-variant-numeric:tabular-nums}
+.cmp-er{color:#e6edf3}
+.cmp-pen,.cmp-cl{color:#8b949e}
+.cmp-lg{width:18px;height:18px;object-fit:contain;flex-shrink:0}
+/* El padding derecho es 12px y no 11px a proposito: la fila vive dentro de
+   .cmp-g, que tiene 1px de borde. 11 + 1 = 12, y asi las etiquetas caen justo
+   encima de sus numeros. */
+.cmp-hd{display:flex;justify-content:flex-end;gap:9px;padding:0 12px 5px}
+.cmp-hd .cmp-er,.cmp-hd .cmp-pen,.cmp-hd .cmp-cl{font-size:10px;font-weight:800;color:#6e7681;letter-spacing:.5px}
+.cmp-vsp{width:96px;flex-shrink:0}
+.cmp-v{text-align:right;font-size:10px;font-weight:800;background:#0f141a;color:#8b949e;border:1px solid #30363d;border-radius:6px;padding:4px 7px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cmp-v.alta{background:#0f2e1a;color:#3fb950;border-color:#1f5c37}
+@media (max-width:409px){.cmp-cl,.cmp-hd .cmp-cl{display:none}}
+.cmp-d{display:none;padding:0 11px 9px;font-size:11px;color:#c9d1d9}
+.cmp-ln{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-top:1px solid #21262d}
+.cmp-note{font-size:11px;color:#6e7681;text-align:center;margin-top:4px}
+.ico{width:1.05em;height:1.05em;flex-shrink:0;vertical-align:-.16em;margin-right:.32em}.av-sw{appearance:none;-webkit-appearance:none;width:51px;height:31px;border-radius:16px;background:var(--line);position:relative;margin:0;flex-shrink:0;cursor:pointer;transition:background .15s}.av-sw::after{content:"";position:absolute;top:2px;left:2px;width:27px;height:27px;border-radius:50%;background:var(--text);transition:left .15s}.av-sw:checked{background:var(--green)}.av-sw:checked::after{left:22px}.av-sw:disabled{opacity:.55}.av-sw:focus-visible{outline:2px solid var(--mut);outline-offset:2px}.av-sw:disabled{cursor:default}.av-dentro{padding:10px 14px 12px;border-top:1px solid var(--line2)}.av-nota{font-size:12.5px;line-height:1.5;color:var(--faint);margin:8px 2px 0}.av-msg{font-size:13px;line-height:1.5;color:var(--soft);margin:8px 2px 0}.av-mal{color:var(--red)}.av-pasos{display:flex;flex-direction:column;gap:10px;margin:0 14px 14px;padding:12px;background:var(--panel);border:1px solid var(--line2);border-radius:10px}.av-paso{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--soft)}.av-num{width:24px;height:24px;border-radius:50%;background:var(--line2);color:var(--mut);font-size:12.5px;font-weight:700;display:grid;place-items:center;flex-shrink:0}.av-comp{color:var(--mut);width:20px;height:20px}#avisos [hidden]{display:none!important}
+.cu [hidden]{display:none!important}
+.cu-est{color:var(--mut);font-size:13px;padding:18px 4px}
+.cu-aviso{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;color:var(--soft);font-size:13px}
+.cu-tabs{display:flex;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:4px;margin:4px 0 14px}
+.cu-tabs button{flex:1;background:none;border:0;border-radius:8px;padding:10px;color:var(--mut);font:700 14px var(--font);cursor:pointer}
+.cu-tabs button.on{background:var(--card);color:var(--text)}
+.cu-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 16px}
+.cu-f{display:flex;flex-direction:column;gap:6px}
+.cu-l{font-size:12.5px;font-weight:700;color:var(--soft);margin-top:8px}
+.cu-i{width:100%;box-sizing:border-box;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 13px;color:var(--text);font:400 16px var(--font)}
+.cu-i:focus{outline:2px solid var(--gold2);outline-offset:1px;border-color:transparent}
+.cu-pista{font-size:11px;color:var(--faint)}
+.cu-b{margin-top:14px;background:var(--gold);color:#0d1117;border:0;border-radius:10px;padding:13px;font:800 15px var(--font);cursor:pointer}
+.cu-b:hover,.cu-b:focus-visible{background:var(--gold2)}
+.cu-b:disabled{opacity:.55;cursor:wait}
+.cu-link{align-self:center;background:none;border:0;color:var(--blue);font:600 14px var(--font);padding:10px;cursor:pointer}
+.cu-chk{display:flex;gap:9px;align-items:flex-start;margin-top:12px;font-size:12.5px;color:var(--soft);line-height:1.45}
+.cu-chk input{margin-top:2px;width:17px;height:17px;accent-color:var(--gold);flex-shrink:0}
+.cu-chk a,.cu-que a{color:var(--blue)}
+.cu-nota{font-size:12.5px;color:var(--faint);text-align:center;margin-top:6px}
+.cu-txt{font-size:13px;color:var(--soft);line-height:1.55;margin:0}
+.cu-que{display:flex;gap:10px;align-items:flex-start;margin-top:18px;font-size:12.5px;color:var(--mut);line-height:1.5}
+.cu-que .ico{margin:2px 0 0;color:var(--gold2)}
+.cu-ic{color:var(--gold2)}
+.cu-ic svg{width:30px;height:30px}
+.cu-h{font-size:15px;font-weight:800;color:var(--text);margin:8px 0 6px}
+.cu-row{width:100%;background:none;border-left:0;border-right:0;border-bottom:0;font:inherit;text-align:left;cursor:pointer}
+.cu-row:hover,.cu-row:focus-visible{background:var(--line2)}
+.cu-in{padding:4px 14px 14px;border-top:1px solid var(--line2)}
+.cu-peligro .set-i,.cu-peligro .set-t{color:var(--red)}
+.cu-cod{font-variant-numeric:tabular-nums;letter-spacing:.08em;text-transform:uppercase}
+.cu-b-peligro{background:var(--red);color:#0d1117}
+.cu-b-peligro:hover,.cu-b-peligro:focus-visible{background:#ff6b63}
+.cu-msg{margin-top:12px;font-size:13px;line-height:1.5;border-radius:10px}
+.cu-msg:empty{display:none}
+.cu-msg.err{color:var(--red);background:rgba(248,81,73,.08);border:1px solid rgba(248,81,73,.35);padding:10px 12px}
+.cu-msg.ok{color:var(--green);background:rgba(63,185,80,.08);border:1px solid rgba(63,185,80,.35);padding:10px 12px}
+</style></head><body><div class="app"><div class="topbar"><a href="/en/settings" class="t-atras" aria-label="Back to settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></a><h1>CY Elite Lab</h1><a href="/en/" class="t-set" aria-label="Close settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></a></div><main><section class="on"><div class="cab"><div class="cab-tx"><h2 class="cab-t">Your account</h2><p class="cab-s">Sign in, create an account, or manage yours</p></div></div><div class="cu" id="cu"><div class="cu-est" id="cu-cargando">Checking your session…</div><noscript><div class="cu-aviso">JavaScript must be enabled to sign in or create an account.</div></noscript><div id="cu-fuera" hidden><div class="cu-tabs" id="cu-tabs" role="tablist"><button type="button" role="tab" id="cu-t-entrar" class="on" aria-selected="true">Sign in</button><button type="button" role="tab" id="cu-t-crear" aria-selected="false">Create account</button></div><form class="cu-f cu-card" id="cu-f-entrar" novalidate><label class="cu-l" for="cu-e1">Email</label><input class="cu-i" id="cu-e1" type="email" autocomplete="email" required name="email" inputmode="email" autocapitalize="off" spellcheck="false"><label class="cu-l" for="cu-p1">Password</label><input class="cu-i" id="cu-p1" type="password" autocomplete="current-password" required name="password"><button class="cu-b" type="submit">Sign in</button><button class="cu-link" type="button" id="cu-olvide">Forgot your password?</button></form><form class="cu-f cu-card" id="cu-f-crear" novalidate hidden><label class="cu-l" for="cu-e2">Email</label><input class="cu-i" id="cu-e2" type="email" autocomplete="email" required name="email" inputmode="email" autocapitalize="off" spellcheck="false"><label class="cu-l" for="cu-p2">Password</label><input class="cu-i" id="cu-p2" type="password" autocomplete="new-password" required name="password" minlength="8"><span class="cu-pista">Minimum 8 characters.</span><label class="cu-chk"><input type="checkbox" id="cu-acepto"> <span>I am 18 years or older and accept the <a href="/en/legal#terminos">Terms</a> and the <a href="/en/legal#privacidad">Privacy Policy</a>.</span></label><label class="cu-chk"><input type="checkbox" id="cu-aviso"> <span>Email me <b>one time only</b>, the day the plans open.</span></label><button class="cu-b" type="submit">Create account</button><p class="cu-nota">We'll send you an email to confirm it's yours.</p></form><form class="cu-f cu-card" id="cu-f-olvido" novalidate hidden><p class="cu-txt">Enter your account email and we'll send you a link to set a new password.</p><label class="cu-l" for="cu-e3">Email</label><input class="cu-i" id="cu-e3" type="email" autocomplete="email" required name="email" inputmode="email" autocapitalize="off" spellcheck="false"><button class="cu-b" type="submit">Send me the link</button><button class="cu-link" type="button" id="cu-volver">Back</button></form><div class="cu-que"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-8.2-8.2A2 2 0 0 1 1.8 11V4a2 2 0 0 1 2-2h7a2 2 0 0 1 1.4.6l8.4 8.4a2 2 0 0 1 0 2.4z"/><circle cx="7" cy="7" r="1.5"/></svg><span>Today the account is free and still unlocks nothing: the pricing plans open when the record passes its public test.<a href="/en/plans">How it works</a></span></div></div><div class="cu-card" id="cu-correo" hidden><div class="cu-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg></div><div class="cu-h">Check your email</div><p class="cu-txt" id="cu-correo-txt"></p><p class="cu-nota">Not arriving in a few minutes? Check spam or promotions.</p><button class="cu-link" type="button" id="cu-correo-volver">Back</button></div><form class="cu-f cu-card" id="cu-f-nueva" novalidate hidden><div class="cu-h">Set a new password</div><label class="cu-l" for="cu-p3">New Password</label><input class="cu-i" id="cu-p3" type="password" autocomplete="new-password" required name="password" minlength="8"><span class="cu-pista">Minimum 8 characters.</span><button class="cu-b" type="submit">Save Password</button></form><div id="cu-dentro" hidden><div class="set-h">Your Account</div><div class="set-g"><div class="set-f"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><span class="set-t">Email<span class="set-n" id="cu-d-correo"></span></span></div><div class="set-f"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-8.2-8.2A2 2 0 0 1 1.8 11V4a2 2 0 0 1 2-2h7a2 2 0 0 1 1.4.6l8.4 8.4a2 2 0 0 1 0 2.4z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="set-t">Plan<span class="set-n" id="cu-d-plan"></span></span></div><div class="set-f"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span class="set-t">Member Since<span class="set-n" id="cu-d-desde"></span></span></div><button class="set-f cu-row" type="button" id="cu-codigo"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-8.2-8.2A2 2 0 0 1 1.8 11V4a2 2 0 0 1 2-2h7a2 2 0 0 1 1.4.6l8.4 8.4a2 2 0 0 1 0 2.4z"/><circle cx="7" cy="7" r="1.5"/></svg></span><span class="set-t">Redeem a Code<span class="set-n">If you have an access code, activate it here</span></span></button><form class="cu-f cu-in" id="cu-f-codigo" novalidate hidden><label class="cu-l" for="cu-cod">Your Code</label><input class="cu-i cu-cod" id="cu-cod" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" minlength="8" maxlength="40" placeholder="CYELITE-..." required><span class="cu-pista">Between 8 and 40 characters: letters, numbers, and hyphens.</span><button class="cu-b" type="submit">Activate Code</button></form><button class="set-f cu-row" type="button" id="cu-pagar" hidden><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></span><span class="set-t"><span id="cu-pagar-t">View Purchase Flow</span><span class="set-n" id="cu-pagar-n"></span></span></button><button class="set-f cu-row" type="button" id="cu-portal" hidden><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></span><span class="set-t">Manage My Subscription<span class="set-n">Change your card, view receipts, or cancel in one click</span></span></button></div><div class="set-h">Emails</div><div class="set-g"><label class="set-f" for="cu-sw-aviso"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg></span><span class="set-t"><span>Notify me when plans open</span><span class="set-n">One email, the day plans open. At your founder price</span></span><input id="cu-sw-aviso" class="av-sw" type="checkbox"></label><label class="set-f" for="cu-sw-semanal"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><span class="set-t"><span>Weekly Summary</span><span class="set-n">Mondays: the week's record in three numbers</span></span><input id="cu-sw-semanal" class="av-sw" type="checkbox"></label></div><p class="set-p">Each email has a link to unsubscribe, and unsubscribing is only from that email.</p><div class="set-h">Security</div><div class="set-g"><button class="set-f cu-row" type="button" id="cu-cambiar"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><span class="set-t">Change Password</span></button><form class="cu-f cu-in" id="cu-f-cambiar" novalidate hidden><label class="cu-l" for="cu-p4">New Password</label><input class="cu-i" id="cu-p4" type="password" autocomplete="new-password" required name="password" minlength="8"><span class="cu-pista">Minimum 8 characters.</span><button class="cu-b" type="submit">Save Password</button></form><button class="set-f cu-row" type="button" id="cu-salir"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-4"/></svg></span><span class="set-t">Sign Out</span></button><button class="set-f cu-peligro cu-row" type="button" id="cu-borrar"><span class="set-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></span><span class="set-t">Delete My Account<span class="set-n">Your account and everything associated with it will be deleted. This cannot be undone.</span></span></button><form class="cu-f cu-in" id="cu-f-borrar" novalidate hidden><label class="cu-l" for="cu-conf">Type DELETE to confirm</label><input class="cu-i cu-cod" id="cu-conf" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="DELETE" required><span class="cu-pista">If you have an active paid plan, cancel it first from the Stripe portal.</span><button class="cu-b cu-b-peligro" type="submit">Delete My Account Forever</button></form></div></div><div class="cu-msg" id="cu-msg" role="status" aria-live="polite"></div></div></section><footer class="legal"><div class="legal-c">© 2026 CY Elite Lab. All rights reserved.</div><div class="legal-l"><a href="/en/legal#terminos">Terms</a> · <a href="/en/legal#privacidad">Privacy</a> · <a href="/en/legal#reembolsos">Refunds</a></div></footer></main><nav><a href="/en/" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg><span>Analysis</span></a><a href="/en/model" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6.5L5.2 18a2 2 0 0 0 1.8 3h10a2 2 0 0 0 1.8-3L14 9.5V3"/><path d="M7.5 15h9"/></svg><span>Model</span></a><a href="/en/market" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span>Market</span></a><a href="/en/record" class="nav-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>Record</span></a></nav></div><script>var _t=function(s){return s};
+(function(){
+  var els = document.querySelectorAll('time[data-utc]');
+  if (!els.length) return;
+  var f;
+  try {
+    // SIN LA ZONA (15-sep-2026, Cesar): «8:00 PM», no «8:00 PM CDT».
+    f = new Intl.DateTimeFormat([], {hour:'numeric', minute:'2-digit'});
+  } catch (e) { return; }          // navegador viejo: se queda la de Houston
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i], d = new Date(el.getAttribute('data-utc'));
+    if (isNaN(d.getTime())) continue;
+    var ct = el.textContent;
+    try {
+      el.textContent = f.format(d);
+      el.title = _t('Your device time · ') + ct + _t(' in Houston');
+    } catch (e) {}
+  }
+})();
+</script><script>
+(function () {
+  try {
+    var LS = "sb-wzhoeptnsaaewtralkla-auth-token", LIB = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js", SRI = "sha384-iLddHTLokph6Omwoyid4XKxHaWa6w41BnoEj0q5oOrzmYPpHIKt1wyjReA7s//pP", SB_URL = "https://wzhoeptnsaaewtralkla.supabase.co", SB_CLAVE = "sb_publishable_MnTtV32UEIqjwt_NIGdUrw_LFe9hInM";
+    var COOKIE = 'cy_sesion';
+    var dom = /(^|\.)cyelitelab\.com$/.test(location.hostname) ? '; domain=cyelitelab.com' : '';
+    function poner(token, seg) {
+      document.cookie = COOKIE + '=' + token + '; path=/; max-age=' + Math.max(0, Math.floor(seg)) +
+                        '; secure; samesite=lax' + dom;
+    }
+    function quitar() {
+      if (document.cookie.indexOf(COOKIE + '=') < 0) return;
+      document.cookie = COOKIE + '=; path=/; max-age=0; secure; samesite=lax' + dom;
+    }
+    function datos(token) {
+      try {
+        var p = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+        while (p.length % 4) p += '=';
+        return JSON.parse(atob(p));
+      } catch (e) { return null; }
+    }
+    function puedeVer(d) {
+      var pag = {'/': 'analisis', '/lab': 'modelo', '/trends': 'mercado'}[location.pathname];
+      var am = (d && d.app_metadata) || {};
+      if (!pag) return false;
+      if (am.rol === 'ceo') return true;
+      if (am.plan !== 'elite' && am.plan !== 'vip') return false;
+      if (am.plan_hasta && !(Date.parse(am.plan_hasta) > Date.now())) return false;
+      return am.plan === 'elite' || pag === 'analisis';
+    }
+    function revisar(token) {
+      if (!puedeVer(datos(token))) return;
+      var meta = document.querySelector('meta[name="cy-portero"]');
+      var libre = !!meta && meta.getAttribute('content') === 'libre';
+      if (!libre && !(meta === null && location.search)) return;
+      var marca = 'cy-portero:' + location.pathname, huella = token.slice(-16);
+      try {
+        if (sessionStorage.getItem(marca) === huella) return;
+        sessionStorage.setItem(marca, huella);
+      } catch (e) { return; }
+      if (libre) location.reload();
+      else location.replace(location.pathname + location.hash);
+    }
+    var crudo = null;
+    try { crudo = localStorage.getItem(LS); } catch (e) {}
+    if (!crudo) { quitar(); return; }
+    var s = JSON.parse(crudo), ahora = Date.now() / 1000;
+    if (s && s.access_token && s.expires_at && s.expires_at - ahora > 60) {
+      poner(s.access_token, s.expires_at - ahora);
+      revisar(s.access_token);
+      return;
+    }
+    if (document.getElementById('cu')) return;   // la cuenta ya renueva y pone la cookie
+    var sc = document.createElement('script');
+    sc.src = LIB; sc.integrity = SRI; sc.crossOrigin = 'anonymous'; sc.async = true;
+    sc.onload = function () {
+      try {
+        var sb = window.supabase.createClient(SB_URL, SB_CLAVE, {
+          auth: { persistSession: true, autoRefreshToken: false, detectSessionInUrl: false } });
+        sb.auth.getSession().then(function (r) {
+          var se = r && r.data && r.data.session;
+          if (se && se.access_token) {
+            poner(se.access_token, (se.expires_at || 0) - Date.now() / 1000);
+            revisar(se.access_token);
+          } else {
+            quitar();
+          }
+        });
+      } catch (e) {}
+    };
+    document.head.appendChild(sc);
+  } catch (e) {}
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js" integrity="sha384-iLddHTLokph6Omwoyid4XKxHaWa6w41BnoEj0q5oOrzmYPpHIKt1wyjReA7s//pP" crossorigin="anonymous"></script>
+<script>var _t=function(s){return s};
+(function () {
+  'use strict';
+  var SB_URL = "https://wzhoeptnsaaewtralkla.supabase.co", SB_CLAVE = "sb_publishable_MnTtV32UEIqjwt_NIGdUrw_LFe9hInM", SOPORTE = "soporte@cyelitelab.com",
+      MARCA = "CY Elite Lab", MIN = 8;
+  function $(id) { return document.getElementById(id); }
+  var VISTAS = ['cu-cargando', 'cu-fuera', 'cu-correo', 'cu-f-nueva', 'cu-dentro'];
+  function ver(id) { VISTAS.forEach(function (v) { $(v).hidden = (v !== id); }); }
+  function msg(txt, tipo) {
+    var m = $('cu-msg');
+    m.textContent = txt || '';
+    m.className = 'cu-msg' + (txt ? ' ' + (tipo || 'err') : '');
+  }
+
+  // LA LIBRERIA NO CARGO: sin conexion, bloqueada, o su huella no coincide.
+  if (!window.supabase || !window.supabase.createClient) {
+    $('cu-cargando').hidden = true;
+    msg(_t('The account system failed to load. Reload the page; if it persists, write to us at ') + SOPORTE + '.');
+    return;
+  }
+
+  // Lo que trae el enlace del correo, leido ANTES de que la libreria limpie la URL.
+  var hash = new URLSearchParams(location.hash.replace(/^#/, ''));
+  var enRecuperacion = hash.get('type') === 'recovery';
+  var recienConfirmado = hash.get('type') === 'signup';
+  var errorEnlace = hash.get('error_code') || hash.get('error');
+  var ALTA = /[?&]alta\b/.test(location.search);
+  // EL PLAN QUE VIENE DE LA PAGINA DE PLANES (23-sep-2026). Los botones «Elegir
+  // VIP» y «Elegir ELITE» apuntan aqui con ?plan=vip&periodo=mensual. Antes esta
+  // pagina solo sabia leer «?alta» y el boton no llevaba a ningun sitio util:
+  // te dejaba en la cuenta sin nada elegido.
+  //
+  // El plan se GUARDA en el navegador antes de nada, porque quien llega sin
+  // cuenta tiene que crearla y confirmar el correo primero, y eso lo saca de
+  // esta pagina y lo trae de vuelta sin la cola de la direccion. Al volver con
+  // sesion, se sigue por donde iba.
+  var PLAN_OK = { vip: 1, elite: 1 }, PER_OK = { mensual: 1, anual: 1 };
+  var qs = new URLSearchParams(location.search);
+  var qPlan = qs.get('plan'), qPer = qs.get('periodo') || 'mensual';
+  if (PLAN_OK[qPlan] && PER_OK[qPer]) {
+    try { localStorage.setItem('cy_plan', qPlan + ':' + qPer); } catch (e) {}
+  }
+  function planPedido() {
+    try {
+      var v = (localStorage.getItem('cy_plan') || '').split(':');
+      return PLAN_OK[v[0]] && PER_OK[v[1]] ? { plan: v[0], periodo: v[1] } : null;
+    } catch (e) { return null; }
+  }
+  function olvidarPlan() { try { localStorage.removeItem('cy_plan'); } catch (e) {} }
+
+  var sb = window.supabase.createClient(SB_URL, SB_CLAVE, {
+    auth: { persistSession: true, autoRefreshToken: true,
+            detectSessionInUrl: true, flowType: 'implicit' }
+  });
+  var VUELTA = location.origin + location.pathname;
+
+  function traduce(e) {
+    var t = String((e && (e.message || e.error_description)) || '').toLowerCase();
+    var st = e && e.status;
+    if (t.indexOf('security purposes') >= 0) return _t('For security, you must wait a minute before requesting again.');
+    if (st === 429 || t.indexOf('rate limit') >= 0) return 'Demasiados intentos seguidos. Espera unos minutos y vuelve a probar.';
+    if (t.indexOf('invalid login credentials') >= 0) return _t('Email or password does not match.');
+    if (t.indexOf('email not confirmed') >= 0) return _t('You haven\'t confirmed your email yet: open the link we sent you when you created the account.');
+    if (t.indexOf('different') >= 0 && t.indexOf('password') >= 0) return _t('The new password must be different from the previous one.');
+    if (t.indexOf('password') >= 0) return _t('That password doesn\'t work: use at least ') + MIN + _t(' characters and make it hard to guess.');
+    if (t.indexOf('email') >= 0 && t.indexOf('invalid') >= 0) return _t('That email doesn\'t look valid.');
+    if (t.indexOf('fetch') >= 0 || t.indexOf('network') >= 0) return _t('No connection to the account server. Check your internet.');
+    return _t('Could not complete. Try again in a moment.');
+  }
+  function correoValido(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  function ocupado(form, si) {
+    var b = form.querySelector('button[type=submit]');
+    if (b) b.disabled = si;
+  }
+  function pestana(cual) {
+    ['entrar', 'crear'].forEach(function (k) {
+      var on = (k === cual), t = $('cu-t-' + k);
+      t.classList.toggle('on', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      $('cu-f-' + k).hidden = !on;
+    });
+    $('cu-tabs').hidden = false;
+    $('cu-f-olvido').hidden = true;
+  }
+  function enviado(txt) { $('cu-correo-txt').textContent = txt; msg(''); ver('cu-correo'); }
+
+  function pintar(sesion) {
+    if (enRecuperacion) { ver('cu-f-nueva'); return; }
+    if (!sesion || !sesion.user) { pestana(ALTA ? 'crear' : 'entrar'); ALTA = false; ver('cu-fuera'); return; }
+    var u = sesion.user, d = u.created_at ? new Date(u.created_at) : null;
+    $('cu-d-correo').textContent = u.email || '';
+    $('cu-d-desde').textContent = d ? d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+    // LOS DOS CORREOS: el interruptor ES el estado (24-sep-2026). Antes era una
+    // fila con «Sí» o «No» en letra pequeña; ahora se ve de un vistazo, como en
+    // Ajustes. Se repinta cada vez que se pinta la pagina, asi que si una
+    // llamada falla el interruptor vuelve solo a donde estaba de verdad.
+    $('cu-sw-aviso').checked = !!(u.user_metadata && u.user_metadata.aviso_planes);
+    $('cu-sw-semanal').checked = !!(u.user_metadata && u.user_metadata.resumen_lunes);
+    // EL ROL VIENE DE app_metadata, que solo se escribe desde el panel de Supabase.
+    // Aqui solo se ENSENA: lo que se abre o se cierra lo decidira el Worker.
+    var ceo = ((u.app_metadata || {}).rol === 'ceo');
+    $('cu-d-plan').textContent = ceo ? _t('CEO · full access, no charge')
+                                     : _t('Free · paid plans are not yet open');
+    // EL RECORRIDO DE COMPRA (16-sep-2026): la fila se ensena al CEO y, desde el
+    // 23-sep, a quien llega desde Planes con un plan elegido. Quien decide de
+    // verdad sigue siendo el portero, que con el cobro apagado solo la abre al
+    // CEO y con clave de prueba.
+    var pp = planPedido();
+    $('cu-pagar').hidden = !(ceo || pp);
+    if (pp) {
+      $('cu-pagar-t').textContent = _t('Complete the payment · ') + pp.plan.toUpperCase();
+      $('cu-pagar-n').textContent = (pp.periodo === 'anual' ? 'Plan anual' : 'Plan mensual')
+                                    + _t(' · secure payment with Stripe');
+    } else {
+      $('cu-pagar-t').textContent = _t('View Purchase Flow');
+      $('cu-pagar-n').textContent = _t('Charging is off: open Stripe payment in test mode');
+    }
+    // La fila del portal solo tiene sentido para quien ya ha pagado con Stripe: sin cliente
+    // de Stripe, el portero responde 404. app_metadata solo lo escribe el servidor.
+    $('cu-portal').hidden = !((u.app_metadata || {}).stripe_cliente);
+    $('cu-f-codigo').hidden = true;
+    $('cu-f-borrar').hidden = true;
+    $('cu-f-cambiar').hidden = true;
+    ver('cu-dentro');
+  }
+
+  // --- pestañas y enlaces ---
+  $('cu-t-entrar').onclick = function () { msg(''); pestana('entrar'); };
+  $('cu-t-crear').onclick = function () { msg(''); pestana('crear'); };
+  $('cu-olvide').onclick = function () {
+    msg('');
+    $('cu-tabs').hidden = true; $('cu-f-entrar').hidden = true; $('cu-f-crear').hidden = true;
+    $('cu-f-olvido').hidden = false; $('cu-e3').value = $('cu-e1').value;
+  };
+  $('cu-volver').onclick = function () { msg(''); pestana('entrar'); };
+  $('cu-correo-volver').onclick = function () { msg(''); pestana('entrar'); ver('cu-fuera'); };
+
+  // --- entrar ---
+  $('cu-f-entrar').addEventListener('submit', async function (ev) {
+    ev.preventDefault(); msg('');
+    var email = $('cu-e1').value.trim(), clave = $('cu-p1').value;
+    if (!correoValido(email)) return msg(_t('Enter a valid email.'));
+    if (!clave) return msg(_t('Enter your password.'));
+    ocupado(this, true);
+    var r = await sb.auth.signInWithPassword({ email: email, password: clave });
+    ocupado(this, false);
+    if (r.error) return msg(traduce(r.error));
+    $('cu-p1').value = '';
+  });
+
+  // --- crear cuenta ---
+  $('cu-f-crear').addEventListener('submit', async function (ev) {
+    ev.preventDefault(); msg('');
+    var email = $('cu-e2').value.trim(), clave = $('cu-p2').value;
+    if (!correoValido(email)) return msg(_t('Enter a valid email.'));
+    if (clave.length < MIN) return msg(_t('The password must have at least ') + MIN + ' caracteres.');
+    if (!$('cu-acepto').checked) return msg(_t('To create the account, confirm that you are 18 or older and that you accept the terms.'));
+    ocupado(this, true);
+    var r = await sb.auth.signUp({ email: email, password: clave, options: {
+      emailRedirectTo: VUELTA, data: { aviso_planes: $('cu-aviso').checked } } });
+    ocupado(this, false);
+    if (r.error) return msg(traduce(r.error));
+    $('cu-p2').value = '';
+    if (r.data && r.data.session) return;
+    enviado('Te hemos mandado un correo a ' + email + _t('. Open the link it contains to confirm it\'s yours and you\'ll enter directly.'));
+  });
+
+  // --- olvide la contraseña ---
+  $('cu-f-olvido').addEventListener('submit', async function (ev) {
+    ev.preventDefault(); msg('');
+    var email = $('cu-e3').value.trim();
+    if (!correoValido(email)) return msg(_t('Enter a valid email.'));
+    ocupado(this, true);
+    var r = await sb.auth.resetPasswordForEmail(email, { redirectTo: VUELTA });
+    ocupado(this, false);
+    if (r.error) return msg(traduce(r.error));
+    enviado('Si ' + email + _t(' has an account; a link to set a new password just arrived for you.'));
+  });
+
+  // --- contraseña nueva (desde el enlace del correo, o dentro de la cuenta) ---
+  async function guardarClave(form, campo) {
+    msg('');
+    var clave = $(campo).value;
+    if (clave.length < MIN) return msg(_t('The password must have at least ') + MIN + ' caracteres.');
+    ocupado(form, true);
+    var r = await sb.auth.updateUser({ password: clave });
+    ocupado(form, false);
+    if (r.error) return msg(traduce(r.error));
+    $(campo).value = '';
+    enRecuperacion = false;
+    var s = await sb.auth.getSession();
+    pintar(s.data.session);
+    msg(_t('Password changed.'), 'ok');
+  }
+  $('cu-f-nueva').addEventListener('submit', function (ev) { ev.preventDefault(); guardarClave(this, 'cu-p3'); });
+  $('cu-f-cambiar').addEventListener('submit', function (ev) { ev.preventDefault(); guardarClave(this, 'cu-p4'); });
+  $('cu-cambiar').onclick = function () {
+    msg('');
+    var f = $('cu-f-cambiar');
+    f.hidden = !f.hidden;
+    if (!f.hidden) $('cu-p4').focus();
+  };
+
+  // --- el aviso de apertura ---
+  $('cu-sw-aviso').addEventListener('change', async function () {
+    msg(''); this.disabled = true;
+    var nuevo = this.checked;
+    var r = await sb.auth.updateUser({ data: { aviso_planes: nuevo } });
+    this.disabled = false;
+    if (r.error) { this.checked = !nuevo; return msg(traduce(r.error)); }
+    pintar((await sb.auth.getSession()).data.session);
+    msg(nuevo ? _t('We\'ll notify you once, the day the plans open.')
+              : _t('Done: we won\'t notify you.'), 'ok');
+  });
+
+  // EL RESUMEN DE LOS LUNES. Dos sitios, y EN ESTE ORDEN (24-sep-2026):
+  //
+  //   1. LA LISTA DEL PORTERO es la que manda: de ahi sale el envio del lunes,
+  //      y ahi vive la llave de baja de cada uno. Sin este paso la casilla no
+  //      hacia nada -- se guardaba la preferencia en la cuenta y el envio
+  //      miraba otra cosa, asi que no habria llegado ni un correo.
+  //   2. user_metadata es el ESPEJO, solo para pintar la casilla al volver.
+  //
+  // Si el portero falla, no se toca la cuenta: mejor la casilla sin marcar que
+  // una marcada que no manda nada. Si falla el espejo, el correo si llega --
+  // ese es el lado bueno en el que equivocarse.
+  $('cu-sw-semanal').addEventListener('change', async function () {
+    msg(''); this.disabled = true;
+    var nuevo = this.checked;
+    var pr = await portero('lunes', { quiero: nuevo });
+    if (!pr || !pr.ok) {
+      this.disabled = false; this.checked = !nuevo;
+      return msg((pr && pr.motivo) || _t('Could not save.'));
+    }
+    var r = await sb.auth.updateUser({ data: { resumen_lunes: nuevo } });
+    this.disabled = false;
+    if (r.error) return msg(traduce(r.error));
+    pintar((await sb.auth.getSession()).data.session);
+    msg(nuevo
+      ? _t('Done: the weekly record, every Monday. Cancel with one click.')
+      : _t('Done: you won\'t receive the weekly summary.'), 'ok');
+  });
+
+  // --- cerrar sesion ---
+  $('cu-salir').onclick = async function () {
+    this.disabled = true; msg('');
+    await sb.auth.signOut();
+    this.disabled = false;
+  };
+
+  // --- LAS PUERTAS DEL PORTERO (16-sep-2026, paso 4 de la fase B) ---
+  // La pagina NUNCA toca Supabase con la clave secreta ni habla con Stripe: pide las
+  // cosas al portero, que es quien tiene las claves. La sesion viaja en la cookie
+  // cy_sesion (misma web, mismo dominio), por eso credentials: 'same-origin'.
+  async function portero(ruta, cuerpo) {
+    var r = await fetch('/portero/' + ruta, {
+      method: 'POST', credentials: 'same-origin',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(cuerpo || {})
+    });
+    try { return await r.json(); } catch (e) { return { ok: false }; }
+  }
+
+  function plegar(boton, form, campo) {
+    $(boton).onclick = function () {
+      msg('');
+      var f = $(form);
+      f.hidden = !f.hidden;
+      if (!f.hidden) $(campo).focus();
+    };
+  }
+  plegar('cu-codigo', 'cu-f-codigo', 'cu-cod');
+  plegar('cu-borrar', 'cu-f-borrar', 'cu-conf');
+
+  $('cu-f-codigo').addEventListener('submit', async function (ev) {
+    ev.preventDefault(); msg('');
+    var codigo = $('cu-cod').value.trim().toUpperCase();
+    if (!/^[A-Z0-9-]{8,40}$/.test(codigo)) return msg(_t('That code doesn\'t look right: letters, numbers, and hyphens.'));
+    ocupado(this, true);
+    var d = await portero('canjear', { codigo: codigo });
+    ocupado(this, false);
+    if (!d.ok) return msg(d.motivo || _t('Could not activate the code.'));
+    $('cu-cod').value = '';
+    $('cu-f-codigo').hidden = true;
+    var hasta = d.plan_hasta ? new Date(d.plan_hasta).toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+    msg('Listo: plan ' + String(d.plan || '').toUpperCase() + (hasta ? _t(', active until ') + hasta : '') + '.', 'ok');
+  });
+
+  $('cu-f-borrar').addEventListener('submit', async function (ev) {
+    ev.preventDefault(); msg('');
+    if ($('cu-conf').value.trim().toUpperCase() !== 'BORRAR') return msg(_t('Type DELETE to confirm.'));
+    ocupado(this, true);
+    var d = await portero('borrar', { confirmar: 'BORRAR' });
+    ocupado(this, false);
+    if (!d.ok) return msg(d.motivo || (_t('Could not delete. Write to us at ') + SOPORTE + '.'));
+    $('cu-f-borrar').hidden = true;
+    await sb.auth.signOut();
+    msg(_t('Account deleted, along with everything associated with it. Thank you for being with us.'), 'ok');
+  });
+
+  // El recorrido de compra: con el cobro apagado el portero solo lo abre al CEO y con
+  // clave de prueba. Si dice que no, se ensena su motivo tal cual.
+  $('cu-pagar').onclick = async function () {
+    msg(''); this.disabled = true;
+    // El plan que se eligio en Planes; si se entra por aqui sin pasar por alli
+    // --el caso del CEO probando-- se sigue con el de siempre.
+    var pp = planPedido() || { plan: 'vip', periodo: 'mensual' };
+    var d = await portero('pagar', pp);
+    this.disabled = false;
+    if (!d.ok || !d.url) return msg(d.motivo || _t('Could not open the payment.'));
+    // SE OLVIDA ANTES DE SALTAR A STRIPE: si no, al volver de un pago que
+    // funciono la cuenta seguiria ofreciendo «completar el pago» del plan que
+    // el cliente ACABA de comprar. Si cancela en Stripe, vuelve a Planes y
+    // elige otra vez, que es un clic.
+    olvidarPlan();
+    location.href = d.url;
+  };
+
+  // GESTIONAR LA SUSCRIPCION: el portal de Stripe, donde se cambia la tarjeta, se ven los
+  // recibos y se cancela. Es el camino mas corto para cancelar, y por eso existe: nadie
+  // deberia tener que escribir un correo para dejar de pagar.
+  $('cu-portal').onclick = async function () {
+    msg(''); this.disabled = true;
+    var d = await portero('portal', {});
+    this.disabled = false;
+    if (!d.ok || !d.url) return msg(d.motivo || _t('Could not open your subscription management.'));
+    location.href = d.url;
+  };
+
+  // LA COOKIE DEL PORTERO (14-sep-2026): la sesion viaja tambien en la cookie cy_sesion,
+  // que es lo unico que el portero puede leer. Al entrar, al renovarse y al salir.
+  function cookiePortero(s) {
+    try {
+      var dom = /(^|\.)cyelitelab\.com$/.test(location.hostname) ? '; domain=cyelitelab.com' : '';
+      if (s && s.access_token) {
+        var seg = Math.max(0, Math.floor((s.expires_at || 0) - Date.now() / 1000));
+        document.cookie = 'cy_sesion=' + s.access_token + '; path=/; max-age=' + seg +
+                          '; secure; samesite=lax' + dom;
+      } else {
+        document.cookie = 'cy_sesion=; path=/; max-age=0; secure; samesite=lax' + dom;
+      }
+    } catch (e) {}
+  }
+
+  // --- el estado de la sesion manda sobre lo que se ve ---
+  // Dentro de este aviso no se llama a la libreria: lo recomienda supabase-js,
+  // porque esperar a otra llamada aqui dentro puede bloquear la sesion.
+  sb.auth.onAuthStateChange(function (evento, sesion) {
+    cookiePortero(sesion);
+    if (evento === 'PASSWORD_RECOVERY') enRecuperacion = true;
+    setTimeout(function () {
+      pintar(sesion);
+      if (evento === 'SIGNED_IN' && recienConfirmado) {
+        recienConfirmado = false;
+        msg(_t('Email confirmed. You\'re in.'), 'ok');
+      }
+    }, 0);
+  });
+
+  if (errorEnlace) {
+    msg(_t('That link is no longer valid: it expired or was already used. Sign in with your password or request a new one.'));
+    history.replaceState(null, '', VUELTA);
+  }
+
+  // Red de seguridad: si en 6 segundos no ha dicho nada, se enseña el formulario.
+  setTimeout(function () { if (!$('cu-cargando').hidden) pintar(null); }, 6000);
+})();
+</script>
+<!-- generado 09/29/2026 3:00 PM --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"213a962e55df47d88f79e5a2f6237975","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body></html>
