@@ -74,6 +74,77 @@
         "alineaciones": true,
         "abridores": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -130,
+      "prob_estimada": 56.5,
+      "razon": "El cierre decide: el bullpen de SD (2.37 ERA) supera con claridad al de CHC (3.62), que además acumula 8.0 IP en 2 días. SD llega con 5.3 c/j y ops .687 en la semana; CHC, con 2.5 c/j y .638. La ventaja sobre la justa (54.0%) es fina y el precio viene de una sola casa.",
+      "equipos": [
+        "CHC",
+        "SD"
+      ],
+      "destacado": "SD",
+      "hora": "9:00 PM CT",
+      "capas": [
+        "bullpen",
+        "ofensiva",
+        "forma"
+      ],
+      "contra": "SD batea flojo ante zurdos (ops .706) contra M. Boyd, M. King viene de 5 ER en 4.0 IP ante LAD y por FIP los abridores son casi iguales (4.25 vs 4.19).",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-09-30T02:00:00Z",
+      "cuota_apertura_ref": -130,
+      "valor": {
+        "prob_estimada": 56.5,
+        "prob_justa": 54.04,
+        "prob_implicita": 56.52,
+        "cuota": -130,
+        "cuota_justa_mercado": -118,
+        "ev_pct": -0.04,
+        "ev_kalshi_pct": -3.08,
+        "precio_minimo": -119,
+        "precio_publicado": -119,
+        "precio_equilibrio": -129,
+        "discrepancia_pp": 2.46,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -0.04% por debajo del minimo exigido (3.6%)",
+        "fuente_precio": "espn_bet",
+        "casas_precio": 1,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 12,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-29T23:30:23Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
@@ -83,7 +154,16 @@
     "PHI/ATL ML: ATL -192 y PHI +158 quedan fuera de la banda de -162 a +125.",
     "PHI Spread +1.5 (-143, justa 56.2%) y ATL Spread -1.5 (+118): sin ventaja. PHI llega con 2.7 c/j y ops .627 en la semana y sin L. Arraez (baja oficial). ATL tampoco respalda margen: ops .611 en la semana y un total de 6.5 que apunta a un juego corto.",
     "CWS ML (+102, justa 47.3%): la muestra de H. Smith es minima (110 bateadores, FIP 3.46 frente a una ERA de 1.29) y con BB altos. Su ultima salida fue de 2.0 ip, asi que el juego lo decide sobre todo el bullpen. No hay discrepancia clara con el mercado.",
-    "CWS/HOU f5_ml_k (Kalshi, a tres bandas): con H. Smith probablemente corto, el F5 no aisla a los abridores. El empate al 16.5% en Kalshi se pierde. Sin ventaja en ningun lado."
+    "CWS/HOU f5_ml_k (Kalshi, a tres bandas): con H. Smith probablemente corto, el F5 no aisla a los abridores. El empate al 16.5% en Kalshi se pierde. Sin ventaja en ningun lado.",
+    "BOS ML: la ofensiva de BOS está congelada (1.8 c/j y ops .592 en la semana, 2.1 c/j en 10 juegos). SYS-004 lo tumba aunque P. Tolle sea un buen abridor.",
+    "NYY ML: A. Judge queda fuera de la serie, confirmado apenas ~1h antes del juego. Kalshi ya pone a NYY en ~55% y mi lectura honesta (~55.5%) no supera la justa de 55.75%. Además, a -140 el motor exige mucha más ventaja.",
+    "BOS/NYY u6.0: NYY promedia 4.6 c/j en 10 juegos, así que no se cumple que ambas ofensivas estén frías. Falta el dato de uso del bullpen de NYY, C. Schlittler solo lanzó 3.0 IP en su última salida (posible límite) y el parque (pf 102) tiene viento leve hacia afuera. Fallan varias de las cuatro comprobaciones.",
+    "BOS/NYY o6.0: BOS anota 2.1 c/j con 0/10 overs de 8.5 frente a C. Schlittler (1.95 ERA, 31.4% K). No hay base para el over.",
+    "NYY F5 ML (Kalshi, 3 bandas): con A. Judge fuera, mi lectura (~46%) apenas iguala la justa de 44.7%, y el empate a 5 entradas (21%) aquí se pierde. Sin valor.",
+    "CHC/SD u7.5: la línea subió de 7.0 a 7.5 con movimiento FUERTE en contra y SD viene caliente (6.3 c/j en 10 juegos). Falla la comprobación de ofensivas.",
+    "CHC/SD o7.5: el parque (pf 94) con viento hacia dentro y CHC en 2.5 c/j no sostienen el over. Mi lectura (~49%) queda sin ventaja.",
+    "SD Spread -1.5 (+169): estimo ~36% frente a una justa de 35.5%. La ventaja es insuficiente.",
+    "SD F5 ML (Kalshi): sin el bullpen, que es la ventaja real de SD, los abridores quedan parejos por FIP. Estimo ~45% frente a una justa de 44.1%. Sin valor."
   ],
   "vivo": {
     "plan": {
@@ -188,13 +268,34 @@
         "sin_ventaja": 1,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-09-29T23:30:23Z",
+        "min_ct": 1110,
+        "claves": [
+          "BOS@NYY@2026-09-30T00:00:00Z",
+          "CHC@SD@2026-09-30T02:00:00Z"
+        ],
+        "juegos": [
+          "BOS@NYY",
+          "CHC@SD"
+        ],
+        "alineaciones": [
+          4,
+          4
+        ],
+        "senales": [],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 0-1 (-1.00 U).\n• CHC/BOS u7.5 (SEÑAL FUERTE), perdida: CHC 6-2 BOS, 8 carreras con la línea en 7.5.\n1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 16% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 1,
+    "seguimiento": 2,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
     "ev_min": 2.0
