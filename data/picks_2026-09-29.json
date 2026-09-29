@@ -1,8 +1,90 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "CWS/HOU o8",
+      "deporte": "MLB",
+      "tipo": "o8",
+      "cuota": -118,
+      "prob_estimada": 54.5,
+      "razon": "Dos ofensivas calientes ante pitcheo con grietas: HOU 7.7 c/j y ops .961 (17 HR) en la semana, CWS 7.2 c/j y ops .851; 6.5 y 5.9 c/j en los ultimos 10. Blubaugh tiene FIP 4.31 y H. Smith 14.5% BB con 2.0 ip en su ultima salida. El bullpen de HOU suma 7.0 ip en 2 dias. Ventaja modesta.",
+      "equipos": [
+        "CWS",
+        "HOU"
+      ],
+      "destacado": null,
+      "hora": "4:00 PM CT",
+      "capas": [
+        "ofensiva",
+        "pitcheo",
+        "bullpen"
+      ],
+      "contra": "Los 7 dias calientes son solo 6 juegos y pueden regresar a la media (ambos equipos rondan .730 de ops en la temporada). A eso se suman el 37% de K de H. Smith, el techo cerrado y un umpire que resta carreras (-1.6%). Con 8 carreras exactas el dinero vuelve.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.0
+      },
+      "inicio_utc": "2026-09-29T21:00:00Z",
+      "cuota_apertura_ref": -118,
+      "valor": {
+        "prob_estimada": 54.5,
+        "prob_justa": 51.74,
+        "prob_implicita": 54.13,
+        "cuota": -118,
+        "cuota_justa_mercado": -107,
+        "ev_pct": 0.69,
+        "ev_kalshi_pct": -2.52,
+        "precio_minimo": -112,
+        "precio_publicado": -112,
+        "precio_equilibrio": -119,
+        "discrepancia_pp": 2.76,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +0.69% por debajo del minimo exigido (3.0%)",
+        "fuente_precio": "espn_bet",
+        "casas_precio": 1,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 11,
+        "no_encontrados": [
+          {
+            "numero": ".730",
+            "frase": "6 juegos y pueden regresar a la media (ambos equipos rondan .730 de ops en la tempor"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-09-29T17:30:22Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
   "resumen": "",
-  "descartes": [],
+  "descartes": [
+    "PHI/ATL u6.5 (+100): las dos ofensivas vienen frias (PHI 3.2 c/j en los ultimos 10 y 2.7 en la semana; ATL 4.0 y 3.3), pero ATL no queda por debajo del corte de 4.0. Ademas falla la comprobacion 4: J. Luzardo acaba de ser activado de la lista de lesionados de 15 dias y su ultima salida fue el 7-sep, asi que podria ir con limite y dejar entradas a un bullpen de PHI con ERA 4.00. Con la linea ya en 6.5, el precio recoge el duelo L. Luzardo/C. Sale. La referencia es floja (una sola casa).",
+    "PHI/ATL ML: ATL -192 y PHI +158 quedan fuera de la banda de -162 a +125.",
+    "PHI Spread +1.5 (-143, justa 56.2%) y ATL Spread -1.5 (+118): sin ventaja. PHI llega con 2.7 c/j y ops .627 en la semana y sin L. Arraez (baja oficial). ATL tampoco respalda margen: ops .611 en la semana y un total de 6.5 que apunta a un juego corto.",
+    "CWS ML (+102, justa 47.3%): la muestra de H. Smith es minima (110 bateadores, FIP 3.46 frente a una ERA de 1.29) y con BB altos. Su ultima salida fue de 2.0 ip, asi que el juego lo decide sobre todo el bullpen. No hay discrepancia clara con el mercado.",
+    "CWS/HOU f5_ml_k (Kalshi, a tres bandas): con H. Smith probablemente corto, el F5 no aisla a los abridores. El empate al 16.5% en Kalshi se pierde. Sin ventaja en ningun lado."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-09-29",
@@ -85,14 +167,36 @@
       "sin_tanda": [],
       "sin_hora": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-09-29T17:30:22Z",
+        "min_ct": 750,
+        "claves": [
+          "PHI@ATL@2026-09-29T18:00:00Z",
+          "CWS@HOU@2026-09-29T21:00:00Z"
+        ],
+        "juegos": [
+          "PHI@ATL",
+          "CWS@HOU"
+        ],
+        "alineaciones": [
+          4,
+          4
+        ],
+        "senales": [],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 0-1 (-1.00 U).\n• CHC/BOS u7.5 (SEÑAL FUERTE), perdida: CHC 6-2 BOS, 8 carreras con la línea en 7.5.\n1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 16% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 0,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
-    "ev_min": null
+    "ev_min": 2.0
   }
 }
