@@ -20,37 +20,37 @@
    }
   },
   "inicio_utc": "2026-09-29T18:00Z",
-  "visto": "2026-09-29T15:24:35+00:00",
+  "visto": "2026-09-29T16:02:55+00:00",
   "cerrado": false
  },
  "CWS@HOU": {
   "ml": {
-   "CWS": 105,
-   "HOU": -126
+   "CWS": 104,
+   "HOU": -125
   },
   "total": {
    "linea": 8.0,
-   "over": -115,
-   "under": -105
+   "over": -117,
+   "under": -103
   },
   "spread": {
    "CWS": {
     "linea": 1.5,
-    "cuota": -195
+    "cuota": -199
    },
    "HOU": {
     "linea": -1.5,
-    "cuota": 160
+    "cuota": 163
    }
   },
   "inicio_utc": "2026-09-29T21:00Z",
-  "visto": "2026-09-29T15:24:35+00:00",
+  "visto": "2026-09-29T16:02:55+00:00",
   "cerrado": false
  },
  "BOS@NYY": {
   "ml": {
-   "BOS": 112,
-   "NYY": -135
+   "BOS": 115,
+   "NYY": -139
   },
   "total": {
    "linea": 6.0,
@@ -60,15 +60,15 @@
   "spread": {
    "BOS": {
     "linea": 1.5,
-    "cuota": -206
+    "cuota": -193
    },
    "NYY": {
     "linea": -1.5,
-    "cuota": 169
+    "cuota": 159
    }
   },
   "inicio_utc": "2026-09-30T00:00Z",
-  "visto": "2026-09-29T15:24:35+00:00",
+  "visto": "2026-09-29T16:02:55+00:00",
   "cerrado": false
  },
  "CHC@SD": {
@@ -92,7 +92,7 @@
    }
   },
   "inicio_utc": "2026-09-30T02:00Z",
-  "visto": "2026-09-29T15:24:35+00:00",
+  "visto": "2026-09-29T16:02:55+00:00",
   "cerrado": false
  }
 }

@@ -1036,6 +1036,25 @@
    "alarma": null
   },
   {
+   "id": "sistema.tandas",
+   "area": "Sistema",
+   "pregunta": "¿El plan de tandas cubre todos los partidos de hoy?",
+   "minimo": 1,
+   "estado": "alarma",
+   "n": 2,
+   "texto": "1 tanda(s), 2 partido(s) analizados",
+   "datos": {
+    "tandas": 1,
+    "analizados": 2,
+    "sin_tanda": [
+     "PHI@ATL",
+     "CWS@HOU"
+    ],
+    "sin_hora": []
+   },
+   "alarma": "el plan de hoy deja 2 partido(s) SIN ANALIZAR: PHI@ATL, CWS@HOU"
+  },
+  {
    "id": "sistema.creditos",
    "area": "Sistema",
    "pregunta": "¿Quedan créditos en la fuente de precios?",
@@ -1057,7 +1076,7 @@
  "cuenta": {
   "medida": 14,
   "sin muestra": 27,
-  "alarma": 1,
+  "alarma": 2,
   "error": 0
  }
 }
