@@ -1040,19 +1040,16 @@
    "area": "Sistema",
    "pregunta": "¿El plan de tandas cubre todos los partidos de hoy?",
    "minimo": 1,
-   "estado": "alarma",
-   "n": 2,
-   "texto": "1 tanda(s), 2 partido(s) analizados",
+   "estado": "medida",
+   "n": 4,
+   "texto": "2 tanda(s), 4 partido(s) analizados",
    "datos": {
-    "tandas": 1,
-    "analizados": 2,
-    "sin_tanda": [
-     "PHI@ATL",
-     "CWS@HOU"
-    ],
+    "tandas": 2,
+    "analizados": 4,
+    "sin_tanda": [],
     "sin_hora": []
    },
-   "alarma": "el plan de hoy deja 2 partido(s) SIN ANALIZAR: PHI@ATL, CWS@HOU"
+   "alarma": null
   },
   {
    "id": "sistema.creditos",
@@ -1074,9 +1071,9 @@
   }
  ],
  "cuenta": {
-  "medida": 14,
+  "medida": 15,
   "sin muestra": 27,
-  "alarma": 2,
+  "alarma": 1,
   "error": 0
  }
 }

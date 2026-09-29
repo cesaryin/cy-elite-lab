@@ -6,13 +6,30 @@
   "vivo": {
     "plan": {
       "fecha": "2026-09-29",
-      "creado": "2026-09-29T13:01:27Z",
+      "creado": "2026-09-29T16:38:34Z",
       "tandas_dia": 2,
       "tope_tanda": 2,
       "tope_dia": 3,
       "margen_min": 30,
-      "una_tanda": "una tanda iba a analizar 2 partido(s): el dia va en una sola",
+      "una_tanda": "se mantienen 2 tandas: con una sola se analizarían 1.2 alineaciones en vez de 3.1",
       "tandas": [
+        {
+          "min_ct": 750,
+          "min_reloj": 270,
+          "hora": "12:30 PM",
+          "utc": "2026-09-29T17:30:00Z",
+          "juegos": [
+            {
+              "clave": "PHI@ATL",
+              "inicio_utc": "2026-09-29T18:00:00Z"
+            },
+            {
+              "clave": "CWS@HOU",
+              "inicio_utc": "2026-09-29T21:00:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 1.2
+        },
         {
           "min_ct": 1110,
           "min_reloj": 630,
@@ -65,10 +82,8 @@
           "juegos": 1
         }
       ],
-      "sin_tanda": [
-        "PHI@ATL",
-        "CWS@HOU"
-      ]
+      "sin_tanda": [],
+      "sin_hora": []
     },
     "tandas": []
   },
