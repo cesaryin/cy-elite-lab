@@ -144,15 +144,243 @@
         "alineaciones": true,
         "abridores": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "NYY ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -136,
+      "prob_estimada": 57.5,
+      "razon": "Lectura de ventaja corta (57.5% contra 55.1% justo): la ofensiva de BOS está congelada (1.8 c/j y ops .553 en la semana, 1.7 c/j en 10 juegos). NYY llega con 5.8 c/j y ops .802, aun sin A. Judge. M. Fried tiene mejor FIP que S. Gray (3.09 contra 3.65).",
+      "equipos": [
+        "BOS",
+        "NYY"
+      ],
+      "destacado": "NYY",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "ofensiva",
+        "pitcheo",
+        "forma"
+      ],
+      "contra": "La referencia de precio es una sola casa, NYY juega sin A. Judge y S. Gray (2.72 ERA, 0 ER en su última salida) puede sostener un juego de pocas carreras en el que BOS gane con una sola rachita.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-01T00:00:00Z",
+      "cuota_apertura_ref": -136,
+      "valor": {
+        "prob_estimada": 57.5,
+        "prob_justa": 55.11,
+        "prob_implicita": 57.63,
+        "cuota": -136,
+        "cuota_justa_mercado": -123,
+        "ev_pct": -0.22,
+        "ev_kalshi_pct": -3.19,
+        "precio_minimo": -123,
+        "precio_publicado": -123,
+        "precio_equilibrio": -135,
+        "discrepancia_pp": 2.39,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -0.22% por debajo del minimo exigido (3.9%)",
+        "fuente_precio": "espn_bet",
+        "casas_precio": 1,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 10,
+        "no_encontrados": [
+          {
+            "numero": "57.5%",
+            "frase": "Lectura de ventaja corta (57.5% contra 55.1% justo)"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-30T23:30:25Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -149,
+      "prob_estimada": 59.5,
+      "razon": "El cierre favorece claramente a SD: su bullpen tiene 2.37 de ERA con M. Miller, contra 3.62 de CHC y 3.3 IP usadas en dos días. La ofensiva de SD llega con 6.4 c/j y ops .750 en la semana; la de CHC, con 2.6 c/j. Ventaja pequeña a un precio cargado.",
+      "equipos": [
+        "CHC",
+        "SD"
+      ],
+      "destacado": "SD",
+      "hora": "9:00 PM CT",
+      "capas": [
+        "bullpen",
+        "ofensiva",
+        "forma"
+      ],
+      "contra": "N. Pivetta no ha pasado de 5 IP en sus tres últimas salidas y el lineup de CHC es fuerte sobre el papel (índice 107, P. Crow-Armstrong .942); a -149 el margen de valor es mínimo.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-01T02:00:00Z",
+      "cuota_apertura_ref": -149,
+      "valor": {
+        "prob_estimada": 59.5,
+        "prob_justa": 57.16,
+        "prob_implicita": 59.84,
+        "cuota": -149,
+        "cuota_justa_mercado": -133,
+        "ev_pct": -0.57,
+        "ev_kalshi_pct": -3.38,
+        "precio_minimo": -132,
+        "precio_publicado": -132,
+        "precio_equilibrio": -146,
+        "discrepancia_pp": 2.34,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -0.57% por debajo del minimo exigido (4.5%)",
+        "fuente_precio": "espn_bet",
+        "casas_precio": 1,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-30T23:30:25Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "NYY F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": 113,
+      "prob_estimada": 48.0,
+      "razon": "Es el mercado más limpio del día (vig 1.9): M. Fried (FIP 3.09, K% 24.0) se enfrenta a un lineup de BOS con 43 K en 5 juegos y ops .553 en la semana, y sin R. Anthony. NYY viene con 5.8 c/j. Ventaja corta: 48% contra 46.1% justo.",
+      "equipos": [
+        "BOS",
+        "NYY"
+      ],
+      "destacado": "NYY",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva"
+      ],
+      "contra": "En Kalshi el F5 va a tres bandas y el empate (18.7% justo) se pierde. Con un total de 6.5 y S. Gray en forma, un 0-0 o un 1-1 tras cinco entradas es muy posible.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-01T00:00:00Z",
+      "valor": {
+        "prob_estimada": 48.0,
+        "prob_justa": null,
+        "prob_implicita": 46.95,
+        "cuota": 113,
+        "cuota_justa_mercado": null,
+        "ev_pct": 2.24,
+        "ev_kalshi_pct": -1.47,
+        "precio_minimo": 113,
+        "precio_publicado": 113,
+        "precio_equilibrio": 109,
+        "discrepancia_pp": null,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.24% · no tomar peor de +113",
+        "fuente_precio": "espn_bet",
+        "casas_precio": 1,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 8,
+        "no_encontrados": [
+          {
+            "numero": "18.7%",
+            "frase": "46.1% justo. En Kalshi el F5 va a tres bandas y el empate (18.7% justo) se pierde. C"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-09-30T23:30:25Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true,
+        "gratis": true
+      }
     }
   ],
   "parlay": null,
-  "resumen": "La tanda tiene dos lecturas de totales, las dos con la referencia débil de una sola casa. En CWS/HOU, dos ofensivas calientes chocan con una línea baja de 7.5, y el bullpen de HOU llega muy usado. En PHI/ATL, el lineup congelado de PHI frente a C. Sánchez inclina el u7, aunque con ventaja corta y con el bullpen de PHI como riesgo. No hay valor en los ML: PHI incumple SYS-004 y los demás precios ya reflejan lo que muestran los datos.",
+  "resumen": "La tanda tiene dos lecturas de totales, las dos con la referencia débil de una sola casa. En CWS/HOU, dos ofensivas calientes chocan con una línea baja de 7.5, y el bullpen de HOU llega muy usado. En PHI/ATL, el lineup congelado de PHI frente a C. Sánchez inclina el u7, aunque con ventaja corta y con el bullpen de PHI como riesgo. No hay valor en los ML: PHI incumple SYS-004 y los demás precios ya reflejan lo que muestran los datos.\n\nDía de Comodín con dos juegos y poco valor. En BOS/NYY la lectura se apoya en el apagón ofensivo de BOS frente a M. Fried y a una ofensiva de NYY en buen momento; la ventaja está tanto en el ML como en el F5 de Kalshi, pero es corta en ambos. En CHC/SD, el bullpen de SD y el contraste ofensivo favorecen a SD, aunque a -149 el margen es mínimo. Los totales se descartan porque una de las ofensivas llega caliente en cada juego. Son lecturas honestas de ventaja pequeña, sin nada inflado.",
   "descartes": [
     "PHI ML y PHI F5 (Kalshi): SYS-004. PHI tiene 2.0 c/j y ops .608 en la semana; la ventaja de C. Sánchez sobre T. Mahle no compensa un lineup tan frío.",
     "ATL ML: sin separación clara de la línea justa (48.5%). Su ofensiva (.629 de ops en la semana, .696 vs zurdos) choca con C. Sánchez, aunque su bullpen (2.82) sea mejor.",
     "HOU ML -155: ofensiva caliente, pero CWS también llega caliente (6.8 c/j en 10). El bullpen de HOU está cargado de uso y el 58% justo ya cobra la localía.",
-    "Spreads de ambos juegos: sin una capa que respalde un margen de 2+ carreras por encima de lo que ya descuenta el precio."
+    "Spreads de ambos juegos: sin una capa que respalde un margen de 2+ carreras por encima de lo que ya descuenta el precio.",
+    "BOS/NYY u6.5: la ofensiva de NYY viene caliente (5.1 c/j en 10 juegos, 5.8 en la semana), así que falla la comprobación 3 del under.",
+    "BOS/NYY o6.5: BOS anota 1.7 c/j en 10 juegos y S. Gray y M. Fried están sólidos; no hay razón para ir contra un over ya favorecido (52.2% justo).",
+    "BOS ML y BOS Spread +1.5: su ofensiva está fría (ops .553, 1.8 c/j), así que SYS-004 lo tumba.",
+    "NYY Spread -1.5 (+159): sin A. Judge y ante S. Gray, ganar por 2 o más es un margen difícil; no se separa de forma honesta del 36.9% justo.",
+    "CHC/SD u7: SD anota 6.2 c/j en 10 juegos y 6.4 en la semana, lo que falla la comprobación 3 aunque Petco (pf 94) ayude.",
+    "CHC/SD o7: CHC está fría (2.6 c/j en la semana), el parque es de pitcheo y el bullpen de SD es elite; el over ya cotiza a -125.",
+    "SD F5 ML (Kalshi): N. Pivetta sale corto, y el F5 quita justo la capa que da ventaja a SD, su bullpen.",
+    "SD Spread -1.5: jugando en casa, SD puede no batear la novena; con CHC capaz de producir (índice 107), no se separa del 38.7% justo.",
+    "CHC ML: K. Gausman tiene 4.51 de ERA, el bullpen es flojo y la ofensiva está fría; no hay ventaja."
   ],
   "vivo": {
     "plan": {
@@ -259,15 +487,38 @@
         "sin_ventaja": 1,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-09-30T23:30:25Z",
+        "min_ct": 1110,
+        "claves": [
+          "BOS@NYY@2026-10-01T00:00:00Z",
+          "CHC@SD@2026-10-01T02:00:00Z"
+        ],
+        "juegos": [
+          "BOS@NYY",
+          "CHC@SD"
+        ],
+        "alineaciones": [
+          4,
+          4
+        ],
+        "senales": [
+          "NYY F5 ML"
+        ],
+        "sin_ventaja": 2,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 0-1 (-1.00 U).\n• CHC/BOS u7.5 (SEÑAL FUERTE), perdida: CHC 6-2 BOS, 8 carreras con la línea en 7.5.\n1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 16% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 1,
-    "seguimiento": 1,
+    "apostables": 2,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
-    "riesgo_u": 1.0,
+    "riesgo_u": 2.0,
     "ev_min": 2.0
   }
 }
