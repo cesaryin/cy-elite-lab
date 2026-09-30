@@ -820,7 +820,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
     var t = String((e && (e.message || e.error_description)) || '').toLowerCase();
     var st = e && e.status;
     if (t.indexOf('security purposes') >= 0) return _t('For security, you must wait a minute before requesting again.');
-    if (st === 429 || t.indexOf('rate limit') >= 0) return 'Demasiados intentos seguidos. Espera unos minutos y vuelve a probar.';
+    if (st === 429 || t.indexOf('rate limit') >= 0) return _t('Too many attempts in a row. Wait a few minutes and try again.');
     if (t.indexOf('invalid login credentials') >= 0) return _t('Email or password does not match.');
     if (t.indexOf('email not confirmed') >= 0) return _t('You haven\'t confirmed your email yet: open the link we sent you when you created the account.');
     if (t.indexOf('different') >= 0 && t.indexOf('password') >= 0) return _t('The new password must be different from the previous one.');
@@ -924,7 +924,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
     if (r.error) return msg(traduce(r.error));
     $('cu-p2').value = '';
     if (r.data && r.data.session) return;
-    enviado('Te hemos mandado un correo a ' + email + _t('. Open the link it contains to confirm it\'s yours and you\'ll enter directly.'));
+    enviado(_t('We\'ve sent you an email to ') + email + _t('. Open the link it contains to confirm it\'s yours and you\'ll enter directly.'));
   });
 
   // --- olvide la contraseña ---
@@ -1050,7 +1050,17 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 
   $('cu-f-borrar').addEventListener('submit', async function (ev) {
     ev.preventDefault(); msg('');
-    if ($('cu-conf').value.trim().toUpperCase() !== 'BORRAR') return msg(_t('Type DELETE to confirm.'));
+    // LA PALABRA QUE SE PIDE VA EN EL IDIOMA DE LA PAGINA; LA QUE SE MANDA AL PORTERO,
+    // NO (30-sep-2026). La pagina inglesa decia «Type DELETE to confirm» y aqui se
+    // comparaba con 'BORRAR': un cliente ingles que seguia las instrucciones NO PODIA
+    // BORRAR SU CUENTA, nunca -- y Privacidad §7 y §10 le prometen justo ese derecho.
+    // Lo destapo el guardian de español en el codigo, reforzado esa mañana.
+    //
+    // Son dos cosas distintas y por eso van separadas: PALABRA es texto de la pantalla y
+    // se traduce; 'BORRAR' en la llamada es parte del PROTOCOLO con el portero
+    // (servidor.js lo comprueba literal) y no cambia con el idioma.
+    var PALABRA = _t('DELETE');
+    if ($('cu-conf').value.trim().toUpperCase() !== PALABRA) return msg(_t('Type DELETE to confirm.'));
     ocupado(this, true);
     var d = await portero('borrar', { confirmar: 'BORRAR' });
     ocupado(this, false);
@@ -1128,4 +1138,4 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
   setTimeout(function () { if (!$('cu-cargando').hidden) pintar(null); }, 6000);
 })();
 </script>
-<!-- generado 09/30/2026 8:01 AM --></body></html>
+<!-- generado 09/30/2026 1:28 PM --></body></html>

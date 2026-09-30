@@ -51,8 +51,8 @@
    "pregunta": "¿Lo que lleva dinero acierta más que lo que se queda sin él?",
    "minimo": 30,
    "estado": "medida",
-   "n": 55,
-   "texto": "con dinero 31-29 (margen 1.4) · sin dinero 26-29 (margen -5.6)",
+   "n": 57,
+   "texto": "con dinero 31-29 (margen 1.4) · sin dinero 28-29 (margen -3.9)",
    "datos": {
     "con_dinero": {
      "n": 60,
@@ -64,12 +64,12 @@
      "neto": 1.42
     },
     "sin_dinero": {
-     "n": 55,
-     "w": 26,
+     "n": 57,
+     "w": 28,
      "l": 29,
-     "acierto": 47.3,
-     "necesita": 52.9,
-     "margen": -5.6,
+     "acierto": 49.1,
+     "necesita": 53.0,
+     "margen": -3.9,
      "neto": 0.0
     }
    },
@@ -509,25 +509,25 @@
    "pregunta": "¿Acierta más en partidos con noticias de impacto alto?",
    "minimo": 30,
    "estado": "sin muestra",
-   "n": 27,
-   "texto": "partido con noticia de impacto alto 17-10 (margen +10.3) · sin noticia de impacto alto 19-19 (margen -1.3)",
+   "n": 28,
+   "texto": "partido con noticia de impacto alto 18-10 (margen +11.5) · sin noticia de impacto alto 20-19 (margen -0.1)",
    "datos": {
     "partido con noticia de impacto alto": {
-     "n": 27,
-     "w": 17,
+     "n": 28,
+     "w": 18,
      "l": 10,
-     "acierto": 63.0,
-     "necesita": 52.7,
-     "margen": 10.3,
+     "acierto": 64.3,
+     "necesita": 52.8,
+     "margen": 11.5,
      "neto": 2.88
     },
     "sin noticia de impacto alto": {
-     "n": 38,
-     "w": 19,
+     "n": 39,
+     "w": 20,
      "l": 19,
-     "acierto": 50.0,
+     "acierto": 51.3,
      "necesita": 51.3,
-     "margen": -1.3,
+     "margen": -0.1,
      "neto": 2.23
     }
    },
@@ -1065,10 +1065,15 @@
    "area": "Sistema",
    "pregunta": "¿El plan de tandas cubre todos los partidos de hoy?",
    "minimo": 1,
-   "estado": "sin muestra",
-   "n": 0,
-   "texto": "todavía sin plan de hoy",
-   "datos": null,
+   "estado": "medida",
+   "n": 4,
+   "texto": "2 tanda(s), 4 partido(s) analizados",
+   "datos": {
+    "tandas": 2,
+    "analizados": 4,
+    "sin_tanda": [],
+    "sin_hora": []
+   },
    "alarma": null
   },
   {
@@ -1091,8 +1096,8 @@
   }
  ],
  "cuenta": {
-  "medida": 16,
-  "sin muestra": 25,
+  "medida": 17,
+  "sin muestra": 24,
   "alarma": 2,
   "error": 0
  }
