@@ -510,6 +510,47 @@
      "inicio_utc": "2026-10-01T02:00Z"
     }
    }
+  },
+  {
+   "ts": "2026-09-30T19:35:28+00:00",
+   "juegos": {
+    "CWS@HOU": {
+     "ml": {
+      "CWS": 129,
+      "HOU": -155
+     },
+     "total": {
+      "linea": 7.5,
+      "over": -108,
+      "under": -112
+     },
+     "inicio_utc": "2026-09-30T21:00Z"
+    },
+    "BOS@NYY": {
+     "ml": {
+      "BOS": 112,
+      "NYY": -136
+     },
+     "total": {
+      "linea": 6.5,
+      "over": -122,
+      "under": 101
+     },
+     "inicio_utc": "2026-10-01T00:00Z"
+    },
+    "CHC@SD": {
+     "ml": {
+      "CHC": 123,
+      "SD": -149
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -125,
+      "under": 104
+     },
+     "inicio_utc": "2026-10-01T02:00Z"
+    }
+   }
   }
  ]
 }
