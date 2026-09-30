@@ -1680,5 +1680,92 @@
       "abridores": true,
       "ts": "2026-09-24T21:30:25Z"
     }
+  },
+  {
+    "fecha": "2026-09-29",
+    "pick": "CWS/HOU o8",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -118,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CWS 6-3 HOU",
+    "veredicto": "seguimiento",
+    "prob_estimada": 54.5,
+    "prob_justa": 51.74,
+    "ev_pct": 0.69,
+    "precio_publicado": -112,
+    "discrepancia_pp": 2.76,
+    "fuente_precio": "espn_bet",
+    "casas_precio": 1,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "pitcheo",
+      "bullpen"
+    ],
+    "contra": "Los 7 dias calientes son solo 6 juegos y pueden regresar a la media (ambos equipos rondan .730 de ops en la temporada). A eso se suman el 37% de K de H. Smith, el techo cerrado y un umpire que resta carreras (-1.6%). Con 8 carreras exactas el dinero vuelve.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-29T17:30:22Z"
+    }
+  },
+  {
+    "fecha": "2026-09-29",
+    "pick": "SD ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -130,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CHC 0-8 SD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 56.5,
+    "prob_justa": 54.04,
+    "ev_pct": -0.04,
+    "precio_publicado": -119,
+    "discrepancia_pp": 2.46,
+    "fuente_precio": "espn_bet",
+    "casas_precio": 1,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "bullpen",
+      "ofensiva",
+      "forma"
+    ],
+    "contra": "SD batea flojo ante zurdos (ops .706) contra M. Boyd, M. King viene de 5 ER en 4.0 IP ante LAD y por FIP los abridores son casi iguales (4.25 vs 4.19).",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-29T23:30:23Z"
+    }
   }
 ]
