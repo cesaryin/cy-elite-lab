@@ -1,0 +1,20 @@
+{
+ "fecha": "2026-10-01",
+ "n_juegos": 1,
+ "juegos": {
+  "PHI@ATL": {
+   "team_total": {
+    "ATL": {
+     "linea": 3.5,
+     "over": -103,
+     "under": -125
+    },
+    "PHI": {
+     "linea": 3.5,
+     "over": -127,
+     "under": -103
+    }
+   }
+  }
+ }
+}

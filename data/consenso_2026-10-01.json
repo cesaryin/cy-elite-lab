@@ -1,0 +1,77 @@
+{
+ "fecha": "2026-10-01",
+ "tomado_utc": "2026-10-01T13:00:42+00:00",
+ "n_juegos": 1,
+ "juegos": {
+  "PHI@ATL": {
+   "id": "5524c44b05e28aa899909c9e001184ec",
+   "away": "PHI",
+   "home": "ATL",
+   "inicio_utc": "2026-10-02T00:11:00Z",
+   "n_casas": 9,
+   "fuente": "consenso_us",
+   "ml": {
+    "ATL": -103,
+    "PHI": -112
+   },
+   "total": {
+    "linea": 7.5,
+    "over": 100,
+    "under": -120,
+    "n_casas": 9
+   },
+   "spread": {
+    "ATL": {
+     "linea": 1.5,
+     "cuota": -183,
+     "n_casas": 8
+    },
+    "PHI": {
+     "linea": -1.5,
+     "cuota": 158,
+     "n_casas": 8
+    }
+   },
+   "casas_ml": {
+    "ATL": 9,
+    "PHI": 9
+   },
+   "mejor": {
+    "ml": {
+     "ATL": {
+      "cuota": 100,
+      "casa": "fanduel"
+     },
+     "PHI": {
+      "cuota": -107,
+      "casa": "lowvig"
+     }
+    },
+    "total": {
+     "linea": 7.5,
+     "over": {
+      "cuota": 103,
+      "casa": "lowvig"
+     },
+     "under": {
+      "cuota": -115,
+      "casa": "betrivers"
+     }
+    },
+    "spread": {
+     "ATL": {
+      "linea": 1.5,
+      "cuota": -174,
+      "casa": "draftkings"
+     },
+     "PHI": {
+      "linea": -1.5,
+      "cuota": 162,
+      "casa": "lowvig"
+     }
+    }
+   },
+   "flojo": false
+  }
+ }
+}

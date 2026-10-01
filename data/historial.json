@@ -6072,5 +6072,99 @@
     "clv_metodo": "kalshi_historico",
     "clv_limpio": 0.0,
     "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-09-30",
+    "pick": "CWS/HOU o7.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -108,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.93,
+    "marcador": "CWS 7-3 HOU",
+    "veredicto": "apostable",
+    "prob_estimada": 54.0,
+    "prob_justa": 49.57,
+    "ev_pct": 4.0,
+    "precio_publicado": -111,
+    "discrepancia_pp": 4.43,
+    "fuente_precio": "espn_bet",
+    "casas_precio": 1,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "forma",
+      "bullpen"
+    ],
+    "contra": "Los dos abridores ponchan más del 25% y vienen de salidas limpias (S. Burke 1 ER ante COL, H. Brown 1 ER ante ATH); un duelo de ponches puede dejar el juego en 6-7 carreras.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": false,
+      "abridores": true,
+      "ts": "2026-09-30T17:30:25Z"
+    },
+    "clv": -2.4,
+    "prob_cierre": 49.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": -0.1,
+    "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-09-30",
+    "pick": "NYY F5 ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 113,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.13,
+    "marcador": "BOS 2-9 NYY",
+    "veredicto": "apostable",
+    "prob_estimada": 48.0,
+    "prob_justa": null,
+    "ev_pct": 2.24,
+    "precio_publicado": 113,
+    "discrepancia_pp": null,
+    "fuente_precio": "espn_bet",
+    "casas_precio": 1,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva"
+    ],
+    "contra": "En Kalshi el F5 va a tres bandas y el empate (18.7% justo) se pierde. Con un total de 6.5 y S. Gray en forma, un 0-0 o un 1-1 tras cinco entradas es muy posible.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-30T23:30:25Z"
+    },
+    "clv": -0.9,
+    "prob_cierre": 46.0,
+    "clv_metodo": "kalshi_historico",
+    "cuadrante": "merecido"
   }
 ]

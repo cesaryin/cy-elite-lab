@@ -1767,5 +1767,134 @@
       "abridores": true,
       "ts": "2026-09-29T23:30:23Z"
     }
+  },
+  {
+    "fecha": "2026-09-30",
+    "pick": "PHI/ATL u7",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -104,
+    "unidades": 0.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "PHI 4-3 ATL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 51.5,
+    "prob_justa": 48.7,
+    "ev_pct": 1.02,
+    "precio_publicado": -101,
+    "discrepancia_pp": 2.8,
+    "fuente_precio": "espn_bet",
+    "casas_precio": 1,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "clima"
+    ],
+    "contra": "El bullpen de PHI tiene ERA 4.00 y T. Mahle viene de 5 ER ante CIN; si ATL castiga a Mahle o a los relevistas de PHI, el total pasa de 7. Además, el 7 exacto es push y el dinero se devuelve.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-30T17:30:25Z"
+    }
+  },
+  {
+    "fecha": "2026-09-30",
+    "pick": "NYY ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -136,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "BOS 2-9 NYY",
+    "veredicto": "seguimiento",
+    "prob_estimada": 57.5,
+    "prob_justa": 55.11,
+    "ev_pct": -0.22,
+    "precio_publicado": -123,
+    "discrepancia_pp": 2.39,
+    "fuente_precio": "espn_bet",
+    "casas_precio": 1,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "pitcheo",
+      "forma"
+    ],
+    "contra": "La referencia de precio es una sola casa, NYY juega sin A. Judge y S. Gray (2.72 ERA, 0 ER en su última salida) puede sostener un juego de pocas carreras en el que BOS gane con una sola rachita.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-30T23:30:25Z"
+    }
+  },
+  {
+    "fecha": "2026-09-30",
+    "pick": "SD ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -149,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CHC 1-4 SD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 59.5,
+    "prob_justa": 57.16,
+    "ev_pct": -0.57,
+    "precio_publicado": -132,
+    "discrepancia_pp": 2.34,
+    "fuente_precio": "espn_bet",
+    "casas_precio": 1,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "bullpen",
+      "ofensiva",
+      "forma"
+    ],
+    "contra": "N. Pivetta no ha pasado de 5 IP en sus tres últimas salidas y el lineup de CHC es fuerte sobre el papel (índice 107, P. Crow-Armstrong .942); a -149 el margen de valor es mínimo.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-30T23:30:25Z"
+    }
   }
 ]
