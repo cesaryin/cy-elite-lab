@@ -69,7 +69,7 @@
   },
   "inicio_utc": "2026-10-01T00:00Z",
   "visto": "2026-09-30T23:45:14+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CHC@SD": {
   "ml": {
@@ -78,7 +78,7 @@
   },
   "total": {
    "linea": 7.0,
-   "over": -125,
+   "over": -126,
    "under": 104
   },
   "spread": {
@@ -92,7 +92,7 @@
    }
   },
   "inicio_utc": "2026-10-01T02:00Z",
-  "visto": "2026-09-30T23:45:14+00:00",
+  "visto": "2026-10-01T00:37:08+00:00",
   "cerrado": false
  }
 }
