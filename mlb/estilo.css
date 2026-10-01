@@ -996,6 +996,9 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
   font-size:11px;color:var(--faint);line-height:1.75}
 .pp-pie a{color:var(--mut)}
 .gc.card{margin:0}
+/* Con la barra de arriba de la web (1-oct-2026) el .app ya deja su hueco: el contenido no
+   necesita el suyo, o empezaria demasiado abajo. */
+.app>.pp{padding-top:4px}
 .pp-gano{display:flex;align-items:center;gap:9px;margin-top:12px;padding:11px 14px;
   border:1px solid rgba(63,185,80,.35);background:rgba(63,185,80,.08);
   border-radius:11px;font-size:13px;color:var(--soft)}
