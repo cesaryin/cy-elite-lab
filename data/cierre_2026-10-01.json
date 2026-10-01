@@ -1,26 +1,26 @@
 {
  "PHI@ATL": {
   "ml": {
-   "PHI": -108,
-   "ATL": -111
+   "PHI": -111,
+   "ATL": -108
   },
   "total": {
    "linea": 7.5,
-   "over": 100,
-   "under": -120
+   "over": -102,
+   "under": -118
   },
   "spread": {
    "PHI": {
     "linea": -1.5,
-    "cuota": 154
+    "cuota": 158
    },
    "ATL": {
     "linea": 1.5,
-    "cuota": -187
+    "cuota": -193
    }
   },
   "inicio_utc": "2026-10-02T00:00Z",
-  "visto": "2026-10-01T15:41:11+00:00",
+  "visto": "2026-10-01T16:35:14+00:00",
   "cerrado": false
  }
 }
