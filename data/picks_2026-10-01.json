@@ -1,8 +1,100 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "ATL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -111,
+      "prob_estimada": 52.5,
+      "razon": "Lectura floja, con apenas ~2 puntos sobre la justa (50.67%). La alineacion de ATL de hoy (OPS medio ~.743) supera a su temporada (.718) y su split vs derechos es .730 ante A. Nola, que viene de 1.0 IP y 3 ER. La semana de ATL deja 4.2 c/j pero OPS .607, asi que el lineup no llega caliente.",
+      "equipos": [
+        "PHI",
+        "ATL"
+      ],
+      "destacado": "ATL",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "ofensiva",
+        "pitcheo",
+        "matchup"
+      ],
+      "contra": "R. Kerr viene de una salida de 3.0 IP y R. Iglesias, D. Lee y D. Fuentes lanzaron ambos dias, asi que ATL tendra que cubrir muchas entradas con un bullpen sin sus brazos clave, mientras PHI tiene a J. Duran disponible.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "ATL",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-02T00:00:00Z",
+      "cuota_apertura_ref": -111,
+      "valor": {
+        "prob_estimada": 52.5,
+        "prob_justa": 50.67,
+        "prob_implicita": 52.61,
+        "cuota": -111,
+        "cuota_justa_mercado": -103,
+        "ev_pct": -0.2,
+        "ev_kalshi_pct": -3.52,
+        "precio_minimo": -104,
+        "precio_publicado": -104,
+        "precio_equilibrio": -110,
+        "discrepancia_pp": 1.83,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -0.20% por debajo del minimo exigido (2.7%)",
+        "mejor_precio": {
+          "cuota": -106,
+          "casa": "lowvig"
+        },
+        "alcanzable": false,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "MEDIA",
+          "a_favor": false,
+          "delta_pp": -2.2
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 8,
+        "no_encontrados": [
+          {
+            "numero": ".743",
+            "frase": "la justa (50.67%). La alineacion de ATL de hoy (OPS medio ~.743) supera a su tempor"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-01T22:50:20Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
   "resumen": "",
-  "descartes": [],
+  "descartes": [
+    "PHI/ATL u7.5: ambas ofensivas estan por debajo de 4.0 c/j en los ultimos 10 (PHI 3.3, ATL 3.8), una capa a favor, pero fallan dos de las cuatro comprobaciones. ATL tiene tres relevistas quemados (R. Iglesias, D. Lee, D. Fuentes) y R. Kerr viene de una salida corta de 3.0 IP. No se da el under.",
+    "PHI ML: no pasa SYS-004. La ofensiva de PHI esta fria, con 2.2 c/j y OPS .621 en la semana y 3.3 c/j en los ultimos 10.",
+    "PHI team total u3.5: la ofensiva fria de PHI lo respalda, pero depende del bullpen de ATL, que hoy esta quemado y tiene que cubrir la salida corta de R. Kerr. Falla la comprobacion del bullpen.",
+    "ATL team total o3.5: ATL suma 3.8 c/j en los ultimos 10 y OPS .607 en la semana. No hay una ventaja clara sobre la justa (47.73%).",
+    "F5 de Kalshi (PHI 44.1%, ATL 38.3%, TIE 17.6%): el mercado mas limpio pone a PHI por delante en las cinco primeras entradas por la duracion de A. Nola frente a R. Kerr. No hay una razon concreta para contradecirlo.",
+    "Spread: ATL +1.5 a -190 y PHI -1.5 a +164 quedan fuera de la banda de cuotas.",
+    "El movimiento del ML (PHI de -118 a -108, dinero hacia ATL) va a favor de la lectura y no se cuenta como confirmacion."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-10-01",
@@ -40,14 +132,34 @@
       "sin_tanda": [],
       "sin_hora": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-10-01T22:50:20Z",
+        "min_ct": 1070,
+        "claves": [
+          "PHI@ATL@2026-10-02T00:00:00Z"
+        ],
+        "juegos": [
+          "PHI@ATL"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 2-0 (+2.06 U).\n• CWS/HOU o7.5 (SEÑAL ELITE), ganada: CWS 7-3 HOU, 10 carreras con la línea en 7.5.\n• NYY F5 ML (SEÑAL MODERADA), ganada: BOS 2-9 NYY.\n2 ganadas con ventaja medida.\nEn lo que se puede juzgar, el 15% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 0,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
-    "ev_min": null
+    "ev_min": 2.0
   }
 }
