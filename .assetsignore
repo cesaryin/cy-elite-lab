@@ -1,0 +1,11 @@
+# LO QUE NO SE PUBLICA EN cyelitelab.com (1-oct-2026).
+#
+# Cloudflare publica la carpeta entera del repo (sin configuracion propia, «Framework:
+# Static, Output Directory: .»), y con ella se subia tambien la carpeta .git: el historial
+# del repo se podia bajar desde la web. No llevaba ninguna clave --el repo ya es publico
+# en GitHub--, pero una web no ensena sus tripas. Sintaxis de .gitignore.
+#
+# La copia de este fichero vive en el motor: herramientas/web/assetsignore.
+.git
+.github
+.assetsignore
