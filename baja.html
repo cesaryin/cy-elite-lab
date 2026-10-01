@@ -504,6 +504,13 @@ a.set-lg:hover,a.set-lg:focus-visible{color:var(--text)}
 .hi-pkd{font-size:11px;color:var(--mut);margin-top:1px;
   font-variant-numeric:tabular-nums}
 .hi-pkn{font-size:12.5px;font-weight:800;font-variant-numeric:tabular-nums}
+/* LA FILA QUE LLEVA A SU PARTIDO (1-oct-2026, opcion A aprobada por César). Solo en la web
+   inglesa y solo si la pagina existe: la pone traducir_web.py. La fila entera se toca y lleva
+   la flecha de las filas de Ajustes, que en esta web quiere decir «aqui se entra». */
+a.hi-pk{color:inherit;text-decoration:none}
+a.hi-pk:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:8px}
+.hi-pk .hi-ar{width:15px;height:15px;flex:none;color:var(--faint);margin-left:2px}
+@media (hover:hover){a.hi-pk:hover .hi-ar{color:var(--gold2)}}
 
 /* el verde y el rojo del historial, compartidos por curva, barras y picks */
 .hi-hn.g,.hi-clvn.g,.hi-brv.g,.hi-pkn.g,.hi-kpi b.g,.hi-pr2 b.g,.hi-t td.g{color:var(--green)}
@@ -720,4 +727,4 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
     document.head.appendChild(sc);
   } catch (e) {}
 })();
-</script><script>(function(){var q=new URLSearchParams(location.search),t=q.get('t')||'',de=q.get('de')||'';var esp=document.getElementById('bj-espera'),ok=document.getElementById('bj-ok'),todo=document.getElementById('bj-todo'),mal=document.getElementById('bj-mal');function ver(e){esp.hidden=true;e.hidden=false;}if(!/^[0-9a-f]{32}$/.test(t))return ver(mal);fetch('/portero/baja',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({llave:t,de:de})}).then(function(r){return r.json();}).then(function(d){if(!d||!d.ok)return ver(mal);if(d.de!=='lunes'){try{localStorage.removeItem('cy_lista');}catch(z){}}ver(d.de==='lunes'?ok:todo);}).catch(function(){ver(mal);});})();</script><!-- generado 10/01/2026 9:42 AM --></body></html>
+</script><script>(function(){var q=new URLSearchParams(location.search),t=q.get('t')||'',de=q.get('de')||'';var esp=document.getElementById('bj-espera'),ok=document.getElementById('bj-ok'),todo=document.getElementById('bj-todo'),mal=document.getElementById('bj-mal');function ver(e){esp.hidden=true;e.hidden=false;}if(!/^[0-9a-f]{32}$/.test(t))return ver(mal);fetch('/portero/baja',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({llave:t,de:de})}).then(function(r){return r.json();}).then(function(d){if(!d||!d.ok)return ver(mal);if(d.de!=='lunes'){try{localStorage.removeItem('cy_lista');}catch(z){}}ver(d.de==='lunes'?ok:todo);}).catch(function(){ver(mal);});})();</script><!-- generado 10/01/2026 10:17 AM --></body></html>
