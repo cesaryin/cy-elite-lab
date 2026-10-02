@@ -387,11 +387,15 @@ a.set-lg:hover,a.set-lg:focus-visible{color:var(--text)}
    de especificidad gana la ultima. Ese dia costo cuatro fallos en vivo --.gc,
    .logo, .mut y .chip-- todos por clases cortas sin prefijo. */
 
-/* el veredicto: lo primero que se lee, y sin maquillaje */
+/* el veredicto: lo primero que se lee, y sin maquillaje.
+   SIN EL DORADO (2-oct-2026, Cesar: «ponlo con el color normal, quitale el dorado, no me
+   gusta que resalte tanto sin necesidad»). Llevaba la raya de la izquierda y el titulo en
+   dorado; ahora el borde de cualquier tarjeta y el titulo en el gris de las demas etiquetas
+   en mayusculas del Record (.hi-tc-h). */
 .hi-ver{background:var(--card);border:1px solid var(--line);border-radius:14px;
-  padding:14px 15px;border-left:3px solid var(--gold2)}
+  padding:14px 15px}
 .hi-ver h4{font-size:11px;font-weight:800;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--gold2);margin:0 0 8px}
+  text-transform:uppercase;color:var(--mut);margin:0 0 8px}
 .hi-ver p{font-size:13px;line-height:1.62;color:var(--text);margin:0}
 .hi-ver p+p{margin-top:8px;color:var(--mut);font-size:12.5px}
 .hi-ver b{color:var(--text);font-weight:700}
@@ -654,6 +658,28 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
     } catch (e) {}
   }
 })();
+</script><script>(function(){
+  var pie = document.querySelector('footer.legal'), app = document.querySelector('.app');
+  if (!pie || !app || !window.getComputedStyle) return;
+  var ancho = window.innerWidth;
+  function colocar() {
+    pie.style.marginTop = '';
+    var abajo = parseFloat(getComputedStyle(app).paddingBottom) || 0;
+    var sobra = window.innerHeight - abajo
+              - (pie.getBoundingClientRect().bottom + (window.pageYOffset || 0));
+    if (sobra > 1) pie.style.marginTop = (parseFloat(getComputedStyle(pie).marginTop) + sobra) + 'px';
+  }
+  colocar();
+  window.addEventListener('load', colocar);
+  window.addEventListener('resize', function () {
+    if (window.innerWidth !== ancho) { ancho = window.innerWidth; colocar(); }
+  });
+  var sec = document.querySelector('section.on');
+  if (sec && window.ResizeObserver) new ResizeObserver(colocar).observe(sec);
+  function luego() { setTimeout(colocar, 60); setTimeout(colocar, 450); }
+  document.addEventListener('click', luego, true);
+  document.addEventListener('toggle', luego, true);
+})();
 </script><script>
 (function () {
   try {
@@ -766,4 +792,4 @@ f.addEventListener('submit',async function(ev){
     b.disabled=false;b.textContent=antes;
     mal(x.message||_t('Could not save. Try again in a moment.'));
   }
-});})();</script><!-- generado 10/02/2026 9:42 AM --></body></html>
+});})();</script><!-- generado 2 oct · 10:30 AM --></body></html>
