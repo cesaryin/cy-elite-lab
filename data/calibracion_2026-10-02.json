@@ -51,8 +51,8 @@
    "pregunta": "¿Lo que lleva dinero acierta más que lo que se queda sin él?",
    "minimo": 30,
    "estado": "medida",
-   "n": 59,
-   "texto": "con dinero 33-29 (margen 3.0) · sin dinero 30-29 (margen -2.3)",
+   "n": 60,
+   "texto": "con dinero 33-29 (margen 3.0) · sin dinero 31-29 (margen -1.5)",
    "datos": {
     "con_dinero": {
      "n": 62,
@@ -64,12 +64,12 @@
      "neto": 3.48
     },
     "sin_dinero": {
-     "n": 59,
-     "w": 30,
+     "n": 60,
+     "w": 31,
      "l": 29,
-     "acierto": 50.8,
+     "acierto": 51.7,
      "necesita": 53.2,
-     "margen": -2.3,
+     "margen": -1.5,
      "neto": 0.0
     }
    },
@@ -509,16 +509,16 @@
    "pregunta": "¿Acierta más en partidos con noticias de impacto alto?",
    "minimo": 30,
    "estado": "medida",
-   "n": 32,
-   "texto": "partido con noticia de impacto alto 22-10 (margen +15.8) · sin noticia de impacto alto 20-19 (margen -0.1)",
+   "n": 33,
+   "texto": "partido con noticia de impacto alto 23-10 (margen +16.7) · sin noticia de impacto alto 20-19 (margen -0.1)",
    "datos": {
     "partido con noticia de impacto alto": {
-     "n": 32,
-     "w": 22,
+     "n": 33,
+     "w": 23,
      "l": 10,
-     "acierto": 68.8,
+     "acierto": 69.7,
      "necesita": 53.0,
-     "margen": 15.8,
+     "margen": 16.7,
      "neto": 4.94
     },
     "sin noticia de impacto alto": {
@@ -1072,8 +1072,13 @@
    "minimo": 1,
    "estado": "sin muestra",
    "n": 0,
-   "texto": "todavía sin plan de hoy",
-   "datos": null,
+   "texto": "0 tanda(s), 0 partido(s) analizados",
+   "datos": {
+    "tandas": 0,
+    "analizados": 0,
+    "sin_tanda": [],
+    "sin_hora": []
+   },
    "alarma": null
   },
   {
@@ -1082,10 +1087,10 @@
    "pregunta": "¿Quedan créditos en la fuente de precios?",
    "minimo": 1,
    "estado": "medida",
-   "n": 493,
-   "texto": "493 creditos · el tope de hoy son 16 · 30 dias hasta el reinicio · ayer se gastaron 7 (consenso 6, extras 1)",
+   "n": 490,
+   "texto": "490 creditos · el tope de hoy son 16 · 30 dias hasta el reinicio · ayer se gastaron 7 (consenso 6, extras 1)",
    "datos": {
-    "creditos": 493,
+    "creditos": 490,
     "tope_hoy": 16,
     "dias": 30,
     "gasto_ayer": 7,
@@ -1093,7 +1098,7 @@
      "consenso": 6,
      "extras": 1
     },
-    "gasto_hoy": 0
+    "gasto_hoy": 3
    },
    "alarma": null
   }
