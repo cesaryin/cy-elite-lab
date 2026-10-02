@@ -1896,5 +1896,51 @@
       "abridores": true,
       "ts": "2026-09-29T23:30:23Z"
     }
+  },
+  {
+    "fecha": "2026-10-01",
+    "pick": "ATL ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -111,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "PHI 2-6 ATL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 52.5,
+    "prob_justa": 50.67,
+    "ev_pct": -0.2,
+    "precio_publicado": -104,
+    "discrepancia_pp": 1.83,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "pitcheo",
+      "matchup"
+    ],
+    "contra": "R. Kerr viene de una salida de 3.0 IP y R. Iglesias, D. Lee y D. Fuentes lanzaron ambos dias, asi que ATL tendra que cubrir muchas entradas con un bullpen sin sus brazos clave, mientras PHI tiene a J. Duran disponible.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA",
+      "a_favor": false,
+      "delta_pp": -2.2
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-01T22:50:20Z"
+    }
   }
 ]
