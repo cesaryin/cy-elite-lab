@@ -1,0 +1,34 @@
+{
+ "fecha": "2026-10-03",
+ "n_juegos": 2,
+ "juegos": {
+  "CWS@CLE": {
+   "team_total": {
+    "CWS": {
+     "linea": 2.5,
+     "over": -146,
+     "under": 113
+    },
+    "CLE": {
+     "linea": 3.5,
+     "over": -113,
+     "under": -115
+    }
+   }
+  },
+  "NYY@TB": {
+   "team_total": {
+    "NYY": {
+     "linea": 3.5,
+     "over": 112,
+     "under": -146
+    },
+    "TB": {
+     "linea": 3.5,
+     "over": -107,
+     "under": -120
+    }
+   }
+  }
+ }
+}
