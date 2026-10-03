@@ -688,6 +688,59 @@
      "inicio_utc": "2026-10-04T00:30Z"
     }
    }
+  },
+  {
+   "ts": "2026-10-03T01:10:17+00:00",
+   "juegos": {
+    "CWS@CLE": {
+     "ml": {
+      "CWS": 129,
+      "CLE": -156
+     },
+     "total": {
+      "linea": 7.0,
+      "over": 102,
+      "under": -123
+     },
+     "inicio_utc": "2026-10-03T17:00Z"
+    },
+    "ATL@LAD": {
+     "ml": {
+      "ATL": 187,
+      "LAD": -230
+     },
+     "total": {
+      "linea": 8.0,
+      "over": -115,
+      "under": -105
+     },
+     "inicio_utc": "2026-10-03T20:00Z"
+    },
+    "NYY@TB": {
+     "ml": {
+      "NYY": 113,
+      "TB": -136
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -107,
+      "under": -113
+     },
+     "inicio_utc": "2026-10-03T22:30Z"
+    },
+    "SD@MIL": {
+     "ml": {
+      "SD": 167,
+      "MIL": -205
+     },
+     "total": {
+      "linea": 7.0,
+      "over": -109,
+      "under": -110
+     },
+     "inicio_utc": "2026-10-04T00:30Z"
+    }
+   }
   }
  ]
 }
