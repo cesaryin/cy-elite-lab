@@ -1,8 +1,95 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "bronce",
+      "pick": "CWS ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 126,
+      "prob_estimada": 44.5,
+      "razon": "Lectura de poca ventaja (unos 2 puntos sobre la justa de 42.5%). Con zurdos en ambos montículos, CWS batea .751 de OPS ante zurdos y CLE solo .675. CWS llega con 6.7 c/j en sus últimos 10 y el núcleo 2-4 por encima de .825. A +126 queda justo fuera de la banda.",
+      "equipos": [
+        "CWS",
+        "CLE"
+      ],
+      "destacado": "CWS",
+      "hora": "12:00 PM CT",
+      "capas": [
+        "ofensiva",
+        "matchup",
+        "forma"
+      ],
+      "contra": "El 1.29 de H. Smith sale de solo 110 bateadores y trae un 14.5% de boletos. Si se descontrola o sale pronto, CWS juega una tarde de bullpen contra P. Messick, más fiable con 747 bateadores enfrentados, y contra C. Smith (41 salvamentos) cerrando.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CWS",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-03T17:00:00Z",
+      "cuota_apertura_ref": 124,
+      "valor": {
+        "prob_estimada": 44.5,
+        "prob_justa": 42.51,
+        "prob_implicita": 44.25,
+        "cuota": 126,
+        "cuota_justa_mercado": 135,
+        "ev_pct": 0.57,
+        "ev_kalshi_pct": -3.33,
+        "precio_minimo": 130,
+        "precio_publicado": 130,
+        "precio_equilibrio": 125,
+        "discrepancia_pp": 1.99,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "cuota +126 fuera del rango -162/+125",
+        "mejor_precio": {
+          "cuota": 128,
+          "casa": "fanduel"
+        },
+        "alcanzable": false,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-03T16:30:18Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
   "resumen": "",
-  "descartes": [],
+  "descartes": [
+    "CWS/CLE u6.5: las dos ofensivas vienen calientes (CWS 6.7 y CLE 5.3 carreras por juego en sus últimos 10). Falla la comprobación 3 del under, aunque la línea bajó de 7.0 a 6.5.",
+    "CWS/CLE o6.5: el total se movió de 7.0 a 6.5 con fuerza FUERTE en contra del over. Además, parque 98, viento hacia dentro y umpire con -3%. Mi estimación (~53%) no se separa de la justa de 53.0%.",
+    "CLE ML a -149: la justa da 57.5%. CLE batea solo .675 de OPS ante zurdos y no veo ventaja; mi lectura queda por debajo del mercado.",
+    "CWS team total o2.5 a -146: la estimación (~57%) apenas supera la justa de 55.8% y el precio cargado exige más valor del que hay. CLE team total u3.5: la ofensiva de CLE viene caliente y el under no pasa la comprobación.",
+    "CWS/CLE F5 (Kalshi): H. Smith es un relevista convertido en abridor y su duración es incierta, así que el F5 no aísla a los abridores. Sin lectura clara frente a la justa (CWS 35.7%, CLE 46.5%, empate 17.8%).",
+    "ATL/LAD, todos los mercados: el abridor de ATL no está anunciado (pitcheo vacío). Es un hueco de información que impide medir ML, spread y F5.",
+    "ATL/LAD u8.5: falla las comprobaciones del under. Hay 101.8°F y parque 102, y LAD anota 5.0 carreras por juego en sus últimos 10.",
+    "ATL/LAD o8.5: T. Skubal y dos bullpens sólidos (ATL 2.82 de ERA) frenan el over. Sin abridor rival conocido no hay discrepancia defendible contra la justa de 48.3%.",
+    "LAD ML a -216: fuera de banda y con el abridor rival sin confirmar."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-10-03",
@@ -85,14 +172,36 @@
       "sin_tanda": [],
       "sin_hora": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-10-03T16:30:18Z",
+        "min_ct": 690,
+        "claves": [
+          "CWS@CLE@2026-10-03T17:00:00Z",
+          "ATL@LAD@2026-10-03T20:00:00Z"
+        ],
+        "juegos": [
+          "CWS@CLE",
+          "ATL@LAD"
+        ],
+        "alineaciones": [
+          2,
+          4
+        ],
+        "senales": [],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 2-0 (+2.06 U).\n• CWS/HOU o7.5 (SEÑAL ELITE), ganada: CWS 7-3 HOU, 10 carreras con la línea en 7.5.\n• NYY F5 ML (SEÑAL MODERADA), ganada: BOS 2-9 NYY.\n2 ganadas con ventaja medida.\nEn lo que se puede juzgar, el 15% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 0,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
-    "ev_min": null
+    "ev_min": 2.0
   }
 }
