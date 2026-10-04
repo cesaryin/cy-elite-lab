@@ -1942,5 +1942,92 @@
       "abridores": true,
       "ts": "2026-10-01T22:50:20Z"
     }
+  },
+  {
+    "fecha": "2026-10-03",
+    "pick": "CWS ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 126,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CWS 3-0 CLE",
+    "veredicto": "seguimiento",
+    "prob_estimada": 44.5,
+    "prob_justa": 42.51,
+    "ev_pct": 0.57,
+    "precio_publicado": 130,
+    "discrepancia_pp": 1.99,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "matchup",
+      "forma"
+    ],
+    "contra": "El 1.29 de H. Smith sale de solo 110 bateadores y trae un 14.5% de boletos. Si se descontrola o sale pronto, CWS juega una tarde de bullpen contra P. Messick, más fiable con 747 bateadores enfrentados, y contra C. Smith (41 salvamentos) cerrando.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-03T16:30:18Z"
+    }
+  },
+  {
+    "fecha": "2026-10-03",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -138,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "NYY 0-1 TB",
+    "veredicto": "seguimiento",
+    "prob_estimada": 57.5,
+    "prob_justa": 55.94,
+    "ev_pct": -0.83,
+    "precio_publicado": -123,
+    "discrepancia_pp": 1.56,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup",
+      "ofensiva"
+    ],
+    "contra": "El bullpen de NYY es mejor (2.66 contra 3.39) y NYY llega con 5.1 c/j en sus 10 ultimos; si R. Rasmussen sale pronto, el cierre favorece a NYY.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-03T22:00:19Z"
+    }
   }
 ]
