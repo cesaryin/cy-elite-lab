@@ -147,6 +147,162 @@
         "alineaciones": true,
         "abridores": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "LAD F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": -133,
+      "prob_estimada": 57.5,
+      "razon": "Lectura de ventaja mínima, unos 1.6 pts sobre la justa del F5 de Kalshi (55.93%). B. Snell (FIP 2.25 en muestra amplia, K 31.8%) frente a R. Kerr, cuyo FIP de 4.14 desmiente su ERA de 1.47. LAD batea .756 de OPS vs zurdos. ATL batea .696 vs zurdos y .464 en su último juego.",
+      "equipos": [
+        "ATL",
+        "LAD"
+      ],
+      "destacado": "LAD",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "matchup"
+      ],
+      "contra": "Este F5 es el de Kalshi, a tres bandas: el empate a cinco entradas (15.7% justo) se PIERDE, no devuelve. Además Kerr puede salir pronto y el bullpen de ATL (ERA 2.82) cubrir esas entradas, y las salidas recientes de Snell han sido cortas (4.0, 1.0 y 5.2 IP).",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "LAD",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-05T00:00:00Z",
+      "valor": {
+        "prob_estimada": 57.5,
+        "prob_justa": null,
+        "prob_implicita": 57.08,
+        "cuota": -133,
+        "cuota_justa_mercado": null,
+        "ev_pct": 0.73,
+        "ev_kalshi_pct": -2.27,
+        "precio_minimo": -124,
+        "precio_publicado": -124,
+        "precio_equilibrio": -135,
+        "discrepancia_pp": null,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +0.73% por debajo del minimo exigido (3.8%)",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 14,
+        "no_encontrados": [
+          {
+            "numero": "1.6",
+            "frase": "Lectura de ventaja mínima, unos 1.6 pts sobre la justa"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-10-04T22:50:22Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "ATL/LAD o8",
+      "deporte": "MLB",
+      "tipo": "o8",
+      "cuota": -109,
+      "prob_estimada": 51.0,
+      "razon": "Lectura floja, apenas 1.1 pts sobre la justa (49.89%). Hay 95.5°F, viento de 6.1 mph hacia el CF, pf 102 y un umpire con efecto de +1.5% en carreras. LAD anota 4.7 c/j en sus últimos 10 y batea .756 vs zurdos ante un Kerr con FIP 4.14.",
+      "equipos": [
+        "ATL",
+        "LAD"
+      ],
+      "destacado": null,
+      "hora": "7:00 PM CT",
+      "capas": [
+        "clima",
+        "parque",
+        "pitcheo"
+      ],
+      "contra": "Snell es élite y ambos bullpens son sólidos; los dos equipos solo pasaron de 8.5 en 2 de sus últimos 10, y la línea ya subió de 7.0 a 7.5, así que el clima probablemente ya está en el precio.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 8.0
+      },
+      "inicio_utc": "2026-10-05T00:00:00Z",
+      "valor": {
+        "prob_estimada": 51.0,
+        "prob_justa": 49.89,
+        "prob_implicita": 52.15,
+        "cuota": -109,
+        "cuota_justa_mercado": 100,
+        "ev_pct": -2.21,
+        "ev_kalshi_pct": -5.56,
+        "precio_minimo": 102,
+        "precio_publicado": 102,
+        "precio_equilibrio": -104,
+        "discrepancia_pp": 1.11,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -2.21% por debajo del minimo exigido (2.5%)",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "mov_linea": 0.5
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 11,
+        "no_encontrados": [
+          {
+            "numero": "1.1",
+            "frase": "Lectura floja, apenas 1.1 pts sobre la justa"
+          },
+          {
+            "numero": "8.5",
+            "frase": "ambos bullpens son sólidos; los dos equipos solo pasaron de 8.5 en 2 de sus últimos"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-10-04T22:50:22Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
@@ -156,7 +312,14 @@
     "SD/MIL o7.0 (-118): la justa da 52%, y con dos buenos abridores, el pen de SD y un pf de 94 no veo el over por encima de eso.",
     "SD team total u3.5 (-145): estimo un 57% contra una justa de 55.4%. No da valor a -145 y SD viene anotando 5.3 c/j.",
     "MIL team total o3.5 (-119): el bullpen élite de SD frena las entradas finales y no hay ventaja sobre la justa de 50.9%.",
-    "Spreads MIL -1.5 (+164) y SD +1.5 (-190): las dos cuotas quedan fuera de la banda permitida."
+    "Spreads MIL -1.5 (+164) y SD +1.5 (-190): las dos cuotas quedan fuera de la banda permitida.",
+    "LAD ML a -230: fuera de la banda permitida (-162 a +125).",
+    "ATL ML a +194: hubo un movimiento FUERTE en contra (de +130 a +173). Además ATL viene fría vs zurdos (.696 de OPS, .464 en su último juego) y su abridor tiene un FIP de 4.14 frente al FIP de 2.25 de Snell.",
+    "u8 del juego: fallan dos de las cuatro comprobaciones (calor de 95.5°F con viento hacia afuera, y un pf de 102). La línea del total además subió de 7.0 a 7.5, y ATL no llega a 4.0 c/j mientras LAD anota 4.7.",
+    "ATL team total u3.5 a -146: estimo un 57%, por debajo del ~59.4% que exige el precio.",
+    "LAD team total o3.5 a -123: estimo un 54% frente al 55.2% de equilibrio; el bullpen de ATL (ERA 2.82) frena el over.",
+    "LAD Spread -1.5 a -104: estimo un 50% frente al 51% de equilibrio; LAD es local y puede no batear en la 9ª, lo que recorta el margen.",
+    "ATL Spread +1.5: sin una razón concreta para discrepar del 51.2% de la justa."
   ],
   "vivo": {
     "plan": {
@@ -237,13 +400,32 @@
         "sin_ventaja": 1,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-10-04T22:50:22Z",
+        "min_ct": 1070,
+        "claves": [
+          "ATL@LAD@2026-10-05T00:00:00Z"
+        ],
+        "juegos": [
+          "ATL@LAD"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [],
+        "sin_ventaja": 2,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 2-0 (+2.06 U).\n• CWS/HOU o7.5 (SEÑAL ELITE), ganada: CWS 7-3 HOU, 10 carreras con la línea en 7.5.\n• NYY F5 ML (SEÑAL MODERADA), ganada: BOS 2-9 NYY.\n2 ganadas con ventaja medida.\nEn lo que se puede juzgar, el 15% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 1,
-    "seguimiento": 1,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
     "riesgo_u": 1.0,
     "ev_min": 2.0
