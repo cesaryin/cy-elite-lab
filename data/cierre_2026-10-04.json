@@ -21,7 +21,7 @@
   },
   "inicio_utc": "2026-10-04T20:00Z",
   "visto": "2026-10-04T19:46:27+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "ATL@LAD": {
   "ml": {
@@ -30,8 +30,8 @@
   },
   "total": {
    "linea": 7.5,
-   "over": -118,
-   "under": -102
+   "over": -117,
+   "under": -103
   },
   "spread": {
    "ATL": {
@@ -44,7 +44,7 @@
    }
   },
   "inicio_utc": "2026-10-05T00:00Z",
-  "visto": "2026-10-04T19:46:27+00:00",
+  "visto": "2026-10-04T22:30:24+00:00",
   "cerrado": false
  }
 }
