@@ -1,0 +1,50 @@
+{
+ "SD@MIL": {
+  "ml": {
+   "SD": 119,
+   "MIL": -143
+  },
+  "total": {
+   "linea": 7.0,
+   "over": -113,
+   "under": -107
+  },
+  "spread": {
+   "SD": {
+    "linea": 1.5,
+    "cuota": -180
+   },
+   "MIL": {
+    "linea": -1.5,
+    "cuota": 148
+   }
+  },
+  "inicio_utc": "2026-10-04T20:00Z",
+  "visto": "2026-10-04T07:21:10+00:00",
+  "cerrado": false
+ },
+ "ATL@LAD": {
+  "ml": {
+   "ATL": 130,
+   "LAD": -158
+  },
+  "total": {
+   "linea": 7.0,
+   "over": -110,
+   "under": -110
+  },
+  "spread": {
+   "ATL": {
+    "linea": 1.5,
+    "cuota": -176
+   },
+   "LAD": {
+    "linea": -1.5,
+    "cuota": 145
+   }
+  },
+  "inicio_utc": "2026-10-05T00:00Z",
+  "visto": "2026-10-04T07:21:10+00:00",
+  "cerrado": false
+ }
+}
