@@ -85,14 +85,15 @@ on:
 
 permissions:
   contents: read
+  actions: read      # para ver si su relevo ya corre (5-oct-2026: EL RELEVO SE VIGILA)
 
-# EL ULTIMO RELOJ MANDA. Si se relanza el run de picks a media jornada —cosa que
-# pasa cuando se republica la web— el reloj nuevo cancela al viejo y arranca
-# limpio: al recorrer sus objetivos se salta los que ya pasaron, asi que no hay
-# disparos repetidos. Con `false` se habrian quedado dos relojes en cola pisandose.
-concurrency:
-  group: reloj-del-dia
-  cancel-in-progress: true
+# EL ULTIMO RELOJ MANDA, PERO YA NO LO HACE GITHUB (5-oct-2026). Hasta hoy esto era un
+# `concurrency` con cancel-in-progress: el reloj nuevo cancelaba al viejo EN CUANTO
+# ENTRABA EN LA COLA, aunque todavia no tuviera maquina. El 5-oct GitHub estuvo horas
+# sin dar maquinas (averia suya, desde las 2:11 PM CT), y un relevo asi deja la jornada
+# sin reloj. Ahora lo hace el propio guion: antes de cada disparo pregunta si corre un
+# reloj MAS NUEVO y, si corre, se aparta sin disparar (el disparo es del nuevo).
+# Republicar la web, los cron de la mañana y los relevos siguen sin repetir nada.
 
 jobs:
   reloj:
@@ -104,6 +105,8 @@ jobs:
           TK: ${{ secrets.MOTOR_DISPATCH_TOKEN }}
           DESDE: ${{ github.event.inputs.desde }}
           MODO_ESPERA: ${{ github.event.inputs.espera }}
+          GH_TOKEN: ${{ github.token }}     # solo para LEER los relojes de este repo
+          GH_RUN: ${{ github.run_id }}
         run: |
           set -u
           MOTOR="https://api.github.com/repos/cesaryin/cy-elite-motor/actions/workflows"
@@ -212,6 +215,98 @@ jobs:
           INICIO=$(date +%s)
           echo "Arranca el reloj. Testigo recibido: ${DESDE:-0} min."
 
+          # ------------------------------------------------------------------
+          # EL RELEVO SE VIGILA (5-oct-2026, decision de Cesar: «si, hazlo»).
+          #
+          # POR QUE. El 5-oct GitHub estuvo horas sin dar maquinas (su averia, desde
+          # las 2:11 PM CT): la captura de las 2:35 PM murio en la cola tres veces. El
+          # reloj tenia el mismo punto debil: al pasar el testigo se apagaba EN EL
+          # ACTO, y si al nuevo no le daban maquina la jornada se quedaba sin reloj
+          # hasta los cron de la mañana. Y aunque arrancara tarde, se saltaba lo que
+          # habia vencido mientras esperaba («ya paso, se salta»): una tanda perdida.
+          #
+          # QUE HACE AHORA. Pide el relevo y SIGUE VIVO vigilandolo:
+          #   - en cuanto el nuevo corre, este se aparta (exit 0);
+          #   - si el nuevo muere sin maquina, o el pedido ni aparece, lo pide otra
+          #     vez, hasta 4 en total;
+          #   - mientras tanto, si vence un objetivo, lo dispara ESTE: el nuevo, al
+          #     arrancar, lo encuentra pasado y se lo salta, asi que nada se repite;
+          #   - hasta LIMITE (5 h 30 min de vida), con margen ante el corte de 340 min.
+          # Los relojes se ven con `gh` (trae su propio jq) y el token de este repo, de
+          # solo lectura: aqui solo se PREGUNTA; lo que se lanza sigue yendo con TK.
+          # Todo lo que puede devolver «no» va dentro de un if: el paso corre con -e.
+          #
+          # SI NO SE PUEDEN VER LOS RELOJES (gh falla, la API no contesta), este reloj
+          # hace EXACTAMENTE lo de antes del 5-oct: dispara sin preguntar y, al pedir el
+          # relevo, se fia de el y se va. «No lo veo» nunca se lee como «no ha
+          # arrancado»: eso le haria pedir relevos de mas y acabarian dos relojes
+          # disparando lo mismo (dos tandas, dos analisis pagados).
+          # ------------------------------------------------------------------
+          RUNS_REPO="${{ github.repository }}"
+          LIMITE=$((INICIO + 330 * 60))
+          PEDIDOS=0; T_RELEVO=0; CUERPO_RELEVO=""
+
+          # Deja en NUEVOS los relojes MAS NUEVOS que este, uno por linea («id estado
+          # conclusion»). Devuelve «no» si no se pudo mirar.
+          NUEVOS=""
+          mirar_relojes() {
+            NUEVOS=$(gh run list -R "$RUNS_REPO" -w reloj.yml -L 10 \
+              --json databaseId,status,conclusion \
+              --jq ".[] | select(.databaseId > ${GH_RUN:-0}) | \"\(.databaseId) \(.status) \(.conclusion)\"" \
+              2>/dev/null)
+          }
+
+          # ¿Corre ya un reloj mas nuevo? Entonces los disparos son suyos. Sin poder
+          # mirar, «no»: se dispara, como antes del 5-oct.
+          hay_otro_en_marcha() {
+            mirar_relojes && echo "$NUEVOS" | grep -q " in_progress "
+          }
+
+          pedir_relevo() {   # $1 = cuerpo del POST, $2 = etiqueta para el registro
+            CUERPO_RELEVO="$1"; PEDIDOS=$((PEDIDOS + 1)); T_RELEVO=$(date +%s)
+            curl -sL -o /dev/null -w "  $2 -> %{http_code}\n" -X POST \
+              -H "Authorization: Bearer $TK" -H "$A" "$YO" -d "$CUERPO_RELEVO"
+          }
+
+          # Una mirada al relevo: si ya corre, este reloj se aparta; si murio sin
+          # maquina (o el pedido no aparece a los 90 s), se pide otra vez.
+          vigilar_una_vez() {
+            if ! mirar_relojes; then
+              echo "  $(date -u +%H:%M) UTC  no se pueden ver los relojes: este se fia del relevo y se va, como antes."
+              exit 0
+            fi
+            if echo "$NUEVOS" | grep -q " in_progress "; then
+              echo "  $(date -u +%H:%M) UTC  el relevo ya corre: este reloj se aparta."
+              exit 0
+            fi
+            if [ "$PEDIDOS" -lt 4 ] && [ $(( $(date +%s) - T_RELEVO )) -ge 90 ] \
+               && ! echo "$NUEVOS" | grep -qE " (queued|waiting|pending|requested) "; then
+              echo "  $(date -u +%H:%M) UTC  el relevo no arranco (GitHub sin maquina): se pide otra vez."
+              pedir_relevo "$CUERPO_RELEVO" "relevo, otra vez"
+            fi
+          }
+
+          # Duerme hasta $1 (segundos epoch) mirando el relevo cada 30 s. Devuelve «no»
+          # si LIMITE llega antes que $1.
+          esperar_vigilando() {
+            local hasta="$1" resto
+            if [ "$hasta" -gt "$LIMITE" ]; then hasta="$LIMITE"; fi
+            while :; do
+              vigilar_una_vez
+              resto=$(( hasta - $(date +%s) ))
+              if [ "$resto" -le 0 ]; then break; fi
+              sleep $(( resto < 30 ? resto : 30 ))
+            done
+            [ "$1" -le "$LIMITE" ]
+          }
+
+          # Un reloj que arranca tarde (GitHub lo tuvo en la cola) y ya tiene uno mas
+          # nuevo corriendo no tiene nada que hacer.
+          if hay_otro_en_marcha; then
+            echo "Corre un reloj mas nuevo: este se aparta sin disparar nada."
+            exit 0
+          fi
+
           # En modo espera este reloj no dispara nada: solo existe para llegar
           # vivo hasta el ancla de manana. Ver el bloque del final.
           if [ "${MODO_ESPERA:-0}" = "1" ]; then
@@ -243,16 +338,29 @@ jobs:
             fi
 
             ESPERA=$((OBJ - AHORA))
-            if [ $(( (AHORA - INICIO) + ESPERA )) -gt "$PRESUPUESTO" ]; then
+            if [ "$PEDIDOS" = 0 ] && [ $(( (AHORA - INICIO) + ESPERA )) -gt "$PRESUPUESTO" ]; then
               echo "El siguiente objetivo no cabe en este tramo. Paso el testigo en $((MIN - 1)) min."
-              curl -sL -o /dev/null -w "  relevo -> %{http_code}\n" -X POST \
-                -H "Authorization: Bearer $TK" -H "$A" "$YO" \
-                -d "{\"ref\":\"master\",\"inputs\":{\"desde\":\"$((MIN - 1))\"}}"
-              exit 0
+              pedir_relevo "{\"ref\":\"master\",\"inputs\":{\"desde\":\"$((MIN - 1))\"}}" "relevo"
             fi
 
-            [ "$WF" = "tanda" ] || echo "  esperando $((ESPERA / 60)) min hasta $(date -u -d @$OBJ +%H:%M) UTC para $WF"
-            sleep "$ESPERA"
+            if [ "$PEDIDOS" -gt 0 ]; then
+              # Con el relevo pedido, este reloj sigue SOLO mientras el nuevo no corra.
+              if ! esperar_vigilando "$OBJ"; then
+                echo "::warning::El relevo no arranco en la media hora de vigilancia (GitHub sin maquinas). Queda pedido: arrancara en cuanto GitHub lo atienda."
+                exit 0
+              fi
+              echo "  $(date -u +%H:%M) UTC  el relevo aun no corre: este reloj sigue con el minuto $MIN."
+            else
+              [ "$WF" = "tanda" ] || echo "  esperando $((ESPERA / 60)) min hasta $(date -u -d @$OBJ +%H:%M) UTC para $WF"
+              sleep "$ESPERA"
+            fi
+
+            # EL ULTIMO RELOJ MANDA (ver la cabecera): si ya corre uno mas nuevo, este
+            # disparo es suyo.
+            if hay_otro_en_marcha; then
+              echo "  $(date -u +%H:%M) UTC  corre un reloj mas nuevo: este se aparta sin disparar $WF."
+              exit 0
+            fi
 
             # EL BUCLE QUE MAREABA AL RELOJ. picks.yml, al terminar, despierta al
             # reloj para arrancar la jornada; eso esta bien cuando lo lanzas a
@@ -328,6 +436,14 @@ jobs:
 
           echo "Jornada cubierta."
 
+          # Si el relevo de medio dia sigue pedido (vencio todo mientras GitHub no le daba
+          # maquina), no se pide otro: se vigila ese, que al arrancar hara el fin de jornada.
+          if [ "$PEDIDOS" -gt 0 ]; then
+            esperar_vigilando "$LIMITE" || true
+            echo "::warning::El relevo no arranco antes del limite de este reloj (GitHub sin maquinas). Queda pedido."
+            exit 0
+          fi
+
           # ------------------------------------------------------------------
           # EL RELOJ YA NO SE APAGA (4-sep-2026).
           #
@@ -364,19 +480,22 @@ jobs:
 
           if [ "$FALTA" -le 0 ]; then
             echo "  el ancla ya paso; arranco la jornada ahora mismo."
-            curl -sL -o /dev/null -w "  jornada nueva -> %{http_code}\n" -X POST \
-              -H "Authorization: Bearer $TK" -H "$A" "$YO" \
-              -d '{"ref":"master","inputs":{"desde":"-1"}}'
+            CUERPO='{"ref":"master","inputs":{"desde":"-1"}}'; ETIQ="jornada nueva"
           elif [ "$FALTA" -le "$CABE" ]; then
             echo "  duermo $((FALTA / 60)) min y arranco la jornada."
             sleep "$FALTA"
-            curl -sL -o /dev/null -w "  jornada nueva -> %{http_code}\n" -X POST \
-              -H "Authorization: Bearer $TK" -H "$A" "$YO" \
-              -d '{"ref":"master","inputs":{"desde":"-1"}}'
+            CUERPO='{"ref":"master","inputs":{"desde":"-1"}}'; ETIQ="jornada nueva"
           else
             echo "  no cabe: duermo lo que puedo y paso el testigo."
             sleep "$CABE"
-            curl -sL -o /dev/null -w "  relevo de espera -> %{http_code}\n" -X POST \
-              -H "Authorization: Bearer $TK" -H "$A" "$YO" \
-              -d '{"ref":"master","inputs":{"desde":"-1","espera":"1"}}'
+            CUERPO='{"ref":"master","inputs":{"desde":"-1","espera":"1"}}'; ETIQ="relevo de espera"
           fi
+          # Si mientras dormia arranco un reloj mas nuevo (un cron de la mañana, la web
+          # republicada), la jornada ya tiene reloj: no se pide otro.
+          if hay_otro_en_marcha; then
+            echo "  corre un reloj mas nuevo: este se aparta."
+            exit 0
+          fi
+          pedir_relevo "$CUERPO" "$ETIQ"
+          esperar_vigilando "$LIMITE" || true
+          echo "::warning::El relevo no arranco antes del limite de este reloj (GitHub sin maquinas). Queda pedido: arrancara en cuanto GitHub lo atienda."
