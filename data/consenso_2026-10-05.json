@@ -1,0 +1,147 @@
+{
+ "fecha": "2026-10-05",
+ "tomado_utc": "2026-10-05T13:00:39+00:00",
+ "n_juegos": 2,
+ "juegos": {
+  "CWS@CLE": {
+   "id": "ccd487a87bb73145e3f12dd3a765ad47",
+   "away": "CWS",
+   "home": "CLE",
+   "inicio_utc": "2026-10-05T21:10:00Z",
+   "n_casas": 9,
+   "fuente": "consenso_us",
+   "ml": {
+    "CWS": 131,
+    "CLE": -154
+   },
+   "total": {
+    "linea": 6.5,
+    "over": -115,
+    "under": -105,
+    "n_casas": 9
+   },
+   "spread": {
+    "CWS": {
+     "linea": 1.5,
+     "cuota": -178,
+     "n_casas": 9
+    },
+    "CLE": {
+     "linea": -1.5,
+     "cuota": 150,
+     "n_casas": 9
+    }
+   },
+   "casas_ml": {
+    "CWS": 9,
+    "CLE": 9
+   },
+   "mejor": {
+    "ml": {
+     "CWS": {
+      "cuota": 136,
+      "casa": "lowvig"
+     },
+     "CLE": {
+      "cuota": -146,
+      "casa": "betus"
+     }
+    },
+    "total": {
+     "linea": 6.5,
+     "over": {
+      "cuota": -110,
+      "casa": "bovada"
+     },
+     "under": {
+      "cuota": 103,
+      "casa": "lowvig"
+     }
+    },
+    "spread": {
+     "CWS": {
+      "linea": 1.5,
+      "cuota": -173,
+      "casa": "lowvig"
+     },
+     "CLE": {
+      "linea": -1.5,
+      "cuota": 158,
+      "casa": "mybookieag"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "NYY@TB": {
+   "id": "4be245ad03895bcafcdc42d7d926b675",
+   "away": "NYY",
+   "home": "TB",
+   "inicio_utc": "2026-10-06T00:00:00Z",
+   "n_casas": 9,
+   "fuente": "consenso_us",
+   "ml": {
+    "NYY": -129,
+    "TB": 110
+   },
+   "total": {
+    "linea": 6.5,
+    "over": -115,
+    "under": -105,
+    "n_casas": 9
+   },
+   "spread": {
+    "NYY": {
+     "linea": -1.5,
+     "cuota": 142,
+     "n_casas": 9
+    },
+    "TB": {
+     "linea": 1.5,
+     "cuota": -166,
+     "n_casas": 9
+    }
+   },
+   "casas_ml": {
+    "NYY": 9,
+    "TB": 9
+   },
+   "mejor": {
+    "ml": {
+     "NYY": {
+      "cuota": -125,
+      "casa": "bovada"
+     },
+     "TB": {
+      "cuota": 115,
+      "casa": "lowvig"
+     }
+    },
+    "total": {
+     "linea": 6.5,
+     "over": {
+      "cuota": -110,
+      "casa": "lowvig"
+     },
+     "under": {
+      "cuota": -104,
+      "casa": "fanduel"
+     }
+    },
+    "spread": {
+     "NYY": {
+      "linea": -1.5,
+      "cuota": 150,
+      "casa": "bovada"
+     },
+     "TB": {
+      "linea": 1.5,
+      "cuota": -162,
+      "casa": "lowvig"
+     }
+    }
+   },
+   "flojo": false
+  }
+ }
+}

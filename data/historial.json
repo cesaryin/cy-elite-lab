@@ -6166,5 +6166,53 @@
     "clv_metodo": "kalshi_historico",
     "clv_limpio": 0.0,
     "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-10-04",
+    "pick": "MIL F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 113,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "SD 3-4 MIL",
+    "veredicto": "apostable",
+    "prob_estimada": 49.0,
+    "prob_justa": null,
+    "ev_pct": 4.37,
+    "precio_publicado": 109,
+    "discrepancia_pp": null,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva"
+    ],
+    "contra": "Es el F5 de Kalshi a tres bandas: el empate (17.8% justo) se pierde, no se devuelve. Además L. Henderson tiene solo 371 bateadores enfrentados y su ERA de 2.47 va por debajo de su FIP de 3.61.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-04T18:40:20Z"
+    },
+    "clv": -0.9,
+    "prob_cierre": 46.0,
+    "clv_metodo": "kalshi_historico",
+    "causa": "ajustado",
+    "cuadrante": "mala_suerte"
   }
 ]
