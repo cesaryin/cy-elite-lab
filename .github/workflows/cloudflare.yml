@@ -8,7 +8,8 @@ name: Que Cloudflare publique la web
 #
 # QUE HACE. Con cada push a master mira si Cloudflare lo recogio: su comprobacion
 # («Workers Builds: cy-elite-lab») aparece en el commit a los pocos segundos y termina en
-# un par de minutos. Si no aparece en 90 segundos, termina mal o no termina en 8 minutos,
+# un par de minutos. Si no aparece en 90 segundos, lleva 3 minutos en cola sin arrancar,
+# termina mal o no termina en 8 minutos,
 # le pide al motor el build a mano («La web en Cloudflare», accion reconstruir: el MISMO
 # disparador de Cloudflare, sin inventar configuracion). El motor lo comprueba en la web y
 # avisa al celular si sigue sin ponerse al dia.
@@ -53,6 +54,13 @@ jobs:
               echo "Cloudflare no ha recogido el push en 90 s."
               break
             fi
+            # EN COLA MAS DE 3 MINUTOS (5-oct-2026). Un build normal arranca en segundos. El
+            # de las 8:01 de ese dia se quedo «queued» sin arrancar nunca; esperar los 8
+            # minutos enteros retraso el build a mano hasta las 8:10 y el run de la mañana
+            # reviso una web vieja. Si ya esta construyendo («in_progress»), se le espera.
+            case "$estado" in
+              queued/*) if [ "$i" -ge 18 ]; then echo "Cloudflare lo tiene en cola desde hace 3 minutos sin arrancar."; break; fi ;;
+            esac
             case "$estado" in
               completed/success) echo "Cloudflare lo publico ($estado, a los $((i * 10)) s)."; exit 0 ;;
               completed/*) echo "El build de Cloudflare termino mal: $estado"; break ;;
@@ -60,7 +68,7 @@ jobs:
           done
           case "$estado" in
             ""|completed/*) ;;
-            *) echo "Cloudflare no termino en 8 minutos: $estado" ;;
+            *) echo "Cloudflare no lo ha publicado ($estado)" ;;
           esac
           if [ -z "${TK:-}" ]; then
             echo "::error::falta el secreto MOTOR_DISPATCH_TOKEN"
