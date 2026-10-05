@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-05",
- "tomado_utc": "2026-10-05T19:45:48+00:00",
+ "tomado_utc": "2026-10-05T22:50:18+00:00",
  "n_juegos": 2,
  "juegos": {
   "CWS@CLE": {
@@ -81,24 +81,24 @@
    "n_casas": 9,
    "fuente": "consenso_us",
    "ml": {
-    "NYY": -125,
-    "TB": 107
+    "NYY": -124,
+    "TB": 106
    },
    "total": {
     "linea": 6.5,
-    "over": -112,
-    "under": -107,
+    "over": -114,
+    "under": -106,
     "n_casas": 9
    },
    "spread": {
     "NYY": {
      "linea": -1.5,
-     "cuota": 146,
+     "cuota": 148,
      "n_casas": 9
     },
     "TB": {
      "linea": 1.5,
-     "cuota": -175,
+     "cuota": -172,
      "n_casas": 9
     }
    },
@@ -110,34 +110,34 @@
     "ml": {
      "NYY": {
       "cuota": -120,
-      "casa": "fanduel"
+      "casa": "lowvig"
      },
      "TB": {
-      "cuota": 110,
-      "casa": "betus"
+      "cuota": 109,
+      "casa": "lowvig"
      }
     },
     "total": {
      "linea": 6.5,
      "over": {
-      "cuota": -109,
-      "casa": "lowvig"
+      "cuota": -105,
+      "casa": "bovada"
      },
      "under": {
-      "cuota": -104,
-      "casa": "fanduel"
+      "cuota": -103,
+      "casa": "lowvig"
      }
     },
     "spread": {
      "NYY": {
       "linea": -1.5,
-      "cuota": 154,
-      "casa": "lowvig"
+      "cuota": 153,
+      "casa": "mybookieag"
      },
      "TB": {
       "linea": 1.5,
       "cuota": -170,
-      "casa": "bovada"
+      "casa": "lowvig"
      }
     }
    },

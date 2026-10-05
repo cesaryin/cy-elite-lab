@@ -79,10 +79,155 @@
         "alineaciones": true,
         "abridores": true
       }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "NYY F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": 113,
+      "prob_estimada": 48.0,
+      "razon": "El F5 aisla la mayor brecha del juego: C. Schlittler (FIP 2.88, K% 31.4) contra F. Peralta (FIP 4.31, K-BB% 12.7). Es el mercado mas limpio del dia (vig 0.96). NYY no trae datos de la ultima semana; anota 4.8 c/j en sus ultimos 10 con .714 de OPS vs derechos. La ventaja es modesta, de unos 1.5 puntos.",
+      "equipos": [
+        "NYY",
+        "TB"
+      ],
+      "destacado": "NYY",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup",
+        "forma"
+      ],
+      "contra": "Es el F5 de Kalshi a tres bandas: un empate en la 5a (19.8% justo, probable con un total de 6.5) se PIERDE. Ademas, F. Peralta solo permitio 1 ER en sus tres ultimas salidas.",
+      "resolucion": {
+        "mercado": "f5_ml_k",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-06T00:00:00Z",
+      "valor": {
+        "prob_estimada": 48.0,
+        "prob_justa": 46.5,
+        "prob_implicita": 46.95,
+        "cuota": 113,
+        "cuota_justa_mercado": 115,
+        "ev_pct": 2.24,
+        "ev_kalshi_pct": -1.47,
+        "precio_minimo": 113,
+        "precio_publicado": 113,
+        "precio_equilibrio": 109,
+        "discrepancia_pp": 1.5,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.24% · no tomar peor de +113",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 10,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-10-05T22:50:18Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true,
+        "gratis": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "NYY ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -124,
+      "prob_estimada": 55.5,
+      "razon": "Lectura de ventaja corta: NYY tiene ventaja de abridor y tambien de bullpen (2.66 contra 3.39, sin brazos quemados), y la justa (53.3%) no la recoge del todo. No hay datos de 7 dias; NYY anota 4.8 c/j en sus ultimos 10 contra 3.7 de TB. Con el vig del ML el margen queda justo.",
+      "equipos": [
+        "NYY",
+        "TB"
+      ],
+      "destacado": "NYY",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "bullpen",
+        "forma"
+      ],
+      "contra": "La alineacion de TB es mas fuerte vs derechos (.752 de OPS, con J. Caminero en .884 y V. Mesa Jr. en .825), y en la ultima salida de C. Schlittler contra TB solo duro 3.0 IP.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "NYY",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-06T00:00:00Z",
+      "cuota_apertura_ref": -125,
+      "valor": {
+        "prob_estimada": 55.5,
+        "prob_justa": 53.28,
+        "prob_implicita": 55.36,
+        "cuota": -124,
+        "cuota_justa_mercado": -114,
+        "ev_pct": 0.26,
+        "ev_kalshi_pct": -2.87,
+        "precio_minimo": -116,
+        "precio_publicado": -116,
+        "precio_equilibrio": -124,
+        "discrepancia_pp": 2.22,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +0.26% por debajo del minimo exigido (3.3%)",
+        "mejor_precio": {
+          "cuota": -120,
+          "casa": "lowvig"
+        },
+        "alcanzable": false,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "extra_umbral_1_5": false,
+          "extra_umbral_plano": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 9,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-10-05T22:50:18Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
-  "resumen": "",
+  "resumen": "Un solo juego en la tanda: NYY en TB, con C. Schlittler frente a F. Peralta en un parque cerrado y pitcher-friendly. La diferencia real esta en los abridores, por eso la lectura principal es el F5 de NYY en Kalshi, el mercado mas limpio, aunque un empate en la quinta entrada se pierde. El ML de NYY tiene una ventaja mas fina por el vig. El under queda descartado porque la ofensiva de NYY llega caliente. Ninguna de las dos ventajas es grande, y faltan los datos ofensivos de los ultimos 7 dias de ambos equipos.",
   "descartes": [
     "CWS/CLE u6.5: el viento sopla hacia dentro a 10 mph, hace 62F, el parque tiene pf 98, el umpire resta un 1.8% de carreras y los dos bullpens estan descansados. Aun asi, CWS viene caliente con 6.7 c/j en sus ultimos 10 y eso tumba la comprobacion 3. No se da el under.",
     "CWS/CLE o6.5: el clima, el parque, el umpire y los dos bullpens solidos (cerrador de CLE con 1.95 de ERA) juegan en contra. No hay valor sobre el 51.6% justo.",
@@ -90,7 +235,12 @@
     "CWS team total o2.5: el 33.2% de K de G. Williams y el viento hacia dentro frenan a una ofensiva en forma. Lo estimo en ~53%, por debajo del 54% justo.",
     "CLE team total u3.5 -124: CLE es floja contra zurdos y hay viento hacia dentro, pero A. Kay tiene FIP 4.68. Con ~54% frente a un precio que exige 55.4%, el valor esperado es negativo.",
     "CLE F5 (Kalshi, a tres bandas): aisla la ventaja de G. Williams, pero el empate tiene un 18.6% de probabilidad y en Kalshi se pierde. Mi lectura apenas supera el 49% justo.",
-    "Spread de CWS +1.5 / CLE -1.5: la diferencia con la linea justa es nula en un juego de total bajo; no hay razon concreta para discrepar."
+    "Spread de CWS +1.5 / CLE -1.5: la diferencia con la linea justa es nula en un juego de total bajo; no hay razon concreta para discrepar.",
+    "NYY/TB u6.5: el parque (pf 94, techo) y los dos bullpens descansados ayudan, pero NYY llega con 4.8 c/j en sus ultimos 10 y 7/10 overs de 8.5. Falla la comprobacion de ofensiva fria, y la linea ya es muy baja.",
+    "TB ML: TB anota 3.7 c/j en sus ultimos 10 y se enfrenta a un abridor con 31.4% de K y al mejor bullpen. No hay base para pagar +106.",
+    "NYY Spread -1.5: con un total de 6.5 cuesta ganar por 2 o mas; la justa (38.9%) es coherente.",
+    "TB Spread +1.5: cuota de -172, fuera de la banda.",
+    "Team totals (NYY o3.5, TB u2.5): el vig es superior al 6% y mi estimacion apenas se separa 1-2 puntos de la justa, asi que el valor esperado es nulo o negativo."
   ],
   "vivo": {
     "plan": {
@@ -169,15 +319,36 @@
         "sin_ventaja": 1,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-10-05T22:50:18Z",
+        "min_ct": 1070,
+        "claves": [
+          "NYY@TB@2026-10-06T00:00:00Z"
+        ],
+        "juegos": [
+          "NYY@TB"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [
+          "NYY F5 ML"
+        ],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 0-1 (-1.00 U).\n• MIL F5 ML (SEÑAL ELITE), perdida: SD 3-4 MIL.\n1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 15% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 0,
-    "seguimiento": 1,
+    "apostables": 1,
+    "seguimiento": 2,
     "sin_prob_estimada": 0,
-    "riesgo_u": 0.0,
+    "riesgo_u": 1.0,
     "ev_min": 2.0
   }
 }
