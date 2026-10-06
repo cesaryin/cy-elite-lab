@@ -273,6 +273,7 @@ section{display:none}section.on{display:block}
 .lgl-nav a:hover,.lgl-nav a:focus-visible{border-color:var(--gold);color:var(--gold2)}
 .lgl{display:block;margin-top:26px;scroll-margin-top:74px}
 .legal-l{margin-top:9px;font-size:11px;color:var(--faint);text-align:center}
+.legal-a{margin-top:7px;font-size:11px;color:var(--faint);text-align:center;line-height:1.55}
 .legal-l a{color:var(--mut);text-decoration:none;padding:0 3px}
 .legal-l a:hover,.legal-l a:focus-visible{color:var(--gold2);text-decoration:underline}
 .lgl-h{font-size:15px;font-weight:700}
@@ -325,6 +326,7 @@ a.set-lg:hover,a.set-lg:focus-visible{color:var(--text)}
 .set-p b{color:var(--text)}
 .set-p a{color:var(--blue)}
 .set-tel{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:11px 13px;font-variant-numeric:tabular-nums;line-height:1.9}
+.set-tel .tel{font-weight:700}
 .set-pie{text-align:center;font-size:11px;color:var(--faint);margin-top:26px;line-height:1.7}
 /* EL COPYRIGHT, IGUAL EN LAS CINCO PAGINAS (11-sep-2026). Antes salia
    centrado en unas y a la izquierda en otras, y con separaciones distintas,

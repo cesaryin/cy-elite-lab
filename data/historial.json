@@ -5825,6 +5825,51 @@
     "cuadrante": "mala_suerte"
   },
   {
+    "fecha": "2026-10-05",
+    "pick": "NYY F5 ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 113,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "NYY 2-5 TB",
+    "veredicto": "apostable",
+    "prob_estimada": 48.0,
+    "prob_justa": 46.5,
+    "ev_pct": 2.24,
+    "precio_publicado": 113,
+    "discrepancia_pp": 1.5,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup",
+      "forma"
+    ],
+    "contra": "Es el F5 de Kalshi a tres bandas: un empate en la 5a (19.8% justo, probable con un total de 6.5) se PIERDE. Ademas, F. Peralta solo permitio 1 ER en sus tres ultimas salidas.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-05T22:50:18Z"
+    },
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
+  },
+  {
     "fecha": "2026-09-18",
     "pick": "PIT F5 ML",
     "deporte": "MLB",
@@ -6214,50 +6259,5 @@
     "clv_metodo": "kalshi_historico",
     "clv_limpio": 0.0,
     "cuadrante": "merecido"
-  },
-  {
-    "fecha": "2026-10-05",
-    "pick": "NYY F5 ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": 113,
-    "unidades": 1.0,
-    "resultado": "L",
-    "neto_u": -1.0,
-    "marcador": "NYY 2-5 TB",
-    "veredicto": "apostable",
-    "prob_estimada": 48.0,
-    "prob_justa": 46.5,
-    "ev_pct": 2.24,
-    "precio_publicado": 113,
-    "discrepancia_pp": 1.5,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "matchup",
-      "forma"
-    ],
-    "contra": "Es el F5 de Kalshi a tres bandas: un empate en la 5a (19.8% justo, probable con un total de 6.5) se PIERDE. Ademas, F. Peralta solo permitio 1 ER en sus tres ultimas salidas.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": true,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-05T22:50:18Z"
-    },
-    "causa": "varianza",
-    "cuadrante": "mala_suerte"
   }
 ]

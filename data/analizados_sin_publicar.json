@@ -1398,6 +1398,92 @@
     }
   },
   {
+    "fecha": "2026-10-05",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -153,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "CWS 4-3 CLE",
+    "veredicto": "seguimiento",
+    "prob_estimada": 59.0,
+    "prob_justa": 58.17,
+    "ev_pct": -2.44,
+    "precio_publicado": -129,
+    "discrepancia_pp": 0.83,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "CWS llega con 6.7 c/j en sus ultimos 10 y CLE batea solo .675 de OPS contra zurdos; ademas G. Williams duro 3.1 IP con 4 ER y 4 BB en su ultima salida.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-05T19:45:48Z"
+    }
+  },
+  {
+    "fecha": "2026-10-05",
+    "pick": "NYY ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -124,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "NYY 2-5 TB",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.5,
+    "prob_justa": 53.28,
+    "ev_pct": 0.26,
+    "precio_publicado": -116,
+    "discrepancia_pp": 2.22,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "La alineacion de TB es mas fuerte vs derechos (.752 de OPS, con J. Caminero en .884 y V. Mesa Jr. en .825), y en la ultima salida de C. Schlittler contra TB solo duro 3.0 IP.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-05T22:50:18Z"
+    }
+  },
+  {
     "fecha": "2026-09-18",
     "pick": "WSH F5 ML",
     "deporte": "MLB",
@@ -2160,92 +2246,6 @@
       "alineaciones": true,
       "abridores": true,
       "ts": "2026-10-03T22:00:19Z"
-    }
-  },
-  {
-    "fecha": "2026-10-05",
-    "pick": "CLE ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -153,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "CWS 4-3 CLE",
-    "veredicto": "seguimiento",
-    "prob_estimada": 59.0,
-    "prob_justa": 58.17,
-    "ev_pct": -2.44,
-    "precio_publicado": -129,
-    "discrepancia_pp": 0.83,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "bullpen",
-      "forma"
-    ],
-    "contra": "CWS llega con 6.7 c/j en sus ultimos 10 y CLE batea solo .675 de OPS contra zurdos; ademas G. Williams duro 3.1 IP con 4 ER y 4 BB en su ultima salida.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 1,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-05T19:45:48Z"
-    }
-  },
-  {
-    "fecha": "2026-10-05",
-    "pick": "NYY ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -124,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "NYY 2-5 TB",
-    "veredicto": "seguimiento",
-    "prob_estimada": 55.5,
-    "prob_justa": 53.28,
-    "ev_pct": 0.26,
-    "precio_publicado": -116,
-    "discrepancia_pp": 2.22,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "bullpen",
-      "forma"
-    ],
-    "contra": "La alineacion de TB es mas fuerte vs derechos (.752 de OPS, con J. Caminero en .884 y V. Mesa Jr. en .825), y en la ultima salida de C. Schlittler contra TB solo duro 3.0 IP.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-05T22:50:18Z"
     }
   }
 ]
