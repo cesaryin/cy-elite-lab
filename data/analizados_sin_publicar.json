@@ -1,247 +1,5 @@
 [
   {
-    "fecha": "2026-09-15",
-    "pick": "TEX ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -140,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "BOS 2-4 TEX",
-    "veredicto": "seguimiento",
-    "prob_estimada": 60.0,
-    "prob_justa": 56.2,
-    "ev_pct": 2.86,
-    "precio_publicado": -136,
-    "discrepancia_pp": 3.8,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": true
-    },
-    "capas": [
-      "pitcheo",
-      "bullpen",
-      "ofensiva",
-      "parque"
-    ],
-    "contra": "El bullpen de BOS es mejor (3.18, A. Chapman 1.95) y a este precio hace falta más margen del que dan los datos.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true
-    }
-  },
-  {
-    "fecha": "2026-09-15",
-    "pick": "MIA/AZ o8.5",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -115,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "MIA 4-2 AZ",
-    "veredicto": "seguimiento",
-    "prob_estimada": 54.0,
-    "prob_justa": 51.08,
-    "ev_pct": 0.96,
-    "precio_publicado": -110,
-    "discrepancia_pp": 2.92,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "capas": [
-      "ofensiva",
-      "bullpen",
-      "parque",
-      "umpire"
-    ],
-    "contra": "Si Soroka repite su nivel de temporada (3.41 FIP) con el bullpen elite de AZ detrás (3.31), el juego se queda corto y la ventaja sobre la justa es mínima.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": false,
-      "abridores": true
-    }
-  },
-  {
-    "fecha": "2026-09-16",
-    "pick": "DET ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": 112,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "DET 1-5 TOR",
-    "veredicto": "seguimiento",
-    "prob_estimada": 48.5,
-    "prob_justa": 45.33,
-    "ev_pct": 2.82,
-    "precio_publicado": 111,
-    "discrepancia_pp": 3.17,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "ofensiva",
-      "forma"
-    ],
-    "contra": "K. Montero tiene fip 4.15 y solo 16.5% de ponches, y el bullpen de TOR (3.44 con L. Varland en 1.32) es claramente superior al cierre visitante.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": true,
-      "alineaciones": true,
-      "abridores": true
-    }
-  },
-  {
-    "fecha": "2026-09-16",
-    "pick": "MIL F5 ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": 127,
-    "unidades": 0.0,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": "MIL 5-4 PIT",
-    "veredicto": "seguimiento",
-    "prob_estimada": 46.5,
-    "prob_justa": null,
-    "ev_pct": 5.55,
-    "precio_publicado": 120,
-    "discrepancia_pp": null,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "ofensiva",
-      "forma"
-    ],
-    "contra": "El empate en cinco entradas paga como derrota (19% segun la linea justa) y J. Jones viene de 7 IP sin carreras, con PNC y un umpire que resta carreras favoreciendo un 0-0 temprano.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "MEDIA"
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true
-    }
-  },
-  {
-    "fecha": "2026-09-16",
-    "pick": "LAD F5 ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -150,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "LAD 2-6 CIN",
-    "veredicto": "seguimiento",
-    "prob_estimada": 62.5,
-    "prob_justa": null,
-    "ev_pct": 4.17,
-    "precio_publicado": -148,
-    "discrepancia_pp": null,
-    "sombra_umbral": {
-      "extra_umbral_1_5": true,
-      "extra_umbral_plano": true
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "ofensiva",
-      "matchup"
-    ],
-    "contra": "Snell lleva pocos bateadores enfrentados este ano y con 10.4% de boletos puede complicarse solo; ademas el empate en el F5 cuenta como perdida en este mercado y CIN batea mejor contra zurdos (.744) que contra derechos.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "MEDIA"
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true
-    }
-  },
-  {
-    "fecha": "2026-09-16",
-    "pick": "BOS/TEX u8.0",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -110,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "BOS 3-7 TEX",
-    "veredicto": "seguimiento",
-    "prob_estimada": 53.5,
-    "prob_justa": 50.0,
-    "ev_pct": 2.14,
-    "precio_publicado": -108,
-    "discrepancia_pp": 3.5,
-    "sombra_umbral": {
-      "extra_umbral_1_5": true,
-      "extra_umbral_plano": true
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "parque",
-      "bullpen"
-    ],
-    "contra": "M. Gore viene de dos salidas cortas (4.0 IP 4 ER y 3.0 IP 5 ER) y ambos lineups castigan mejor a zurdos (.748 y .763), asi que un abridor que no pase de la cuarta revienta el numero.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true
-    }
-  },
-  {
     "fecha": "2026-09-17",
     "pick": "MIL ML",
     "deporte": "MLB",
@@ -1266,209 +1024,126 @@
     }
   },
   {
-    "fecha": "2026-10-04",
-    "pick": "MIL ML",
+    "fecha": "2026-09-24",
+    "pick": "MIL/PHI u8.0",
     "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -135,
+    "nivel": "oro",
+    "cuota": -117,
     "unidades": 0.0,
     "resultado": "W",
     "neto_u": 0.0,
-    "marcador": "SD 3-4 MIL",
+    "marcador": "MIL 5-1 PHI",
     "veredicto": "seguimiento",
-    "prob_estimada": 56.5,
-    "prob_justa": 55.37,
-    "ev_pct": -1.65,
-    "precio_publicado": -119,
-    "discrepancia_pp": 1.13,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
+    "prob_estimada": 55.5,
+    "prob_justa": 51.52,
+    "ev_pct": 2.94,
+    "precio_publicado": -116,
+    "discrepancia_pp": 3.98,
+    "fuente_precio": null,
+    "casas_precio": null,
     "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
     },
     "linea_precio": null,
     "capas": [
-      "pitcheo",
-      "ofensiva"
-    ],
-    "contra": "Del sexto inning en adelante pesa el bullpen de SD (M. Miller, 1.67 ERA), que es mejor que el de MIL, y además T. Megill lanzó ayer.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 1,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-04T18:40:20Z"
-    }
-  },
-  {
-    "fecha": "2026-10-04",
-    "pick": "LAD F5 ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -133,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "ATL 3-2 LAD",
-    "veredicto": "seguimiento",
-    "prob_estimada": 57.5,
-    "prob_justa": null,
-    "ev_pct": 0.73,
-    "precio_publicado": -124,
-    "discrepancia_pp": null,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
       "ofensiva",
-      "matchup"
-    ],
-    "contra": "Este F5 es el de Kalshi, a tres bandas: el empate a cinco entradas (15.7% justo) se PIERDE, no devuelve. Además Kerr puede salir pronto y el bullpen de ATL (ERA 2.82) cubrir esas entradas, y las salidas recientes de Snell han sido cortas (4.0, 1.0 y 5.2 IP).",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE"
-    },
-    "abogado": null,
-    "citas_dudosas": 1,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-04T22:50:22Z"
-    }
-  },
-  {
-    "fecha": "2026-10-04",
-    "pick": "ATL/LAD o8",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -109,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "ATL 3-2 LAD",
-    "veredicto": "seguimiento",
-    "prob_estimada": 51.0,
-    "prob_justa": 49.89,
-    "ev_pct": -2.21,
-    "precio_publicado": 102,
-    "discrepancia_pp": 1.11,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
+      "bullpen",
       "clima",
-      "parque",
-      "pitcheo"
+      "mercado"
     ],
-    "contra": "Snell es élite y ambos bullpens son sólidos; los dos equipos solo pasaron de 8.5 en 2 de sus últimos 10, y la línea ya subió de 7.0 a 7.5, así que el clima probablemente ya está en el precio.",
+    "contra": "Ninguno de los dos abridores da confianza (A. Painter 5.59, S. Drohan con 5 y 6 limpias en sus dos ultimas salidas) y el parque es corto (pf 104): un par de entradas rotas temprano revientan el 8.0.",
     "contexto": {
       "mercado_movido": true,
       "fuerza": "FUERTE",
       "a_favor": true,
-      "mov_linea": 0.5
+      "mov_linea": -1.0
     },
     "abogado": null,
-    "citas_dudosas": 2,
+    "citas_dudosas": 0,
     "vivo": {
       "tanda": 2,
       "publicado": false,
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-10-04T22:50:22Z"
+      "ts": "2026-09-24T21:30:25Z"
     }
   },
   {
-    "fecha": "2026-10-05",
-    "pick": "CLE ML",
+    "fecha": "2026-09-24",
+    "pick": "HOU/ATH o10.5",
     "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -153,
+    "nivel": "plata",
+    "cuota": -115,
     "unidades": 0.0,
-    "resultado": "L",
+    "resultado": "W",
     "neto_u": 0.0,
-    "marcador": "CWS 4-3 CLE",
+    "marcador": "HOU 7-5 ATH",
     "veredicto": "seguimiento",
-    "prob_estimada": 59.0,
-    "prob_justa": 58.17,
-    "ev_pct": -2.44,
-    "precio_publicado": -129,
-    "discrepancia_pp": 0.83,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
+    "prob_estimada": 55.0,
+    "prob_justa": 51.08,
+    "ev_pct": 2.83,
+    "precio_publicado": -114,
+    "discrepancia_pp": 3.92,
+    "fuente_precio": null,
+    "casas_precio": null,
     "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
     },
     "linea_precio": null,
     "capas": [
       "pitcheo",
       "bullpen",
-      "forma"
+      "parque",
+      "ofensiva"
     ],
-    "contra": "CWS llega con 6.7 c/j en sus ultimos 10 y CLE batea solo .675 de OPS contra zurdos; ademas G. Williams duro 3.1 IP con 4 ER y 4 BB en su ultima salida.",
+    "contra": "P. Lambert viene de tres salidas solidas y 10.5 ya es una linea muy alta: si domina cinco o seis entradas, el over necesita que ATH cargue solo contra el bullpen visitante.",
     "contexto": {
       "mercado_movido": false
     },
     "abogado": null,
-    "citas_dudosas": 1,
+    "citas_dudosas": 0,
     "vivo": {
-      "tanda": 1,
+      "tanda": 2,
       "publicado": false,
       "fuera_por_tope": false,
-      "alineaciones": true,
+      "alineaciones": false,
       "abridores": true,
-      "ts": "2026-10-05T19:45:48Z"
+      "ts": "2026-09-24T21:30:25Z"
     }
   },
   {
-    "fecha": "2026-10-05",
-    "pick": "NYY ML",
+    "fecha": "2026-09-15",
+    "pick": "TEX ML",
     "deporte": "MLB",
     "nivel": "plata",
-    "cuota": -124,
+    "cuota": -140,
     "unidades": 0.0,
-    "resultado": "L",
+    "resultado": "W",
     "neto_u": 0.0,
-    "marcador": "NYY 2-5 TB",
+    "marcador": "BOS 2-4 TEX",
     "veredicto": "seguimiento",
-    "prob_estimada": 55.5,
-    "prob_justa": 53.28,
-    "ev_pct": 0.26,
-    "precio_publicado": -116,
-    "discrepancia_pp": 2.22,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
+    "prob_estimada": 60.0,
+    "prob_justa": 56.2,
+    "ev_pct": 2.86,
+    "precio_publicado": -136,
+    "discrepancia_pp": 3.8,
+    "fuente_precio": null,
+    "casas_precio": null,
     "sombra_umbral": {
       "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
+      "extra_umbral_plano": true
     },
     "linea_precio": null,
     "capas": [
       "pitcheo",
       "bullpen",
-      "forma"
+      "ofensiva",
+      "parque"
     ],
-    "contra": "La alineacion de TB es mas fuerte vs derechos (.752 de OPS, con J. Caminero en .884 y V. Mesa Jr. en .825), y en la ultima salida de C. Schlittler contra TB solo duro 3.0 IP.",
+    "contra": "El bullpen de BOS es mejor (3.18, A. Chapman 1.95) y a este precio hace falta más margen del que dan los datos.",
     "contexto": {
       "mercado_movido": false
     },
@@ -1480,25 +1155,69 @@
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-10-05T22:50:18Z"
+      "ts": "2026-09-15T23:30:19Z"
     }
   },
   {
-    "fecha": "2026-09-18",
-    "pick": "WSH F5 ML",
+    "fecha": "2026-09-15",
+    "pick": "MIA/AZ o8.5",
     "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": 127,
+    "nivel": "bronce",
+    "cuota": -115,
     "unidades": 0.0,
-    "resultado": "W",
+    "resultado": "L",
     "neto_u": 0.0,
-    "marcador": "WSH 9-1 STL",
+    "marcador": "MIA 4-2 AZ",
     "veredicto": "seguimiento",
-    "prob_estimada": 46.0,
-    "prob_justa": null,
-    "ev_pct": 4.42,
-    "precio_publicado": 122,
-    "discrepancia_pp": null,
+    "prob_estimada": 54.0,
+    "prob_justa": 51.08,
+    "ev_pct": 0.96,
+    "precio_publicado": -110,
+    "discrepancia_pp": 2.92,
+    "fuente_precio": null,
+    "casas_precio": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "parque",
+      "umpire"
+    ],
+    "contra": "Si Soroka repite su nivel de temporada (3.41 FIP) con el bullpen elite de AZ detrás (3.31), el juego se queda corto y la ventaja sobre la justa es mínima.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": false,
+      "abridores": true,
+      "ts": "2026-09-15T23:30:19Z"
+    }
+  },
+  {
+    "fecha": "2026-09-16",
+    "pick": "DET ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 112,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "DET 1-5 TOR",
+    "veredicto": "seguimiento",
+    "prob_estimada": 48.5,
+    "prob_justa": 45.33,
+    "ev_pct": 2.82,
+    "precio_publicado": 111,
+    "discrepancia_pp": 3.17,
     "fuente_precio": null,
     "casas_precio": null,
     "sombra_umbral": {
@@ -1509,9 +1228,9 @@
     "capas": [
       "pitcheo",
       "ofensiva",
-      "bullpen"
+      "forma"
     ],
-    "contra": "Si Leahy actua de abridor corto con un relevista fresco detras, STL puede blanquear cinco entradas y el empate ya paga en contra.",
+    "contra": "K. Montero tiene fip 4.15 y solo 16.5% de ponches, y el bullpen de TOR (3.44 con L. Varland en 1.32) es claramente superior al cierre visitante.",
     "contexto": {
       "mercado_movido": false
     },
@@ -1520,10 +1239,53 @@
     "vivo": {
       "tanda": 1,
       "publicado": false,
+      "fuera_por_tope": true,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-16T16:40:26Z"
+    }
+  },
+  {
+    "fecha": "2026-09-16",
+    "pick": "BOS/TEX u8.0",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -110,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "BOS 3-7 TEX",
+    "veredicto": "seguimiento",
+    "prob_estimada": 53.5,
+    "prob_justa": 50.0,
+    "ev_pct": 2.14,
+    "precio_publicado": -108,
+    "discrepancia_pp": 3.5,
+    "fuente_precio": null,
+    "casas_precio": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": true,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "parque",
+      "bullpen"
+    ],
+    "contra": "M. Gore viene de dos salidas cortas (4.0 IP 4 ER y 3.0 IP 5 ER) y ambos lineups castigan mejor a zurdos (.748 y .763), asi que un abridor que no pase de la cuarta revienta el numero.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-09-18T22:10:19Z"
+      "ts": "2026-09-16T22:10:19Z"
     }
   },
   {
@@ -1852,183 +1614,6 @@
     }
   },
   {
-    "fecha": "2026-09-22",
-    "pick": "SEA F5 ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": 108,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "HOU 7-0 SEA",
-    "veredicto": "seguimiento",
-    "prob_estimada": 49.5,
-    "prob_justa": null,
-    "ev_pct": 2.96,
-    "precio_publicado": 107,
-    "discrepancia_pp": null,
-    "fuente_precio": null,
-    "casas_precio": null,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "ofensiva",
-      "parque"
-    ],
-    "contra": "El dinero movió a SEA de -149 a -135, señal en contra, y su propia ofensiva anda en .677 de OPS con 3.6 c/j: un F5 sin carreras acaba en empate, que en Kalshi se pierde.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE"
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": true,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-23T00:00:20Z"
-    }
-  },
-  {
-    "fecha": "2026-09-24",
-    "pick": "AZ F5 ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -122,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "AZ 12-8 COL",
-    "veredicto": "seguimiento",
-    "prob_estimada": 55.5,
-    "prob_justa": null,
-    "ev_pct": 0.99,
-    "precio_publicado": -116,
-    "discrepancia_pp": null,
-    "fuente_precio": null,
-    "casas_precio": null,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "ofensiva"
-    ],
-    "contra": "E. Rodriguez firmó 7 limpias en 5.1 entradas en su última salida y Coors castiga a cualquier abridor; en Kalshi el empate de las cinco entradas se pierde.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": false,
-      "abridores": true,
-      "ts": "2026-09-24T16:00:21Z"
-    }
-  },
-  {
-    "fecha": "2026-09-24",
-    "pick": "MIL/PHI u8.0",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -117,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "MIL 5-1 PHI",
-    "veredicto": "seguimiento",
-    "prob_estimada": 55.5,
-    "prob_justa": 51.52,
-    "ev_pct": 2.94,
-    "precio_publicado": -116,
-    "discrepancia_pp": 3.98,
-    "fuente_precio": null,
-    "casas_precio": null,
-    "sombra_umbral": {
-      "extra_umbral_1_5": true,
-      "extra_umbral_plano": true
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "bullpen",
-      "clima",
-      "mercado"
-    ],
-    "contra": "Ninguno de los dos abridores da confianza (A. Painter 5.59, S. Drohan con 5 y 6 limpias en sus dos ultimas salidas) y el parque es corto (pf 104): un par de entradas rotas temprano revientan el 8.0.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE",
-      "a_favor": true,
-      "mov_linea": -1.0
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-24T21:30:25Z"
-    }
-  },
-  {
-    "fecha": "2026-09-24",
-    "pick": "HOU/ATH o10.5",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -115,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "HOU 7-5 ATH",
-    "veredicto": "seguimiento",
-    "prob_estimada": 55.0,
-    "prob_justa": 51.08,
-    "ev_pct": 2.83,
-    "precio_publicado": -114,
-    "discrepancia_pp": 3.92,
-    "fuente_precio": null,
-    "casas_precio": null,
-    "sombra_umbral": {
-      "extra_umbral_1_5": true,
-      "extra_umbral_plano": true
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "bullpen",
-      "parque",
-      "ofensiva"
-    ],
-    "contra": "P. Lambert viene de tres salidas solidas y 10.5 ya es una linea muy alta: si domina cinco o seis entradas, el over necesita que ATH cargue solo contra el bullpen visitante.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": false,
-      "abridores": true,
-      "ts": "2026-09-24T21:30:25Z"
-    }
-  },
-  {
     "fecha": "2026-09-29",
     "pick": "CWS/HOU o8",
     "deporte": "MLB",
@@ -2246,6 +1831,180 @@
       "alineaciones": true,
       "abridores": true,
       "ts": "2026-10-03T22:00:19Z"
+    }
+  },
+  {
+    "fecha": "2026-10-04",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -135,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "SD 3-4 MIL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 56.5,
+    "prob_justa": 55.37,
+    "ev_pct": -1.65,
+    "precio_publicado": -119,
+    "discrepancia_pp": 1.13,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva"
+    ],
+    "contra": "Del sexto inning en adelante pesa el bullpen de SD (M. Miller, 1.67 ERA), que es mejor que el de MIL, y además T. Megill lanzó ayer.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-04T18:40:20Z"
+    }
+  },
+  {
+    "fecha": "2026-10-04",
+    "pick": "ATL/LAD o8",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -109,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "ATL 3-2 LAD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 51.0,
+    "prob_justa": 49.89,
+    "ev_pct": -2.21,
+    "precio_publicado": 102,
+    "discrepancia_pp": 1.11,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "clima",
+      "parque",
+      "pitcheo"
+    ],
+    "contra": "Snell es élite y ambos bullpens son sólidos; los dos equipos solo pasaron de 8.5 en 2 de sus últimos 10, y la línea ya subió de 7.0 a 7.5, así que el clima probablemente ya está en el precio.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": 0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-04T22:50:22Z"
+    }
+  },
+  {
+    "fecha": "2026-10-05",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -153,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "CWS 4-3 CLE",
+    "veredicto": "seguimiento",
+    "prob_estimada": 59.0,
+    "prob_justa": 58.17,
+    "ev_pct": -2.44,
+    "precio_publicado": -129,
+    "discrepancia_pp": 0.83,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "CWS llega con 6.7 c/j en sus ultimos 10 y CLE batea solo .675 de OPS contra zurdos; ademas G. Williams duro 3.1 IP con 4 ER y 4 BB en su ultima salida.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-05T19:45:48Z"
+    }
+  },
+  {
+    "fecha": "2026-10-05",
+    "pick": "NYY ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -124,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "NYY 2-5 TB",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.5,
+    "prob_justa": 53.28,
+    "ev_pct": 0.26,
+    "precio_publicado": -116,
+    "discrepancia_pp": 2.22,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "La alineacion de TB es mas fuerte vs derechos (.752 de OPS, con J. Caminero en .884 y V. Mesa Jr. en .825), y en la ultima salida de C. Schlittler contra TB solo duro 3.0 IP.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-05T22:50:18Z"
     }
   }
 ]
