@@ -1266,6 +1266,138 @@
     }
   },
   {
+    "fecha": "2026-10-04",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -135,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "SD 3-4 MIL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 56.5,
+    "prob_justa": 55.37,
+    "ev_pct": -1.65,
+    "precio_publicado": -119,
+    "discrepancia_pp": 1.13,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva"
+    ],
+    "contra": "Del sexto inning en adelante pesa el bullpen de SD (M. Miller, 1.67 ERA), que es mejor que el de MIL, y además T. Megill lanzó ayer.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-04T18:40:20Z"
+    }
+  },
+  {
+    "fecha": "2026-10-04",
+    "pick": "LAD F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -133,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "ATL 3-2 LAD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 57.5,
+    "prob_justa": null,
+    "ev_pct": 0.73,
+    "precio_publicado": -124,
+    "discrepancia_pp": null,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "Este F5 es el de Kalshi, a tres bandas: el empate a cinco entradas (15.7% justo) se PIERDE, no devuelve. Además Kerr puede salir pronto y el bullpen de ATL (ERA 2.82) cubrir esas entradas, y las salidas recientes de Snell han sido cortas (4.0, 1.0 y 5.2 IP).",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-04T22:50:22Z"
+    }
+  },
+  {
+    "fecha": "2026-10-04",
+    "pick": "ATL/LAD o8",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -109,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "ATL 3-2 LAD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 51.0,
+    "prob_justa": 49.89,
+    "ev_pct": -2.21,
+    "precio_publicado": 102,
+    "discrepancia_pp": 1.11,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "clima",
+      "parque",
+      "pitcheo"
+    ],
+    "contra": "Snell es élite y ambos bullpens son sólidos; los dos equipos solo pasaron de 8.5 en 2 de sus últimos 10, y la línea ya subió de 7.0 a 7.5, así que el clima probablemente ya está en el precio.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": 0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-04T22:50:22Z"
+    }
+  },
+  {
     "fecha": "2026-09-18",
     "pick": "WSH F5 ML",
     "deporte": "MLB",
@@ -2031,21 +2163,21 @@
     }
   },
   {
-    "fecha": "2026-10-04",
-    "pick": "MIL ML",
+    "fecha": "2026-10-05",
+    "pick": "CLE ML",
     "deporte": "MLB",
     "nivel": "bronce",
-    "cuota": -135,
+    "cuota": -153,
     "unidades": 0.0,
-    "resultado": "W",
+    "resultado": "L",
     "neto_u": 0.0,
-    "marcador": "SD 3-4 MIL",
+    "marcador": "CWS 4-3 CLE",
     "veredicto": "seguimiento",
-    "prob_estimada": 56.5,
-    "prob_justa": 55.37,
-    "ev_pct": -1.65,
-    "precio_publicado": -119,
-    "discrepancia_pp": 1.13,
+    "prob_estimada": 59.0,
+    "prob_justa": 58.17,
+    "ev_pct": -2.44,
+    "precio_publicado": -129,
+    "discrepancia_pp": 0.83,
     "fuente_precio": "consenso_us",
     "casas_precio": 9,
     "sombra_umbral": {
@@ -2055,9 +2187,10 @@
     "linea_precio": null,
     "capas": [
       "pitcheo",
-      "ofensiva"
+      "bullpen",
+      "forma"
     ],
-    "contra": "Del sexto inning en adelante pesa el bullpen de SD (M. Miller, 1.67 ERA), que es mejor que el de MIL, y además T. Megill lanzó ayer.",
+    "contra": "CWS llega con 6.7 c/j en sus ultimos 10 y CLE batea solo .675 de OPS contra zurdos; ademas G. Williams duro 3.1 IP con 4 ER y 4 BB en su ultima salida.",
     "contexto": {
       "mercado_movido": false
     },
@@ -2069,25 +2202,25 @@
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-10-04T18:40:20Z"
+      "ts": "2026-10-05T19:45:48Z"
     }
   },
   {
-    "fecha": "2026-10-04",
-    "pick": "LAD F5 ML",
+    "fecha": "2026-10-05",
+    "pick": "NYY ML",
     "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -133,
+    "nivel": "plata",
+    "cuota": -124,
     "unidades": 0.0,
     "resultado": "L",
     "neto_u": 0.0,
-    "marcador": "ATL 3-2 LAD",
+    "marcador": "NYY 2-5 TB",
     "veredicto": "seguimiento",
-    "prob_estimada": 57.5,
-    "prob_justa": null,
-    "ev_pct": 0.73,
-    "precio_publicado": -124,
-    "discrepancia_pp": null,
+    "prob_estimada": 55.5,
+    "prob_justa": 53.28,
+    "ev_pct": 0.26,
+    "precio_publicado": -116,
+    "discrepancia_pp": 2.22,
     "fuente_precio": "consenso_us",
     "casas_precio": 9,
     "sombra_umbral": {
@@ -2097,69 +2230,22 @@
     "linea_precio": null,
     "capas": [
       "pitcheo",
-      "ofensiva",
-      "matchup"
+      "bullpen",
+      "forma"
     ],
-    "contra": "Este F5 es el de Kalshi, a tres bandas: el empate a cinco entradas (15.7% justo) se PIERDE, no devuelve. Además Kerr puede salir pronto y el bullpen de ATL (ERA 2.82) cubrir esas entradas, y las salidas recientes de Snell han sido cortas (4.0, 1.0 y 5.2 IP).",
+    "contra": "La alineacion de TB es mas fuerte vs derechos (.752 de OPS, con J. Caminero en .884 y V. Mesa Jr. en .825), y en la ultima salida de C. Schlittler contra TB solo duro 3.0 IP.",
     "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE"
+      "mercado_movido": false
     },
     "abogado": null,
-    "citas_dudosas": 1,
+    "citas_dudosas": 0,
     "vivo": {
       "tanda": 2,
       "publicado": false,
       "fuera_por_tope": false,
       "alineaciones": true,
       "abridores": true,
-      "ts": "2026-10-04T22:50:22Z"
-    }
-  },
-  {
-    "fecha": "2026-10-04",
-    "pick": "ATL/LAD o8",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -109,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "ATL 3-2 LAD",
-    "veredicto": "seguimiento",
-    "prob_estimada": 51.0,
-    "prob_justa": 49.89,
-    "ev_pct": -2.21,
-    "precio_publicado": 102,
-    "discrepancia_pp": 1.11,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "clima",
-      "parque",
-      "pitcheo"
-    ],
-    "contra": "Snell es élite y ambos bullpens son sólidos; los dos equipos solo pasaron de 8.5 en 2 de sus últimos 10, y la línea ya subió de 7.0 a 7.5, así que el clima probablemente ya está en el precio.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE",
-      "a_favor": true,
-      "mov_linea": 0.5
-    },
-    "abogado": null,
-    "citas_dudosas": 2,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-04T22:50:22Z"
+      "ts": "2026-10-05T22:50:18Z"
     }
   }
 ]

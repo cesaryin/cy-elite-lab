@@ -1,0 +1,34 @@
+{
+ "fecha": "2026-10-06",
+ "n_juegos": 2,
+ "juegos": {
+  "MIL@SD": {
+   "team_total": {
+    "MIL": {
+     "linea": 3.5,
+     "over": 105,
+     "under": -135
+    },
+    "SD": {
+     "linea": 3.5,
+     "over": -119,
+     "under": -109
+    }
+   }
+  },
+  "LAD@ATL": {
+   "team_total": {
+    "ATL": {
+     "linea": 2.5,
+     "over": -143,
+     "under": 110
+    },
+    "LAD": {
+     "linea": 2.5,
+     "over": -154,
+     "under": 120
+    }
+   }
+  }
+ }
+}
