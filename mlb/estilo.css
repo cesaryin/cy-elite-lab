@@ -209,6 +209,9 @@ section{display:none}section.on{display:block}
    EL COLOR ES EL AZUL Y NO EL DORADO, y lo pidió él: «no le pongas el color
    dorado, ya que en análisis ese es el color de la jugada elite». El azul es
    el que ya usan el precio mínimo y el seguimiento. */
+/* QUIEN YA DIO SU CORREO NO VE LA TARJETA NI UN INSTANTE (6-oct-2026): la marca la
+   pone el <head>, antes de pintar nada. Ver _js_ya_dentro(). */
+.cy-dentro #cy-ml{display:none}
 .cy-ml{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--blue);
  border-radius:12px;padding:14px 16px;margin:12px 0}
 .cy-ml-t{font-size:14px;font-weight:800;color:var(--text);margin-bottom:5px}
