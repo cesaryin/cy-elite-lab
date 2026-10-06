@@ -246,6 +246,139 @@ jobs:
           LIMITE=$((INICIO + 330 * 60))
           PEDIDOS=0; T_RELEVO=0; CUERPO_RELEVO=""
 
+          # ------------------------------------------------------------------
+          # LO QUE SE DISPARA TIENE QUE CORRER (6-oct-2026). El 5-oct el refresco del
+          # Modelo de las 3:10 PM salio a su hora... y GitHub, en plena averia, no le dio
+          # maquina: lo cancelo a los 15 minutos sin correr ni un paso. El reloj no se
+          # entero, y el Modelo se quedo con lo de las 8:00 hasta que Cesar le dio a
+          # «re-run» a las 5:43 PM. A la captura de las 2:35 le paso lo mismo.
+          #
+          # Ahora cada disparo queda apuntado hasta ver su run en el motor. Si GitHub lo
+          # cancela SIN HABERLE DADO MAQUINA (ningun job con runner: no corrio ni un paso,
+          # asi que repetirlo no duplica nada, ni una tanda pagada ni una publicacion en
+          # redes), se dispara otra vez, hasta 4 intentos. Si corrio, aunque fallara, NO se
+          # repite: eso ya no es GitHub, es el workflow, y lo cuenta su propio aviso.
+          #
+          # Mira con el MISMO token con que dispara (el del motor). Si no puede mirar (5
+          # miradas fallidas: una suelta es la API, no el permiso), se fia de lo disparado y
+          # sigue, exactamente como antes del 6-oct, y lo deja dicho con un ::warning::, que
+          # es lo que repaso.py busca en los runs en verde.
+          # ------------------------------------------------------------------
+          PEND=""          # lo disparado por confirmar: «epoch|workflow|intento|codigo|cuerpo»
+          VER_MOTOR=1
+          FALLOS_VER=0
+          MOTOR_API="repos/cesaryin/cy-elite-motor/actions"
+
+          disparar() {     # $1 = workflow, $2 = cuerpo, $3 = etiqueta, $4 = intento (1)
+            local cod
+            cod=$(curl -sL -o /dev/null -w "%{http_code}" -X POST \
+              -H "Authorization: Bearer $TK" -H "$A" "$MOTOR/$1/dispatches" -d "$2" </dev/null)
+            echo "  $(date -u +%H:%M) UTC  $3 -> $cod"
+            if [ "$VER_MOTOR" = 1 ]; then PEND="${PEND}$(date +%s)|$1|${4:-1}|$cod|$2"$'\n'; fi
+          }
+
+          # Que fue del disparo de $1 (epoch) a $2: «en_marcha», «corrio» (en cuanto un job
+          # tiene maquina), «sin_maquina», «sustituido» o «no_aparece». Devuelve 1 si no se
+          # puede mirar.
+          #
+          # SIN MAQUINA Y SUSTITUIDO NO SON LO MISMO, y se distinguen por sus jobs (mirado en
+          # los runs reales del 1, el 2 y el 5-oct). El de la averia tenia su job, en la cola,
+          # sin runner. El que el `concurrency` de su workflow saca de la cola porque entro
+          # otro (la cola guarda UNO pendiente) se cancela SIN NINGUN job: repetirlo echaria
+          # al que lo sustituyo, y ese a el, y asi hasta gastar los intentos.
+          estado_disparo() {
+            local desde run id st con j tot maq
+            # 30 s de margen por si el reloj de la maquina va algo adelantado
+            desde=$(date -u -d "@$(( $1 - 30 ))" +%Y-%m-%dT%H:%M:%SZ)
+            run=$(GH_TOKEN="$TK" gh api \
+              "$MOTOR_API/workflows/$2/runs?event=workflow_dispatch&created=%3E%3D$desde&per_page=20" \
+              --jq '.workflow_runs | sort_by(.id) | .[0] | if . == null then "no" else "\(.id) \(.status) \(.conclusion)" end' \
+              2>/dev/null </dev/null) || return 1
+            [ -n "$run" ] || return 1
+            if [ "$run" = "no" ]; then echo no_aparece; return 0; fi
+            read -r id st con <<< "$run"
+            case "$st" in completed|in_progress) ;; *) echo en_marcha; return 0 ;; esac
+            j=$(GH_TOKEN="$TK" gh api "$MOTOR_API/runs/$id/jobs" \
+              --jq '"\(.total_count) \([.jobs[] | select((.runner_name // "") != "")] | length)"' \
+              2>/dev/null </dev/null) || return 1
+            read -r tot maq <<< "$j"
+            if [ "${maq:-1}" != "0" ]; then echo corrio; return 0; fi
+            if [ "$st" != "completed" ]; then echo en_marcha; return 0; fi
+            if [ "$con" = "success" ]; then echo corrio; return 0; fi
+            if [ "${tot:-1}" = "0" ]; then echo sustituido; return 0; fi
+            echo sin_maquina
+          }
+
+          # Una mirada a lo pendiente: lo que corrio sale de la lista; lo que GitHub dejo
+          # sin maquina (o un POST que no llego) se dispara otra vez.
+          revisar_disparos() {
+            local lista="$PEND" t wf n cod cuerpo e
+            [ -n "$lista" ] || return 0
+            PEND=""
+            while IFS='|' read -r t wf n cod cuerpo; do
+              [ -n "$t" ] || continue
+              if [ $(( $(date +%s) - t )) -lt 60 ]; then
+                PEND="${PEND}$t|$wf|$n|$cod|$cuerpo"$'\n'; continue
+              fi
+              if [ "${cod:0:1}" != "2" ]; then
+                e=no_llego
+              elif ! e=$(estado_disparo "$t" "$wf"); then
+                e=sin_ver
+              else
+                FALLOS_VER=0
+              fi
+              case "$e" in
+                sin_ver)
+                  FALLOS_VER=$((FALLOS_VER + 1))
+                  PEND="${PEND}$t|$wf|$n|$cod|$cuerpo"$'\n' ;;
+                corrio)
+                  if [ "$n" -gt 1 ]; then echo "  $(date -u +%H:%M) UTC  $wf: el intento $n ya tuvo maquina."; fi ;;
+                en_marcha)
+                  PEND="${PEND}$t|$wf|$n|$cod|$cuerpo"$'\n' ;;
+                sustituido)
+                  echo "  $(date -u +%H:%M) UTC  $wf: lo saco de la cola otro mas nuevo del mismo workflow; no se repite." ;;
+                no_aparece)
+                  # Con el POST aceptado el run aparecera: se espera, sin repetir (repetir
+                  # algo que quiza ya existe es lo que duplica). Tras 75 min, se deja.
+                  if [ $(( $(date +%s) - t )) -lt 4500 ]; then PEND="${PEND}$t|$wf|$n|$cod|$cuerpo"$'\n'
+                  else echo "::warning::$wf: el disparo de las $(date -u -d @$t +%H:%M) UTC no aparece en el motor tras 75 min."; fi ;;
+                sin_maquina|no_llego)
+                  if [ "$n" -ge 4 ]; then
+                    echo "::warning::$wf: GitHub no le dio maquina en $n intentos. El reloj ya no lo repite."
+                  else
+                    echo "  $(date -u +%H:%M) UTC  $wf: GitHub lo dejo sin maquina (o el POST no llego): se dispara otra vez."
+                    disparar "$wf" "$cuerpo" "$wf (intento $((n + 1)))" $((n + 1))
+                  fi ;;
+              esac
+            done <<< "$lista"
+            if [ "$FALLOS_VER" -ge 5 ]; then
+              echo "::warning::El reloj no puede ver los runs del motor: se fia de lo disparado, como antes del 6-oct."
+              VER_MOTOR=0; PEND=""
+            fi
+          }
+
+          # Duerme hasta $1 (epoch) mirando lo disparado cada minuto; sin nada pendiente,
+          # de un tiron (y el disparo siguiente sale a su hora exacta, como siempre).
+          dormir_mirando() {
+            local resto
+            while :; do
+              resto=$(( $1 - $(date +%s) ))
+              if [ "$resto" -le 0 ]; then return 0; fi
+              if [ -z "$PEND" ]; then sleep "$resto"; return 0; fi
+              sleep $(( resto < 60 ? resto : 60 ))
+              revisar_disparos
+            done
+          }
+
+          # Antes de irse: lo que disparo este reloj es suyo (el relevo no lo conoce), asi
+          # que se queda hasta verlo correr, o hasta su limite.
+          acabar_disparos() {
+            while [ -n "$PEND" ] && [ "$(date +%s)" -lt "$LIMITE" ]; do
+              sleep 60
+              revisar_disparos
+            done
+          }
+
           # Deja en NUEVOS los relojes MAS NUEVOS que este, uno por linea («id estado
           # conclusion»). Devuelve «no» si no se pudo mirar.
           NUEVOS=""
@@ -273,10 +406,12 @@ jobs:
           vigilar_una_vez() {
             if ! mirar_relojes; then
               echo "  $(date -u +%H:%M) UTC  no se pueden ver los relojes: este se fia del relevo y se va, como antes."
+              acabar_disparos
               exit 0
             fi
             if echo "$NUEVOS" | grep -q " in_progress "; then
               echo "  $(date -u +%H:%M) UTC  el relevo ya corre: este reloj se aparta."
+              acabar_disparos
               exit 0
             fi
             if [ "$PEDIDOS" -lt 4 ] && [ $(( $(date +%s) - T_RELEVO )) -ge 90 ] \
@@ -293,6 +428,7 @@ jobs:
             if [ "$hasta" -gt "$LIMITE" ]; then hasta="$LIMITE"; fi
             while :; do
               vigilar_una_vez
+              revisar_disparos
               resto=$(( hasta - $(date +%s) ))
               if [ "$resto" -le 0 ]; then break; fi
               sleep $(( resto < 30 ? resto : 30 ))
@@ -352,13 +488,14 @@ jobs:
               echo "  $(date -u +%H:%M) UTC  el relevo aun no corre: este reloj sigue con el minuto $MIN."
             else
               [ "$WF" = "tanda" ] || echo "  esperando $((ESPERA / 60)) min hasta $(date -u -d @$OBJ +%H:%M) UTC para $WF"
-              sleep "$ESPERA"
+              dormir_mirando "$OBJ"
             fi
 
             # EL ULTIMO RELOJ MANDA (ver la cabecera): si ya corre uno mas nuevo, este
             # disparo es suyo.
             if hay_otro_en_marcha; then
               echo "  $(date -u +%H:%M) UTC  corre un reloj mas nuevo: este se aparta sin disparar $WF."
+              acabar_disparos
               exit 0
             fi
 
@@ -380,23 +517,17 @@ jobs:
             if [ "$WF" = "tanda" ]; then
               PLAN=$(curl -sfL --retry 2 "$PLAN_URL?t=$(date +%s)" || true)
               if [ -n "$PLAN" ] && echo "$PLAN" | grep -qE "\"min_reloj\":${MIN}[,}]"; then
-                curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  tanda.yml (minuto $MIN) -> %{http_code}\n" -X POST \
-                  -H "Authorization: Bearer $TK" -H "$A" \
-                  "$MOTOR/tanda.yml/dispatches" \
-                  -d "{\"ref\":\"main\",\"inputs\":{\"hora\":\"$MIN\",\"fecha\":\"$JORNADA\"}}"
+                disparar tanda.yml "{\"ref\":\"main\",\"inputs\":{\"hora\":\"$MIN\",\"fecha\":\"$JORNADA\"}}" \
+                  "tanda.yml (minuto $MIN)"
               elif [ -n "$PLAN" ] && echo "$PLAN" | grep -q '"refrescos_lab"'; then
                 if echo "$PLAN" | grep -qE "\"min_reloj_lab\":${MIN}[,}]"; then
-                  curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  lab-refresh.yml (plan, minuto $MIN) -> %{http_code}\n" -X POST \
-                    -H "Authorization: Bearer $TK" -H "$A" \
-                    "$MOTOR/lab-refresh.yml/dispatches" -d '{"ref":"main"}'
+                  disparar lab-refresh.yml '{"ref":"main"}' "lab-refresh.yml (plan, minuto $MIN)"
                 fi
               else
                 # SIN PLAN (o un plan sin refrescos): el LAB a sus horas de siempre.
                 case " 140 320 500 680 " in
                   *" $MIN "*)
-                    curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  lab-refresh.yml (sin plan, minuto $MIN) -> %{http_code}\n" -X POST \
-                      -H "Authorization: Bearer $TK" -H "$A" \
-                      "$MOTOR/lab-refresh.yml/dispatches" -d '{"ref":"main"}' ;;
+                    disparar lab-refresh.yml '{"ref":"main"}' "lab-refresh.yml (sin plan, minuto $MIN)" ;;
                 esac
               fi
               # LOS RESULTADOS AL CELULAR (18-sep-2026, Plan Web §4). La tanda deja en
@@ -404,10 +535,8 @@ jobs:
               # con señal (2 h 50, 3 h 50 y 5 h tras su inicio). Sin fichero, nada.
               RES=$(curl -sfL --retry 2 "$RES_URL?t=$(date +%s)" || true)
               if [ -n "$RES" ] && echo "$RES" | grep -qE "\"min_reloj_res\":${MIN}[,}]"; then
-                curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  avisos-resultados.yml (minuto $MIN) -> %{http_code}\n" -X POST \
-                  -H "Authorization: Bearer $TK" -H "$A" \
-                  "$MOTOR/avisos-resultados.yml/dispatches" \
-                  -d "{\"ref\":\"main\",\"inputs\":{\"fecha\":\"$JORNADA\"}}"
+                disparar avisos-resultados.yml "{\"ref\":\"main\",\"inputs\":{\"fecha\":\"$JORNADA\"}}" \
+                  "avisos-resultados.yml (minuto $MIN)"
               fi
               continue
             fi
@@ -429,9 +558,7 @@ jobs:
               redes-semana) WF=redes.yml; CUERPO='{"ref":"main","inputs":{"que":"semana"}}' ;;
             esac
 
-            curl -sL -o /dev/null -w "  $(date -u +%H:%M) UTC  $WF -> %{http_code}\n" -X POST \
-              -H "Authorization: Bearer $TK" -H "$A" \
-              "$MOTOR/$WF/dispatches" -d "$CUERPO"
+            disparar "$WF" "$CUERPO" "$WF"
           done
 
           echo "Jornada cubierta."
@@ -483,17 +610,18 @@ jobs:
             CUERPO='{"ref":"master","inputs":{"desde":"-1"}}'; ETIQ="jornada nueva"
           elif [ "$FALTA" -le "$CABE" ]; then
             echo "  duermo $((FALTA / 60)) min y arranco la jornada."
-            sleep "$FALTA"
+            dormir_mirando "$ARRANQUE"
             CUERPO='{"ref":"master","inputs":{"desde":"-1"}}'; ETIQ="jornada nueva"
           else
             echo "  no cabe: duermo lo que puedo y paso el testigo."
-            sleep "$CABE"
+            dormir_mirando $((AHORA + CABE))
             CUERPO='{"ref":"master","inputs":{"desde":"-1","espera":"1"}}'; ETIQ="relevo de espera"
           fi
           # Si mientras dormia arranco un reloj mas nuevo (un cron de la mañana, la web
           # republicada), la jornada ya tiene reloj: no se pide otro.
           if hay_otro_en_marcha; then
             echo "  corre un reloj mas nuevo: este se aparta."
+            acabar_disparos
             exit 0
           fi
           pedir_relevo "$CUERPO" "$ETIQ"
