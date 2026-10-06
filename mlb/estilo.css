@@ -326,7 +326,6 @@ a.set-lg:hover,a.set-lg:focus-visible{color:var(--text)}
 .set-p b{color:var(--text)}
 .set-p a{color:var(--blue)}
 .set-tel{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:11px 13px;font-variant-numeric:tabular-nums;line-height:1.9}
-.set-tel .tel{font-weight:700}
 .set-pie{text-align:center;font-size:11px;color:var(--faint);margin-top:26px;line-height:1.7}
 /* EL COPYRIGHT, IGUAL EN LAS CINCO PAGINAS (11-sep-2026). Antes salia
    centrado en unas y a la izquierda en otras, y con separaciones distintas,
