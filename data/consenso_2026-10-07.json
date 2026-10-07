@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-07",
- "tomado_utc": "2026-10-07T19:30:25+00:00",
+ "tomado_utc": "2026-10-07T23:30:20+00:00",
  "n_juegos": 4,
  "juegos": {
   "CLE@CWS": {
@@ -151,13 +151,13 @@
    "n_casas": 9,
    "fuente": "consenso_us",
    "ml": {
-    "NYY": -168,
-    "TB": 143
+    "NYY": -171,
+    "TB": 148
    },
    "total": {
     "linea": 7.0,
-    "over": -120,
-    "under": 100,
+    "over": -115,
+    "under": -105,
     "n_casas": 8
    },
    "spread": {
@@ -168,7 +168,7 @@
     },
     "TB": {
      "linea": 1.5,
-     "cuota": -156,
+     "cuota": -155,
      "n_casas": 9
     }
    },
@@ -179,22 +179,22 @@
    "mejor": {
     "ml": {
      "NYY": {
-      "cuota": -165,
-      "casa": "betmgm"
+      "cuota": -167,
+      "casa": "betrivers"
      },
      "TB": {
-      "cuota": 151,
+      "cuota": 154,
       "casa": "lowvig"
      }
     },
     "total": {
      "linea": 7.0,
      "over": {
-      "cuota": -115,
+      "cuota": -113,
       "casa": "lowvig"
      },
      "under": {
-      "cuota": 105,
+      "cuota": 100,
       "casa": "betmgm"
      }
     },
@@ -202,12 +202,12 @@
      "NYY": {
       "linea": -1.5,
       "cuota": 135,
-      "casa": "betmgm"
+      "casa": "bovada"
      },
      "TB": {
       "linea": 1.5,
-      "cuota": -148,
-      "casa": "betrivers"
+      "cuota": -151,
+      "casa": "lowvig"
      }
     }
    },
@@ -226,8 +226,8 @@
    },
    "total": {
     "linea": 7.5,
-    "over": -110,
-    "under": -108,
+    "over": -113,
+    "under": -106,
     "n_casas": 9
    },
    "spread": {
@@ -238,7 +238,7 @@
     },
     "SD": {
      "linea": 1.5,
-     "cuota": -194,
+     "cuota": -200,
      "n_casas": 5
     }
    },
@@ -249,11 +249,11 @@
    "mejor": {
     "ml": {
      "MIL": {
-      "cuota": 100,
-      "casa": "betrivers"
+      "cuota": -103,
+      "casa": "lowvig"
      },
      "SD": {
-      "cuota": -108,
+      "cuota": -107,
       "casa": "lowvig"
      }
     },
@@ -271,8 +271,8 @@
     "spread": {
      "MIL": {
       "linea": -1.5,
-      "cuota": 170,
-      "casa": "betrivers"
+      "cuota": 165,
+      "casa": "betmgm"
      },
      "SD": {
       "linea": 1.5,
