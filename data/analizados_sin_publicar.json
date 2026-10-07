@@ -1382,6 +1382,272 @@
     }
   },
   {
+    "fecha": "2026-09-22",
+    "pick": "TEX ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -126,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "NYM 6-3 TEX",
+    "veredicto": "seguimiento",
+    "prob_estimada": 57.0,
+    "prob_justa": 53.7,
+    "ev_pct": 2.24,
+    "precio_publicado": -122,
+    "discrepancia_pp": 3.3,
+    "fuente_precio": null,
+    "casas_precio": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": true
+    },
+    "linea_precio": null,
+    "capas": [
+      "bullpen",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "M. Gore viene de 4, 4 y 3 entradas con 3, 4 y 5 limpias: si repite, TEX entrega el juego antes de que su bullpen pese, y la alineacion de NYM no esta publicada.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": false,
+      "delta_pp": 2.8
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": false,
+      "abridores": true,
+      "ts": "2026-09-22T22:00:18Z"
+    }
+  },
+  {
+    "fecha": "2026-09-22",
+    "pick": "SD/LAD o8.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -104,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "SD 0-7 LAD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 52.5,
+    "prob_justa": 48.6,
+    "ev_pct": 2.98,
+    "precio_publicado": -105,
+    "discrepancia_pp": 3.9,
+    "fuente_precio": null,
+    "casas_precio": null,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "Los dos bullpens son de élite (SD 3.29 con M. Miller en 1.21; LAD 3.69) y LAD solo permite 2.8 c/j en sus últimos 10: si King y el relevo controlan, el 8.5 queda largo.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": 0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": true,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-09-23T00:00:20Z"
+    }
+  },
+  {
+    "fecha": "2026-10-04",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -135,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "SD 3-4 MIL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 56.5,
+    "prob_justa": 55.37,
+    "ev_pct": -1.65,
+    "precio_publicado": -119,
+    "discrepancia_pp": 1.13,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva"
+    ],
+    "contra": "Del sexto inning en adelante pesa el bullpen de SD (M. Miller, 1.67 ERA), que es mejor que el de MIL, y además T. Megill lanzó ayer.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-04T18:40:20Z"
+    }
+  },
+  {
+    "fecha": "2026-10-04",
+    "pick": "ATL/LAD o8",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -109,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "ATL 3-2 LAD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 51.0,
+    "prob_justa": 49.89,
+    "ev_pct": -2.21,
+    "precio_publicado": 102,
+    "discrepancia_pp": 1.11,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "clima",
+      "parque",
+      "pitcheo"
+    ],
+    "contra": "Snell es élite y ambos bullpens son sólidos; los dos equipos solo pasaron de 8.5 en 2 de sus últimos 10, y la línea ya subió de 7.0 a 7.5, así que el clima probablemente ya está en el precio.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE",
+      "a_favor": true,
+      "mov_linea": 0.5
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-04T22:50:22Z"
+    }
+  },
+  {
+    "fecha": "2026-10-05",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -153,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "CWS 4-3 CLE",
+    "veredicto": "seguimiento",
+    "prob_estimada": 59.0,
+    "prob_justa": 58.17,
+    "ev_pct": -2.44,
+    "precio_publicado": -129,
+    "discrepancia_pp": 0.83,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "CWS llega con 6.7 c/j en sus ultimos 10 y CLE batea solo .675 de OPS contra zurdos; ademas G. Williams duro 3.1 IP con 4 ER y 4 BB en su ultima salida.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-05T19:45:48Z"
+    }
+  },
+  {
+    "fecha": "2026-10-05",
+    "pick": "NYY ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -124,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "NYY 2-5 TB",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.5,
+    "prob_justa": 53.28,
+    "ev_pct": 0.26,
+    "precio_publicado": -116,
+    "discrepancia_pp": 2.22,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "La alineacion de TB es mas fuerte vs derechos (.752 de OPS, con J. Caminero en .884 y V. Mesa Jr. en .825), y en la ultima salida de C. Schlittler contra TB solo duro 3.0 IP.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-05T22:50:18Z"
+    }
+  },
+  {
     "fecha": "2026-09-21",
     "pick": "WSH/DET o8.5",
     "deporte": "MLB",
@@ -1519,98 +1785,6 @@
       "alineaciones": true,
       "abridores": true,
       "ts": "2026-09-21T22:00:20Z"
-    }
-  },
-  {
-    "fecha": "2026-09-22",
-    "pick": "TEX ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -126,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "NYM 6-3 TEX",
-    "veredicto": "seguimiento",
-    "prob_estimada": 57.0,
-    "prob_justa": 53.7,
-    "ev_pct": 2.24,
-    "precio_publicado": -122,
-    "discrepancia_pp": 3.3,
-    "fuente_precio": null,
-    "casas_precio": null,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": true
-    },
-    "linea_precio": null,
-    "capas": [
-      "bullpen",
-      "ofensiva",
-      "matchup"
-    ],
-    "contra": "M. Gore viene de 4, 4 y 3 entradas con 3, 4 y 5 limpias: si repite, TEX entrega el juego antes de que su bullpen pese, y la alineacion de NYM no esta publicada.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE",
-      "a_favor": false,
-      "delta_pp": 2.8
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": false,
-      "abridores": true,
-      "ts": "2026-09-22T22:00:18Z"
-    }
-  },
-  {
-    "fecha": "2026-09-22",
-    "pick": "SD/LAD o8.5",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -104,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "SD 0-7 LAD",
-    "veredicto": "seguimiento",
-    "prob_estimada": 52.5,
-    "prob_justa": 48.6,
-    "ev_pct": 2.98,
-    "precio_publicado": -105,
-    "discrepancia_pp": 3.9,
-    "fuente_precio": null,
-    "casas_precio": null,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "bullpen",
-      "forma"
-    ],
-    "contra": "Los dos bullpens son de élite (SD 3.29 con M. Miller en 1.21; LAD 3.69) y LAD solo permite 2.8 c/j en sus últimos 10: si King y el relevo controlan, el 8.5 queda largo.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE",
-      "a_favor": true,
-      "mov_linea": 0.5
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": true,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-09-23T00:00:20Z"
     }
   },
   {
@@ -1831,180 +2005,6 @@
       "alineaciones": true,
       "abridores": true,
       "ts": "2026-10-03T22:00:19Z"
-    }
-  },
-  {
-    "fecha": "2026-10-04",
-    "pick": "MIL ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -135,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "SD 3-4 MIL",
-    "veredicto": "seguimiento",
-    "prob_estimada": 56.5,
-    "prob_justa": 55.37,
-    "ev_pct": -1.65,
-    "precio_publicado": -119,
-    "discrepancia_pp": 1.13,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "ofensiva"
-    ],
-    "contra": "Del sexto inning en adelante pesa el bullpen de SD (M. Miller, 1.67 ERA), que es mejor que el de MIL, y además T. Megill lanzó ayer.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 1,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-04T18:40:20Z"
-    }
-  },
-  {
-    "fecha": "2026-10-04",
-    "pick": "ATL/LAD o8",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -109,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "ATL 3-2 LAD",
-    "veredicto": "seguimiento",
-    "prob_estimada": 51.0,
-    "prob_justa": 49.89,
-    "ev_pct": -2.21,
-    "precio_publicado": 102,
-    "discrepancia_pp": 1.11,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "clima",
-      "parque",
-      "pitcheo"
-    ],
-    "contra": "Snell es élite y ambos bullpens son sólidos; los dos equipos solo pasaron de 8.5 en 2 de sus últimos 10, y la línea ya subió de 7.0 a 7.5, así que el clima probablemente ya está en el precio.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "FUERTE",
-      "a_favor": true,
-      "mov_linea": 0.5
-    },
-    "abogado": null,
-    "citas_dudosas": 2,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-04T22:50:22Z"
-    }
-  },
-  {
-    "fecha": "2026-10-05",
-    "pick": "CLE ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -153,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "CWS 4-3 CLE",
-    "veredicto": "seguimiento",
-    "prob_estimada": 59.0,
-    "prob_justa": 58.17,
-    "ev_pct": -2.44,
-    "precio_publicado": -129,
-    "discrepancia_pp": 0.83,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "bullpen",
-      "forma"
-    ],
-    "contra": "CWS llega con 6.7 c/j en sus ultimos 10 y CLE batea solo .675 de OPS contra zurdos; ademas G. Williams duro 3.1 IP con 4 ER y 4 BB en su ultima salida.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 1,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-05T19:45:48Z"
-    }
-  },
-  {
-    "fecha": "2026-10-05",
-    "pick": "NYY ML",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -124,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "NYY 2-5 TB",
-    "veredicto": "seguimiento",
-    "prob_estimada": 55.5,
-    "prob_justa": 53.28,
-    "ev_pct": 0.26,
-    "precio_publicado": -116,
-    "discrepancia_pp": 2.22,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "extra_umbral_1_5": false,
-      "extra_umbral_plano": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "bullpen",
-      "forma"
-    ],
-    "contra": "La alineacion de TB es mas fuerte vs derechos (.752 de OPS, con J. Caminero en .884 y V. Mesa Jr. en .825), y en la ultima salida de C. Schlittler contra TB solo duro 3.0 IP.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-05T22:50:18Z"
     }
   },
   {

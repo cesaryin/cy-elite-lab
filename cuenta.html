@@ -707,8 +707,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
   function colocar() {
     pie.style.marginTop = '';
     var abajo = parseFloat(getComputedStyle(app).paddingBottom) || 0;
-    var sobra = window.innerHeight - abajo
-              - (pie.getBoundingClientRect().bottom + (window.pageYOffset || 0));
+    var sobra = (app.getBoundingClientRect().bottom - abajo) - pie.getBoundingClientRect().bottom;
     if (sobra > 1) pie.style.marginTop = (parseFloat(getComputedStyle(pie).marginTop) + sobra) + 'px';
   }
   colocar();
@@ -1175,4 +1174,4 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
   setTimeout(function () { if (!$('cu-cargando').hidden) pintar(null); }, 6000);
 })();
 </script>
-<!-- generado 7 oct · 8:02 AM --></body></html>
+<!-- generado 7 oct · 11:25 AM --></body></html>
