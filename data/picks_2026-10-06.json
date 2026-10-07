@@ -74,6 +74,159 @@
         "alineaciones": true,
         "abridores": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "SD ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -138,
+      "prob_estimada": 57.5,
+      "razon": "La ventaja está en las entradas medias. D. May no pasó de 3.0 IP en sus tres últimas salidas, así que el bullpen de MIL (fip_core 0.484) entra pronto, frente al de SD (fip_core -0.185). La alineación de SD hoy promedia .747 de OPS contra .717 en la temporada. Falta el dato ofensivo de los últimos 7 días. Ventaja corta, menos de 2 pp sobre la justa.",
+      "equipos": [
+        "MIL",
+        "SD"
+      ],
+      "destacado": "SD",
+      "hora": "8:30 PM CT",
+      "capas": [
+        "pitcheo",
+        "bullpen",
+        "ofensiva"
+      ],
+      "contra": "MIL batea .759 de OPS contra derechos y SD solo .722. Si M. Miller queda limitado a una entrada, el cierre de SD pierde a su mejor brazo.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "SD",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-07T01:30:00Z",
+      "cuota_apertura_ref": -143,
+      "valor": {
+        "prob_estimada": 57.5,
+        "prob_justa": 55.83,
+        "prob_implicita": 57.98,
+        "cuota": -138,
+        "cuota_justa_mercado": -126,
+        "ev_pct": -0.83,
+        "ev_kalshi_pct": -3.77,
+        "precio_minimo": -125,
+        "precio_publicado": -125,
+        "precio_equilibrio": -135,
+        "discrepancia_pp": 1.67,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -0.83% por debajo del minimo exigido (3.5%)",
+        "mejor_precio": {
+          "cuota": -132,
+          "casa": "betus"
+        },
+        "alcanzable": false,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 6,
+        "no_encontrados": [
+          {
+            "numero": ".747",
+            "frase": "l de SD (fip_core -0.185). La alineación de SD hoy promedia .747 de OPS contra .717"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-10-07T00:10:23Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "SD F5 -0.5",
+      "deporte": "MLB",
+      "tipo": "F5 -0.5",
+      "cuota": 103,
+      "prob_estimada": 47.0,
+      "razon": "N. Pivetta (FIP 3.3, K 30%) supera a D. May (FIP 3.79), y May viene de salidas cortas que exponen antes al bullpen de MIL. Es una lectura floja: precio derivado y menos de 1 pp sobre la justa.",
+      "equipos": [
+        "MIL",
+        "SD"
+      ],
+      "destacado": "SD",
+      "hora": "8:30 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup"
+      ],
+      "contra": "Con total 7.5 y dos abridores que ponchan, el empate tras la quinta es probable, y en el -0.5 el empate pierde. Pivetta solo suma 140 bateadores enfrentados y sus salidas recientes también fueron cortas.",
+      "resolucion": {
+        "mercado": "f5_spread",
+        "equipo": "SD",
+        "lado": null,
+        "linea": -0.5
+      },
+      "inicio_utc": "2026-10-07T01:30:00Z",
+      "valor": {
+        "prob_estimada": 47.0,
+        "prob_justa": 46.09,
+        "prob_implicita": 49.26,
+        "cuota": 103,
+        "cuota_justa_mercado": 117,
+        "ev_pct": -4.59,
+        "ev_kalshi_pct": -8.14,
+        "precio_minimo": 116,
+        "precio_publicado": 116,
+        "precio_equilibrio": 113,
+        "discrepancia_pp": 0.91,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -4.59% por debajo del minimo exigido (1.5%)",
+        "cuota_aproximada": true,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 3,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-10-07T00:10:23Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
@@ -85,7 +238,13 @@
     "LAD team total u2.5 (+120, justa 42.9%): C. Sale (30.9% K) frente a un lineup de LAD con .756 de OPS vs zurdos. Mi estimación de ~43.5% no da ventaja, y el total al alza va en contra.",
     "ATL F5 ML (-120, justa 51.8%): el precio es derivado y lleva un margen del 5.3%. La ventaja de C. Sale ya está cobrada, y estimo ~53%, insuficiente a -120.",
     "LAD F5 +0.5 (-169) y ATL F5 -0.5 (+127): con dos abridores dominantes el empate en la quinta es probable. No veo discrepancia con la justa (58.8% / 41.2%), y la cuota de -169 queda fuera de banda.",
-    "Spread: ATL +1.5 a -195 queda fuera de la banda de cuotas. LAD -1.5 (+168) exige margen frente a C. Sale y el bullpen de ATL, sin respaldo en los datos."
+    "Spread: ATL +1.5 a -195 queda fuera de la banda de cuotas. LAD -1.5 (+168) exige margen frente a C. Sale y el bullpen de ATL, sin respaldo en los datos.",
+    "MIL/SD u7.5: el total se movió de 7.0 a 7.5 con fuerza FUERTE en contra. Además, ninguna ofensiva está fría (MIL 4.1 y SD 4.9 carreras por juego en los últimos 10), hace 84°F y el umpire suma +2.6%. Falla la comprobación 3 del under.",
+    "MIL/SD o7.5: Petco tiene pf 94, el viento sopla levemente hacia dentro y ambos bullpens están descansados. No hay base para separarse del 50% de la línea justa.",
+    "MIL team total u3.5: Pivetta, el bullpen de SD y el parque lo favorecen. Pero el movimiento fuerte del total va en contra y la alineación de MIL hoy promedia .757 de OPS. Ventaja inferior a 1 pp.",
+    "MIL ML: el 9-1 y las 2.3 carreras en contra por juego no compensan la desventaja en el montículo y en el bullpen. Mi estimación queda por debajo del 44.17% de la línea justa.",
+    "MIL Spread +1.5 (-187): fuera de la banda de cuotas.",
+    "SD Spread -1.5 y SD team total o3.5: SD batea .722 de OPS contra derechos y MIL permite 2.3 carreras por juego en sus últimos 10. No hay ventaja sobre la línea justa."
   ],
   "vivo": {
     "plan": {
@@ -164,15 +323,34 @@
         "sin_ventaja": 1,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-10-07T00:10:23Z",
+        "min_ct": 1150,
+        "claves": [
+          "MIL@SD@2026-10-07T01:30:00Z"
+        ],
+        "juegos": [
+          "MIL@SD"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [],
+        "sin_ventaja": 2,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 1-0 (+0.93 U).\n• CWS/HOU o7.5 (SEÑAL ELITE), ganada: CWS 7-3 HOU, 10 carreras con la línea en 7.5.\n1 ganada con ventaja medida.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 1,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
-    "ev_min": 2.0
+    "ev_min": 1.5
   }
 }
