@@ -1,0 +1,98 @@
+{
+  "picks": [],
+  "parlay": null,
+  "resumen": "",
+  "descartes": [],
+  "vivo": {
+    "plan": {
+      "fecha": "2026-10-07",
+      "creado": "2026-10-07T13:01:59Z",
+      "tandas_dia": 2,
+      "tope_tanda": 3,
+      "tope_dia": 5,
+      "margen_min": 30,
+      "una_tanda": "se mantienen 2 tandas: con una sola se analizarían 1.9 alineaciones en vez de 3.8",
+      "tandas": [
+        {
+          "min_ct": 870,
+          "min_reloj": 390,
+          "hora": "2:30 PM",
+          "utc": "2026-10-07T19:30:00Z",
+          "juegos": [
+            {
+              "clave": "CLE@CWS",
+              "inicio_utc": "2026-10-07T20:00:00Z"
+            },
+            {
+              "clave": "LAD@ATL",
+              "inicio_utc": "2026-10-07T22:00:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 1.9
+        },
+        {
+          "min_ct": 1110,
+          "min_reloj": 630,
+          "hora": "6:30 PM",
+          "utc": "2026-10-07T23:30:00Z",
+          "juegos": [
+            {
+              "clave": "TB@NYY",
+              "inicio_utc": "2026-10-08T00:00:00Z"
+            },
+            {
+              "clave": "MIL@SD",
+              "inicio_utc": "2026-10-08T02:00:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 1.9
+        }
+      ],
+      "refrescos_lab": [
+        {
+          "min_ct": 850,
+          "min_reloj_lab": 370,
+          "hora": "2:10 PM",
+          "utc": "2026-10-07T19:10:00Z",
+          "bloque": "3:00 PM",
+          "juegos": 1
+        },
+        {
+          "min_ct": 970,
+          "min_reloj_lab": 490,
+          "hora": "4:10 PM",
+          "utc": "2026-10-07T21:10:00Z",
+          "bloque": "5:00 PM",
+          "juegos": 1
+        },
+        {
+          "min_ct": 1090,
+          "min_reloj_lab": 610,
+          "hora": "6:10 PM",
+          "utc": "2026-10-07T23:10:00Z",
+          "bloque": "7:00 PM",
+          "juegos": 1
+        },
+        {
+          "min_ct": 1200,
+          "min_reloj_lab": 720,
+          "hora": "8:00 PM",
+          "utc": "2026-10-08T01:00:00Z",
+          "bloque": "9:00 PM",
+          "juegos": 1
+        }
+      ],
+      "sin_tanda": [],
+      "sin_hora": []
+    },
+    "tandas": []
+  },
+  "autopsia": "Señales publicadas: 1-0 (+0.93 U).\n• CWS/HOU o7.5 (SEÑAL ELITE), ganada: CWS 7-3 HOU, 10 carreras con la línea en 7.5.\n1 ganada con ventaja medida.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
+  "valor_dia": {
+    "apostables": 0,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 0.0,
+    "ev_min": null
+  }
+}

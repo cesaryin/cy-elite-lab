@@ -1,0 +1,72 @@
+{
+ "fecha": "2026-10-07",
+ "n_juegos": 2,
+ "juegos": {
+  "CLE@CWS": {
+   "f5_ml": {
+    "CWS": -123,
+    "CLE": 100
+   },
+   "f5_total": {
+    "linea": 4.0,
+    "over": -121,
+    "under": 100
+   },
+   "f5_spread": {
+    "CWS": {
+     "linea": -0.5,
+     "cuota": 114
+    },
+    "CLE": {
+     "linea": 0.5,
+     "cuota": -142
+    }
+   },
+   "team_total": {
+    "CWS": {
+     "linea": 3.5,
+     "over": -132,
+     "under": 104
+    },
+    "CLE": {
+     "linea": 3.5,
+     "over": -126,
+     "under": -102
+    }
+   }
+  },
+  "LAD@ATL": {
+   "f5_ml": {
+    "ATL": 116,
+    "LAD": -147
+   },
+   "f5_total": {
+    "linea": 4.0,
+    "over": -110,
+    "under": -117
+   },
+   "f5_spread": {
+    "ATL": {
+     "linea": 0.5,
+     "cuota": -126
+    },
+    "LAD": {
+     "linea": -0.5,
+     "cuota": 100
+    }
+   },
+   "team_total": {
+    "ATL": {
+     "linea": 3.5,
+     "over": 112,
+     "under": -145
+    },
+    "LAD": {
+     "linea": 3.5,
+     "over": -145,
+     "under": 114
+    }
+   }
+  }
+ }
+}

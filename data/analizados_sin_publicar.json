@@ -2006,5 +2006,137 @@
       "abridores": true,
       "ts": "2026-10-05T22:50:18Z"
     }
+  },
+  {
+    "fecha": "2026-10-06",
+    "pick": "ATL ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -109,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "LAD 3-1 ATL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 52.0,
+    "prob_justa": 50.11,
+    "ev_pct": -0.29,
+    "precio_publicado": -102,
+    "discrepancia_pp": 1.89,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "extra_umbral_1_5": false,
+      "extra_umbral_plano": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen"
+    ],
+    "contra": "LAD tiene la mejor ofensiva (.756 de OPS vs zurdos frente a .730 de ATL vs derechos) y la mejor forma (7-3, 2.4 carreras en contra por juego), y ATL alinea a H. Kim con .359 de OPS y a A. Riley con .654 en la parte baja del orden.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-06T20:40:21Z"
+    }
+  },
+  {
+    "fecha": "2026-10-06",
+    "pick": "SD ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -138,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "MIL 3-4 SD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 57.5,
+    "prob_justa": 55.83,
+    "ev_pct": -0.83,
+    "precio_publicado": -125,
+    "discrepancia_pp": 1.67,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva"
+    ],
+    "contra": "MIL batea .759 de OPS contra derechos y SD solo .722. Si M. Miller queda limitado a una entrada, el cierre de SD pierde a su mejor brazo.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-07T00:10:23Z"
+    }
+  },
+  {
+    "fecha": "2026-10-06",
+    "pick": "SD F5 -0.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 103,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "MIL 3-4 SD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 47.0,
+    "prob_justa": 46.09,
+    "ev_pct": -4.59,
+    "precio_publicado": 116,
+    "discrepancia_pp": 0.91,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup"
+    ],
+    "contra": "Con total 7.5 y dos abridores que ponchan, el empate tras la quinta es probable, y en el -0.5 el empate pierde. Pivetta solo suma 140 bateadores enfrentados y sus salidas recientes también fueron cortas.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-07T00:10:23Z"
+    }
   }
 ]
