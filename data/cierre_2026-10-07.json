@@ -55,7 +55,7 @@
   "total": {
    "linea": 7.0,
    "over": -117,
-   "under": -102
+   "under": -103
   },
   "spread": {
    "TB": {
@@ -68,7 +68,7 @@
    }
   },
   "inicio_utc": "2026-10-08T00:00Z",
-  "visto": "2026-10-07T22:40:16+00:00",
+  "visto": "2026-10-07T23:11:07+00:00",
   "cerrado": false
  },
  "MIL@SD": {
@@ -84,15 +84,15 @@
   "spread": {
    "MIL": {
     "linea": -1.5,
-    "cuota": 158
+    "cuota": 160
    },
    "SD": {
     "linea": 1.5,
-    "cuota": -193
+    "cuota": -195
    }
   },
   "inicio_utc": "2026-10-08T02:00Z",
-  "visto": "2026-10-07T22:40:16+00:00",
+  "visto": "2026-10-07T23:11:07+00:00",
   "cerrado": false
  }
 }
