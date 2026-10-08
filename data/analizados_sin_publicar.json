@@ -1648,6 +1648,185 @@
     }
   },
   {
+    "fecha": "2026-10-07",
+    "pick": "ATL team total u3.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": -145,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "LAD 4-1 ATL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 57.5,
+    "prob_justa": 55.65,
+    "ev_pct": -2.84,
+    "precio_publicado": -124,
+    "discrepancia_pp": 1.85,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma"
+    ],
+    "contra": "ATL batea .730 de OPS contra derechos y su primera mitad de la tanda (M. Harris II, R. Acuña Jr., M. Olson, D. Baldwin) supera .79. Además, el mercado ya cobra -145 por este lado.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-07T19:30:24Z"
+    }
+  },
+  {
+    "fecha": "2026-10-07",
+    "pick": "CWS ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -125,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "CLE 9-3 CWS",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.5,
+    "prob_justa": 53.73,
+    "ev_pct": -0.1,
+    "precio_publicado": -117,
+    "discrepancia_pp": 1.77,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "forma",
+      "matchup"
+    ],
+    "contra": "S. Newcomb no lanza desde el 14-sep y viene de salidas muy cortas. El juego lo decidirá pronto un bullpen de CWS que lanzó 8.2 IP en 2 días, frente a uno de CLE descansado (3.3 IP) y con C. Smith como cerrador.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-07T19:30:24Z"
+    }
+  },
+  {
+    "fecha": "2026-10-07",
+    "pick": "MIL F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -117,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "MIL 3-1 SD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.0,
+    "prob_justa": 51.17,
+    "ev_pct": 2.01,
+    "precio_publicado": -115,
+    "discrepancia_pp": 3.83,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": true,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup",
+      "bullpen"
+    ],
+    "contra": "R. Gasser tiene poca muestra (FIP 4.26, 531 bateadores en varias temporadas) y SD viene a 5.3 c/j con una alineación más fuerte que su media de temporada. El precio del F5 es derivado y lleva 5.4 pp de margen.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-07T23:30:19Z"
+    }
+  },
+  {
+    "fecha": "2026-10-07",
+    "pick": "TB/NYY u7",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -105,
+    "unidades": 0.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "TB 4-3 NYY",
+    "veredicto": "seguimiento",
+    "prob_estimada": 50.8,
+    "prob_justa": 48.92,
+    "ev_pct": -0.82,
+    "precio_publicado": 101,
+    "discrepancia_pp": 1.88,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "clima"
+    ],
+    "contra": "N. Martinez duró 2.2 entradas (4 ER) en su última salida. La alineación de TB hoy promedia ~.766 de OPS, por encima de su .728 de temporada. NYY pasó de 8.5 en 6 de 10 y el 7 puede quedar en push.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-07T23:30:19Z"
+    }
+  },
+  {
     "fecha": "2026-09-21",
     "pick": "WSH/DET o8.5",
     "deporte": "MLB",
@@ -2137,185 +2316,6 @@
       "alineaciones": true,
       "abridores": true,
       "ts": "2026-10-07T00:10:23Z"
-    }
-  },
-  {
-    "fecha": "2026-10-07",
-    "pick": "ATL team total u3.5",
-    "deporte": "MLB",
-    "nivel": "plata",
-    "cuota": -145,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "LAD 4-1 ATL",
-    "veredicto": "seguimiento",
-    "prob_estimada": 57.5,
-    "prob_justa": 55.65,
-    "ev_pct": -2.84,
-    "precio_publicado": -124,
-    "discrepancia_pp": 1.85,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "entro_por_1_5": false,
-      "extra_umbral_plano": false,
-      "extra_umbral_1_5": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "ofensiva",
-      "forma"
-    ],
-    "contra": "ATL batea .730 de OPS contra derechos y su primera mitad de la tanda (M. Harris II, R. Acuña Jr., M. Olson, D. Baldwin) supera .79. Además, el mercado ya cobra -145 por este lado.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "MEDIA"
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-07T19:30:24Z"
-    }
-  },
-  {
-    "fecha": "2026-10-07",
-    "pick": "CWS ML",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -125,
-    "unidades": 0.0,
-    "resultado": "L",
-    "neto_u": 0.0,
-    "marcador": "CLE 9-3 CWS",
-    "veredicto": "seguimiento",
-    "prob_estimada": 55.5,
-    "prob_justa": 53.73,
-    "ev_pct": -0.1,
-    "precio_publicado": -117,
-    "discrepancia_pp": 1.77,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "entro_por_1_5": false,
-      "extra_umbral_plano": false,
-      "extra_umbral_1_5": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "ofensiva",
-      "forma",
-      "matchup"
-    ],
-    "contra": "S. Newcomb no lanza desde el 14-sep y viene de salidas muy cortas. El juego lo decidirá pronto un bullpen de CWS que lanzó 8.2 IP en 2 días, frente a uno de CLE descansado (3.3 IP) y con C. Smith como cerrador.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 1,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-07T19:30:24Z"
-    }
-  },
-  {
-    "fecha": "2026-10-07",
-    "pick": "MIL F5 ML",
-    "deporte": "MLB",
-    "nivel": "oro",
-    "cuota": -117,
-    "unidades": 0.0,
-    "resultado": "W",
-    "neto_u": 0.0,
-    "marcador": "MIL 3-1 SD",
-    "veredicto": "seguimiento",
-    "prob_estimada": 55.0,
-    "prob_justa": 51.17,
-    "ev_pct": 2.01,
-    "precio_publicado": -115,
-    "discrepancia_pp": 3.83,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "entro_por_1_5": false,
-      "extra_umbral_plano": true,
-      "extra_umbral_1_5": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "ofensiva",
-      "matchup",
-      "bullpen"
-    ],
-    "contra": "R. Gasser tiene poca muestra (FIP 4.26, 531 bateadores en varias temporadas) y SD viene a 5.3 c/j con una alineación más fuerte que su media de temporada. El precio del F5 es derivado y lleva 5.4 pp de margen.",
-    "contexto": {
-      "mercado_movido": true,
-      "fuerza": "MEDIA"
-    },
-    "abogado": null,
-    "citas_dudosas": 0,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-07T23:30:19Z"
-    }
-  },
-  {
-    "fecha": "2026-10-07",
-    "pick": "TB/NYY u7",
-    "deporte": "MLB",
-    "nivel": "bronce",
-    "cuota": -105,
-    "unidades": 0.0,
-    "resultado": "P",
-    "neto_u": 0.0,
-    "marcador": "TB 4-3 NYY",
-    "veredicto": "seguimiento",
-    "prob_estimada": 50.8,
-    "prob_justa": 48.92,
-    "ev_pct": -0.82,
-    "precio_publicado": 101,
-    "discrepancia_pp": 1.88,
-    "fuente_precio": "consenso_us",
-    "casas_precio": 9,
-    "sombra_umbral": {
-      "entro_por_1_5": false,
-      "extra_umbral_plano": false,
-      "extra_umbral_1_5": false
-    },
-    "linea_precio": null,
-    "capas": [
-      "pitcheo",
-      "bullpen",
-      "clima"
-    ],
-    "contra": "N. Martinez duró 2.2 entradas (4 ER) en su última salida. La alineación de TB hoy promedia ~.766 de OPS, por encima de su .728 de temporada. NYY pasó de 8.5 en 6 de 10 y el 7 puede quedar en push.",
-    "contexto": {
-      "mercado_movido": false
-    },
-    "abogado": null,
-    "citas_dudosas": 2,
-    "vivo": {
-      "tanda": 2,
-      "publicado": false,
-      "fuera_por_tope": false,
-      "alineaciones": true,
-      "abridores": true,
-      "ts": "2026-10-07T23:30:19Z"
     }
   }
 ]
