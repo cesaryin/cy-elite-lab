@@ -1,0 +1,77 @@
+{
+ "fecha": "2026-10-08",
+ "tomado_utc": "2026-10-08T13:00:43+00:00",
+ "n_juegos": 1,
+ "juegos": {
+  "CLE@CWS": {
+   "id": "b57e790481f2b8e5eaf9e0f3eab816bc",
+   "away": "CLE",
+   "home": "CWS",
+   "inicio_utc": "2026-10-09T00:00:00Z",
+   "n_casas": 9,
+   "fuente": "consenso_us",
+   "ml": {
+    "CWS": -101,
+    "CLE": -116
+   },
+   "total": {
+    "linea": 7.5,
+    "over": 100,
+    "under": -122,
+    "n_casas": 7
+   },
+   "spread": {
+    "CWS": {
+     "linea": 1.5,
+     "cuota": -180,
+     "n_casas": 9
+    },
+    "CLE": {
+     "linea": -1.5,
+     "cuota": 155,
+     "n_casas": 9
+    }
+   },
+   "casas_ml": {
+    "CWS": 9,
+    "CLE": 9
+   },
+   "mejor": {
+    "ml": {
+     "CWS": {
+      "cuota": 100,
+      "casa": "draftkings"
+     },
+     "CLE": {
+      "cuota": -109,
+      "casa": "betus"
+     }
+    },
+    "total": {
+     "linea": 7.5,
+     "over": {
+      "cuota": 107,
+      "casa": "lowvig"
+     },
+     "under": {
+      "cuota": -118,
+      "casa": "betrivers"
+     }
+    },
+    "spread": {
+     "CWS": {
+      "linea": 1.5,
+      "cuota": -174,
+      "casa": "draftkings"
+     },
+     "CLE": {
+      "linea": -1.5,
+      "cuota": 162,
+      "casa": "mybookieag"
+     }
+    }
+   },
+   "flojo": false
+  }
+ }
+}

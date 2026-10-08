@@ -1,0 +1,53 @@
+{
+  "picks": [],
+  "parlay": null,
+  "resumen": "",
+  "descartes": [],
+  "vivo": {
+    "plan": {
+      "fecha": "2026-10-08",
+      "creado": "2026-10-08T13:00:56Z",
+      "tandas_dia": 2,
+      "tope_tanda": 3,
+      "tope_dia": 5,
+      "margen_min": 30,
+      "una_tanda": null,
+      "tandas": [
+        {
+          "min_ct": 1070,
+          "min_reloj": 590,
+          "hora": "5:50 PM",
+          "utc": "2026-10-08T22:50:00Z",
+          "juegos": [
+            {
+              "clave": "CLE@CWS",
+              "inicio_utc": "2026-10-09T00:00:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 1.0
+        }
+      ],
+      "refrescos_lab": [
+        {
+          "min_ct": 1090,
+          "min_reloj_lab": 610,
+          "hora": "6:10 PM",
+          "utc": "2026-10-08T23:10:00Z",
+          "bloque": "7:00 PM",
+          "juegos": 1
+        }
+      ],
+      "sin_tanda": [],
+      "sin_hora": []
+    },
+    "tandas": []
+  },
+  "autopsia": "Señales publicadas: 1-0 (+0.91 U).\n• LAD/ATL u7.5 (SEÑAL MODERADA), ganada: LAD 4-1 ATL, 5 carreras con la línea en 7.5.\n1 ganada con ventaja medida.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
+  "valor_dia": {
+    "apostables": 0,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 0.0,
+    "ev_min": null
+  }
+}

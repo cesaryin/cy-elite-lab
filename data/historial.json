@@ -5303,5 +5303,58 @@
     "clv_metodo": "kalshi_historico",
     "clv_limpio": 0.0,
     "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-10-07",
+    "pick": "LAD/ATL u7.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -110,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 0.91,
+    "marcador": "LAD 4-1 ATL",
+    "veredicto": "apostable",
+    "prob_estimada": 53.5,
+    "prob_justa": 50.0,
+    "ev_pct": 2.14,
+    "precio_publicado": -110,
+    "discrepancia_pp": 3.5,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": true,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "forma",
+      "pitcheo",
+      "clima"
+    ],
+    "contra": "Las tandas de hoy pegan por encima de su temporada (LAD .782 de OPS medio frente a .762; ATL .728 frente a .718) y T. Mahle concedió 5 ER en su última salida. Un solo inning malo de él revienta el 7.5.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "MEDIA",
+      "a_favor": true,
+      "mov_linea": 0.0
+    },
+    "abogado": null,
+    "citas_dudosas": 3,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-07T19:30:24Z"
+    },
+    "clv": -1.9,
+    "prob_cierre": 50.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": 0.5,
+    "cuadrante": "merecido"
   }
 ]

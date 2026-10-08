@@ -1,0 +1,39 @@
+{
+ "fecha": "2026-10-08",
+ "n_juegos": 1,
+ "juegos": {
+  "CLE@CWS": {
+   "f5_ml": {
+    "CWS": 100,
+    "CLE": -125
+   },
+   "f5_total": {
+    "linea": 3.5,
+    "over": -142,
+    "under": 109
+   },
+   "f5_spread": {
+    "CWS": {
+     "linea": 0.5,
+     "cuota": -148
+    },
+    "CLE": {
+     "linea": -0.5,
+     "cuota": 114
+    }
+   },
+   "team_total": {
+    "CWS": {
+     "linea": 3.5,
+     "over": -104,
+     "under": -125
+    },
+    "CLE": {
+     "linea": 3.5,
+     "over": -123,
+     "under": -106
+    }
+   }
+  }
+ }
+}
