@@ -1,26 +1,26 @@
 {
  "CLE@CWS": {
   "ml": {
-   "CLE": -117,
-   "CWS": -103
+   "CLE": -118,
+   "CWS": -102
   },
   "total": {
    "linea": 7.0,
-   "over": -112,
-   "under": -107
+   "over": -111,
+   "under": -109
   },
   "spread": {
    "CLE": {
     "linea": -1.5,
-    "cuota": 149
+    "cuota": 148
    },
    "CWS": {
     "linea": 1.5,
-    "cuota": -181
+    "cuota": -180
    }
   },
   "inicio_utc": "2026-10-09T00:00Z",
-  "visto": "2026-10-08T23:45:16+00:00",
+  "visto": "2026-10-08T23:56:02+00:00",
   "cerrado": false
  }
 }
