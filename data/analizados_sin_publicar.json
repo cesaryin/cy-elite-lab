@@ -2317,5 +2317,95 @@
       "abridores": true,
       "ts": "2026-10-07T00:10:23Z"
     }
+  },
+  {
+    "fecha": "2026-10-08",
+    "pick": "CWS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -101,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "CLE 9-5 CWS",
+    "veredicto": "seguimiento",
+    "prob_estimada": 50.0,
+    "prob_justa": 48.44,
+    "ev_pct": -0.5,
+    "precio_publicado": 104,
+    "discrepancia_pp": 1.56,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "matchup",
+      "forma"
+    ],
+    "contra": "P. Messick es el abridor más sólido y con más muestra. H. Smith solo lleva 110 bateadores enfrentados, un 14.5% de bases por bolas y figura entre los que lanzaron ayer, así que puede durar poco y cargar un bullpen de CWS que usó a seis relevistas ayer.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-08T22:50:20Z"
+    }
+  },
+  {
+    "fecha": "2026-10-08",
+    "pick": "CLE team total u3.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -106,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "CLE 9-5 CWS",
+    "veredicto": "seguimiento",
+    "prob_estimada": 49.5,
+    "prob_justa": 48.26,
+    "ev_pct": -3.8,
+    "precio_publicado": 106,
+    "discrepancia_pp": 1.24,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "parque",
+      "clima"
+    ],
+    "contra": "El 14.5% de bases por bolas de H. Smith y su probable salida corta obligan al bullpen de CWS, usado ayer con seis relevistas, a cubrir muchas entradas.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-08T22:50:20Z"
+    }
   }
 ]
