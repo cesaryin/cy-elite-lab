@@ -1,0 +1,77 @@
+{
+ "fecha": "2026-10-10",
+ "tomado_utc": "2026-10-10T13:00:49+00:00",
+ "n_juegos": 1,
+ "juegos": {
+  "CWS@CLE": {
+   "id": "62bf363a77455f7a8b48838e7792f60b",
+   "away": "CWS",
+   "home": "CLE",
+   "inicio_utc": "2026-10-11T00:01:00Z",
+   "n_casas": 9,
+   "fuente": "consenso_us",
+   "ml": {
+    "CWS": 120,
+    "CLE": -137
+   },
+   "total": {
+    "linea": 7.0,
+    "over": -118,
+    "under": -101,
+    "n_casas": 8
+   },
+   "spread": {
+    "CWS": {
+     "linea": 1.5,
+     "cuota": -185,
+     "n_casas": 9
+    },
+    "CLE": {
+     "linea": -1.5,
+     "cuota": 160,
+     "n_casas": 9
+    }
+   },
+   "casas_ml": {
+    "CWS": 9,
+    "CLE": 9
+   },
+   "mejor": {
+    "ml": {
+     "CWS": {
+      "cuota": 122,
+      "casa": "bovada"
+     },
+     "CLE": {
+      "cuota": -133,
+      "casa": "betonlineag"
+     }
+    },
+    "total": {
+     "linea": 7.0,
+     "over": {
+      "cuota": -113,
+      "casa": "betrivers"
+     },
+     "under": {
+      "cuota": 105,
+      "casa": "betmgm"
+     }
+    },
+    "spread": {
+     "CWS": {
+      "linea": 1.5,
+      "cuota": -180,
+      "casa": "mybookieag"
+     },
+     "CLE": {
+      "linea": -1.5,
+      "cuota": 165,
+      "casa": "betmgm"
+     }
+    }
+   },
+   "flojo": false
+  }
+ }
+}
