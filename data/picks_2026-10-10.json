@@ -1,8 +1,93 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "CWS ML",
+      "tipo": "ML",
+      "deporte": "MLB",
+      "cuota": 120,
+      "prob_estimada": 46.0,
+      "razon": "Lectura de ventaja corta. Los nueve de CWS son más profundos (Vargas .837, Murakami .825 y ninguno por debajo de .637) frente al final de la alineación de CLE (P. Bailey .607, P. Halpin .594). CWS llega con 5.3 c/j en sus 10 últimos juegos. Falta el bateo de los últimos 7 días.",
+      "equipos": [
+        "CWS",
+        "CLE"
+      ],
+      "destacado": "CWS",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "ofensiva",
+        "forma",
+        "matchup"
+      ],
+      "contra": "G. Williams poncha al 33.2% y tiene mejor FIP (3.64 contra 3.77 de S. Burke). Además CLE tiene el mejor cierre (C. Smith, ERA 1.95, 41 saves) y juega en casa: la ventaja de alineación puede quedarse en nada.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CWS",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-11T00:00:00Z",
+      "cuota_apertura_ref": 119,
+      "valor": {
+        "prob_estimada": 46.0,
+        "prob_justa": 44.02,
+        "prob_implicita": 45.45,
+        "cuota": 120,
+        "cuota_justa_mercado": 127,
+        "ev_pct": 1.2,
+        "ev_kalshi_pct": -2.62,
+        "precio_minimo": 121,
+        "precio_publicado": 121,
+        "precio_equilibrio": 118,
+        "discrepancia_pp": 1.98,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.20% por debajo del minimo exigido (1.5%)",
+        "mejor_precio": {
+          "cuota": 124,
+          "casa": "betonlineag"
+        },
+        "alcanzable": true,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 10,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-10T22:50:20Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
   "resumen": "",
-  "descartes": [],
+  "descartes": [
+    "CWS/CLE u7: la línea del total se movió de 7.0 a 7.5 con fuerza FUERTE en contra del under. Las dos ofensivas vienen calientes (5.3 y 5.0 c/j en 10 juegos) y el viento sopla hacia afuera a 5.9 mph. Falla la comprobación de ofensivas frías.",
+    "CWS/CLE o7: el movimiento a 7.5 ya está en el precio y con 7.0 hay riesgo de empate en la línea. Los bullpens llegan descansados y sin quemados (ERA 3.26 y 3.13). Mi estimación queda por debajo de la justa del 53.25%.",
+    "CWS F5 +0.5 a -132: S. Burke y G. Williams están parejos en FIP, y S. Burke viene irregular (7 ER en 1.1 IP el 8-sep). No supera el 54.08% justo.",
+    "Spread: CWS +1.5 a -185 queda fuera de la banda de cuotas. CLE -1.5 no tiene respaldo para un margen amplio con dos bullpens sólidos.",
+    "Team total CWS o3.5: el K% de 33.2 de G. Williams y el bullpen de CLE frenan la ofensiva; no hay ventaja sobre el 45.77% justo. Team total CLE: su alineación es floja abajo y no hay lectura clara en ningún lado.",
+    "F5 u3.5: las dos ofensivas anotan por encima de 5 c/j en sus últimos 10 juegos; sin ventaja."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-10-10",
@@ -40,14 +125,34 @@
       "sin_tanda": [],
       "sin_hora": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-10-10T22:50:20Z",
+        "min_ct": 1070,
+        "claves": [
+          "CWS@CLE@2026-10-11T00:00:00Z"
+        ],
+        "juegos": [
+          "CWS@CLE"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 1-0 (+0.91 U).\n• LAD/ATL u7.5 (SEÑAL MODERADA), ganada: LAD 4-1 ATL, 5 carreras con la línea en 7.5.\n1 ganada con ventaja medida.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 0,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
-    "ev_min": null
+    "ev_min": 1.5
   }
 }

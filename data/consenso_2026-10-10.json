@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-10",
- "tomado_utc": "2026-10-10T13:00:49+00:00",
+ "tomado_utc": "2026-10-10T22:50:20+00:00",
  "n_juegos": 1,
  "juegos": {
   "CWS@CLE": {
@@ -16,9 +16,9 @@
    },
    "total": {
     "linea": 7.0,
-    "over": -118,
-    "under": -101,
-    "n_casas": 8
+    "over": -125,
+    "under": 105,
+    "n_casas": 7
    },
    "spread": {
     "CWS": {
@@ -39,35 +39,35 @@
    "mejor": {
     "ml": {
      "CWS": {
-      "cuota": 122,
-      "casa": "bovada"
+      "cuota": 124,
+      "casa": "betonlineag"
      },
      "CLE": {
-      "cuota": -133,
-      "casa": "betonlineag"
+      "cuota": -134,
+      "casa": "betrivers"
      }
     },
     "total": {
      "linea": 7.0,
      "over": {
-      "cuota": -113,
+      "cuota": -118,
       "casa": "betrivers"
      },
      "under": {
-      "cuota": 105,
-      "casa": "betmgm"
+      "cuota": 109,
+      "casa": "lowvig"
      }
     },
     "spread": {
      "CWS": {
       "linea": 1.5,
-      "cuota": -180,
-      "casa": "mybookieag"
+      "cuota": -182,
+      "casa": "fanduel"
      },
      "CLE": {
       "linea": -1.5,
-      "cuota": 165,
-      "casa": "betmgm"
+      "cuota": 163,
+      "casa": "mybookieag"
      }
     }
    },
