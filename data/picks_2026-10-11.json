@@ -1,8 +1,155 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "LAD F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": -101,
+      "prob_estimada": 51.0,
+      "razon": "El cruce de manos favorece a LAD en las cinco primeras: MIL batea .706 de ops contra zurdos frente a T. Skubal, mientras LAD hace .766 contra derechos. J. Misiorowski viene de salidas cortas (5.1, 3.0 y 5.0 ip), así que su bullpen podría entrar antes de la quinta. Ventaja fina: el mercado paga casi lo justo.",
+      "equipos": [
+        "LAD",
+        "MIL"
+      ],
+      "destacado": "LAD",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "matchup",
+        "pitcheo",
+        "ofensiva"
+      ],
+      "contra": "J. Misiorowski (37.9% de K y FIP 2.59) puede dominar a LAD igual que T. Skubal a MIL. Además LAD llega con forma ofensiva floja (3.5 c/j en 10 juegos) y no hay datos de los últimos 7 días.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "LAD",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-12T00:00:00Z",
+      "valor": {
+        "prob_estimada": 51.0,
+        "prob_justa": 47.76,
+        "prob_implicita": 50.25,
+        "cuota": -101,
+        "cuota_justa_mercado": 109,
+        "ev_pct": 1.5,
+        "ev_kalshi_pct": -1.98,
+        "precio_minimo": -100,
+        "precio_publicado": -100,
+        "precio_equilibrio": -104,
+        "discrepancia_pp": 3.24,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.50% por debajo del minimo exigido (1.6%)",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 8,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-11T22:50:24Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "MIL team total u2.5",
+      "deporte": "MLB",
+      "tipo": "team total u2.5",
+      "cuota": 105,
+      "prob_estimada": 48.0,
+      "razon": "MIL rinde peor contra zurdos (ops .706) y enfrenta a T. Skubal (FIP 2.89, 4.4% de BB), que viene de dos salidas de 7.0 ip sin carreras. Ayudan el parque (pf 94, techo) y el umpire (-1.1%). Lectura de poca ventaja: dada por honestidad, no por convicción.",
+      "equipos": [
+        "LAD",
+        "MIL"
+      ],
+      "destacado": "MIL",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "matchup",
+        "pitcheo",
+        "parque"
+      ],
+      "contra": "Falta el uso del bullpen de LAD, que tiene seis brazos en la lista de 60 días. MIL anota 4.3 c/j en 10 juegos y J. Bauers (.873) y J. Chourio (.838) pueden pasar de 2 carreras con un solo error de los relevistas.",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "MIL",
+        "lado": "under",
+        "linea": 2.5
+      },
+      "inicio_utc": "2026-10-12T00:00:00Z",
+      "valor": {
+        "prob_estimada": 48.0,
+        "prob_justa": 45.84,
+        "prob_implicita": 48.78,
+        "cuota": 105,
+        "cuota_justa_mercado": 118,
+        "ev_pct": -1.6,
+        "ev_kalshi_pct": -5.19,
+        "precio_minimo": 112,
+        "precio_publicado": 112,
+        "precio_equilibrio": 109,
+        "discrepancia_pp": 2.16,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -1.60% por debajo del minimo exigido (1.5%)",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-11T22:50:24Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
   "resumen": "",
-  "descartes": [],
+  "descartes": [
+    "LAD/MIL u6.0: falla la comprobación 4. J. Misiorowski viene con salidas cortas (3.0 y 5.0 ip), lo que deja varias entradas al bullpen. Además falta el uso de los bullpens de ambos equipos, la línea en 6.0 ya descuenta a los dos abridores y no se cumple la condición de dos ofensivas frías (MIL 4.3 c/j).",
+    "LAD ML: estimación de ~51.5% contra 50.77% de la línea justa, sin ventaja real. La forma ofensiva de LAD está en el límite de SYS-004 (3.5 c/j) y faltan sus datos de los últimos 7 días.",
+    "LAD Spread -1.5 / MIL Spread +1.5: en un juego con total de 6.0 y abridores de este nivel no hay base para discrepar del 35.5% / 64.5% justo.",
+    "LAD team total u2.5 y overs de los team totals: sin argumento concreto contra el precio. LAD batea bien contra derechos y J. Misiorowski es élite: las capas se anulan.",
+    "F5 u3.0 y F5 -0.5/+0.5: los dos abridores dominantes ya están en el precio (under F5 justo 52.4%). El empate en el F5 es probable y no deja ventaja medible en ningún lado."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-10-11",
@@ -40,14 +187,34 @@
       "sin_tanda": [],
       "sin_hora": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-10-11T22:50:24Z",
+        "min_ct": 1070,
+        "claves": [
+          "LAD@MIL@2026-10-12T00:00:00Z"
+        ],
+        "juegos": [
+          "LAD@MIL"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [],
+        "sin_ventaja": 2,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 1-0 (+0.91 U).\n• LAD/ATL u7.5 (SEÑAL MODERADA), ganada: LAD 4-1 ATL, 5 carreras con la línea en 7.5.\n1 ganada con ventaja medida.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 0,
+    "seguimiento": 2,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
-    "ev_min": null
+    "ev_min": 1.5
   }
 }
