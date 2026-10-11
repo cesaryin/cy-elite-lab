@@ -2407,5 +2407,50 @@
       "abridores": true,
       "ts": "2026-10-08T22:50:20Z"
     }
+  },
+  {
+    "fecha": "2026-10-10",
+    "pick": "CWS ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 120,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "CWS 0-2 CLE",
+    "veredicto": "seguimiento",
+    "prob_estimada": 46.0,
+    "prob_justa": 44.02,
+    "ev_pct": 1.2,
+    "precio_publicado": 121,
+    "discrepancia_pp": 1.98,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "forma",
+      "matchup"
+    ],
+    "contra": "G. Williams poncha al 33.2% y tiene mejor FIP (3.64 contra 3.77 de S. Burke). Además CLE tiene el mejor cierre (C. Smith, ERA 1.95, 41 saves) y juega en casa: la ventaja de alineación puede quedarse en nada.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-10T22:50:20Z"
+    }
   }
 ]
