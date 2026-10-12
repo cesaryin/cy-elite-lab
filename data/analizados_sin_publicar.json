@@ -2452,5 +2452,93 @@
       "abridores": true,
       "ts": "2026-10-10T22:50:20Z"
     }
+  },
+  {
+    "fecha": "2026-10-11",
+    "pick": "LAD F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -101,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "LAD 1-2 MIL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 51.0,
+    "prob_justa": 47.76,
+    "ev_pct": 1.5,
+    "precio_publicado": -100,
+    "discrepancia_pp": 3.24,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "matchup",
+      "pitcheo",
+      "ofensiva"
+    ],
+    "contra": "J. Misiorowski (37.9% de K y FIP 2.59) puede dominar a LAD igual que T. Skubal a MIL. Además LAD llega con forma ofensiva floja (3.5 c/j en 10 juegos) y no hay datos de los últimos 7 días.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-11T22:50:24Z"
+    }
+  },
+  {
+    "fecha": "2026-10-11",
+    "pick": "MIL team total u2.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 105,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "LAD 1-2 MIL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 48.0,
+    "prob_justa": 45.84,
+    "ev_pct": -1.6,
+    "precio_publicado": 112,
+    "discrepancia_pp": 2.16,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "matchup",
+      "pitcheo",
+      "parque"
+    ],
+    "contra": "Falta el uso del bullpen de LAD, que tiene seis brazos en la lista de 60 días. MIL anota 4.3 c/j en 10 juegos y J. Bauers (.873) y J. Chourio (.838) pueden pasar de 2 carreras con un solo error de los relevistas.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-11T22:50:24Z"
+    }
   }
 ]

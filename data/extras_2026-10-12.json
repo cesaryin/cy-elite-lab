@@ -1,0 +1,39 @@
+{
+ "fecha": "2026-10-12",
+ "n_juegos": 1,
+ "juegos": {
+  "LAD@MIL": {
+   "f5_ml": {
+    "LAD": -137,
+    "MIL": 112
+   },
+   "f5_total": {
+    "linea": 3.5,
+    "over": -115,
+    "under": -112
+   },
+   "f5_spread": {
+    "LAD": {
+     "linea": -0.5,
+     "cuota": 110
+    },
+    "MIL": {
+     "linea": 0.5,
+     "cuota": -132
+    }
+   },
+   "team_total": {
+    "LAD": {
+     "linea": 3.5,
+     "over": -110,
+     "under": -119
+    },
+    "MIL": {
+     "linea": 2.5,
+     "over": -143,
+     "under": 110
+    }
+   }
+  }
+ }
+}
