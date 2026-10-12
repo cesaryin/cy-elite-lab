@@ -156,6 +156,81 @@
         "alineaciones": true,
         "abridores": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "TB F5 -0.5",
+      "deporte": "MLB",
+      "tipo": "F5 -0.5",
+      "cuota": -119,
+      "prob_estimada": 53.5,
+      "razon": "Ventaja real de abridor: D. Rasmussen (FIP 3.12, K-BB 21.2) contra F. Griffin (FIP 4.04), que no lanza desde el 23-sep y tuvo una salida de 8 carreras limpias. Los nueve de TB promedian OPS .744, sobre su .728 de temporada. Falta la semana ofensiva. Lectura de poco margen sobre la justa (50.9%).",
+      "equipos": [
+        "CLE",
+        "TB"
+      ],
+      "destacado": "TB",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva"
+      ],
+      "contra": "TB tiene solo .679 de OPS contra zurdos. Con un total de 6.5, el empate tras cinco entradas es muy posible, y en el F5 -0.5 el empate pierde. Además, el precio es derivado y no comprado.",
+      "resolucion": {
+        "mercado": "f5_spread",
+        "equipo": "TB",
+        "lado": null,
+        "linea": -0.5
+      },
+      "inicio_utc": "2026-10-13T00:00:00Z",
+      "valor": {
+        "prob_estimada": 53.5,
+        "prob_justa": 50.92,
+        "prob_implicita": 54.34,
+        "cuota": -119,
+        "cuota_justa_mercado": -104,
+        "ev_pct": -1.54,
+        "ev_kalshi_pct": -4.74,
+        "precio_minimo": -108,
+        "precio_publicado": -108,
+        "precio_equilibrio": -115,
+        "discrepancia_pp": 2.58,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -1.54% por debajo del minimo exigido (2.6%)",
+        "cuota_aproximada": true,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 8,
+        "no_encontrados": [
+          {
+            "numero": ".744",
+            "frase": "salida de 8 carreras limpias. Los nueve de TB promedian OPS .744, sobre su .728 de t"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-10-12T22:50:21Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
@@ -167,7 +242,14 @@
     "LAD team total u3.5: falla la comprobacion del limite del abridor (L. Henderson no ha pasado de 5.0 IP en sus tres ultimas salidas), y el movimiento fuerte del total va en contra.",
     "MIL team total o2.5: con Y. Yamamoto delante, la justa (55.3%) refleja bien lo que se ve, sin discrepancia concreta. Ademas lleva el vig mas alto del juego (6.47).",
     "LAD Spread -1.5: exige margen a una ofensiva que anota 2.9 c/j. MIL Spread +1.5 a -162 esta en el techo de la banda, sin ventaja sobre la justa (59.2%).",
-    "LAD/MIL F5 o3.5 / u3.5: practicamente una moneda (50.3/49.7) con vig de 6.32, sin razon concreta para separarse."
+    "LAD/MIL F5 o3.5 / u3.5: practicamente una moneda (50.3/49.7) con vig de 6.32, sin razon concreta para separarse.",
+    "TB ML -169: está fuera de la banda (-162). Además, la ventaja de D. Rasmussen ya está en la justa del 60.4%, y TB solo hace 3.9 c/j en sus últimos 10 y .679 de OPS contra zurdos.",
+    "CLE ML +143 y CLE F5 ML +154: los dos están fuera de banda, y los datos no muestran una ventaja de abridor que respalde al perro.",
+    "TB F5 ML -194: está fuera de banda y no aporta nada frente al F5 -0.5.",
+    "TB Spread -1.5 +130: está fuera de banda. Con un total de 6.5 y dos bullpens sólidos (3.13 y 3.31, cerradores con ERA 1.95 y 1.44), ganar por dos o más es exigente.",
+    "CLE Spread +1.5 -150: mi lectura (~57%) queda prácticamente en la justa del 58.0%. Sin ventaja.",
+    "u6.5: no pasa la comprobación (3), porque CLE llega con 4.9 c/j en sus últimos 10. Además, el uso del bullpen de TB viene null, así que no se puede verificar la comprobación (1). Ni el parque 94 con techo ni el umpire neutro compensan esos dos huecos.",
+    "o6.5: la ofensiva de CLE y el FIP de F. Griffin empujan hacia arriba, pero D. Rasmussen, los dos bullpens y un parque 94 con techo lo neutralizan. Mi lectura (~51%) coincide con la justa del 51.2%."
   ],
   "vivo": {
     "plan": {
@@ -246,13 +328,32 @@
         "sin_ventaja": 2,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-10-12T22:50:21Z",
+        "min_ct": 1070,
+        "claves": [
+          "CLE@TB@2026-10-13T00:00:00Z"
+        ],
+        "juegos": [
+          "CLE@TB"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 1-0 (+0.91 U).\n• LAD/ATL u7.5 (SEÑAL MODERADA), ganada: LAD 4-1 ATL, 5 carreras con la línea en 7.5.\n1 ganada con ventaja medida.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 2,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
     "ev_min": 1.5
