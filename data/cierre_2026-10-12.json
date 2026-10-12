@@ -21,30 +21,30 @@
   },
   "inicio_utc": "2026-10-12T21:00Z",
   "visto": "2026-10-12T20:10:23+00:00",
-  "cerrado": false
+  "cerrado": true
  },
  "CLE@TB": {
   "ml": {
-   "CLE": 142,
-   "TB": -172
+   "CLE": 139,
+   "TB": -169
   },
   "total": {
-   "linea": 7.0,
-   "over": 102,
-   "under": -122
+   "linea": 6.5,
+   "over": -124,
+   "under": 103
   },
   "spread": {
    "CLE": {
     "linea": 1.5,
-    "cuota": -150
+    "cuota": -156
    },
    "TB": {
     "linea": -1.5,
-    "cuota": 125
+    "cuota": 129
    }
   },
   "inicio_utc": "2026-10-13T00:00Z",
-  "visto": "2026-10-12T20:10:23+00:00",
+  "visto": "2026-10-12T22:40:15+00:00",
   "cerrado": false
  }
 }
