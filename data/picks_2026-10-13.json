@@ -1,8 +1,164 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "plata",
+      "pick": "CLE ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 114,
+      "prob_estimada": 48.5,
+      "razon": "El mercado pone a CLE como perro con el abridor claramente superior: P. Messick tiene FIP 3.31 y K-BB 19.3 frente a FIP 4.31 y K-BB 12.7 de F. Peralta. CLE llega con 5.6 c/j en sus ultimos 10 y .706 de OPS vs derechos. TB baja a .679 vs zurdos. Los bullpens estan parejos (3.13 vs 3.31).",
+      "equipos": [
+        "CLE",
+        "TB"
+      ],
+      "destacado": "CLE",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup",
+        "forma"
+      ],
+      "contra": "La ultima salida de Messick fue de solo 3.0 IP: si va con limite, el juego se decide con un bullpen de CLE que uso 5 relevistas ayer, Cade Smith incluido. Ademas faltan los datos de bateo de los ultimos 7 dias, y la alineacion de TB es mas fuerte arriba que su promedio de equipo.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "CLE",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-14T00:00:00Z",
+      "cuota_apertura_ref": 114,
+      "valor": {
+        "prob_estimada": 48.5,
+        "prob_justa": 45.09,
+        "prob_implicita": 46.73,
+        "cuota": 114,
+        "cuota_justa_mercado": 122,
+        "ev_pct": 3.79,
+        "ev_kalshi_pct": 0.06,
+        "precio_minimo": 110,
+        "precio_publicado": 110,
+        "precio_equilibrio": 107,
+        "discrepancia_pp": 3.41,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +3.79% · no tomar peor de +110",
+        "mejor_precio": {
+          "cuota": 118,
+          "casa": "lowvig"
+        },
+        "alcanzable": true,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 10,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-13T22:50:22Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "CLE F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": 102,
+      "prob_estimada": 50.5,
+      "razon": "El F5 aisla la mayor ventaja del juego, Messick contra Peralta, y quita del medio el bullpen de CLE usado ayer. Si van empatados tras la quinta, se devuelve. La ventaja es menor que la del ML y el precio es peor (+102 frente a +114): es una lectura secundaria y correlacionada con la del ML.",
+      "equipos": [
+        "CLE",
+        "TB"
+      ],
+      "destacado": "CLE",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup"
+      ],
+      "contra": "La parte alta de la alineacion de TB (Y. Díaz .805, J. Aranda .792, J. Caminero .884, V. Mesa Jr. .825) es justo la que ve a Messick en las primeras entradas, y el margen de este mercado es del 5.06%.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "CLE",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-14T00:00:00Z",
+      "valor": {
+        "prob_estimada": 50.5,
+        "prob_justa": 47.12,
+        "prob_implicita": 49.5,
+        "cuota": 102,
+        "cuota_justa_mercado": 112,
+        "ev_pct": 2.01,
+        "ev_kalshi_pct": -1.52,
+        "precio_minimo": 101,
+        "precio_publicado": 101,
+        "precio_equilibrio": -102,
+        "discrepancia_pp": 3.38,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +2.01% · no tomar peor de +101",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 5,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-13T22:50:22Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true,
+        "gratis": true
+      }
+    }
+  ],
   "parlay": null,
-  "resumen": "",
-  "descartes": [],
+  "resumen": "Juego 2 de la ALCS entre CLE y TB. La lectura principal es que el mercado hace favorito a TB pese a que CLE tiene el abridor claramente mejor: P. Messick (FIP 3.31) contra F. Peralta (FIP 4.31), con bullpens parejos. La ventaja estimada sobre la linea justa del ML es de unos 3.4 puntos. Faltan los datos de bateo de los ultimos 7 dias de ambos equipos, asi que la capa ofensiva se apoya en la forma de los ultimos 10 juegos y en los splits por mano. El total se descarta pese al fuerte movimiento a la baja, porque la ofensiva de CLE viene caliente y el limite de Messick es una duda.",
+  "descartes": [
+    "CLE/TB u6.5: la linea bajo de 7.0 a 6.5 con fuerza FUERTE, TB tiene pf 94 con techo y el umpire marca -0.5%, pero falla la comprobacion 3. CLE llega caliente con 5.6 c/j en sus ultimos 10, y la salida de 3.0 IP de Messick siembra duda sobre su limite. No se da el under.",
+    "CLE/TB o6.5 a -122: va contra el parque (pf 94, techo), contra dos bullpens solidos y contra un movimiento fuerte de la linea hacia abajo. No hay valor.",
+    "TB team total u3.5 a -124: tiene logica con Messick contra el .679 de TB vs zurdos, pero la ventaja que veo (~2-3 puntos) no paga un precio cargado con 6.3% de vig, y la alineacion de TB es fuerte arriba.",
+    "CLE team total o3.5 a +116: Peralta es flojo, pero el parque es corto en carreras (94) y TB tiene un bullpen de 3.31 con B. Baker. La ventaja no llega ni a 2 puntos.",
+    "CLE F5 +0.5 a -140 y Spread +1.5 a -187: cubren la misma ventaja de abridor, pero a precios cargados. El valor esperado queda por debajo del ML y del F5 ML.",
+    "TB ML, TB Spread -1.5 y TB F5 -0.5: la diferencia de abridores va en contra de TB. No hay ventaja."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-10-13",
@@ -40,14 +196,37 @@
       "sin_tanda": [],
       "sin_hora": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-10-13T22:50:22Z",
+        "min_ct": 1070,
+        "claves": [
+          "CLE@TB@2026-10-14T00:00:00Z"
+        ],
+        "juegos": [
+          "CLE@TB"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [
+          "CLE ML",
+          "CLE F5 ML"
+        ],
+        "sin_ventaja": 0,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 1-0 (+0.91 U).\n• LAD/ATL u7.5 (SEÑAL MODERADA), ganada: LAD 4-1 ATL, 5 carreras con la línea en 7.5.\n1 ganada con ventaja medida.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 0,
+    "apostables": 2,
     "seguimiento": 0,
     "sin_prob_estimada": 0,
-    "riesgo_u": 0.0,
-    "ev_min": null
+    "riesgo_u": 2.0,
+    "ev_min": 1.5
   }
 }
