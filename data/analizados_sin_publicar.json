@@ -2540,5 +2540,138 @@
       "abridores": true,
       "ts": "2026-10-11T22:50:24Z"
     }
+  },
+  {
+    "fecha": "2026-10-12",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 114,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "LAD 4-7 MIL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 46.5,
+    "prob_justa": 44.93,
+    "ev_pct": -0.49,
+    "precio_publicado": 119,
+    "discrepancia_pp": 1.57,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "forma",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "Los nueve de LAD (OPS medio ~.784) son claramente superiores a los de MIL (~.748), y la parte baja de MIL (S. Frelick .614, D. Hamilton .650) puede apagarse ante Y. Yamamoto, que suele llegar a la 6-7.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-12T19:40:23Z"
+    }
+  },
+  {
+    "fecha": "2026-10-12",
+    "pick": "MIL F5 +0.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -132,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "LAD 4-7 MIL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.5,
+    "prob_justa": 54.44,
+    "ev_pct": -2.45,
+    "precio_publicado": -116,
+    "discrepancia_pp": 1.06,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "La muestra de L. Henderson es corta (371 bateadores enfrentados) y el FIP de ambos es casi identico (3.61 contra 3.53): la parte alta de LAD con S. Ohtani y M. Muncy puede adelantarse pronto.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-12T19:40:23Z"
+    }
+  },
+  {
+    "fecha": "2026-10-12",
+    "pick": "TB F5 -0.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -119,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CLE 7-3 TB",
+    "veredicto": "seguimiento",
+    "prob_estimada": 53.5,
+    "prob_justa": 50.92,
+    "ev_pct": -1.54,
+    "precio_publicado": -108,
+    "discrepancia_pp": 2.58,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva"
+    ],
+    "contra": "TB tiene solo .679 de OPS contra zurdos. Con un total de 6.5, el empate tras cinco entradas es muy posible, y en el F5 -0.5 el empate pierde. Además, el precio es derivado y no comprado.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 2,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-12T22:50:21Z"
+    }
   }
 ]
