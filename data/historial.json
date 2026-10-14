@@ -5356,5 +5356,106 @@
     "clv_metodo": "kalshi_historico",
     "clv_limpio": 0.5,
     "cuadrante": "merecido"
+  },
+  {
+    "fecha": "2026-10-13",
+    "pick": "CLE ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 114,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "CLE 1-3 TB",
+    "veredicto": "apostable",
+    "prob_estimada": 48.5,
+    "prob_justa": 45.09,
+    "ev_pct": 3.79,
+    "precio_publicado": 110,
+    "discrepancia_pp": 3.41,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup",
+      "forma"
+    ],
+    "contra": "La ultima salida de Messick fue de solo 3.0 IP: si va con limite, el juego se decide con un bullpen de CLE que uso 5 relevistas ayer, Cade Smith incluido. Ademas faltan los datos de bateo de los ultimos 7 dias, y la alineacion de TB es mas fuerte arriba que su promedio de equipo.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-13T22:50:22Z"
+    },
+    "clv": -2.2,
+    "prob_cierre": 44.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": -0.6,
+    "causa": "varianza",
+    "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-10-13",
+    "pick": "CLE F5 ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 102,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "CLE 1-3 TB",
+    "veredicto": "apostable",
+    "prob_estimada": 50.5,
+    "prob_justa": 47.12,
+    "ev_pct": 2.01,
+    "precio_publicado": 101,
+    "discrepancia_pp": 3.38,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup"
+    ],
+    "contra": "La parte alta de la alineacion de TB (Y. Díaz .805, J. Aranda .792, J. Caminero .884, V. Mesa Jr. .825) es justo la que ve a Messick en las primeras entradas, y el margen de este mercado es del 5.06%.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-13T22:50:22Z"
+    },
+    "clv": -11.0,
+    "prob_cierre": 38.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": -8.6,
+    "causa": "precio",
+    "cuadrante": "mala_suerte"
   }
 ]
