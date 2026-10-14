@@ -1,8 +1,93 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "LAD F5 -0.5",
+      "deporte": "MLB",
+      "tipo": "F5 -0.5",
+      "cuota": -124,
+      "prob_estimada": 53.5,
+      "razon": "Lectura de poca ventaja (+1.7 pp sobre la justa del 51.8%). En las cinco primeras entradas pesa el abridor: B. Snell (FIP 2.94, 31.8% K) frente a R. Gasser (FIP 4.26). MIL batea .706 de OPS contra zurdos y LAD .756. El precio es derivado y la ofensiva de LAD llega fria, con 3.2 c/j en sus ultimos 10.",
+      "equipos": [
+        "MIL",
+        "LAD"
+      ],
+      "destacado": "LAD",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup",
+        "ofensiva"
+      ],
+      "contra": "Hay dos zurdos y el total bajo a 7.0, asi que el empate tras la quinta es probable y con el -0.5 se pierde. A eso se suman las salidas cortas recientes de B. Snell (4.0 y 1.0 IP) y los 3.2 c/j de LAD en sus ultimos 10.",
+      "resolucion": {
+        "mercado": "f5_spread",
+        "equipo": "LAD",
+        "lado": null,
+        "linea": -0.5
+      },
+      "inicio_utc": "2026-10-15T00:00:00Z",
+      "valor": {
+        "prob_estimada": 53.5,
+        "prob_justa": 51.83,
+        "prob_implicita": 55.36,
+        "cuota": -124,
+        "cuota_justa_mercado": -108,
+        "ev_pct": -3.35,
+        "ev_kalshi_pct": -6.47,
+        "precio_minimo": -108,
+        "precio_publicado": -108,
+        "precio_equilibrio": -115,
+        "discrepancia_pp": 1.67,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -3.35% por debajo del minimo exigido (2.8%)",
+        "cuota_aproximada": true,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 12,
+        "no_encontrados": [
+          {
+            "numero": "+1.7",
+            "frase": "Lectura de poca ventaja (+1.7 pp sobre la justa d"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-14T22:50:23Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
   "resumen": "",
-  "descartes": [],
+  "descartes": [
+    "LAD ML (-175) y MIL ML (+150): los dos precios quedan fuera de la banda. Ademas, LAD llega con la ofensiva fria (3.2 c/j en sus ultimos 10) y no supera SYS-004 como ML.",
+    "F5 ML (LAD -188 / MIL +150): fuera de banda en los dos lados.",
+    "MIL/LAD u7.5: falla las comprobaciones del under. El viento sopla hacia el CF a 6.8 mph en un parque con pf 102, B. Snell viene de salidas cortas (4.0, 1.0 y 5.2 IP), lo que deja mas entradas al bullpen, y MIL llega a 4.4 c/j en sus ultimos 10. No se cumple que las dos ofensivas esten por debajo de 4.0.",
+    "MIL/LAD o7.5: la linea se movio FUERTE de 7.5 a 7.0 en contra del over. Ademas, los dos equipos permiten unas 2.5 c/j en sus ultimos 10 (over 8.5 en 3/10 y 1/10). Mi estimacion, ~47.5%, coincide con la justa del 47.3%.",
+    "LAD Spread -1.5 (+119): con 3.2 c/j en sus ultimos 10, el lineup de LAD no respalda ganar por margen.",
+    "MIL Spread +1.5 (-140): MIL trae buena forma (9-1, 4.4 c/j), pero mi estimacion, ~57%, apenas se separa de la justa del 56.1%. No hay ventaja nombrable."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-10-14",
@@ -40,14 +125,34 @@
       "sin_tanda": [],
       "sin_hora": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-10-14T22:50:23Z",
+        "min_ct": 1070,
+        "claves": [
+          "MIL@LAD@2026-10-15T00:00:00Z"
+        ],
+        "juegos": [
+          "MIL@LAD"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 0-2 (-2.00 U).\n• CLE ML (SEÑAL FUERTE), perdida: CLE 1-3 TB.\n• CLE F5 ML (SEÑAL MODERADA), perdida: CLE 1-3 TB.\n2 perdidas con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 0,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
-    "ev_min": null
+    "ev_min": 1.5
   }
 }
