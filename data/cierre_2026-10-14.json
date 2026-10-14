@@ -1,0 +1,26 @@
+{
+ "MIL@LAD": {
+  "ml": {
+   "MIL": 148,
+   "LAD": -180
+  },
+  "total": {
+   "linea": 7.5,
+   "over": -106,
+   "under": -114
+  },
+  "spread": {
+   "MIL": {
+    "linea": 1.5,
+    "cuota": -156
+   },
+   "LAD": {
+    "linea": -1.5,
+    "cuota": 129
+   }
+  },
+  "inicio_utc": "2026-10-15T00:00Z",
+  "visto": "2026-10-14T06:38:37+00:00",
+  "cerrado": false
+ }
+}
