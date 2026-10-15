@@ -85,6 +85,239 @@
         "abridores": true,
         "gratis": true
       }
+    },
+    {
+      "nivel": "oro",
+      "pick": "LAD team total o3.5",
+      "deporte": "MLB",
+      "tipo": "team total o3.5",
+      "cuota": -145,
+      "prob_estimada": 57.5,
+      "razon": "S. Drohan llega con 12 ER en 10.1 IP en sus 3 últimas salidas, sin pasar de la 4ª, y LAD batea .756 de OPS vs zurdos; a 90°F y PF 102. Ventaja corta (~1.7 pts sobre la justa): lectura floja. Falta el bateo de los últimos 7 días de ambos.",
+      "equipos": [
+        "MIL",
+        "LAD"
+      ],
+      "destacado": "LAD",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup",
+        "clima"
+      ],
+      "contra": "LAD anota solo 3.2 c/j en sus últimos 10, el viento sopla hacia dentro a 6 mph y el bullpen de MIL (ERA 3.28) puede cubrir pronto a S. Drohan.",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "LAD",
+        "lado": "over",
+        "linea": 3.5
+      },
+      "inicio_utc": "2026-10-16T00:00:00Z",
+      "valor": {
+        "prob_estimada": 57.5,
+        "prob_justa": 55.76,
+        "prob_implicita": 59.18,
+        "cuota": -145,
+        "cuota_justa_mercado": -126,
+        "ev_pct": -2.84,
+        "ev_kalshi_pct": -5.7,
+        "precio_minimo": -124,
+        "precio_publicado": -124,
+        "precio_equilibrio": -135,
+        "discrepancia_pp": 1.74,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -2.84% por debajo del minimo exigido (3.8%)",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 5,
+        "no_encontrados": [
+          {
+            "numero": "10.1",
+            "frase": "S. Drohan llega con 12 ER en 10.1 IP en sus 3 últimas"
+          },
+          {
+            "numero": "1.7",
+            "frase": "tea .756 de OPS vs zurdos; a 90°F y PF 102. Ventaja corta (~1.7 pts sobre la justa)"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-10-15T22:50:21Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "LAD F5 -0.5",
+      "deporte": "MLB",
+      "tipo": "F5 -0.5",
+      "cuota": -105,
+      "prob_estimada": 50.0,
+      "razon": "El F5 aísla el duelo de abridores: T. Glasnow tiene K-BB 25.3% y FIP 3.28, frente a K-BB 15.3% y FIP 3.88 de S. Drohan, que viene de salidas cortas y castigadas. MIL vs derechos (.759 OPS) frena la ventaja. Lectura de poca ventaja (~1.6 pts).",
+      "equipos": [
+        "MIL",
+        "LAD"
+      ],
+      "destacado": "LAD",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup"
+      ],
+      "contra": "Con F5 total en 4.0 y dos abridores con K alto, el empate tras la 5ª es probable y en F5 -0.5 el empate pierde; además, la ofensiva de LAD viene fría (3.2 c/j).",
+      "resolucion": {
+        "mercado": "f5_spread",
+        "equipo": "LAD",
+        "lado": null,
+        "linea": -0.5
+      },
+      "inicio_utc": "2026-10-16T00:00:00Z",
+      "valor": {
+        "prob_estimada": 50.0,
+        "prob_justa": 48.43,
+        "prob_implicita": 51.22,
+        "cuota": -105,
+        "cuota_justa_mercado": 106,
+        "ev_pct": -2.38,
+        "ev_kalshi_pct": -5.79,
+        "precio_minimo": 104,
+        "precio_publicado": 104,
+        "precio_equilibrio": 100,
+        "discrepancia_pp": 1.57,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -2.38% por debajo del minimo exigido (1.8%)",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 8,
+        "no_encontrados": [
+          {
+            "numero": "1.6",
+            "frase": "chos (.759 OPS) frena la ventaja. Lectura de poca ventaja (~1.6 pts). Con F5 total"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-10-15T22:50:21Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "MIL/LAD o7.5",
+      "deporte": "MLB",
+      "tipo": "o7.5",
+      "cuota": -123,
+      "prob_estimada": 54.5,
+      "razon": "Con 90°F, PF 102 y umpire +0.9%, una línea de 7.5 queda baja ante un abridor de MIL que no completa 5 entradas. MIL anota 4.5 c/j en sus últimos 10. Ventaja mínima (~1.4 pts): es la lectura más débil.",
+      "equipos": [
+        "MIL",
+        "LAD"
+      ],
+      "destacado": null,
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "clima",
+        "parque"
+      ],
+      "contra": "T. Glasnow (34% K), dos bullpens sólidos, viento hacia dentro y ambos equipos permitiendo 2.7 c/j: el juego puede quedarse en 6-7 carreras.",
+      "resolucion": {
+        "mercado": "total",
+        "equipo": null,
+        "lado": "over",
+        "linea": 7.5
+      },
+      "inicio_utc": "2026-10-16T00:00:00Z",
+      "valor": {
+        "prob_estimada": 54.5,
+        "prob_justa": 53.07,
+        "prob_implicita": 55.16,
+        "cuota": -123,
+        "cuota_justa_mercado": -113,
+        "ev_pct": -1.19,
+        "ev_kalshi_pct": -4.33,
+        "precio_minimo": -112,
+        "precio_publicado": -112,
+        "precio_equilibrio": -119,
+        "discrepancia_pp": 1.43,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -1.19% por debajo del minimo exigido (2.8%)",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE",
+          "a_favor": true,
+          "mov_linea": 0.5
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 5,
+        "no_encontrados": [
+          {
+            "numero": "1.4",
+            "frase": "adas. MIL anota 4.5 c/j en sus últimos 10. Ventaja mínima (~1.4 pts): es la lectura"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 2,
+        "ts": "2026-10-15T22:50:21Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
     }
   ],
   "parlay": null,
@@ -97,7 +330,13 @@
     "TB F5 ML / TB F5 +0.5: el mercado ya pone a CLE mas fuerte en las primeras cinco entradas (55.97% en el F5 ML contra 53.93% en el juego completo). G. Jax viene de salidas cortas (3.0, 5.0 y 5.0 IP), asi que el F5 de TB no mejora la lectura del ML.",
     "CLE F5 ML: G. Williams es mejor abridor por FIP y K%, pero CLE batea .706 de OPS contra derechos y su alineacion de hoy (.705) es inferior a la de TB. No veo margen sobre el 55.97% justo.",
     "CLE team total u3.5: CLE anota 5.6 c/j en sus ultimos 10 y el mercado lleva un 6.41% de vig. No hay margen claro sobre el 54.16% justo.",
-    "TB team total o2.5 a -155: la lectura va en la misma direccion que el ML de TB, pero con mas vig (6.24%) y contra un abridor que poncha al 33%. Ventaja nula o marginal."
+    "TB team total o2.5 a -155: la lectura va en la misma direccion que el ML de TB, pero con mas vig (6.24%) y contra un abridor que poncha al 33%. Ventaja nula o marginal.",
+    "LAD ML (-152): SYS-004. La forma ofensiva es de 3.2 c/j en los últimos 10 y faltan los datos de los últimos 7 días. Sin ofensiva funcional, la ventaja de T. Glasnow no justifica el precio cargado.",
+    "MIL ML (+130): perro con el abridor claramente inferior (FIP 3.88 vs 3.28) y una forma reciente pésima de S. Drohan. SYS-002 no se cumple.",
+    "MIL/LAD u7.5: falla la comprobación 3, porque MIL viene en 4.5 c/j y no está fría. También falla la 4: las salidas cortas de S. Drohan exponen al bullpen, y U. Uribe, D. Hall y T. Megill lanzaron ayer. Además, la línea se movió de 7.5 a 8.0 (FUERTE) en contra.",
+    "LAD F5 ML (-155): es la misma lectura que el F5 -0.5, pero con vig 6.24 y un precio más cargado.",
+    "MIL F5 +0.5 / MIL Spread +1.5 / LAD Spread -1.5: sin discrepancia concreta contra la justa.",
+    "MIL team total (u3.5 / o3.5) y F5 total 4.0: no hay un argumento del día que separe la lectura de la línea justa, y el vig es alto (6.5 y 5.8)."
   ],
   "vivo": {
     "plan": {
@@ -178,13 +417,32 @@
         "sin_ventaja": 0,
         "fuera_por_tope": 0,
         "motivo": null
+      },
+      {
+        "n": 2,
+        "ts": "2026-10-15T22:50:21Z",
+        "min_ct": 1070,
+        "claves": [
+          "MIL@LAD@2026-10-16T00:00:00Z"
+        ],
+        "juegos": [
+          "MIL@LAD"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [],
+        "sin_ventaja": 3,
+        "fuera_por_tope": 0,
+        "motivo": null
       }
     ]
   },
   "autopsia": "Señales publicadas: 0-2 (-2.00 U).\n• CLE ML (SEÑAL FUERTE), perdida: CLE 1-3 TB.\n• CLE F5 ML (SEÑAL MODERADA), perdida: CLE 1-3 TB.\n2 perdidas con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 1,
-    "seguimiento": 0,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
     "riesgo_u": 1.0,
     "ev_min": 1.5

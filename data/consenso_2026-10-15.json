@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-15",
- "tomado_utc": "2026-10-15T15:40:21+00:00",
+ "tomado_utc": "2026-10-15T22:50:22+00:00",
  "n_juegos": 2,
  "juegos": {
   "TB@CLE": {
@@ -81,24 +81,24 @@
    "n_casas": 9,
    "fuente": "consenso_us",
    "ml": {
-    "LAD": -155,
-    "MIL": 132
+    "LAD": -152,
+    "MIL": 130
    },
    "total": {
     "linea": 7.5,
-    "over": -114,
-    "under": -105,
-    "n_casas": 8
+    "over": -123,
+    "under": 105,
+    "n_casas": 5
    },
    "spread": {
     "LAD": {
      "linea": -1.5,
-     "cuota": 140,
+     "cuota": 144,
      "n_casas": 9
     },
     "MIL": {
      "linea": 1.5,
-     "cuota": -165,
+     "cuota": -170,
      "n_casas": 9
     }
    },
@@ -109,35 +109,35 @@
    "mejor": {
     "ml": {
      "LAD": {
-      "cuota": -149,
-      "casa": "lowvig"
+      "cuota": -137,
+      "casa": "betrivers"
      },
      "MIL": {
-      "cuota": 135,
-      "casa": "lowvig"
+      "cuota": 132,
+      "casa": "fanduel"
      }
     },
     "total": {
      "linea": 7.5,
      "over": {
-      "cuota": -110,
-      "casa": "fanduel"
+      "cuota": -118,
+      "casa": "betrivers"
      },
      "under": {
-      "cuota": -102,
+      "cuota": 107,
       "casa": "lowvig"
      }
     },
     "spread": {
      "LAD": {
       "linea": -1.5,
-      "cuota": 143,
+      "cuota": 150,
       "casa": "lowvig"
      },
      "MIL": {
       "linea": 1.5,
-      "cuota": -160,
-      "casa": "betus"
+      "cuota": -165,
+      "casa": "bovada"
      }
     }
    },
