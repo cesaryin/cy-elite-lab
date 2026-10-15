@@ -1,0 +1,13 @@
+{
+ "fecha": "2026-10-15",
+ "marcas": [
+  {
+   "pick": "TB ML",
+   "tipo": "precio_peor_que_minimo",
+   "equipo": null,
+   "antes": 110,
+   "ahora": 109,
+   "ts": "2026-10-15T16:35:16Z"
+  }
+ ]
+}
