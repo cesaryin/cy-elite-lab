@@ -1133,17 +1133,17 @@
    "pregunta": "¿Quedan créditos en la fuente de precios?",
    "minimo": 1,
    "estado": "medida",
-   "n": 344,
-   "texto": "344 creditos · el tope de hoy son 20 · 17 dias hasta el reinicio · ayer se gastaron 6 (consenso 6)",
+   "n": 341,
+   "texto": "341 creditos · el tope de hoy son 20 · 17 dias hasta el reinicio · ayer se gastaron 6 (consenso 6)",
    "datos": {
-    "creditos": 344,
+    "creditos": 341,
     "tope_hoy": 20,
     "dias": 17,
     "gasto_ayer": 6,
     "detalle_ayer": {
      "consenso": 6
     },
-    "gasto_hoy": 11
+    "gasto_hoy": 14
    },
    "alarma": null
   }
