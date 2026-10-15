@@ -1,0 +1,74 @@
+{
+  "picks": [],
+  "parlay": null,
+  "resumen": "",
+  "descartes": [],
+  "vivo": {
+    "plan": {
+      "fecha": "2026-10-15",
+      "creado": "2026-10-15T13:01:13Z",
+      "tandas_dia": 2,
+      "tope_tanda": 3,
+      "tope_dia": 5,
+      "margen_min": 30,
+      "una_tanda": "se mantienen 2 tandas: con una sola se analizarían 1.0 alineaciones en vez de 2.0",
+      "tandas": [
+        {
+          "min_ct": 640,
+          "min_reloj": 160,
+          "hora": "10:40 AM",
+          "utc": "2026-10-15T15:40:00Z",
+          "juegos": [
+            {
+              "clave": "TB@CLE",
+              "inicio_utc": "2026-10-15T17:00:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 1.0
+        },
+        {
+          "min_ct": 1070,
+          "min_reloj": 590,
+          "hora": "5:50 PM",
+          "utc": "2026-10-15T22:50:00Z",
+          "juegos": [
+            {
+              "clave": "MIL@LAD",
+              "inicio_utc": "2026-10-16T00:00:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 1.0
+        }
+      ],
+      "refrescos_lab": [
+        {
+          "min_ct": 670,
+          "min_reloj_lab": 190,
+          "hora": "11:10 AM",
+          "utc": "2026-10-15T16:10:00Z",
+          "bloque": "12:00 PM",
+          "juegos": 1
+        },
+        {
+          "min_ct": 1090,
+          "min_reloj_lab": 610,
+          "hora": "6:10 PM",
+          "utc": "2026-10-15T23:10:00Z",
+          "bloque": "7:00 PM",
+          "juegos": 1
+        }
+      ],
+      "sin_tanda": [],
+      "sin_hora": []
+    },
+    "tandas": []
+  },
+  "autopsia": "Señales publicadas: 0-2 (-2.00 U).\n• CLE ML (SEÑAL FUERTE), perdida: CLE 1-3 TB.\n• CLE F5 ML (SEÑAL MODERADA), perdida: CLE 1-3 TB.\n2 perdidas con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
+  "valor_dia": {
+    "apostables": 0,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 0.0,
+    "ev_min": null
+  }
+}

@@ -2673,5 +2673,50 @@
       "abridores": true,
       "ts": "2026-10-12T22:50:21Z"
     }
+  },
+  {
+    "fecha": "2026-10-14",
+    "pick": "LAD F5 -0.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -124,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "MIL 6-2 LAD",
+    "veredicto": "seguimiento",
+    "prob_estimada": 53.5,
+    "prob_justa": 51.83,
+    "ev_pct": -3.35,
+    "precio_publicado": -108,
+    "discrepancia_pp": 1.67,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup",
+      "ofensiva"
+    ],
+    "contra": "Hay dos zurdos y el total bajo a 7.0, asi que el empate tras la quinta es probable y con el -0.5 se pierde. A eso se suman las salidas cortas recientes de B. Snell (4.0 y 1.0 IP) y los 3.2 c/j de LAD en sus ultimos 10.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 1,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-14T22:50:23Z"
+    }
   }
 ]

@@ -93,5 +93,12 @@
    "consenso": 6
   },
   "total": 6
+ },
+ "2026-10-15": {
+  "detalle": {
+   "consenso": 3,
+   "extras": 8
+  },
+  "total": 11
  }
 }

@@ -1,0 +1,147 @@
+{
+ "fecha": "2026-10-15",
+ "tomado_utc": "2026-10-15T13:01:01+00:00",
+ "n_juegos": 2,
+ "juegos": {
+  "TB@CLE": {
+   "id": "a681025734060bef9fcce7ea7175674c",
+   "away": "TB",
+   "home": "CLE",
+   "inicio_utc": "2026-10-15T17:00:00Z",
+   "n_casas": 9,
+   "fuente": "consenso_us",
+   "ml": {
+    "CLE": -132,
+    "TB": 112
+   },
+   "total": {
+    "linea": 6.5,
+    "over": -120,
+    "under": -101,
+    "n_casas": 9
+   },
+   "spread": {
+    "CLE": {
+     "linea": -1.5,
+     "cuota": 170,
+     "n_casas": 9
+    },
+    "TB": {
+     "linea": 1.5,
+     "cuota": -202,
+     "n_casas": 9
+    }
+   },
+   "casas_ml": {
+    "CLE": 9,
+    "TB": 9
+   },
+   "mejor": {
+    "ml": {
+     "CLE": {
+      "cuota": -128,
+      "casa": "betus"
+     },
+     "TB": {
+      "cuota": 117,
+      "casa": "betus"
+     }
+    },
+    "total": {
+     "linea": 6.5,
+     "over": {
+      "cuota": -115,
+      "casa": "betrivers"
+     },
+     "under": {
+      "cuota": 101,
+      "casa": "lowvig"
+     }
+    },
+    "spread": {
+     "CLE": {
+      "linea": -1.5,
+      "cuota": 180,
+      "casa": "mybookieag"
+     },
+     "TB": {
+      "linea": 1.5,
+      "cuota": -195,
+      "casa": "betus"
+     }
+    }
+   },
+   "flojo": false
+  },
+  "MIL@LAD": {
+   "id": "ab3e5655be6b32e0853d683e51a60baa",
+   "away": "MIL",
+   "home": "LAD",
+   "inicio_utc": "2026-10-16T00:00:00Z",
+   "n_casas": 9,
+   "fuente": "consenso_us",
+   "ml": {
+    "LAD": -155,
+    "MIL": 132
+   },
+   "total": {
+    "linea": 7.5,
+    "over": -113,
+    "under": -105,
+    "n_casas": 9
+   },
+   "spread": {
+    "LAD": {
+     "linea": -1.5,
+     "cuota": 140,
+     "n_casas": 9
+    },
+    "MIL": {
+     "linea": 1.5,
+     "cuota": -165,
+     "n_casas": 9
+    }
+   },
+   "casas_ml": {
+    "LAD": 9,
+    "MIL": 9
+   },
+   "mejor": {
+    "ml": {
+     "LAD": {
+      "cuota": -141,
+      "casa": "betrivers"
+     },
+     "MIL": {
+      "cuota": 137,
+      "casa": "lowvig"
+     }
+    },
+    "total": {
+     "linea": 7.5,
+     "over": {
+      "cuota": -107,
+      "casa": "betrivers"
+     },
+     "under": {
+      "cuota": -102,
+      "casa": "lowvig"
+     }
+    },
+    "spread": {
+     "LAD": {
+      "linea": -1.5,
+      "cuota": 146,
+      "casa": "fanduel"
+     },
+     "MIL": {
+      "linea": 1.5,
+      "cuota": -156,
+      "casa": "mybookieag"
+     }
+    }
+   },
+   "flojo": false
+  }
+ }
+}
