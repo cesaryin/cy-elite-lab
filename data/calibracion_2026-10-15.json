@@ -1057,7 +1057,7 @@
     "ultima_fecha": "2026-09-27",
     "dias": 18,
     "ayer": 1148,
-    "recogido_hasta": "2026-10-11",
+    "recogido_hasta": "2026-10-14",
     "faltan": []
    },
    "alarma": null
@@ -1116,10 +1116,15 @@
    "area": "Sistema",
    "pregunta": "¿El plan de tandas cubre todos los partidos de hoy?",
    "minimo": 1,
-   "estado": "sin muestra",
-   "n": 0,
-   "texto": "todavía sin plan de hoy",
-   "datos": null,
+   "estado": "medida",
+   "n": 2,
+   "texto": "2 tanda(s), 2 partido(s) analizados",
+   "datos": {
+    "tandas": 2,
+    "analizados": 2,
+    "sin_tanda": [],
+    "sin_hora": []
+   },
    "alarma": null
   },
   {
@@ -1128,24 +1133,24 @@
    "pregunta": "¿Quedan créditos en la fuente de precios?",
    "minimo": 1,
    "estado": "medida",
-   "n": 355,
-   "texto": "355 creditos · el tope de hoy son 20 · 17 dias hasta el reinicio · ayer se gastaron 6 (consenso 6)",
+   "n": 344,
+   "texto": "344 creditos · el tope de hoy son 20 · 17 dias hasta el reinicio · ayer se gastaron 6 (consenso 6)",
    "datos": {
-    "creditos": 355,
+    "creditos": 344,
     "tope_hoy": 20,
     "dias": 17,
     "gasto_ayer": 6,
     "detalle_ayer": {
      "consenso": 6
     },
-    "gasto_hoy": 0
+    "gasto_hoy": 11
    },
    "alarma": null
   }
  ],
  "cuenta": {
-  "medida": 26,
-  "sin muestra": 18,
+  "medida": 27,
+  "sin muestra": 17,
   "alarma": 0,
   "error": 0
  }
