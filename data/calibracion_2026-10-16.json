@@ -1129,10 +1129,15 @@
    "area": "Sistema",
    "pregunta": "¿El plan de tandas cubre todos los partidos de hoy?",
    "minimo": 1,
-   "estado": "sin muestra",
-   "n": 0,
-   "texto": "todavía sin plan de hoy",
-   "datos": null,
+   "estado": "medida",
+   "n": 1,
+   "texto": "1 tanda(s), 1 partido(s) analizados",
+   "datos": {
+    "tandas": 1,
+    "analizados": 1,
+    "sin_tanda": [],
+    "sin_hora": []
+   },
    "alarma": null
   },
   {
@@ -1141,25 +1146,25 @@
    "pregunta": "¿Quedan créditos en la fuente de precios?",
    "minimo": 1,
    "estado": "medida",
-   "n": 338,
-   "texto": "338 creditos · el tope de hoy son 21 · 16 dias hasta el reinicio · ayer se gastaron 17 (consenso 9, extras 8)",
+   "n": 331,
+   "texto": "331 creditos · el tope de hoy son 20 · 16 dias hasta el reinicio · ayer se gastaron 17 (consenso 9, extras 8)",
    "datos": {
-    "creditos": 338,
-    "tope_hoy": 21,
+    "creditos": 331,
+    "tope_hoy": 20,
     "dias": 16,
     "gasto_ayer": 17,
     "detalle_ayer": {
      "consenso": 9,
      "extras": 8
     },
-    "gasto_hoy": 0
+    "gasto_hoy": 7
    },
    "alarma": null
   }
  ],
  "cuenta": {
-  "medida": 26,
-  "sin muestra": 18,
+  "medida": 27,
+  "sin muestra": 17,
   "alarma": 0,
   "error": 0
  }

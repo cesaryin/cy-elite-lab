@@ -1,18 +1,18 @@
 {
  "TB@CLE": {
   "ml": {
-   "TB": -110,
-   "CLE": -109
+   "TB": -112,
+   "CLE": -108
   },
   "total": {
    "linea": 6.5,
-   "over": -110,
-   "under": -110
+   "over": -114,
+   "under": -106
   },
   "spread": {
    "TB": {
     "linea": -1.5,
-    "cuota": 163
+    "cuota": 162
    },
    "CLE": {
     "linea": 1.5,
@@ -20,7 +20,7 @@
    }
   },
   "inicio_utc": "2026-10-17T00:00Z",
-  "visto": "2026-10-16T13:01:27+00:00",
+  "visto": "2026-10-16T15:19:49+00:00",
   "cerrado": false
  }
 }
