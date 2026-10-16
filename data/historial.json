@@ -5457,5 +5457,55 @@
     "clv_limpio": -8.6,
     "causa": "precio",
     "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-10-15",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 110,
+    "unidades": 1.0,
+    "resultado": "L",
+    "neto_u": -1.0,
+    "marcador": "TB 2-3 CLE",
+    "veredicto": "apostable",
+    "prob_estimada": 48.5,
+    "prob_justa": 46.07,
+    "ev_pct": 1.85,
+    "precio_publicado": 110,
+    "discrepancia_pp": 2.43,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": true,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "matchup",
+      "bullpen"
+    ],
+    "contra": "G. Williams poncha al 33.2% con FIP 3.64, mejor que el 3.91 de G. Jax, y CLE anota 5.6 c/j en sus ultimos 10 frente a 3.9 de TB: si Williams domina temprano, la ventaja de la alineacion de TB no aparece.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-15T15:40:21Z"
+    },
+    "clv": -1.1,
+    "prob_cierre": 46.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": 0.4,
+    "causa": "ajustado",
+    "cuadrante": "mala_suerte"
   }
 ]
