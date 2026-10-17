@@ -2854,5 +2854,49 @@
       "abridores": true,
       "ts": "2026-10-14T22:50:23Z"
     }
+  },
+  {
+    "fecha": "2026-10-16",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -113,
+    "unidades": 0.0,
+    "resultado": "P",
+    "neto_u": 0.0,
+    "marcador": "⛔ TB@CLE — Postponed (Rain)",
+    "veredicto": "seguimiento",
+    "prob_estimada": 53.0,
+    "prob_justa": 51.0,
+    "ev_pct": -0.1,
+    "precio_publicado": -107,
+    "discrepancia_pp": 2.0,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "matchup"
+    ],
+    "contra": "N. Martinez tiene FIP 4.05 frente a su ERA 3.10, solo 15.1% de K y salio con 4 ER en 2.2 IP en su ultima salida; el bullpen de CLE (3.13, C. Smith) y la localia pueden cerrar un juego de pocas carreras.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-16T22:50:23Z"
+    }
   }
 ]
