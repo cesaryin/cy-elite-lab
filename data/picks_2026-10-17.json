@@ -1,8 +1,101 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -112,
+      "prob_estimada": 53.0,
+      "razon": "Ventaja fina, apenas 2 puntos sobre la justa. Los nueve de TB promedian .760 de OPS contra .705 de CLE, y TB batea .752 vs derechos. CLE abre con S. Armstrong (154 bateadores en el año), asi que es un juego de bullpen. No hay datos de los ultimos 7 dias; TB va a 3.9 c/j en 10. Lo mas probable es que no pase el umbral.",
+      "equipos": [
+        "TB",
+        "CLE"
+      ],
+      "destacado": "TB",
+      "hora": "7:08 PM CT",
+      "capas": [
+        "ofensiva",
+        "matchup",
+        "pitcheo"
+      ],
+      "contra": "N. Martinez no abre desde el 27-sep (2.2 IP y 4 ER) y su K% es de 15.1. CLE llega con mejor forma ofensiva (4.7 c/j en 10) y juega en casa frente a un bullpen de 3.13 con C. Smith al cierre.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-18T00:08:00Z",
+      "cuota_apertura_ref": -112,
+      "valor": {
+        "prob_estimada": 53.0,
+        "prob_justa": 50.77,
+        "prob_implicita": 52.83,
+        "cuota": -112,
+        "cuota_justa_mercado": -103,
+        "ev_pct": 0.32,
+        "ev_kalshi_pct": -2.98,
+        "precio_minimo": -107,
+        "precio_publicado": -107,
+        "precio_equilibrio": -112,
+        "discrepancia_pp": 2.23,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +0.32% por debajo del minimo exigido (2.2%)",
+        "mejor_precio": {
+          "cuota": -108,
+          "casa": "betus"
+        },
+        "alcanzable": false,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 8,
+        "no_encontrados": [
+          {
+            "numero": ".760",
+            "frase": ", apenas 2 puntos sobre la justa. Los nueve de TB promedian .760 de OPS contra .705"
+          },
+          {
+            "numero": ".705",
+            "frase": "obre la justa. Los nueve de TB promedian .760 de OPS contra .705 de CLE, y TB batea"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-17T22:50:22Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
   "resumen": "",
-  "descartes": [],
+  "descartes": [
+    "TB/CLE u6.5: la linea ya bajo de 7.0 a 6.5 con fuerza FUERTE, asi que el mercado ya cobro el frio (45F) y los dos bullpens descansados. Ademas falla la comprobacion 3: CLE viene a 4.7 c/j en 10. Solo TB (3.9) esta por debajo de 4.0.",
+    "CLE team total u2.5 (+119): la alineacion de CLE es floja (.705, con P. Bailey y P. Halpin por debajo de .610). Aun asi estimo un 44% frente al 43% de la justa, sin margen tras el vig de 6.1.",
+    "TB team total o3.5 (+109): la alineacion de TB es superior, pero el frio, la linea en descenso y un bullpen de CLE de 3.13 la dejan en un 46% frente al 45.2% de la justa. Sin ventaja.",
+    "F5 (ML, -0.5/+0.5, u3.5): CLE abre con S. Armstrong como opener, asi que el F5 no aisla a dos abridores y no aporta lectura distinta al juego completo. Ademas el vig va de 5.5 a 6.3.",
+    "TB Spread -1.5 (+160): en un total de 6.5, con dos bullpens con cerradores de ERA inferior a 2.00, un margen de 2+ carreras no se sostiene por encima del 37% de la justa."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-10-17",
@@ -40,14 +133,34 @@
       "sin_tanda": [],
       "sin_hora": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-10-17T22:50:22Z",
+        "min_ct": 1070,
+        "claves": [
+          "TB@CLE@2026-10-18T00:08:00Z"
+        ],
+        "juegos": [
+          "TB@CLE"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 0-1 (-1.00 U).\n• TB ML (SEÑAL MODERADA), perdida: TB 2-3 CLE.\n1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 0,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
-    "ev_min": null
+    "ev_min": 1.5
   }
 }
