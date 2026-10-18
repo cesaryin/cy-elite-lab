@@ -2898,5 +2898,50 @@
       "abridores": true,
       "ts": "2026-10-16T22:50:23Z"
     }
+  },
+  {
+    "fecha": "2026-10-17",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -112,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "TB 7-3 CLE",
+    "veredicto": "seguimiento",
+    "prob_estimada": 53.0,
+    "prob_justa": 50.77,
+    "ev_pct": 0.32,
+    "precio_publicado": -107,
+    "discrepancia_pp": 2.23,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "matchup",
+      "pitcheo"
+    ],
+    "contra": "N. Martinez no abre desde el 27-sep (2.2 IP y 4 ER) y su K% es de 15.1. CLE llega con mejor forma ofensiva (4.7 c/j en 10) y juega en casa frente a un bullpen de 3.13 con C. Smith al cierre.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-17T22:50:22Z"
+    }
   }
 ]
