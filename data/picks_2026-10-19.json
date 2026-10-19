@@ -1,8 +1,235 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "TB F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": -150,
+      "prob_estimada": 60.0,
+      "razon": "El F5 enfrenta a F. Peralta (0, 1 y 0 carreras limpias en sus 3 ultimas salidas) con un juego de bullpen de CLE que viene de 12.2 IP en 2 dias. Ademas deja fuera a B. Baker y C. Booser, quemados en TB. Ofensiva TB: .752 OPS vs derechos y 4.3 c/j en 10 (sin dato de 7 dias). Ventaja sobre la linea justa: unos 3 puntos, delgada.",
+      "equipos": [
+        "CLE",
+        "TB"
+      ],
+      "destacado": "TB",
+      "hora": "7:08 PM CT",
+      "capas": [
+        "pitcheo",
+        "bullpen",
+        "ofensiva"
+      ],
+      "contra": "Los brazos de CLE para las entradas 1-5 son relevistas con ERA colectiva de 3.13 y pueden frenar a TB igual que un abridor. A -150 el margen sobre la linea justa (57.0%) es minimo.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-20T00:08:00Z",
+      "valor": {
+        "prob_estimada": 60.0,
+        "prob_justa": 57.01,
+        "prob_implicita": 60.0,
+        "cuota": -150,
+        "cuota_justa_mercado": -133,
+        "ev_pct": -0.0,
+        "ev_kalshi_pct": -2.8,
+        "precio_minimo": -136,
+        "precio_publicado": -136,
+        "precio_equilibrio": -149,
+        "discrepancia_pp": 2.99,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -0.00% por debajo del minimo exigido (4.0%)",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 5,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-19T22:50:20Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "plata",
+      "pick": "TB team total o3.5",
+      "deporte": "MLB",
+      "tipo": "team total o3.5",
+      "cuota": 100,
+      "prob_estimada": 49.5,
+      "razon": "La alineacion de TB es claramente superior: J. Caminero .884, V. Mesa Jr. .825, Y. Diaz .805. Mete .752 OPS vs derechos y enfrenta 9 entradas de un bullpen de CLE con 12.2 IP en 2 dias y T. Herrin quemado. Lectura floja: el parque (pf 94) frena y la linea justa da 47.1%.",
+      "equipos": [
+        "CLE",
+        "TB"
+      ],
+      "destacado": "TB",
+      "hora": "7:08 PM CT",
+      "capas": [
+        "ofensiva",
+        "bullpen"
+      ],
+      "contra": "Con techo y pf 94, mas un bullpen de CLE de 3.13 de ERA y C. Smith (1.95), TB puede quedarse en 3 carreras. Ademas el mercado carga 6.1 pp de vig.",
+      "resolucion": {
+        "mercado": "team_total",
+        "equipo": "TB",
+        "lado": "over",
+        "linea": 3.5
+      },
+      "inicio_utc": "2026-10-20T00:08:00Z",
+      "valor": {
+        "prob_estimada": 49.5,
+        "prob_justa": 47.11,
+        "prob_implicita": 50.0,
+        "cuota": 100,
+        "cuota_justa_mercado": 112,
+        "ev_pct": -1.0,
+        "ev_kalshi_pct": -4.5,
+        "precio_minimo": 106,
+        "precio_publicado": 106,
+        "precio_equilibrio": 103,
+        "discrepancia_pp": 2.39,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -1.00% por debajo del minimo exigido (1.5%)",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 9,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-19T22:50:20Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "TB ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": -155,
+      "prob_estimada": 60.5,
+      "razon": "TB tiene mejor abridor, mejor alineacion y forma 7-3 con 2.8 carreras en contra por juego. CLE juega de bullpen tras 12.2 IP en 2 dias y su ofensiva da 3.8 c/j y .706 OPS vs derechos. Sin embargo, B. Baker y C. Booser estan quemados, asi que la ventaja sobre la linea justa (58.5%) es solo de 2 puntos: lectura de poco valor.",
+      "equipos": [
+        "CLE",
+        "TB"
+      ],
+      "destacado": "TB",
+      "hora": "7:08 PM CT",
+      "capas": [
+        "pitcheo",
+        "ofensiva",
+        "forma"
+      ],
+      "contra": "Sin B. Baker ni C. Booser, el cierre de TB queda en brazos secundarios. En un juego de total 7.0, una sola entrada mala tardia lo da vuelta.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "TB",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-20T00:08:00Z",
+      "cuota_apertura_ref": -158,
+      "valor": {
+        "prob_estimada": 60.5,
+        "prob_justa": 58.51,
+        "prob_implicita": 60.78,
+        "cuota": -155,
+        "cuota_justa_mercado": -141,
+        "ev_pct": -0.47,
+        "ev_kalshi_pct": -3.22,
+        "precio_minimo": -138,
+        "precio_publicado": -138,
+        "precio_equilibrio": -153,
+        "discrepancia_pp": 1.99,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -0.47% por debajo del minimo exigido (4.2%)",
+        "mejor_precio": {
+          "cuota": -150,
+          "casa": "betus"
+        },
+        "alcanzable": false,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": true,
+          "fuerza": "FUERTE"
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 6,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-19T22:50:20Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
   "resumen": "",
-  "descartes": [],
+  "descartes": [
+    "CLE/TB u7.0: falla la comprobacion 1. CLE juega de bullpen tras 12.2 IP en 2 dias y T. Herrin esta quemado. Ademas el total subio de 6.5 a 7.0 con fuerza FUERTE, en contra del under, y las ofensivas no estan ambas por debajo de 4.0 c/j (TB 4.3).",
+    "CLE/TB o7.0: techo y pf 94, umpire neutro (+0.4%) y ofensivas moderadas. No veo ventaja sobre el 47.8% justo.",
+    "CLE ML / CLE Spread +1.5: la ofensiva de CLE viene a 3.8 c/j y su alineacion es floja abajo (P. Bailey .607, P. Halpin .594). No supera SYS-004. Ademas el +1.5 a -165 queda fuera de la banda.",
+    "TB Spread -1.5: con un total de 7.0, ganar por 2 o mas me sale cerca del 40%, igual que la linea justa (39.7%). Sin ventaja.",
+    "CLE team total u2.5: el precio del mercado mas barato apunta al otro lado y la ofensiva de CLE no esta tan fria como para separarse de la linea justa.",
+    "TB F5 -0.5: el empate tras cinco entradas es probable en un juego de total bajo y aqui pierde. El F5 ML, donde el empate devuelve, recoge mejor la misma lectura.",
+    "CLE/TB F5 o3.5/u3.5: linea justa casi al 50% y sin una razon concreta para discrepar."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-10-19",
@@ -40,14 +267,34 @@
       "sin_tanda": [],
       "sin_hora": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-10-19T22:50:20Z",
+        "min_ct": 1070,
+        "claves": [
+          "CLE@TB@2026-10-20T00:08:00Z"
+        ],
+        "juegos": [
+          "CLE@TB"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [],
+        "sin_ventaja": 3,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 0-1 (-1.00 U).\n• TB ML (SEÑAL MODERADA), perdida: TB 2-3 CLE.\n1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 0,
+    "seguimiento": 3,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
-    "ev_min": null
+    "ev_min": 1.5
   }
 }
