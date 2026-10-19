@@ -1,0 +1,53 @@
+{
+  "picks": [],
+  "parlay": null,
+  "resumen": "",
+  "descartes": [],
+  "vivo": {
+    "plan": {
+      "fecha": "2026-10-19",
+      "creado": "2026-10-19T13:00:49Z",
+      "tandas_dia": 2,
+      "tope_tanda": 3,
+      "tope_dia": 5,
+      "margen_min": 30,
+      "una_tanda": null,
+      "tandas": [
+        {
+          "min_ct": 1070,
+          "min_reloj": 590,
+          "hora": "5:50 PM",
+          "utc": "2026-10-19T22:50:00Z",
+          "juegos": [
+            {
+              "clave": "CLE@TB",
+              "inicio_utc": "2026-10-20T00:08:00Z"
+            }
+          ],
+          "con_alineaciones_esperadas": 1.0
+        }
+      ],
+      "refrescos_lab": [
+        {
+          "min_ct": 1100,
+          "min_reloj_lab": 620,
+          "hora": "6:20 PM",
+          "utc": "2026-10-19T23:20:00Z",
+          "bloque": "7:08 PM",
+          "juegos": 1
+        }
+      ],
+      "sin_tanda": [],
+      "sin_hora": []
+    },
+    "tandas": []
+  },
+  "autopsia": "Señales publicadas: 0-1 (-1.00 U).\n• TB ML (SEÑAL MODERADA), perdida: TB 2-3 CLE.\n1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
+  "valor_dia": {
+    "apostables": 0,
+    "seguimiento": 0,
+    "sin_prob_estimada": 0,
+    "riesgo_u": 0.0,
+    "ev_min": null
+  }
+}

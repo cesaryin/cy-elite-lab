@@ -2943,5 +2943,49 @@
       "abridores": true,
       "ts": "2026-10-17T22:50:22Z"
     }
+  },
+  {
+    "fecha": "2026-10-18",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -129,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "TB 3-1 CLE",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.0,
+    "prob_justa": 54.19,
+    "ev_pct": -2.36,
+    "precio_publicado": -114,
+    "discrepancia_pp": 0.81,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "pitcheo",
+      "forma"
+    ],
+    "contra": "TB batea peor contra zurdos (.679) y P. Messick llega con ERA 2.56; con un total de 6.5, una sola carrera de CLE en casa, con el bullpen de C. Smith, decide el juego.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-18T19:40:23Z"
+    }
   }
 ]
