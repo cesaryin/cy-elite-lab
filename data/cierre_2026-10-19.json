@@ -12,15 +12,15 @@
   "spread": {
    "CLE": {
     "linea": 1.5,
-    "cuota": -174
+    "cuota": -169
    },
    "TB": {
     "linea": -1.5,
-    "cuota": 144
+    "cuota": 139
    }
   },
   "inicio_utc": "2026-10-20T00:00Z",
-  "visto": "2026-10-19T21:12:22+00:00",
+  "visto": "2026-10-19T22:40:14+00:00",
   "cerrado": false
  }
 }
