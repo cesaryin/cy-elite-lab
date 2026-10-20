@@ -2987,5 +2987,139 @@
       "abridores": true,
       "ts": "2026-10-18T19:40:23Z"
     }
+  },
+  {
+    "fecha": "2026-10-19",
+    "pick": "TB F5 ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -150,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CLE 3-7 TB",
+    "veredicto": "seguimiento",
+    "prob_estimada": 60.0,
+    "prob_justa": 57.01,
+    "ev_pct": -0.0,
+    "precio_publicado": -136,
+    "discrepancia_pp": 2.99,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "bullpen",
+      "ofensiva"
+    ],
+    "contra": "Los brazos de CLE para las entradas 1-5 son relevistas con ERA colectiva de 3.13 y pueden frenar a TB igual que un abridor. A -150 el margen sobre la linea justa (57.0%) es minimo.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-19T22:50:20Z"
+    }
+  },
+  {
+    "fecha": "2026-10-19",
+    "pick": "TB team total o3.5",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 100,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CLE 3-7 TB",
+    "veredicto": "seguimiento",
+    "prob_estimada": 49.5,
+    "prob_justa": 47.11,
+    "ev_pct": -1.0,
+    "precio_publicado": 106,
+    "discrepancia_pp": 2.39,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "ofensiva",
+      "bullpen"
+    ],
+    "contra": "Con techo y pf 94, mas un bullpen de CLE de 3.13 de ERA y C. Smith (1.95), TB puede quedarse en 3 carreras. Ademas el mercado carga 6.1 pp de vig.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-19T22:50:20Z"
+    }
+  },
+  {
+    "fecha": "2026-10-19",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -155,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "CLE 3-7 TB",
+    "veredicto": "seguimiento",
+    "prob_estimada": 60.5,
+    "prob_justa": 58.51,
+    "ev_pct": -0.47,
+    "precio_publicado": -138,
+    "discrepancia_pp": 1.99,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "ofensiva",
+      "forma"
+    ],
+    "contra": "Sin B. Baker ni C. Booser, el cierre de TB queda en brazos secundarios. En un juego de total 7.0, una sola entrada mala tardia lo da vuelta.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-19T22:50:20Z"
+    }
   }
 ]
