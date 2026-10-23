@@ -1,8 +1,90 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "oro",
+      "pick": "MIL F5 -0.5",
+      "deporte": "MLB",
+      "tipo": "F5 -0.5",
+      "cuota": -130,
+      "prob_estimada": 55.0,
+      "razon": "La mayor diferencia del juego está en los abridores. El F5 la aísla sin depender de dos bullpens parejos. N. Martinez lleva una ERA de 3.10 apoyada en un FIP de 4.05 y solo 15.1% de K. Su última salida fue de 2.2 IP con 4 ER. MIL batea .759 de OPS vs derechos y anota 4.3 c/j en los últimos 10. La ventaja es corta y el precio es derivado.",
+      "equipos": [
+        "TB",
+        "MIL"
+      ],
+      "destacado": "MIL",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup",
+        "ofensiva"
+      ],
+      "contra": "Con J. Misiorowski dominando y un total de 6.5, el empate tras la quinta es muy probable y en el -0.5 PIERDE. Además, el precio está deducido por fórmula, no comprado a las casas.",
+      "resolucion": {
+        "mercado": "f5_spread",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": -0.5
+      },
+      "inicio_utc": "2026-10-24T00:00:00Z",
+      "valor": {
+        "prob_estimada": 55.0,
+        "prob_justa": 52.94,
+        "prob_implicita": 56.52,
+        "cuota": -130,
+        "cuota_justa_mercado": -112,
+        "ev_pct": -2.69,
+        "ev_kalshi_pct": -5.73,
+        "precio_minimo": -117,
+        "precio_publicado": -117,
+        "precio_equilibrio": -122,
+        "discrepancia_pp": 2.06,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV -2.69% por debajo del minimo exigido (2.0%)",
+        "cuota_aproximada": true,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "entro_por_tope_2": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-23T22:50:24Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
   "resumen": "",
-  "descartes": [],
+  "descartes": [
+    "MIL ML a -190 y TB ML a +160: fuera de la banda de cuotas (-162 a +125). Además, la línea justa de 63% para MIL ya recoge la ventaja de J. Misiorowski.",
+    "MIL F5 ML a -217: fuera de banda.",
+    "TB/MIL u6.5: no se puede hacer la comprobación 1 del under porque bullpen_uso viene null para los dos equipos. MIL anota 4.3 c/j en los últimos 10, así que no son dos ofensivas frías. Con el total ya en 6.5, mi estimación (~50%) apenas se separa del 48.92% justo.",
+    "TB/MIL o6.5: el parque tiene pf 94 con techo, el umpire G. Morales resta 1.8% de carreras y J. Misiorowski tiene 37.9% de K. No veo razón para pasar del 51% justo.",
+    "MIL Spread -1.5 a +125: con un total tan bajo, ganar por 2+ carreras está bien valorado en el 42.89% justo. Mi lectura es de ~44%, sin valor suficiente.",
+    "TB Spread +1.5 a -145: mi lectura coincide con el 57.11% justo; no hay ventaja.",
+    "TB F5 +0.5: el matchup de abridores va claramente en su contra (FIP 2.59 de J. Misiorowski frente a 4.05 de N. Martinez); no hay base para superar el 47.06% justo.",
+    "Ofensiva de los últimos 7 días: falta para ambos equipos (null), por lo que se usa la forma de los últimos 10 y los splits de temporada. La vuelta de B. Woodruff (oficial, publicada hace ~7 h) afecta al juego completo más que al F5, y el mercado probablemente ya la tiene."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-10-23",
@@ -40,14 +122,34 @@
       "sin_tanda": [],
       "sin_hora": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-10-23T22:50:24Z",
+        "min_ct": 1070,
+        "claves": [
+          "TB@MIL@2026-10-24T00:00:00Z"
+        ],
+        "juegos": [
+          "TB@MIL"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 0-1 (-1.00 U).\n• TB ML (SEÑAL MODERADA), perdida: TB 2-3 CLE.\n1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
     "apostables": 0,
-    "seguimiento": 0,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
-    "ev_min": null
+    "ev_min": 1.5
   }
 }
