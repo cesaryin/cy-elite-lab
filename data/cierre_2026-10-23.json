@@ -1,0 +1,26 @@
+{
+ "TB@MIL": {
+  "ml": {
+   "TB": 163,
+   "MIL": -198
+  },
+  "total": {
+   "linea": 6.5,
+   "over": -112,
+   "under": -107
+  },
+  "spread": {
+   "TB": {
+    "linea": 1.5,
+    "cuota": -147
+   },
+   "MIL": {
+    "linea": -1.5,
+    "cuota": 122
+   }
+  },
+  "inicio_utc": "2026-10-24T00:00Z",
+  "visto": "2026-10-23T06:26:19+00:00",
+  "cerrado": false
+ }
+}
