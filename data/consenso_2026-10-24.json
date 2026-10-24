@@ -1,0 +1,77 @@
+{
+ "fecha": "2026-10-24",
+ "tomado_utc": "2026-10-24T13:01:13+00:00",
+ "n_juegos": 1,
+ "juegos": {
+  "TB@MIL": {
+   "id": "238f598685f7210fbfbbe3de39289264",
+   "away": "TB",
+   "home": "MIL",
+   "inicio_utc": "2026-10-25T00:00:00Z",
+   "n_casas": 9,
+   "fuente": "consenso_us",
+   "ml": {
+    "MIL": -122,
+    "TB": 104
+   },
+   "total": {
+    "linea": 6.5,
+    "over": -110,
+    "under": -110,
+    "n_casas": 9
+   },
+   "spread": {
+    "MIL": {
+     "linea": -1.5,
+     "cuota": 184,
+     "n_casas": 7
+    },
+    "TB": {
+     "linea": 1.5,
+     "cuota": -215,
+     "n_casas": 7
+    }
+   },
+   "casas_ml": {
+    "MIL": 9,
+    "TB": 9
+   },
+   "mejor": {
+    "ml": {
+     "MIL": {
+      "cuota": -118,
+      "casa": "fanduel"
+     },
+     "TB": {
+      "cuota": 112,
+      "casa": "betrivers"
+     }
+    },
+    "total": {
+     "linea": 6.5,
+     "over": {
+      "cuota": -103,
+      "casa": "betrivers"
+     },
+     "under": {
+      "cuota": -107,
+      "casa": "draftkings"
+     }
+    },
+    "spread": {
+     "MIL": {
+      "linea": -1.5,
+      "cuota": 185,
+      "casa": "mybookieag"
+     },
+     "TB": {
+      "linea": 1.5,
+      "cuota": -213,
+      "casa": "lowvig"
+     }
+    }
+   },
+   "flojo": false
+  }
+ }
+}

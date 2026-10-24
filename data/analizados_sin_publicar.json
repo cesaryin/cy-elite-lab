@@ -3121,5 +3121,50 @@
       "abridores": true,
       "ts": "2026-10-19T22:50:20Z"
     }
+  },
+  {
+    "fecha": "2026-10-23",
+    "pick": "MIL F5 -0.5",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": -130,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "TB 2-3 MIL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 55.0,
+    "prob_justa": 52.94,
+    "ev_pct": -2.69,
+    "precio_publicado": -117,
+    "discrepancia_pp": 2.06,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "entro_por_tope_2": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup",
+      "ofensiva"
+    ],
+    "contra": "Con J. Misiorowski dominando y un total de 6.5, el empate tras la quinta es muy probable y en el -0.5 PIERDE. Además, el precio está deducido por fórmula, no comprado a las casas.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-23T22:50:24Z"
+    }
   }
 ]
