@@ -6,21 +6,21 @@
   },
   "total": {
    "linea": 6.5,
-   "over": -112,
-   "under": -107
+   "over": -110,
+   "under": -110
   },
   "spread": {
    "TB": {
     "linea": -1.5,
-    "cuota": 179
+    "cuota": 181
    },
    "MIL": {
     "linea": 1.5,
-    "cuota": -220
+    "cuota": -222
    }
   },
   "inicio_utc": "2026-10-25T00:00Z",
-  "visto": "2026-10-24T13:01:48+00:00",
+  "visto": "2026-10-24T16:35:15+00:00",
   "cerrado": false
  }
 }
