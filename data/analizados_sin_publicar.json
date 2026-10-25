@@ -3166,5 +3166,95 @@
       "abridores": true,
       "ts": "2026-10-23T22:50:24Z"
     }
+  },
+  {
+    "fecha": "2026-10-24",
+    "pick": "TB ML",
+    "deporte": "MLB",
+    "nivel": "oro",
+    "cuota": 102,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "TB 4-5 MIL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 50.0,
+    "prob_justa": 47.58,
+    "ev_pct": 1.0,
+    "precio_publicado": 103,
+    "discrepancia_pp": 2.42,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "entro_por_tope_2": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup",
+      "bullpen"
+    ],
+    "contra": "Con 3.7 c/j en sus ultimos 10 y sin dato de la ultima semana, la ofensiva de TB es justa contra un abridor con 29.6% de ponches; si no produce, la ventaja de FIP no sirve de nada. Ademas MIL es local en un parque de 94 que castiga el bateo.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-24T22:50:20Z"
+    }
+  },
+  {
+    "fecha": "2026-10-24",
+    "pick": "TB/MIL u6.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -111,
+    "unidades": 0.0,
+    "resultado": "L",
+    "neto_u": 0.0,
+    "marcador": "TB 4-5 MIL",
+    "veredicto": "seguimiento",
+    "prob_estimada": 51.0,
+    "prob_justa": 50.33,
+    "ev_pct": -3.05,
+    "precio_publicado": 100,
+    "discrepancia_pp": 0.67,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "entro_por_tope_2": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "parque",
+      "bullpen",
+      "forma"
+    ],
+    "contra": "L. Henderson salio de sus tres ultimas aperturas en 5.0 IP, lo que deja cuatro entradas al bullpen de MIL, que uso 3.3 IP en dos dias y lanzo ayer a T. Megill, A. Uribe y A. Ashby. Una sola entrada mala revienta una linea de 6.5.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-24T22:50:20Z"
+    }
   }
 ]
