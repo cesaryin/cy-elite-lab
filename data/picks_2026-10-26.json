@@ -1,8 +1,171 @@
 {
-  "picks": [],
+  "picks": [
+    {
+      "nivel": "plata",
+      "pick": "MIL F5 ML",
+      "deporte": "MLB",
+      "tipo": "F5 ML",
+      "cuota": 115,
+      "prob_estimada": 48.0,
+      "razon": "Los abridores son practicamente iguales (FIP 4.26 contra 4.31; multi-año 4.09 contra 4.07), pero el cruce de manos favorece a MIL: TB batea .679 de OPS contra zurdos y MIL .759 contra derechos. El mercado da a TB un 55.6% en el F5 y esta lectura le da 52%.",
+      "equipos": [
+        "MIL",
+        "TB"
+      ],
+      "destacado": "MIL",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "pitcheo",
+        "matchup",
+        "ofensiva"
+      ],
+      "contra": "El mercado y Kalshi coinciden en dar ventaja clara a TB en las primeras cinco entradas, y F. Peralta llega con 1 ER en 16 IP en sus tres últimas salidas; puede que estén valorando algo de él que los números de temporada no muestran.",
+      "resolucion": {
+        "mercado": "f5_ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-27T00:00:00Z",
+      "valor": {
+        "prob_estimada": 48.0,
+        "prob_justa": 44.36,
+        "prob_implicita": 46.51,
+        "cuota": 115,
+        "cuota_justa_mercado": 125,
+        "ev_pct": 3.2,
+        "ev_kalshi_pct": -0.54,
+        "precio_minimo": 112,
+        "precio_publicado": 112,
+        "precio_equilibrio": 109,
+        "discrepancia_pp": 3.64,
+        "unidades": 1.0,
+        "veredicto": "apostable",
+        "motivo": "EV +3.20% · no tomar peor de +112",
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "entro_por_tope_2": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 1.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-26T22:50:22Z",
+        "publicado": true,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true,
+        "gratis": true
+      }
+    },
+    {
+      "nivel": "bronce",
+      "pick": "MIL ML",
+      "deporte": "MLB",
+      "tipo": "ML",
+      "cuota": 100,
+      "prob_estimada": 50.5,
+      "razon": "La misma ventaja en el cruce de manos (TB .679 de OPS contra zurdos) y una alineación de MIL algo mejor (.748 de OPS medio en los nueve, frente a .732), con 4.2 carreras por juego en los últimos 10. Faltan los datos de bateo de la última semana. La ventaja es corta porque los bullpens están igualados: es una lectura floja.",
+      "equipos": [
+        "MIL",
+        "TB"
+      ],
+      "destacado": "MIL",
+      "hora": "7:00 PM CT",
+      "capas": [
+        "matchup",
+        "ofensiva"
+      ],
+      "contra": "El bullpen de MIL ha lanzado 5.3 IP en los dos últimos días, frente a 2.7 del de TB, y B. Baker (ERA 1.44, 41 saves) puede cerrar el juego para TB si llega igualado al final.",
+      "resolucion": {
+        "mercado": "ml",
+        "equipo": "MIL",
+        "lado": null,
+        "linea": null
+      },
+      "inicio_utc": "2026-10-27T00:00:00Z",
+      "cuota_apertura_ref": -101,
+      "valor": {
+        "prob_estimada": 50.5,
+        "prob_justa": 48.02,
+        "prob_implicita": 50.0,
+        "cuota": 100,
+        "cuota_justa_mercado": 108,
+        "ev_pct": 1.0,
+        "ev_kalshi_pct": -2.5,
+        "precio_minimo": 101,
+        "precio_publicado": 101,
+        "precio_equilibrio": -102,
+        "discrepancia_pp": 2.48,
+        "unidades": 0.0,
+        "veredicto": "seguimiento",
+        "motivo": "EV +1.00% por debajo del minimo exigido (1.5%)",
+        "mejor_precio": {
+          "cuota": 102,
+          "casa": "lowvig"
+        },
+        "alcanzable": true,
+        "fuente_precio": "consenso_us",
+        "casas_precio": 9,
+        "contexto": {
+          "mercado_movido": false
+        },
+        "sombra": {
+          "entro_por_1_5": false,
+          "entro_por_tope_2": false,
+          "extra_umbral_plano": false,
+          "extra_umbral_1_5": false
+        }
+      },
+      "unidades": 0.0,
+      "citas": {
+        "revisados": 7,
+        "no_encontrados": [
+          {
+            "numero": ".748",
+            "frase": "9 de OPS contra zurdos) y una alineación de MIL algo mejor (.748 de OPS medio en los"
+          },
+          {
+            "numero": ".732",
+            "frase": "de MIL algo mejor (.748 de OPS medio en los nueve, frente a .732), con 4.2 carreras"
+          }
+        ],
+        "campo_equivocado": [],
+        "mano_equivocada": []
+      },
+      "vivo": {
+        "tanda": 1,
+        "ts": "2026-10-26T22:50:22Z",
+        "publicado": false,
+        "fuera_por_tope": false,
+        "motivo_tope": null,
+        "alineaciones": true,
+        "abridores": true
+      }
+    }
+  ],
   "parlay": null,
-  "resumen": "",
-  "descartes": [],
+  "resumen": "Juego único entre MIL y TB, con dos abridores casi idénticos según las métricas avanzadas. La única discrepancia concreta con el mercado está en el cruce de manos: TB batea poco contra zurdos y le toca R. Gasser, mientras que MIL rinde mejor contra derechos ante F. Peralta. Esa ventaja se aprovecha mejor en las primeras cinco entradas, porque el final del juego lo condicionan el cansancio reciente del bullpen de MIL y B. Baker en el de TB. Al moneyline completo le queda poca ventaja, y los totales quedan descartados por estar en línea con el precio.",
+  "descartes": [
+    "MIL/TB u7.0: el parque (pf 94, techo) y el umpire (-1.3%) ayudan, pero ninguna ofensiva está fría de verdad (MIL 4.2 y TB 4.0 carreras por juego en los últimos 10). El 7 deja mucho margen de empate y la lectura queda pegada a la línea justa (48.4%).",
+    "TB team total u3.5: el dato de TB contra zurdos (.679) lo respalda, pero el mercado cobra un margen alto (6.8%) y una estimación honesta del 55% no supera el precio de -125.",
+    "MIL F5 +0.5: con un total del F5 de 4.0 el empate es frecuente y el lado ya está bien pagado en la justa (52.6%). El F5 ML de MIL recoge la misma lectura a mejor precio.",
+    "MIL Spread +1.5 y TB Spread -1.5: sin una diferencia clara de abridores ni de bullpen, no hay base para discrepar del precio en el margen de victoria."
+  ],
   "vivo": {
     "plan": {
       "fecha": "2026-10-26",
@@ -40,14 +203,36 @@
       "sin_tanda": [],
       "sin_hora": []
     },
-    "tandas": []
+    "tandas": [
+      {
+        "n": 1,
+        "ts": "2026-10-26T22:50:22Z",
+        "min_ct": 1070,
+        "claves": [
+          "MIL@TB@2026-10-27T00:00:00Z"
+        ],
+        "juegos": [
+          "MIL@TB"
+        ],
+        "alineaciones": [
+          2,
+          2
+        ],
+        "senales": [
+          "MIL F5 ML"
+        ],
+        "sin_ventaja": 1,
+        "fuera_por_tope": 0,
+        "motivo": null
+      }
+    ]
   },
   "autopsia": "Señales publicadas: 0-1 (-1.00 U).\n• TB ML (SEÑAL MODERADA), perdida: TB 2-3 CLE.\n1 perdida con ventaja medida, que es el coste normal y no se corrige.\nEn lo que se puede juzgar, el 19% de lo ganado fue suerte.",
   "valor_dia": {
-    "apostables": 0,
-    "seguimiento": 0,
+    "apostables": 1,
+    "seguimiento": 1,
     "sin_prob_estimada": 0,
-    "riesgo_u": 0.0,
-    "ev_min": null
+    "riesgo_u": 1.0,
+    "ev_min": 1.5
   }
 }
