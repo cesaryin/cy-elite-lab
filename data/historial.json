@@ -5507,5 +5507,55 @@
     "clv_limpio": 0.4,
     "causa": "ajustado",
     "cuadrante": "mala_suerte"
+  },
+  {
+    "fecha": "2026-10-26",
+    "pick": "MIL F5 ML",
+    "deporte": "MLB",
+    "nivel": "plata",
+    "cuota": 115,
+    "unidades": 1.0,
+    "resultado": "W",
+    "neto_u": 1.15,
+    "marcador": "MIL 10-1 TB",
+    "veredicto": "apostable",
+    "prob_estimada": 48.0,
+    "prob_justa": 44.36,
+    "ev_pct": 3.2,
+    "precio_publicado": 112,
+    "discrepancia_pp": 3.64,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "entro_por_tope_2": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup",
+      "ofensiva"
+    ],
+    "contra": "El mercado y Kalshi coinciden en dar ventaja clara a TB en las primeras cinco entradas, y F. Peralta llega con 1 ER en 16 IP en sus tres últimas salidas; puede que estén valorando algo de él que los números de temporada no muestran.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": true,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-26T22:50:22Z"
+    },
+    "clv": -9.0,
+    "prob_cierre": 37.5,
+    "clv_metodo": "kalshi_historico",
+    "clv_limpio": -6.9,
+    "cuadrante": "merecido"
   }
 ]

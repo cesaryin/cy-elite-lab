@@ -3256,5 +3256,49 @@
       "abridores": true,
       "ts": "2026-10-24T22:50:20Z"
     }
+  },
+  {
+    "fecha": "2026-10-26",
+    "pick": "MIL ML",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": 100,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "MIL 10-1 TB",
+    "veredicto": "seguimiento",
+    "prob_estimada": 50.5,
+    "prob_justa": 48.02,
+    "ev_pct": 1.0,
+    "precio_publicado": 101,
+    "discrepancia_pp": 2.48,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "entro_por_tope_2": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "matchup",
+      "ofensiva"
+    ],
+    "contra": "El bullpen de MIL ha lanzado 5.3 IP en los dos últimos días, frente a 2.7 del de TB, y B. Baker (ERA 1.44, 41 saves) puede cerrar el juego para TB si llega igualado al final.",
+    "contexto": {
+      "mercado_movido": false
+    },
+    "abogado": null,
+    "citas_dudosas": 2,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-26T22:50:22Z"
+    }
   }
 ]
