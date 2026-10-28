@@ -1,0 +1,39 @@
+{
+ "fecha": "2026-10-28",
+ "n_juegos": 1,
+ "juegos": {
+  "MIL@TB": {
+   "f5_ml": {
+    "MIL": -165,
+    "TB": 131
+   },
+   "f5_total": {
+    "linea": 3.5,
+    "over": -102,
+    "under": -127
+   },
+   "f5_spread": {
+    "MIL": {
+     "linea": -0.5,
+     "cuota": -105
+    },
+    "TB": {
+     "linea": 0.5,
+     "cuota": -118
+    }
+   },
+   "team_total": {
+    "MIL": {
+     "linea": 3.5,
+     "over": -121,
+     "under": -109
+    },
+    "TB": {
+     "linea": 2.5,
+     "over": -126,
+     "under": -102
+    }
+   }
+  }
+ }
+}
