@@ -1,34 +1,34 @@
 {
  "fecha": "2026-10-28",
- "tomado_utc": "2026-10-28T13:01:19+00:00",
+ "tomado_utc": "2026-10-28T22:50:18+00:00",
  "n_juegos": 1,
  "juegos": {
   "MIL@TB": {
    "id": "99d7f299f7f7feb7980daeeee5f238a9",
    "away": "MIL",
    "home": "TB",
-   "inicio_utc": "2026-10-29T00:00:00Z",
+   "inicio_utc": "2026-10-29T00:10:00Z",
    "n_casas": 9,
    "fuente": "consenso_us",
    "ml": {
-    "MIL": -154,
-    "TB": 132
+    "MIL": -145,
+    "TB": 125
    },
    "total": {
     "linea": 6.5,
-    "over": -120,
-    "under": 100,
-    "n_casas": 9
+    "over": 100,
+    "under": -120,
+    "n_casas": 5
    },
    "spread": {
     "MIL": {
      "linea": -1.5,
-     "cuota": 120,
+     "cuota": 125,
      "n_casas": 9
     },
     "TB": {
      "linea": 1.5,
-     "cuota": -140,
+     "cuota": -145,
      "n_casas": 9
     }
    },
@@ -39,35 +39,35 @@
    "mejor": {
     "ml": {
      "MIL": {
-      "cuota": -148,
+      "cuota": -140,
       "casa": "betonlineag"
      },
      "TB": {
-      "cuota": 134,
-      "casa": "bovada"
+      "cuota": 127,
+      "casa": "betonlineag"
      }
     },
     "total": {
      "linea": 6.5,
      "over": {
-      "cuota": -115,
-      "casa": "betrivers"
+      "cuota": 103,
+      "casa": "lowvig"
      },
      "under": {
-      "cuota": 103,
+      "cuota": -118,
       "casa": "lowvig"
      }
     },
     "spread": {
      "MIL": {
       "linea": -1.5,
-      "cuota": 125,
-      "casa": "lowvig"
+      "cuota": 130,
+      "casa": "fanduel"
      },
      "TB": {
       "linea": 1.5,
-      "cuota": -130,
-      "casa": "fanduel"
+      "cuota": -143,
+      "casa": "mybookieag"
      }
     }
    },
