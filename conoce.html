@@ -822,8 +822,11 @@ f.addEventListener('submit',async function(ev){
   /* SE ANOTA ANTES DE NADA: es lo que hace que al volver no se lo pida otra vez. */
   try{localStorage.setItem('cy_lista',v);}catch(z){}
   /* QUÉ PUERTA O QUÉ PÁGINA TRAJO EL CORREO, AL CONTADOR (29-oct-2026, PLAN_INVIERNO punto 2): «correo:puerta:<id>»
-     en /conoce y «correo:<origen>» en las demás. Solo eso: el correo no viaja. */
-  try{if(window.cyEv)cyEv('correo:'+(caja.getAttribute('data-puerta')?'puerta:'+caja.getAttribute('data-puerta'):(o?o.textContent:'web')));}catch(z){}
+     en /conoce y «correo:<origen>» en las demás. Solo eso: el correo no viaja. Las etiquetas van en palabras sueltas
+     y en minúscula, que es como el guardián de la web inglesa reconoce el código: «'correo:'», con los dos puntos,
+     le sonó a texto sin traducir y paró cuatro páginas inglesas el 29-oct. */
+  try{var pu=caja.getAttribute('data-puerta');
+      if(window.cyEv)cyEv(['correo'].concat(pu?['puerta',pu]:[o?o.textContent:'web']).join(':'));}catch(z){}
   document.getElementById('cy-ml-pide').hidden=true;
   document.getElementById('cy-ml-ok').hidden=false;
   /* El resumen semanal viaja en la MISMA peticion que el alta (24-sep-2026,
@@ -843,4 +846,4 @@ Array.prototype.forEach.call(ps,function(b){b.addEventListener('click',function(
   caja.setAttribute('data-puerta',id);caja.hidden=false;
   try{caja.scrollIntoView({behavior:suave?'smooth':'auto',block:'center'})}catch(e){}
 });});
-}catch(e){}})();</script><!-- generado 29 oct · 10:53 AM --></body></html>
+}catch(e){}})();</script><!-- generado 29 oct · 11:06 AM --></body></html>
