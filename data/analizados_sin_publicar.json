@@ -3346,5 +3346,51 @@
       "abridores": true,
       "ts": "2026-10-27T22:50:20Z"
     }
+  },
+  {
+    "fecha": "2026-10-28",
+    "pick": "MIL F5 -0.5",
+    "deporte": "MLB",
+    "nivel": "bronce",
+    "cuota": -105,
+    "unidades": 0.0,
+    "resultado": "W",
+    "neto_u": 0.0,
+    "marcador": "MIL 4-1 TB",
+    "veredicto": "seguimiento",
+    "prob_estimada": 50.0,
+    "prob_justa": 48.62,
+    "ev_pct": -2.38,
+    "precio_publicado": 104,
+    "discrepancia_pp": 1.38,
+    "fuente_precio": "consenso_us",
+    "casas_precio": 9,
+    "sombra_umbral": {
+      "entro_por_1_5": false,
+      "entro_por_tope_2": false,
+      "extra_umbral_plano": false,
+      "extra_umbral_1_5": false
+    },
+    "linea_precio": null,
+    "capas": [
+      "pitcheo",
+      "matchup",
+      "ofensiva"
+    ],
+    "contra": "El empate tras la quinta pierde a -0.5, y es probable con dos abridores de este nivel y un F5 en 3.5. Además, las tres últimas salidas de J. Misiorowski fueron cortas (5.1, 3.0 y 5.0 IP), y el bullpen de MIL, muy usado ayer, podría entrar dentro de las cinco entradas.",
+    "contexto": {
+      "mercado_movido": true,
+      "fuerza": "FUERTE"
+    },
+    "abogado": null,
+    "citas_dudosas": 0,
+    "vivo": {
+      "tanda": 1,
+      "publicado": false,
+      "fuera_por_tope": false,
+      "alineaciones": true,
+      "abridores": true,
+      "ts": "2026-10-28T22:50:18Z"
+    }
   }
 ]
