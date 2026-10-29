@@ -26,5 +26,13 @@
     "sin_prob_estimada": 0,
     "riesgo_u": 0.0,
     "ev_min": null
+  },
+  "temporada": {
+    "fecha": "2026-10-29",
+    "hoy": false,
+    "anterior": "2026-10-28",
+    "siguiente": null,
+    "primer_partido": "2027-03-25",
+    "fuente": "MLB"
   }
 }
