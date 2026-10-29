@@ -1525,7 +1525,28 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
     document.head.appendChild(sc);
   } catch (e) {}
 })();
-</script><script>var _t=function(s){return s};
+</script><script>(function(){try{
+var q=location.search,L=null;try{L=localStorage}catch(e){}
+if(/[?&]nocontar\b/.test(q)&&L){try{L.setItem('cy_nocontar','1')}catch(e){}}
+var yo=false;try{yo=!!L&&L.getItem('cy_nocontar')==='1'}catch(e){}
+if(yo||navigator.webdriver||!navigator.sendBeacon||!window.sessionStorage)return;
+var s=sessionStorage.getItem('cy_v');if(!s){s=Math.random().toString(36).slice(2,10);sessionStorage.setItem('cy_v',s)}
+var u=new URLSearchParams(q),r='';try{r=document.referrer?new URL(document.referrer).hostname:''}catch(e){}
+if(r===location.hostname)r='';
+var o=(u.get('utm_source')||r||'directo').slice(0,40),w=window.innerWidth||0,d=w<600?'celular':w<1024?'tablet':'pc',
+l=(document.documentElement.lang||'es').slice(0,2),t0=Date.now(),max=0,n=0,fin=0;
+function ev(t,v,x,y){if(n>=30)return;n++;try{navigator.sendBeacon('/portero/evento',JSON.stringify({p:location.pathname,t:t,v:v||0,y:y||0,x:x||'',o:o,l:l,s:s,d:d}))}catch(e){}}
+ev('vista');
+function baja(){var h=document.documentElement,p=Math.round(100*((window.scrollY||0)+(window.innerHeight||0))/Math.max(1,h.scrollHeight));if(p>max)max=Math.min(100,p)}
+baja();window.addEventListener('scroll',baja,{passive:true});
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a,button'):null;if(!a)return;
+ev('clic',0,(a.getAttribute('data-ev')||a.getAttribute('href')||a.textContent||'').replace(/\s+/g,' ').trim().slice(0,50))},true);
+var c=document.getElementById('cy-ml');
+if(c&&'IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){ev('ve',0,'caja-correo');io.disconnect()}})},{threshold:0.5});io.observe(c)}
+function adios(){if(fin)return;fin=1;ev('fin',Math.round((Date.now()-t0)/1000),'',max)}
+window.addEventListener('pagehide',adios);
+document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')adios()});
+}catch(e){}})();</script><script>var _t=function(s){return s};
 (function(){
   if (!window.fetch || !document.querySelector) return;
   var FECHA = "2026-10-29", PAGINA = "mercado";
@@ -1816,4 +1837,4 @@ footer{text-align:center;font-size:11px;color:var(--faint);margin-top:24px;line-
     if (!document.hidden) mlb();
   });
 })();
-</script><!-- generado 29 oct · 8:01 AM --></body></html>
+</script><!-- generado 29 oct · 9:28 AM --></body></html>

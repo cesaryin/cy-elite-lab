@@ -1080,7 +1080,7 @@
     "ultima_fecha": "2026-09-27",
     "dias": 32,
     "ayer": 1148,
-    "recogido_hasta": "2026-10-24",
+    "recogido_hasta": "2026-10-28",
     "faltan": []
    },
    "alarma": null
@@ -1141,8 +1141,13 @@
    "minimo": 1,
    "estado": "sin muestra",
    "n": 0,
-   "texto": "todavía sin plan de hoy",
-   "datos": null,
+   "texto": "0 tanda(s), 0 partido(s) analizados",
+   "datos": {
+    "tandas": 0,
+    "analizados": 0,
+    "sin_tanda": [],
+    "sin_hora": []
+   },
    "alarma": null
   },
   {
