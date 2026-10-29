@@ -970,7 +970,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 a
 .gl-e i{color:#8b949e;font-style:italic}
 </style><script>try{if(localStorage.getItem('cy_lista')||localStorage.getItem('sb-wzhoeptnsaaewtralkla-auth-token'))document.documentElement.classList.add('cy-dentro')}catch(e){}</script><link rel="alternate" hreflang="es" href="https://cyelitelab.com/modelo"><link rel="alternate" hreflang="en" href="https://cyelitelab.com/en/model"><link rel="alternate" hreflang="x-default" href="https://cyelitelab.com/modelo"></head><body><div class="app"><div class="topbar"><h1>CY Elite Lab</h1><a href="/en/settings" class="t-set" aria-label="Settings and information"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6h.09A1.65 1.65 0 0 0 10 3.09V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></a></div><main><section class="on"><div class="cab"><div class="cab-tx"><h2 class="cab-t">Model</h2><p class="cab-s">The projection for today's games</p></div></div><div class="lab-real"><div class="nota-card">No games to project today.</div><div class="lab-pie">
   <div><div class="lab-pk">Updated</div></div>
-  <div class="lab-pv">Oct 29 · 10:29 AM</div>
+  <div class="lab-pv">Oct 29 · 10:53 AM</div>
 </div><details class="gl"><summary class="gl-s"><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Glossary — what each stat means</span><span class="gl-ar">▾</span></summary><div class="gl-p"><div class="gl-h">The card</div>
 <div class="gl-e"><b><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Confirmed / <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Projected</b> — whether both teams have ALREADY published their official lineup for the day or not yet. With the lineup confirmed, the Model projects with the nine hitters who will actually play.</div>
 <div class="gl-e"><b>The odds next to the team</b> — what the market pays right now: the consensus and, if there isn't one yet, the reference market's price.</div>
@@ -1139,13 +1139,19 @@ var o=(u.get('utm_source')||r||'directo').slice(0,40),w=window.innerWidth||0,d=w
 l=(document.documentElement.lang||'es').slice(0,2),t0=Date.now(),max=0,n=0,fin=0;
 function ev(t,v,x,y){if(n>=30)return;n++;try{navigator.sendBeacon('/portero/evento',JSON.stringify({p:location.pathname,t:t,v:v||0,y:y||0,x:x||'',o:o,l:l,s:s,d:d}))}catch(e){}}
 ev('vista');
+window.cyEv=function(x){ev('clic',0,String(x||'').slice(0,50))};
 function baja(){var h=document.documentElement,p=Math.round(100*((window.scrollY||0)+(window.innerHeight||0))/Math.max(1,h.scrollHeight));if(p>max)max=Math.min(100,p)}
 baja();window.addEventListener('scroll',baja,{passive:true});
 document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a,button'):null;if(!a)return;
 ev('clic',0,(a.getAttribute('data-ev')||a.getAttribute('href')||a.textContent||'').replace(/\s+/g,' ').trim().slice(0,50))},true);
-var c=document.getElementById('cy-ml');
-if(c&&'IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){ev('ve',0,'caja-correo');io.disconnect()}})},{threshold:0.5});io.observe(c)}
+if('IntersectionObserver' in window){var vis={},io=new IntersectionObserver(function(es){es.forEach(function(x){
+var k=x.target.id==='cy-ml'?'caja-correo':x.target.getAttribute('data-ve');
+if(!k||vis[k]||!x.isIntersecting)return;
+if(x.intersectionRatio<0.5&&x.intersectionRect.height<0.5*(window.innerHeight||1))return;
+vis[k]=1;ev('ve',0,k);io.unobserve(x.target)})},{threshold:[0,.1,.2,.3,.4,.5,.6,.7,.8,.9,1]});
+var c=document.getElementById('cy-ml');if(c)io.observe(c);
+Array.prototype.forEach.call(document.querySelectorAll('[data-ve]'),function(x){io.observe(x)})}
 function adios(){if(fin)return;fin=1;ev('fin',Math.round((Date.now()-t0)/1000),'',max)}
 window.addEventListener('pagehide',adios);
 document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')adios()});
-}catch(e){}})();</script><!-- generado 29 oct · 10:29 AM --></body></html>
+}catch(e){}})();</script><!-- generado 29 oct · 10:53 AM --></body></html>
