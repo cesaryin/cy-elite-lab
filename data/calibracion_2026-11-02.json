@@ -692,14 +692,14 @@
    "pregunta": "¿La probabilidad del ganador le gana a la del mercado?",
    "minimo": 150,
    "estado": "medida",
-   "n": 168,
-   "texto": "Brier 0.2363 contra 0.2322 del mercado · pendiente 0.739",
+   "n": 165,
+   "texto": "Brier 0.2374 contra 0.2332 del mercado · pendiente 0.732",
    "datos": {
-    "brier_modelo": 0.2363,
-    "brier_mercado": 0.2322,
-    "pendiente": 0.739,
-    "acierto_modelo": 60.7,
-    "acierto_mercado": 62.5
+    "brier_modelo": 0.2374,
+    "brier_mercado": 0.2332,
+    "pendiente": 0.732,
+    "acierto_modelo": 60.0,
+    "acierto_mercado": 61.8
    },
    "alarma": null
   },
@@ -727,16 +727,16 @@
    "pregunta": "¿El total proyectado se desvía de las carreras reales?",
    "minimo": 30,
    "estado": "medida",
-   "n": 168,
-   "texto": "proyecta 8.50 · real 8.36 · sesgo +0.14 (IC95% -0.47 a +0.75, el cero dentro) · error 3.15",
+   "n": 165,
+   "texto": "proyecta 8.52 · real 8.36 · sesgo +0.15 (IC95% -0.47 a +0.77, el cero dentro) · error 3.17",
    "datos": {
-    "total_proyecta": 8.5,
+    "total_proyecta": 8.52,
     "total_real": 8.36,
-    "total_sesgo": 0.14,
-    "total_error": 3.15,
+    "total_sesgo": 0.15,
+    "total_error": 3.17,
     "total_sesgo_ic": [
      -0.47,
-     0.75
+     0.77
     ],
     "total_sesgo_real": false
    },
@@ -748,20 +748,20 @@
    "pregunta": "¿El lado que marca el chip del total acierta? (su puerta del verde)",
    "minimo": 150,
    "estado": "sin muestra",
-   "n": 104,
-   "texto": "el lado que marca acierta 50.0% necesitando 52.1% · verde cerrado",
+   "n": 101,
+   "texto": "el lado que marca acierta 49.5% necesitando 52.1% · verde cerrado",
    "datos": {
-    "n": 104,
+    "n": 101,
     "puerta_n": 150,
     "puerta_margen": 3.0,
-    "acierto": 50.0,
+    "acierto": 49.5,
     "necesita": 52.1,
-    "margen": -2.1,
-    "margen_exacto": -2.09013737522438,
-    "w": 52,
-    "n_3pp": 49,
-    "acierto_3pp": 44.9,
-    "necesita_3pp": 52.3
+    "margen": -2.6,
+    "margen_exacto": -2.558943756008624,
+    "w": 50,
+    "n_3pp": 48,
+    "acierto_3pp": 43.8,
+    "necesita_3pp": 52.2
    },
    "alarma": null
   },
@@ -771,14 +771,14 @@
    "pregunta": "¿El total se desvía en algún tipo de parque?",
    "minimo": 150,
    "estado": "medida",
-   "n": 168,
-   "texto": "bajos 52 (sesgo -0.14) · neutros 94 (sesgo +0.17) · altos 22 (sesgo +0.69)",
+   "n": 165,
+   "texto": "bajos 49 (sesgo -0.12) · neutros 94 (sesgo +0.17) · altos 22 (sesgo +0.69)",
    "datos": {
     "bajos": {
-     "n": 52,
-     "sesgo": -0.14,
-     "error_tipico": 0.48,
-     "sd": 0.3
+     "n": 49,
+     "sesgo": -0.12,
+     "error_tipico": 0.51,
+     "sd": 0.2
     },
     "neutros": {
      "n": 94,
@@ -845,12 +845,12 @@
    "pregunta": "¿Con la alineación puesta proyecta mejor?",
    "minimo": 30,
    "estado": "medida",
-   "n": 168,
-   "texto": "error por la mañana 3.15 · con la alineación 3.17",
+   "n": 165,
+   "texto": "error por la mañana 3.17 · con la alineación 3.19",
    "datos": {
-    "error_manana": 3.15,
-    "error_ultima": 3.17,
-    "mueve_lineup": 0.27
+    "error_manana": 3.17,
+    "error_ultima": 3.19,
+    "mueve_lineup": 0.28
    },
    "alarma": null
   },
@@ -1131,8 +1131,13 @@
    "minimo": 1,
    "estado": "sin muestra",
    "n": 0,
-   "texto": "todavía sin plan de hoy",
-   "datos": null,
+   "texto": "0 tanda(s), 0 partido(s) analizados",
+   "datos": {
+    "tandas": 0,
+    "analizados": 0,
+    "sin_tanda": [],
+    "sin_hora": []
+   },
    "alarma": null
   },
   {
