@@ -1147,11 +1147,11 @@
    "minimo": 1,
    "estado": "medida",
    "n": 500,
-   "texto": "500 creditos · el tope de hoy son 17 · 29 dias hasta el reinicio",
+   "texto": "500 creditos · el tope de hoy son 17 · 28 dias hasta el reinicio",
    "datos": {
     "creditos": 500,
     "tope_hoy": 17,
-    "dias": 29,
+    "dias": 28,
     "gasto_ayer": 0,
     "detalle_ayer": {},
     "gasto_hoy": 0

@@ -54,6 +54,10 @@ section.on>.cab+.sec-h,section.on>.cab+.set-h{padding-top:0}
    la cabecera. En trends.html suelto SI hace falta (alli no hay cabecera). */
 .trends-real>.sep:first-child{display:none}
 .trends-real>.sep:first-child+h2{margin-top:0}
+/* EL MODELO DE INVIERNO ABRE CON UN TITULO DE BLOQUE DENTRO DE .lab-real (2-nov-2026, lo vio Cesar: «tiene un salto
+   de linea de mas, no esta igual que Analisis o Mercado»). La regla de arriba solo alcanza al .sec-h que va justo
+   detras de la cabecera; este va un nivel mas adentro. Un dia con partidos, .lab-real abre con una tarjeta. */
+.lab-real>.sec-h:first-child{padding-top:0}
 main{padding:0 16px}
 section{display:none}section.on{display:block}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;margin:12px 0}
@@ -1201,4 +1205,4 @@ document.addEventListener('visibilitychange',function(){if(document.visibilitySt
   setTimeout(function () { if (!$('cu-cargando').hidden) pintar(null); }, 6000);
 })();
 </script>
-<!-- generado 2 nov · 1:23 PM --></body></html>
+<!-- generado 2 nov · 6:14 PM --></body></html>
