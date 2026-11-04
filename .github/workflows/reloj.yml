@@ -40,6 +40,14 @@ name: Reloj del dia (dispara el motor)
 # 9:15 (hora de Chicago en verano). Sus cron se quedan de respaldo: el recolector y las
 # fuentes no duplican nada, y la agenda mira si ya aviso hoy antes de avisar.
 #
+# EL CORREO DEL LUNES (4-nov-2026, Cesar: «si, pasa el correo del lunes al reloj para que
+# salga a las 8am»). Lo lanzaba solo un cron del motor, y salia entre las 2 y las 5 de la
+# tarde. Ahora, los lunes a las 8:01 de Chicago TODO EL AÑO: este reloj va en UTC, asi que
+# lleva dos objetivos, el minuto 1 (verano) y el 61 (invierno), y cada lunes dispara solo el
+# del horario que rige (VERANO, mas abajo). A las 8:00 en punto ya dispara otra cosa: el RUN
+# en verano y una hora posible de tanda en invierno. En verano el correo espera, dentro, a
+# que el run publique el dia. Su cron se queda de respaldo y no repite lo ya enviado.
+#
 # LOS REFRESCOS DEL LAB TAMBIEN LOS PONE EL PLAN (14-sep-2026). Ya no van a las 4
 # horas fijas: uno ~45 min antes de cada bloque de partidos ("min_reloj_lab"). Si un
 # dia no hay plan, el reloj los lanza a las horas de siempre (minutos 140, 320, 500
@@ -156,12 +164,16 @@ jobs:
           #   AGENDA, RECOLECTOR, FUENTES (21-sep-2026) -> ver la cabecera. El
           #           recolector y las fuentes solo salen los dias de su semana
           #           (DIA_SEM, mas abajo); los demas dias se saltan sin esperar.
+          #   CORREO (4-nov-2026) -> el correo del lunes a las 8:01 de Chicago: el
+          #           1 en verano y el 61 en invierno (ver la cabecera y VERANO).
           TARGETS="
           0:picks.yml
+          1:correo-verano
           5:agenda.yml
           40:recolector
           45:redes-dia
           50:redes-semana
+          61:correo-invierno
           75:fuentes
           90:vigilante.yml
           215:cierre-captura.yml
@@ -207,6 +219,21 @@ jobs:
           # da el segundo por pasado. El plan nunca los elige (RELOJ_FIJOS).
           JORNADA=$(date -u -d @$ANCLA +%F)
           DIA_SEM=$(date -u -d @$ANCLA +%u)          # 1 = lunes ... 7 = domingo
+          # EL HORARIO DE VERANO DE CHICAGO (4-nov-2026), para lo que sale a la misma hora de
+          # Chicago todo el año (el correo del lunes). En EE. UU. va del segundo domingo de marzo
+          # al primer domingo de noviembre, y a las 13:00 UTC de esos domingos ya rige la hora
+          # nueva. Se calcula con `date -u` y no con TZ=America/Chicago, que el bash de Windows
+          # (el del simulador) no entiende y daria UTC sin avisar.
+          ANO_V=${JORNADA%%-*}; INI_V=""; FIN_V=""
+          for D in 08 09 10 11 12 13 14; do
+            if [ "$(date -u -d "$ANO_V-03-$D" +%u)" = "7" ]; then INI_V="$ANO_V-03-$D"; fi
+          done
+          for D in 01 02 03 04 05 06 07; do
+            if [ "$(date -u -d "$ANO_V-11-$D" +%u)" = "7" ]; then FIN_V="$ANO_V-11-$D"; fi
+          done
+          VERANO=0
+          if [[ ! "$JORNADA" < "$INI_V" ]] && [[ "$JORNADA" < "$FIN_V" ]]; then VERANO=1; fi
+          echo "Jornada $JORNADA (dia $DIA_SEM de la semana; horario de verano: $VERANO)."
           PLAN_URL="https://raw.githubusercontent.com/$REPO_WEB/master/data/plan_tandas_${JORNADA}.json"
           # Hasta el 1080 desde el 18-sep: mas alla del 780 no hay tandas, solo los
           # avisos de resultados (data/avisos_res_<fecha>.json, ver mas abajo). El 790
@@ -470,6 +497,8 @@ jobs:
               recolector) case "$DIA_SEM" in 1|4) ;; *) continue ;; esac ;;
               fuentes)    [ "$DIA_SEM" = "1" ] || continue ;;
               redes-semana) [ "$DIA_SEM" = "1" ] || continue ;;
+              correo-verano)   if [ "$DIA_SEM" != "1" ] || [ "$VERANO" != "1" ]; then continue; fi ;;
+              correo-invierno) if [ "$DIA_SEM" != "1" ] || [ "$VERANO" != "0" ]; then continue; fi ;;
             esac
 
             OBJ=$((ANCLA + MIN * 60))
@@ -562,6 +591,8 @@ jobs:
             case "$WF" in
               redes-dia)    WF=redes.yml; CUERPO='{"ref":"main","inputs":{"que":"dia"}}' ;;
               redes-semana) WF=redes.yml; CUERPO='{"ref":"main","inputs":{"que":"semana"}}' ;;
+              # EL CORREO DEL LUNES (4-nov-2026): con «reloj», espera al run y no repite lo ya enviado.
+              correo-verano|correo-invierno) WF=correo-lunes.yml; CUERPO='{"ref":"main","inputs":{"reloj":"true"}}' ;;
             esac
 
             disparar "$WF" "$CUERPO" "$WF"
