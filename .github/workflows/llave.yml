@@ -1,0 +1,41 @@
+name: La llave del reloj (¿caduca?)
+
+# LA LLAVE DEL RELOJ, VIGILADA (4-nov-2026, la auditoría completa). MOTOR_DISPATCH_TOKEN es la llave con la que el reloj
+# lanza el motor: el run de cada mañana, las tandas, las capturas. Si caducara, el día entero se pararía, y nadie miraba
+# su fecha. Cada lunes, esto le pregunta a GitHub cuándo caduca (/rate_limit no gasta nada y su respuesta lo dice) y lanza
+# la auditoría del motor pasándole SOLO esa fecha, nunca la llave. Si ya no vale, no podrá lanzarla: el respaldo del
+# motor (el martes) correrá sin noticias del reloj, y el dashboard lo dirá.
+#
+# La copia de este fichero vive en el motor: herramientas/web/llave.yml.
+
+on:
+  schedule:
+    - cron: "0 15 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  mirar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Cuándo caduca, y la auditoría del motor
+        env:
+          TOKEN: ${{ secrets.MOTOR_DISPATCH_TOKEN }}
+        run: |
+          H=$(curl -sI -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" https://api.github.com/rate_limit)
+          COD=$(printf '%s\n' "$H" | head -1 | awk '{print $2}')
+          CAD=$(printf '%s\n' "$H" | grep -i '^github-authentication-token-expiration:' | cut -d' ' -f2- | tr -d '\r')
+          if [ "$COD" != "200" ]; then
+            CAD="NO VALE ($COD)"
+          elif [ -z "$CAD" ]; then
+            CAD="no caduca"
+          fi
+          echo "la llave del reloj: $CAD"
+          CUERPO=$(printf '{"ref":"main","inputs":{"reloj":"%s"}}' "$CAD")
+          curl -sL -o /dev/null -w "la auditoría del motor -> %{http_code}\n" -X POST \
+            -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository_owner }}/cy-elite-motor/actions/workflows/auditoria.yml/dispatches" \
+            -d "$CUERPO"
