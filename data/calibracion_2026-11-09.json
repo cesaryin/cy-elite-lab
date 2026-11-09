@@ -83,35 +83,66 @@
    "pregunta": "¿Elite acierta más que Fuerte, y Fuerte más que Moderada?",
    "minimo": 30,
    "estado": "sin muestra",
-   "n": 15,
-   "texto": "Elite 8-12 (margen -11.2) · Fuerte 9-7 (margen +6.0) · Moderada 10-5 (margen +17.3)",
+   "n": 5,
+   "texto": "desde las tandas (14-sep): Elite 4-3 (margen +6.2) · Fuerte 3-2 (margen +10.7) · Moderada 5-2 (margen +23.2) · contando las 8:00 (desde el 28-ago): Elite 8-12 (margen -11.2) · Fuerte 9-7 (margen +6.0) · Moderada 10-5 (margen +17.3)",
    "datos": {
-    "Elite": {
-     "n": 20,
-     "w": 8,
-     "l": 12,
-     "acierto": 40.0,
-     "necesita": 51.2,
-     "margen": -11.2,
-     "neto": -4.74
+    "desde_tandas": {
+     "Elite": {
+      "n": 7,
+      "w": 4,
+      "l": 3,
+      "acierto": 57.1,
+      "necesita": 51.0,
+      "margen": 6.2,
+      "neto": 0.75
+     },
+     "Fuerte": {
+      "n": 5,
+      "w": 3,
+      "l": 2,
+      "acierto": 60.0,
+      "necesita": 49.3,
+      "margen": 10.7,
+      "neto": 1.15
+     },
+     "Moderada": {
+      "n": 7,
+      "w": 5,
+      "l": 2,
+      "acierto": 71.4,
+      "necesita": 48.2,
+      "margen": 23.2,
+      "neto": 3.44
+     }
     },
-    "Fuerte": {
-     "n": 16,
-     "w": 9,
-     "l": 7,
-     "acierto": 56.2,
-     "necesita": 50.2,
-     "margen": 6.0,
-     "neto": 2.07
-    },
-    "Moderada": {
-     "n": 15,
-     "w": 10,
-     "l": 5,
-     "acierto": 66.7,
-     "necesita": 49.4,
-     "margen": 17.3,
-     "neto": 5.32
+    "desde_28_ago": {
+     "Elite": {
+      "n": 20,
+      "w": 8,
+      "l": 12,
+      "acierto": 40.0,
+      "necesita": 51.2,
+      "margen": -11.2,
+      "neto": -4.74
+     },
+     "Fuerte": {
+      "n": 16,
+      "w": 9,
+      "l": 7,
+      "acierto": 56.2,
+      "necesita": 50.2,
+      "margen": 6.0,
+      "neto": 2.07
+     },
+     "Moderada": {
+      "n": 15,
+      "w": 10,
+      "l": 5,
+      "acierto": 66.7,
+      "necesita": 49.4,
+      "margen": 17.3,
+      "neto": 5.32
+     }
     }
    },
    "alarma": null
@@ -428,8 +459,8 @@
    "pregunta": "¿Qué fichas del libro ya tienen su muestra y qué dicen?",
    "minimo": 1,
    "estado": "medida",
-   "n": 10,
-   "texto": "10 fichas con medida automática; 0 ya tienen su muestra",
+   "n": 11,
+   "texto": "11 fichas con medida automática; 0 ya tienen su muestra",
    "datos": {
     "banda-109-125": {
      "estado": "observacion",
@@ -490,6 +521,12 @@
      "n": 2,
      "margen": 2.0,
      "veredicto": "sin muestra (2 de 30)"
+    },
+    "cerebro-dice-55-o-mas": {
+     "estado": "observacion",
+     "n": 0,
+     "margen": null,
+     "veredicto": "sin muestra (0 de 60)"
     }
    },
    "alarma": null
@@ -691,10 +728,16 @@
    "area": "Modelo",
    "pregunta": "¿La probabilidad del ganador le gana a la del mercado?",
    "minimo": 150,
-   "estado": "sin muestra",
-   "n": 0,
-   "texto": "todavía sin partidos con precio archivado",
-   "datos": null,
+   "estado": "medida",
+   "n": 171,
+   "texto": "Brier 0.2362 contra 0.2326 del mercado · pendiente 0.739",
+   "datos": {
+    "brier_modelo": 0.2362,
+    "brier_mercado": 0.2326,
+    "pendiente": 0.739,
+    "acierto_modelo": 60.8,
+    "acierto_mercado": 62.0
+   },
    "alarma": null
   },
   {
@@ -720,10 +763,20 @@
    "area": "Modelo",
    "pregunta": "¿El total proyectado se desvía de las carreras reales?",
    "minimo": 30,
-   "estado": "sin muestra",
-   "n": 0,
-   "texto": "sin partidos cerrados del modelo de ahora",
-   "datos": null,
+   "estado": "medida",
+   "n": 171,
+   "texto": "proyecta 8.48 · real 8.35 · sesgo +0.14 (IC95% -0.46 a +0.74, el cero dentro) · error 3.13",
+   "datos": {
+    "total_proyecta": 8.48,
+    "total_real": 8.35,
+    "total_sesgo": 0.14,
+    "total_error": 3.13,
+    "total_sesgo_ic": [
+     -0.46,
+     0.74
+    ],
+    "total_sesgo_real": false
+   },
    "alarma": null
   },
   {
@@ -732,9 +785,21 @@
    "pregunta": "¿El lado que marca el chip del total acierta? (su puerta del verde)",
    "minimo": 150,
    "estado": "sin muestra",
-   "n": 0,
-   "texto": "todavía sin partidos con las cuotas del total guardadas (desde el 20-sep)",
-   "datos": null,
+   "n": 105,
+   "texto": "el lado que marca acierta 50.5% necesitando 52.1% · verde cerrado",
+   "datos": {
+    "n": 105,
+    "puerta_n": 150,
+    "puerta_margen": 3.0,
+    "acierto": 50.5,
+    "necesita": 52.1,
+    "margen": -1.6,
+    "margen_exacto": -1.623104097293556,
+    "w": 53,
+    "n_3pp": 49,
+    "acierto_3pp": 44.9,
+    "necesita_3pp": 52.3
+   },
    "alarma": null
   },
   {
@@ -742,10 +807,29 @@
    "area": "Modelo",
    "pregunta": "¿El total se desvía en algún tipo de parque?",
    "minimo": 150,
-   "estado": "sin muestra",
-   "n": 0,
-   "texto": "",
-   "datos": {},
+   "estado": "medida",
+   "n": 171,
+   "texto": "bajos 55 (sesgo -0.13) · neutros 94 (sesgo +0.17) · altos 22 (sesgo +0.69)",
+   "datos": {
+    "bajos": {
+     "n": 55,
+     "sesgo": -0.13,
+     "error_tipico": 0.46,
+     "sd": 0.3
+    },
+    "neutros": {
+     "n": 94,
+     "sesgo": 0.17,
+     "error_tipico": 0.44,
+     "sd": 0.4
+    },
+    "altos": {
+     "n": 22,
+     "sesgo": 0.69,
+     "error_tipico": 0.97,
+     "sd": 0.7
+    }
+   },
    "alarma": null
   },
   {
@@ -797,10 +881,14 @@
    "area": "Modelo",
    "pregunta": "¿Con la alineación puesta proyecta mejor?",
    "minimo": 30,
-   "estado": "sin muestra",
-   "n": 0,
-   "texto": "sin partidos con las dos proyecciones",
-   "datos": null,
+   "estado": "medida",
+   "n": 171,
+   "texto": "error por la mañana 3.13 · con la alineación 3.15",
+   "datos": {
+    "error_manana": 3.13,
+    "error_ultima": 3.15,
+    "mueve_lineup": 0.27
+   },
    "alarma": null
   },
   {
@@ -968,7 +1056,7 @@
    "minimo": 1,
    "estado": "medida",
    "n": 10,
-   "texto": "faltan del 2026-11-08: consenso_2026-11-08.json, mercado_2026-11-08.json, noticias_2026-11-08_run.json",
+   "texto": "el 2026-11-08 no hubo partidos: nada que archivar",
    "datos": {
     "fecha": "2026-11-08",
     "faltan": [
@@ -1080,8 +1168,13 @@
    "minimo": 1,
    "estado": "sin muestra",
    "n": 0,
-   "texto": "todavía sin plan de hoy",
-   "datos": null,
+   "texto": "0 tanda(s), 0 partido(s) analizados",
+   "datos": {
+    "tandas": 0,
+    "analizados": 0,
+    "sin_tanda": [],
+    "sin_hora": []
+   },
    "alarma": null
   },
   {
@@ -1104,8 +1197,8 @@
   }
  ],
  "cuenta": {
-  "medida": 19,
-  "sin muestra": 25,
+  "medida": 23,
+  "sin muestra": 21,
   "alarma": 0,
   "error": 0
  }
